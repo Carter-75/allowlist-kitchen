@@ -734,7 +734,7 @@
   "id": "egg-salad-wraps",
   "name": "Egg Salad Wraps",
   "mealType": "Lunch",
-  "description": "Classic egg salad made with avocado oil mayo and a little plain mustard, scooped into coconut wraps. Creamy, simple, and great made ahead for lunchboxes.",
+  "description": "Classic egg salad, olive oil style. No store-bought mayo passes the full egg rule, so the dressing here is olive oil, fresh lemon, and a little plain mustard, scooped into coconut wraps. Simple, bright, and great made ahead for lunchboxes.",
   "time": {
    "prep": 10,
    "cook": 12,
@@ -749,9 +749,14 @@
     "dbItem": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
-    "item": "Primal Kitchen Mayo made with Avocado Oil",
-    "amount": "1/4 cup",
-    "dbItem": "Primal Kitchen Mayo made with Avocado Oil"
+    "item": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "amount": "3 tbsp",
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil"
+   },
+   {
+    "item": "Fresh lemon juice",
+    "amount": "1 tbsp",
+    "dbItem": "lemon (fresh)"
    },
    {
     "item": "Plain prepared mustard",
@@ -773,7 +778,7 @@
   "steps": [
    "Put the eggs in a pot, cover with water, and bring to a boil. Take the pot off the heat, cover, and let the eggs sit 10 to 12 minutes.",
    "Cool the eggs under cold water, peel, and chop into bite-size pieces. Allergen note: this recipe contains mustard, in the next step.",
-   "Stir the mayo, mustard, and sea salt together in a bowl, then fold in the chopped eggs until everything is coated.",
+   "Whisk the olive oil, lemon juice, mustard, and sea salt together in a bowl, then fold in the chopped eggs until everything is coated.",
    "Chill at least 15 minutes if you have the time. The flavor settles and the salad holds together better.",
    "Warm each coconut wrap in a dry skillet for about 20 seconds per side, spoon the egg salad down the center, roll up, and serve."
   ],
@@ -787,7 +792,7 @@
   "tags": [
    "make ahead",
    "lunchbox",
-   "creamy"
+   "no-mayo"
   ]
  },
  {
