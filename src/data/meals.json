@@ -1,0 +1,3628 @@
+[
+ {
+  "category": "Beef & Red Meat",
+  "description": "A thick grass-fed ribeye seared hard in beef tallow with nothing but salt and pepper, so the beef itself is the whole dish.",
+  "difficulty": "Easy",
+  "id": "cast-iron-ribeye",
+  "ingredients": [
+   {
+    "amount": "2 steaks, 8 oz each",
+    "dbItem": "Beef",
+    "item": "100% grass-fed ribeye steaks, about 1 inch thick",
+    "note": "Thousand Hills or Organic Prairie, 100% grass-fed and grass-finished"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper, coarsely ground"
+   }
+  ],
+  "name": "Cast-Iron Ribeye with Tallow and Sea Salt",
+  "nutrition": {
+   "calories": 560,
+   "carbs": 0,
+   "fat": 38,
+   "fiber": 0,
+   "protein": 51
+  },
+  "servings": 2,
+  "steps": [
+   "Take the steaks out of the refrigerator 30 minutes before cooking and pat them very dry with paper towels. Season both sides with the sea salt and black pepper.",
+   "Heat a cast-iron skillet over high heat for about 5 minutes, until it just begins to smoke.",
+   "Add the tallow and swirl the pan so the surface is coated in a thin, shimmering layer.",
+   "Lay the steaks in the pan away from you and sear undisturbed for 4 minutes, until a deep brown crust forms.",
+   "Flip once and cook 3 to 4 minutes more, until the center reads 130F on a thermometer for medium rare.",
+   "Move the steaks to a warm plate and rest them for 10 minutes, loosely tented, so the juices settle back in.",
+   "Slice against the grain, spoon the hot pan juices over the top, and serve."
+  ],
+  "tags": [
+   "beef",
+   "cast iron",
+   "high protein",
+   "keto",
+   "simple"
+  ],
+  "time": {
+   "cook": 14,
+   "prep": 40,
+   "total": 54
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "Meatballs made from Force of Nature Ancestral Blend, so ground beef, liver, and heart are all in the mix, simmered in a clean-label marinara.",
+  "difficulty": "Easy",
+  "id": "ancestral-meatballs-marinara",
+  "ingredients": [
+   {
+    "amount": "1 lb",
+    "dbItem": "Force of Nature Ground Beef and Bison range (incl. Ancestral Blend)",
+    "item": "Force of Nature Ancestral Blend ground beef",
+    "note": "Beef with beef liver and beef heart, 100% grass-fed and grass-finished"
+   },
+   {
+    "amount": "1 large egg",
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "item": "Vital Farms Organic Pasture-Raised Eggs",
+    "note": "Used as the binder"
+   },
+   {
+    "amount": "1 jar, 24 oz",
+    "dbItem": "Rao's Homemade Marinara Sauce",
+    "item": "Rao's Homemade Marinara Sauce"
+   },
+   {
+    "amount": "2 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic cloves, minced"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Ancestral Blend Meatballs in Marinara",
+  "nutrition": {
+   "calories": 410,
+   "carbs": 6,
+   "fat": 30,
+   "fiber": 1,
+   "protein": 23
+  },
+  "servings": 4,
+  "steps": [
+   "In a large bowl, combine the Ancestral Blend, the beaten egg, minced garlic, sea salt, and black pepper. Mix gently with your hands just until it comes together; do not overwork it.",
+   "Roll the mixture into 12 meatballs, about the size of a golf ball. Chill them for 10 minutes so they hold their shape.",
+   "Heat the tallow in a Dutch oven or deep skillet over medium-high heat until shimmering.",
+   "Brown the meatballs in a single layer for 6 to 8 minutes, turning every couple of minutes, until crusted on most sides. Work in two batches if the pan is crowded.",
+   "Pour the marinara over the meatballs and scrape up the browned bits from the bottom of the pan.",
+   "Lower the heat, cover, and simmer gently for 20 minutes, until the meatballs are cooked through at 160F in the center and the sauce has thickened slightly.",
+   "Rest for 5 minutes off the heat and serve the meatballs with plenty of sauce spooned over."
+  ],
+  "tags": [
+   "beef",
+   "organ meats",
+   "italian style",
+   "one pot",
+   "meal prep"
+  ],
+  "time": {
+   "cook": 30,
+   "prep": 15,
+   "total": 45
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "The classic diner plate done right: grass-fed liver with a light organic flour dredge, seared fast, and buried under sweet onions caramelized low and slow in butter and tallow.",
+  "difficulty": "Medium",
+  "id": "beef-liver-onions",
+  "ingredients": [
+   {
+    "amount": "1 lb",
+    "dbItem": "Organic Prairie 100% Grassfed Beef Liver",
+    "item": "Organic Prairie 100% Grassfed Beef Liver, sliced"
+   },
+   {
+    "amount": "2 large",
+    "dbItem": "fresh onions",
+    "item": "Fresh onions, thinly sliced"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow"
+   },
+   {
+    "amount": "1/4 cup",
+    "dbItem": "organic wheat flour (unenriched)",
+    "item": "King Arthur Organic all-purpose flour",
+    "note": "For a light dredge only"
+   },
+   {
+    "amount": "1/2 lemon",
+    "dbItem": "lemons",
+    "item": "Lemon, cut in half",
+    "note": "A squeeze at the end brightens the liver"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Beef Liver and Caramelized Onions",
+  "nutrition": {
+   "calories": 330,
+   "carbs": 15,
+   "fat": 15,
+   "fiber": 1,
+   "protein": 30
+  },
+  "servings": 4,
+  "steps": [
+   "Melt the butter with half the tallow in a large skillet over medium-low heat. Add the onions with a pinch of the salt and cook, stirring every few minutes, for 20 to 25 minutes until deep golden and sweet. Move the onions to a plate.",
+   "While the onions cook, pat the liver slices dry. Stir the flour with the remaining salt and black pepper on a plate and dredge each slice lightly, shaking off the excess.",
+   "Add the rest of the tallow to the same skillet and raise the heat to medium-high until the fat is hot.",
+   "Sear the liver for 2 to 3 minutes per side, until well browned outside and just barely pink in the center. Do not overcook it or it turns grainy.",
+   "Return the onions to the pan over the liver and warm everything together for 1 minute.",
+   "Squeeze the lemon half over the top, rest 2 minutes, and serve straight from the skillet."
+  ],
+  "tags": [
+   "beef",
+   "liver",
+   "organ meats",
+   "nutrient dense",
+   "classic"
+  ],
+  "time": {
+   "cook": 30,
+   "prep": 15,
+   "total": 45
+  }
+ },
+ {
+  "category": "Wraps & Handhelds",
+  "description": "Lean grass-fed bison patties with melted Grassmilk cheddar and avocado, wrapped in a NUCO coconut wrap instead of a bun.",
+  "difficulty": "Easy",
+  "id": "bison-burgers-coconut-wraps",
+  "ingredients": [
+   {
+    "amount": "1 lb",
+    "dbItem": "Force of Nature Ground Beef and Bison range (incl. Ancestral Blend)",
+    "item": "Force of Nature ground bison",
+    "note": "100% grass-fed and grass-finished bison"
+   },
+   {
+    "amount": "4 wraps",
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "item": "NUCO Organic Coconut Wraps, Original"
+   },
+   {
+    "amount": "4 slices, about 1 oz each",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk cheddar, sliced"
+   },
+   {
+    "amount": "2",
+    "dbItem": "avocado",
+    "item": "Avocados, sliced"
+   },
+   {
+    "amount": "1/2 small",
+    "dbItem": "fresh onions",
+    "item": "Fresh onion, thinly sliced"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow",
+    "note": "Just enough to film the pan"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Bison Burgers in Coconut Wraps",
+  "nutrition": {
+   "calories": 460,
+   "carbs": 12,
+   "fat": 31,
+   "fiber": 7,
+   "protein": 33
+  },
+  "servings": 4,
+  "steps": [
+   "Divide the bison into 4 patties about 3/4 inch thick, with a shallow dent pressed into the center of each so they cook flat. Season both sides with sea salt and black pepper.",
+   "Heat a cast-iron skillet over medium-high heat and film it with the tallow.",
+   "Cook the patties for 4 minutes on the first side without pressing them down.",
+   "Flip, lay a slice of cheddar on each patty, and cook 3 to 4 minutes more, until the centers reach 160F and the cheese has melted. Cover the pan for the last minute if the cheese needs help.",
+   "While the burgers finish, warm each coconut wrap in a dry pan for about 20 seconds per side so it turns flexible. Keep them at room temperature otherwise; do not refrigerate the wraps.",
+   "Set a patty in the center of each wrap, top with avocado slices and onion, fold the wrap around the burger, and serve right away."
+  ],
+  "tags": [
+   "bison",
+   "burgers",
+   "handheld",
+   "grain free",
+   "quick"
+  ],
+  "time": {
+   "cook": 10,
+   "prep": 10,
+   "total": 20
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "Grass-fed stew meat braised low and slow with potatoes, carrots, and parsnips in tallow until everything is spoon tender. No flour thickener, no wine, the braise does the work.",
+  "difficulty": "Easy",
+  "id": "slow-beef-stew-roots",
+  "ingredients": [
+   {
+    "amount": "2 lb",
+    "dbItem": "Beef",
+    "item": "Thousand Hills Lifetime Grazed stew meat, cut in 1.5 inch cubes",
+    "note": "100% grass-fed and grass-finished"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow"
+   },
+   {
+    "amount": "1.5 lb",
+    "dbItem": "Root vegetables",
+    "item": "Potatoes, cut in chunks"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, cut in thick coins"
+   },
+   {
+    "amount": "1/2 lb",
+    "dbItem": "Root vegetables",
+    "item": "Parsnips, cut in chunks"
+   },
+   {
+    "amount": "1 large",
+    "dbItem": "fresh onions",
+    "item": "Fresh onion, chopped"
+   },
+   {
+    "amount": "4 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic cloves, minced"
+   },
+   {
+    "amount": "4 cups",
+    "dbItem": "Spring water (glass bottle)",
+    "item": "Spring water"
+   },
+   {
+    "amount": "2 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Slow Beef Stew with Root Vegetables",
+  "nutrition": {
+   "calories": 470,
+   "carbs": 42,
+   "fat": 16,
+   "fiber": 7,
+   "protein": 37
+  },
+  "servings": 6,
+  "steps": [
+   "Heat the oven to 300F. Pat the stew meat dry and season it with half the salt and pepper.",
+   "Melt the tallow in a Dutch oven over medium-high heat and brown the beef in two batches, about 5 minutes per batch, until well crusted. Set the meat aside.",
+   "Add the onion to the pot and cook for 3 minutes in the drippings, scraping up the browned bits. Stir in the garlic for 30 seconds.",
+   "Return the beef, add the potatoes, carrots, and parsnips, and pour in the spring water until the meat is nearly covered.",
+   "Bring to a gentle simmer, cover, and move the pot to the oven. Braise for 3 hours, until the beef is fork tender and the vegetables are soft. (A slow cooker on low for 8 hours works the same way.)",
+   "Season with the remaining salt and pepper, rest 10 minutes, and serve in deep bowls with the braising liquid spooned over."
+  ],
+  "tags": [
+   "beef",
+   "stew",
+   "slow cooked",
+   "one pot",
+   "meal prep"
+  ],
+  "time": {
+   "cook": 180,
+   "prep": 20,
+   "total": 200
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "Lamb loin chops rubbed with a garlic and olive oil paste, grilled hot and fast, and finished with a squeeze of lemon.",
+  "difficulty": "Easy",
+  "id": "grilled-lamb-chops-garlic",
+  "ingredients": [
+   {
+    "amount": "8 chops, about 2 lb with bone",
+    "dbItem": "Lamb",
+    "item": "Lamb loin chops"
+   },
+   {
+    "amount": "6 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic cloves"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "item": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "note": "Only the 100% California bottle"
+   },
+   {
+    "amount": "1",
+    "dbItem": "lemons",
+    "item": "Lemon, cut in wedges"
+   },
+   {
+    "amount": "1.5 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Grilled Lamb Chops with Garlic",
+  "nutrition": {
+   "calories": 345,
+   "carbs": 2,
+   "fat": 26,
+   "fiber": 0,
+   "protein": 25
+  },
+  "servings": 4,
+  "steps": [
+   "Crush the garlic with the sea salt using the flat of a knife until it forms a paste. Stir in the olive oil and black pepper.",
+   "Rub the paste over both sides of the lamb chops and let them marinate for 30 minutes at room temperature, or covered in the refrigerator for up to 12 hours.",
+   "Heat a grill or grill pan to medium-high, about 450F, and let it get fully hot.",
+   "Grill the chops for 4 to 5 minutes on the first side, until they release easily and carry dark grill marks.",
+   "Flip and grill 3 to 4 minutes more, until the centers read 135F for medium rare.",
+   "Rest the chops for 5 minutes, squeeze lemon over the top, and serve two chops per person."
+  ],
+  "tags": [
+   "lamb",
+   "grilled",
+   "garlic",
+   "quick cooking"
+  ],
+  "time": {
+   "cook": 10,
+   "prep": 40,
+   "total": 50
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "Venison is lean, so this pot roast braises it gently with tallow and root vegetables until the meat shreds and the vegetables soak up the juices.",
+  "difficulty": "Medium",
+  "id": "venison-pot-roast",
+  "ingredients": [
+   {
+    "amount": "3 lb",
+    "dbItem": "Venison (deer)",
+    "item": "Venison shoulder roast"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow",
+    "note": "Venison needs the added fat"
+   },
+   {
+    "amount": "1.5 lb",
+    "dbItem": "Root vegetables",
+    "item": "Potatoes, cut in chunks"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, cut in chunks"
+   },
+   {
+    "amount": "2",
+    "dbItem": "fresh onions",
+    "item": "Fresh onions, cut in wedges"
+   },
+   {
+    "amount": "4 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic cloves, smashed"
+   },
+   {
+    "amount": "2 cups",
+    "dbItem": "Spring water (glass bottle)",
+    "item": "Spring water"
+   },
+   {
+    "amount": "2 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Venison Pot Roast with Root Vegetables",
+  "nutrition": {
+   "calories": 430,
+   "carbs": 31,
+   "fat": 9,
+   "fiber": 4,
+   "protein": 51
+  },
+  "servings": 6,
+  "steps": [
+   "Heat the oven to 325F. Pat the venison dry and season all over with the salt and pepper.",
+   "Melt the tallow in a Dutch oven over medium-high heat and sear the roast for 4 minutes per side, until deeply browned. Set it aside.",
+   "Add the onion wedges and garlic to the pot and cook for 3 minutes in the drippings.",
+   "Return the roast, pour in the spring water, and bring to a simmer. Cover and move to the oven.",
+   "Braise for 2 hours, then add the potatoes and carrots around the roast. Cover and braise 1 hour more, until the meat pulls apart with a fork and the vegetables are tender.",
+   "Rest the roast for 15 minutes in its juices, then slice or shred it and serve with the vegetables and pan juices spooned over."
+  ],
+  "tags": [
+   "venison",
+   "pot roast",
+   "braised",
+   "lean protein",
+   "sunday dinner"
+  ],
+  "time": {
+   "cook": 180,
+   "prep": 20,
+   "total": 200
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "The breakfast plate that actually fills you up: a tallow-seared strip steak with pasture-raised eggs fried in butter in the same pan.",
+  "difficulty": "Easy",
+  "id": "steak-and-eggs",
+  "ingredients": [
+   {
+    "amount": "2 steaks, 8 oz each",
+    "dbItem": "Beef",
+    "item": "100% grass-fed strip steaks",
+    "note": "Organic Prairie NY strip or Thousand Hills steak"
+   },
+   {
+    "amount": "4 large eggs",
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "item": "Vital Farms Organic Pasture-Raised Eggs"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "item": "Kriemhild Dairy Meadow Butter, salted",
+    "note": "For the eggs"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Steak and Pasture Eggs",
+  "nutrition": {
+   "calories": 590,
+   "carbs": 1,
+   "fat": 36,
+   "fiber": 0,
+   "protein": 62
+  },
+  "servings": 2,
+  "steps": [
+   "Pat the steaks dry, season with salt and pepper, and let them sit at room temperature while the pan heats.",
+   "Heat a cast-iron skillet over high heat until it just begins to smoke. Add the tallow.",
+   "Sear the steaks for 4 minutes on the first side, flip, and cook 3 to 4 minutes more to 130F for medium rare.",
+   "Move the steaks to a plate to rest for 10 minutes. Pour off all but a thin film of fat from the pan and lower the heat to medium.",
+   "Add the butter to the same pan. When it foams, crack in the eggs and fry for 2 to 3 minutes, until the whites are set and the edges are crisp but the yolks still run. Season the eggs with a pinch of salt and pepper.",
+   "Slice the steaks, plate them with two eggs each, and spoon any resting juices over the top."
+  ],
+  "tags": [
+   "beef",
+   "eggs",
+   "breakfast",
+   "high protein",
+   "cast iron"
+  ],
+  "time": {
+   "cook": 15,
+   "prep": 10,
+   "total": 25
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "Thick pork chops seared in butter and finished in the oven alongside apple halves that bake in the pan juices. The apple does all the sweetening on its own.",
+  "difficulty": "Easy",
+  "id": "pork-chops-baked-apple",
+  "ingredients": [
+   {
+    "amount": "4 chops, 8 oz each",
+    "dbItem": "Pork",
+    "item": "Bone-in pork chops, about 1 inch thick"
+   },
+   {
+    "amount": "2 large",
+    "dbItem": "Whole fruit",
+    "item": "Apples, halved and cored",
+    "note": "Any firm eating apple"
+   },
+   {
+    "amount": "3 tbsp",
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "1/2",
+    "dbItem": "lemons",
+    "item": "Lemon",
+    "note": "A squeeze over the apples keeps them from browning"
+   },
+   {
+    "amount": "1.5 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Pork Chops with Baked Apple",
+  "nutrition": {
+   "calories": 360,
+   "carbs": 13,
+   "fat": 19,
+   "fiber": 2,
+   "protein": 37
+  },
+  "servings": 4,
+  "steps": [
+   "Heat the oven to 400F. Pat the pork chops dry and season both sides with salt and pepper.",
+   "Squeeze the lemon over the cut sides of the apple halves and dot them with 1 tablespoon of the butter, divided.",
+   "Melt the remaining butter in a large oven-safe skillet over medium-high heat until it foams.",
+   "Sear the chops for 3 minutes per side, until golden.",
+   "Arrange the apple halves cut side up in the skillet around the chops and move the whole pan to the oven.",
+   "Roast for 12 to 15 minutes, until the chops read 145F in the thickest part and the apples are tender and caramelized at the edges.",
+   "Rest the chops for 5 minutes and serve each one with a baked apple half and the buttery pan juices."
+  ],
+  "tags": [
+   "pork",
+   "apple",
+   "skillet",
+   "one pan"
+  ],
+  "time": {
+   "cook": 30,
+   "prep": 10,
+   "total": 40
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "Duck breasts started in a cold pan so the fat renders and the skin crisps, served with sweet potatoes roasted in the rendered duck fat.",
+  "difficulty": "Medium",
+  "id": "duck-breast-crispy-skin",
+  "ingredients": [
+   {
+    "amount": "2 breasts, 8 oz each",
+    "dbItem": "Duck (meat)",
+    "item": "Duck breasts, skin on"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "Duck fat",
+    "item": "Duck fat, rendered from the breasts",
+    "note": "Comes out of the pan as the skin renders; no separate purchase"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Sweet potatoes, cut in 1 inch cubes"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Duck Breast with Crispy Skin",
+  "nutrition": {
+   "calories": 640,
+   "carbs": 47,
+   "fat": 37,
+   "fiber": 7,
+   "protein": 29
+  },
+  "servings": 2,
+  "steps": [
+   "Heat the oven to 425F. Score the duck skin in a crosshatch pattern, cutting through the skin and fat but not into the meat. Pat dry and season the breasts all over with salt and pepper.",
+   "Lay the breasts skin side down in a cold cast-iron skillet. Turn the heat to medium and let the fat render slowly for 12 to 15 minutes, spooning off the liquid fat into a heatproof bowl as it pools. The skin should turn deep golden and crisp.",
+   "Flip the breasts and cook 2 to 3 minutes on the meat side, until the centers read 135F for medium rare.",
+   "Move the duck to a plate and rest it for 8 minutes.",
+   "While the duck rests, toss the sweet potato cubes with 2 tablespoons of the rendered duck fat and a pinch of salt, spread them on a sheet pan, and roast for 20 to 25 minutes, turning once, until crisp at the edges and soft inside.",
+   "Slice the duck breasts on a diagonal, showing the crisp skin and rosy center, and serve over the roasted sweet potatoes."
+  ],
+  "tags": [
+   "duck",
+   "crispy skin",
+   "rendered fat",
+   "date night"
+  ],
+  "time": {
+   "cook": 35,
+   "prep": 15,
+   "total": 50
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "Turkey legs rubbed with tallow and roasted over root vegetables, then brushed with a lemon and raw honey glaze in the last stretch so the skin lacquers.",
+  "difficulty": "Easy",
+  "id": "roast-turkey-legs",
+  "ingredients": [
+   {
+    "amount": "4 legs, about 1 lb each",
+    "dbItem": "Turkey",
+    "item": "Turkey legs"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow, softened"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Potatoes, cut in chunks"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, cut in chunks"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "raw honey",
+    "item": "Nate's Raw & Unfiltered Honey",
+    "note": "Raw honey is an approved sweetener; used only as a thin glaze"
+   },
+   {
+    "amount": "1",
+    "dbItem": "lemons",
+    "item": "Lemon, juiced"
+   },
+   {
+    "amount": "2 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Roast Turkey Legs with Tallow Roots",
+  "nutrition": {
+   "calories": 505,
+   "carbs": 42,
+   "fat": 20,
+   "fiber": 5,
+   "protein": 43
+  },
+  "servings": 4,
+  "steps": [
+   "Heat the oven to 375F. Spread the potatoes and carrots in a large roasting pan and season with half the salt and pepper.",
+   "Pat the turkey legs dry. Rub them all over with the softened tallow and the remaining salt and pepper.",
+   "Set the legs on top of the vegetables so the drippings fall onto the roots as they roast.",
+   "Roast for 60 minutes, turning the legs once halfway, until the skin is well browned.",
+   "Stir the honey and lemon juice together and brush it over the legs. Roast 15 minutes more, until the glaze is glossy and the meat reads 175F at the thickest point, away from the bone.",
+   "Rest the legs for 10 minutes and serve with the roasted roots and pan juices."
+  ],
+  "tags": [
+   "turkey",
+   "roast",
+   "honey glaze",
+   "one pan"
+  ],
+  "time": {
+   "cook": 75,
+   "prep": 15,
+   "total": 90
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "A two-stage soup: bones simmered into a rich broth first, then stew meat and vegetables poached in it. Nothing from a carton, nothing powdered.",
+  "difficulty": "Easy",
+  "id": "beef-bone-broth-soup",
+  "ingredients": [
+   {
+    "amount": "3 lb",
+    "dbItem": "Beef",
+    "item": "Beef soup bones",
+    "note": "Marrow and knuckle bones from grass-fed cattle"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Beef",
+    "item": "Thousand Hills stew meat, cut small",
+    "note": "100% grass-fed and grass-finished"
+   },
+   {
+    "amount": "12 cups",
+    "dbItem": "Spring water (glass bottle)",
+    "item": "Spring water"
+   },
+   {
+    "amount": "3",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, sliced"
+   },
+   {
+    "amount": "1 large",
+    "dbItem": "fresh onions",
+    "item": "Fresh onion, chopped, plus one half for the broth"
+   },
+   {
+    "amount": "3 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic cloves, minced"
+   },
+   {
+    "amount": "2 tsp, plus more to taste",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Beef Bone Broth Soup with Stew Meat",
+  "nutrition": {
+   "calories": 235,
+   "carbs": 7,
+   "fat": 8,
+   "fiber": 2,
+   "protein": 27
+  },
+  "servings": 6,
+  "steps": [
+   "Put the bones in a large pot, cover with the spring water, and add the onion half. Bring to a bare simmer over medium heat and skim off any foam that rises in the first 30 minutes.",
+   "Lower the heat so the broth barely bubbles and simmer for 3 hours and 15 minutes, topping up with water if the level drops below the bones. (A slow cooker on low for 10 hours does the same job.)",
+   "Strain the broth into a clean pot and discard the bones and spent onion. Skim the fat from the surface if you like; it is good tallow, so save it for cooking.",
+   "Return the broth to a simmer and add the stew meat, carrots, chopped onion, and garlic.",
+   "Simmer gently for 45 minutes, until the stew meat is tender and the carrots are soft.",
+   "Season with the salt and pepper, ladle into bowls making sure each gets meat and vegetables, and serve hot."
+  ],
+  "tags": [
+   "beef",
+   "bone broth",
+   "soup",
+   "slow cooked",
+   "gut friendly"
+  ],
+  "time": {
+   "cook": 240,
+   "prep": 15,
+   "total": 255
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "One pan, fifteen minutes of cooking: grass-fed ground beef browned with onion and garlic, then blanketed in Grassmilk cheddar. Weeknight food with nothing to apologize for.",
+  "difficulty": "Easy",
+  "id": "beef-cheddar-skillet",
+  "ingredients": [
+   {
+    "amount": "1.5 lb",
+    "dbItem": "Beef",
+    "item": "Thousand Hills Lifetime Grazed ground beef",
+    "note": "100% grass-fed and grass-finished"
+   },
+   {
+    "amount": "2 medium",
+    "dbItem": "fresh onions",
+    "item": "Fresh onions, diced"
+   },
+   {
+    "amount": "3 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic cloves, minced"
+   },
+   {
+    "amount": "4 oz",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk cheddar, grated"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Ground Beef and Cheddar Skillet",
+  "nutrition": {
+   "calories": 435,
+   "carbs": 5,
+   "fat": 26,
+   "fiber": 1,
+   "protein": 41
+  },
+  "servings": 4,
+  "steps": [
+   "Heat a large cast-iron skillet over medium-high heat until hot. The beef brings its own fat, so no oil is needed to start.",
+   "Add the ground beef, break it into rough chunks, and let it brown undisturbed for 3 minutes before stirring. Continue cooking about 5 minutes more, breaking it smaller, until no pink remains.",
+   "Stir in the onions and cook for 4 to 5 minutes, until softened and picking up the browned bits from the pan.",
+   "Add the garlic, salt, and pepper and cook for 1 minute more. If there is a lot of liquid fat in the pan, spoon off the excess and save it.",
+   "Scatter the grated cheddar evenly over the top, cover the skillet, and turn off the heat. Let it sit for 2 minutes, until the cheese is fully melted.",
+   "Serve straight from the skillet."
+  ],
+  "tags": [
+   "beef",
+   "cheese",
+   "one pan",
+   "weeknight",
+   "high protein"
+  ],
+  "time": {
+   "cook": 15,
+   "prep": 10,
+   "total": 25
+  }
+ },
+ {
+  "category": "Pasta & Grains",
+  "description": "A chuck roast braised until it shreds, served over white rice that was soaked overnight the traditional way, with the braising juices as the sauce.",
+  "difficulty": "Medium",
+  "id": "shredded-beef-rice-bowl",
+  "ingredients": [
+   {
+    "amount": "2.5 lb",
+    "dbItem": "Beef",
+    "item": "Thousand Hills chuck roast",
+    "note": "100% grass-fed and grass-finished"
+   },
+   {
+    "amount": "2 cups dry",
+    "dbItem": "White rice",
+    "item": "White rice, soaked overnight",
+    "note": "Soaked 8 to 12 hours, then drained; white rice only, never brown"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow"
+   },
+   {
+    "amount": "1 large",
+    "dbItem": "fresh onions",
+    "item": "Fresh onion, sliced"
+   },
+   {
+    "amount": "4 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic cloves, minced"
+   },
+   {
+    "amount": "2 cups for the braise, plus more for the rice",
+    "dbItem": "Spring water (glass bottle)",
+    "item": "Spring water"
+   },
+   {
+    "amount": "1/2",
+    "dbItem": "lemons",
+    "item": "Lemon, juiced",
+    "note": "For the rice soaking water"
+   },
+   {
+    "amount": "2 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Shredded Beef over Soaked White Rice",
+  "nutrition": {
+   "calories": 550,
+   "carbs": 54,
+   "fat": 14,
+   "fiber": 1,
+   "protein": 45
+  },
+  "servings": 6,
+  "steps": [
+   "The night before, put the rice in a bowl, cover with warm water and the lemon juice, and soak for 8 to 12 hours. Drain and rinse before cooking.",
+   "Heat the oven to 325F. Pat the chuck roast dry and season with the salt and pepper.",
+   "Melt the tallow in a Dutch oven over medium-high heat and sear the roast for 4 minutes per side, until deeply browned. Add the onion, garlic, and 2 cups of spring water.",
+   "Cover and braise in the oven for 3 hours, turning the roast once, until it shreds easily with a fork.",
+   "About 30 minutes before the beef is done, cook the rice: combine the drained rice with 2.5 cups of fresh water and a pinch of salt, bring to a boil, cover, and simmer on low for 15 minutes. Rest off the heat for 10 minutes and fluff.",
+   "Move the beef to a board and shred it with two forks, discarding any large pieces of fat. Return the meat to the pot and stir it through the braising juices.",
+   "Spoon the rice into bowls, pile the shredded beef and its juices over the top, and serve."
+  ],
+  "tags": [
+   "beef",
+   "rice bowl",
+   "braised",
+   "meal prep",
+   "comfort food"
+  ],
+  "time": {
+   "cook": 200,
+   "prep": 15,
+   "total": 215
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "Salt-cured pork belly roasted until the edges shatter, served in small portions with lemon wedges to cut the richness. This is a treat food and the numbers say so.",
+  "difficulty": "Medium",
+  "id": "crispy-pork-belly-bites",
+  "ingredients": [
+   {
+    "amount": "2 lb slab",
+    "dbItem": "Pork",
+    "item": "Pork belly, skin on"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt",
+    "note": "Half for the overnight cure, half for finishing"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   },
+   {
+    "amount": "2",
+    "dbItem": "lemons",
+    "item": "Lemons, cut in wedges",
+    "note": "Squeezed over at the table"
+   }
+  ],
+  "name": "Crispy Pork Belly Bites",
+  "nutrition": {
+   "calories": 500,
+   "carbs": 0,
+   "fat": 48,
+   "fiber": 0,
+   "protein": 15
+  },
+  "servings": 6,
+  "steps": [
+   "The night before, score the pork belly skin in a crosshatch or cut the slab into 1.5 inch cubes. Rub all over with half the salt, set on a rack over a tray, and refrigerate uncovered overnight so the skin dries out. Dry skin is what makes it crisp.",
+   "Heat the oven to 325F. Pat the belly completely dry and season the meat sides with black pepper.",
+   "Arrange the pieces skin side up on a rack in a roasting pan, leaving space between them, and roast for 30 minutes. Fat will render into the pan below.",
+   "Raise the oven to 450F and roast 15 to 20 minutes more, turning the pieces once, until the skin is puffed, deep golden, and crackling and the edges are crisp.",
+   "Rest the bites on the rack for 5 minutes so the crust stays crisp. Do not cover them.",
+   "Sprinkle with the remaining salt and serve hot with lemon wedges."
+  ],
+  "tags": [
+   "pork",
+   "crispy",
+   "appetizer style",
+   "rich"
+  ],
+  "time": {
+   "cook": 50,
+   "prep": 10,
+   "total": 60
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "A thick, stew-like soup of lamb and organic lentils with carrots and onion, finished with lemon. The lentils are organic only, soaked before cooking the traditional way.",
+  "difficulty": "Easy",
+  "id": "lamb-lentil-soup",
+  "ingredients": [
+   {
+    "amount": "1.5 lb",
+    "dbItem": "Lamb",
+    "item": "Lamb shoulder, cut in 3/4 inch cubes"
+   },
+   {
+    "amount": "1.5 cups dry",
+    "dbItem": "Lentils",
+    "item": "Organic lentils, soaked",
+    "note": "Certified organic only; conventional lentils do not pass. Soaked 8 hours and drained"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow"
+   },
+   {
+    "amount": "3",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, diced"
+   },
+   {
+    "amount": "1 large",
+    "dbItem": "fresh onions",
+    "item": "Fresh onion, diced"
+   },
+   {
+    "amount": "3 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic cloves, minced"
+   },
+   {
+    "amount": "8 cups",
+    "dbItem": "Spring water (glass bottle)",
+    "item": "Spring water"
+   },
+   {
+    "amount": "1/2",
+    "dbItem": "lemons",
+    "item": "Lemon, juiced"
+   },
+   {
+    "amount": "2 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Lamb and Organic Lentil Soup",
+  "nutrition": {
+   "calories": 445,
+   "carbs": 35,
+   "fat": 17,
+   "fiber": 7,
+   "protein": 36
+  },
+  "servings": 6,
+  "steps": [
+   "Soak the lentils in water for 8 hours, then drain and rinse. (They can also go in dry; add 10 minutes to the simmer.)",
+   "Melt the tallow in a large pot over medium-high heat and brown the lamb cubes for about 5 minutes, in batches if needed. Season with half the salt and pepper.",
+   "Add the onion and carrots and cook for 4 minutes in the drippings. Stir in the garlic for 30 seconds.",
+   "Add the lentils and the spring water and bring to a boil, then lower to a steady simmer.",
+   "Simmer uncovered for 35 to 40 minutes, stirring now and then, until the lentils are completely soft and the lamb is tender. The soup should be thick; add a splash more water if it gets too thick.",
+   "Stir in the lemon juice and the remaining salt and pepper, rest 5 minutes, and serve in bowls."
+  ],
+  "tags": [
+   "lamb",
+   "lentils",
+   "soup",
+   "one pot",
+   "high fiber"
+  ],
+  "time": {
+   "cook": 45,
+   "prep": 15,
+   "total": 60
+  }
+ },
+ {
+  "category": "Beef & Red Meat",
+  "description": "Everything on one pan: sweet potatoes, carrots, and onions roasted in tallow until caramelized, then steaks laid on top to finish in the same heat.",
+  "difficulty": "Easy",
+  "id": "sheet-pan-steak-roots",
+  "ingredients": [
+   {
+    "amount": "2 lb total",
+    "dbItem": "Beef",
+    "item": "100% grass-fed sirloin steaks, about 1 inch thick",
+    "note": "Thousand Hills steaks"
+   },
+   {
+    "amount": "1.5 lb",
+    "dbItem": "Root vegetables",
+    "item": "Sweet potatoes, cut in 1 inch chunks"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, cut in thick sticks"
+   },
+   {
+    "amount": "2",
+    "dbItem": "fresh onions",
+    "item": "Fresh onions, cut in wedges"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Beef tallow, melted"
+   },
+   {
+    "amount": "3 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic cloves, minced"
+   },
+   {
+    "amount": "2 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Sheet-Pan Steak and Roasted Roots",
+  "nutrition": {
+   "calories": 520,
+   "carbs": 32,
+   "fat": 18,
+   "fiber": 4,
+   "protein": 55
+  },
+  "servings": 4,
+  "steps": [
+   "Heat the oven to 425F. Take the steaks out of the refrigerator and season them with half the salt and pepper.",
+   "Toss the sweet potatoes, carrots, and onion wedges on a large rimmed sheet pan with the melted tallow, garlic, and the remaining salt and pepper. Spread them in a single layer with space between the pieces.",
+   "Roast the vegetables for 20 minutes, until they are starting to brown at the edges.",
+   "Pull the pan out, stir the vegetables, and lay the steaks on top of them.",
+   "Return the pan to the oven and roast 12 to 15 minutes more, flipping the steaks once halfway, until they read 130 to 135F for medium rare and the vegetables are tender and caramelized.",
+   "Rest the steaks on the pan for 5 minutes, slice them against the grain, and serve over the roasted roots with the pan juices."
+  ],
+  "tags": [
+   "beef",
+   "sheet pan",
+   "roasted vegetables",
+   "weeknight",
+   "high protein"
+  ],
+  "time": {
+   "cook": 40,
+   "prep": 15,
+   "total": 55
+  }
+ },
+ {
+  "category": "Chicken & Eggs",
+  "description": "A certified organic whole chicken roasted on a bed of potatoes, carrots, and onion with garlic butter under the skin. The vegetables cook in the drippings, so the pan does double duty.",
+  "difficulty": "Medium",
+  "id": "whole-roast-chicken",
+  "ingredients": [
+   {
+    "amount": "1 whole chicken",
+    "dbItem": "Chicken",
+    "item": "Smart Chicken Organic whole chicken (about 4 lb)",
+    "note": "certified organic; pat dry for crisp skin"
+   },
+   {
+    "amount": "3 tbsp",
+    "dbItem": "Butter",
+    "item": "Kriemhild Dairy Meadow Butter, salted, softened"
+   },
+   {
+    "amount": "1.5 lb",
+    "dbItem": "Root vegetables",
+    "item": "Potatoes, scrubbed and cut in chunks"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, cut in thick coins"
+   },
+   {
+    "amount": "1 large",
+    "dbItem": "fresh onions",
+    "item": "Onion, cut in wedges"
+   },
+   {
+    "amount": "4 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "2 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Whole Roast Chicken with Root Vegetables",
+  "nutrition": {
+   "calories": 785,
+   "carbs": 42,
+   "fat": 41,
+   "fiber": 7,
+   "protein": 59
+  },
+  "servings": 4,
+  "steps": [
+   "Heat the oven to 425\u00b0F (220\u00b0C). Take the chicken out of the fridge 30 minutes before roasting so it cooks evenly.",
+   "Scatter the potato chunks, carrots, and onion wedges in a large roasting pan or cast iron skillet and season with half the salt and pepper.",
+   "Mash the softened butter with the minced garlic. Loosen the chicken skin over the breast with your fingers and spread two thirds of the garlic butter under the skin; rub the rest over the outside.",
+   "Season the chicken all over with the remaining salt and pepper, tie the legs together with kitchen twine if you have it, and set the chicken breast side up on top of the vegetables.",
+   "Roast for 20 minutes at 425\u00b0F (220\u00b0C), then reduce the heat to 375\u00b0F (190\u00b0C) and roast 50 to 55 minutes more, until the thickest part of the thigh reads 165\u00b0F (74\u00b0C) and the juices run clear.",
+   "Rest the chicken 15 minutes before carving so the juices settle. Stir the vegetables in the pan drippings.",
+   "Carve the chicken and serve with the roasted vegetables and pan juices spooned over."
+  ],
+  "tags": [
+   "dinner",
+   "roast",
+   "one-pan",
+   "family"
+  ],
+  "time": {
+   "cook": 75,
+   "prep": 20,
+   "total": 95
+  }
+ },
+ {
+  "category": "Chicken & Eggs",
+  "description": "A clear, home-style chicken soup built by simmering organic chicken breast in water, then adding carrots, parsnips, potato, and white rice that was soaked overnight. Plain, warm, and easy on the stomach.",
+  "difficulty": "Easy",
+  "id": "chicken-soup-rice",
+  "ingredients": [
+   {
+    "amount": "1 cup dry",
+    "dbItem": "White rice",
+    "item": "White rice",
+    "note": "soaked in water 8 to 12 hours, drained and rinsed before cooking"
+   },
+   {
+    "amount": "1.5 lb",
+    "dbItem": "Chicken",
+    "item": "Smart Chicken Organic boneless skinless chicken breasts",
+    "note": "certified organic"
+   },
+   {
+    "amount": "10 cups",
+    "dbItem": "Spring water (glass bottle)",
+    "item": "Mountain Valley Spring Water"
+   },
+   {
+    "amount": "3 medium (about 10 oz)",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, sliced"
+   },
+   {
+    "amount": "2 medium (about 10 oz)",
+    "dbItem": "Root vegetables",
+    "item": "Parsnips, sliced"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Potato, peeled and diced"
+   },
+   {
+    "amount": "1 medium",
+    "dbItem": "fresh onions",
+    "item": "Onion, diced"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Fatworks Grass-Fed Beef Tallow"
+   },
+   {
+    "amount": "3 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "2 tsp, plus more to taste",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Chicken Soup with Roots and Soaked Rice",
+  "nutrition": {
+   "calories": 395,
+   "carbs": 54,
+   "fat": 6,
+   "fiber": 6,
+   "protein": 30
+  },
+  "servings": 6,
+  "steps": [
+   "The night before, cover the rice with water and soak 8 to 12 hours. Drain and rinse before cooking.",
+   "Put the chicken breasts in a large pot with the spring water and 1 teaspoon of the salt. Bring to a gentle boil, skim any foam, then lower to a simmer for 20 minutes.",
+   "Lift the chicken out to a cutting board. Shred or dice it once it is cool enough to handle, and set aside.",
+   "Melt the tallow in the pot over medium heat, add the onion, carrots, and parsnips, and cook 5 minutes, stirring now and then.",
+   "Pour the hot chicken broth back into the pot, add the potato and garlic, and simmer 10 minutes.",
+   "Stir in the drained soaked rice and simmer 12 to 15 minutes, until the rice and potato are tender.",
+   "Return the chicken to the pot, season with the remaining salt and the pepper, simmer 2 minutes to heat through, and serve hot."
+  ],
+  "tags": [
+   "soup",
+   "dinner",
+   "make-ahead",
+   "comfort"
+  ],
+  "time": {
+   "cook": 45,
+   "prep": 20,
+   "total": 65
+  }
+ },
+ {
+  "category": "Chicken & Eggs",
+  "description": "Pasture-raised eggs poached right in a jar of Rao's marinara and finished with melted Grassmilk cheddar. It eats like a cross between shakshuka and pizza eggs, with no sugar anywhere in the pan.",
+  "difficulty": "Easy",
+  "id": "eggs-in-marinara",
+  "ingredients": [
+   {
+    "amount": "1 jar (24 oz)",
+    "dbItem": "Rao's Homemade Marinara Sauce",
+    "item": "Rao's Homemade Marinara Sauce"
+   },
+   {
+    "amount": "6 large",
+    "dbItem": "Eggs",
+    "item": "OrgaNick Pastures organic pasture-raised eggs",
+    "note": "organic and pasture-raised only"
+   },
+   {
+    "amount": "2 oz",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk Raw Cheddar, shredded"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "item": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "note": "only the 100% California bottle"
+   },
+   {
+    "amount": "0.5 medium",
+    "dbItem": "fresh onions",
+    "item": "Onion, finely diced"
+   },
+   {
+    "amount": "2 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "0.25 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.25 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Eggs in Marinara Skillet",
+  "nutrition": {
+   "calories": 705,
+   "carbs": 23,
+   "fat": 52,
+   "fiber": 4,
+   "protein": 32
+  },
+  "servings": 2,
+  "steps": [
+   "Warm the olive oil in a large skillet with a lid over medium heat. Add the onion and cook 3 to 4 minutes until soft.",
+   "Stir in the garlic for 30 seconds, then pour in the whole jar of marinara. Simmer 5 minutes until it thickens slightly and bubbles at the edges.",
+   "Use a spoon to make 6 small wells in the sauce and crack an egg into each well.",
+   "Cover the skillet and cook on low 5 to 7 minutes, until the whites are set but the yolks still jiggle.",
+   "Scatter the shredded cheddar over the top, cover again for 1 minute to melt it.",
+   "Season with salt and pepper and serve straight from the skillet, spooning sauce over each egg."
+  ],
+  "tags": [
+   "breakfast",
+   "brunch",
+   "one-pan",
+   "skillet"
+  ],
+  "time": {
+   "cook": 15,
+   "prep": 5,
+   "total": 20
+  }
+ },
+ {
+  "category": "Chicken & Eggs",
+  "description": "A three-egg omelette with Grassmilk cheddar and soft onion, cooked in butter and folded once. Simple, fast, and built entirely on the eggs, cheese, and butter that pass the rules.",
+  "difficulty": "Easy",
+  "id": "cheddar-omelette",
+  "ingredients": [
+   {
+    "amount": "3 large",
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "item": "Vital Farms Organic Pasture-Raised Eggs",
+    "note": "only the Organic line passes"
+   },
+   {
+    "amount": "1.5 oz",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk Raw Cheddar, shredded"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Butter",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "item": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "amount": "0.25 cup",
+    "dbItem": "fresh onions",
+    "item": "Onion, finely diced"
+   },
+   {
+    "amount": "1 pinch",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 pinch",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Cheddar Omelette",
+  "nutrition": {
+   "calories": 525,
+   "carbs": 6,
+   "fat": 42,
+   "fiber": 1,
+   "protein": 31
+  },
+  "servings": 1,
+  "steps": [
+   "Whisk the eggs with the milk, salt, and pepper until the yolks and whites are fully combined and slightly frothy.",
+   "Melt the butter in an 8 or 10 inch nonstick or well-seasoned skillet over medium heat until it foams.",
+   "Add the onion and cook 2 minutes until soft and sweet, then spread it evenly across the pan.",
+   "Pour in the eggs. Let them sit 20 seconds, then gently push the set edges toward the center with a spatula, tilting the pan so loose egg flows into the gaps. Repeat for about 2 minutes, until the top is mostly set but still glossy.",
+   "Scatter the cheddar over one half, fold the other half over it, and slide the omelette onto a warm plate.",
+   "Rest 1 minute so the cheese melts through, then serve right away."
+  ],
+  "tags": [
+   "breakfast",
+   "quick",
+   "high-protein"
+  ],
+  "time": {
+   "cook": 8,
+   "prep": 5,
+   "total": 13
+  }
+ },
+ {
+  "category": "Seafood",
+  "description": "King Oscar sardines in water, lifted with a squeeze of lemon, a drizzle of California olive oil, and sharp raw onion. No cooking at all, just good fish treated simply.",
+  "difficulty": "Easy",
+  "id": "sardine-plate-lemon",
+  "ingredients": [
+   {
+    "amount": "2 cans (3.75 oz each), drained",
+    "dbItem": "King Oscar Skinless and Boneless Sardines in Water",
+    "item": "King Oscar Skinless and Boneless Sardines in Water"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "item": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "note": "only the 100% California bottle"
+   },
+   {
+    "amount": "1 lemon",
+    "dbItem": "lemons",
+    "item": "Lemon, half juiced and half cut in wedges"
+   },
+   {
+    "amount": "0.5 small",
+    "dbItem": "fresh onions",
+    "item": "Onion, sliced paper thin"
+   },
+   {
+    "amount": "0.25 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.25 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Sardine Plate with Lemon and Olive Oil",
+  "nutrition": {
+   "calories": 280,
+   "carbs": 5,
+   "fat": 21,
+   "fiber": 1,
+   "protein": 19
+  },
+  "servings": 2,
+  "steps": [
+   "Open the sardine cans and drain off the water. Lift the fillets out gently with a fork so they stay whole.",
+   "Arrange the sardines in a single layer on two plates or one shared platter.",
+   "Scatter the onion slices over the fish.",
+   "Drizzle the olive oil evenly over everything, then squeeze the lemon half over the top.",
+   "Finish with the sea salt and black pepper, set the lemon wedges alongside, and serve at once."
+  ],
+  "tags": [
+   "no-cook",
+   "quick",
+   "omega-3",
+   "lunch"
+  ],
+  "time": {
+   "cook": 0,
+   "prep": 10,
+   "total": 10
+  }
+ },
+ {
+  "category": "Seafood",
+  "description": "Wild salmon fillets baked low and steady with butter melting over the top and lemon slices underneath. The oven does the work and the fish stays moist.",
+  "difficulty": "Easy",
+  "id": "baked-wild-salmon-butter",
+  "ingredients": [
+   {
+    "amount": "2 fillets (6 oz each)",
+    "dbItem": "Salmon, wild",
+    "item": "Wild salmon fillets, skin on (sockeye or coho)",
+    "note": "wild-caught only, never farmed"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "Butter",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "1 lemon",
+    "dbItem": "lemons",
+    "item": "Lemon, sliced in rounds"
+   },
+   {
+    "amount": "2 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.25 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Baked Wild Salmon with Butter",
+  "nutrition": {
+   "calories": 325,
+   "carbs": 1,
+   "fat": 20,
+   "fiber": 0,
+   "protein": 38
+  },
+  "servings": 2,
+  "steps": [
+   "Heat the oven to 400\u00b0F (200\u00b0C). Line a baking dish or sheet pan with parchment if you have it.",
+   "Lay the lemon rounds in the dish and set the salmon fillets, skin side down, on top of them.",
+   "Season the salmon with salt and pepper, scatter the garlic over the top, and divide the butter in small pieces over each fillet.",
+   "Bake 12 to 15 minutes, until the salmon flakes at the thickest part and the center is just barely translucent, about 125\u00b0F (52\u00b0C) for medium.",
+   "Rest 3 minutes, spoon the melted lemon butter from the pan over the fish, and serve."
+  ],
+  "tags": [
+   "dinner",
+   "baked",
+   "omega-3",
+   "quick"
+  ],
+  "time": {
+   "cook": 15,
+   "prep": 10,
+   "total": 25
+  }
+ },
+ {
+  "category": "Seafood",
+  "description": "Canned wild sockeye salmon folded into mashed potato with egg as the binder, pan-fried in tallow until the edges go crisp. A pantry dinner that tastes like it took planning.",
+  "difficulty": "Medium",
+  "id": "salmon-potato-cakes",
+  "ingredients": [
+   {
+    "amount": "2 cans (6 oz each), drained",
+    "dbItem": "Wild Planet Wild Sockeye Salmon",
+    "item": "Wild Planet Wild Sockeye Salmon"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Potatoes, peeled and cut in chunks"
+   },
+   {
+    "amount": "2 large",
+    "dbItem": "Eggs",
+    "item": "OrgaNick Pastures organic pasture-raised eggs",
+    "note": "organic and pasture-raised only"
+   },
+   {
+    "amount": "0.5 medium",
+    "dbItem": "fresh onions",
+    "item": "Onion, finely diced"
+   },
+   {
+    "amount": "3 tbsp, for frying",
+    "dbItem": "Beef tallow",
+    "item": "Fatworks Grass-Fed Beef Tallow"
+   },
+   {
+    "amount": "1 lemon",
+    "dbItem": "lemons",
+    "item": "Lemon, cut in wedges"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Salmon and Potato Cakes",
+  "nutrition": {
+   "calories": 305,
+   "carbs": 21,
+   "fat": 14,
+   "fiber": 3,
+   "protein": 21
+  },
+  "servings": 4,
+  "steps": [
+   "Put the potatoes in a pot of cold salted water, bring to a boil, and cook 15 minutes until completely tender. Drain well and mash roughly in the pot so some small chunks remain. Let cool 10 minutes.",
+   "Flake the drained salmon into a large bowl, picking out any skin or large bones. Add the warm mashed potato, eggs, onion, salt, and pepper, and mix with a fork until it just holds together.",
+   "Divide the mixture into 8 portions and shape into patties about 3 inches wide and 0.75 inch thick. Chill 10 minutes if they feel soft.",
+   "Heat the tallow in a large skillet over medium-high heat until it shimmers.",
+   "Fry the cakes in batches, 4 to 5 minutes per side, until deep golden and crisp. Do not crowd the pan.",
+   "Drain briefly on a rack or paper, season with a pinch more salt, and serve hot with lemon wedges."
+  ],
+  "tags": [
+   "dinner",
+   "pantry",
+   "crispy",
+   "kid-friendly"
+  ],
+  "time": {
+   "cook": 15,
+   "prep": 20,
+   "total": 35
+  }
+ },
+ {
+  "category": "Wraps & Handhelds",
+  "description": "Wild Planet albacore dressed with olive oil, lemon, and diced onion instead of mayo, spooned into NUCO coconut wraps. Clean, bright, and ready in the time it takes to open two cans.",
+  "difficulty": "Easy",
+  "id": "tuna-salad-wraps",
+  "ingredients": [
+   {
+    "amount": "2 cans (5 oz each), with their juices",
+    "dbItem": "Wild Planet Wild Albacore Tuna and Sea Salt",
+    "item": "Wild Planet Wild Albacore Tuna and Sea Salt",
+    "note": "do not drain; the juices carry the flavor"
+   },
+   {
+    "amount": "4 wraps",
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "item": "NUCO Organic Coconut Wraps, Original"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "item": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "note": "only the 100% California bottle"
+   },
+   {
+    "amount": "1 lemon (about 2 tbsp juice)",
+    "dbItem": "lemons",
+    "item": "Lemon, juiced"
+   },
+   {
+    "amount": "0.25 cup",
+    "dbItem": "fresh onions",
+    "item": "Onion, finely diced"
+   },
+   {
+    "amount": "0.25 tsp, to taste",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.25 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Tuna Salad Coconut Wraps",
+  "nutrition": {
+   "calories": 460,
+   "carbs": 15,
+   "fat": 30,
+   "fiber": 4,
+   "protein": 35
+  },
+  "servings": 2,
+  "steps": [
+   "Tip the tuna and all its juices into a bowl and break it into large flakes with a fork. Leave it chunky.",
+   "Add the olive oil, lemon juice, diced onion, salt, and pepper, and fold gently until just combined. Taste and add a little more lemon or salt if it needs brightness.",
+   "Warm the coconut wraps for 10 to 15 seconds in a dry skillet or the microwave so they bend without cracking.",
+   "Divide the tuna salad among the 4 wraps, placing it in a line down the center of each.",
+   "Fold the sides in and roll up snugly. Serve right away, two wraps per person, before the wraps soften."
+  ],
+  "tags": [
+   "no-cook",
+   "lunch",
+   "wraps",
+   "quick"
+  ],
+  "time": {
+   "cook": 0,
+   "prep": 15,
+   "total": 15
+  }
+ },
+ {
+  "category": "Seafood",
+  "description": "Wild shrimp seared fast in butter with plenty of garlic and a squeeze of lemon at the end. Five minutes of cooking, and the pan sauce is worth spooning over everything.",
+  "difficulty": "Easy",
+  "id": "garlic-butter-shrimp",
+  "ingredients": [
+   {
+    "amount": "1 lb",
+    "dbItem": "Seafood / fish (wild-caught)",
+    "item": "Wild-caught shrimp, peeled and deveined",
+    "note": "wild-caught only"
+   },
+   {
+    "amount": "4 tbsp",
+    "dbItem": "Butter",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "6 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "1 lemon",
+    "dbItem": "lemons",
+    "item": "Lemon, half juiced and half in wedges"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.25 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Garlic Butter Shrimp",
+  "nutrition": {
+   "calories": 410,
+   "carbs": 4,
+   "fat": 27,
+   "fiber": 0,
+   "protein": 46
+  },
+  "servings": 2,
+  "steps": [
+   "Pat the shrimp very dry with towels; dry shrimp sear instead of steam. Season with the salt and pepper.",
+   "Melt 2 tablespoons of the butter in a large skillet over high heat until it foams and just starts to smell nutty.",
+   "Add the shrimp in a single layer and cook 1.5 to 2 minutes without moving them, until the undersides are pink and lightly golden.",
+   "Flip the shrimp, add the garlic and the remaining 2 tablespoons of butter, and cook 1 to 2 minutes more, swirling the pan, until the shrimp are just opaque and curled into a loose C.",
+   "Take the pan off the heat, squeeze in the lemon juice, and toss everything in the garlic butter.",
+   "Serve immediately with the lemon wedges and every drop of the pan sauce."
+  ],
+  "tags": [
+   "dinner",
+   "quick",
+   "skillet",
+   "high-protein"
+  ],
+  "time": {
+   "cook": 6,
+   "prep": 10,
+   "total": 16
+  }
+ },
+ {
+  "category": "Chicken & Eggs",
+  "description": "Organic bone-in thighs started skin down in a cold skillet with a little tallow, then finished in the oven. The slow render is what makes the skin shatter instead of chew.",
+  "difficulty": "Medium",
+  "id": "crispy-chicken-thighs",
+  "ingredients": [
+   {
+    "amount": "2.5 lb (about 8 thighs)",
+    "dbItem": "Chicken",
+    "item": "Smart Chicken Organic bone-in, skin-on chicken thighs",
+    "note": "certified organic"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Thousand Hills shelf-stable beef tallow"
+   },
+   {
+    "amount": "4 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, smashed"
+   },
+   {
+    "amount": "1.5 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Crispy Skin Chicken Thighs",
+  "nutrition": {
+   "calories": 530,
+   "carbs": 0,
+   "fat": 35,
+   "fiber": 0,
+   "protein": 50
+  },
+  "servings": 4,
+  "steps": [
+   "Heat the oven to 425\u00b0F (220\u00b0C). Pat the thighs completely dry and season the skin side well with salt and pepper.",
+   "Spread the tallow in a large cold cast iron or oven-safe skillet. Lay the thighs in skin side down and set the pan over medium heat.",
+   "Cook undisturbed 12 to 15 minutes while the fat renders and the skin turns deep golden. Resist moving them; the skin releases when it is ready.",
+   "Scatter the smashed garlic cloves into the rendered fat around the chicken.",
+   "Turn the thighs skin side up, transfer the skillet to the oven, and roast 15 to 18 minutes, until the thickest thigh reads 175\u00b0F (79\u00b0C) and the meat pulls easily from the bone.",
+   "Rest 5 minutes skin side up so the crust stays crisp, then serve with the garlic pan fat spooned over."
+  ],
+  "tags": [
+   "dinner",
+   "skillet",
+   "crispy",
+   "high-protein"
+  ],
+  "time": {
+   "cook": 40,
+   "prep": 10,
+   "total": 50
+  }
+ },
+ {
+  "category": "Chicken & Eggs",
+  "description": "Muffin-tin eggs baked over seasoned Thousand Hills ground beef with cheddar on top. They reheat well, which makes them the meal-prep breakfast of this whole set.",
+  "difficulty": "Easy",
+  "id": "egg-muffin-cups-beef",
+  "ingredients": [
+   {
+    "amount": "12 large",
+    "dbItem": "Eggs",
+    "item": "OrgaNick Pastures organic pasture-raised eggs",
+    "note": "organic and pasture-raised only"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
+    "item": "Thousand Hills Lifetime Grazed Ground Beef",
+    "note": "100% grass-fed and grass-finished"
+   },
+   {
+    "amount": "4 oz",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk Raw Cheddar, shredded"
+   },
+   {
+    "amount": "0.25 cup",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "item": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "amount": "0.5 medium",
+    "dbItem": "fresh onions",
+    "item": "Onion, finely diced"
+   },
+   {
+    "amount": "1 tsp, for greasing",
+    "dbItem": "Beef tallow",
+    "item": "Fatworks Grass-Fed Beef Tallow"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Baked Egg Cups with Ground Beef",
+  "nutrition": {
+   "calories": 395,
+   "carbs": 3,
+   "fat": 28,
+   "fiber": 0,
+   "protein": 32
+  },
+  "servings": 6,
+  "steps": [
+   "Heat the oven to 350\u00b0F (175\u00b0C). Grease a 12 cup muffin tin well with the tallow.",
+   "Brown the ground beef in a skillet over medium-high heat for 6 to 8 minutes, breaking it into small crumbles. Add the onion for the last 3 minutes. Season with half the salt and pepper, then drain off the excess fat.",
+   "Whisk the eggs with the milk and the remaining salt and pepper until uniform.",
+   "Divide the beef mixture among the muffin cups, then pour the egg mixture over the top of each, filling nearly to the rim.",
+   "Sprinkle the cheddar over each cup.",
+   "Bake 16 to 20 minutes, until the eggs are just set in the center and the tops are lightly puffed.",
+   "Cool 5 minutes in the tin, run a knife around each cup, and lift out. Serve warm; leftovers keep 3 days in the fridge and reheat in a 300\u00b0F (150\u00b0C) oven for 8 minutes."
+  ],
+  "tags": [
+   "breakfast",
+   "meal-prep",
+   "baked",
+   "high-protein"
+  ],
+  "time": {
+   "cook": 20,
+   "prep": 15,
+   "total": 35
+  }
+ },
+ {
+  "category": "Seafood",
+  "description": "A simple milk chowder with wild cod, potato, carrot, and onion, finished with butter. No flour and no cream needed; the potato does the thickening.",
+  "difficulty": "Medium",
+  "id": "fish-chowder",
+  "ingredients": [
+   {
+    "amount": "1.5 lb",
+    "dbItem": "Seafood / fish (wild-caught)",
+    "item": "Wild cod fillets, cut in large chunks",
+    "note": "wild-caught only; haddock or halibut also work"
+   },
+   {
+    "amount": "2 cups",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "item": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "amount": "2 cups",
+    "dbItem": "Spring water (glass bottle)",
+    "item": "Mountain Valley Spring Water"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Potatoes, peeled and diced small"
+   },
+   {
+    "amount": "2 medium (about 7 oz)",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, diced"
+   },
+   {
+    "amount": "1 medium",
+    "dbItem": "fresh onions",
+    "item": "Onion, diced"
+   },
+   {
+    "amount": "3 tbsp",
+    "dbItem": "Butter",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "2 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "1.5 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Wild Fish Chowder with Milk and Roots",
+  "nutrition": {
+   "calories": 415,
+   "carbs": 34,
+   "fat": 14,
+   "fiber": 4,
+   "protein": 37
+  },
+  "servings": 4,
+  "steps": [
+   "Melt the butter in a large pot over medium heat. Add the onion and carrots and cook 5 minutes until the onion softens.",
+   "Stir in the garlic for 30 seconds, then add the potatoes, spring water, and 1 teaspoon of the salt.",
+   "Simmer gently 12 to 15 minutes, until the potatoes are tender. Lightly mash a few pieces against the side of the pot to thicken the broth.",
+   "Pour in the milk and warm it through on low heat for 3 minutes. Do not let it boil or the milk can split.",
+   "Season the cod chunks with the remaining salt and pepper, nestle them into the chowder, cover, and simmer on the lowest heat 6 to 8 minutes, until the fish flakes easily.",
+   "Rest off the heat 5 minutes, taste for salt, and ladle into bowls, making sure each serving gets fish, vegetables, and plenty of broth."
+  ],
+  "tags": [
+   "soup",
+   "dinner",
+   "chowder",
+   "comfort"
+  ],
+  "time": {
+   "cook": 30,
+   "prep": 15,
+   "total": 45
+  }
+ },
+ {
+  "category": "Pasta & Grains",
+  "description": "Soaked white rice stir-fried in tallow with organic chicken, egg ribbons, carrot, and onion. There is no soy sauce in this system, so sea salt, hot fat, and constant motion do the seasoning work, and it still lands.",
+  "difficulty": "Medium",
+  "id": "chicken-egg-fried-rice",
+  "ingredients": [
+   {
+    "amount": "1.5 cups dry",
+    "dbItem": "White rice",
+    "item": "White rice",
+    "note": "soaked 8 to 12 hours, drained, cooked, and cooled before frying"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Chicken",
+    "item": "Smart Chicken Organic boneless skinless chicken breast, cut in small strips",
+    "note": "certified organic"
+   },
+   {
+    "amount": "3 large",
+    "dbItem": "Eggs",
+    "item": "OrgaNick Pastures organic pasture-raised eggs",
+    "note": "organic and pasture-raised only"
+   },
+   {
+    "amount": "3 tbsp, divided",
+    "dbItem": "Beef tallow",
+    "item": "Fatworks Grass-Fed Beef Tallow"
+   },
+   {
+    "amount": "1 medium",
+    "dbItem": "Root vegetables",
+    "item": "Carrot, finely diced"
+   },
+   {
+    "amount": "1 medium",
+    "dbItem": "fresh onions",
+    "item": "Onion, finely diced"
+   },
+   {
+    "amount": "3 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "1.5 tsp, divided",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Chicken and Egg Fried Rice",
+  "nutrition": {
+   "calories": 555,
+   "carbs": 62,
+   "fat": 17,
+   "fiber": 2,
+   "protein": 36
+  },
+  "servings": 4,
+  "steps": [
+   "The night before, soak the rice 8 to 12 hours. Drain, cook it in fresh water until just tender, spread it on a tray, and chill at least 1 hour; cold, dry rice fries instead of steaming.",
+   "Season the chicken strips with 0.5 teaspoon of the salt and the pepper.",
+   "Heat 1 tablespoon of the tallow in a large wok or skillet over high heat until it shimmers. Stir-fry the chicken 4 to 5 minutes until cooked through and lightly browned. Move it to a plate.",
+   "Add another tablespoon of tallow and pour in the beaten eggs. Swirl and scramble for 1 minute into soft ribbons, then move them to the plate with the chicken.",
+   "Add the last tablespoon of tallow, then the carrot and onion. Stir-fry 3 minutes until the edges take color. Add the garlic for the final 30 seconds.",
+   "Add the cold rice and the remaining 1 teaspoon of salt. Toss and press the rice against the hot pan in batches for 4 to 5 minutes, until grains are hot, separate, and lightly toasted in spots.",
+   "Fold the chicken and egg back in, toss 1 minute to heat through, taste for salt, and serve immediately."
+  ],
+  "tags": [
+   "dinner",
+   "stir-fry",
+   "rice",
+   "one-pan"
+  ],
+  "time": {
+   "cook": 20,
+   "prep": 20,
+   "total": 40
+  }
+ },
+ {
+  "category": "Chicken & Eggs",
+  "description": "A casserole of pasture eggs, ground pork, and sweet potato under a cheddar top, baked the night before and sliced for breakfasts all week. It eats like a farmhouse frittata in a baking dish.",
+  "difficulty": "Easy",
+  "id": "breakfast-egg-bake-pork",
+  "ingredients": [
+   {
+    "amount": "10 large",
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "item": "Vital Farms Organic Pasture-Raised Eggs",
+    "note": "only the Organic line passes"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Pork",
+    "item": "Ground pork"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Root vegetables",
+    "item": "Sweet potatoes, peeled and diced small"
+   },
+   {
+    "amount": "1 cup",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "item": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "amount": "6 oz",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk Raw Cheddar, shredded"
+   },
+   {
+    "amount": "1 medium",
+    "dbItem": "fresh onions",
+    "item": "Onion, diced"
+   },
+   {
+    "amount": "1 tbsp, for the dish",
+    "dbItem": "Butter",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "2 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Breakfast Egg Bake with Pork",
+  "nutrition": {
+   "calories": 550,
+   "carbs": 20,
+   "fat": 37,
+   "fiber": 3,
+   "protein": 33
+  },
+  "servings": 6,
+  "steps": [
+   "Heat the oven to 375\u00b0F (190\u00b0C). Butter a 9 by 13 inch baking dish.",
+   "Brown the pork in a large skillet over medium-high heat for 7 to 9 minutes, breaking it up well. Add the onion and garlic for the last 3 minutes. Drain the fat and season with half the salt and pepper.",
+   "Spread the diced sweet potato in the baking dish, then spoon the pork mixture evenly over it.",
+   "Whisk the eggs with the milk and the remaining salt and pepper, and pour the mixture over the dish, tilting it so the egg reaches every corner.",
+   "Scatter the cheddar over the top.",
+   "Bake 30 to 35 minutes, until the center is set and no longer jiggles and the cheese is golden in spots.",
+   "Rest 10 minutes, then slice into 6 squares. Serve warm; leftovers reheat well at 325\u00b0F (165\u00b0C) for 10 minutes."
+  ],
+  "tags": [
+   "breakfast",
+   "casserole",
+   "meal-prep",
+   "baked"
+  ],
+  "time": {
+   "cook": 40,
+   "prep": 15,
+   "total": 55
+  }
+ },
+ {
+  "category": "Seafood",
+  "description": "Wild salmon seared hard in a hot pan for crisp skin, then finished with a lemon garlic butter sauce made in the same pan. Faster and more sauce-led than the baked version.",
+  "difficulty": "Medium",
+  "id": "salmon-lemon-butter",
+  "ingredients": [
+   {
+    "amount": "2 fillets (6 oz each)",
+    "dbItem": "Salmon, wild",
+    "item": "Wild salmon fillets, skin on (sockeye or coho)",
+    "note": "wild-caught only, never farmed"
+   },
+   {
+    "amount": "3 tbsp",
+    "dbItem": "Butter",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "1 lemon (about 2 tbsp juice)",
+    "dbItem": "lemons",
+    "item": "Lemon, juiced, plus extra wedges to serve"
+   },
+   {
+    "amount": "2 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "1 tsp, for the pan",
+    "dbItem": "Beef tallow",
+    "item": "Fatworks Grass-Fed Beef Tallow"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.25 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Salmon with Lemon Butter",
+  "nutrition": {
+   "calories": 385,
+   "carbs": 2,
+   "fat": 26,
+   "fiber": 0,
+   "protein": 38
+  },
+  "servings": 2,
+  "steps": [
+   "Pat the salmon fillets completely dry, especially the skin, and season the flesh side with salt and pepper. Dry skin is the whole trick to a crisp sear.",
+   "Heat a heavy skillet over medium-high heat and add the tallow. When it shimmers, lay the fillets in skin side down and press each one gently for 10 seconds so the skin makes full contact.",
+   "Cook skin side down 6 to 7 minutes without moving the fish, until the skin is crisp and the salmon is cooked two thirds of the way up the side.",
+   "Flip and cook 30 to 60 seconds on the flesh side, then move the fillets to warm plates, skin side up.",
+   "Lower the heat, add the butter and garlic to the same pan, and swirl 1 minute until the butter foams and the garlic is fragrant but not brown.",
+   "Take the pan off the heat, whisk in the lemon juice, and spoon the lemon butter over the salmon. Serve with extra lemon wedges."
+  ],
+  "tags": [
+   "dinner",
+   "seared",
+   "skillet",
+   "quick"
+  ],
+  "time": {
+   "cook": 12,
+   "prep": 10,
+   "total": 22
+  }
+ },
+ {
+  "category": "Wraps & Handhelds",
+  "description": "Warm sliced organic chicken and a full container of Wholly Guacamole rolled into NUCO coconut wraps with onion and lemon. The guacamole is the sauce, so nothing else is needed.",
+  "difficulty": "Easy",
+  "id": "chicken-guacamole-wrap",
+  "ingredients": [
+   {
+    "amount": "12 oz",
+    "dbItem": "Chicken",
+    "item": "Smart Chicken Organic boneless skinless chicken breasts",
+    "note": "certified organic"
+   },
+   {
+    "amount": "1 container (7.5 oz)",
+    "dbItem": "Wholly Guacamole Classic Guacamole, Mild, 7.5 oz",
+    "item": "Wholly Guacamole Classic Guacamole, Mild"
+   },
+   {
+    "amount": "4 wraps",
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "item": "NUCO Organic Coconut Wraps, Original"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Fatworks Grass-Fed Beef Tallow"
+   },
+   {
+    "amount": "0.25 medium",
+    "dbItem": "fresh onions",
+    "item": "Onion, sliced thin"
+   },
+   {
+    "amount": "0.5 lemon (about 1 tbsp juice)",
+    "dbItem": "lemons",
+    "item": "Lemon, juiced"
+   },
+   {
+    "amount": "1 clove",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "0.75 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.5 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Chicken and Guacamole Coconut Wrap",
+  "nutrition": {
+   "calories": 530,
+   "carbs": 25,
+   "fat": 32,
+   "fiber": 11,
+   "protein": 45
+  },
+  "servings": 2,
+  "steps": [
+   "Season the chicken breasts with the salt, pepper, and garlic. For even cooking, pound or butterfly them to an even 0.75 inch thickness.",
+   "Heat the tallow in a skillet over medium-high heat and sear the chicken 5 to 6 minutes per side, until golden and the center reads 165\u00b0F (74\u00b0C).",
+   "Rest the chicken 5 minutes, then slice it thin across the grain.",
+   "Stir the lemon juice into the guacamole; it brightens the flavor and slows browning.",
+   "Warm the coconut wraps 10 to 15 seconds in a dry skillet so they bend without cracking.",
+   "Spread a quarter of the guacamole down the center of each wrap, add the onion slices and a quarter of the chicken, fold the sides in, and roll up.",
+   "Serve right away, two wraps per person."
+  ],
+  "tags": [
+   "lunch",
+   "wraps",
+   "quick",
+   "high-protein"
+  ],
+  "time": {
+   "cook": 12,
+   "prep": 10,
+   "total": 22
+  }
+ },
+ {
+  "category": "Chicken & Eggs",
+  "description": "Ground turkey crisped with sweet potato and carrot in tallow, with eggs cracked into wells on top and covered until just set. A full breakfast or a fast dinner from one skillet.",
+  "difficulty": "Easy",
+  "id": "turkey-egg-hash",
+  "ingredients": [
+   {
+    "amount": "1 lb",
+    "dbItem": "Turkey",
+    "item": "Ground turkey"
+   },
+   {
+    "amount": "1.5 lb",
+    "dbItem": "Root vegetables",
+    "item": "Sweet potatoes, peeled and diced small"
+   },
+   {
+    "amount": "2 medium (about 7 oz)",
+    "dbItem": "Root vegetables",
+    "item": "Carrots, diced"
+   },
+   {
+    "amount": "4 large",
+    "dbItem": "Eggs",
+    "item": "OrgaNick Pastures organic pasture-raised eggs",
+    "note": "organic and pasture-raised only"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "Beef tallow",
+    "item": "Fatworks Grass-Fed Beef Tallow"
+   },
+   {
+    "amount": "1 medium",
+    "dbItem": "fresh onions",
+    "item": "Onion, diced"
+   },
+   {
+    "amount": "3 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Garlic cloves, minced"
+   },
+   {
+    "amount": "1.5 tsp",
+    "dbItem": "plain sea salt",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "0.75 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Turkey and Egg Root Vegetable Hash",
+  "nutrition": {
+   "calories": 480,
+   "carbs": 43,
+   "fat": 21,
+   "fiber": 7,
+   "protein": 31
+  },
+  "servings": 4,
+  "steps": [
+   "Heat the tallow in a large cast iron skillet over medium-high heat. Add the sweet potatoes and carrots in a single layer and cook 10 to 12 minutes, stirring only every few minutes, until the edges brown and the centers are nearly tender.",
+   "Push the vegetables to the edges, add the ground turkey to the center, and break it into crumbles. Cook 6 to 8 minutes until no longer pink and starting to crisp in spots.",
+   "Stir everything together with the onion and garlic and cook 3 minutes more. Season with the salt and pepper.",
+   "Spread the hash evenly and make 4 small wells in it. Crack an egg into each well.",
+   "Cover the skillet and cook on low 4 to 6 minutes, until the whites are set and the yolks are as runny or firm as you like.",
+   "Serve straight from the skillet, one egg and a quarter of the hash per person."
+  ],
+  "tags": [
+   "breakfast",
+   "hash",
+   "one-pan",
+   "dinner"
+  ],
+  "time": {
+   "cook": 25,
+   "prep": 15,
+   "total": 40
+  }
+ },
+ {
+  "category": "Pasta & Grains",
+  "description": "A stovetop mac and cheese built on red lentil penne instead of wheat pasta, with a real cheddar sauce made from grass-fed milk and butter. The lentil pasta makes it higher in protein and fiber than the boxed kind.",
+  "difficulty": "Medium",
+  "id": "homemade-mac-and-cheese",
+  "ingredients": [
+   {
+    "amount": "12 oz",
+    "dbItem": "Felicia Organic Red Lentil Penne, 8 oz",
+    "item": "Felicia Organic Red Lentil Penne, 100% lentil box",
+    "note": "Check the box: only the 100% lentil version, not the brown rice blend"
+   },
+   {
+    "amount": "8 oz",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk Raw Cheddar Cheese, grated"
+   },
+   {
+    "amount": "4 tbsp",
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "1 cup",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "item": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "amount": "1 tsp, plus more for the pasta water",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   }
+  ],
+  "name": "Homemade Mac and Cheese",
+  "nutrition": {
+   "calories": 670,
+   "carbs": 56,
+   "fat": 35,
+   "fiber": 8,
+   "protein": 37
+  },
+  "servings": 4,
+  "steps": [
+   "Bring a large pot of well salted water to a rolling boil. Grate the cheddar while the water heats and set it aside at room temperature; cold cheese melts grainy.",
+   "Cook the lentil penne 1 minute less than the box directs, usually 7 to 8 minutes. Lentil pasta foams and softens fast, so watch it closely near the end.",
+   "Before draining, scoop out 1 cup of the hot pasta water. Drain the penne and set it aside.",
+   "Return the empty pot to low heat and melt the butter. Pour in the milk and warm it gently for 2 to 3 minutes until steaming but not boiling.",
+   "Take the pot off the heat. Add the grated cheddar a handful at a time, stirring until each handful melts before adding the next. Boiling the sauce at this point can split it.",
+   "If the sauce is thicker than you like, stir in the reserved pasta water a splash at a time until it coats a spoon.",
+   "Fold the drained penne into the sauce, season with the sea salt, and stir for 1 minute over low heat so the pasta finishes in the sauce.",
+   "Rest 2 minutes off the heat and serve. The sauce thickens as it stands, so serve it a little looser than you think it should be."
+  ],
+  "tags": [
+   "vegetarian",
+   "kid friendly",
+   "comfort food",
+   "high protein"
+  ],
+  "time": {
+   "cook": 20,
+   "prep": 10,
+   "total": 30
+  }
+ },
+ {
+  "category": "Pasta & Grains",
+  "description": "Italian shell pasta simmered with grass-fed ground beef and a clean label marinara. The beef browns first and the sauce finishes in the same pan, so it tastes like a long cooked ragu in about half an hour.",
+  "difficulty": "Easy",
+  "id": "conchiglie-beef-ragu",
+  "ingredients": [
+   {
+    "amount": "12 oz",
+    "dbItem": "Mediterranean bread and pasta (quality, Italy/France)",
+    "item": "Montebello Organic Conchiglie"
+   },
+   {
+    "amount": "1 lb",
+    "dbItem": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
+    "item": "Thousand Hills Lifetime Grazed Ground Beef"
+   },
+   {
+    "amount": "1 jar (24 oz)",
+    "dbItem": "Rao's Homemade Marinara Sauce",
+    "item": "Rao's Homemade Marinara Sauce"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "item": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "note": "Only the 100% California bottle, not the Global Blend"
+   },
+   {
+    "amount": "1 medium",
+    "dbItem": "fresh onions",
+    "item": "Fresh onion, diced"
+   },
+   {
+    "amount": "3 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic, minced"
+   },
+   {
+    "amount": "1 tsp, plus more for the pasta water",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Conchiglie with Beef Ragu",
+  "nutrition": {
+   "calories": 765,
+   "carbs": 73,
+   "fat": 34,
+   "fiber": 4,
+   "protein": 36
+  },
+  "servings": 4,
+  "steps": [
+   "Heat a large skillet over medium high heat and add the olive oil. Add the diced onion and cook 4 to 5 minutes until soft and translucent.",
+   "Add the ground beef, breaking it into small crumbles. Cook 7 to 8 minutes until well browned in spots; browning is where the ragu flavor comes from.",
+   "Stir in the garlic, sea salt, and black pepper and cook 30 seconds until fragrant.",
+   "Pour in the whole jar of marinara, reduce the heat to low, and simmer 15 minutes, stirring now and then, while you cook the pasta.",
+   "Meanwhile, boil the conchiglie in well salted water until just shy of done, about 9 to 10 minutes. Reserve 1/2 cup of the pasta water before draining.",
+   "Add the drained conchiglie to the skillet with a splash of the pasta water and toss over low heat for 1 to 2 minutes so the shells catch the sauce.",
+   "Rest 2 minutes and serve in warm bowls."
+  ],
+  "tags": [
+   "beef",
+   "italian",
+   "weeknight",
+   "high protein"
+  ],
+  "time": {
+   "cook": 30,
+   "prep": 10,
+   "total": 40
+  }
+ },
+ {
+  "category": "Pasta & Grains",
+  "description": "The simplest pasta on the site: red lentil penne tossed in warm garlic olive oil with a shower of grated cheddar. Six ingredients, one pot, and the garlic never sees high heat, so it stays sweet instead of bitter.",
+  "difficulty": "Easy",
+  "id": "lentil-penne-aglio-olio",
+  "ingredients": [
+   {
+    "amount": "12 oz",
+    "dbItem": "Felicia Organic Red Lentil Penne, 8 oz",
+    "item": "Felicia Organic Red Lentil Penne, 100% lentil box"
+   },
+   {
+    "amount": "1/3 cup",
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "item": "California Olive Ranch 100% California Extra Virgin Olive Oil"
+   },
+   {
+    "amount": "6 cloves",
+    "dbItem": "fresh garlic",
+    "item": "Fresh garlic, thinly sliced"
+   },
+   {
+    "amount": "2 oz",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk Raw Cheddar Cheese, finely grated"
+   },
+   {
+    "amount": "1 tsp, plus more for the pasta water",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Lentil Penne with Olive Oil and Garlic",
+  "nutrition": {
+   "calories": 510,
+   "carbs": 52,
+   "fat": 23,
+   "fiber": 8,
+   "protein": 25
+  },
+  "servings": 4,
+  "steps": [
+   "Bring a large pot of well salted water to a boil and cook the penne 1 minute less than the box directs, about 7 to 8 minutes.",
+   "While the pasta cooks, put the olive oil and sliced garlic in a cold large skillet. Warm over the lowest heat for 4 to 5 minutes, swirling often, until the garlic turns pale gold at the edges. Do not let it brown.",
+   "Reserve 1 cup of pasta water, then drain the penne.",
+   "Add the penne to the skillet with 1/2 cup of the pasta water. Toss over medium heat for 1 to 2 minutes until the oil emulsifies into a glossy coating.",
+   "Take the skillet off the heat and toss in the grated cheddar and black pepper.",
+   "Taste for salt, rest 1 minute, and serve right away. Lentil pasta firms up as it cools, so this one goes straight to the table."
+  ],
+  "tags": [
+   "vegetarian",
+   "quick",
+   "garlic",
+   "pantry"
+  ],
+  "time": {
+   "cook": 15,
+   "prep": 5,
+   "total": 20
+  }
+ },
+ {
+  "category": "Sweets & Snacks",
+  "description": "Flourless peanut butter cookies sweetened with raw honey instead of sugar. They bake up soft and chewy with crisp edges, and the fork crosshatch helps them cook evenly because the dough is dense.",
+  "difficulty": "Easy",
+  "id": "honey-pb-cookies",
+  "ingredients": [
+   {
+    "amount": "1 cup",
+    "dbItem": "Smucker's Organic Creamy Peanut Butter",
+    "item": "Smucker's Organic Creamy Peanut Butter",
+    "note": "The stir kind, not the No Stir version"
+   },
+   {
+    "amount": "1/2 cup",
+    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
+    "item": "Nate's Raw & Unfiltered Honey"
+   },
+   {
+    "amount": "1 large",
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "item": "Organic pasture-raised egg"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "baking soda (sodium bicarbonate)",
+    "item": "Baking soda"
+   },
+   {
+    "amount": "1/4 tsp",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "vanilla extract",
+    "item": "Vanilla extract",
+    "note": "Real extract, never imitation"
+   }
+  ],
+  "name": "Honey Peanut Butter Cookies",
+  "nutrition": {
+   "calories": 218,
+   "carbs": 28,
+   "fat": 11,
+   "fiber": 2,
+   "protein": 6
+  },
+  "servings": 12,
+  "steps": [
+   "Heat the oven to 325 degrees F. Honey browns faster than sugar, so these bake a little cooler than a standard cookie. Line a baking sheet with parchment.",
+   "Stir the peanut butter and honey together in a bowl until completely smooth.",
+   "Beat in the egg, vanilla, baking soda, and sea salt until the dough looks glossy and holds together.",
+   "Chill the dough for 20 minutes. Honey doughs are soft and spread more than sugar doughs, and chilling keeps the cookies thick.",
+   "Scoop 12 balls of dough, about 1 1/2 tablespoons each, and space them 2 inches apart on the sheet.",
+   "Flatten each ball with the back of a fork in a crosshatch pattern, dipping the fork in water between cookies so it does not stick.",
+   "Bake 9 to 11 minutes, until the edges are set and lightly golden. The centers will look slightly underdone; that is right for a chewy cookie.",
+   "Cool on the pan for 10 minutes before moving them. Flourless cookies are fragile while hot and firm up as they cool."
+  ],
+  "tags": [
+   "cookies",
+   "flourless",
+   "kid friendly",
+   "honey sweetened"
+  ],
+  "time": {
+   "cook": 10,
+   "prep": 10,
+   "total": 20
+  }
+ },
+ {
+  "category": "Sweets & Snacks",
+  "description": "A soft frosted sugar cookie rebuilt without sugar: raw honey in the dough and the frosting, and crushed freeze-dried strawberries on top where sprinkles would normally go. The frosting stays soft and glossy instead of setting hard like a powdered sugar cap.",
+  "difficulty": "Medium",
+  "id": "honey-sugar-cookies",
+  "ingredients": [
+   {
+    "amount": "2 1/4 cups",
+    "dbItem": "organic wheat flour (unenriched)",
+    "item": "King Arthur Organic All-Purpose Flour",
+    "note": "Certified organic, unenriched and unbleached"
+   },
+   {
+    "amount": "1 cup total (1/2 cup dough, 1/2 cup frosting)",
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "item": "Kriemhild Dairy Meadow Butter, salted, softened"
+   },
+   {
+    "amount": "1 cup total (2/3 cup dough, 1/3 cup frosting)",
+    "dbItem": "raw honey",
+    "item": "Raw honey"
+   },
+   {
+    "amount": "1 egg and 1 yolk",
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "item": "Organic pasture-raised egg, plus 1 yolk"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "vanilla extract",
+    "item": "McCormick Pure Vanilla Extract",
+    "note": "Pure extract, never imitation"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "baking soda (sodium bicarbonate)",
+    "item": "Baking soda"
+   },
+   {
+    "amount": "1/2 tsp, plus a pinch for the frosting",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "2 tbsp, for the frosting",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "item": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "amount": "1 oz bag, crushed",
+    "dbItem": "Brothers All Natural Freeze Dried Strawberry Fruit Crisps, 1 oz",
+    "item": "Brothers All Natural Freeze Dried Strawberry Fruit Crisps",
+    "note": "The topping in place of sprinkles"
+   }
+  ],
+  "name": "Honey Sugar Cookies with Strawberry Frosting",
+  "nutrition": {
+   "calories": 324,
+   "carbs": 42,
+   "fat": 16,
+   "fiber": 1,
+   "protein": 3
+  },
+  "servings": 12,
+  "steps": [
+   "Beat 1/2 cup softened butter with 2/3 cup honey until pale and fluffy, about 2 minutes. Beat in the egg, the extra yolk, and the vanilla.",
+   "Whisk the flour, baking soda, and salt in a separate bowl, then stir it into the butter mixture until just combined.",
+   "Chill the dough for at least 1 hour. Honey dough spreads much more than sugar dough, and cold dough is the difference between a thick soft cookie and a puddle.",
+   "Heat the oven to 350 degrees F and line two baking sheets with parchment.",
+   "Scoop the dough into 24 balls, about 1 1/2 tablespoons each, spaced 2 inches apart.",
+   "Bake 8 to 10 minutes, rotating the pans halfway, until the edges are set and the centers look pale and just barely done. Pull them early rather than late; they finish on the hot pan.",
+   "Cool the cookies on the pan for 5 minutes, then move them to a rack to cool completely before frosting.",
+   "For the frosting, whip 1/2 cup softened butter with 1/3 cup honey, the milk, and a pinch of salt until fluffy, about 2 minutes. Spread generously on each cooled cookie.",
+   "Crush the freeze-dried strawberries with your fingers and scatter them over the wet frosting. Serve the same day for the softest texture."
+  ],
+  "tags": [
+   "cookies",
+   "frosted",
+   "honey sweetened",
+   "party"
+  ],
+  "time": {
+   "cook": 10,
+   "prep": 25,
+   "total": 35
+  }
+ },
+ {
+  "category": "Sweets & Snacks",
+  "description": "Two ingredient no-bake bars in the style of a cashew cookie Larabar: dates ground into a paste that binds chopped cashews. No oven, no added sweetener, because the dates do all of that work.",
+  "difficulty": "Easy",
+  "id": "date-cashew-bars",
+  "ingredients": [
+   {
+    "amount": "1 1/2 cups (about 260 g)",
+    "dbItem": "dates",
+    "item": "Pitted dates",
+    "note": "If the dates are dry, soak them in warm water for 10 minutes and drain well"
+   },
+   {
+    "amount": "1 1/2 cups (about 200 g)",
+    "dbItem": "cashews",
+    "item": "Raw cashews"
+   },
+   {
+    "amount": "1/4 tsp",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   }
+  ],
+  "name": "Date and Cashew Bars",
+  "nutrition": {
+   "calories": 228,
+   "carbs": 32,
+   "fat": 11,
+   "fiber": 3,
+   "protein": 5
+  },
+  "servings": 8,
+  "steps": [
+   "Line an 8 inch square pan or a loaf pan with parchment, leaving overhang on two sides so the slab lifts out.",
+   "Pulse the cashews in a food processor until they are coarse crumbs with a few pea sized pieces left. Move them to a bowl.",
+   "Process the dates and sea salt into a thick, sticky paste, scraping the sides once or twice. It should clump together when pressed.",
+   "Add the cashew crumbs back in and pulse 4 to 5 times, just until the mixture holds together in one mass. Over processing turns it oily.",
+   "Press the mixture firmly and evenly into the lined pan with damp hands or the bottom of a measuring cup.",
+   "Refrigerate at least 1 hour, then lift the slab out and cut into 8 bars.",
+   "Store the bars in the refrigerator for up to 2 weeks, or freeze them for up to 3 months."
+  ],
+  "tags": [
+   "no bake",
+   "snack bars",
+   "two ingredient base",
+   "meal prep"
+  ],
+  "time": {
+   "cook": 0,
+   "prep": 15,
+   "total": 15
+  }
+ },
+ {
+  "category": "Sweets & Snacks",
+  "description": "Frozen banana coins sandwiched with honey peanut butter. They eat like little ice cream sandwiches straight from the freezer, and they are the fastest dessert on the site.",
+  "difficulty": "Easy",
+  "id": "pb-banana-bites",
+  "ingredients": [
+   {
+    "amount": "2 large",
+    "dbItem": "Whole fruit",
+    "item": "Ripe bananas",
+    "note": "Firm ripe, not mushy, so the coins hold their shape"
+   },
+   {
+    "amount": "1/2 cup",
+    "dbItem": "Smucker's Organic Creamy Peanut Butter",
+    "item": "Smucker's Organic Creamy Peanut Butter"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "raw honey",
+    "item": "Raw honey"
+   }
+  ],
+  "name": "Peanut Butter Banana Bites",
+  "nutrition": {
+   "calories": 259,
+   "carbs": 25,
+   "fat": 16,
+   "fiber": 5,
+   "protein": 9
+  },
+  "servings": 4,
+  "steps": [
+   "Stir the peanut butter and honey together until smooth. If the peanut butter is stiff from the refrigerator, let it sit at room temperature for 15 minutes first.",
+   "Peel the bananas and slice them into coins about 1/2 inch thick. You should get roughly 24 coins.",
+   "Spread about 1 teaspoon of the peanut butter mixture onto half of the coins.",
+   "Top each one with a second banana coin and press gently to make a sandwich.",
+   "Arrange the bites on a parchment lined plate or small tray in a single layer.",
+   "Freeze for at least 2 hours, until firm all the way through.",
+   "Serve straight from the freezer. Let them sit 2 to 3 minutes at room temperature if you want a softer bite.",
+   "Store leftovers in a sealed container in the freezer for up to 1 month."
+  ],
+  "tags": [
+   "frozen",
+   "no bake",
+   "kid friendly",
+   "banana"
+  ],
+  "time": {
+   "cook": 0,
+   "prep": 15,
+   "total": 15
+  }
+ },
+ {
+  "category": "Sweets & Snacks",
+  "description": "Whole apples baked until they slump, filled with honey butter and chopped cashews. The butter and honey melt down into the centers and make their own sauce in the dish.",
+  "difficulty": "Easy",
+  "id": "baked-apples-honey-butter",
+  "ingredients": [
+   {
+    "amount": "4 large",
+    "dbItem": "Whole fruit",
+    "item": "Whole apples, firm baking variety"
+   },
+   {
+    "amount": "4 tbsp",
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "item": "Kriemhild Dairy Meadow Butter, salted, melted"
+   },
+   {
+    "amount": "1/4 cup",
+    "dbItem": "raw honey",
+    "item": "Raw honey"
+   },
+   {
+    "amount": "1/2 cup",
+    "dbItem": "cashews",
+    "item": "Raw cashews, roughly chopped"
+   },
+   {
+    "amount": "1 pinch",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   }
+  ],
+  "name": "Baked Apples with Honey Butter and Cashews",
+  "nutrition": {
+   "calories": 348,
+   "carbs": 48,
+   "fat": 19,
+   "fiber": 5,
+   "protein": 4
+  },
+  "servings": 4,
+  "steps": [
+   "Heat the oven to 375 degrees F. Stand the apples in a small baking dish that holds them snugly.",
+   "Cut the top cone out of each apple and scoop out the core and seeds with a spoon or melon baller, leaving the bottom 1/2 inch intact so the filling stays in.",
+   "Stir the melted butter, honey, and sea salt together, then fold in the chopped cashews.",
+   "Spoon the cashew mixture evenly into the hollowed apples, packing it down gently. Pour 1/2 cup of water into the bottom of the dish so the apples steam as they bake.",
+   "Cover the dish loosely with a lid or a sheet of parchment and bake 25 minutes.",
+   "Uncover and bake 12 to 15 minutes more, until the apples are soft enough to yield to a spoon and the tops are golden.",
+   "Rest 5 minutes, then serve warm with the pan juices spooned over the top."
+  ],
+  "tags": [
+   "baked fruit",
+   "fall",
+   "gluten free",
+   "dessert"
+  ],
+  "time": {
+   "cook": 40,
+   "prep": 10,
+   "total": 50
+  }
+ },
+ {
+  "category": "Pasta & Grains",
+  "description": "A gentle stovetop rice pudding made with soaked white rice, the traditional preparation the rulebook prefers for grains. The honey goes in at the end, off the heat, so its flavor stays intact.",
+  "difficulty": "Easy",
+  "id": "rice-pudding-honey",
+  "ingredients": [
+   {
+    "amount": "1 cup dry",
+    "dbItem": "White rice",
+    "item": "White rice, soaked 8 hours or overnight and drained",
+    "note": "White rice only, never brown rice; soaking is the traditional preparation"
+   },
+   {
+    "amount": "3 cups, plus the soaking water discarded",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "item": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "amount": "1/3 cup",
+    "dbItem": "raw honey",
+    "item": "Raw honey"
+   },
+   {
+    "amount": "1 large",
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "item": "Organic pasture-raised egg, beaten"
+   },
+   {
+    "amount": "1 tsp",
+    "dbItem": "vanilla extract",
+    "item": "Vanilla extract"
+   },
+   {
+    "amount": "1/4 tsp",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   }
+  ],
+  "name": "Soaked Rice Pudding with Honey",
+  "nutrition": {
+   "calories": 385,
+   "carbs": 69,
+   "fat": 8,
+   "fiber": 0,
+   "protein": 11
+  },
+  "servings": 4,
+  "steps": [
+   "The night before, cover the rice with warm water by 2 inches and soak 8 hours or overnight. Drain and rinse before cooking.",
+   "Combine the soaked rice, milk, and sea salt in a heavy saucepan. Bring to a bare simmer over medium heat, stirring so the rice does not catch on the bottom.",
+   "Reduce the heat to low and cook 25 to 30 minutes, stirring every few minutes, until the rice is completely tender and the pudding has thickened to a loose porridge.",
+   "Whisk a ladle of the hot pudding into the beaten egg to warm it, then stir the egg mixture back into the pot. Cook 2 minutes more over low heat, stirring constantly, without letting it boil.",
+   "Take the pot off the heat and stir in the honey and vanilla. Adding the honey off the heat keeps its raw flavor from cooking flat.",
+   "Rest 5 minutes. The pudding keeps thickening as it cools, so stop while it still looks slightly loose.",
+   "Serve warm, or chill at least 2 hours and serve cold with an extra drizzle of honey."
+  ],
+  "tags": [
+   "pudding",
+   "make ahead",
+   "comfort food",
+   "honey sweetened"
+  ],
+  "time": {
+   "cook": 35,
+   "prep": 10,
+   "total": 45
+  }
+ },
+ {
+  "category": "Pasta & Grains",
+  "description": "A simple cooked oat bowl using certified organic oats only, finished with wild blueberries, butter, and honey. The blueberries go in at the end so they burst in the bowl instead of the pot.",
+  "difficulty": "Easy",
+  "id": "oat-bowl-blueberries",
+  "ingredients": [
+   {
+    "amount": "1 cup",
+    "dbItem": "oats (organic)",
+    "item": "Certified organic rolled oats",
+    "note": "Organic only; conventional oats do not pass"
+   },
+   {
+    "amount": "1 cup",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "item": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "amount": "1 cup",
+    "dbItem": "spring water (natural)",
+    "item": "Spring water",
+    "note": "Or use a second cup of milk for a richer bowl"
+   },
+   {
+    "amount": "1 cup",
+    "dbItem": "Wyman's Frozen Wild Blueberries",
+    "item": "Wyman's Frozen Wild Blueberries"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "raw honey",
+    "item": "Raw honey"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "1 pinch",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   }
+  ],
+  "name": "Organic Oat Bowl with Blueberries and Honey",
+  "nutrition": {
+   "calories": 387,
+   "carbs": 60,
+   "fat": 13,
+   "fiber": 6,
+   "protein": 11
+  },
+  "servings": 2,
+  "steps": [
+   "Combine the milk, water, and sea salt in a saucepan and bring to a simmer over medium heat.",
+   "Stir in the oats, reduce the heat to low, and cook 5 to 7 minutes, stirring often, until thick and creamy. The oats will keep absorbing liquid off the heat.",
+   "Take the pot off the heat and fold in the blueberries. Cover and rest 2 minutes; the berries will thaw and burst into the hot oats.",
+   "Divide between two bowls and top each with half the butter and a tablespoon of honey.",
+   "Serve right away. If the bowl sits and gets too thick, stir in a splash of warm milk to loosen it."
+  ],
+  "tags": [
+   "breakfast",
+   "oats",
+   "blueberry",
+   "quick"
+  ],
+  "time": {
+   "cook": 10,
+   "prep": 5,
+   "total": 15
+  }
+ },
+ {
+  "category": "Sweets & Snacks",
+  "description": "Fresh mango, pineapple, kiwi, and banana macerated in plain coconut water instead of syrup. The coconut water pulls juice out of the fruit and turns into a light sauce you drink at the end.",
+  "difficulty": "Easy",
+  "id": "tropical-fruit-cup",
+  "ingredients": [
+   {
+    "amount": "1 large",
+    "dbItem": "Whole fruit",
+    "item": "Ripe mango, peeled and diced"
+   },
+   {
+    "amount": "2 cups",
+    "dbItem": "Whole fruit",
+    "item": "Fresh pineapple, diced"
+   },
+   {
+    "amount": "2",
+    "dbItem": "Whole fruit",
+    "item": "Kiwi, peeled and sliced"
+   },
+   {
+    "amount": "1",
+    "dbItem": "Whole fruit",
+    "item": "Banana, sliced",
+    "note": "Add at serving time so it does not brown"
+   },
+   {
+    "amount": "2 cups, chilled",
+    "dbItem": "Harmless Harvest Organic Coconut Water (plain original)",
+    "item": "Harmless Harvest Organic Coconut Water, plain",
+    "note": "Plain original only; flavored versions were not verified"
+   },
+   {
+    "amount": "1/2",
+    "dbItem": "lemons",
+    "item": "Lemon, juiced by hand",
+    "note": "A squeeze of juice as flavoring keeps the fruit bright"
+   }
+  ],
+  "name": "Tropical Fruit Cup with Coconut Water",
+  "nutrition": {
+   "calories": 162,
+   "carbs": 41,
+   "fat": 1,
+   "fiber": 3,
+   "protein": 2
+  },
+  "servings": 4,
+  "steps": [
+   "Put the mango, pineapple, and kiwi in a large bowl. Keep the banana aside for serving.",
+   "Pour the chilled coconut water over the fruit and add the squeeze of lemon juice.",
+   "Toss gently, cover, and refrigerate at least 30 minutes so the fruit drinks up the coconut water and the flavors blend.",
+   "Fold in the banana slices just before serving.",
+   "Spoon the fruit into four glasses or bowls and pour the coconut water sauce over the top.",
+   "Serve cold. Leftovers keep 1 day in the refrigerator, though the banana is best fresh."
+  ],
+  "tags": [
+   "no bake",
+   "fruit",
+   "summer",
+   "light"
+  ],
+  "time": {
+   "cook": 0,
+   "prep": 15,
+   "total": 15
+  }
+ },
+ {
+  "category": "Sweets & Snacks",
+  "description": "A no-cook plate of grass-fed cheddar, apples, pears, and cashews with honey drizzled over the cheese. Salty, sweet, and crunchy, and it takes ten minutes including slicing.",
+  "difficulty": "Easy",
+  "id": "cheese-fruit-plate",
+  "ingredients": [
+   {
+    "amount": "6 oz, cut into slices or batons",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk Raw Cheddar Cheese"
+   },
+   {
+    "amount": "2",
+    "dbItem": "Whole fruit",
+    "item": "Whole apples, cored and sliced"
+   },
+   {
+    "amount": "2",
+    "dbItem": "Whole fruit",
+    "item": "Whole pears, cored and sliced"
+   },
+   {
+    "amount": "2 tbsp, plus more for the table",
+    "dbItem": "raw honey",
+    "item": "Raw honey"
+   },
+   {
+    "amount": "1/2 cup",
+    "dbItem": "cashews",
+    "item": "Raw cashews"
+   },
+   {
+    "amount": "1/2",
+    "dbItem": "lemons",
+    "item": "Lemon, juiced by hand",
+    "note": "Tossed with the fruit slices to slow browning"
+   }
+  ],
+  "name": "Cheddar and Fruit Plate with Honey",
+  "nutrition": {
+   "calories": 393,
+   "carbs": 40,
+   "fat": 22,
+   "fiber": 6,
+   "protein": 13
+  },
+  "servings": 4,
+  "steps": [
+   "Take the cheddar out of the refrigerator 20 minutes before serving. Cold cheddar tastes muted; room temperature cheddar tastes like cheese.",
+   "Slice the apples and pears, toss them with the squeeze of lemon juice, and fan them out on a platter or board.",
+   "Arrange the cheddar alongside the fruit and scatter the cashews over and around everything.",
+   "Drizzle the honey over the cheddar in a slow ribbon.",
+   "Serve with extra honey on the side so everyone can add their own. A slice of apple, a piece of cheddar, and a cashew in one bite is the whole idea."
+  ],
+  "tags": [
+   "no cook",
+   "snack plate",
+   "cheese board",
+   "quick"
+  ],
+  "time": {
+   "cook": 0,
+   "prep": 10,
+   "total": 10
+  }
+ },
+ {
+  "category": "Wraps & Handhelds",
+  "description": "Seasoned grass-fed beef and cheddar melted inside a coconut wrap and crisped in a dry skillet, with unsweetened ketchup for dipping. The wrap crisps fast, so these are cooked one at a time and eaten hot.",
+  "difficulty": "Easy",
+  "id": "beef-cheese-wrap-melt",
+  "ingredients": [
+   {
+    "amount": "2 wraps",
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "item": "NUCO Organic Coconut Wraps, Original",
+    "note": "Keep at room temperature; do not refrigerate or they go stiff"
+   },
+   {
+    "amount": "8 oz",
+    "dbItem": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
+    "item": "Thousand Hills Lifetime Grazed Ground Beef"
+   },
+   {
+    "amount": "2 oz",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk Raw Cheddar Cheese, grated"
+   },
+   {
+    "amount": "1/4 cup",
+    "dbItem": "fresh onions",
+    "item": "Fresh onion, finely diced"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/4 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   },
+   {
+    "amount": "2 tbsp, for dipping",
+    "dbItem": "Primal Kitchen Organic Unsweetened Ketchup",
+    "item": "Primal Kitchen Organic Unsweetened Ketchup"
+   }
+  ],
+  "name": "Beef and Cheddar Wrap Melt",
+  "nutrition": {
+   "calories": 460,
+   "carbs": 8,
+   "fat": 34,
+   "fiber": 2,
+   "protein": 30
+  },
+  "servings": 2,
+  "steps": [
+   "Cook the ground beef and onion in a skillet over medium high heat for 6 to 7 minutes, breaking the beef into small crumbles, until browned. Season with the sea salt and black pepper.",
+   "Drain off the excess fat so the wraps do not go soggy, and let the beef cool 2 minutes.",
+   "Lay out the two coconut wraps. Divide the beef down the center of each and top with the grated cheddar.",
+   "Fold the sides of each wrap in and roll it up snugly, seam side down.",
+   "Wipe out the skillet and heat it over medium heat with no oil. Place the wraps seam side down and cook 1 to 2 minutes per side, until crisped and the cheese inside has melted. Coconut wraps brown quickly, so do not walk away.",
+   "Rest 1 minute, slice each wrap in half on the diagonal, and serve with the ketchup for dipping."
+  ],
+  "tags": [
+   "beef",
+   "wrap",
+   "weeknight",
+   "high protein"
+  ],
+  "time": {
+   "cook": 15,
+   "prep": 10,
+   "total": 25
+  }
+ },
+ {
+  "category": "Wraps & Handhelds",
+  "description": "Soft scrambled pasture eggs and melted cheddar rolled in a coconut wrap and toasted seam side down. The eggs are cooked low and slow so they stay creamy inside the crisp wrap.",
+  "difficulty": "Easy",
+  "id": "egg-cheese-breakfast-wrap",
+  "ingredients": [
+   {
+    "amount": "2 wraps",
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "item": "NUCO Organic Coconut Wraps, Original"
+   },
+   {
+    "amount": "4 large",
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "item": "Organic pasture-raised eggs"
+   },
+   {
+    "amount": "2 oz",
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "item": "Organic Valley Grassmilk Raw Cheddar Cheese, grated"
+   },
+   {
+    "amount": "1 tbsp",
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "item": "Kriemhild Dairy Meadow Butter, salted"
+   },
+   {
+    "amount": "1/4 tsp",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   },
+   {
+    "amount": "1/4 tsp",
+    "dbItem": "black pepper",
+    "item": "Black pepper"
+   }
+  ],
+  "name": "Egg and Cheddar Breakfast Wrap",
+  "nutrition": {
+   "calories": 375,
+   "carbs": 7,
+   "fat": 31,
+   "fiber": 2,
+   "protein": 20
+  },
+  "servings": 2,
+  "steps": [
+   "Whisk the eggs with the sea salt and black pepper until the yolks and whites are fully combined.",
+   "Melt the butter in a nonstick skillet over low heat. Add the eggs and cook 3 to 4 minutes, pushing them gently with a spatula, until they form soft curds and are just barely set. Take them off the heat while they still look slightly wet; they finish in the wrap.",
+   "Lay out the coconut wraps and divide the eggs down the center of each. Top with the grated cheddar.",
+   "Fold the sides in and roll each wrap up snugly, seam side down.",
+   "Wipe out the skillet, heat it over medium heat, and toast the wraps seam side down for 1 to 2 minutes per side until crisp and golden at the edges.",
+   "Serve immediately while the cheese is still melted."
+  ],
+  "tags": [
+   "breakfast",
+   "eggs",
+   "wrap",
+   "quick"
+  ],
+  "time": {
+   "cook": 10,
+   "prep": 5,
+   "total": 15
+  }
+ },
+ {
+  "category": "Pasta & Grains",
+  "description": "Whole sweet potatoes roasted until their centers go custardy, split open and filled with honey butter. Root vegetables are one of the most nutrient dense foods in the rulebook, and this is the easiest way to cook them.",
+  "difficulty": "Easy",
+  "id": "roasted-sweet-potato-honey-butter",
+  "ingredients": [
+   {
+    "amount": "4 medium",
+    "dbItem": "Root vegetables",
+    "item": "Sweet potatoes, scrubbed"
+   },
+   {
+    "amount": "4 tbsp",
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "item": "Kriemhild Dairy Meadow Butter, salted, softened"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "raw honey",
+    "item": "Raw honey"
+   },
+   {
+    "amount": "1/2 tsp",
+    "dbItem": "salt (plain sea salt)",
+    "item": "Plain sea salt"
+   }
+  ],
+  "name": "Roasted Sweet Potato with Honey Butter",
+  "nutrition": {
+   "calories": 244,
+   "carbs": 35,
+   "fat": 12,
+   "fiber": 4,
+   "protein": 2
+  },
+  "servings": 4,
+  "steps": [
+   "Heat the oven to 425 degrees F. Line a baking sheet with parchment; sweet potatoes drip as they roast.",
+   "Scrub the sweet potatoes, dry them, and prick each one 4 to 5 times with a fork so steam can escape.",
+   "Roast 45 to 55 minutes, turning once halfway, until a knife slides into the center with no resistance and the skins look papery.",
+   "While they roast, mash the softened butter with the honey and sea salt until completely combined.",
+   "Split each hot sweet potato open lengthwise and push the ends inward to open a pocket.",
+   "Divide the honey butter among the potatoes so it melts down into the flesh.",
+   "Serve hot, scooping the soft center and honey butter together in each bite."
+  ],
+  "tags": [
+   "side dish",
+   "roasted",
+   "gluten free",
+   "root vegetables"
+  ],
+  "time": {
+   "cook": 50,
+   "prep": 5,
+   "total": 55
+  }
+ },
+ {
+  "category": "Sweets & Snacks",
+  "description": "Whole wild blueberries blended with grass-fed milk and raw honey, chunks, fiber, and all. This is the site owner's way with fruit: whole fruit blended in, never juice.",
+  "difficulty": "Easy",
+  "id": "blueberry-honey-smoothie",
+  "ingredients": [
+   {
+    "amount": "2 cups",
+    "dbItem": "Wyman's Frozen Wild Blueberries",
+    "item": "Wyman's Frozen Wild Blueberries",
+    "note": "Frozen fruit makes the smoothie thick without ice"
+   },
+   {
+    "amount": "2 cups, cold",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "item": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "amount": "2 tbsp",
+    "dbItem": "raw honey",
+    "item": "Raw honey"
+   }
+  ],
+  "name": "Blueberry Honey Milk Smoothie",
+  "nutrition": {
+   "calories": 294,
+   "carbs": 48,
+   "fat": 8,
+   "fiber": 6,
+   "protein": 9
+  },
+  "servings": 2,
+  "steps": [
+   "Put the frozen blueberries, cold milk, and honey in a blender, in that order, so the liquid sits near the blades.",
+   "Blend on high for 45 to 60 seconds, until completely smooth and deep purple, stopping once to push down any berries stuck at the top.",
+   "Check the thickness. For a thinner smoothie, blend in another splash of milk; for a thicker one, add a small handful more frozen berries and blend again.",
+   "Taste before pouring. Frozen berries vary in sweetness, so add another teaspoon of honey and blend 5 seconds more if it needs it.",
+   "Pour into two cold glasses and serve right away. The smoothie separates if it sits, so give it a stir if it waits."
+  ],
+  "tags": [
+   "smoothie",
+   "blueberry",
+   "no cook",
+   "whole fruit"
+  ],
+  "time": {
+   "cook": 0,
+   "prep": 5,
+   "total": 5
+  }
+ }
+]

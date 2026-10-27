@@ -1,6 +1,6 @@
 {
-  "name": "delish-healthy-food",
-  "version": "2.0.0",
+  "name": "allowlist-kitchen",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

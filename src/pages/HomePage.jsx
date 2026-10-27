@@ -1,164 +1,99 @@
-import React, { useState, useEffect, useDeferredValue } from 'react';
-import { useTheme } from '../hooks/useTheme';
-import { loadRecipeCategories, searchAllRecipes, getRecipeStats } from '../utils/recipeLoader';
-import HeroSection from '../components/HeroSection';
-import CategoryCard from '../components/CategoryCard';
-import RecipeCard from '../components/RecipeCard';
-import { Sparkles, SearchX, ChefHat } from 'lucide-react';
+import React, { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Search, ShieldCheck, ListChecks, WheatOff } from 'lucide-react';
+import MealCard from '../components/MealCard';
 import Seo from '../components/Seo';
-import LoadingState from '../components/LoadingState';
+import { CATEGORIES, getAllMeals, getMealsByCategory, getStats, searchMeals, SITE_NAME } from '../utils/meals';
 
 const HomePage = () => {
-  const { setTheme } = useTheme();
-  const [categories, setCategories] = useState([]);
-  const [totalRecipes, setTotalRecipes] = useState(null);
-  const [avgProtein, setAvgProtein] = useState(null);
-  const [categoryCount, setCategoryCount] = useState(null);
-  const [loading, setLoading] = useState(true);
-  
-  // Search state
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const [searching, setSearching] = useState(false);
-  const deferredQuery = useDeferredValue(searchQuery);
-
-  useEffect(() => {
-    setTheme('default');
-    
-    Promise.all([loadRecipeCategories(), getRecipeStats()])
-      .then(([data, stats]) => {
-        const resolvedCategories = Array.isArray(data) ? data : [];
-        const visibleCategories = resolvedCategories.filter((category) => !category?.comingSoon);
-        setCategories(visibleCategories);
-        setTotalRecipes(stats.totalRecipes > 0 ? stats.totalRecipes : null);
-        setAvgProtein(stats.avgProtein);
-        setCategoryCount(stats.categoryCount);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Failed to load categories:', err);
-        setLoading(false);
-      });
-  }, [setTheme]);
-
-  useEffect(() => {
-    if (deferredQuery.length >= 2) {
-      setSearching(true);
-      searchAllRecipes(deferredQuery).then(results => {
-        setSearchResults(results);
-        setSearching(false);
-      });
-    } else {
-      setSearchResults([]);
-    }
-  }, [deferredQuery]);
-
-  if (loading) {
-    return <LoadingState label="Loading healthy eats" />;
-  }
-
-  const isSearching = deferredQuery.length >= 2;
+  const [query, setQuery] = useState('');
+  const stats = getStats();
+  const results = useMemo(() => searchMeals(query), [query]);
+  const searching = query.trim().length > 0;
 
   return (
-    <div className="space-y-12 pb-24">
-      <Seo
-        title="Delish Healthy Food - High-Protein Recipe Collection"
-        description="Discover high-protein recipes for your fitness goals. Delicious, nutritious meals crafted for athletes and fitness enthusiasts."
-        canonicalPath="/"
-      />
-      
-      <HeroSection
-        totalRecipes={totalRecipes}
-        avgProtein={avgProtein}
-        categoryCount={categoryCount}
-        onSearch={setSearchQuery}
-      />
-      
-      <div className="container mx-auto px-4 max-w-7xl">
-        {isSearching ? (
-          <div className="max-w-6xl mx-auto space-y-12 animate-fadeIn">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/5 pb-8">
-              <div>
-                <h2 className="text-3xl sm:text-4xl font-black text-white font-serif tracking-tight">
-                  Search Results for <span className="text-brand-500 italic">"{deferredQuery}"</span>
-                </h2>
-                <p className="text-slate-400 mt-2">
-                  Found {searchResults.length} {searchResults.length === 1 ? 'recipe' : 'recipes'} matching your criteria.
-                </p>
-              </div>
-              <button 
-                onClick={() => setSearchQuery('')}
-                className="text-brand-400 hover:text-brand-300 font-bold text-sm uppercase tracking-widest border-b border-brand-500/0 hover:border-brand-500/40 transition-all-smooth"
-              >
-                Clear Search
-              </button>
-            </div>
+    <div>
+      <Seo title={`${SITE_NAME} - Meals built only from allowlisted ingredients`} description="Fifty real meals built only from ingredients that pass a strict checked rulebook: grass-fed meats, pasture eggs, wild fish, raw honey, no sugar, no seed oils, no soy, no corn." canonicalPath="/" />
+      <section className="rounded-3xl bg-emerald-900 px-6 py-12 text-white md:px-12">
+        <p className="text-xs font-bold uppercase tracking-[0.25em] text-emerald-300">The rule is the recipe</p>
+        <h1 className="mt-3 max-w-2xl font-serif text-4xl font-bold leading-tight md:text-5xl">Meals built only from ingredients that pass.</h1>
+        <p className="mt-4 max-w-2xl leading-relaxed text-emerald-100">
+          Every ingredient in every meal on this site has been checked against a 513-item allowlist database built from a strict food rulebook. If an ingredient is not in the database, it is not in the food. No sugar in any form, no seed oils, no soy, no corn, no dyes, no natural flavors.
+        </p>
+        <div className="mt-6 flex max-w-xl items-center gap-2 rounded-full bg-white p-1.5 shadow">
+          <Search className="ml-2 text-stone-400" size={18} />
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search meals or ingredients, try salmon, honey, tallow..."
+            className="w-full bg-transparent text-sm text-stone-900 outline-none placeholder:text-stone-400"
+            aria-label="Search meals"
+          />
+        </div>
+        <div className="mt-8 flex flex-wrap gap-6 text-sm">
+          <div><span className="font-serif text-2xl font-bold">{stats.totalMeals}</span><span className="ml-2 text-emerald-200">meals</span></div>
+          <div><span className="font-serif text-2xl font-bold">{stats.ingredientCount}</span><span className="ml-2 text-emerald-200">allowlisted items used</span></div>
+          {stats.avgProtein !== null && <div><span className="font-serif text-2xl font-bold">{stats.avgProtein}g</span><span className="ml-2 text-emerald-200">average protein per serving</span></div>}
+          <div><span className="font-serif text-2xl font-bold">0</span><span className="ml-2 text-emerald-200">banned ingredients</span></div>
+        </div>
+      </section>
 
-            {searching ? (
-              <div className="py-20 text-center">
-                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-brand-500 mx-auto mb-4"></div>
-                <p className="text-slate-400 tracking-widest uppercase text-xs font-bold">Scanning Recipe Vault...</p>
-              </div>
-            ) : searchResults.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {searchResults.map((recipe, index) => (
-                  <RecipeCard 
-                    key={`${recipe.categoryId}-${recipe.id}`} 
-                    recipe={recipe} 
-                    categoryId={recipe.categoryId} 
-                    delay={index * 0.05}
-                  />
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-24 glass-card rounded-3xl border-white/5">
-                <SearchX className="w-20 h-20 text-slate-700 mx-auto mb-6" />
-                <h3 className="text-2xl font-bold text-white font-serif mb-2">No Recipes Found</h3>
-                <p className="text-slate-400 max-w-sm mx-auto">
-                  We couldn't find any recipes matching your search. Try searching for "chicken," "bowl," or "dessert."
-                </p>
-              </div>
-            )}
-          </div>
-        ) : (
-          <div className="max-w-6xl mx-auto space-y-12">
-            <div className="text-center space-y-4">
-              <h2 className="text-3xl sm:text-5xl font-black text-white font-serif tracking-tight">
-                Explore <span className="text-brand-500 italic">Categories</span>
-              </h2>
-              <p className="text-slate-400 max-w-xl mx-auto">
-                Carefully selected collections focused on high-protein, nutritionally balanced ingredients.
-              </p>
+      {searching ? (
+        <section className="mt-10">
+          <h2 className="font-serif text-2xl font-bold">{results.length} {results.length === 1 ? 'meal' : 'meals'} matching "{query}"</h2>
+          {results.length === 0 ? (
+            <p className="mt-4 text-stone-600">Nothing matched. If the ingredient you want is not on the allowlist, it cannot be cooked here, and that is the point of the site.</p>
+          ) : (
+            <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {results.map((m) => <MealCard key={m.id} meal={m} />)}
             </div>
+          )}
+        </section>
+      ) : (
+        <>
+          <section className="mt-10 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-stone-200 bg-white p-5">
+              <ShieldCheck className="text-emerald-800" size={22} />
+              <h3 className="mt-2 font-serif text-lg font-bold">Checked, not vibes</h3>
+              <p className="mt-1 text-sm leading-relaxed text-stone-600">Each ingredient maps to a verdict in the database: approved, or conditional with its condition met by the exact product named in the recipe.</p>
+            </div>
+            <div className="rounded-2xl border border-stone-200 bg-white p-5">
+              <WheatOff className="text-emerald-800" size={22} />
+              <h3 className="mt-2 font-serif text-lg font-bold">The hard lines</h3>
+              <p className="mt-1 text-sm leading-relaxed text-stone-600">Beef is 100% grass-fed and grass-finished. Eggs are organic and pasture-raised. Fish is wild-caught. Sweet means raw honey or whole fruit, nothing else.</p>
+            </div>
+            <div className="rounded-2xl border border-stone-200 bg-white p-5">
+              <ListChecks className="text-emerald-800" size={22} />
+              <h3 className="mt-2 font-serif text-lg font-bold">One shopping list</h3>
+              <p className="mt-1 text-sm leading-relaxed text-stone-600">All fifty meals draw from one pantry. The <Link to="/shopping-list" className="font-medium text-emerald-900 underline">master shopping list</Link> is generated from the meals themselves, so it can never drift from the recipes.</p>
+            </div>
+          </section>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {categories.map((category, index) => (
-                <CategoryCard 
-                  key={category.id} 
-                  category={category} 
-                  delay={index * 0.1}
-                />
-              ))}
+          <section className="mt-12">
+            <h2 className="font-serif text-2xl font-bold">Browse by category</h2>
+            <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {CATEGORIES.map((c) => {
+                const meals = getMealsByCategory(c.id) || [];
+                return (
+                  <Link key={c.id} to={`/category/${c.id}`} className={`group rounded-2xl border border-stone-200 bg-white p-5 shadow-sm transition hover:shadow-md ${c.ring}`}>
+                    <div className={`h-1.5 w-10 rounded-full ${c.bar}`} />
+                    <h3 className="mt-3 font-serif text-xl font-bold group-hover:underline">{c.name}</h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-stone-600">{c.blurb}</p>
+                    <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-stone-500">{meals.length} meals</p>
+                  </Link>
+                );
+              })}
             </div>
+          </section>
 
-            {/* Featured Quote/Section */}
-            <div className="relative mt-32 p-12 glass-card rounded-[3rem] overflow-hidden border-brand-500/10 bg-brand-500/[0.02]">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-brand-500/10 blur-[100px] -z-10" />
-              <div className="relative z-10 max-w-2xl mx-auto text-center space-y-6">
-                <ChefHat className="w-12 h-12 text-brand-500 mx-auto" />
-                <blockquote className="text-2xl sm:text-3xl font-serif italic text-white leading-relaxed">
-                  "Eating well is a form of self-respect. Our recipes are designed to prove that high-protein, goal-focused nutrition can be the highlight of your day."
-                </blockquote>
-                <div className="flex items-center justify-center gap-3 text-brand-400 font-bold uppercase tracking-widest text-xs">
-                  <div className="h-px w-8 bg-brand-500/40" />
-                  <span>Delish Healthy Food</span>
-                  <div className="h-px w-8 bg-brand-500/40" />
-                </div>
-              </div>
+          <section className="mt-12">
+            <h2 className="font-serif text-2xl font-bold">Every meal</h2>
+            <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {getAllMeals().map((m) => <MealCard key={m.id} meal={m} />)}
             </div>
-          </div>
-        )}
-      </div>
+          </section>
+        </>
+      )}
     </div>
   );
 };

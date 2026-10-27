@@ -1,74 +1,30 @@
 import React from 'react';
-import { Activity, Flame, Beef, Wheat, Droplet, Apple } from 'lucide-react';
 
-const formatMacro = (value, unit) =>
-  typeof value === 'number' && !Number.isNaN(value) ? `${Math.round(value)}${unit}` : 'N/A';
-
-const MacroItem = ({ icon: Icon, label, value, unit, color }) => (
-  <div className="flex flex-col items-center p-6 rounded-3xl bg-white/5 border border-white/5 group hover:bg-brand-500/5 transition-all-smooth">
-    <Icon className={`w-6 h-6 ${color} mb-3 group-hover:scale-110 transition-transform`} aria-hidden="true" />
-    <div className="text-2xl font-black text-white font-serif">{formatMacro(value, unit)}</div>
-    <div className="text-[10px] font-black uppercase tracking-widest text-slate-500 mt-1">{label}</div>
+const Row = ({ label, value, unit }) => (
+  <div className="flex items-baseline justify-between border-b border-stone-100 py-2 last:border-0">
+    <span className="text-sm text-stone-600">{label}</span>
+    <span className="font-serif text-lg text-stone-900">{value === null || value === undefined ? 'N/A' : `${value}${unit}`}</span>
   </div>
 );
 
-const NutritionCard = ({ nutrition }) => {
-  if (!nutrition) return null;
-
-  return (
-    <div className="glass-card rounded-[2.5rem] p-10 space-y-10 border-brand-500/10 h-full">
-      <div className="flex items-center justify-between border-b border-white/5 pb-6">
-        <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-2xl bg-brand-500/10 flex items-center justify-center">
-            <Activity className="w-6 h-6 text-brand-400" />
-          </div>
-          <h2 className="text-2xl font-black text-white font-serif tracking-tight">Nutrition <span className="text-brand-500 italic">Facts</span></h2>
+const NutritionCard = ({ nutrition }) => (
+  <div className="rounded-2xl border border-stone-200 bg-white p-5">
+    <h2 className="font-serif text-lg text-stone-900">Nutrition per serving</h2>
+    {nutrition ? (
+      <>
+        <div className="mt-2">
+          <Row label="Calories" value={nutrition.calories} unit="" />
+          <Row label="Protein" value={nutrition.protein} unit="g" />
+          <Row label="Carbs" value={nutrition.carbs} unit="g" />
+          <Row label="Fat" value={nutrition.fat} unit="g" />
+          <Row label="Fiber" value={nutrition.fiber} unit="g" />
         </div>
-        <div className="text-right">
-          <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Per Serving</p>
-          <p className="text-xl font-black text-white font-serif">{formatMacro(nutrition.perServingCalories, '')} <span className="text-xs text-brand-500">cal</span></p>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <MacroItem
-          icon={Beef}
-          label="Protein"
-          value={nutrition.perServingProtein}
-          unit="g"
-          color="text-brand-400"
-        />
-        <MacroItem
-          icon={Wheat}
-          label="Carbs"
-          value={nutrition.perServingCarbs}
-          unit="g"
-          color="text-brand-400"
-        />
-        <MacroItem
-          icon={Droplet}
-          label="Fats"
-          value={nutrition.perServingFat}
-          unit="g"
-          color="text-brand-400"
-        />
-        <MacroItem
-          icon={Apple}
-          label="Fiber"
-          value={nutrition.perServingFiber}
-          unit="g"
-          color="text-brand-400"
-        />
-      </div>
-
-      <div className="p-6 rounded-2xl bg-brand-500/5 border border-brand-500/10 flex items-center gap-4">
-        <Flame className="w-6 h-6 text-brand-500" aria-hidden="true" />
-        <p className="text-sm text-slate-300 leading-relaxed italic">
-          High-protein balance optimized for muscle recovery and sustained energy levels throughout your fitness journey.
-        </p>
-      </div>
-    </div>
-  );
-};
+        <p className="mt-3 text-xs leading-relaxed text-stone-500">Estimated from USDA standard reference values for the listed ingredients and amounts. Your brands and portions will shift the real numbers.</p>
+      </>
+    ) : (
+      <p className="mt-2 text-sm text-stone-600">Not published for this meal. Numbers go up only when they can be derived from reference data, never invented.</p>
+    )}
+  </div>
+);
 
 export default NutritionCard;

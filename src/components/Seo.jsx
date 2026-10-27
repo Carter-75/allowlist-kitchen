@@ -28,7 +28,7 @@ const Seo = ({
   canonicalPath,
   image,
   type = 'website',
-  siteName = 'Delish Healthy Food',
+  siteName = 'Allowlist Kitchen',
   noIndex = false
 }) => {
   useEffect(() => {
