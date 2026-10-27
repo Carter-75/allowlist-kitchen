@@ -148,7 +148,7 @@ const RecipeDetailPage = () => {
                   {recipe.name}
                 </h1>
                 <p className="text-slate-400 text-lg leading-relaxed max-w-xl italic">
-                   {base?.description ? `"${base.description}"` : "A nutritionally optimized meal designed for peak performance and exceptional taste."}
+                   {recipe.description || base?.description || 'High-protein recipe from the Delish Healthy Food collection.'}
                 </p>
               </div>
 
@@ -210,7 +210,7 @@ const RecipeDetailPage = () => {
                 )}
                 
                 <div className="space-y-4">
-                  <h3 className="text-xs font-black uppercase tracking-widest text-brand-500">Variation specifics</h3>
+                  <h3 className="text-xs font-black uppercase tracking-widest text-brand-500">{base ? 'Variation specifics' : 'Recipe ingredients'}</h3>
                   <ul className="space-y-3">
                     {recipe.ingredients.map((ing, i) => (
                       <li key={i} className="flex items-start gap-3 group text-slate-300">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useDeferredValue } from 'react';
 import { useTheme } from '../hooks/useTheme';
-import { loadRecipeCategories, searchAllRecipes } from '../utils/recipeLoader';
+import { loadRecipeCategories, searchAllRecipes, getRecipeStats } from '../utils/recipeLoader';
 import HeroSection from '../components/HeroSection';
 import CategoryCard from '../components/CategoryCard';
 import RecipeCard from '../components/RecipeCard';
@@ -12,6 +12,8 @@ const HomePage = () => {
   const { setTheme } = useTheme();
   const [categories, setCategories] = useState([]);
   const [totalRecipes, setTotalRecipes] = useState(null);
+  const [avgProtein, setAvgProtein] = useState(null);
+  const [categoryCount, setCategoryCount] = useState(null);
   const [loading, setLoading] = useState(true);
   
   // Search state
@@ -23,18 +25,14 @@ const HomePage = () => {
   useEffect(() => {
     setTheme('default');
     
-    loadRecipeCategories()
-      .then(data => {
+    Promise.all([loadRecipeCategories(), getRecipeStats()])
+      .then(([data, stats]) => {
         const resolvedCategories = Array.isArray(data) ? data : [];
         const visibleCategories = resolvedCategories.filter((category) => !category?.comingSoon);
         setCategories(visibleCategories);
-
-        const computedTotal = visibleCategories.reduce((sum, category) => {
-          return typeof category?.totalRecipes === 'number' && !Number.isNaN(category.totalRecipes)
-            ? sum + category.totalRecipes
-            : sum;
-        }, 0);
-        setTotalRecipes(computedTotal > 0 ? computedTotal : null);
+        setTotalRecipes(stats.totalRecipes > 0 ? stats.totalRecipes : null);
+        setAvgProtein(stats.avgProtein);
+        setCategoryCount(stats.categoryCount);
         setLoading(false);
       })
       .catch(err => {
@@ -69,8 +67,10 @@ const HomePage = () => {
         canonicalPath="/"
       />
       
-      <HeroSection 
-        totalRecipes={totalRecipes} 
+      <HeroSection
+        totalRecipes={totalRecipes}
+        avgProtein={avgProtein}
+        categoryCount={categoryCount}
         onSearch={setSearchQuery}
       />
       
@@ -151,7 +151,7 @@ const HomePage = () => {
                 </blockquote>
                 <div className="flex items-center justify-center gap-3 text-brand-400 font-bold uppercase tracking-widest text-xs">
                   <div className="h-px w-8 bg-brand-500/40" />
-                  <span>The Delish Mastery Team</span>
+                  <span>Delish Healthy Food</span>
                   <div className="h-px w-8 bg-brand-500/40" />
                 </div>
               </div>

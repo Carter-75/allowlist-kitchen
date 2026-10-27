@@ -10,6 +10,7 @@ const AllIngredientsPage = () => {
   const [allIngredients, setAllIngredients] = useState([]);
   const [loading, setLoading] = useState(true);
   const [totalRecipes, setTotalRecipes] = useState(0);
+  const [totalCategories, setTotalCategories] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
   const deferredQuery = useDeferredValue(searchQuery);
 
@@ -55,6 +56,7 @@ const AllIngredientsPage = () => {
           (total, entry) => total + (entry.recipes?.length || 0),
           0
         );
+        setTotalCategories(activeCategories.length);
 
         const aggregatedRecipes = categoryData.flatMap((entry) => {
           const collection = Array.isArray(entry.recipes) ? [...entry.recipes] : [];
@@ -204,8 +206,8 @@ const AllIngredientsPage = () => {
                 <Zap className="w-5 h-5 text-brand-400" />
              </div>
              <div>
-                <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold leading-none mb-1">Coverage</p>
-                <p className="text-xl font-black text-white leading-none">100%</p>
+                <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold leading-none mb-1">Categories</p>
+                <p className="text-xl font-black text-white leading-none">{totalCategories}</p>
              </div>
           </div>
        </div>
@@ -283,7 +285,7 @@ const AllIngredientsPage = () => {
                    </li>
                    <li className="flex items-start gap-4">
                       <div className="w-6 h-6 rounded-full bg-brand-500/20 flex items-center justify-center text-brand-400 font-black text-[10px] flex-shrink-0 mt-1">03</div>
-                      <p className="text-white font-bold leading-snug">Prioritize "Hero" ingredients first—protein sources—before rounding out with optional garnishes.</p>
+                      <p className="text-white font-bold leading-snug">Prioritize "Hero" ingredients first - protein sources - before rounding out with optional garnishes.</p>
                    </li>
                 </ul>
              </div>

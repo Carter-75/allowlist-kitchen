@@ -4,7 +4,7 @@ A modern, responsive recipe website featuring high-protein meals for fitness ent
 
 ## About
 
-This is a beautiful React-based recipe website showcasing delicious protein-rich dishes with complete nutrition information. The site features smooth animations, dynamic color themes, and a mobile-friendly design.
+This is a personal project: a React-based recipe website showcasing protein-rich dishes with complete nutrition information. The site features smooth animations, dynamic color themes, and a mobile-friendly design. It is a static, client-only app - there are no accounts, and the contact form simply opens the visitor's own email app.
 
 ## Features
 
@@ -13,7 +13,7 @@ This is a beautiful React-based recipe website showcasing delicious protein-rich
 - 🌈 Color-coded recipe categories with dynamic themes
 - 📊 Detailed nutrition information for every recipe
 - ⚡ Route-based code splitting and fast performance with React + Vite
-- 🍽️ 89 high-protein recipes across 6 categories
+- 🍽️ 148 high-protein recipes across 6 categories (13 chicken omelette variations, 9 protein bowls, 65 desserts, 27 protein snacks, 21 quick lunches, 13 smoothie bowls)
 - 📋 Easy-to-follow instructions with cooking times
 - 🧾 Searchable master shopping list for ingredients
 - 🧭 Accessible navigation with skip links and focus styling
@@ -75,12 +75,11 @@ This site is ready to deploy to Vercel:
 
 
 How to add content
-- **New recipe:** append the recipe object to the relevant aggregated file (e.g. `public/data/recipes/desserts.json`, `smoothie-bowls.json`, etc.). No JS updates needed—the loader and counts pick it up automatically.
-- **New category:** add one entry to `public/data/recipes/recipe-categories.json` defining its `data` paths and icon, drop the recipes JSON it references, and add a matching theme key to `public/data/themes/color-themes.json` for colors. The UI, counts, and ingredient list will all wire themselves up.
+- **New recipe:** append the recipe object to the relevant aggregated file (e.g. `public/data/recipes/desserts.json`, `smoothie-bowls.json`, etc.). The aggregated files are the only recipe data source - there are no per-recipe files. No JS updates needed - the loader and counts pick it up automatically. Keep the `totalRecipes` and count in the description of `public/data/recipes/recipe-categories.json` in sync with the file you edited.
+- **New category:** add one entry to `public/data/recipes/recipe-categories.json` defining its `data` paths and icon, drop the recipes JSON it references, and add a matching theme key to both `public/data/themes/color-themes.json` and the bundled fallback `src/data/colorThemes.json` for colors. The UI, counts, and ingredient list will all wire themselves up.
 
-Next step: run `npm run dev` and click through each category—including the shopping list—to confirm everything renders with the refreshed counts and data.
+Next step: run `npm run dev` and click through each category - including the shopping list - to confirm everything renders with the refreshed counts and data.
 
 ---
 
 Built with ❤️ for healthy eating
- 

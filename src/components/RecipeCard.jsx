@@ -1,9 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { 
-  Clock, 
-  Flame, 
-  Beef,
+import {
+  Clock,
+  Flame,
   ChevronRight,
   TrendingUp,
   ChefHat

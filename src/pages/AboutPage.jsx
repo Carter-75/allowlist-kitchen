@@ -30,7 +30,7 @@ const AboutPage = () => {
     <div className="pb-32">
       <Seo 
         title="About Us - Delish Healthy Food"
-        description="Learn about our mission to provide high-protein, delicious recipes for fitness enthusiasts."
+        description="Learn about this personal collection of high-protein, delicious recipes for fitness enthusiasts."
       />
 
       {/* Hero Section */}
@@ -47,7 +47,7 @@ const AboutPage = () => {
             Fueling Your <span className="text-brand-500 italic">Ambition</span>
           </h1>
           <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-            Delish Healthy Food was born from a simple belief: high-performance nutrition shouldn't taste like a compromise. We curate the world's most effective high-protein recipes to help you build, recover, and excel.
+            Delish Healthy Food is a personal recipe collection built from a simple belief: high-performance nutrition shouldn't taste like a compromise. It gathers high-protein recipes in one place to help you build, recover, and excel.
           </p>
         </div>
       </div>
@@ -98,11 +98,11 @@ const AboutPage = () => {
           <div className="absolute inset-0 bg-brand-500/[0.02] -z-10" />
           <Heart className="w-12 h-12 text-brand-500 mx-auto" />
           <h2 className="text-3xl sm:text-4xl font-black text-white font-serif leading-tight">
-            "We aren't just sharing recipes; we're building a community of people who refuse to settle for average nutrition."
+            "This collection exists for people who refuse to settle for average nutrition."
           </h2>
           <div className="flex items-center justify-center gap-3 text-brand-400 font-bold uppercase tracking-widest text-xs">
             <div className="h-px w-10 bg-brand-500/40" />
-            <span>The Founders</span>
+            <span>Delish Healthy Food</span>
             <div className="h-px w-10 bg-brand-500/40" />
           </div>
         </div>

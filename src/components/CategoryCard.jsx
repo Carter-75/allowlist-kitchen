@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../hooks/useTheme';
-import { Clock, ChevronRight, UtensilsCrossed, ArrowRight } from 'lucide-react';
+import { Clock, UtensilsCrossed, ArrowRight } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 
 const CategoryCard = ({ category, delay = 0 }) => {

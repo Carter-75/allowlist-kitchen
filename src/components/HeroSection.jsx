@@ -1,17 +1,8 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { Utensils, Sparkles, TrendingUp, Award, Search } from 'lucide-react';
 
-const formatRecipeCount = (count) => {
-  if (typeof count !== 'number' || Number.isNaN(count) || count <= 0) {
-    return '0';
-  }
-  if (count < 25) return `${count}`;
-  const interval = Math.max(25, Math.floor((count - 1) / 25) * 25);
-  return `${interval}+`;
-};
-
-const HeroSection = ({ totalRecipes, onSearch }) => {
-  const displayRecipeCount = useMemo(() => formatRecipeCount(totalRecipes), [totalRecipes]);
+const HeroSection = ({ totalRecipes, avgProtein, categoryCount, onSearch }) => {
+  const displayRecipeCount = typeof totalRecipes === 'number' ? `${totalRecipes}` : '0';
 
   return (
     <div className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 overflow-hidden w-full">
@@ -52,9 +43,6 @@ const HeroSection = ({ totalRecipes, onSearch }) => {
               className="w-full py-5 px-4 bg-transparent text-white placeholder-slate-500 focus:outline-none text-lg"
               onChange={(e) => onSearch?.(e.target.value)}
             />
-            <button className="hidden sm:flex items-center gap-2 px-8 py-5 bg-brand-600 hover:bg-brand-500 text-white font-bold transition-all-smooth">
-              Search
-            </button>
           </div>
         </div>
 
@@ -62,8 +50,8 @@ const HeroSection = ({ totalRecipes, onSearch }) => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
           {[
             { icon: TrendingUp, value: displayRecipeCount, label: 'Curated Recipes', color: 'text-brand-400' },
-            { icon: Award, value: '40g+', label: 'Protein Avg.', color: 'text-forest-400' },
-            { icon: Utensils, value: '100%', label: 'Flavor Guaranteed', color: 'text-brand-400' }
+            { icon: Award, value: avgProtein ? `${avgProtein}g` : 'N/A', label: 'Avg. Protein Per Serving', color: 'text-forest-400' },
+            { icon: Utensils, value: categoryCount ? `${categoryCount}` : 'N/A', label: 'Recipe Categories', color: 'text-brand-400' }
           ].map((stat, i) => (
             <div key={i} className="glass-card rounded-2xl p-6 flex flex-col items-center text-center">
               <stat.icon className={`w-8 h-8 ${stat.color} mb-3`} />

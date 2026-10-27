@@ -1,10 +1,10 @@
-// Utility to load recipe data dynamically
+// Utility to load recipe data dynamically.
+// All recipe data lives in the aggregated JSON files referenced from
+// public/data/recipes/recipe-categories.json. There are no per-recipe files.
 
 const CATEGORY_DATA_PATH = '/data/recipes/recipe-categories.json';
 let categoriesCache = null;
 const jsonCache = new Map();
-
-// All recipe locations come from recipe-categories.json; no hardcoded paths below
 
 const fetchJSONWithCache = async (path) => {
   if (!path) {
@@ -71,26 +71,6 @@ const findCategoryById = async (categoryId) => {
   return categories.find((category) => category.id === categoryId) || null;
 };
 
-const loadCollection = async (categoryIdOrPath) => {
-  try {
-    // If this looks like a path, fetch it directly
-    if (typeof categoryIdOrPath === 'string' && (categoryIdOrPath.startsWith('/') || categoryIdOrPath.endsWith('.json'))) {
-      const direct = await fetchJSONWithCache(categoryIdOrPath);
-      return Array.isArray(direct) ? direct : [];
-    }
-
-    // Otherwise treat as category id and resolve via recipe-categories.json
-    const category = await findCategoryById(categoryIdOrPath);
-    if (category?.data?.itemsPath) {
-      const items = await fetchJSONWithCache(category.data.itemsPath);
-      return Array.isArray(items) ? items : [];
-    }
-  } catch (error) {
-    // error already logged by fetchJSONWithCache
-  }
-  return [];
-};
-
 const replaceCountInDescription = (description, total) => {
   if (!description || typeof total !== 'number' || Number.isNaN(total)) {
     return description;
@@ -100,8 +80,6 @@ const replaceCountInDescription = (description, total) => {
     ? description.replace(/\d+/, total.toString())
     : description;
 };
-
-const getRecipeCountByCategory = () => null;
 
 export const loadRecipeCategories = async () => {
   try {
@@ -113,29 +91,21 @@ export const loadRecipeCategories = async () => {
 
     const enrichedCategories = await Promise.all(
       categories.map(async (category) => {
-        if (category.comingSoon) {
+        if (category.comingSoon || !category?.data?.itemsPath) {
           return category;
         }
 
-        let computedTotal = getRecipeCountByCategory(category.id);
-
-        if ((typeof computedTotal !== 'number' || computedTotal < 0) && category?.data?.itemsPath) {
-          try {
-            const items = await fetchJSONWithCache(category.data.itemsPath);
-            if (Array.isArray(items)) {
-              computedTotal = items.length;
-            }
-          } catch (error) {
-            // Error already logged inside fetchJSONWithCache
+        try {
+          const items = await fetchJSONWithCache(category.data.itemsPath);
+          if (Array.isArray(items)) {
+            return {
+              ...category,
+              totalRecipes: items.length,
+              description: replaceCountInDescription(category.description, items.length)
+            };
           }
-        }
-
-        if (typeof computedTotal === 'number' && computedTotal >= 0) {
-          return {
-            ...category,
-            totalRecipes: computedTotal,
-            description: replaceCountInDescription(category.description, computedTotal)
-          };
+        } catch (error) {
+          // Error already logged inside fetchJSONWithCache
         }
 
         return category;
@@ -145,150 +115,6 @@ export const loadRecipeCategories = async () => {
     return enrichedCategories;
   } catch (error) {
     console.error('Failed to load recipe categories:', error);
-    return [];
-  }
-};
-
-export const loadChickenOmelettesBase = async () => {
-  try {
-    const category = await findCategoryById('chicken-omelettes');
-    if (category?.data?.basePath) {
-      return await fetchJSONWithCache(category.data.basePath);
-    }
-  } catch (error) {
-    console.error('Failed to load chicken omelettes base:', error);
-  }
-  return null;
-};
-
-// Load individual chicken omelette variation
-export const loadChickenOmeletteVariation = async (variationId) => {
-  try {
-    const variations = await loadChickenOmelettesVariations();
-    const numericId = Number(variationId);
-    return variations.find(v => Number(v.id) === numericId) || null;
-  } catch (error) {
-    console.error('Failed to load chicken omelette variation:', error);
-    return null;
-  }
-};
-
-// Load all chicken omelette variations (from individual files)
-export const loadChickenOmelettesVariations = async () => {
-  try {
-    return await loadCollection('chicken-omelettes-variations');
-  } catch (error) {
-    console.error('Failed to load chicken omelettes variations:', error);
-    return [];
-  }
-};
-
-// Load individual protein bowl
-export const loadProteinBowl = async (bowlId) => {
-  try {
-    const bowls = await loadProteinBowls();
-    const numericId = Number(bowlId);
-    return bowls.find(b => Number(b.id) === numericId) || null;
-  } catch (error) {
-    console.error('Failed to load protein bowl:', error);
-    return null;
-  }
-};
-
-// Load all protein bowls (from individual files)
-export const loadProteinBowls = async () => {
-  try {
-    return await loadCollection('protein-bowls');
-  } catch (error) {
-    console.error('Failed to load protein bowls:', error);
-    return [];
-  }
-};
-
-// Load individual dessert
-export const loadDessert = async (dessertId) => {
-  try {
-    const desserts = await loadDesserts();
-    const numericId = Number(dessertId);
-    return desserts.find(d => Number(d.id) === numericId) || null;
-  } catch (error) {
-    console.error('Failed to load dessert:', error);
-    return null;
-  }
-};
-
-// Load all desserts
-export const loadDesserts = async () => {
-  try {
-    return await loadCollection('desserts');
-  } catch (error) {
-    console.error('Failed to load desserts:', error);
-    return [];
-  }
-};
-
-// Load individual protein snack
-export const loadProteinSnack = async (snackId) => {
-  try {
-    const snacks = await loadProteinSnacks();
-    const numericId = Number(snackId);
-    return snacks.find(s => Number(s.id) === numericId) || null;
-  } catch (error) {
-    console.error('Failed to load protein snack:', error);
-    return null;
-  }
-};
-
-// Load all protein snacks
-export const loadProteinSnacks = async () => {
-  try {
-    return await loadCollection('protein-snacks');
-  } catch (error) {
-    console.error('Failed to load protein snacks:', error);
-    return [];
-  }
-};
-
-// Load individual quick lunch
-export const loadQuickLunch = async (lunchId) => {
-  try {
-    const lunches = await loadQuickLunches();
-    const numericId = Number(lunchId);
-    return lunches.find(l => Number(l.id) === numericId) || null;
-  } catch (error) {
-    console.error('Failed to load quick lunch:', error);
-    return null;
-  }
-};
-
-// Load all quick lunches
-export const loadQuickLunches = async () => {
-  try {
-    return await loadCollection('quick-lunches');
-  } catch (error) {
-    console.error('Failed to load quick lunches:', error);
-    return [];
-  }
-};
-
-// Load individual smoothie bowl
-export const loadSmoothieBowl = async (bowlId) => {
-  try {
-    const bowls = await loadSmoothieBowls();
-    const numericId = Number(bowlId);
-    return bowls.find(b => Number(b.id) === numericId) || null;
-  } catch (error) {
-    console.error('Failed to load smoothie bowl:', error);
-    return null;
-  }
-};
-
-// Load all smoothie bowls
-export const loadSmoothieBowls = async () => {
-  try {
-    return await loadCollection('smoothie-bowls');
-  } catch (error) {
-    console.error('Failed to load smoothie bowls:', error);
     return [];
   }
 };
@@ -322,6 +148,37 @@ export const loadSingleRecipe = async (categoryId, recipeId) => {
   return { base, recipe };
 };
 
+// Real totals computed from the recipe data itself (used for the home page
+// stats so the numbers shown always match the collection).
+export const getRecipeStats = async () => {
+  const categories = await loadRecipeCategories();
+  const activeCategories = categories.filter(c => !c.comingSoon);
+
+  let totalRecipes = 0;
+  let proteinSum = 0;
+  let proteinCount = 0;
+
+  await Promise.all(
+    activeCategories.map(async (category) => {
+      const { recipes } = await loadRecipesByCategory(category.id);
+      totalRecipes += recipes.length;
+      recipes.forEach((recipe) => {
+        const protein = recipe?.nutrition?.perServingProtein;
+        if (typeof protein === 'number' && !Number.isNaN(protein)) {
+          proteinSum += protein;
+          proteinCount += 1;
+        }
+      });
+    })
+  );
+
+  return {
+    totalRecipes,
+    categoryCount: activeCategories.length,
+    avgProtein: proteinCount > 0 ? Math.round((proteinSum / proteinCount) * 10) / 10 : null
+  };
+};
+
 export const searchAllRecipes = async (query) => {
   if (!query || typeof query !== 'string' || query.trim().length < 2) {
     return [];
@@ -352,7 +209,7 @@ export const searchAllRecipes = async (query) => {
     const nameMatch = recipe.name?.toLowerCase().includes(searchTerm);
     const ingredientMatch = recipe.ingredients?.some(ing => ing.toLowerCase().includes(searchTerm));
     const instructionMatch = recipe.instructions?.some(inst => inst.toLowerCase().includes(searchTerm));
-    
+
     return nameMatch || ingredientMatch || instructionMatch;
   });
 };

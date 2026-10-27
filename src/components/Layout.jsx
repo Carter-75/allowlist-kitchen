@@ -43,7 +43,6 @@ const Layout = ({ children }) => {
               <h4 className="text-sm font-bold uppercase tracking-widest text-brand-400">Legal</h4>
               <nav className="flex flex-col gap-2 text-sm text-slate-400">
                 <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
               </nav>
             </div>
           </div>
@@ -51,9 +50,6 @@ const Layout = ({ children }) => {
             <p className="text-slate-500 text-sm">
               © {new Date().getFullYear()} Delish Healthy Food. All rights reserved.
             </p>
-            <div className="flex items-center gap-6">
-              {/* Social placeholders could go here */}
-            </div>
           </div>
         </div>
       </footer>

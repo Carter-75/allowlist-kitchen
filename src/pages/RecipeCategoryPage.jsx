@@ -6,6 +6,7 @@ import RecipeCard from '../components/RecipeCard';
 import { ChevronLeft, List, Sparkles, ChefHat, CheckCircle2 } from 'lucide-react';
 import Seo from '../components/Seo';
 import LoadingState from '../components/LoadingState';
+import NotFoundPage from './NotFoundPage';
 
 const RecipeCategoryPage = () => {
   const { categoryId } = useParams();
@@ -39,6 +40,10 @@ const RecipeCategoryPage = () => {
 
   if (loading) {
     return <LoadingState label="Gathering the collection" />;
+  }
+
+  if (!categoryInfo) {
+    return <NotFoundPage />;
   }
 
   return (

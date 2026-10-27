@@ -30,8 +30,8 @@ const PrivacyPolicyPage = () => {
             </h2>
             <p className="text-gray-300 leading-relaxed">
               Delish Healthy Food provides recipe content and nutrition information. We do not sell your personal
-              information. We use standard analytics and advertising tools to keep the site running and to improve
-              the experience.
+              information. The site itself stores no accounts or form submissions; the only third-party tooling is
+              advertising (Google AdSense, covered below) when it is enabled.
             </p>
           </section>
 
@@ -44,7 +44,7 @@ const PrivacyPolicyPage = () => {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-400 mt-1">•</span>
-                <span>Cookie and device identifiers used by analytics and advertising partners, including Google.</span>
+                <span>Cookie and device identifiers used by advertising partners, including Google, when ads are enabled.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-400 mt-1">•</span>
