@@ -1995,10 +1995,9 @@
     "note": "Single-ingredient carob only; this is the chocolate stand-in and is named carob on purpose"
    },
    {
-    "item": "Blanched almond flour",
-    "amount": "1 cup",
-    "dbItem": "almond flour (blanched)",
-    "note": "About 3.4 oz across the whole pan, an almond-like portion per brownie; occasional baking only, per the list condition"
+    "item": "King Arthur Organic all-purpose flour",
+    "amount": "3/4 cup",
+    "dbItem": "organic wheat flour (unenriched)"
    },
    {
     "item": "Raw honey",
@@ -2024,18 +2023,18 @@
   "steps": [
    "Heat the oven to 325F, lower than a cocoa brownie, because honey and carob both brown quickly. Line an 8x8 inch pan with parchment.",
    "Whisk the melted butter and honey together until glossy. Whisk in the eggs one at a time, then the vanilla.",
-   "Fold in the carob powder, almond flour, and sea salt until just combined. The batter will be thick and dark, like a brownie batter should be.",
+   "Fold in the carob powder, flour, and sea salt until just combined. The batter will be thick and dark, like a brownie batter should be.",
    "Spread the batter evenly in the pan, getting it into the corners.",
    "Bake 22 to 25 minutes, until the edges are set and a toothpick in the center comes out with moist crumbs, not wet batter. Carob brownies go dry if you push them to a clean toothpick.",
    "Cool in the pan at least 20 minutes. They set as they cool and slice cleanly once barely warm.",
    "Cut into 9 squares. Leftovers keep 3 days covered at room temperature, and the flavor deepens on day two."
   ],
   "nutrition": {
-   "calories": 260,
-   "protein": 4,
-   "carbs": 30,
-   "fat": 17,
-   "fiber": 4
+   "calories": 235,
+   "protein": 3,
+   "carbs": 35,
+   "fat": 12,
+   "fiber": 3
   },
   "tags": [
    "brownies",
