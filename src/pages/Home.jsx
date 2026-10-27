@@ -33,7 +33,7 @@ export default function Home() {
           </div>
           <div className="mt-9 flex flex-wrap gap-x-8 gap-y-3">
             <p><span className="font-display text-3xl font-black">{s.meals}</span> <span className="text-sm text-pine-50/75">family meals</span></p>
-            <p><span className="font-display text-3xl font-black">{s.pantryItems}</span> <span className="text-sm text-pine-50/75">list items they use</span></p>
+            <p><span className="font-display text-3xl font-black">{s.pantryItems}</span> <span className="text-sm text-pine-50/75">items on the full list</span></p>
             <p><span className="font-display text-3xl font-black">{s.avgProtein}g</span> <span className="text-sm text-pine-50/75">average protein</span></p>
             <p><span className="font-display text-3xl font-black">{s.quick}</span> <span className="text-sm text-pine-50/75">meals in 30 min or less</span></p>
           </div>

@@ -15,43 +15,59 @@
    {
     "item": "King Arthur Organic all-purpose flour",
     "amount": "2 cups",
-    "dbItem": "organic wheat flour (unenriched)"
+    "dbItem": "organic wheat flour (unenriched)",
+    "anchor": "organic-wheat-flour-unenriched",
+    "wm": "organic wheat flour"
    },
    {
     "item": "Baking soda",
     "amount": "1 tsp",
-    "dbItem": "baking soda (sodium bicarbonate)"
+    "dbItem": "baking soda (sodium bicarbonate)",
+    "anchor": "baking-soda-sodium-bicarbonate",
+    "wm": "baking soda"
    },
    {
     "item": "Fresh lemon juice",
     "amount": "1 tbsp",
     "dbItem": "lemon (fresh)",
-    "note": "works with the baking soda to lift the batter"
+    "note": "works with the baking soda to lift the batter",
+    "anchor": "lemon-fresh",
+    "wm": "lemon"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/2 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "Organic pasture-raised eggs",
     "amount": "2",
-    "dbItem": "Vital Farms Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "1 1/4 cups",
-    "dbItem": "Organic Valley Grassmilk Organic Whole Milk"
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Kriemhild Meadow Butter, melted, plus more for the pan",
     "amount": "3 tbsp",
-    "dbItem": "Kriemhild Dairy Meadow Butter (salted)"
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Raw honey, for serving",
     "amount": "1/4 cup",
-    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz"
+    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "wm": "Nate's Raw & Unfiltered Honey"
    }
   ],
   "steps": [
@@ -92,27 +108,37 @@
    {
     "item": "Organic pasture-raised eggs",
     "amount": "6",
-    "dbItem": "Vital Farms Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "1/4 cup",
-    "dbItem": "Organic Valley Grassmilk Organic Whole Milk"
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Organic Valley Grassmilk cheddar, shredded",
     "amount": "1/2 cup (2 oz)",
-    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
+    "wm": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
    },
    {
     "item": "Kriemhild Meadow Butter",
     "amount": "1 tbsp",
-    "dbItem": "Kriemhild Dairy Meadow Butter (salted)"
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/4 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -152,27 +178,37 @@
    {
     "item": "NUCO Organic Coconut Wraps",
     "amount": "2",
-    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct"
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "anchor": "nuco-organic-coconut-wraps-original-5-ct",
+    "wm": "NUCO Organic Coconut Wraps, Original"
    },
    {
     "item": "Organic pasture-raised eggs",
     "amount": "4",
-    "dbItem": "Vital Farms Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Organic Valley Grassmilk cheddar, shredded",
     "amount": "1/2 cup (2 oz)",
-    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
+    "wm": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
    },
    {
     "item": "Kriemhild Meadow Butter",
     "amount": "1 tbsp",
-    "dbItem": "Kriemhild Dairy Meadow Butter (salted)"
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/4 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -211,32 +247,44 @@
    {
     "item": "Thousand Hills ground beef 85/15",
     "amount": "1/2 lb",
-    "dbItem": "Thousand Hills Lifetime Grazed Ground Beef 85/15"
+    "dbItem": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
+    "anchor": "thousand-hills-lifetime-grazed-ground-beef-85-15",
+    "wm": "Thousand Hills Lifetime Grazed Ground Beef 85/15"
    },
    {
     "item": "Organic pasture-raised eggs",
     "amount": "12",
-    "dbItem": "Vital Farms Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Organic Valley Grassmilk cheddar, shredded",
     "amount": "1 cup (4 oz)",
-    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
+    "wm": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
    },
    {
     "item": "Kriemhild Meadow Butter, for greasing the tin",
     "amount": "1 tbsp",
-    "dbItem": "Kriemhild Dairy Meadow Butter (salted)"
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/2 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "Black pepper",
     "amount": "1/4 tsp",
-    "dbItem": "black pepper"
+    "dbItem": "black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "steps": [
@@ -276,38 +324,52 @@
    {
     "item": "Certified organic rolled oats",
     "amount": "1 cup",
-    "dbItem": "oats (organic)"
+    "dbItem": "oats (organic)",
+    "anchor": "oats-organic-2",
+    "wm": "oats"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "1 1/2 cups",
-    "dbItem": "Organic Valley Grassmilk Organic Whole Milk"
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Wyman's frozen wild blueberries",
     "amount": "1 cup",
-    "dbItem": "Wyman's Frozen Wild Blueberries"
+    "dbItem": "Wyman's Frozen Wild Blueberries",
+    "anchor": "wyman-s-frozen-wild-blueberries",
+    "wm": "Wyman's Frozen Wild Blueberries"
    },
    {
     "item": "Raw honey",
     "amount": "2 tbsp",
-    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz"
+    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "wm": "Nate's Raw & Unfiltered Honey"
    },
    {
     "item": "Kriemhild Meadow Butter",
     "amount": "1 tbsp",
-    "dbItem": "Kriemhild Dairy Meadow Butter (salted)"
+    "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Ceylon cinnamon",
     "amount": "1/2 tsp",
     "dbItem": "cinnamon (Ceylon)",
-    "note": "Ceylon only, labeled Cinnamomum verum"
+    "note": "Ceylon only, labeled Cinnamomum verum",
+    "anchor": "cinnamon-ceylon",
+    "wm": "cinnamon"
    },
    {
     "item": "Plain sea salt",
     "amount": "1 pinch",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -346,27 +408,37 @@
    {
     "item": "Grass-fed beef steak (sirloin or ribeye)",
     "amount": "12 oz",
-    "dbItem": "Beef"
+    "dbItem": "Beef",
+    "anchor": "beef",
+    "wm": "Beef"
    },
    {
     "item": "Organic pasture-raised eggs",
     "amount": "4",
-    "dbItem": "Vital Farms Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Fatworks grass-fed beef tallow",
     "amount": "1 tbsp",
-    "dbItem": "Fatworks Grass-Fed Beef Tallow"
+    "dbItem": "Fatworks Grass-Fed Beef Tallow",
+    "anchor": "fatworks-grass-fed-beef-tallow",
+    "wm": "Fatworks Grass-Fed Beef Tallow"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/2 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "Black pepper",
     "amount": "1/4 tsp",
-    "dbItem": "black pepper"
+    "dbItem": "black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "steps": [
@@ -405,22 +477,30 @@
    {
     "item": "Smucker's Organic Creamy Peanut Butter",
     "amount": "1/4 cup",
-    "dbItem": "Smucker's Organic Creamy Peanut Butter"
+    "dbItem": "Smucker's Organic Creamy Peanut Butter",
+    "anchor": "smucker-s-organic-creamy-peanut-butter",
+    "wm": "Smucker's Organic Creamy Peanut Butter"
    },
    {
     "item": "Whole banana, ripe",
     "amount": "1",
-    "dbItem": "Whole fruit"
+    "dbItem": "Whole fruit",
+    "anchor": "whole-fruit",
+    "wm": "Whole fruit"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "1 1/2 cups",
-    "dbItem": "Organic Valley Grassmilk Organic Whole Milk"
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Raw honey",
     "amount": "1 tbsp",
-    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz"
+    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "wm": "Nate's Raw & Unfiltered Honey"
    }
   ],
   "steps": [
@@ -457,17 +537,23 @@
    {
     "item": "Wyman's frozen wild blueberries",
     "amount": "2 cups",
-    "dbItem": "Wyman's Frozen Wild Blueberries"
+    "dbItem": "Wyman's Frozen Wild Blueberries",
+    "anchor": "wyman-s-frozen-wild-blueberries",
+    "wm": "Wyman's Frozen Wild Blueberries"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "1 1/2 cups",
-    "dbItem": "Organic Valley Grassmilk Organic Whole Milk"
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Raw honey",
     "amount": "2 tbsp",
-    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz"
+    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "wm": "Nate's Raw & Unfiltered Honey"
    }
   ],
   "steps": [
@@ -504,33 +590,45 @@
    {
     "item": "Wild Planet Wild Albacore Tuna",
     "amount": "1 can (5 oz), drained",
-    "dbItem": "Wild Planet Wild Albacore Tuna and Sea Salt"
+    "dbItem": "Wild Planet Wild Albacore Tuna and Sea Salt",
+    "anchor": "wild-planet-wild-albacore-tuna-and-sea-salt",
+    "wm": "Wild Planet Wild Albacore Tuna and Sea Salt"
    },
    {
     "item": "California Olive Ranch 100% California extra virgin olive oil",
     "amount": "1 tbsp",
-    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil"
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "anchor": "california-olive-ranch-100-california-extra-virgin-olive-oil",
+    "wm": "California Olive Ranch 100% California Extra Virgin Olive Oil"
    },
    {
     "item": "Fresh lemon juice",
     "amount": "1 tbsp (about 1/2 lemon)",
-    "dbItem": "lemon (fresh)"
+    "dbItem": "lemon (fresh)",
+    "anchor": "lemon-fresh",
+    "wm": "lemon"
    },
    {
     "item": "Plain prepared mustard",
     "amount": "1 tsp",
     "dbItem": "mustard (prepared, plain)",
-    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings"
+    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings",
+    "anchor": "mustard-prepared-plain",
+    "wm": "mustard"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/4 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "NUCO Organic Coconut Wraps",
     "amount": "2",
-    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct"
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "anchor": "nuco-organic-coconut-wraps-original-5-ct",
+    "wm": "NUCO Organic Coconut Wraps, Original"
    }
   ],
   "steps": [
@@ -569,32 +667,44 @@
    {
     "item": "Thousand Hills ground beef 85/15",
     "amount": "1 lb",
-    "dbItem": "Thousand Hills Lifetime Grazed Ground Beef 85/15"
+    "dbItem": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
+    "anchor": "thousand-hills-lifetime-grazed-ground-beef-85-15",
+    "wm": "Thousand Hills Lifetime Grazed Ground Beef 85/15"
    },
    {
     "item": "Organic Valley Grassmilk cheddar, shredded",
     "amount": "1 cup (4 oz)",
-    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
+    "wm": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
    },
    {
     "item": "NUCO Organic Coconut Wraps",
     "amount": "4",
-    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct"
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "anchor": "nuco-organic-coconut-wraps-original-5-ct",
+    "wm": "NUCO Organic Coconut Wraps, Original"
    },
    {
     "item": "Primal Kitchen Organic Unsweetened Ketchup, for dipping",
     "amount": "1/4 cup",
-    "dbItem": "Primal Kitchen Organic Unsweetened Ketchup"
+    "dbItem": "Primal Kitchen Organic Unsweetened Ketchup",
+    "anchor": "primal-kitchen-organic-unsweetened-ketchup",
+    "wm": "Primal Kitchen Organic Unsweetened Ketchup"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/2 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "Black pepper",
     "amount": "1/4 tsp",
-    "dbItem": "black pepper"
+    "dbItem": "black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "steps": [
@@ -633,22 +743,30 @@
    {
     "item": "Base Culture Original bread",
     "amount": "4 slices",
-    "dbItem": "Base Culture Original Keto Gluten Free Bread, 16 oz"
+    "dbItem": "Base Culture Original Keto Gluten Free Bread, 16 oz",
+    "anchor": "base-culture-original-keto-gluten-free-bread-16-oz",
+    "wm": "Base Culture Original Keto Gluten Free Bread"
    },
    {
     "item": "Smucker's Organic Creamy Peanut Butter",
     "amount": "1/4 cup",
-    "dbItem": "Smucker's Organic Creamy Peanut Butter"
+    "dbItem": "Smucker's Organic Creamy Peanut Butter",
+    "anchor": "smucker-s-organic-creamy-peanut-butter",
+    "wm": "Smucker's Organic Creamy Peanut Butter"
    },
    {
     "item": "Raw honey",
     "amount": "2 tbsp",
-    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz"
+    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "wm": "Nate's Raw & Unfiltered Honey"
    },
    {
     "item": "Whole banana, sliced",
     "amount": "1",
-    "dbItem": "Whole fruit"
+    "dbItem": "Whole fruit",
+    "anchor": "whole-fruit",
+    "wm": "Whole fruit"
    }
   ],
   "steps": [
@@ -687,27 +805,37 @@
     "item": "Chicken breast, certified organic and pasture-raised",
     "amount": "1 lb",
     "dbItem": "Chicken",
-    "note": "only the certified organic, pasture-raised form passes"
+    "note": "only the certified organic, pasture-raised form passes",
+    "anchor": "chicken",
+    "wm": "Chicken"
    },
    {
     "item": "Wholly Guacamole Classic Mild",
     "amount": "1 package (7.5 oz)",
-    "dbItem": "Wholly Guacamole Classic Guacamole, Mild, 7.5 oz"
+    "dbItem": "Wholly Guacamole Classic Guacamole, Mild, 7.5 oz",
+    "anchor": "wholly-guacamole-classic-guacamole-mild-7-5-oz",
+    "wm": "Wholly Guacamole Classic Guacamole, Mild"
    },
    {
     "item": "NUCO Organic Coconut Wraps",
     "amount": "4",
-    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct"
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "anchor": "nuco-organic-coconut-wraps-original-5-ct",
+    "wm": "NUCO Organic Coconut Wraps, Original"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/2 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "Beef tallow, for the pan",
     "amount": "1 tsp",
-    "dbItem": "beef tallow"
+    "dbItem": "beef tallow",
+    "anchor": "beef-tallow-2",
+    "wm": "beef tallow"
    }
   ],
   "steps": [
@@ -746,33 +874,45 @@
    {
     "item": "Organic pasture-raised eggs",
     "amount": "8",
-    "dbItem": "Vital Farms Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "California Olive Ranch 100% California Extra Virgin Olive Oil",
     "amount": "3 tbsp",
-    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil"
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "anchor": "california-olive-ranch-100-california-extra-virgin-olive-oil",
+    "wm": "California Olive Ranch 100% California Extra Virgin Olive Oil"
    },
    {
     "item": "Fresh lemon juice",
     "amount": "1 tbsp",
-    "dbItem": "lemon (fresh)"
+    "dbItem": "lemon (fresh)",
+    "anchor": "lemon-fresh",
+    "wm": "lemon"
    },
    {
     "item": "Plain prepared mustard",
     "amount": "2 tsp",
     "dbItem": "mustard (prepared, plain)",
-    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings"
+    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings",
+    "anchor": "mustard-prepared-plain",
+    "wm": "mustard"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/2 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "NUCO Organic Coconut Wraps",
     "amount": "4",
-    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct"
+    "dbItem": "NUCO Organic Coconut Wraps, Original, 5 ct",
+    "anchor": "nuco-organic-coconut-wraps-original-5-ct",
+    "wm": "NUCO Organic Coconut Wraps, Original"
    }
   ],
   "steps": [
@@ -811,27 +951,37 @@
    {
     "item": "Organic Valley Grassmilk cheddar, sliced",
     "amount": "4 oz",
-    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
+    "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
+    "wm": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
    },
    {
     "item": "Whole apples, cored and sliced",
     "amount": "2",
-    "dbItem": "Whole fruit"
+    "dbItem": "Whole fruit",
+    "anchor": "whole-fruit",
+    "wm": "Whole fruit"
    },
    {
     "item": "Cashews, raw",
     "amount": "1/2 cup (2 oz)",
-    "dbItem": "cashews"
+    "dbItem": "cashews",
+    "anchor": "cashews",
+    "wm": "cashews"
    },
    {
     "item": "Raw honey, for drizzling",
     "amount": "2 tbsp",
-    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz"
+    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "wm": "Nate's Raw & Unfiltered Honey"
    },
    {
     "item": "Larabar Cashew Cookie bars",
     "amount": "2",
-    "dbItem": "Larabar Cashew Cookie"
+    "dbItem": "Larabar Cashew Cookie",
+    "anchor": "larabar-cashew-cookie",
+    "wm": "Larabar Cashew Cookie"
    }
   ],
   "steps": [
@@ -870,28 +1020,38 @@
     "item": "White rice, soaked",
     "amount": "1 cup dry",
     "dbItem": "White rice",
-    "note": "soak 8 to 12 hours in water before cooking, then drain"
+    "note": "soak 8 to 12 hours in water before cooking, then drain",
+    "anchor": "white-rice",
+    "wm": "White rice"
    },
    {
     "item": "Chicken breast, certified organic and pasture-raised",
     "amount": "1 lb",
     "dbItem": "Chicken",
-    "note": "only the certified organic, pasture-raised form passes"
+    "note": "only the certified organic, pasture-raised form passes",
+    "anchor": "chicken",
+    "wm": "Chicken"
    },
    {
     "item": "California Olive Ranch 100% California extra virgin olive oil",
     "amount": "2 tbsp",
-    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil"
+    "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "anchor": "california-olive-ranch-100-california-extra-virgin-olive-oil",
+    "wm": "California Olive Ranch 100% California Extra Virgin Olive Oil"
    },
    {
     "item": "Fresh lemon, cut in wedges",
     "amount": "1",
-    "dbItem": "lemon (fresh)"
+    "dbItem": "lemon (fresh)",
+    "anchor": "lemon-fresh",
+    "wm": "lemon"
    },
    {
     "item": "Plain sea salt",
     "amount": "1 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -923,38 +1083,52 @@
     "amount": "2 lb",
     "dbItem": "Force of Nature Ground Beef and Bison range (incl. Ancestral Blend)",
     "item": "Force of Nature Ancestral Blend ground beef (ground beef with beef liver and beef heart)",
-    "note": "the organ meats are already ground in and mild tasting; Thousand Hills ground beef works too"
+    "note": "the organ meats are already ground in and mild tasting; Thousand Hills ground beef works too",
+    "anchor": "force-of-nature-ground-beef-and-bison-range-incl-ancestral-blend",
+    "wm": "Force of Nature Ground Beef and Bison range"
    },
    {
     "amount": "1 large",
     "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
-    "item": "Vital Farms Organic Pasture-Raised Egg"
+    "item": "Vital Farms Organic Pasture-Raised Egg",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "amount": "1 medium (about 1 cup)",
     "dbItem": "onion (fresh)",
-    "item": "Fresh onion, finely diced"
+    "item": "Fresh onion, finely diced",
+    "anchor": "onion-fresh",
+    "wm": "onion"
    },
    {
     "amount": "2 cloves",
     "dbItem": "garlic / garlic powder",
-    "item": "Fresh garlic cloves, minced"
+    "item": "Fresh garlic cloves, minced",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "amount": "1/2 cup",
     "dbItem": "Primal Kitchen Organic Unsweetened Ketchup",
     "item": "Primal Kitchen Organic Unsweetened Ketchup, divided",
-    "note": "half mixed in, half spread on top as the glaze"
+    "note": "half mixed in, half spread on top as the glaze",
+    "anchor": "primal-kitchen-organic-unsweetened-ketchup",
+    "wm": "Primal Kitchen Organic Unsweetened Ketchup"
    },
    {
     "amount": "1 1/2 tsp",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "amount": "1/2 tsp",
     "dbItem": "black pepper",
-    "item": "Black pepper"
+    "item": "Black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "mealType": "Dinner",
@@ -996,45 +1170,61 @@
    {
     "amount": "1 lb",
     "dbItem": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
-    "item": "Thousand Hills Lifetime Grazed Ground Beef 85/15"
+    "item": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
+    "anchor": "thousand-hills-lifetime-grazed-ground-beef-85-15",
+    "wm": "Thousand Hills Lifetime Grazed Ground Beef 85/15"
    },
    {
     "amount": "4 slices (about 4 oz)",
     "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
-    "item": "Organic Valley Grassmilk Raw Cheddar, sliced"
+    "item": "Organic Valley Grassmilk Raw Cheddar, sliced",
+    "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
+    "wm": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
    },
    {
     "amount": "4 slices",
     "dbItem": "Base Culture Original Keto Gluten Free Bread, 16 oz",
     "item": "Base Culture Original Keto Bread, toasted",
-    "note": "or skip the bread and wrap each burger in a NUCO Organic Coconut Wrap"
+    "note": "or skip the bread and wrap each burger in a NUCO Organic Coconut Wrap",
+    "anchor": "base-culture-original-keto-gluten-free-bread-16-oz",
+    "wm": "Base Culture Original Keto Gluten Free Bread"
    },
    {
     "amount": "4 tbsp",
     "dbItem": "Primal Kitchen Organic Unsweetened Ketchup",
-    "item": "Primal Kitchen Organic Unsweetened Ketchup"
+    "item": "Primal Kitchen Organic Unsweetened Ketchup",
+    "anchor": "primal-kitchen-organic-unsweetened-ketchup",
+    "wm": "Primal Kitchen Organic Unsweetened Ketchup"
    },
    {
     "amount": "2 tsp",
     "dbItem": "mustard (prepared, plain)",
     "item": "Plain prepared mustard",
-    "note": "mustard is a major allergen, always mention it at the table"
+    "note": "mustard is a major allergen, always mention it at the table",
+    "anchor": "mustard-prepared-plain",
+    "wm": "mustard"
    },
    {
     "amount": "1 tsp",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "amount": "1/2 tsp",
     "dbItem": "black pepper",
-    "item": "Black pepper"
+    "item": "Black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    },
    {
     "amount": "1 tsp",
     "dbItem": "Beef tallow",
     "item": "Beef tallow",
-    "note": "just enough to film the pan"
+    "note": "just enough to film the pan",
+    "anchor": "beef-tallow-2",
+    "wm": "beef tallow"
    }
   ],
   "mealType": "Dinner",
@@ -1077,33 +1267,45 @@
     "amount": "1 whole bird, about 4 lb",
     "dbItem": "Chicken",
     "item": "Certified organic whole chicken",
-    "note": "only certified organic and pasture-raised passes"
+    "note": "only certified organic and pasture-raised passes",
+    "anchor": "chicken",
+    "wm": "Chicken"
    },
    {
     "amount": "2 lb",
     "dbItem": "Root vegetables",
-    "item": "Root vegetables (potatoes, carrots, sweet potatoes, or a mix), cut in 1 1/2 inch chunks"
+    "item": "Root vegetables (potatoes, carrots, sweet potatoes, or a mix), cut in 1 1/2 inch chunks",
+    "anchor": "root-vegetables",
+    "wm": "Root vegetables"
    },
    {
     "amount": "3 tbsp",
     "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
     "item": "Kriemhild Dairy Meadow Butter (salted), softened",
-    "note": "or beef tallow"
+    "note": "or beef tallow",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "amount": "4 cloves",
     "dbItem": "garlic / garlic powder",
-    "item": "Fresh garlic cloves, smashed"
+    "item": "Fresh garlic cloves, smashed",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "amount": "2 tsp",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "amount": "1 tsp",
     "dbItem": "black pepper",
-    "item": "Black pepper"
+    "item": "Black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "mealType": "Dinner",
@@ -1146,46 +1348,62 @@
     "amount": "1 1/2 lb",
     "dbItem": "Chicken",
     "item": "Certified organic chicken breast, cut into strips about 1 inch wide",
-    "note": "only certified organic and pasture-raised passes"
+    "note": "only certified organic and pasture-raised passes",
+    "anchor": "chicken",
+    "wm": "Chicken"
    },
    {
     "amount": "3/4 cup",
     "dbItem": "organic wheat flour (unenriched)",
     "item": "King Arthur Organic all-purpose flour",
-    "note": "certified organic, unenriched and unbleached"
+    "note": "certified organic, unenriched and unbleached",
+    "anchor": "organic-wheat-flour-unenriched",
+    "wm": "organic wheat flour"
    },
    {
     "amount": "2 large",
     "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
-    "item": "Vital Farms Organic Pasture-Raised Eggs, beaten"
+    "item": "Vital Farms Organic Pasture-Raised Eggs, beaten",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "amount": "1/3 cup",
     "dbItem": "Beef tallow",
     "item": "Beef tallow",
-    "note": "for shallow frying; Fatworks Grass-Fed Beef Tallow works"
+    "note": "for shallow frying; Fatworks Grass-Fed Beef Tallow works",
+    "anchor": "beef-tallow-2",
+    "wm": "beef tallow"
    },
    {
     "amount": "1/4 cup",
     "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
     "item": "Nate's Raw & Unfiltered Honey",
-    "note": "for the dip"
+    "note": "for the dip",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "wm": "Nate's Raw & Unfiltered Honey"
    },
    {
     "amount": "2 tbsp",
     "dbItem": "mustard (prepared, plain)",
     "item": "Plain prepared mustard",
-    "note": "for the dip; mustard is a major allergen, always mention it at the table"
+    "note": "for the dip; mustard is a major allergen, always mention it at the table",
+    "anchor": "mustard-prepared-plain",
+    "wm": "mustard"
    },
    {
     "amount": "1 1/2 tsp, divided",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "amount": "1/2 tsp",
     "dbItem": "black pepper",
-    "item": "Black pepper"
+    "item": "Black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "mealType": "Dinner",
@@ -1227,43 +1445,59 @@
    {
     "amount": "2 lb",
     "dbItem": "Beef",
-    "item": "Thousand Hills stew meat, cut in 1 1/2 inch chunks"
+    "item": "Thousand Hills stew meat, cut in 1 1/2 inch chunks",
+    "anchor": "beef",
+    "wm": "Beef"
    },
    {
     "amount": "2 lb",
     "dbItem": "Root vegetables",
-    "item": "Root vegetables (potatoes and carrots), cut in 1 inch chunks"
+    "item": "Root vegetables (potatoes and carrots), cut in 1 inch chunks",
+    "anchor": "root-vegetables",
+    "wm": "Root vegetables"
    },
    {
     "amount": "2 tbsp",
     "dbItem": "Beef tallow",
-    "item": "Beef tallow"
+    "item": "Beef tallow",
+    "anchor": "beef-tallow-2",
+    "wm": "beef tallow"
    },
    {
     "amount": "1 large",
     "dbItem": "onion (fresh)",
-    "item": "Fresh onion, diced"
+    "item": "Fresh onion, diced",
+    "anchor": "onion-fresh",
+    "wm": "onion"
    },
    {
     "amount": "3 cloves",
     "dbItem": "garlic / garlic powder",
-    "item": "Fresh garlic cloves, minced"
+    "item": "Fresh garlic cloves, minced",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "amount": "4 cups",
     "dbItem": "Spring water (glass bottle)",
     "item": "Mountain Valley Spring Water",
-    "note": "enough to just cover the meat"
+    "note": "enough to just cover the meat",
+    "anchor": "spring-water-glass-bottle",
+    "wm": "Spring water"
    },
    {
     "amount": "2 tsp",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "amount": "1 tsp",
     "dbItem": "black pepper",
-    "item": "Black pepper"
+    "item": "Black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "mealType": "Dinner",
@@ -1306,38 +1540,52 @@
     "amount": "12 oz",
     "dbItem": "Mediterranean bread and pasta (quality, Italy/France)",
     "item": "Montebello Organic Conchiglie (shell pasta)",
-    "note": "quality Italian pasta only"
+    "note": "quality Italian pasta only",
+    "anchor": "mediterranean-bread-and-pasta-quality-italy-france",
+    "wm": "Mediterranean bread and pasta"
    },
    {
     "amount": "1 lb",
     "dbItem": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
-    "item": "Thousand Hills Lifetime Grazed Ground Beef 85/15"
+    "item": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
+    "anchor": "thousand-hills-lifetime-grazed-ground-beef-85-15",
+    "wm": "Thousand Hills Lifetime Grazed Ground Beef 85/15"
    },
    {
     "amount": "1 jar, 24 oz",
     "dbItem": "Rao's Homemade Marinara Sauce",
-    "item": "Rao's Homemade Marinara Sauce"
+    "item": "Rao's Homemade Marinara Sauce",
+    "anchor": "rao-s-homemade-marinara-sauce",
+    "wm": "Rao's Homemade Marinara Sauce"
    },
    {
     "amount": "2 tbsp",
     "dbItem": "California Olive Ranch 100% California Extra Virgin Olive Oil",
     "item": "California Olive Ranch 100% California Extra Virgin Olive Oil",
-    "note": "only the 100% California bottle"
+    "note": "only the 100% California bottle",
+    "anchor": "california-olive-ranch-100-california-extra-virgin-olive-oil",
+    "wm": "California Olive Ranch 100% California Extra Virgin Olive Oil"
    },
    {
     "amount": "1 medium",
     "dbItem": "onion (fresh)",
-    "item": "Fresh onion, finely diced"
+    "item": "Fresh onion, finely diced",
+    "anchor": "onion-fresh",
+    "wm": "onion"
    },
    {
     "amount": "3 cloves",
     "dbItem": "garlic / garlic powder",
-    "item": "Fresh garlic cloves, minced"
+    "item": "Fresh garlic cloves, minced",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "amount": "1 tsp, plus more for the pasta water",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "mealType": "Dinner",
@@ -1380,27 +1628,37 @@
     "amount": "2 boxes, 16 oz total",
     "dbItem": "Felicia Organic Red Lentil Penne, 8 oz",
     "item": "Felicia Organic Red Lentil Penne, 100% lentil box",
-    "note": "check the box: the lentil and brown rice blend variant is banned"
+    "note": "check the box: the lentil and brown rice blend variant is banned",
+    "anchor": "felicia-organic-red-lentil-penne-8-oz",
+    "wm": "Felicia Organic Red Lentil Penne"
    },
    {
     "amount": "12 oz",
     "dbItem": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
-    "item": "Organic Valley Grassmilk Raw Cheddar, grated"
+    "item": "Organic Valley Grassmilk Raw Cheddar, grated",
+    "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
+    "wm": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar"
    },
    {
     "amount": "1 1/2 cups",
     "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
-    "item": "Organic Valley Grassmilk Organic Whole Milk"
+    "item": "Organic Valley Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "amount": "4 tbsp",
     "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
-    "item": "Kriemhild Dairy Meadow Butter (salted)"
+    "item": "Kriemhild Dairy Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "amount": "1 tsp, plus more for the pasta water",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "mealType": "Dinner",
@@ -1443,38 +1701,52 @@
    {
     "amount": "4 fillets, about 1 1/2 lb total",
     "dbItem": "Salmon, wild",
-    "item": "Wild salmon fillets, skin on"
+    "item": "Wild salmon fillets, skin on",
+    "anchor": "salmon-wild",
+    "wm": "Salmon, wild"
    },
    {
     "amount": "4 tbsp",
     "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
-    "item": "Kriemhild Dairy Meadow Butter (salted)"
+    "item": "Kriemhild Dairy Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "amount": "1 whole",
     "dbItem": "lemon (fresh)",
-    "item": "Fresh lemon, half for juice and half cut in wedges"
+    "item": "Fresh lemon, half for juice and half cut in wedges",
+    "anchor": "lemon-fresh",
+    "wm": "lemon"
    },
    {
     "amount": "2 cloves",
     "dbItem": "garlic / garlic powder",
-    "item": "Fresh garlic cloves, minced"
+    "item": "Fresh garlic cloves, minced",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "amount": "1 tbsp",
     "dbItem": "Beef tallow",
     "item": "Beef tallow or olive oil",
-    "note": "for the pan; California Olive Ranch 100% California oil also works"
+    "note": "for the pan; California Olive Ranch 100% California oil also works",
+    "anchor": "beef-tallow-2",
+    "wm": "beef tallow"
    },
    {
     "amount": "1 tsp",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "amount": "1/2 tsp",
     "dbItem": "black pepper",
-    "item": "Black pepper"
+    "item": "Black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "mealType": "Dinner",
@@ -1515,39 +1787,53 @@
    {
     "amount": "1 1/2 lb",
     "dbItem": "Seafood / fish (wild-caught)",
-    "item": "Wild shrimp, peeled and deveined"
+    "item": "Wild shrimp, peeled and deveined",
+    "anchor": "seafood-fish-wild-caught",
+    "wm": "Seafood / fish"
    },
    {
     "amount": "1 1/2 cups dry",
     "dbItem": "White rice",
     "item": "White rice, soaked",
-    "note": "soaked 8 to 12 hours in water with a squeeze of lemon, then drained; soak overnight"
+    "note": "soaked 8 to 12 hours in water with a squeeze of lemon, then drained; soak overnight",
+    "anchor": "white-rice",
+    "wm": "White rice"
    },
    {
     "amount": "4 tbsp",
     "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
-    "item": "Kriemhild Dairy Meadow Butter (salted)"
+    "item": "Kriemhild Dairy Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "amount": "4 cloves",
     "dbItem": "garlic / garlic powder",
-    "item": "Fresh garlic cloves, minced"
+    "item": "Fresh garlic cloves, minced",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "amount": "1 whole",
     "dbItem": "lemon (fresh)",
-    "item": "Fresh lemon, cut in wedges"
+    "item": "Fresh lemon, cut in wedges",
+    "anchor": "lemon-fresh",
+    "wm": "lemon"
    },
    {
     "amount": "2 1/4 cups",
     "dbItem": "Spring water (glass bottle)",
     "item": "Mountain Valley Spring Water",
-    "note": "for the rice"
+    "note": "for the rice",
+    "anchor": "spring-water-glass-bottle",
+    "wm": "Spring water"
    },
    {
     "amount": "1 tsp",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "mealType": "Dinner",
@@ -1588,44 +1874,60 @@
    {
     "amount": "4 chops, about 2 lb total",
     "dbItem": "Pork",
-    "item": "Pork chops, bone-in, about 1 inch thick"
+    "item": "Pork chops, bone-in, about 1 inch thick",
+    "anchor": "pork",
+    "wm": "Pork"
    },
    {
     "amount": "4 medium",
     "dbItem": "Whole fruit",
-    "item": "Whole apples, cored and cut in wedges"
+    "item": "Whole apples, cored and cut in wedges",
+    "anchor": "whole-fruit",
+    "wm": "Whole fruit"
    },
    {
     "amount": "2 tbsp, melted",
     "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
-    "item": "Kriemhild Dairy Meadow Butter (salted)"
+    "item": "Kriemhild Dairy Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "amount": "2 tbsp",
     "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
-    "item": "Nate's Raw & Unfiltered Honey"
+    "item": "Nate's Raw & Unfiltered Honey",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "wm": "Nate's Raw & Unfiltered Honey"
    },
    {
     "amount": "1 tsp",
     "dbItem": "cinnamon (Ceylon)",
     "item": "Ceylon cinnamon",
-    "note": "Ceylon only; unlabeled generic cinnamon is usually cassia and does not pass"
+    "note": "Ceylon only; unlabeled generic cinnamon is usually cassia and does not pass",
+    "anchor": "cinnamon-ceylon",
+    "wm": "cinnamon"
    },
    {
     "amount": "1 1/2 tsp",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "amount": "1/2 tsp",
     "dbItem": "black pepper",
-    "item": "Black pepper"
+    "item": "Black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    },
    {
     "amount": "1 tbsp",
     "dbItem": "Beef tallow",
     "item": "Beef tallow",
-    "note": "for searing the chops"
+    "note": "for searing the chops",
+    "anchor": "beef-tallow-2",
+    "wm": "beef tallow"
    }
   ],
   "mealType": "Dinner",
@@ -1666,32 +1968,44 @@
    {
     "amount": "1 1/2 lb",
     "dbItem": "Beef",
-    "item": "Thousand Hills steak (strip or sirloin), about 1 inch thick"
+    "item": "Thousand Hills steak (strip or sirloin), about 1 inch thick",
+    "anchor": "beef",
+    "wm": "Beef"
    },
    {
     "amount": "1 1/2 lb",
     "dbItem": "Root vegetables",
-    "item": "Root vegetables (potatoes, carrots, sweet potatoes), cut in 1 inch chunks"
+    "item": "Root vegetables (potatoes, carrots, sweet potatoes), cut in 1 inch chunks",
+    "anchor": "root-vegetables",
+    "wm": "Root vegetables"
    },
    {
     "amount": "2 tbsp",
     "dbItem": "Beef tallow",
-    "item": "Beef tallow, melted"
+    "item": "Beef tallow, melted",
+    "anchor": "beef-tallow-2",
+    "wm": "beef tallow"
    },
    {
     "amount": "3 cloves",
     "dbItem": "garlic / garlic powder",
-    "item": "Fresh garlic cloves, minced"
+    "item": "Fresh garlic cloves, minced",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "amount": "1 1/2 tsp",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "amount": "1 tsp",
     "dbItem": "black pepper",
-    "item": "Black pepper"
+    "item": "Black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "mealType": "Dinner",
@@ -1734,43 +2048,59 @@
     "amount": "2 lb",
     "dbItem": "Chicken",
     "item": "Certified organic chicken thighs, bone-in and skin-on",
-    "note": "only certified organic and pasture-raised passes"
+    "note": "only certified organic and pasture-raised passes",
+    "anchor": "chicken",
+    "wm": "Chicken"
    },
    {
     "amount": "1 cup dry",
     "dbItem": "White rice",
     "item": "White rice, soaked",
-    "note": "soaked 8 to 12 hours in water with a squeeze of lemon, then drained"
+    "note": "soaked 8 to 12 hours in water with a squeeze of lemon, then drained",
+    "anchor": "white-rice",
+    "wm": "White rice"
    },
    {
     "amount": "1 1/2 lb",
     "dbItem": "Root vegetables",
-    "item": "Root vegetables (carrots and potatoes), diced"
+    "item": "Root vegetables (carrots and potatoes), diced",
+    "anchor": "root-vegetables",
+    "wm": "Root vegetables"
    },
    {
     "amount": "1 large",
     "dbItem": "onion (fresh)",
-    "item": "Fresh onion, diced"
+    "item": "Fresh onion, diced",
+    "anchor": "onion-fresh",
+    "wm": "onion"
    },
    {
     "amount": "3 cloves",
     "dbItem": "garlic / garlic powder",
-    "item": "Fresh garlic cloves, minced"
+    "item": "Fresh garlic cloves, minced",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "amount": "10 cups",
     "dbItem": "Spring water (glass bottle)",
-    "item": "Mountain Valley Spring Water"
+    "item": "Mountain Valley Spring Water",
+    "anchor": "spring-water-glass-bottle",
+    "wm": "Spring water"
    },
    {
     "amount": "2 tsp, plus more to taste",
     "dbItem": "salt (plain sea salt)",
-    "item": "Plain sea salt"
+    "item": "Plain sea salt",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "amount": "1/2 tsp",
     "dbItem": "black pepper",
-    "item": "Black pepper"
+    "item": "Black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    }
   ],
   "mealType": "Dinner",
@@ -1820,33 +2150,45 @@
    {
     "item": "Smucker's Organic Creamy Peanut Butter",
     "amount": "1 cup",
-    "dbItem": "Smucker's | Organic Creamy Peanut Butter"
+    "dbItem": "Smucker's | Organic Creamy Peanut Butter",
+    "anchor": "smucker-s-organic-creamy-peanut-butter",
+    "wm": "Smucker's Organic Creamy Peanut Butter"
    },
    {
     "item": "Raw honey",
     "amount": "1/2 cup",
     "dbItem": "raw honey",
-    "note": "Nate's Raw & Unfiltered is the listed jar"
+    "note": "Nate's Raw & Unfiltered is the listed jar",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Organic pasture-raised egg",
     "amount": "1 large",
-    "dbItem": "Vital Farms | Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms | Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Pure vanilla extract",
     "amount": "1 tsp",
-    "dbItem": "vanilla extract"
+    "dbItem": "vanilla extract",
+    "anchor": "vanilla-extract",
+    "wm": "vanilla extract"
    },
    {
     "item": "Baking soda",
     "amount": "1/2 tsp",
-    "dbItem": "baking soda (sodium bicarbonate)"
+    "dbItem": "baking soda (sodium bicarbonate)",
+    "anchor": "baking-soda-sodium-bicarbonate",
+    "wm": "baking soda"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/4 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -1890,64 +2232,86 @@
     "item": "King Arthur Organic all-purpose flour",
     "amount": "2 cups",
     "dbItem": "organic wheat flour (unenriched)",
-    "note": "Certified organic, unenriched, unbleached, unbromated"
+    "note": "Certified organic, unenriched, unbleached, unbromated",
+    "anchor": "organic-wheat-flour-unenriched",
+    "wm": "organic wheat flour"
    },
    {
     "item": "Kriemhild Meadow Butter, softened",
     "amount": "1/2 cup",
     "dbItem": "Kriemhild Dairy | Meadow Butter (salted)",
-    "note": "For the dough"
+    "note": "For the dough",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Raw honey",
     "amount": "1/2 cup",
     "dbItem": "raw honey",
-    "note": "For the dough"
+    "note": "For the dough",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Organic pasture-raised egg, plus 1 yolk",
     "amount": "1 egg + 1 yolk",
     "dbItem": "Vital Farms | Organic Pasture-Raised Eggs",
-    "note": "The extra yolk is what keeps these soft without sour cream"
+    "note": "The extra yolk is what keeps these soft without sour cream",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Pure vanilla extract",
     "amount": "1 tsp",
-    "dbItem": "vanilla extract"
+    "dbItem": "vanilla extract",
+    "anchor": "vanilla-extract",
+    "wm": "vanilla extract"
    },
    {
     "item": "Baking soda",
     "amount": "1/2 tsp",
-    "dbItem": "baking soda (sodium bicarbonate)"
+    "dbItem": "baking soda (sodium bicarbonate)",
+    "anchor": "baking-soda-sodium-bicarbonate",
+    "wm": "baking soda"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/4 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "Kriemhild Meadow Butter, softened",
     "amount": "1/4 cup",
     "dbItem": "Kriemhild Dairy | Meadow Butter (salted)",
-    "note": "For the frosting"
+    "note": "For the frosting",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Raw honey",
     "amount": "3 tbsp",
     "dbItem": "raw honey",
-    "note": "For the frosting"
+    "note": "For the frosting",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "1 tbsp",
     "dbItem": "Organic Valley | Grassmilk Organic Whole Milk",
-    "note": "For the frosting, just enough to make it spreadable"
+    "note": "For the frosting, just enough to make it spreadable",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Brothers freeze-dried strawberry crisps",
     "amount": "1 bag (1 oz), crushed",
     "dbItem": "Brothers All Natural | Freeze Dried Strawberry Fruit Crisps, 1 oz",
-    "note": "The sprinkle stand-in: real fruit, no sugar, no dyes"
+    "note": "The sprinkle stand-in: real fruit, no sugar, no dyes",
+    "anchor": "brothers-all-natural-freeze-dried-strawberry-fruit-crisps-1-oz",
+    "wm": "Brothers All Natural Freeze Dried Strawberry Fruit Crisps"
    }
   ],
   "steps": [
@@ -1991,38 +2355,52 @@
    {
     "item": "Kriemhild Meadow Butter, melted",
     "amount": "1/2 cup",
-    "dbItem": "Kriemhild Dairy | Meadow Butter (salted)"
+    "dbItem": "Kriemhild Dairy | Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Carob powder, unsweetened",
     "amount": "3/4 cup",
     "dbItem": "carob powder (unsweetened)",
-    "note": "Single-ingredient carob only; this is the chocolate stand-in and is named carob on purpose"
+    "note": "Single-ingredient carob only; this is the chocolate stand-in and is named carob on purpose",
+    "anchor": "carob-powder-unsweetened",
+    "wm": "carob powder"
    },
    {
     "item": "King Arthur Organic all-purpose flour",
     "amount": "3/4 cup",
-    "dbItem": "organic wheat flour (unenriched)"
+    "dbItem": "organic wheat flour (unenriched)",
+    "anchor": "organic-wheat-flour-unenriched",
+    "wm": "organic wheat flour"
    },
    {
     "item": "Raw honey",
     "amount": "2/3 cup",
-    "dbItem": "raw honey"
+    "dbItem": "raw honey",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Organic pasture-raised eggs",
     "amount": "2 large",
-    "dbItem": "Vital Farms | Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms | Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Pure vanilla extract",
     "amount": "1 tsp",
-    "dbItem": "vanilla extract"
+    "dbItem": "vanilla extract",
+    "anchor": "vanilla-extract",
+    "wm": "vanilla extract"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/4 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -2066,69 +2444,93 @@
     "item": "King Arthur Organic all-purpose flour",
     "amount": "2 cups",
     "dbItem": "organic wheat flour (unenriched)",
-    "note": "Certified organic, unenriched, unbleached, unbromated"
+    "note": "Certified organic, unenriched, unbleached, unbromated",
+    "anchor": "organic-wheat-flour-unenriched",
+    "wm": "organic wheat flour"
    },
    {
     "item": "Kriemhild Meadow Butter, softened",
     "amount": "1/2 cup",
     "dbItem": "Kriemhild Dairy | Meadow Butter (salted)",
-    "note": "For the cake"
+    "note": "For the cake",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Raw honey",
     "amount": "3/4 cup",
     "dbItem": "raw honey",
-    "note": "For the cake"
+    "note": "For the cake",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Organic pasture-raised eggs",
     "amount": "2 large",
-    "dbItem": "Vital Farms | Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms | Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "1/2 cup",
-    "dbItem": "Organic Valley | Grassmilk Organic Whole Milk"
+    "dbItem": "Organic Valley | Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Pure vanilla extract",
     "amount": "2 tsp",
     "dbItem": "vanilla extract",
-    "note": "For the cake"
+    "note": "For the cake",
+    "anchor": "vanilla-extract",
+    "wm": "vanilla extract"
    },
    {
     "item": "Baking soda",
     "amount": "1 tsp",
-    "dbItem": "baking soda (sodium bicarbonate)"
+    "dbItem": "baking soda (sodium bicarbonate)",
+    "anchor": "baking-soda-sodium-bicarbonate",
+    "wm": "baking soda"
    },
    {
     "item": "Fresh lemon juice",
     "amount": "1 tbsp",
     "dbItem": "lemon (fresh)",
-    "note": "Acid that activates the soda for lift"
+    "note": "Acid that activates the soda for lift",
+    "anchor": "lemon-fresh",
+    "wm": "lemon"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/4 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "Kriemhild Meadow Butter, softened",
     "amount": "1/2 cup",
     "dbItem": "Kriemhild Dairy | Meadow Butter (salted)",
-    "note": "For the frosting"
+    "note": "For the frosting",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Raw honey",
     "amount": "1/3 cup",
     "dbItem": "raw honey",
-    "note": "For the frosting"
+    "note": "For the frosting",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Pure vanilla extract",
     "amount": "1 tsp",
     "dbItem": "vanilla extract",
-    "note": "For the frosting"
+    "note": "For the frosting",
+    "anchor": "vanilla-extract",
+    "wm": "vanilla extract"
    }
   ],
   "steps": [
@@ -2172,34 +2574,46 @@
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "2 cups",
-    "dbItem": "Organic Valley | Grassmilk Organic Whole Milk"
+    "dbItem": "Organic Valley | Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Pasteurized cream",
     "amount": "1 cup",
-    "dbItem": "cream (pasteurized cream)"
+    "dbItem": "cream (pasteurized cream)",
+    "anchor": "cream-pasteurized-cream",
+    "wm": "cream"
    },
    {
     "item": "Organic pasture-raised egg yolks",
     "amount": "4 yolks",
     "dbItem": "Vital Farms | Organic Pasture-Raised Eggs",
-    "note": "Save the whites for breakfast eggs"
+    "note": "Save the whites for breakfast eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Raw honey",
     "amount": "1/2 cup",
     "dbItem": "raw honey",
-    "note": "Added off the heat so its flavor stays alive"
+    "note": "Added off the heat so its flavor stays alive",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Pure vanilla extract",
     "amount": "2 tsp",
-    "dbItem": "vanilla extract"
+    "dbItem": "vanilla extract",
+    "anchor": "vanilla-extract",
+    "wm": "vanilla extract"
    },
    {
     "item": "Plain sea salt",
     "amount": "1 pinch",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -2244,59 +2658,79 @@
     "item": "King Arthur Organic all-purpose flour",
     "amount": "2 cups",
     "dbItem": "organic wheat flour (unenriched)",
-    "note": "For the cookie base (Honey Sugar Cookies dough)"
+    "note": "For the cookie base (Honey Sugar Cookies dough)",
+    "anchor": "organic-wheat-flour-unenriched",
+    "wm": "organic wheat flour"
    },
    {
     "item": "Kriemhild Meadow Butter",
     "amount": "3/4 cup total",
     "dbItem": "Kriemhild Dairy | Meadow Butter (salted)",
-    "note": "1/2 cup for the cookie base, 1/4 cup for the frosting"
+    "note": "1/2 cup for the cookie base, 1/4 cup for the frosting",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Raw honey",
     "amount": "1 1/4 cups total + 3 tbsp",
     "dbItem": "raw honey",
-    "note": "1/2 cup base, 1/2 cup ice cream, 1/3 cup + 3 tbsp frosting and base sweetening per the component recipes"
+    "note": "1/2 cup base, 1/2 cup ice cream, 1/3 cup + 3 tbsp frosting and base sweetening per the component recipes",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Organic pasture-raised eggs and yolks",
     "amount": "1 egg + 5 yolks total",
     "dbItem": "Vital Farms | Organic Pasture-Raised Eggs",
-    "note": "1 egg plus 1 yolk for the base, 4 yolks for the ice cream"
+    "note": "1 egg plus 1 yolk for the base, 4 yolks for the ice cream",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Pure vanilla extract",
     "amount": "3 tsp total",
-    "dbItem": "vanilla extract"
+    "dbItem": "vanilla extract",
+    "anchor": "vanilla-extract",
+    "wm": "vanilla extract"
    },
    {
     "item": "Baking soda",
     "amount": "1/2 tsp",
     "dbItem": "baking soda (sodium bicarbonate)",
-    "note": "For the cookie base"
+    "note": "For the cookie base",
+    "anchor": "baking-soda-sodium-bicarbonate",
+    "wm": "baking soda"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/4 tsp + 1 pinch",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "2 cups + 1 tbsp",
     "dbItem": "Organic Valley | Grassmilk Organic Whole Milk",
-    "note": "2 cups for the ice cream, 1 tbsp for the frosting"
+    "note": "2 cups for the ice cream, 1 tbsp for the frosting",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Pasteurized cream",
     "amount": "1 cup",
     "dbItem": "cream (pasteurized cream)",
-    "note": "For the ice cream layer"
+    "note": "For the ice cream layer",
+    "anchor": "cream-pasteurized-cream",
+    "wm": "cream"
    },
    {
     "item": "Brothers freeze-dried strawberry crisps",
     "amount": "1 bag (1 oz), crushed",
     "dbItem": "Brothers All Natural | Freeze Dried Strawberry Fruit Crisps, 1 oz",
-    "note": "The decoration, standing in for sprinkles"
+    "note": "The decoration, standing in for sprinkles",
+    "anchor": "brothers-all-natural-freeze-dried-strawberry-fruit-crisps-1-oz",
+    "wm": "Brothers All Natural Freeze Dried Strawberry Fruit Crisps"
    }
   ],
   "steps": [
@@ -2340,28 +2774,38 @@
    {
     "item": "Whole apples, firm baking variety",
     "amount": "4 apples",
-    "dbItem": "Whole fruit"
+    "dbItem": "Whole fruit",
+    "anchor": "whole-fruit",
+    "wm": "Whole fruit"
    },
    {
     "item": "Kriemhild Meadow Butter, melted",
     "amount": "4 tbsp",
-    "dbItem": "Kriemhild Dairy | Meadow Butter (salted)"
+    "dbItem": "Kriemhild Dairy | Meadow Butter (salted)",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "wm": "Kriemhild Dairy Meadow Butter"
    },
    {
     "item": "Raw honey",
     "amount": "1/4 cup",
-    "dbItem": "raw honey"
+    "dbItem": "raw honey",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Cashews, chopped",
     "amount": "1/2 cup",
-    "dbItem": "cashews"
+    "dbItem": "cashews",
+    "anchor": "cashews",
+    "wm": "cashews"
    },
    {
     "item": "Ceylon cinnamon",
     "amount": "1 tsp",
     "dbItem": "cinnamon (Ceylon)",
-    "note": "Ceylon (true) cinnamon only; unlabeled generic cinnamon is usually cassia and does not meet the list condition"
+    "note": "Ceylon (true) cinnamon only; unlabeled generic cinnamon is usually cassia and does not meet the list condition",
+    "anchor": "cinnamon-ceylon",
+    "wm": "cinnamon"
    }
   ],
   "steps": [
@@ -2404,17 +2848,23 @@
     "item": "Dates, pitted",
     "amount": "1 1/2 cups (about 255 g)",
     "dbItem": "dates",
-    "note": "Whole fruit; if dry, soak in warm water 10 minutes and drain well"
+    "note": "Whole fruit; if dry, soak in warm water 10 minutes and drain well",
+    "anchor": "dates",
+    "wm": "dates"
    },
    {
     "item": "Cashews",
     "amount": "1 1/2 cups (about 205 g)",
-    "dbItem": "cashews"
+    "dbItem": "cashews",
+    "anchor": "cashews",
+    "wm": "cashews"
    },
    {
     "item": "Plain sea salt",
     "amount": "1 pinch",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -2457,39 +2907,53 @@
     "item": "White rice, soaked",
     "amount": "3/4 cup dry",
     "dbItem": "White rice",
-    "note": "Soak 8 to 12 hours in water, then drain; the traditional preparation the list condition rests on"
+    "note": "Soak 8 to 12 hours in water, then drain; the traditional preparation the list condition rests on",
+    "anchor": "white-rice",
+    "wm": "White rice"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "3 cups",
-    "dbItem": "Organic Valley | Grassmilk Organic Whole Milk"
+    "dbItem": "Organic Valley | Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Raw honey",
     "amount": "1/3 cup",
     "dbItem": "raw honey",
-    "note": "Stirred in off the heat so the flavor survives"
+    "note": "Stirred in off the heat so the flavor survives",
+    "anchor": "raw-honey-2",
+    "wm": "raw honey"
    },
    {
     "item": "Organic pasture-raised egg, beaten",
     "amount": "1 large",
-    "dbItem": "Vital Farms | Organic Pasture-Raised Eggs"
+    "dbItem": "Vital Farms | Organic Pasture-Raised Eggs",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Pure vanilla extract",
     "amount": "1 tsp",
-    "dbItem": "vanilla extract"
+    "dbItem": "vanilla extract",
+    "anchor": "vanilla-extract",
+    "wm": "vanilla extract"
    },
    {
     "item": "Ceylon cinnamon",
     "amount": "1/2 tsp, plus more for the top",
     "dbItem": "cinnamon (Ceylon)",
-    "note": "Ceylon (true) cinnamon only, per the list condition"
+    "note": "Ceylon (true) cinnamon only, per the list condition",
+    "anchor": "cinnamon-ceylon",
+    "wm": "cinnamon"
    },
    {
     "item": "Plain sea salt",
     "amount": "1 pinch",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -2532,28 +2996,38 @@
     "item": "Organic pasture-raised egg yolk",
     "amount": "1 yolk",
     "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
-    "note": "Room temperature, it emulsifies better"
+    "note": "Room temperature, it emulsifies better",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "wm": "Vital Farms Organic Pasture-Raised Eggs"
    },
    {
     "item": "Avocado oil",
     "amount": "3/4 cup",
-    "dbItem": "avocado oil"
+    "dbItem": "avocado oil",
+    "anchor": "avocado-oil",
+    "wm": "avocado oil"
    },
    {
     "item": "Fresh lemon juice",
     "amount": "1 tbsp",
-    "dbItem": "lemon (fresh)"
+    "dbItem": "lemon (fresh)",
+    "anchor": "lemon-fresh",
+    "wm": "lemon"
    },
    {
     "item": "Plain prepared mustard",
     "amount": "1 tsp",
     "dbItem": "mustard (prepared, plain)",
-    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings"
+    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings",
+    "anchor": "mustard-prepared-plain",
+    "wm": "mustard"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/4 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -2593,43 +3067,59 @@
     "item": "Homemade mayo, from the recipe on this site",
     "amount": "1/2 cup",
     "dbItem": "avocado oil",
-    "note": "The Homemade Mayo here: avocado oil and a pasture-raised yolk"
+    "note": "The Homemade Mayo here: avocado oil and a pasture-raised yolk",
+    "anchor": "avocado-oil",
+    "wm": "avocado oil"
    },
    {
     "item": "Organic Valley Grassmilk whole milk",
     "amount": "2 tbsp",
-    "dbItem": "Organic Valley Grassmilk Organic Whole Milk"
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "wm": "Organic Valley Grassmilk Organic Whole Milk"
    },
    {
     "item": "Fresh lemon juice",
     "amount": "1 tsp",
-    "dbItem": "lemon (fresh)"
+    "dbItem": "lemon (fresh)",
+    "anchor": "lemon-fresh",
+    "wm": "lemon"
    },
    {
     "item": "Fresh garlic, finely grated",
     "amount": "1 small clove",
-    "dbItem": "garlic / garlic powder"
+    "dbItem": "garlic / garlic powder",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "item": "Fresh onion, finely grated",
     "amount": "1 tsp",
-    "dbItem": "onion (fresh)"
+    "dbItem": "onion (fresh)",
+    "anchor": "onion-fresh",
+    "wm": "onion"
    },
    {
     "item": "Plain prepared mustard",
     "amount": "1 tsp",
     "dbItem": "mustard (prepared, plain)",
-    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings"
+    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings",
+    "anchor": "mustard-prepared-plain",
+    "wm": "mustard"
    },
    {
     "item": "Ground black pepper",
     "amount": "1/4 tsp",
-    "dbItem": "black pepper"
+    "dbItem": "black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/2 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [
@@ -2666,39 +3156,53 @@
    {
     "item": "Rao's Homemade Marinara Sauce",
     "amount": "1 1/4 cups",
-    "dbItem": "Rao's Homemade Marinara Sauce"
+    "dbItem": "Rao's Homemade Marinara Sauce",
+    "anchor": "rao-s-homemade-marinara-sauce",
+    "wm": "Rao's Homemade Marinara Sauce"
    },
    {
     "item": "Nate's Raw & Unfiltered Honey",
     "amount": "3 tbsp",
-    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz"
+    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "wm": "Nate's Raw & Unfiltered Honey"
    },
    {
     "item": "Vinegar",
     "amount": "2 tbsp",
     "dbItem": "vinegar (distilled white and apple cider)",
-    "note": "Distilled white or apple cider vinegar, here as a cooking ingredient"
+    "note": "Distilled white or apple cider vinegar, here as a cooking ingredient",
+    "anchor": "vinegar-distilled-white-and-apple-cider",
+    "wm": "vinegar"
    },
    {
     "item": "Plain prepared mustard",
     "amount": "1 tbsp",
     "dbItem": "mustard (prepared, plain)",
-    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings"
+    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings",
+    "anchor": "mustard-prepared-plain",
+    "wm": "mustard"
    },
    {
     "item": "Fresh garlic, minced",
     "amount": "2 cloves",
-    "dbItem": "garlic / garlic powder"
+    "dbItem": "garlic / garlic powder",
+    "anchor": "garlic-garlic-powder",
+    "wm": "garlic / garlic powder"
    },
    {
     "item": "Ground black pepper",
     "amount": "1/2 tsp",
-    "dbItem": "black pepper"
+    "dbItem": "black pepper",
+    "anchor": "black-pepper",
+    "wm": "black pepper"
    },
    {
     "item": "Plain sea salt",
     "amount": "1/2 tsp",
-    "dbItem": "salt (plain sea salt)"
+    "dbItem": "salt (plain sea salt)",
+    "anchor": "salt-plain-sea-salt",
+    "wm": "salt"
    }
   ],
   "steps": [

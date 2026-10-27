@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { BadgeCheck, Check, Clock3, Copy, AlertTriangle, Users } from 'lucide-react';
+import { BadgeCheck, Check, Clock3, Copy, AlertTriangle, ExternalLink, Users } from 'lucide-react';
 import Missing from './Missing';
-import { mealById, recipeText, typeOf, useHead } from '../lib/store';
+import { mealById, recipeText, typeOf, useHead, woodmansUrl } from '../lib/store';
 
 export default function MealPage() {
   const { mealId } = useParams();
@@ -34,12 +34,15 @@ export default function MealPage() {
           </div>
 
           <h2 className="mt-10 font-display text-2xl font-bold">Ingredients</h2>
-          <p className="mt-1 text-sm text-ink/55">Every line names the allowlist entry it was checked against. Nothing else is in this meal.</p>
+          <p className="mt-1 text-sm text-ink/55">Every line names the allowlist entry it was checked against: tap it to open that exact item on the full list, or use the Woodman's link to find it at the store. Nothing else is in this meal.</p>
           <ul className="mt-4 overflow-hidden rounded-2xl border border-ink/10 bg-cream">
             {meal.ingredients.map((ing, i) => (
               <li key={i} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-ink/5 px-5 py-3 last:border-0">
                 <span className="text-[15px]"><span className="font-bold">{ing.amount}</span> {ing.item}{ing.note ? <span className="text-ink/50"> ({ing.note})</span> : null}</span>
-                <span className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wide text-pine-700"><BadgeCheck size={12} /> {ing.dbItem}</span>
+                <span className="inline-flex items-center gap-3">
+                  <Link to={`/pantry#${ing.anchor || ''}`} className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wide text-pine-700 hover:underline"><BadgeCheck size={12} /> {ing.dbItem}</Link>
+                  <a href={woodmansUrl(ing.wm || ing.dbItem)} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wide text-ink/50 hover:text-pine-700 hover:underline">Woodman's <ExternalLink size={11} /></a>
+                </span>
               </li>
             ))}
           </ul>

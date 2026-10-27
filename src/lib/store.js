@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import meals from '../data/meals.json';
-import pantry from '../data/pantry.json';
+import pantry from '../data/allowlist.json';
 
 export const SITE = 'Allowlist Kitchen';
 export const EMAIL = 'cartermoyer75@gmail.com';
@@ -24,7 +24,13 @@ export const mealsOfType = (id) => {
   return t ? meals.filter((m) => m.mealType === t.name) : [];
 };
 export const mealById = (id) => meals.find((m) => m.id === id) || null;
+export const mealByName = (name) => meals.find((m) => m.name === name) || null;
 export const getPantry = () => pantry;
+export const getAllowlist = () => pantry;
+
+// Woodman's (Onalaska, store 24) storefront search. The pattern is the one
+// the live store itself uses for a search results page.
+export const woodmansUrl = (term) => `https://shopwoodmans.com/store/woodmans-food-markets/s?k=${encodeURIComponent(term).replace(/%20/g, '+')}`;
 
 export function filterMeals({ query = '', typeId = null, maxMinutes = null, minProtein = null } = {}) {
   let out = meals;
