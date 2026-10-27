@@ -2514,5 +2514,210 @@
    "honey-sweetened",
    "make-ahead"
   ]
+ },
+ {
+  "id": "homemade-mayo",
+  "name": "Homemade Mayo",
+  "mealType": "Basics",
+  "description": "The mayo this list can actually eat. Store-bought mayo fails on its eggs (cage-free, not pasture-raised), so this is the five minute version: one pasture-raised yolk, avocado oil, lemon, mustard, and salt. It is also the base for the ranch dressing.",
+  "time": {
+   "prep": 10,
+   "cook": 0,
+   "total": 10
+  },
+  "servings": 16,
+  "difficulty": "Easy",
+  "ingredients": [
+   {
+    "item": "Organic pasture-raised egg yolk",
+    "amount": "1 yolk",
+    "dbItem": "Vital Farms Organic Pasture-Raised Eggs",
+    "note": "Room temperature, it emulsifies better"
+   },
+   {
+    "item": "Avocado oil",
+    "amount": "3/4 cup",
+    "dbItem": "avocado oil"
+   },
+   {
+    "item": "Fresh lemon juice",
+    "amount": "1 tbsp",
+    "dbItem": "lemon (fresh)"
+   },
+   {
+    "item": "Plain prepared mustard",
+    "amount": "1 tsp",
+    "dbItem": "mustard (prepared, plain)",
+    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings"
+   },
+   {
+    "item": "Plain sea salt",
+    "amount": "1/4 tsp",
+    "dbItem": "salt (plain sea salt)"
+   }
+  ],
+  "steps": [
+   "Whisk the yolk, mustard, lemon juice, and salt in a bowl until smooth and a little frothy. Allergen note: this recipe contains mustard.",
+   "Add the oil literally drop by drop at first, whisking the whole time. Once it starts to thicken, you can pour in a thin, slow stream. Rushing the oil is the one way this fails.",
+   "If it splits, whisk a spoonful into a fresh yolk in a clean bowl, then slowly whisk the split mixture back in.",
+   "Taste and adjust the salt and lemon. Cover and refrigerate up to a week.",
+   "Honest note: this contains a raw yolk. Use the freshest eggs you have and keep it cold; anyone pregnant or immunocompromised should skip raw-egg foods."
+  ],
+  "nutrition": {
+   "calories": 95,
+   "protein": 0,
+   "carbs": 0,
+   "fat": 10,
+   "fiber": 0
+  },
+  "tags": [
+   "condiment",
+   "make ahead",
+   "ranch base"
+  ]
+ },
+ {
+  "id": "ranch-dressing",
+  "name": "Ranch-Style Dressing",
+  "mealType": "Basics",
+  "description": "Bottled ranch failed twice over: the usual brands on seed oils, and the cleanest one on egg yolks that do not meet the egg rule. This homemade version starts from the mayo on this site, thinned with Grassmilk milk and loaded with garlic, onion, mustard, and black pepper.",
+  "time": {
+   "prep": 5,
+   "cook": 0,
+   "total": 5
+  },
+  "servings": 5,
+  "difficulty": "Easy",
+  "ingredients": [
+   {
+    "item": "Homemade mayo, from the recipe on this site",
+    "amount": "1/2 cup",
+    "dbItem": "avocado oil",
+    "note": "The Homemade Mayo here: avocado oil and a pasture-raised yolk"
+   },
+   {
+    "item": "Organic Valley Grassmilk whole milk",
+    "amount": "2 tbsp",
+    "dbItem": "Organic Valley Grassmilk Organic Whole Milk"
+   },
+   {
+    "item": "Fresh lemon juice",
+    "amount": "1 tsp",
+    "dbItem": "lemon (fresh)"
+   },
+   {
+    "item": "Fresh garlic, finely grated",
+    "amount": "1 small clove",
+    "dbItem": "garlic / garlic powder"
+   },
+   {
+    "item": "Fresh onion, finely grated",
+    "amount": "1 tsp",
+    "dbItem": "onion (fresh)"
+   },
+   {
+    "item": "Plain prepared mustard",
+    "amount": "1 tsp",
+    "dbItem": "mustard (prepared, plain)",
+    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings"
+   },
+   {
+    "item": "Ground black pepper",
+    "amount": "1/4 tsp",
+    "dbItem": "black pepper"
+   },
+   {
+    "item": "Plain sea salt",
+    "amount": "1/2 tsp",
+    "dbItem": "salt (plain sea salt)"
+   }
+  ],
+  "steps": [
+   "Whisk everything together until smooth. Allergen note: this recipe contains mustard, in the mayo base and added here.",
+   "Chill at least 30 minutes. The garlic and onion settle in and it tastes like ranch, not like ingredients.",
+   "Stir before serving. Keeps 4 to 5 days in the fridge, since the mayo base is a raw-yolk mayo."
+  ],
+  "nutrition": {
+   "calories": 155,
+   "protein": 0,
+   "carbs": 1,
+   "fat": 16,
+   "fiber": 0
+  },
+  "tags": [
+   "condiment",
+   "dip",
+   "salad"
+  ]
+ },
+ {
+  "id": "bbq-sauce",
+  "name": "Honey BBQ Sauce",
+  "mealType": "Basics",
+  "description": "Four bottled BBQ sauces were checked and all four failed: smoke flavor, molasses, agave, caramel color. This simmered version is Rao's marinara, raw honey, vinegar, mustard, garlic, and pepper. Tangy and lightly sweet, with no smoke flavoring in it: any smoke comes from your grill.",
+  "time": {
+   "prep": 5,
+   "cook": 15,
+   "total": 20
+  },
+  "servings": 12,
+  "difficulty": "Easy",
+  "ingredients": [
+   {
+    "item": "Rao's Homemade Marinara Sauce",
+    "amount": "1 1/4 cups",
+    "dbItem": "Rao's Homemade Marinara Sauce"
+   },
+   {
+    "item": "Nate's Raw & Unfiltered Honey",
+    "amount": "3 tbsp",
+    "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz"
+   },
+   {
+    "item": "Vinegar",
+    "amount": "2 tbsp",
+    "dbItem": "vinegar (distilled white and apple cider)",
+    "note": "Distilled white or apple cider vinegar, here as a cooking ingredient"
+   },
+   {
+    "item": "Plain prepared mustard",
+    "amount": "1 tbsp",
+    "dbItem": "mustard (prepared, plain)",
+    "note": "Allergen: mustard. Plain prepared only, no added sugar or flavorings"
+   },
+   {
+    "item": "Fresh garlic, minced",
+    "amount": "2 cloves",
+    "dbItem": "garlic / garlic powder"
+   },
+   {
+    "item": "Ground black pepper",
+    "amount": "1/2 tsp",
+    "dbItem": "black pepper"
+   },
+   {
+    "item": "Plain sea salt",
+    "amount": "1/2 tsp",
+    "dbItem": "salt (plain sea salt)"
+   }
+  ],
+  "steps": [
+   "Put everything in a small saucepan and whisk together. Allergen note: this recipe contains mustard.",
+   "Simmer on low 12 to 15 minutes, stirring now and then, until it thickens slightly and darkens a shade.",
+   "Cool and refrigerate up to 2 weeks.",
+   "Grilling tip: brush it on in the last few minutes of cooking. Honey burns if it sits over high heat from the start."
+  ],
+  "nutrition": {
+   "calories": 40,
+   "protein": 0,
+   "carbs": 5,
+   "fat": 1,
+   "fiber": 0
+  },
+  "tags": [
+   "condiment",
+   "grilling",
+   "make ahead"
+  ]
  }
 ]

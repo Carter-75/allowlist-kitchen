@@ -10,6 +10,7 @@ export const TYPES = [
   { id: 'lunch', name: 'Lunch', plural: 'Lunches', blurb: 'Wraps, sandwiches and plates built from the same small pantry. Packable, quick, filling.', tint: 'bg-lime-100 text-lime-900', dot: 'bg-lime-600' },
   { id: 'dinner', name: 'Dinner', plural: 'Dinners', blurb: 'Meatloaf, burgers, roast chicken, tenders, pasta and stew. The family table, allowlist edition.', tint: 'bg-orange-100 text-orange-900', dot: 'bg-orange-600' },
   { id: 'treats', name: 'Treat', plural: 'Treats', blurb: 'Cookies, cake, carob brownies and homemade ice cream, sweetened with raw honey or fruit only.', tint: 'bg-rose-100 text-rose-900', dot: 'bg-rose-500' },
+  { id: 'basics', name: 'Basics', plural: 'Basics', blurb: 'Mayo, ranch and BBQ sauce made at home, because no bottled version passes the list. Five minutes each, all from the same pantry.', tint: 'bg-teal-100 text-teal-900', dot: 'bg-teal-600' },
 ];
 
 const typeById = Object.fromEntries(TYPES.map((t) => [t.id, t]));

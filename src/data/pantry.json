@@ -10,6 +10,11 @@
   "note": "Grass-fed alone FAILS (it can mean grain-finished)."
  },
  {
+  "name": "Brothers All Natural Freeze Dried Strawberry Fruit Crisps, 1 oz",
+  "verdict": "APPROVED",
+  "note": "Strawberries."
+ },
+ {
   "name": "California Olive Ranch 100% California Extra Virgin Olive Oil",
   "verdict": "APPROVED",
   "note": "Extra Virgin Olive Oil."
@@ -18,11 +23,6 @@
   "name": "Chicken",
   "verdict": "CONDITIONAL",
   "note": "Conventional US chicken FAILS: antibiotics, chlorine wash, fecal-soup processing, salmonella."
- },
- {
-  "name": "Eggs",
-  "verdict": "CONDITIONAL",
-  "note": "Hens must forage grass and insects or the eggs are nutrient-deficient."
  },
  {
   "name": "Fatworks Grass-Fed Beef Tallow",
@@ -38,11 +38,6 @@
   "name": "Force of Nature Ground Beef and Bison range (incl. Ancestral Blend)",
   "verdict": "APPROVED",
   "note": "100% grass-fed beef or bison; Ancestral Blend = ground beef, beef liver, beef heart, nothing else."
- },
- {
-  "name": "Freeze Dried Strawberry Fruit Crisps, 1 oz",
-  "verdict": "APPROVED",
-  "note": "Strawberries."
  },
  {
   "name": "Kriemhild Dairy Meadow Butter (salted)",
@@ -78,11 +73,6 @@
   "name": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
   "verdict": "APPROVED",
   "note": "Organic grass-fed cultured milk, sea salt, vegetarian enzyme."
- },
- {
-  "name": "Organic Whole Milk",
-  "verdict": "BANNED",
-  "note": "Organic Grade A Milk, Vitamin D3."
  },
  {
   "name": "Pork",
@@ -160,6 +150,11 @@
   "note": "Wild Blueberries."
  },
  {
+  "name": "avocado oil",
+  "verdict": "APPROVED",
+  "note": "Carter ruled avocado oil fine: Oct 25, 2026 for his personal picks, and stated generally Oct 27, 2026 (avocado oil is fine, and olive oil too)."
+ },
+ {
   "name": "baking soda (sodium bicarbonate)",
   "verdict": "APPROVED",
   "note": "No video coverage."
@@ -173,11 +168,6 @@
   "name": "black pepper",
   "verdict": "APPROVED",
   "note": "Corpus is silent (gap check Oct 26, 2026)."
- },
- {
-  "name": "butter",
-  "verdict": "APPROVED",
-  "note": "Approved traditional fat."
  },
  {
   "name": "carob powder (unsweetened)",
@@ -248,5 +238,10 @@
   "name": "vanilla extract",
   "verdict": "APPROVED",
   "note": "No independent video verdict (a real extract appeared in the passing Toups and Co balm)."
+ },
+ {
+  "name": "vinegar (distilled white and apple cider)",
+  "verdict": "CONDITIONAL",
+  "note": "CONDITIONAL: as an ingredient cooked into food or used in dressings and marinades, never as a drink."
  }
 ]
