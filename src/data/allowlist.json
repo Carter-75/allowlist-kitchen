@@ -1293,6 +1293,15 @@
     "usedIn": []
   },
   {
+    "name": "pumpkin seeds (pepitas)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "pumpkin-seeds-pepitas",
+    "search": "pumpkin seeds",
+    "usedIn": []
+  },
+  {
     "name": "raw honey",
     "kind": "Ingredient",
     "verdict": "APPROVED",
