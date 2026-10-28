@@ -1,2215 +1,2215 @@
 [
- {
-  "name": "Beef",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Grass-fed alone FAILS (it can mean grain-finished). Eaten with its fat. The videos' animal-protein rule: 4-8 servings a day. Contract requires at least 1 serving of beef or lamb daily.",
-  "search": "Beef",
-  "anchor": "beef",
-  "usedIn": [
-   "Beef Stew with Root Vegetables",
-   "Sheet-Pan Steak and Roasted Roots",
-   "Steak and Eggs Skillet"
-  ]
- },
- {
-  "name": "Beef tallow",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Required primary cooking fat and the only frying fat under the contract. Rich in vitamins A, D, E and choline.",
-  "search": "Beef tallow",
-  "anchor": "beef-tallow",
-  "usedIn": []
- },
- {
-  "name": "Beef tallow (topical / skincare)",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Mimics the skin's natural oils; vitamins A, D, E, choline and fatty acids. The corpus treats skin as an ingestion route.",
-  "search": "Beef tallow",
-  "anchor": "beef-tallow-topical-skincare",
-  "usedIn": []
- },
- {
-  "name": "Bison",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Not separately verdicted in the videos; verified farm sources pass the beef grass-fed-and-finished standard.",
-  "search": "Bison",
-  "anchor": "bison",
-  "usedIn": []
- },
- {
-  "name": "Black tea",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "Flagged for fluoride content (3.73 ppm). Not given a full ban in the corpus; the contract bans caffeinated drinks, which covers tea.",
-  "search": "Black tea",
-  "anchor": "black-tea",
-  "usedIn": []
- },
- {
-  "name": "Breast milk",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Unmatched: vitamins D and K, iodine, copper, zinc, perfect protein/fat/carb balance, growth factors and everything a baby needs.",
-  "search": "Breast milk",
-  "anchor": "breast-milk",
-  "usedIn": []
- },
- {
-  "name": "Butter",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "One of the five approved cooking fats. Contract: 4 tbsp daily (WAPF).",
-  "search": "Butter",
-  "anchor": "butter",
-  "usedIn": []
- },
- {
-  "name": "Calendula (topical)",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Approved skincare ingredient alongside tallow, manuka honey and cold-pressed olive oil.",
-  "search": "Calendula",
-  "anchor": "calendula-topical",
-  "usedIn": []
- },
- {
-  "name": "Cheese",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Named among the most nutrient-dense foods. Raw cheddar passes the store checks; raw cheese aged 60+ days can legally be shipped.",
-  "search": "Cheese",
-  "anchor": "cheese",
-  "usedIn": []
- },
- {
-  "name": "Chicken",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "Conventional US chicken FAILS: antibiotics, chlorine wash, fecal-soup processing, salmonella. Only certified organic AND pasture-raised passes.",
-  "search": "Chicken",
-  "anchor": "chicken",
-  "usedIn": [
-   "Chicken Soup with Rice",
-   "Chicken and Guacamole Wraps",
-   "Chicken and Rice Bowls",
-   "Crispy Chicken Tenders with Honey Mustard",
-   "Whole Roast Chicken with Root Vegetables"
-  ]
- },
- {
-  "name": "Coconut oil",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Acceptable traditional fat. Contract: 2 tbsp daily (WAPF).",
-  "search": "Coconut oil",
-  "anchor": "coconut-oil",
-  "usedIn": []
- },
- {
-  "name": "Coconut water (plain)",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Plain coconut water passed all store checks (Harmless Harvest). Spring water remains the default drink per the videos.",
-  "search": "Coconut water",
-  "anchor": "coconut-water-plain",
-  "usedIn": []
- },
- {
-  "name": "Cruciferous vegetables, raw (broccoli, kale)",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "Raw crucifers can block the thyroid (goitrogens); cooking kills goitrogens and fermenting makes greens safer.",
-  "search": "Cruciferous vegetables, raw",
-  "anchor": "cruciferous-vegetables-raw-broccoli-kale",
-  "usedIn": []
- },
- {
-  "name": "Dog food, fresh whole foods and raw meat",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Feed dogs fresh whole foods and raw meat, low-glycemic veggies and blueberries. Never the onion family, grapes/raisins, macadamia nuts or chocolate.",
-  "search": "Dog food, fresh whole foods and raw meat",
-  "anchor": "dog-food-fresh-whole-foods-and-raw-meat",
-  "usedIn": []
- },
- {
-  "name": "Duck (meat)",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Not directly verdicted in the videos; verified pasture-raised farm sources pass the farm checks.",
-  "search": "Duck",
-  "anchor": "duck-meat",
-  "usedIn": []
- },
- {
-  "name": "Duck fat",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Named frying fat alongside tallow.",
-  "search": "Duck fat",
-  "anchor": "duck-fat",
-  "usedIn": []
- },
- {
-  "name": "Eggs",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "Hens must forage grass and insects or the eggs are nutrient-deficient. Filed under meat/animal protein.",
-  "search": "Eggs",
-  "anchor": "eggs",
-  "usedIn": []
- },
- {
-  "name": "Homemade infant formula (WAPF recipe, modified)",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "The fallback when breast milk is not possible. Full recipe in FULL_FOOD_LIST.md Part 3. The video's one modification: do not add the sunflower oil from the linked recipe.",
-  "search": "Homemade infant formula",
-  "anchor": "homemade-infant-formula-wapf-recipe-modified",
-  "usedIn": []
- },
- {
-  "name": "Lamb",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Not separately verdicted in the videos; held to the beef standard. WAPF pregnancy anchor: fresh beef or lamb daily, eaten with its fat.",
-  "search": "Lamb",
-  "anchor": "lamb",
-  "usedIn": []
- },
- {
-  "name": "Lentils",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "The one lentil-specific charge in the corpus is pre-harvest Roundup desiccation: lentils are named among the crops sprayed as close as 3 days before harvest (Why is American food so TOXIC?). Organic certification is the direct answer, so ORGANIC lentils clear it; conventional lentils do not.",
-  "search": "Lentils",
-  "anchor": "lentils",
-  "usedIn": []
- },
- {
-  "name": "Mediterranean bread and pasta (quality, Italy/France)",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "Quality Mediterranean breads and pastas from Italy and France are stated to be fine; US fortified ultra-refined flour is not.",
-  "search": "Mediterranean bread and pasta",
-  "anchor": "mediterranean-bread-and-pasta-quality-italy-france",
-  "usedIn": [
-   "Conchiglie with Beef Ragu"
-  ]
- },
- {
-  "name": "Oats, organic",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "Organic only, if used. Does not rescue oat milk, which is banned.",
-  "search": "Oats, organic",
-  "anchor": "oats-organic",
-  "usedIn": []
- },
- {
-  "name": "Olive oil",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Cold-pressed specified. Also an approved skincare ingredient.",
-  "search": "Olive oil",
-  "anchor": "olive-oil",
-  "usedIn": []
- },
- {
-  "name": "Organ meats (incl. liver)",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Far more absorbable nutrients than vegetables per the videos. Contract: liver 3-4 oz twice per week (WAPF amount).",
-  "search": "Organ meats",
-  "anchor": "organ-meats-incl-liver",
-  "usedIn": []
- },
- {
-  "name": "Plain whole milk (pasteurized)",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "Fallback when raw is unavailable. Conventional-milk marketing is criticized as propaganda, but plain whole milk itself is the stated fallback.",
-  "search": "Plain whole milk",
-  "anchor": "plain-whole-milk-pasteurized",
-  "usedIn": []
- },
- {
-  "name": "Pork",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Endorsed as animal protein; the videos set no sourcing label for pork. The farms file prefers pasture-raised.",
-  "search": "Pork",
-  "anchor": "pork",
-  "usedIn": [
-   "Pork Chops with Baked Apples"
-  ]
- },
- {
-  "name": "Raisins",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "Flagged once for fluoride content (2.34 ppm) from fluoridated processing water. Also: never feed grapes or raisins to dogs.",
-  "search": "Raisins",
-  "anchor": "raisins",
-  "usedIn": []
- },
- {
-  "name": "Raw honey",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "One of only two approved sweeteners (with whole fruit). Manuka is cited as antibacterial, antifungal and antiviral.",
-  "search": "Raw honey",
-  "anchor": "raw-honey",
-  "usedIn": []
- },
- {
-  "name": "Raw milk",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "The ideal dairy in the corpus. Retail sale is banned in about 20 states and interstate shipping is federally banned - see the farms table for the legal Wisconsin routes.",
-  "search": "Raw milk",
-  "anchor": "raw-milk",
-  "usedIn": []
- },
- {
-  "name": "Root vegetables",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Named among the most nutrient-dense foods. Contract encourages root vegetables among the cooked vegetable servings.",
-  "search": "Root vegetables",
-  "anchor": "root-vegetables",
-  "usedIn": [
-   "Beef Stew with Root Vegetables",
-   "Chicken Soup with Rice",
-   "Sheet-Pan Steak and Roasted Roots",
-   "Whole Roast Chicken with Root Vegetables"
-  ]
- },
- {
-  "name": "Salmon, wild",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Canned wild sockeye passes the store checks.",
-  "search": "Salmon, wild",
-  "anchor": "salmon-wild",
-  "usedIn": [
-   "Salmon with Lemon Butter"
-  ]
- },
- {
-  "name": "Seafood / fish (wild-caught)",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Named among the most nutrient-dense foods. Farmed salmon is the exception - it is banned.",
-  "search": "Seafood / fish",
-  "anchor": "seafood-fish-wild-caught",
-  "usedIn": [
-   "Garlic Butter Shrimp over Soaked Rice"
-  ]
- },
- {
-  "name": "Spring water (glass bottle)",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "The rulebook's drink. Contract minimum 2.5 liters per day. Named brands: San Pellegrino, Mountain Valley, Lauretana.",
-  "search": "Spring water",
-  "anchor": "spring-water-glass-bottle",
-  "usedIn": [
-   "Beef Stew with Root Vegetables",
-   "Chicken Soup with Rice",
-   "Garlic Butter Shrimp over Soaked Rice"
-  ]
- },
- {
-  "name": "Turkey",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Same basis as duck.",
-  "search": "Turkey",
-  "anchor": "turkey",
-  "usedIn": []
- },
- {
-  "name": "Vegetables (general)",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "The corpus argues both ways: one video says meat and organs beat vegetables on absorbable nutrients; another counts root vegetables among the most nutrient-dense foods. No blanket verdict. Corn is banned separately and raw crucifers are conditional.",
-  "search": "Vegetables",
-  "anchor": "vegetables-general",
-  "usedIn": []
- },
- {
-  "name": "Venison (deer)",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "Listed among approved animal proteins (cow, pig, chicken, deer, fish). Note: Force of Nature retail elk/venison FAILS the farm check because grain is in the animals' diet - see the farms table.",
-  "search": "Venison",
-  "anchor": "venison-deer",
-  "usedIn": []
- },
- {
-  "name": "Wheat, organic (traditionally prepared)",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "If grains are eaten, choose organic and prepare them traditionally to remove phytic acid and mineral-binding compounds.",
-  "search": "Wheat, organic",
-  "anchor": "wheat-organic-traditionally-prepared",
-  "usedIn": []
- },
- {
-  "name": "White rice",
-  "kind": "Food",
-  "verdict": "CONDITIONAL",
-  "note": "Traditional cultures ate white rice, not brown, to remove phytic acid. Caution: rice and rice cereal are named heavy-metal carriers in commercial baby food (The Evil Business of Baby Food).",
-  "search": "White rice",
-  "anchor": "white-rice",
-  "usedIn": [
-   "Chicken Soup with Rice",
-   "Chicken and Rice Bowls",
-   "Garlic Butter Shrimp over Soaked Rice",
-   "Rice Pudding with Honey and Cinnamon"
-  ]
- },
- {
-  "name": "Whole fruit",
-  "kind": "Food",
-  "verdict": "APPROVED",
-  "note": "One of the most nutrient-dense foods and one of only two approved sweeteners (with raw honey).",
-  "search": "Whole fruit",
-  "anchor": "whole-fruit",
-  "usedIn": [
-   "Baked Apples with Honey Butter and Cashews",
-   "Cheddar, Fruit and Cashew Lunch Plate",
-   "Peanut Butter Banana Smoothie",
-   "Peanut Butter and Honey Sandwich",
-   "Pork Chops with Baked Apples"
-  ]
- },
- {
-  "name": "Bifidobacterium infantis",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Probiotic ingredient in the approved homemade formula recipe.",
-  "search": "Bifidobacterium infantis",
-  "anchor": "bifidobacterium-infantis",
-  "usedIn": []
- },
- {
-  "name": "Fruit juice, as flavoring (small amounts in water or food)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "Carter clarification Oct 23, 2026: juice used only as a flavoring is good. Covers a hand-squeezed lemon in water, a juice splash in a flavored water (Spindrift treatment), and sub-1% lemon juice used as a preservative (Lakewood aloe). Not a license to drink juice by the glass.",
-  "search": "Fruit juice, as flavoring",
-  "anchor": "fruit-juice-as-flavoring-small-amounts-in-water-or-food",
-  "usedIn": []
- },
- {
-  "name": "acerola powder",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Vitamin C source in the approved homemade formula recipe.",
-  "search": "acerola powder",
-  "anchor": "acerola-powder",
-  "usedIn": []
- },
- {
-  "name": "almonds (raw, whole)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Single-ingredient Artisana raw almond butter passed all checks. Note the split: whole almonds pass, almond MILK is banned.",
-  "search": "almonds",
-  "anchor": "almonds-raw-whole",
-  "usedIn": []
- },
- {
-  "name": "avocado (fresh fruit)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Whole fresh avocado flesh. Gap check Oct 26, 2026: no toxicity in humans; persin is a bird and livestock issue concentrated outside the flesh. One real flag: avocado is a top latex-fruit cross reactor, so latex-allergic people should be careful.",
-  "search": "avocado",
-  "anchor": "avocado-fresh-fruit",
-  "usedIn": []
- },
- {
-  "name": "avocado oil",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Carter ruled avocado oil fine: Oct 25, 2026 for his personal picks, and stated generally Oct 27, 2026 (avocado oil is fine, and olive oil too). It is not a seed oil and the corpus never banned it; the corpus simply never gave it a verdict.",
-  "search": "avocado oil",
-  "anchor": "avocado-oil",
-  "usedIn": [
-   "Homemade Mayo",
-   "Ranch-Style Dressing"
-  ]
- },
- {
-  "name": "baking soda (sodium bicarbonate)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "No video coverage. Carter ACCEPTED Oct 26, 2026 after the real-world evidence check: FDA GRAS as a leavener; EFSA re-evaluation of sodium carbonates (E500) found no safety concern at reported food uses and set no numerical daily limit.",
-  "search": "baking soda",
-  "anchor": "baking-soda-sodium-bicarbonate",
-  "usedIn": [
-   "Honey Pancakes",
-   "Honey Peanut Butter Cookies",
-   "Honey Sugar Cookies with Strawberry Frosting",
-   "Honey Vanilla Cake",
-   "Ice Cream Cake"
-  ]
- },
- {
-  "name": "beef tallow",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "The rulebook's #1 approved fat; vitamins A, D, E and choline.",
-  "search": "beef tallow",
-  "anchor": "beef-tallow-2",
-  "usedIn": [
-   "Beef Stew with Root Vegetables",
-   "Chicken and Guacamole Wraps",
-   "Crispy Chicken Tenders with Honey Mustard",
-   "Pork Chops with Baked Apples",
-   "Salmon with Lemon Butter",
-   "Sheet-Pan Steak and Roasted Roots",
-   "Smash Burgers with Cheddar"
-  ]
- },
- {
-  "name": "black pepper",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Corpus is silent (gap check Oct 26, 2026). Health evidence: FDA GRAS as a seasoning; culinary amounts sit far below piperine safety ceilings. Heavy use can irritate GERD and sensitive stomachs; the CYP3A4 drug interaction is a supplement-dose issue, not a seasoning-dose issue. Accepted at food scale.",
-  "search": "black pepper",
-  "anchor": "black-pepper",
-  "usedIn": [
-   "Baked Egg Cups with Beef",
-   "Beef Stew with Root Vegetables",
-   "Beef and Cheddar Wrap Melts",
-   "Chicken Soup with Rice",
-   "Crispy Chicken Tenders with Honey Mustard",
-   "Family Meatloaf with Ketchup Glaze",
-   "Honey BBQ Sauce",
-   "Pork Chops with Baked Apples",
-   "Ranch-Style Dressing",
-   "Salmon with Lemon Butter",
-   "Sheet-Pan Steak and Roasted Roots",
-   "Smash Burgers with Cheddar",
-   "Steak and Eggs Skillet",
-   "Whole Roast Chicken with Root Vegetables"
-  ]
- },
- {
-  "name": "blueberries",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Single-ingredient Wyman's frozen wild blueberries passed; also named in the dog-food low-glycemic list.",
-  "search": "blueberries",
-  "anchor": "blueberries",
-  "usedIn": []
- },
- {
-  "name": "butter",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Approved traditional fat.",
-  "search": "butter",
-  "anchor": "butter-2",
-  "usedIn": []
- },
- {
-  "name": "calcium chloride",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Mineral firming salt in approved Bubbies pickles; the store check expressly classifies it as not one of the banned chemical preservatives.",
-  "search": "calcium chloride",
-  "anchor": "calcium-chloride",
-  "usedIn": []
- },
- {
-  "name": "calendula (pot marigold)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Approved skincare ingredient in the corpus; present in Evil Goods balm.",
-  "search": "calendula",
-  "anchor": "calendula-pot-marigold",
-  "usedIn": []
- },
- {
-  "name": "carob powder (unsweetened)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Single-ingredient unsweetened carob powder only, no added sugar, syrups, or flavorings. Gap check Oct 26, 2026: zero caffeine and zero theobromine (unlike banned cocoa), centuries of staple use, no organ harm signal.",
-  "search": "carob powder",
-  "anchor": "carob-powder-unsweetened",
-  "usedIn": [
-   "Carob Brownies"
-  ]
- },
- {
-  "name": "cashews",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Ingredient of passing Larabar Cashew Cookie (cashews, dates).",
-  "search": "cashews",
-  "anchor": "cashews",
-  "usedIn": [
-   "Baked Apples with Honey Butter and Cashews",
-   "Cheddar, Fruit and Cashew Lunch Plate",
-   "Date and Cashew Bars"
-  ]
- },
- {
-  "name": "cinnamon (Ceylon)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "CONDITIONAL on variety: Ceylon (true) cinnamon, Cinnamomum verum, only. Gap check Oct 26, 2026: Ceylon carries only trace coumarin and has no liver case reports. Cassia cinnamon is BANNED in its own row for its coumarin liver load. Buy only products that name Ceylon or C.",
-  "search": "cinnamon",
-  "anchor": "cinnamon-ceylon",
-  "usedIn": [
-   "Baked Apples with Honey Butter and Cashews",
-   "Blueberry Honey Oat Bowl",
-   "Pork Chops with Baked Apples",
-   "Rice Pudding with Honey and Cinnamon"
-  ]
- },
- {
-  "name": "coconut oil",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Approved traditional fat.",
-  "search": "coconut oil",
-  "anchor": "coconut-oil-2",
-  "usedIn": []
- },
- {
-  "name": "coconut water",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Single-ingredient Harmless Harvest coconut water passed all checks.",
-  "search": "coconut water",
-  "anchor": "coconut-water",
-  "usedIn": []
- },
- {
-  "name": "cod liver oil",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "An ingredient in the approved homemade formula recipe, and the contract requires high-vitamin cod liver oil daily (WAPF dosage).",
-  "search": "cod liver oil",
-  "anchor": "cod-liver-oil",
-  "usedIn": []
- },
- {
-  "name": "cream (pasteurized cream)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "The fat ingredient of verified passing Kerrygold butter; dairy fats are approved.",
-  "search": "cream",
-  "anchor": "cream-pasteurized-cream",
-  "usedIn": [
-   "Homemade Honey Vanilla Ice Cream",
-   "Ice Cream Cake"
-  ]
- },
- {
-  "name": "dates",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Whole fruit; ingredient of the two passing Larabar flavors.",
-  "search": "dates",
-  "anchor": "dates",
-  "usedIn": [
-   "Date and Cashew Bars"
-  ]
- },
- {
-  "name": "duck fat",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Named frying fat in the approved fats list.",
-  "search": "duck fat",
-  "anchor": "duck-fat-2",
-  "usedIn": []
- },
- {
-  "name": "garlic / garlic powder",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Corpus is silent (gap check Oct 26, 2026, within Carter cap of 15 new checks). Health evidence: NCCIH finds garlic probably safe at food amounts; a 4.2 g raw dietary dose showed no platelet effect in volunteers.",
-  "search": "garlic / garlic powder",
-  "anchor": "garlic-garlic-powder",
-  "usedIn": [
-   "Beef Stew with Root Vegetables",
-   "Chicken Soup with Rice",
-   "Conchiglie with Beef Ragu",
-   "Family Meatloaf with Ketchup Glaze",
-   "Garlic Butter Shrimp over Soaked Rice",
-   "Honey BBQ Sauce",
-   "Ranch-Style Dressing",
-   "Salmon with Lemon Butter",
-   "Sheet-Pan Steak and Roasted Roots",
-   "Whole Roast Chicken with Root Vegetables"
-  ]
- },
- {
-  "name": "gelatin",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Ingredient in the approved homemade formula; improves digestibility.",
-  "search": "gelatin",
-  "anchor": "gelatin",
-  "usedIn": []
- },
- {
-  "name": "grape must",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "Appears only as a constituent of balsamic vinegar in one verified passing product (Primal Kitchen ketchup, 0g added sugar), where the source file flags it as not an added sweetener. As a standalone sweetener it would fall under the sugar ban.",
-  "search": "grape must",
-  "anchor": "grape-must",
-  "usedIn": []
- },
- {
-  "name": "homemade liquid whey",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Core ingredient of the approved homemade formula; must be homemade from yogurt, kefir or separated raw milk - not powdered and not cheese whey.",
-  "search": "homemade liquid whey",
-  "anchor": "homemade-liquid-whey",
-  "usedIn": []
- },
- {
-  "name": "lactose",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Ingredient in the approved homemade formula (milk sugar; breast milk is richer in lactose than cow's milk).",
-  "search": "lactose",
-  "anchor": "lactose",
-  "usedIn": []
- },
- {
-  "name": "lard (pork fat)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "A traditional animal fat sold by approved farms (US Wellness) and listed by WAPF for vitamin D; the videos do not name lard directly.",
-  "search": "lard",
-  "anchor": "lard-pork-fat",
-  "usedIn": []
- },
- {
-  "name": "lemon (fresh)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Fresh lemon juice and zest in cooking. Gap check Oct 26, 2026: no organ harm at any food amount; the only real effect is enamel softening from frequent prolonged sipping contact, not from lemon cooked into food.",
-  "search": "lemon",
-  "anchor": "lemon-fresh",
-  "usedIn": [
-   "Chicken and Rice Bowls",
-   "Egg Salad Wraps",
-   "Garlic Butter Shrimp over Soaked Rice",
-   "Homemade Mayo",
-   "Honey Pancakes",
-   "Honey Vanilla Cake",
-   "Ranch-Style Dressing",
-   "Salmon with Lemon Butter",
-   "Tuna Salad Wraps"
-  ]
- },
- {
-  "name": "malted barley flour",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "A fermentation aid, not synthetic enrichment; present in passing flours (King Arthur Organic, Central Milling organic). The farms standard flags it where present rather than treating it as a fail.",
-  "search": "malted barley flour",
-  "anchor": "malted-barley-flour",
-  "usedIn": []
- },
- {
-  "name": "manuka honey",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Specifically praised in the corpus (antibacterial, antifungal, antiviral); also an approved skincare ingredient.",
-  "search": "manuka honey",
-  "anchor": "manuka-honey",
-  "usedIn": []
- },
- {
-  "name": "mixed tocopherols (natural vitamin E)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Named as the safer preservative; the preservative used in approved Sundays dog food.",
-  "search": "mixed tocopherols",
-  "anchor": "mixed-tocopherols-natural-vitamin-e",
-  "usedIn": []
- },
- {
-  "name": "mustard (prepared, plain)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "CONDITIONAL: plain prepared mustard (mustard seed, vinegar, salt, water) with no added sugar or flavorings, and it must always be declared as the major allergen it is.",
-  "search": "mustard",
-  "anchor": "mustard-prepared-plain",
-  "usedIn": [
-   "Crispy Chicken Tenders with Honey Mustard",
-   "Egg Salad Wraps",
-   "Homemade Mayo",
-   "Honey BBQ Sauce",
-   "Ranch-Style Dressing",
-   "Smash Burgers with Cheddar",
-   "Tuna Salad Wraps"
-  ]
- },
- {
-  "name": "nutritional yeast flakes",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Ingredient in the approved homemade formula recipe.",
-  "search": "nutritional yeast flakes",
-  "anchor": "nutritional-yeast-flakes",
-  "usedIn": []
- },
- {
-  "name": "oats (organic)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "If grains are eaten, choose organic. Does not rescue oat milk, which is a banned category.",
-  "search": "oats",
-  "anchor": "oats-organic-2",
-  "usedIn": [
-   "Blueberry Honey Oat Bowl"
-  ]
- },
- {
-  "name": "olive oil (extra virgin, cold-pressed)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Approved fat and approved skincare ingredient.",
-  "search": "olive oil",
-  "anchor": "olive-oil-extra-virgin-cold-pressed",
-  "usedIn": []
- },
- {
-  "name": "onion (fresh)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Whole fresh onion, cooked or raw in food. Same evidence as the onion gap check Oct 26, 2026: no human organ harm at food amounts; digestive FODMAP caution for IBS; toxic to dogs and cats.",
-  "search": "onion",
-  "anchor": "onion-fresh",
-  "usedIn": [
-   "Beef Stew with Root Vegetables",
-   "Chicken Soup with Rice",
-   "Conchiglie with Beef Ragu",
-   "Family Meatloaf with Ketchup Glaze",
-   "Ranch-Style Dressing"
-  ]
- },
- {
-  "name": "onion powder",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Corpus is silent (gap check Oct 26, 2026). Health evidence: no human organ harm signal at any food amount for onion in fresh or dried form. The real flags are digestive (high FODMAP, a top IBS trigger; raw onion and reflux) and household (onions are toxic to dogs and cats). Accepted at food scale.",
-  "search": "onion powder",
-  "anchor": "onion-powder",
-  "usedIn": []
- },
- {
-  "name": "organic wheat flour (unenriched)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "Passes only as certified organic, unenriched and unfortified, unbleached, unbromated flour - the APPROVED_FARMS.md mill standard.",
-  "search": "organic wheat flour",
-  "anchor": "organic-wheat-flour-unenriched",
-  "usedIn": [
-   "Carob Brownies",
-   "Crispy Chicken Tenders with Honey Mustard",
-   "Honey Pancakes",
-   "Honey Sugar Cookies with Strawberry Frosting",
-   "Honey Vanilla Cake",
-   "Ice Cream Cake"
-  ]
- },
- {
-  "name": "peanuts",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "The whole-food ingredient of passing Santa Cruz Organic peanut butter (with salt).",
-  "search": "peanuts",
-  "anchor": "peanuts",
-  "usedIn": []
- },
- {
-  "name": "raw honey",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "One of only two approved sweeteners; manuka is cited as antibacterial, antifungal and antiviral.",
-  "search": "raw honey",
-  "anchor": "raw-honey-2",
-  "usedIn": [
-   "Baked Apples with Honey Butter and Cashews",
-   "Carob Brownies",
-   "Homemade Honey Vanilla Ice Cream",
-   "Honey Peanut Butter Cookies",
-   "Honey Sugar Cookies with Strawberry Frosting",
-   "Honey Vanilla Cake",
-   "Ice Cream Cake",
-   "Rice Pudding with Honey and Cinnamon"
-  ]
- },
- {
-  "name": "salt (plain sea salt)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "Appears in approved products throughout. The fluoride video flags fluoridated table salt, and the store check advises plain sea salt with a one-line ingredient list.",
-  "search": "salt",
-  "anchor": "salt-plain-sea-salt",
-  "usedIn": [
-   "Baked Egg Cups with Beef",
-   "Beef Stew with Root Vegetables",
-   "Beef and Cheddar Wrap Melts",
-   "Blueberry Honey Oat Bowl",
-   "Breakfast Egg and Cheddar Wraps",
-   "Carob Brownies",
-   "Chicken Soup with Rice",
-   "Chicken and Guacamole Wraps",
-   "Chicken and Rice Bowls",
-   "Conchiglie with Beef Ragu",
-   "Crispy Chicken Tenders with Honey Mustard",
-   "Date and Cashew Bars",
-   "Egg Salad Wraps",
-   "Family Meatloaf with Ketchup Glaze",
-   "Fluffy Scrambled Eggs with Cheddar",
-   "Garlic Butter Shrimp over Soaked Rice",
-   "Homemade Honey Vanilla Ice Cream",
-   "Homemade Mac and Cheese",
-   "Homemade Mayo",
-   "Honey BBQ Sauce",
-   "Honey Pancakes",
-   "Honey Peanut Butter Cookies",
-   "Honey Sugar Cookies with Strawberry Frosting",
-   "Honey Vanilla Cake",
-   "Ice Cream Cake",
-   "Pork Chops with Baked Apples",
-   "Ranch-Style Dressing",
-   "Rice Pudding with Honey and Cinnamon",
-   "Salmon with Lemon Butter",
-   "Sheet-Pan Steak and Roasted Roots",
-   "Smash Burgers with Cheddar",
-   "Steak and Eggs Skillet",
-   "Tuna Salad Wraps",
-   "Whole Roast Chicken with Root Vegetables"
-  ]
- },
- {
-  "name": "shredded coconut (unsweetened)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "CONDITIONAL: single-ingredient dried coconut, unsulfured, no sulfite preservatives, no added sugar. Gap check Oct 26, 2026: sulfite-treated coconut can trigger asthma in sulfite-sensitive people; sweetened coconut fails the sugar ban.",
-  "search": "shredded coconut",
-  "anchor": "shredded-coconut-unsweetened",
-  "usedIn": []
- },
- {
-  "name": "sodium chloride",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "Chemical name for salt itself. Not condemned in the corpus: plain salt appears in approved products throughout (sea salt in Wild Planet tuna, Maple Hill butter, Santa Cruz PB). Conditions: must be plain salt with no additives; FLUORIDATED salt fails via the fluoride ban (EVIL History of Fluoride).",
-  "search": "sodium chloride",
-  "anchor": "sodium-chloride",
-  "usedIn": []
- },
- {
-  "name": "spring water (natural)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "The rulebook's drink, in glass bottles.",
-  "search": "spring water",
-  "anchor": "spring-water-natural",
-  "usedIn": []
- },
- {
-  "name": "vanilla extract",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "No independent video verdict (a real extract appeared in the passing Toups and Co balm).",
-  "search": "vanilla extract",
-  "anchor": "vanilla-extract",
-  "usedIn": [
-   "Carob Brownies",
-   "Homemade Honey Vanilla Ice Cream",
-   "Honey Peanut Butter Cookies",
-   "Honey Sugar Cookies with Strawberry Frosting",
-   "Honey Vanilla Cake",
-   "Ice Cream Cake",
-   "Rice Pudding with Honey and Cinnamon"
-  ]
- },
- {
-  "name": "vinegar (distilled white and apple cider)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "CONDITIONAL: as an ingredient cooked into food or used in dressings and marinades, never as a drink. Gap check Oct 26, 2026: diluted food use is safe; the documented harms (enamel erosion, esophageal burns, low potassium with chronic heavy intake) come from drinking it straight or daily.",
-  "search": "vinegar",
-  "anchor": "vinegar-distilled-white-and-apple-cider",
-  "usedIn": [
-   "Honey BBQ Sauce"
-  ]
- },
- {
-  "name": "vitamin D3 (milk fortification)",
-  "kind": "Ingredient",
-  "verdict": "CONDITIONAL",
-  "note": "Present in the approved fallback milk (Organic Valley). Synthetic vitamins are condemned in the formula context, but the store check counted this milk as the passing fallback - the row records that tension rather than hiding it.",
-  "search": "vitamin D3",
-  "anchor": "vitamin-d3-milk-fortification",
-  "usedIn": []
- },
- {
-  "name": "zinc oxide (non-nano)",
-  "kind": "Ingredient",
-  "verdict": "APPROVED",
-  "note": "Mineral sunscreen filter in the one passing sunscreen (Toups and Co Sun Balm); not a chemical filter.",
-  "search": "zinc oxide",
-  "anchor": "zinc-oxide-non-nano",
-  "usedIn": []
- },
- {
-  "name": "Artisana Organics Raw Almond Butter",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic Raw Almonds.",
-  "search": "Artisana Organics Raw Almond Butter",
-  "anchor": "artisana-organics-raw-almond-butter",
-  "usedIn": []
- },
- {
-  "name": "Base Culture Original Keto Gluten Free Bread, 16 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Water, almond butter, eggs, flax meal, arrowroot flour, psyllium husk, almond flour, apple cider vinegar, sea salt, baking soda. Label transcribed at Woodman\u2019s Onalaska Oct 25, 2026 ($9.49, was $10.99). NOTHING on the ban list: no seed oils, no sugar, no wheat, no soy, no gums beyond psyllium.",
-  "search": "Base Culture Original Keto Gluten Free Bread",
-  "anchor": "base-culture-original-keto-gluten-free-bread-16-oz",
-  "usedIn": [
-   "Peanut Butter and Honey Sandwich",
-   "Smash Burgers with Cheddar"
-  ]
- },
- {
-  "name": "Bend Soap Company Unscented Goat Milk Soap",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Fresh Goat's Milk, Saponified Coconut Oil, Olive Oil, and Sustainable Palm Oil. No fragrance, essential oils, dyes or seed oils. Palm oil has no verdict in the videos (it is a fruit oil, not a seed oil). The only soap verified to pass.",
-  "search": "Bend Soap Company Unscented Goat Milk Soap",
-  "anchor": "bend-soap-company-unscented-goat-milk-soap",
-  "usedIn": []
- },
- {
-  "name": "Bionaturae Marinara Pasta Sauce",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic Italian tomatoes, organic extra virgin olive oil, organic onion, salt, organic garlic, black pepper, oregano (Woodman label Oct 26 2026). No added sugar, no citric acid. Woodman: 24 oz $7.99. Tomato Basil variant same clean profile.",
-  "search": "Bionaturae Marinara Pasta Sauce",
-  "anchor": "bionaturae-marinara-pasta-sauce",
-  "usedIn": []
- },
- {
-  "name": "Boulder Canyon Kettle Style Classic Sea Salt Potato Chips, Avocado Oil, 5.25 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Potatoes, avocado oil, sea salt. Same clean three ingredients as the Thin & Crispy but kettle cut (thick). Woodman\u2019s Onalaska: $2.99. Avocado oil: no video verdict, but Carter ruled Oct 25, 2026 that avocado is fine, so this is his approved pick on his ruling.",
-  "search": "Boulder Canyon Kettle Style Classic Sea Salt Potato Chips, Avocado Oil",
-  "anchor": "boulder-canyon-kettle-style-classic-sea-salt-potato-chips-avocado-oil",
-  "usedIn": []
- },
- {
-  "name": "Boulder Canyon Thin & Crispy Classic Sea Salt Potato Chips, 6 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Potatoes, avocado oil, sea salt. Label transcribed from the Woodman\u2019s Onalaska detail page Oct 25, 2026. THIN cut, which is what Carter asked for, three ingredients, nothing banned. About 140 to 150 cal per oz like every potato chip (thin buys more chips per ounce, not fewer calories).",
-  "search": "Boulder Canyon Thin & Crispy Classic Sea Salt Potato Chips",
-  "anchor": "boulder-canyon-thin-crispy-classic-sea-salt-potato-chips-6-oz",
-  "usedIn": []
- },
- {
-  "name": "Brothers All Natural Freeze Dried Strawberry Fruit Crisps, 1 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Strawberries. Freeze-dried whole fruit, 0 g added sugars, no additives. Whole fruit is an approved sweetener, so this doubles as the frosting speckle in place of sprinkles. Woodman's Onalaska $4.59, in Carter's cart Oct 26, 2026.",
-  "search": "Brothers All Natural Freeze Dried Strawberry Fruit Crisps",
-  "anchor": "brothers-all-natural-freeze-dried-strawberry-fruit-crisps-1-oz",
-  "usedIn": [
-   "Honey Sugar Cookies with Strawberry Frosting",
-   "Ice Cream Cake"
-  ]
- },
- {
-  "name": "Bubbies Kosher Dill Pickles",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Cucumbers, Water, Salt, Garlic, Dill, Spices, Mustard Seed, Calcium Chloride. Naturally fermented, no vinegar, no preservatives, no dyes. Calcium chloride is a mineral firming salt, not a banned preservative.",
-  "search": "Bubbies Kosher Dill Pickles",
-  "anchor": "bubbies-kosher-dill-pickles",
-  "usedIn": []
- },
- {
-  "name": "California Olive Ranch 100% California Extra Virgin Olive Oil",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Extra Virgin Olive Oil. ONLY the 100% California bottle was verified; the Global Blend and avocado-blend bottles are different products.",
-  "search": "California Olive Ranch 100% California Extra Virgin Olive Oil",
-  "anchor": "california-olive-ranch-100-california-extra-virgin-olive-oil",
-  "usedIn": [
-   "Chicken and Rice Bowls",
-   "Conchiglie with Beef Ragu",
-   "Egg Salad Wraps",
-   "Tuna Salad Wraps"
-  ]
- },
- {
-  "name": "Carbone Marinara Sauce",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Italian tomatoes, onions, olive oil, sea salt, basil, garlic, oregano (Woodman label Oct 26 2026). No sugar added, no citric acid. Woodman: 24 oz $9.19; Tomato Basil and Mushroom variants same clean profile.",
-  "search": "Carbone Marinara Sauce",
-  "anchor": "carbone-marinara-sauce",
-  "usedIn": []
- },
- {
-  "name": "Dutch Meadows Dutch Reserve Raw Cheddar",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Raw milk, cultures, sea salt, rennet. Truly raw, herd 100% grass-fed with explicit no-grain language. Primary cheese under the raw-only + strict feeding rules. Verified in DAIRY_STRICT_CHECK.md.",
-  "search": "Dutch Meadows Dutch Reserve Raw Cheddar",
-  "anchor": "dutch-meadows-dutch-reserve-raw-cheddar",
-  "usedIn": []
- },
- {
-  "name": "Dutch Meadows Raw Butter",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Raw cream from 100% grass-fed cows, no grain ever. Sold labeled for pets (only legal route for raw butter). Miller's Bio Farm raw butter also approved.",
-  "search": "Dutch Meadows Raw Butter",
-  "anchor": "dutch-meadows-raw-butter",
-  "usedIn": []
- },
- {
-  "name": "Earthbound Farm Frozen Organic Sliced Strawberries, 2 lb",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic strawberries. Frozen sliced whole fruit, nothing added. Woodman's Onalaska $11.49 (was $12.79), best per-ounce of the frozen organic strawberry options checked Oct 26, 2026; in Carter's cart.",
-  "search": "Earthbound Farm Frozen Organic Sliced Strawberries",
-  "anchor": "earthbound-farm-frozen-organic-sliced-strawberries-2-lb",
-  "usedIn": []
- },
- {
-  "name": "Evil Goods Whipped Tallow and Manuka Honey Balm",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Grass-fed, grass-finished beef tallow, cold-pressed organic olive oil, pot marigold (calendula) extract, organic vitamin E; honey variations add MGO 360+ Manuka honey. The only branded skincare product the videos themselves promote.",
-  "search": "Evil Goods Whipped Tallow and Manuka Honey Balm",
-  "anchor": "evil-goods-whipped-tallow-and-manuka-honey-balm",
-  "usedIn": []
- },
- {
-  "name": "Fatworks Grass-Fed Beef Tallow",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "100% Grass Fed Tallow. Brand site states the cattle are grass-fed AND grass-finished.",
-  "search": "Fatworks Grass-Fed Beef Tallow",
-  "anchor": "fatworks-grass-fed-beef-tallow",
-  "usedIn": [
-   "Steak and Eggs Skillet"
-  ]
- },
- {
-  "name": "Felicia Organic Red Lentil Penne, 8 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic red lentil flour (single ingredient, per label and multiple label databases). About 22 g protein per 85 g serving, 0 mg sodium. Same full pass as the Tolerant penne.",
-  "search": "Felicia Organic Red Lentil Penne",
-  "anchor": "felicia-organic-red-lentil-penne-8-oz",
-  "usedIn": [
-   "Homemade Mac and Cheese"
-  ]
- },
- {
-  "name": "Force of Nature Ground Beef and Bison range (incl. Ancestral Blend)",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "100% grass-fed beef or bison; Ancestral Blend = ground beef, beef liver, beef heart, nothing else. Brand FAQ: all beef and bison 100% grass-fed and grass-finished, no grains ever. Woodman\u2019s Onalaska: $14.99 for 16 oz (Oct 25, 2026).",
-  "search": "Force of Nature Ground Beef and Bison range",
-  "anchor": "force-of-nature-ground-beef-and-bison-range-incl-ancestral-blend",
-  "usedIn": [
-   "Family Meatloaf with Ketchup Glaze"
-  ]
- },
- {
-  "name": "Goodness Grazecious 85/15 Grass-Fed Organic Ground Beef, 16 oz",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Label claims grass-fed and organic only; nothing on the listing states grass-finished or never grain, so the finishing half of the standard is unverified. Woodman\u2019s Onalaska: $8.59. Do not treat as passing until the brand confirms finishing.",
-  "search": "Goodness Grazecious 85/15 Grass-Fed Organic Ground Beef",
-  "anchor": "goodness-grazecious-85-15-grass-fed-organic-ground-beef-16-oz",
-  "usedIn": []
- },
- {
-  "name": "Green Mountain Gringo Salsa, Mild (also Medium and Hot), 16 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Ripe tomatoes, onions, tomatillos, apple cider vinegar, cilantro, fresh pasilla peppers, fresh jalapeno peppers, parsley, fresh garlic, sea salt, cumin. Every ingredient a real food; no sugar, no natural flavors, no citric acid. FULL PASS, the cleanest dip label found. About 10 cal per 2 tbsp.",
-  "search": "Green Mountain Gringo Salsa, Mild",
-  "anchor": "green-mountain-gringo-salsa-mild-also-medium-and-hot-16-oz",
-  "usedIn": []
- },
- {
-  "name": "Harmless Harvest Organic Coconut Water (plain original)",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "ORGANIC COCONUT WATER. One ingredient. Flavored versions were not checked and should not be assumed to pass.",
-  "search": "Harmless Harvest Organic Coconut Water",
-  "anchor": "harmless-harvest-organic-coconut-water-plain-original",
-  "usedIn": []
- },
- {
-  "name": "Jovial 100% Organic Einkorn Whole Wheat Pasta (spaghetti/penne/fusilli), 12 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic whole grain einkorn, water. Certified glyphosate residue free. Einkorn is wheat, but organic heritage wheat in the same lane as Janie\u2019s Mill einkorn (APPROVED) and the passing organic Italian pasta category; the rulebook bans conventional wheat only. 8 g protein, 5 g fiber per 2 oz.",
-  "search": "Jovial 100% Organic Einkorn Whole Wheat Pasta",
-  "anchor": "jovial-100-organic-einkorn-whole-wheat-pasta-spaghetti-penne-fusilli-1",
-  "usedIn": []
- },
- {
-  "name": "Just Bare Organic Boneless Skinless Chicken Breast Fillets",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "USDA Certified Organic, cage-free barn-raised, no antibiotics (Woodman detail page Oct 25 2026). No pasture-raised claim. Woodman: 1 lb $10.99.",
-  "search": "Just Bare Organic Boneless Skinless Chicken Breast Fillets",
-  "anchor": "just-bare-organic-boneless-skinless-chicken-breast-fillets",
-  "usedIn": []
- },
- {
-  "name": "King Oscar Skinless and Boneless Sardines in Water",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Sardines, Water.",
-  "search": "King Oscar Skinless and Boneless Sardines in Water",
-  "anchor": "king-oscar-skinless-and-boneless-sardines-in-water",
-  "usedIn": []
- },
- {
-  "name": "Kriemhild Dairy Meadow Butter (salted)",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Sweet cream, salt. 85% butterfat. Feeding standard per the brand's own published writing: Meadow Butter cows are on a diet of only pasture, hay, and hay ferment (no grain ever); sole milk source Red Gate Farm, Hamilton NY; certified organic.",
-  "search": "Kriemhild Dairy Meadow Butter",
-  "anchor": "kriemhild-dairy-meadow-butter-salted",
-  "usedIn": [
-   "Baked Apples with Honey Butter and Cashews",
-   "Baked Egg Cups with Beef",
-   "Blueberry Honey Oat Bowl",
-   "Breakfast Egg and Cheddar Wraps",
-   "Carob Brownies",
-   "Fluffy Scrambled Eggs with Cheddar",
-   "Garlic Butter Shrimp over Soaked Rice",
-   "Homemade Mac and Cheese",
-   "Honey Pancakes",
-   "Honey Sugar Cookies with Strawberry Frosting",
-   "Honey Vanilla Cake",
-   "Ice Cream Cake",
-   "Pork Chops with Baked Apples",
-   "Salmon with Lemon Butter",
-   "Whole Roast Chicken with Root Vegetables"
-  ]
- },
- {
-  "name": "Lakewood Organic Aloe Vera Juice",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Organic aloe vera juice, less than 1% organic lemon juice (label states the lemon juice is what allows bottling without preservatives). Glass bottle, certified organic, 0 cal, 0 added sugar. Nothing banned on the label.",
-  "search": "Lakewood Organic Aloe Vera Juice",
-  "anchor": "lakewood-organic-aloe-vera-juice",
-  "usedIn": []
- },
- {
-  "name": "Larabar Cashew Cookie",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Cashews, Dates. Only this flavor and Peanut Butter Cookie were verified - most other flavors add chocolate chips (cocoa fails).",
-  "search": "Larabar Cashew Cookie",
-  "anchor": "larabar-cashew-cookie",
-  "usedIn": [
-   "Cheddar, Fruit and Cashew Lunch Plate"
-  ]
- },
- {
-  "name": "Larabar Peanut Butter Cookie",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Dates, Peanuts, Sea Salt.",
-  "search": "Larabar Peanut Butter Cookie",
-  "anchor": "larabar-peanut-butter-cookie",
-  "usedIn": []
- },
- {
-  "name": "Lauretana Natural Mineral Water, glass bottles",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Natural mineral water from the Monte Rosa spring, nothing added. Glass bottles only.",
-  "search": "Lauretana Natural Mineral Water, glass bottles",
-  "anchor": "lauretana-natural-mineral-water-glass-bottles",
-  "usedIn": []
- },
- {
-  "name": "Maple Hill 100% Grass-Fed Organic Butter (salted)",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic cream, sea salt. Cows exclusively eat grass and forage, never grain/corn/soy even in winter (PCO 100% GrassFed certified history). Verified in DAIRY_STRICT_CHECK.md.",
-  "search": "Maple Hill 100% Grass-Fed Organic Butter",
-  "anchor": "maple-hill-100-grass-fed-organic-butter-salted",
-  "usedIn": []
- },
- {
-  "name": "Miracle Noodle Egg White Noodles, 7 oz",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Egg whites, water, under 1% sodium alginate. 10 g complete protein and 45 cal per bag, under 1 g carbs. Two named gaps vs the rulebook: the eggs carry no organic or pasture-raised claim, and sodium alginate has no video coverage. Mostly passes under Carter Oct 25 loosening.",
-  "search": "Miracle Noodle Egg White Noodles",
-  "anchor": "miracle-noodle-egg-white-noodles-7-oz",
-  "usedIn": []
- },
- {
-  "name": "Miracle Noodle Organic Shirataki Pasta, 7 oz (spaghetti/fettuccine/ziti)",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Water, organic konjac flour, citric acid. 5 cal and 0 g protein per serving, 2 g fiber. Nothing on the ban list, but konjac is NOT_COVERED by the video corpus and citric acid is NOT_COVERED (not a failing ingredient). Mostly passes under Carter Oct 25 loosening of the pasta slot.",
-  "search": "Miracle Noodle Organic Shirataki Pasta",
-  "anchor": "miracle-noodle-organic-shirataki-pasta-7-oz-spaghetti-fettuccine-ziti",
-  "usedIn": []
- },
- {
-  "name": "Mountain Valley Spring Water, glass bottles",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Natural spring water, nothing added. Glass bottles only - the brand also sells PET plastic and aluminum versions.",
-  "search": "Mountain Valley Spring Water, glass bottles",
-  "anchor": "mountain-valley-spring-water-glass-bottles",
-  "usedIn": []
- },
- {
-  "name": "Muir Glen Organic Pasta Sauce (all flavors)",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Organic tomato puree and tomatoes, EVOO, onion, garlic, sea salt, herbs, plus citric acid and calcium chloride in the pasta sauce line (Woodman labels Oct 26 2026). No sugar added; only open items are the two processing acids. Woodman: 23.5 oz $4.49-4.59. Canned tomato sauce also carries citric acid.",
-  "search": "Muir Glen Organic Pasta Sauce",
-  "anchor": "muir-glen-organic-pasta-sauce-all-flavors",
-  "usedIn": []
- },
- {
-  "name": "Mutti Marinara Sauce",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Chopped tomatoes, tomato puree, onion, olive oil, garlic, sea salt, basil, black pepper, oregano (Woodman label Oct 26 2026). No added sugar. Woodman: 24 oz $7.39. Datterini and Arrabbiata variants contain basil/chili extracts.",
-  "search": "Mutti Marinara Sauce",
-  "anchor": "mutti-marinara-sauce",
-  "usedIn": []
- },
- {
-  "name": "NUCO Organic Coconut Wraps, Original, 5 ct",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic coconut meat, organic coconut water, organic virgin coconut oil. Three ingredients, all organic, nothing banned, no gums at all. FULL PASS, the cleanest wrap label found. 70 cal, 1 g protein, 4 g net carbs per wrap.",
-  "search": "NUCO Organic Coconut Wraps, Original",
-  "anchor": "nuco-organic-coconut-wraps-original-5-ct",
-  "usedIn": [
-   "Beef and Cheddar Wrap Melts",
-   "Breakfast Egg and Cheddar Wraps",
-   "Chicken and Guacamole Wraps",
-   "Egg Salad Wraps",
-   "Tuna Salad Wraps"
-  ]
- },
- {
-  "name": "Nate's Raw & Unfiltered Honey, 16 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Honey. Raw and unfiltered per the label; raw honey is one of the two approved sweeteners. Woodman's Onalaska $9.19 (16 oz), added to Carter's cart Oct 26, 2026.",
-  "search": "Nate's Raw & Unfiltered Honey",
-  "anchor": "nate-s-raw-unfiltered-honey-16-oz",
-  "usedIn": [
-   "Blueberry Honey Oat Bowl",
-   "Blueberry Honey Smoothie",
-   "Cheddar, Fruit and Cashew Lunch Plate",
-   "Crispy Chicken Tenders with Honey Mustard",
-   "Honey BBQ Sauce",
-   "Honey Pancakes",
-   "Peanut Butter Banana Smoothie",
-   "Peanut Butter and Honey Sandwich",
-   "Pork Chops with Baked Apples"
-  ]
- },
- {
-  "name": "Newman\u2019s Own Chunky Salsa, Mild, 16 oz",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Diced tomatoes in tomato juice, tomato puree, green chili peppers, green and red bell peppers, onions, distilled vinegar, salt, cilantro, garlic, black pepper, citric acid. No sugar, no natural flavors; only open item is citric acid (NOT_COVERED, not banned). About 10 cal per 2 tbsp.",
-  "search": "Newman\u2019s Own Chunky Salsa, Mild",
-  "anchor": "newman-s-own-chunky-salsa-mild-16-oz",
-  "usedIn": []
- },
- {
-  "name": "Nutiva Organic Virgin Coconut Oil",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic, unrefined, cold-pressed virgin coconut oil. Only the plain Virgin jar passes - the Buttery Flavor version fails on natural flavors.",
-  "search": "Nutiva Organic Virgin Coconut Oil",
-  "anchor": "nutiva-organic-virgin-coconut-oil",
-  "usedIn": []
- },
- {
-  "name": "Organic Prairie 100% Grassfed Beef Liver, 8 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Same brand standard as their ground beef (packaging: grass-fed, grass-finished). Liver is a required food in Carter\u2019s protocols (contract Section 1B, baby manual). Woodman\u2019s Onalaska: $6.19 for 8 oz.",
-  "search": "Organic Prairie 100% Grassfed Beef Liver",
-  "anchor": "organic-prairie-100-grassfed-beef-liver-8-oz",
-  "usedIn": []
- },
- {
-  "name": "Organic Prairie 100% Grassfed Ground Beef (75/25 fresh, 85/15 frozen, 90/10)",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Brand packaging states \u201cGrass-fed. Grass-finished\u201d (label claim reported via Costco supplier write-ups; Woodman\u2019s listings say 100% Grassfed). Organic, single ingredient beef.",
-  "search": "Organic Prairie 100% Grassfed Ground Beef",
-  "anchor": "organic-prairie-100-grassfed-ground-beef-75-25-fresh-85-15-frozen-90-1",
-  "usedIn": []
- },
- {
-  "name": "Organic Valley Grassmilk Organic Whole Milk",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic Grade A Milk, Vitamin D3. Grassmilk line only: 100% grass-fed, no grain ever. Pasteurized fallback. Maple Hill Whole Milk also passes. [Scope: approved for the pregnancy flash-heated lane per Carter decision Oct 20, 2026; not raw.].",
-  "search": "Organic Valley Grassmilk Organic Whole Milk",
-  "anchor": "organic-valley-grassmilk-organic-whole-milk",
-  "usedIn": [
-   "Blueberry Honey Oat Bowl",
-   "Blueberry Honey Smoothie",
-   "Fluffy Scrambled Eggs with Cheddar",
-   "Homemade Honey Vanilla Ice Cream",
-   "Homemade Mac and Cheese",
-   "Honey Pancakes",
-   "Honey Sugar Cookies with Strawberry Frosting",
-   "Honey Vanilla Cake",
-   "Ice Cream Cake",
-   "Peanut Butter Banana Smoothie",
-   "Ranch-Style Dressing",
-   "Rice Pudding with Honey and Cinnamon"
-  ]
- },
- {
-  "name": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic grass-fed cultured milk, sea salt, vegetarian enzyme. OPT Certified Grass-Fed (Oregon Tilth); never supplemented with grains or soybeans. Note: brand footnotes the milk is heated at 155F for 16 seconds.",
-  "search": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
-  "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
-  "usedIn": [
-   "Baked Egg Cups with Beef",
-   "Beef and Cheddar Wrap Melts",
-   "Breakfast Egg and Cheddar Wraps",
-   "Cheddar, Fruit and Cashew Lunch Plate",
-   "Fluffy Scrambled Eggs with Cheddar",
-   "Homemade Mac and Cheese",
-   "Smash Burgers with Cheddar"
-  ]
- },
- {
-  "name": "Organicville Organic Marinara Pasta Sauce",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Water, organic tomato paste, organic tomatoes, olive oil, dried onion/garlic, basil, vinegar, oregano, salt; 0g added sugar stated (Woodman label Oct 26 2026). Woodman: 24 oz $6.19. Italian Herb and Tomato Basil variants also clean.",
-  "search": "Organicville Organic Marinara Pasta Sauce",
-  "anchor": "organicville-organic-marinara-pasta-sauce",
-  "usedIn": []
- },
- {
-  "name": "Primal Kitchen A Tad Sweet Ketchup (Honey)",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Organic tomato concentrate, organic balsamic vinegar, organic distilled vinegar, organic honey, salt, onion/garlic powder, spices (Woodman label Oct 25 2026). Honey is the allowed sweetener class but not stated raw. Woodman: 18.5 oz $8.79.",
-  "search": "Primal Kitchen A Tad Sweet Ketchup",
-  "anchor": "primal-kitchen-a-tad-sweet-ketchup-honey",
-  "usedIn": []
- },
- {
-  "name": "Primal Kitchen Marinara Pasta Sauce (Roasted Garlic / Tomato Basil)",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Organic tomato base, avocado oil, garlic, herbs, plus citric acid and calcium chloride from the diced tomato component (Woodman labels Oct 26 2026). No added sugar. Note: Primal Kitchen KETCHUP is a full pass; the pasta sauces are a separate, conditional profile. Woodman: 24 oz $8.59.",
-  "search": "Primal Kitchen Marinara Pasta Sauce",
-  "anchor": "primal-kitchen-marinara-pasta-sauce-roasted-garlic-tomato-basil",
-  "usedIn": []
- },
- {
-  "name": "Primal Kitchen Organic Unsweetened Ketchup",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic tomato concentrate, organic balsamic vinegar (organic white wine vinegar, organic grape must), less than 2% of: salt, organic onion powder, organic garlic powder, organic spices. 0g added sugar.",
-  "search": "Primal Kitchen Organic Unsweetened Ketchup",
-  "anchor": "primal-kitchen-organic-unsweetened-ketchup",
-  "usedIn": [
-   "Beef and Cheddar Wrap Melts",
-   "Family Meatloaf with Ketchup Glaze",
-   "Smash Burgers with Cheddar"
-  ]
- },
- {
-  "name": "Rao's Homemade Marinara Sauce",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Italian whole peeled tomatoes, olive oil, onions, salt, garlic, basil, black pepper, oregano (label read on Woodman product page Oct 26 2026). No sugar, no citric acid, no natural flavors. Woodman Onalaska: 24 oz $7.99, 32 oz $9.19, 40 oz $10.49.",
-  "search": "Rao's Homemade Marinara Sauce",
-  "anchor": "rao-s-homemade-marinara-sauce",
-  "usedIn": [
-   "Conchiglie with Beef Ragu",
-   "Honey BBQ Sauce"
-  ]
- },
- {
-  "name": "S.Pellegrino Sparkling Natural Mineral Water, glass bottle",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Carbonated Mineral Water. GLASS bottle only - the same water in plastic or cans fails the glass rule.",
-  "search": "S.Pellegrino Sparkling Natural Mineral Water, glass bottle",
-  "anchor": "s-pellegrino-sparkling-natural-mineral-water-glass-bottle",
-  "usedIn": []
- },
- {
-  "name": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic Roasted Peanuts, Contains 1% or Less of Salt. The No Stir version adds organic palm oil and is not the verified one.",
-  "search": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
-  "anchor": "santa-cruz-organic-peanut-butter-dark-roasted-creamy",
-  "usedIn": []
- },
- {
-  "name": "Saratoga Spring Water, still, glass bottle",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Natural spring water, nothing added. Passes by type under the videos spring-water-in-glass rule; not one of the three brands named in the videos (San Pellegrino, Mountain Valley, Lauretana). Verify the bottle in hand: still only (they also sell sparkling) and glass only (they also sell PET plastic).",
-  "search": "Saratoga Spring Water, still, glass bottle",
-  "anchor": "saratoga-spring-water-still-glass-bottle",
-  "usedIn": []
- },
- {
-  "name": "Siete Burrito Size Grain Free Tortillas, 6 ct, 15 oz",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Water, cassava flour, tapioca flour, avocado oil, coconut flour, arrowroot flour, apple cider vinegar, COCONUT SUGAR, sea salt, yeast. The BIG one: 10 to 11 inches (Whole Foods lists 11-inch), 190 cal, 2 g protein per tortilla.",
-  "search": "Siete Burrito Size Grain Free Tortillas",
-  "anchor": "siete-burrito-size-grain-free-tortillas-6-ct-15-oz",
-  "usedIn": []
- },
- {
-  "name": "Siete Cassava Flour Tortillas, 8 ct, 7 oz",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Cassava flour, water, coconut flour, coconut oil, apple cider vinegar, sea salt, xanthan gum.",
-  "search": "Siete Cassava Flour Tortillas",
-  "anchor": "siete-cassava-flour-tortillas-8-ct-7-oz",
-  "usedIn": []
- },
- {
-  "name": "Siete Kettle Cooked Sea Salt Potato Chips, 5.5 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Potatoes, avocado oil, sea salt. Label transcribed from the Woodman\u2019s Onalaska detail page Oct 25, 2026. Kettle cut (thick). Woodman\u2019s Onalaska: $3.39 (was $4.59). Avocado oil: no video verdict, but Carter ruled Oct 25, 2026 that avocado is fine, so this is his approved pick on his ruling.",
-  "search": "Siete Kettle Cooked Sea Salt Potato Chips",
-  "anchor": "siete-kettle-cooked-sea-salt-potato-chips-5-5-oz",
-  "usedIn": []
- },
- {
-  "name": "Simply Organic Cinnamon, Ceylon",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic Ceylon cinnamon (Cinnamomum verum), USDA Organic, single ingredient. Jar label says Ceylon cinnamon; this is the good cinnamon under the Oct 26, 2026 ruling (Ceylon only; generic cinnamon counts as cassia and is BANNED).",
-  "search": "Simply Organic Cinnamon, Ceylon",
-  "anchor": "simply-organic-cinnamon-ceylon",
-  "usedIn": []
- },
- {
-  "name": "Smart Chicken Organic Boneless Skinless Chicken Breasts",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Certified Organic, Certified Humane, free range with outdoor access, air-chilled, no added water (Woodman detail page Oct 25 2026). Organic half passes; pasture-raised half unmet, so conditional. Chicken full pass remains Greener Pastures farm-direct only. Woodman Onalaska: $10.29/lb fresh.",
-  "search": "Smart Chicken Organic Boneless Skinless Chicken Breasts",
-  "anchor": "smart-chicken-organic-boneless-skinless-chicken-breasts",
-  "usedIn": []
- },
- {
-  "name": "Smucker's Natural Creamy Peanut Butter",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Peanuts, 1% or less salt (label read on Woodman's product page Oct 25 2026). Clean label, but conventional peanuts; peanuts are a spray-heavy crop, so organic stays the lane. Woodman's: 16 oz $4.19, 26 oz $6.59.",
-  "search": "Smucker's Natural Creamy Peanut Butter",
-  "anchor": "smucker-s-natural-creamy-peanut-butter",
-  "usedIn": []
- },
- {
-  "name": "Smucker's Organic Creamy Peanut Butter",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic roasted peanuts, 1% or less salt (label read on Woodman's Onalaska product page Oct 25 2026). Same two-ingredient profile as approved Santa Cruz Organic. Woodman's: 16 oz $5.79, 26 oz $9.79.",
-  "search": "Smucker's Organic Creamy Peanut Butter",
-  "anchor": "smucker-s-organic-creamy-peanut-butter",
-  "usedIn": [
-   "Honey Peanut Butter Cookies",
-   "Peanut Butter Banana Smoothie",
-   "Peanut Butter and Honey Sandwich"
-  ]
- },
- {
-  "name": "Spindrift Raspberry Lime Sparkling Water",
-  "kind": "Product",
-  "verdict": "CONDITIONAL",
-  "note": "Carbonated water, raspberry puree, raspberry juice, lime juice. The only flavored water found with NO sweetener, NO natural flavors, NO preservatives.",
-  "search": "Spindrift Raspberry Lime Sparkling Water",
-  "anchor": "spindrift-raspberry-lime-sparkling-water",
-  "usedIn": []
- },
- {
-  "name": "Sundays Beef Recipe (air-dried dog food)",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Beef, Beef Liver, Beef Bone Meal, Sunflower Meal, Flaxseed Meal, Quinoa Seed, Pumpkin, Parsley, Zucchini, Salt, Dried Kelp, Ginger, Kale, Turmeric, Mixed Tocopherols, Selenium Yeast, Carrot, Apple, Tomato, Shiitake Mushroom, Broccoli, Spinach, Red Beet, Cherry, Strawberry, Blueberry.",
-  "search": "Sundays Beef Recipe",
-  "anchor": "sundays-beef-recipe-air-dried-dog-food",
-  "usedIn": []
- },
- {
-  "name": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "100% Grass Fed Beef. Brand FAQ: Lifetime Grazed means grass-fed AND grass-finished, never grain. Woodman\u2019s Onalaska stocks the 90/10 brick, 16 oz, $13.79 (Oct 25, 2026); the detail page states: sourced from 100% grass fed, grass finished cattle raised on regeneratively managed land.",
-  "search": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
-  "anchor": "thousand-hills-lifetime-grazed-ground-beef-85-15",
-  "usedIn": [
-   "Baked Egg Cups with Beef",
-   "Beef and Cheddar Wrap Melts",
-   "Conchiglie with Beef Ragu",
-   "Smash Burgers with Cheddar"
-  ]
- },
- {
-  "name": "Tolerant Organic Red Lentil Penne (Simply Legumes), 8 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Organic red lentil flour (single ingredient). USDA Organic, so no glyphosate desiccation. 21 g protein and 300 cal per 3 oz serving, 9 g fiber, 0 mg sodium. Nothing on the ban list; lentils are a whole legume, not an isolate.",
-  "search": "Tolerant Organic Red Lentil Penne",
-  "anchor": "tolerant-organic-red-lentil-penne-simply-legumes-8-oz",
-  "usedIn": []
- },
- {
-  "name": "Toups and Co Organics Sun Balm",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Grass-Fed Tallow, Organic Olive Oil, Non-Nano Zinc Oxide, Coconut CO2, Vanilla Extract. The only sunscreen format that passes: a mineral zinc-oxide filter, no chemical filters.",
-  "search": "Toups and Co Organics Sun Balm",
-  "anchor": "toups-and-co-organics-sun-balm",
-  "usedIn": []
- },
- {
-  "name": "Toups and Co Organics Tallow Balm, Vanilla and Almond",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Grass-Fed Tallow, Organic Olive Oil, Vanilla Extract, Almond Extract. The label says grass-fed and does not claim grass-finished. The vanilla and almond are real extracts, not 'fragrance' - that distinction is the whole reason this passes.",
-  "search": "Toups and Co Organics Tallow Balm, Vanilla and Almond",
-  "anchor": "toups-and-co-organics-tallow-balm-vanilla-and-almond",
-  "usedIn": []
- },
- {
-  "name": "US Wellness Meats Beef Summer Sausage, 8 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Beef, Celtic Sea Salt, Black Pepper, Spices (Black Pepper, Nutmeg), Garlic Powder. That is the whole list: NO nitrite, NO nitrate, NO celery powder or juice, NO sugar or dextrose, no starter culture even. Beef is 100% grass-fed and grass-finished per the brand.",
-  "search": "US Wellness Meats Beef Summer Sausage",
-  "anchor": "us-wellness-meats-beef-summer-sausage-8-oz",
-  "usedIn": []
- },
- {
-  "name": "VanMan Bison Tallow and Honey Balm, Unscented",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "100% Grass Fed/Finished Bison Tallow, Raw Manuka Honey 850+ Mg/kg of MGO, Organic Royal Jelly, Organic Beeswax, Organic Cold Pressed Olive Oil.",
-  "search": "VanMan Bison Tallow and Honey Balm, Unscented",
-  "anchor": "vanman-bison-tallow-and-honey-balm-unscented",
-  "usedIn": []
- },
- {
-  "name": "VanMan Tallow and Honey Balm, Unscented (Classic)",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "100% grass-fed and finished suet beef tallow, organic raw honey, organic beeswax, cold pressed organic extra virgin olive oil. Get the UNSCENTED version - the scented Classic adds essential oils.",
-  "search": "VanMan Tallow and Honey Balm, Unscented",
-  "anchor": "vanman-tallow-and-honey-balm-unscented-classic",
-  "usedIn": []
- },
- {
-  "name": "Vital Farms Organic Pasture-Raised Eggs",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Pasture-raised organic eggs; USDA Organic certified; hens get 108 sq ft of pasture each. WARNING: the regular non-organic Vital Farms line does NOT pass - only the Organic line.",
-  "search": "Vital Farms Organic Pasture-Raised Eggs",
-  "anchor": "vital-farms-organic-pasture-raised-eggs",
-  "usedIn": [
-   "Baked Egg Cups with Beef",
-   "Breakfast Egg and Cheddar Wraps",
-   "Carob Brownies",
-   "Crispy Chicken Tenders with Honey Mustard",
-   "Egg Salad Wraps",
-   "Family Meatloaf with Ketchup Glaze",
-   "Fluffy Scrambled Eggs with Cheddar",
-   "Homemade Honey Vanilla Ice Cream",
-   "Homemade Mayo",
-   "Honey Pancakes",
-   "Honey Peanut Butter Cookies",
-   "Honey Sugar Cookies with Strawberry Frosting",
-   "Honey Vanilla Cake",
-   "Ice Cream Cake",
-   "Rice Pudding with Honey and Cinnamon",
-   "Steak and Eggs Skillet"
-  ]
- },
- {
-  "name": "Wedderspoon Raw Manuka Honey",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Raw monofloral manuka honey. Only the plain jar passes - the Manuka Honey Drops fail on cane sugar.",
-  "search": "Wedderspoon Raw Manuka Honey",
-  "anchor": "wedderspoon-raw-manuka-honey",
-  "usedIn": []
- },
- {
-  "name": "Wholly Guacamole Classic Guacamole, Mild, 7.5 oz",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Hass avocados, distilled vinegar, 2% or less of water, jalapeno peppers, salt, dehydrated onion, granulated garlic. All real foods, nothing banned. Passes; the creamy dip option at about 50 cal per 2 tbsp (avocado, so filling rather than low-cal). Woodman\u2019s Onalaska: $3.99 (organic version $5.69).",
-  "search": "Wholly Guacamole Classic Guacamole, Mild",
-  "anchor": "wholly-guacamole-classic-guacamole-mild-7-5-oz",
-  "usedIn": [
-   "Chicken and Guacamole Wraps"
-  ]
- },
- {
-  "name": "Wild Planet Wild Albacore Tuna and Sea Salt",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Albacore Tuna (Thunnus Alalunga) And Sea Salt. No added oil, water or broth; pole and line caught. Most canned tuna is packed in soybean oil, which fails instantly.",
-  "search": "Wild Planet Wild Albacore Tuna and Sea Salt",
-  "anchor": "wild-planet-wild-albacore-tuna-and-sea-salt",
-  "usedIn": [
-   "Tuna Salad Wraps"
-  ]
- },
- {
-  "name": "Wild Planet Wild Sardines in Organic Extra Virgin Olive Oil",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Sardines, organic extra virgin olive oil, sea salt. Wild-caught, so the farmed-salmon rule does not apply. The Lightly Smoked version FAILS on aqueous natural smoke.",
-  "search": "Wild Planet Wild Sardines in Organic Extra Virgin Olive Oil",
-  "anchor": "wild-planet-wild-sardines-in-organic-extra-virgin-olive-oil",
-  "usedIn": []
- },
- {
-  "name": "Wild Planet Wild Sockeye Salmon",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "SOCKEYE SALMON (ONCORHYNCHUS NERKA), SEA SALT. Wild-caught Alaskan sockeye - farmed salmon fails, so canned wild salmon is the workaround.",
-  "search": "Wild Planet Wild Sockeye Salmon",
-  "anchor": "wild-planet-wild-sockeye-salmon",
-  "usedIn": []
- },
- {
-  "name": "Wyman's Frozen Wild Blueberries",
-  "kind": "Product",
-  "verdict": "APPROVED",
-  "note": "Wild Blueberries. Single ingredient. Blends and smoothie mixes from the same brand were not counted.",
-  "search": "Wyman's Frozen Wild Blueberries",
-  "anchor": "wyman-s-frozen-wild-blueberries",
-  "usedIn": [
-   "Blueberry Honey Oat Bowl",
-   "Blueberry Honey Smoothie"
-  ]
- },
- {
-  "name": "Boulder Canyon",
-  "kind": "Brand",
-  "verdict": "CONDITIONAL",
-  "note": "Plain sea salt chips (Thin & Crispy and Kettle) are three ingredients: potatoes, avocado oil, sea salt. Flavored bags fail on sugar, dextrose, corn syrup solids, maltodextrin, and natural flavors. Avocado oil itself has no video verdict.",
-  "search": "Boulder Canyon",
-  "anchor": "boulder-canyon",
-  "usedIn": []
- },
- {
-  "name": "Evil Goods",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "The channel's own all-natural tallow and manuka honey moisturizer; presented as the replacement for chemical skincare.",
-  "search": "Evil Goods",
-  "anchor": "evil-goods",
-  "usedIn": []
- },
- {
-  "name": "Felicia",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "Italian organic legume pasta brand (Andriani). The red lentil penne is single-ingredient organic red lentil flour and fully passes; a brown-rice blended variant exists and is BANNED under Carter Oct 25, 2026 no-brown-rice rule, so verify the box is the 100% lentil one.",
-  "search": "Felicia",
-  "anchor": "felicia",
-  "usedIn": []
- },
- {
-  "name": "Jovial",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "Organic einkorn pastas and the organic egg tagliatelle pass. The egg tagliatelle is the one dried egg pasta whose eggs are stated organic and pasture-raised.",
-  "search": "Jovial",
-  "anchor": "jovial",
-  "usedIn": []
- },
- {
-  "name": "Kriemhild Dairy",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "Hamilton, NY creamery. Meadow Butter line only: 100% grass-fed standard (only pasture, hay, hay ferment) from Red Gate Farm. Their Creme Fraiche line is a different standard (grass-grazed, grain supplemented) and is NOT covered by this verdict. Added Oct 23, 2026.",
-  "search": "Kriemhild Dairy",
-  "anchor": "kriemhild-dairy",
-  "usedIn": []
- },
- {
-  "name": "Lauretana",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "Named as an acceptable natural spring water in glass bottles.",
-  "search": "Lauretana",
-  "anchor": "lauretana",
-  "usedIn": []
- },
- {
-  "name": "Miracle Noodle",
-  "kind": "Brand",
-  "verdict": "CONDITIONAL",
-  "note": "Organic shirataki is clean on the ban list but konjac has no video coverage. Egg white noodles mostly pass with two gaps: eggs not stated organic/pasture-raised, sodium alginate not covered.",
-  "search": "Miracle Noodle",
-  "anchor": "miracle-noodle",
-  "usedIn": []
- },
- {
-  "name": "Mountain Valley",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "Named as an acceptable natural spring water in glass bottles.",
-  "search": "Mountain Valley",
-  "anchor": "mountain-valley",
-  "usedIn": []
- },
- {
-  "name": "San Pellegrino",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "Named as an acceptable natural spring water in glass bottles.",
-  "search": "San Pellegrino",
-  "anchor": "san-pellegrino",
-  "usedIn": []
- },
- {
-  "name": "Siete",
-  "kind": "Brand",
-  "verdict": "CONDITIONAL",
-  "note": "Cassava flour tortillas pass on every banned item; the only open ingredient is xanthan gum (not covered by the videos). Other Siete lines (chips, seasonings) were not checked and should not be assumed.",
-  "search": "Siete",
-  "anchor": "siete",
-  "usedIn": []
- },
- {
-  "name": "Sundays",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "Dog food named as the next-best commercial option after raw and fresh food (no soy fillers, synthetic vitamins or artificial preservatives).",
-  "search": "Sundays",
-  "anchor": "sundays",
-  "usedIn": []
- },
- {
-  "name": "Tolerant",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "Simply Legumes line is single-ingredient organic legume flour pasta and passes clean. The Energy Legume Blend line adds organic pea flour, also clean.",
-  "search": "Tolerant",
-  "anchor": "tolerant",
-  "usedIn": []
- },
- {
-  "name": "White Oak Pastures",
-  "kind": "Brand",
-  "verdict": "APPROVED",
-  "note": "Regenerative farm cited as a net carbon sink; the model for proper beef production.",
-  "search": "White Oak Pastures",
-  "anchor": "white-oak-pastures",
-  "usedIn": []
- },
- {
-  "name": "Alderspring Ranch",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "May / Salmon, ID. 100% grass fed and finished on wild mountain pastures AND USDA Certified Organic - the only source that is both. Does NOT sell tallow or suet.",
-  "search": "Alderspring Ranch",
-  "anchor": "alderspring-ranch",
-  "usedIn": []
- },
- {
-  "name": "Arrowhead Mills (whole-grain SKUs)",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "ONLY the single-ingredient whole-grain flours pass: Organic Whole Wheat Flour ('organic stone-ground whole wheat flour,' QAI certified organic) and Organic Spelt Flour. The Organic Unbleached WHITE flour and the pancake mixes FAIL (enriched) - see the separate row.",
-  "search": "Arrowhead Mills",
-  "anchor": "arrowhead-mills-whole-grain-skus",
-  "usedIn": []
- },
- {
-  "name": "Azure Standard",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "Distributor (truck-route drops, incl. Wisconsin). A distributor, not a mill.",
-  "search": "Azure Standard",
-  "anchor": "azure-standard",
-  "usedIn": []
- },
- {
-  "name": "Barton Springs Mill",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Dripping Springs, TX. CCOF Certified Organic facility, all farmers certified organic; stone-milled whole grain, 'nothing added, nothing removed,' 0% bran removed. Heritage varieties (Sonora, Rouge de Bordeaux, Yecora Rojo).",
-  "search": "Barton Springs Mill",
-  "anchor": "barton-springs-mill",
-  "usedIn": []
- },
- {
-  "name": "Beekeeper's Naturals",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "National brand (not a farm). Raw honey product verified on its own store: raw enzymatic honey with royal jelly, raw bee pollen, bee propolis extract ($39.99). The closest thing to a manuka-style option here, but it is a branded product, not farm-direct, and no manuka SKU was verified.",
-  "search": "Beekeeper's Naturals",
-  "anchor": "beekeeper-s-naturals",
-  "usedIn": []
- },
- {
-  "name": "Cairnspring Mills",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "Burlington, WA. Stone-milled, 'No Additives - just grain.' But organic labeling is inconsistent: the flagship Glacier Peak page never says Organic while other SKUs are titled Organic. Buy ONLY a SKU whose own product page says Organic, and re-verify at checkout. No retail wheat berries.",
-  "search": "Cairnspring Mills",
-  "anchor": "cairnspring-mills",
-  "usedIn": []
- },
- {
-  "name": "Central Milling (Organic retail line)",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Utah / California. Organic All-Purpose, Bread Flour, Hi-Protein Bread Flour (the cleanest pick - no malt), Whole Wheat and other organic SKUs pass. Mostly roller/slow-cool milled, not stone.",
-  "search": "Central Milling",
-  "anchor": "central-milling-organic-retail-line",
-  "usedIn": []
- },
- {
-  "name": "Court Family Farm",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "Black Creek, WI. Listed in the RealMilk Wisconsin directory for raw milk at the farm gate under the incidental-sale exemption.",
-  "search": "Court Family Farm",
-  "anchor": "court-family-farm",
-  "usedIn": []
- },
- {
-  "name": "Dancing Bear Honey",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "Waupaca, WI. Genuinely raw: 'never heated warmer than a beehive, gently strained but never filtered,' from its own Wisconsin woodland hives. CONDITIONAL only because every variant was OUT OF STOCK when checked - do not order until stock returns.",
-  "search": "Dancing Bear Honey",
-  "anchor": "dancing-bear-honey",
-  "usedIn": []
- },
- {
-  "name": "Elmwood Stock Farm (chicken)",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Georgetown, KY. USDA organic certification via an Organic Systems Plan; chickens raised outdoors on pasture in chicken tractors moved daily and fed organic grains.",
-  "search": "Elmwood Stock Farm",
-  "anchor": "elmwood-stock-farm-chicken",
-  "usedIn": []
- },
- {
-  "name": "Flourist",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Canada. FAQ: 'The only ingredient in our flour is organic grain and nothing else' - not enriched, no synthetic ingredients, additives, preservatives or added protein; organically grown grains exclusively; stone-milled fresh to order.",
-  "search": "Flourist",
-  "anchor": "flourist",
-  "usedIn": []
- },
- {
-  "name": "Force of Nature",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Austin, TX (partner network US/Canada/NZ/Australia). Standards: 100% grass-fed and grass-finished, no grains, no feedlots, no antibiotics, no added hormones, no GMOs - for beef and bison ONLY. Its elk and venison FAIL - see the separate row.",
-  "search": "Force of Nature",
-  "anchor": "force-of-nature",
-  "usedIn": []
- },
- {
-  "name": "Four Sisters Farm",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "Osceola, WI. Listed in the RealMilk Wisconsin directory; A2/A2 Jersey herd, strictly organic feed, self-serve on-farm store, per the directory listing.",
-  "search": "Four Sisters Farm",
-  "anchor": "four-sisters-farm",
-  "usedIn": []
- },
- {
-  "name": "Giusto's",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "South San Francisco, CA. Only the Organic 100% Whole Wheat Graham Flour passes ('INGREDIENTS - 100% Organic Wheat Flour,' certified organic, unbleached). Its conventional All-Purpose and Semolina are enriched and FAIL - see the separate row.",
-  "search": "Giusto's",
-  "anchor": "giusto-s",
-  "usedIn": []
- },
- {
-  "name": "Glacial Till Farm",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "Withee, WI. Listed in the RealMilk Wisconsin directory; 100% grassfed organic Jersey herd, per the directory listing.",
-  "search": "Glacial Till Farm",
-  "anchor": "glacial-till-farm",
-  "usedIn": []
- },
- {
-  "name": "Golden Bear Farms",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Kiel, WI. 100% Pasture Raised Berkshire pork; NO corn or soy, NO hormones or steroids, NO vaccines or implants; animals live outdoors year-round in Kiel, WI.",
-  "search": "Golden Bear Farms",
-  "anchor": "golden-bear-farms",
-  "usedIn": []
- },
- {
-  "name": "Grazing Greens Family Farm",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "Frederic, WI. Listed in the RealMilk Wisconsin directory for raw milk at the farm gate under the incidental-sale exemption.",
-  "search": "Grazing Greens Family Farm",
-  "anchor": "grazing-greens-family-farm",
-  "usedIn": []
- },
- {
-  "name": "Greener Pastures Chicken",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Elgin, TX. Regenerative Organic Pasture-Raised Whole Chicken: USDA Organic, Regenerative Organic Certified, Real Organic Project, Non-GMO Project Verified, Certified Humane. Birds are moved to fresh pasture daily.",
-  "search": "Greener Pastures Chicken",
-  "anchor": "greener-pastures-chicken",
-  "usedIn": []
- },
- {
-  "name": "Gwenyn Hill Farm (eggs)",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Waukesha, WI. Certified Organic, pasture-raised, soy-free eggs, per the farm's own newsletter archive. Its CHICKEN does not pass - see the separate row.",
-  "search": "Gwenyn Hill Farm",
-  "anchor": "gwenyn-hill-farm-eggs",
-  "usedIn": []
- },
- {
-  "name": "Handsome Brook Farms",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "National retail brand. Organic pasture raised eggs verified through USDA Organic, American Humane and Certified Humane; hens have pasture access, fresh forage and organic feed.",
-  "search": "Handsome Brook Farms",
-  "anchor": "handsome-brook-farms",
-  "usedIn": []
- },
- {
-  "name": "Hillplace Farm",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "Menomonie, WI. Listed in the RealMilk Wisconsin directory for raw milk at the farm gate under the incidental-sale exemption.",
-  "search": "Hillplace Farm",
-  "anchor": "hillplace-farm",
-  "usedIn": []
- },
- {
-  "name": "Janie's Mill",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Ashkum, IL. All grains USDA Certified Organic; the mill is certified by OCIA as an organic processor; stone-milled; 'we add nothing at all' - no folic acid, no additives, no chemicals. Deep wheat-berry catalog (Warthog, Turkey Red, Red Fife, Einkorn) for soaking, sprouting and home milling.",
-  "search": "Janie's Mill",
-  "anchor": "janie-s-mill",
-  "usedIn": []
- },
- {
-  "name": "King Arthur Baking (Organic line)",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Organic Bread Flour ingredient statement: certified 100% organic unbleached hard red wheat flour plus certified organic malted barley flour; no niacin, iron or folic acid. Organic All-Purpose and Organic Whole Wheat pass on the same basis. Roller-milled, not stone or heritage.",
-  "search": "King Arthur Baking",
-  "anchor": "king-arthur-baking-organic-line",
-  "usedIn": []
- },
- {
-  "name": "Maine Grains",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Skowhegan, ME. Stone-milled whole kernel on an Austrian stone mill; organic certifier MOFGA with strict no-glyphosate standards; unbleached hard red spring wheat. Caveat: no per-SKU ingredient list was extractable; the organic claim is at product-name and certifier level.",
-  "search": "Maine Grains",
-  "anchor": "maine-grains",
-  "usedIn": []
- },
- {
-  "name": "Northstar Bison",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Cameron, WI. Animals 100% grass-fed and grass-finished, zero grain at any stage; zero-stress field harvest; whole-carcass use including cooking tallow.",
-  "search": "Northstar Bison",
-  "anchor": "northstar-bison",
-  "usedIn": []
- },
- {
-  "name": "OrgaNick Pastures",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Rio + Marcellon, WI. Certified Humane Pasture-Raised (108 sq ft per hen) AND USDA Certified Organic through MOSA. SKUs include Pasture-Raised Organic Brown, Heirloom, Corn & Soy Free, and Regenerative Organic Certified.",
-  "search": "OrgaNick Pastures",
-  "anchor": "organick-pastures",
-  "usedIn": []
- },
- {
-  "name": "Pete & Gerry's (eggs)",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "National retail brand. ONLY the Organic Pasture Raised SKU passes (USDA Organic plus Certified Humane Pasture Raised, 108 sq ft per hen, 100% certified organic feed). The Organic Free Range line (2 sq ft) FAILS.",
-  "search": "Pete & Gerry's",
-  "anchor": "pete-gerry-s-eggs",
-  "usedIn": []
- },
- {
-  "name": "Polyface Farm",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Swoope, VA. Cows and sheep 100% grass-fed; pigs raised on pasture and woods with non-GMO grain supplements (the pork standard is met). Caveats: the farm page says 100% grass-fed without the word grass-finished for cattle, and Polyface is not USDA organic (it calls itself Beyond Organic).",
-  "search": "Polyface Farm",
-  "anchor": "polyface-farm",
-  "usedIn": []
- },
- {
-  "name": "Primal Pastures (pork)",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Pork raised at Clear Creek Organic Farm, NE. The strongest feed claim in the file: pasture-raised, corn-free, soy-free, sugar-free; pigs fed whey, oats and peas grown on-farm, chemical-free; no vaccines, antibiotics or growth hormones.",
-  "search": "Primal Pastures",
-  "anchor": "primal-pastures-pork",
-  "usedIn": []
- },
- {
-  "name": "REP Provisions",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Heritage pork box: forest/pasture-raised Duroc and Berkshire; 100% corn and soy free; no antibiotics, hormones or mRNA vaccines; pigs eat pecans, walnuts, forbs and grasses.",
-  "search": "REP Provisions",
-  "anchor": "rep-provisions",
-  "usedIn": []
- },
- {
-  "name": "Reber Rock Farm",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Essex, NY. Certified organic, pasture-raised chicken fed only certified organic feed or hay.",
-  "search": "Reber Rock Farm",
-  "anchor": "reber-rock-farm",
-  "usedIn": []
- },
- {
-  "name": "Seven Sons Farms",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Roanoke, IN. Comparison table states: 100% Grass-Fed Beef, Always grass-finished. Lamb and bison are mentioned in the tagline but not verified with the same wording.",
-  "search": "Seven Sons Farms",
-  "anchor": "seven-sons-farms",
-  "usedIn": []
- },
- {
-  "name": "Sunrise Flour Mill",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Minnesota. Certified organic (USDA Organic, Non-GMO), grown without glyphosate, unbleached, unbromated, no enrichment or enzymes. Heritage Turkey Red wheat. Note: it uses a Unifine impact mill, NOT stone - it passes on the heritage-grain prong.",
-  "search": "Sunrise Flour Mill",
-  "anchor": "sunrise-flour-mill",
-  "usedIn": []
- },
- {
-  "name": "Sunset Apiaries",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Elkhart Lake, WI. Local raw and pure honey since 2003; bees 100% over-wintered in northeast Wisconsin.",
-  "search": "Sunset Apiaries",
-  "anchor": "sunset-apiaries",
-  "usedIn": []
- },
- {
-  "name": "Thousand Hills Lifetime Grazed",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Minnesota roots, ~50 US partner farms. Level 4 Lifetime Grazed: 100% grass fed, grass-finished; no confinement feeding, no grain byproducts, no GMO plants.",
-  "search": "Thousand Hills Lifetime Grazed",
-  "anchor": "thousand-hills-lifetime-grazed",
-  "usedIn": []
- },
- {
-  "name": "US Wellness Meats (Grassland Beef)",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Canton, MO. All beef, lamb, bison and elk 100% grass-fed and grass-finished, no grains at any stage (the farm's own statement; not certified organic, no AGA cert). Raw cheese is aged 60+ days from 100% grass-fed A2 cows, so it can legally be shipped.",
-  "search": "US Wellness Meats",
-  "anchor": "us-wellness-meats-grassland-beef",
-  "usedIn": []
- },
- {
-  "name": "Vital Farms (eggs)",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "National retail brand. ONLY the Organic Pasture-Raised SKU passes: USDA Certified Organic plus at least 108 sq ft of pasture per hen plus certified organic feed. The standard non-organic pasture-raised line FAILS the organic prong.",
-  "search": "Vital Farms",
-  "anchor": "vital-farms-eggs",
-  "usedIn": []
- },
- {
-  "name": "White Oak Pastures",
-  "kind": "Farm",
-  "verdict": "APPROVED",
-  "note": "Bluffton, GA. Cattle and small ruminants are Certified Grassfed by the American Grassfed Association and Certified Humane; this is the farm the videos name as the model. Pork is pasture-raised and non-GMO fed (not soy-free, not organic) - acceptable because pork has no label standard in the videos.",
-  "search": "White Oak Pastures",
-  "anchor": "white-oak-pastures-2",
-  "usedIn": []
- },
- {
-  "name": "Wisconsin raw milk, incidental farm-gate pickup (RealMilk directory)",
-  "kind": "Farm",
-  "verdict": "CONDITIONAL",
-  "note": "Wisconsin (statewide listings). The ONLY lawful in-state route: an incidental sale directly at the farm (ATCP 65.52) - no advertising, no online store, no shipping, by definition.",
-  "search": "Wisconsin raw milk, incidental farm-gate pickup",
-  "anchor": "wisconsin-raw-milk-incidental-farm-gate-pickup-realmilk-directory",
-  "usedIn": []
- }
+  {
+    "name": "Boulder Canyon",
+    "kind": "Brand",
+    "verdict": "CONDITIONAL",
+    "note": "Plain sea salt chips (Thin & Crispy and Kettle) are three ingredients: potatoes, avocado oil, sea salt.",
+    "anchor": "boulder-canyon",
+    "search": "boulder canyon",
+    "usedIn": []
+  },
+  {
+    "name": "Evil Goods",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "evil-goods",
+    "search": "evil goods",
+    "usedIn": []
+  },
+  {
+    "name": "Felicia",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "felicia",
+    "search": "felicia",
+    "usedIn": []
+  },
+  {
+    "name": "Jovial",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "jovial",
+    "search": "jovial",
+    "usedIn": []
+  },
+  {
+    "name": "Kriemhild Dairy",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "kriemhild-dairy",
+    "search": "kriemhild dairy",
+    "usedIn": []
+  },
+  {
+    "name": "Lauretana",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "lauretana",
+    "search": "lauretana",
+    "usedIn": []
+  },
+  {
+    "name": "Miracle Noodle",
+    "kind": "Brand",
+    "verdict": "CONDITIONAL",
+    "note": "Organic shirataki is clean on the ban list but konjac has no video coverage.",
+    "anchor": "miracle-noodle",
+    "search": "miracle noodle",
+    "usedIn": []
+  },
+  {
+    "name": "Mountain Valley",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "mountain-valley",
+    "search": "mountain valley",
+    "usedIn": []
+  },
+  {
+    "name": "San Pellegrino",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "san-pellegrino",
+    "search": "san pellegrino",
+    "usedIn": []
+  },
+  {
+    "name": "Siete",
+    "kind": "Brand",
+    "verdict": "CONDITIONAL",
+    "note": "Cassava flour tortillas pass on every banned item; the only open ingredient is xanthan gum (not covered by the videos).",
+    "anchor": "siete",
+    "search": "siete",
+    "usedIn": []
+  },
+  {
+    "name": "Sundays",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "sundays",
+    "search": "sundays",
+    "usedIn": []
+  },
+  {
+    "name": "Tolerant",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "tolerant",
+    "search": "tolerant",
+    "usedIn": []
+  },
+  {
+    "name": "White Oak Pastures",
+    "kind": "Brand",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "white-oak-pastures",
+    "search": "white oak pastures",
+    "usedIn": []
+  },
+  {
+    "name": "Alderspring Ranch",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "alderspring-ranch",
+    "search": "alderspring ranch",
+    "usedIn": []
+  },
+  {
+    "name": "Arrowhead Mills (whole-grain SKUs)",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "ONLY the single-ingredient whole-grain flours pass: Organic Whole Wheat Flour ('organic stone-ground whole wheat flour,' QAI certified organic) and Organic Spelt Flour.",
+    "anchor": "arrowhead-mills-whole-grain-skus",
+    "search": "arrowhead mills",
+    "usedIn": []
+  },
+  {
+    "name": "Azure Standard",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "A distributor, not a mill.",
+    "anchor": "azure-standard",
+    "search": "azure standard",
+    "usedIn": []
+  },
+  {
+    "name": "Barton Springs Mill",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "barton-springs-mill",
+    "search": "barton springs mill",
+    "usedIn": []
+  },
+  {
+    "name": "Beekeeper's Naturals",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "beekeeper-s-naturals",
+    "search": "beekeeper's naturals",
+    "usedIn": []
+  },
+  {
+    "name": "Cairnspring Mills",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "Stone-milled, 'No Additives - just grain.' But organic labeling is inconsistent: the flagship Glacier Peak page never says Organic while other SKUs are titled Organic.",
+    "anchor": "cairnspring-mills",
+    "search": "cairnspring mills",
+    "usedIn": []
+  },
+  {
+    "name": "Central Milling (Organic retail line)",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "central-milling-organic-retail-line",
+    "search": "central milling",
+    "usedIn": []
+  },
+  {
+    "name": "Court Family Farm",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "Listed in the RealMilk Wisconsin directory for raw milk at the farm gate under the incidental-sale exemption.",
+    "anchor": "court-family-farm",
+    "search": "court family farm",
+    "usedIn": []
+  },
+  {
+    "name": "Dancing Bear Honey",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "Genuinely raw: 'never heated warmer than a beehive, gently strained but never filtered,' from its own Wisconsin woodland hives.",
+    "anchor": "dancing-bear-honey",
+    "search": "dancing bear honey",
+    "usedIn": []
+  },
+  {
+    "name": "Elmwood Stock Farm (chicken)",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "elmwood-stock-farm-chicken",
+    "search": "elmwood stock farm",
+    "usedIn": []
+  },
+  {
+    "name": "Flourist",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "flourist",
+    "search": "flourist",
+    "usedIn": []
+  },
+  {
+    "name": "Force of Nature",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "force-of-nature",
+    "search": "force of nature",
+    "usedIn": []
+  },
+  {
+    "name": "Four Sisters Farm",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "Listed in the RealMilk Wisconsin directory; A2/A2 Jersey herd, strictly organic feed, self-serve on-farm store, per the directory listing.",
+    "anchor": "four-sisters-farm",
+    "search": "four sisters farm",
+    "usedIn": []
+  },
+  {
+    "name": "Giusto's",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "Only the Organic 100% Whole Wheat Graham Flour passes ('INGREDIENTS - 100% Organic Wheat Flour,' certified organic, unbleached).",
+    "anchor": "giusto-s",
+    "search": "giusto's",
+    "usedIn": []
+  },
+  {
+    "name": "Glacial Till Farm",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "Listed in the RealMilk Wisconsin directory; 100% grassfed organic Jersey herd, per the directory listing.",
+    "anchor": "glacial-till-farm",
+    "search": "glacial till farm",
+    "usedIn": []
+  },
+  {
+    "name": "Golden Bear Farms",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "golden-bear-farms",
+    "search": "golden bear farms",
+    "usedIn": []
+  },
+  {
+    "name": "Grazing Greens Family Farm",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "Listed in the RealMilk Wisconsin directory for raw milk at the farm gate under the incidental-sale exemption.",
+    "anchor": "grazing-greens-family-farm",
+    "search": "grazing greens family farm",
+    "usedIn": []
+  },
+  {
+    "name": "Greener Pastures Chicken",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "greener-pastures-chicken",
+    "search": "greener pastures chicken",
+    "usedIn": []
+  },
+  {
+    "name": "Gwenyn Hill Farm (eggs)",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "gwenyn-hill-farm-eggs",
+    "search": "gwenyn hill farm",
+    "usedIn": []
+  },
+  {
+    "name": "Handsome Brook Farms",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "handsome-brook-farms",
+    "search": "handsome brook farms",
+    "usedIn": []
+  },
+  {
+    "name": "Hillplace Farm",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "Listed in the RealMilk Wisconsin directory for raw milk at the farm gate under the incidental-sale exemption.",
+    "anchor": "hillplace-farm",
+    "search": "hillplace farm",
+    "usedIn": []
+  },
+  {
+    "name": "Janie's Mill",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "janie-s-mill",
+    "search": "janie's mill",
+    "usedIn": []
+  },
+  {
+    "name": "Maine Grains",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "maine-grains",
+    "search": "maine grains",
+    "usedIn": []
+  },
+  {
+    "name": "Northstar Bison",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "northstar-bison",
+    "search": "northstar bison",
+    "usedIn": []
+  },
+  {
+    "name": "OrgaNick Pastures",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "organick-pastures",
+    "search": "organick pastures",
+    "usedIn": []
+  },
+  {
+    "name": "Pete & Gerry's (eggs)",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "ONLY the Organic Pasture Raised SKU passes (USDA Organic plus Certified Humane Pasture Raised, 108 sq ft per hen, 100% certified organic feed).",
+    "anchor": "pete-gerry-s-eggs",
+    "search": "pete & gerry's",
+    "usedIn": []
+  },
+  {
+    "name": "Polyface Farm",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "polyface-farm",
+    "search": "polyface farm",
+    "usedIn": []
+  },
+  {
+    "name": "Primal Pastures (pork)",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "primal-pastures-pork",
+    "search": "primal pastures",
+    "usedIn": []
+  },
+  {
+    "name": "Reber Rock Farm",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "reber-rock-farm",
+    "search": "reber rock farm",
+    "usedIn": []
+  },
+  {
+    "name": "REP Provisions",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "rep-provisions",
+    "search": "rep provisions",
+    "usedIn": []
+  },
+  {
+    "name": "Seven Sons Farms",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "seven-sons-farms",
+    "search": "seven sons farms",
+    "usedIn": []
+  },
+  {
+    "name": "Sunrise Flour Mill",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "sunrise-flour-mill",
+    "search": "sunrise flour mill",
+    "usedIn": []
+  },
+  {
+    "name": "Sunset Apiaries",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "sunset-apiaries",
+    "search": "sunset apiaries",
+    "usedIn": []
+  },
+  {
+    "name": "Thousand Hills Lifetime Grazed",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "thousand-hills-lifetime-grazed",
+    "search": "thousand hills lifetime grazed",
+    "usedIn": []
+  },
+  {
+    "name": "US Wellness Meats (Grassland Beef)",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "us-wellness-meats-grassland-beef",
+    "search": "us wellness meats",
+    "usedIn": []
+  },
+  {
+    "name": "Vital Farms (eggs)",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "ONLY the Organic Pasture-Raised SKU passes: USDA Certified Organic plus at least 108 sq ft of pasture per hen plus certified organic feed.",
+    "anchor": "vital-farms-eggs",
+    "search": "vital farms",
+    "usedIn": []
+  },
+  {
+    "name": "White Oak Pastures",
+    "kind": "Farm or mill",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "white-oak-pastures",
+    "search": "white oak pastures",
+    "usedIn": []
+  },
+  {
+    "name": "Wisconsin raw milk, incidental farm-gate pickup (RealMilk directory)",
+    "kind": "Farm or mill",
+    "verdict": "CONDITIONAL",
+    "note": "The ONLY lawful in-state route: an incidental sale directly at the farm (ATCP 65.52) - no advertising, no online store, no shipping, by definition.",
+    "anchor": "wisconsin-raw-milk-incidental-farm-gate-pickup-realmilk-directory",
+    "search": "wisconsin raw milk, incidental farm-gate pickup",
+    "usedIn": []
+  },
+  {
+    "name": "Beef",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "beef",
+    "search": "beef",
+    "usedIn": [
+      "Steak and Eggs Skillet",
+      "Beef Stew with Root Vegetables",
+      "Sheet-Pan Steak and Roasted Roots"
+    ]
+  },
+  {
+    "name": "Beef tallow",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "beef-tallow",
+    "search": "beef tallow",
+    "usedIn": []
+  },
+  {
+    "name": "Beef tallow (topical / skincare)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "beef-tallow-topical-skincare",
+    "search": "beef tallow",
+    "usedIn": []
+  },
+  {
+    "name": "Bison",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "bison",
+    "search": "bison",
+    "usedIn": []
+  },
+  {
+    "name": "Black tea",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "Flagged for fluoride content (3.73 ppm).",
+    "anchor": "black-tea",
+    "search": "black tea",
+    "usedIn": []
+  },
+  {
+    "name": "Breast milk",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "breast-milk",
+    "search": "breast milk",
+    "usedIn": []
+  },
+  {
+    "name": "Butter",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "butter",
+    "search": "butter",
+    "usedIn": []
+  },
+  {
+    "name": "Calendula (topical)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "calendula-topical",
+    "search": "calendula",
+    "usedIn": []
+  },
+  {
+    "name": "Cheese",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "cheese",
+    "search": "cheese",
+    "usedIn": []
+  },
+  {
+    "name": "Chicken",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "Conventional US chicken FAILS: antibiotics, chlorine wash, fecal-soup processing, salmonella.",
+    "anchor": "chicken",
+    "search": "chicken",
+    "usedIn": [
+      "Chicken and Guacamole Wraps",
+      "Chicken and Rice Bowls",
+      "Whole Roast Chicken with Root Vegetables",
+      "Crispy Chicken Tenders with Honey Mustard",
+      "Chicken Soup with Rice"
+    ]
+  },
+  {
+    "name": "Coconut oil",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "coconut-oil",
+    "search": "coconut oil",
+    "usedIn": []
+  },
+  {
+    "name": "Coconut water (plain)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "coconut-water-plain",
+    "search": "coconut water",
+    "usedIn": []
+  },
+  {
+    "name": "Cruciferous vegetables, raw (broccoli, kale)",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "Raw crucifers can block the thyroid (goitrogens); cooking kills goitrogens and fermenting makes greens safer.",
+    "anchor": "cruciferous-vegetables-raw-broccoli-kale",
+    "search": "cruciferous vegetables, raw",
+    "usedIn": []
+  },
+  {
+    "name": "Dog food, fresh whole foods and raw meat",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "dog-food-fresh-whole-foods-and-raw-meat",
+    "search": "dog food, fresh whole foods and raw meat",
+    "usedIn": []
+  },
+  {
+    "name": "Duck (meat)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "duck-meat",
+    "search": "duck",
+    "usedIn": []
+  },
+  {
+    "name": "Duck fat",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "duck-fat",
+    "search": "duck fat",
+    "usedIn": []
+  },
+  {
+    "name": "Eggs",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "Hens must forage grass and insects or the eggs are nutrient-deficient.",
+    "anchor": "eggs",
+    "search": "eggs",
+    "usedIn": []
+  },
+  {
+    "name": "Homemade infant formula (WAPF recipe, modified)",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "The fallback when breast milk is not possible.",
+    "anchor": "homemade-infant-formula-wapf-recipe-modified",
+    "search": "homemade infant formula",
+    "usedIn": []
+  },
+  {
+    "name": "Lamb",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "lamb",
+    "search": "lamb",
+    "usedIn": []
+  },
+  {
+    "name": "Lentils",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "The one lentil-specific charge in the corpus is pre-harvest Roundup desiccation: lentils are named among the crops sprayed as close as 3 days before harvest (Why is American food so TOXIC?).",
+    "anchor": "lentils",
+    "search": "lentils",
+    "usedIn": []
+  },
+  {
+    "name": "Mediterranean bread and pasta (quality, Italy/France)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "Traditional Italian durum wheat food, grown and milled in Italy and never fortified. Carter ruled Oct 28, 2026 that the traditional Italian lane is good outright.",
+    "anchor": "mediterranean-bread-and-pasta-quality-italy-france",
+    "search": "mediterranean bread and pasta",
+    "usedIn": [
+      "Conchiglie with Beef Ragu"
+    ]
+  },
+  {
+    "name": "Oats, organic",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "Organic only, if used.",
+    "anchor": "oats-organic",
+    "search": "oats, organic",
+    "usedIn": []
+  },
+  {
+    "name": "Olive oil",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "olive-oil",
+    "search": "olive oil",
+    "usedIn": []
+  },
+  {
+    "name": "Organ meats (incl. liver)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "organ-meats-incl-liver",
+    "search": "organ meats",
+    "usedIn": []
+  },
+  {
+    "name": "Plain whole milk (pasteurized)",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "Fallback when raw is unavailable.",
+    "anchor": "plain-whole-milk-pasteurized",
+    "search": "plain whole milk",
+    "usedIn": []
+  },
+  {
+    "name": "Pork",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "pork",
+    "search": "pork",
+    "usedIn": [
+      "Pork Chops with Baked Apples"
+    ]
+  },
+  {
+    "name": "Raisins",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "Flagged once for fluoride content (2.34 ppm) from fluoridated processing water.",
+    "anchor": "raisins",
+    "search": "raisins",
+    "usedIn": []
+  },
+  {
+    "name": "Raw honey",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "raw-honey",
+    "search": "raw honey",
+    "usedIn": []
+  },
+  {
+    "name": "Raw milk",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "raw-milk",
+    "search": "raw milk",
+    "usedIn": []
+  },
+  {
+    "name": "Root vegetables",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "root-vegetables",
+    "search": "root vegetables",
+    "usedIn": [
+      "Whole Roast Chicken with Root Vegetables",
+      "Beef Stew with Root Vegetables",
+      "Sheet-Pan Steak and Roasted Roots",
+      "Chicken Soup with Rice"
+    ]
+  },
+  {
+    "name": "Salmon, wild",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "salmon-wild",
+    "search": "salmon, wild",
+    "usedIn": [
+      "Salmon with Lemon Butter"
+    ]
+  },
+  {
+    "name": "Seafood / fish (wild-caught)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "seafood-fish-wild-caught",
+    "search": "seafood / fish",
+    "usedIn": [
+      "Garlic Butter Shrimp over Soaked Rice"
+    ]
+  },
+  {
+    "name": "Spring water (glass bottle)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "spring-water-glass-bottle",
+    "search": "spring water",
+    "usedIn": [
+      "Beef Stew with Root Vegetables",
+      "Garlic Butter Shrimp over Soaked Rice",
+      "Chicken Soup with Rice"
+    ]
+  },
+  {
+    "name": "Turkey",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "turkey",
+    "search": "turkey",
+    "usedIn": []
+  },
+  {
+    "name": "Vegetables (general)",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "The corpus argues both ways: one video says meat and organs beat vegetables on absorbable nutrients; another counts root vegetables among the most nutrient-dense foods.",
+    "anchor": "vegetables-general",
+    "search": "vegetables",
+    "usedIn": []
+  },
+  {
+    "name": "Venison (deer)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "venison-deer",
+    "search": "venison",
+    "usedIn": []
+  },
+  {
+    "name": "Wheat, organic (traditionally prepared)",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "Only the old wheats pass: einkorn, emmer, spelt, and traditional Italian durum, grown organic and prepared the traditional way. Modern wheat does not pass in any form (Carter, Oct 28, 2026).",
+    "anchor": "wheat-organic-traditionally-prepared",
+    "search": "wheat, organic",
+    "usedIn": []
+  },
+  {
+    "name": "White rice",
+    "kind": "Food",
+    "verdict": "CONDITIONAL",
+    "note": "Traditional cultures ate white rice, not brown, to remove phytic acid.",
+    "anchor": "white-rice",
+    "search": "white rice",
+    "usedIn": [
+      "Chicken and Rice Bowls",
+      "Garlic Butter Shrimp over Soaked Rice",
+      "Chicken Soup with Rice",
+      "Rice Pudding with Honey and Cinnamon"
+    ]
+  },
+  {
+    "name": "Whole fruit",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "whole-fruit",
+    "search": "whole fruit",
+    "usedIn": [
+      "Peanut Butter Banana Smoothie",
+      "Peanut Butter and Honey Sandwich",
+      "Cheddar, Fruit and Cashew Lunch Plate",
+      "Pork Chops with Baked Apples",
+      "Baked Apples with Honey Butter and Cashews"
+    ]
+  },
+  {
+    "name": "acerola powder",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "acerola-powder",
+    "search": "acerola powder",
+    "usedIn": []
+  },
+  {
+    "name": "almonds (raw, whole)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "almonds-raw-whole",
+    "search": "almonds",
+    "usedIn": []
+  },
+  {
+    "name": "avocado (fresh fruit)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "avocado-fresh-fruit",
+    "search": "avocado",
+    "usedIn": []
+  },
+  {
+    "name": "avocado oil",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "avocado-oil",
+    "search": "avocado oil",
+    "usedIn": [
+      "Homemade Mayo",
+      "Ranch-Style Dressing"
+    ]
+  },
+  {
+    "name": "baking soda (sodium bicarbonate)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "baking-soda-sodium-bicarbonate",
+    "search": "baking soda",
+    "usedIn": [
+      "Honey Pancakes",
+      "Honey Peanut Butter Cookies",
+      "Honey Sugar Cookies with Strawberry Frosting",
+      "Honey Vanilla Cake",
+      "Ice Cream Cake"
+    ]
+  },
+  {
+    "name": "beef tallow",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "beef-tallow",
+    "search": "beef tallow",
+    "usedIn": [
+      "Chicken and Guacamole Wraps",
+      "Smash Burgers with Cheddar",
+      "Crispy Chicken Tenders with Honey Mustard",
+      "Beef Stew with Root Vegetables",
+      "Salmon with Lemon Butter",
+      "Pork Chops with Baked Apples",
+      "Sheet-Pan Steak and Roasted Roots"
+    ]
+  },
+  {
+    "name": "Bifidobacterium infantis",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "bifidobacterium-infantis",
+    "search": "bifidobacterium infantis",
+    "usedIn": []
+  },
+  {
+    "name": "black pepper",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "black-pepper",
+    "search": "black pepper",
+    "usedIn": [
+      "Baked Egg Cups with Beef",
+      "Steak and Eggs Skillet",
+      "Beef and Cheddar Wrap Melts",
+      "Family Meatloaf with Ketchup Glaze",
+      "Smash Burgers with Cheddar",
+      "Whole Roast Chicken with Root Vegetables",
+      "Crispy Chicken Tenders with Honey Mustard",
+      "Beef Stew with Root Vegetables",
+      "Salmon with Lemon Butter",
+      "Pork Chops with Baked Apples",
+      "Sheet-Pan Steak and Roasted Roots",
+      "Chicken Soup with Rice",
+      "Ranch-Style Dressing",
+      "Honey BBQ Sauce"
+    ]
+  },
+  {
+    "name": "blueberries",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "blueberries",
+    "search": "blueberries",
+    "usedIn": []
+  },
+  {
+    "name": "butter",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "butter",
+    "search": "butter",
+    "usedIn": []
+  },
+  {
+    "name": "calcium chloride",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "calcium-chloride",
+    "search": "calcium chloride",
+    "usedIn": []
+  },
+  {
+    "name": "calendula (pot marigold)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "calendula-pot-marigold",
+    "search": "calendula",
+    "usedIn": []
+  },
+  {
+    "name": "carob powder (unsweetened)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "carob-powder-unsweetened",
+    "search": "carob powder",
+    "usedIn": [
+      "Carob Brownies"
+    ]
+  },
+  {
+    "name": "cashews",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "cashews",
+    "search": "cashews",
+    "usedIn": [
+      "Cheddar, Fruit and Cashew Lunch Plate",
+      "Baked Apples with Honey Butter and Cashews",
+      "Date and Cashew Bars"
+    ]
+  },
+  {
+    "name": "cinnamon (Ceylon)",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "CONDITIONAL on variety: Ceylon (true) cinnamon, Cinnamomum verum, only.",
+    "anchor": "cinnamon-ceylon",
+    "search": "cinnamon",
+    "usedIn": [
+      "Blueberry Honey Oat Bowl",
+      "Pork Chops with Baked Apples",
+      "Baked Apples with Honey Butter and Cashews",
+      "Rice Pudding with Honey and Cinnamon"
+    ]
+  },
+  {
+    "name": "coconut oil",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "coconut-oil",
+    "search": "coconut oil",
+    "usedIn": []
+  },
+  {
+    "name": "coconut water",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "coconut-water",
+    "search": "coconut water",
+    "usedIn": []
+  },
+  {
+    "name": "cod liver oil",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "cod-liver-oil",
+    "search": "cod liver oil",
+    "usedIn": []
+  },
+  {
+    "name": "cream (pasteurized cream)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "cream-pasteurized-cream",
+    "search": "cream",
+    "usedIn": [
+      "Homemade Honey Vanilla Ice Cream",
+      "Ice Cream Cake"
+    ]
+  },
+  {
+    "name": "dates",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "dates",
+    "search": "dates",
+    "usedIn": [
+      "Date and Cashew Bars"
+    ]
+  },
+  {
+    "name": "duck fat",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "duck-fat",
+    "search": "duck fat",
+    "usedIn": []
+  },
+  {
+    "name": "einkorn flour",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "einkorn-flour",
+    "search": "einkorn flour",
+    "usedIn": []
+  },
+  {
+    "name": "Fruit juice, as flavoring (small amounts in water or food)",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "Carter clarification Oct 23, 2026: juice used only as a flavoring is good.",
+    "anchor": "fruit-juice-as-flavoring-small-amounts-in-water-or-food",
+    "search": "fruit juice, as flavoring",
+    "usedIn": []
+  },
+  {
+    "name": "garlic powder",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "garlic-powder",
+    "search": "garlic powder",
+    "usedIn": [
+      "Family Meatloaf with Ketchup Glaze",
+      "Whole Roast Chicken with Root Vegetables",
+      "Beef Stew with Root Vegetables",
+      "Conchiglie with Beef Ragu",
+      "Salmon with Lemon Butter",
+      "Garlic Butter Shrimp over Soaked Rice",
+      "Sheet-Pan Steak and Roasted Roots",
+      "Chicken Soup with Rice",
+      "Ranch-Style Dressing",
+      "Honey BBQ Sauce"
+    ]
+  },
+  {
+    "name": "gelatin",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "gelatin",
+    "search": "gelatin",
+    "usedIn": []
+  },
+  {
+    "name": "grape must",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "Appears only as a constituent of balsamic vinegar in one verified passing product (Primal Kitchen ketchup, 0g added sugar), where the source file flags it as not an added sweetener.",
+    "anchor": "grape-must",
+    "search": "grape must",
+    "usedIn": []
+  },
+  {
+    "name": "homemade liquid whey",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "homemade-liquid-whey",
+    "search": "homemade liquid whey",
+    "usedIn": []
+  },
+  {
+    "name": "lactose",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "lactose",
+    "search": "lactose",
+    "usedIn": []
+  },
+  {
+    "name": "lard (pork fat)",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "A traditional animal fat sold by approved farms (US Wellness) and listed by WAPF for vitamin D; the videos do not name lard directly.",
+    "anchor": "lard-pork-fat",
+    "search": "lard",
+    "usedIn": []
+  },
+  {
+    "name": "lemon (fresh)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "lemon-fresh",
+    "search": "lemon",
+    "usedIn": [
+      "Honey Pancakes",
+      "Tuna Salad Wraps",
+      "Egg Salad Wraps",
+      "Chicken and Rice Bowls",
+      "Salmon with Lemon Butter",
+      "Garlic Butter Shrimp over Soaked Rice",
+      "Honey Vanilla Cake",
+      "Homemade Mayo",
+      "Ranch-Style Dressing"
+    ]
+  },
+  {
+    "name": "malted barley flour",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "A fermentation aid, not synthetic enrichment; present in passing flours (King Arthur Organic, Central Milling organic).",
+    "anchor": "malted-barley-flour",
+    "search": "malted barley flour",
+    "usedIn": []
+  },
+  {
+    "name": "manuka honey",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "manuka-honey",
+    "search": "manuka honey",
+    "usedIn": []
+  },
+  {
+    "name": "mixed tocopherols (natural vitamin E)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "mixed-tocopherols-natural-vitamin-e",
+    "search": "mixed tocopherols",
+    "usedIn": []
+  },
+  {
+    "name": "mustard (prepared, plain)",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "CONDITIONAL: plain prepared mustard (mustard seed, vinegar, salt, water) with no added sugar or flavorings, and it must always be declared as the major allergen it is.",
+    "anchor": "mustard-prepared-plain",
+    "search": "mustard",
+    "usedIn": [
+      "Tuna Salad Wraps",
+      "Egg Salad Wraps",
+      "Smash Burgers with Cheddar",
+      "Crispy Chicken Tenders with Honey Mustard",
+      "Homemade Mayo",
+      "Ranch-Style Dressing",
+      "Honey BBQ Sauce"
+    ]
+  },
+  {
+    "name": "nutritional yeast flakes",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "nutritional-yeast-flakes",
+    "search": "nutritional yeast flakes",
+    "usedIn": []
+  },
+  {
+    "name": "oats (organic)",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "If grains are eaten, choose organic.",
+    "anchor": "oats-organic",
+    "search": "oats",
+    "usedIn": [
+      "Blueberry Honey Oat Bowl"
+    ]
+  },
+  {
+    "name": "olive oil (extra virgin, cold-pressed)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "olive-oil-extra-virgin-cold-pressed",
+    "search": "olive oil",
+    "usedIn": []
+  },
+  {
+    "name": "onion (fresh)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "onion-fresh",
+    "search": "onion",
+    "usedIn": [
+      "Family Meatloaf with Ketchup Glaze",
+      "Beef Stew with Root Vegetables",
+      "Conchiglie with Beef Ragu",
+      "Chicken Soup with Rice",
+      "Ranch-Style Dressing"
+    ]
+  },
+  {
+    "name": "onion powder",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "onion-powder",
+    "search": "onion powder",
+    "usedIn": []
+  },
+  {
+    "name": "peanuts",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "peanuts",
+    "search": "peanuts",
+    "usedIn": []
+  },
+  {
+    "name": "raw honey",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "raw-honey",
+    "search": "raw honey",
+    "usedIn": [
+      "Honey Peanut Butter Cookies",
+      "Honey Sugar Cookies with Strawberry Frosting",
+      "Carob Brownies",
+      "Honey Vanilla Cake",
+      "Homemade Honey Vanilla Ice Cream",
+      "Ice Cream Cake",
+      "Baked Apples with Honey Butter and Cashews",
+      "Rice Pudding with Honey and Cinnamon"
+    ]
+  },
+  {
+    "name": "salt (plain sea salt)",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "Appears in approved products throughout.",
+    "anchor": "salt-plain-sea-salt",
+    "search": "salt",
+    "usedIn": [
+      "Honey Pancakes",
+      "Fluffy Scrambled Eggs with Cheddar",
+      "Breakfast Egg and Cheddar Wraps",
+      "Baked Egg Cups with Beef",
+      "Blueberry Honey Oat Bowl",
+      "Steak and Eggs Skillet",
+      "Tuna Salad Wraps",
+      "Beef and Cheddar Wrap Melts",
+      "Chicken and Guacamole Wraps",
+      "Egg Salad Wraps",
+      "Chicken and Rice Bowls",
+      "Family Meatloaf with Ketchup Glaze",
+      "Smash Burgers with Cheddar",
+      "Whole Roast Chicken with Root Vegetables",
+      "Crispy Chicken Tenders with Honey Mustard",
+      "Beef Stew with Root Vegetables",
+      "Conchiglie with Beef Ragu",
+      "Homemade Mac and Cheese",
+      "Salmon with Lemon Butter",
+      "Garlic Butter Shrimp over Soaked Rice",
+      "Pork Chops with Baked Apples",
+      "Sheet-Pan Steak and Roasted Roots",
+      "Chicken Soup with Rice",
+      "Honey Peanut Butter Cookies",
+      "Honey Sugar Cookies with Strawberry Frosting",
+      "Carob Brownies",
+      "Honey Vanilla Cake",
+      "Homemade Honey Vanilla Ice Cream",
+      "Ice Cream Cake",
+      "Date and Cashew Bars",
+      "Rice Pudding with Honey and Cinnamon",
+      "Homemade Mayo",
+      "Ranch-Style Dressing",
+      "Honey BBQ Sauce"
+    ]
+  },
+  {
+    "name": "shredded coconut (unsweetened)",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "CONDITIONAL: single-ingredient dried coconut, unsulfured, no sulfite preservatives, no added sugar.",
+    "anchor": "shredded-coconut-unsweetened",
+    "search": "shredded coconut",
+    "usedIn": []
+  },
+  {
+    "name": "sodium chloride",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "Chemical name for salt itself.",
+    "anchor": "sodium-chloride",
+    "search": "sodium chloride",
+    "usedIn": []
+  },
+  {
+    "name": "spring water (natural)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "spring-water-natural",
+    "search": "spring water",
+    "usedIn": []
+  },
+  {
+    "name": "vanilla extract",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "vanilla-extract",
+    "search": "vanilla extract",
+    "usedIn": [
+      "Honey Peanut Butter Cookies",
+      "Honey Sugar Cookies with Strawberry Frosting",
+      "Carob Brownies",
+      "Honey Vanilla Cake",
+      "Homemade Honey Vanilla Ice Cream",
+      "Ice Cream Cake",
+      "Rice Pudding with Honey and Cinnamon"
+    ]
+  },
+  {
+    "name": "vinegar (distilled white and apple cider)",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "CONDITIONAL: as an ingredient cooked into food or used in dressings and marinades, never as a drink.",
+    "anchor": "vinegar-distilled-white-and-apple-cider",
+    "search": "vinegar",
+    "usedIn": [
+      "Honey BBQ Sauce"
+    ]
+  },
+  {
+    "name": "vitamin D3 (milk fortification)",
+    "kind": "Ingredient",
+    "verdict": "CONDITIONAL",
+    "note": "Present in the approved fallback milk (Organic Valley).",
+    "anchor": "vitamin-d3-milk-fortification",
+    "search": "vitamin d3",
+    "usedIn": []
+  },
+  {
+    "name": "zinc oxide (non-nano)",
+    "kind": "Ingredient",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "zinc-oxide-non-nano",
+    "search": "zinc oxide",
+    "usedIn": []
+  },
+  {
+    "name": "Artisana Organics Raw Almond Butter",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "artisana-organics-raw-almond-butter",
+    "search": "artisana organics raw almond butter",
+    "usedIn": []
+  },
+  {
+    "name": "Base Culture Original Keto Gluten Free Bread",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "base-culture-original-keto-gluten-free-bread-16-oz",
+    "search": "base culture original keto gluten free bread",
+    "usedIn": [
+      "Peanut Butter and Honey Sandwich",
+      "Smash Burgers with Cheddar"
+    ]
+  },
+  {
+    "name": "Bend Soap Company Unscented Goat Milk Soap",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "bend-soap-company-unscented-goat-milk-soap",
+    "search": "bend soap company unscented goat milk soap",
+    "usedIn": []
+  },
+  {
+    "name": "Bionaturae Marinara Pasta Sauce",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "bionaturae-marinara-pasta-sauce",
+    "search": "bionaturae marinara pasta sauce",
+    "usedIn": []
+  },
+  {
+    "name": "Boulder Canyon Kettle Style Classic Sea Salt Potato Chips, Avocado Oil",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "boulder-canyon-kettle-style-classic-sea-salt-potato-chips-avocado-oil-5-25-oz",
+    "search": "boulder canyon kettle style classic sea salt potato chips, avocado oil",
+    "usedIn": []
+  },
+  {
+    "name": "Boulder Canyon Thin & Crispy Classic Sea Salt Potato Chips",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "boulder-canyon-thin-crispy-classic-sea-salt-potato-chips-6-oz",
+    "search": "boulder canyon thin & crispy classic sea salt potato chips",
+    "usedIn": []
+  },
+  {
+    "name": "Brothers All Natural Freeze Dried Strawberry Fruit Crisps",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "brothers-all-natural-freeze-dried-strawberry-fruit-crisps-1-oz",
+    "search": "brothers all natural freeze dried strawberry fruit crisps",
+    "usedIn": [
+      "Honey Sugar Cookies with Strawberry Frosting",
+      "Ice Cream Cake"
+    ]
+  },
+  {
+    "name": "Bubbies Kosher Dill Pickles",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "bubbies-kosher-dill-pickles",
+    "search": "bubbies kosher dill pickles",
+    "usedIn": []
+  },
+  {
+    "name": "California Olive Ranch 100% California Extra Virgin Olive Oil",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "california-olive-ranch-100-california-extra-virgin-olive-oil",
+    "search": "california olive ranch 100% california extra virgin olive oil",
+    "usedIn": [
+      "Tuna Salad Wraps",
+      "Egg Salad Wraps",
+      "Chicken and Rice Bowls",
+      "Conchiglie with Beef Ragu"
+    ]
+  },
+  {
+    "name": "Carbone Marinara Sauce",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "carbone-marinara-sauce",
+    "search": "carbone marinara sauce",
+    "usedIn": []
+  },
+  {
+    "name": "Dutch Meadows Dutch Reserve Raw Cheddar",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "dutch-meadows-dutch-reserve-raw-cheddar",
+    "search": "dutch meadows dutch reserve raw cheddar",
+    "usedIn": []
+  },
+  {
+    "name": "Dutch Meadows Raw Butter",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "dutch-meadows-raw-butter",
+    "search": "dutch meadows raw butter",
+    "usedIn": []
+  },
+  {
+    "name": "Earthbound Farm Frozen Organic Sliced Strawberries",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "earthbound-farm-frozen-organic-sliced-strawberries-2-lb",
+    "search": "earthbound farm frozen organic sliced strawberries",
+    "usedIn": []
+  },
+  {
+    "name": "Evil Goods Whipped Tallow and Manuka Honey Balm",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "evil-goods-whipped-tallow-and-manuka-honey-balm",
+    "search": "evil goods whipped tallow and manuka honey balm",
+    "usedIn": []
+  },
+  {
+    "name": "Fatworks Grass-Fed Beef Tallow",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "fatworks-grass-fed-beef-tallow",
+    "search": "fatworks grass-fed beef tallow",
+    "usedIn": [
+      "Steak and Eggs Skillet"
+    ]
+  },
+  {
+    "name": "Felicia Organic Red Lentil Penne",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "felicia-organic-red-lentil-penne-8-oz",
+    "search": "felicia organic red lentil penne",
+    "usedIn": [
+      "Homemade Mac and Cheese"
+    ]
+  },
+  {
+    "name": "Force of Nature Ground Beef and Bison range",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "force-of-nature-ground-beef-and-bison-range-incl-ancestral-blend",
+    "search": "force of nature ground beef and bison range",
+    "usedIn": [
+      "Family Meatloaf with Ketchup Glaze"
+    ]
+  },
+  {
+    "name": "Goodness Grazecious 85/15 Grass-Fed Organic Ground Beef",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Label claims grass-fed and organic only; nothing on the listing states grass-finished or never grain, so the finishing half of the standard is unverified.",
+    "anchor": "goodness-grazecious-85-15-grass-fed-organic-ground-beef-16-oz",
+    "search": "goodness grazecious 85/15 grass-fed organic ground beef",
+    "usedIn": []
+  },
+  {
+    "name": "Green Mountain Gringo Salsa, Mild",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "green-mountain-gringo-salsa-mild-also-medium-and-hot-16-oz",
+    "search": "green mountain gringo salsa, mild",
+    "usedIn": []
+  },
+  {
+    "name": "Harmless Harvest Organic Coconut Water",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "harmless-harvest-organic-coconut-water-plain-original",
+    "search": "harmless harvest organic coconut water",
+    "usedIn": []
+  },
+  {
+    "name": "Jovial 100% Organic Einkorn Whole Wheat Pasta",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "jovial-100-organic-einkorn-whole-wheat-pasta-spaghetti-penne-fusilli-12-oz",
+    "search": "jovial 100% organic einkorn whole wheat pasta",
+    "usedIn": []
+  },
+  {
+    "name": "Jovial Organic Einkorn All-Purpose Flour",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "jovial-organic-einkorn-all-purpose-flour-2-lb",
+    "search": "jovial organic einkorn all-purpose flour",
+    "usedIn": [
+      "Honey Pancakes",
+      "Crispy Chicken Tenders with Honey Mustard",
+      "Honey Sugar Cookies with Strawberry Frosting",
+      "Carob Brownies",
+      "Honey Vanilla Cake",
+      "Ice Cream Cake"
+    ]
+  },
+  {
+    "name": "Just Bare Organic Boneless Skinless Chicken Breast Fillets",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "USDA Certified Organic, cage-free barn-raised, no antibiotics (Woodman detail page Oct 25 2026).",
+    "anchor": "just-bare-organic-boneless-skinless-chicken-breast-fillets",
+    "search": "just bare organic boneless skinless chicken breast fillets",
+    "usedIn": []
+  },
+  {
+    "name": "King Oscar Skinless and Boneless Sardines in Water",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "king-oscar-skinless-and-boneless-sardines-in-water",
+    "search": "king oscar skinless and boneless sardines in water",
+    "usedIn": []
+  },
+  {
+    "name": "Kriemhild Dairy Meadow Butter",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "kriemhild-dairy-meadow-butter-salted",
+    "search": "kriemhild dairy meadow butter",
+    "usedIn": [
+      "Honey Pancakes",
+      "Fluffy Scrambled Eggs with Cheddar",
+      "Breakfast Egg and Cheddar Wraps",
+      "Baked Egg Cups with Beef",
+      "Blueberry Honey Oat Bowl",
+      "Whole Roast Chicken with Root Vegetables",
+      "Homemade Mac and Cheese",
+      "Salmon with Lemon Butter",
+      "Garlic Butter Shrimp over Soaked Rice",
+      "Pork Chops with Baked Apples",
+      "Honey Sugar Cookies with Strawberry Frosting",
+      "Carob Brownies",
+      "Honey Vanilla Cake",
+      "Ice Cream Cake",
+      "Baked Apples with Honey Butter and Cashews"
+    ]
+  },
+  {
+    "name": "Lakewood Organic Aloe Vera Juice",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Organic aloe vera juice, less than 1% organic lemon juice (label states the lemon juice is what allows bottling without preservatives).",
+    "anchor": "lakewood-organic-aloe-vera-juice",
+    "search": "lakewood organic aloe vera juice",
+    "usedIn": []
+  },
+  {
+    "name": "Larabar Cashew Cookie",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "larabar-cashew-cookie",
+    "search": "larabar cashew cookie",
+    "usedIn": [
+      "Cheddar, Fruit and Cashew Lunch Plate"
+    ]
+  },
+  {
+    "name": "Larabar Peanut Butter Cookie",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "larabar-peanut-butter-cookie",
+    "search": "larabar peanut butter cookie",
+    "usedIn": []
+  },
+  {
+    "name": "Lauretana Natural Mineral Water, glass bottles",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "lauretana-natural-mineral-water-glass-bottles",
+    "search": "lauretana natural mineral water, glass bottles",
+    "usedIn": []
+  },
+  {
+    "name": "Maple Hill 100% Grass-Fed Organic Butter",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "maple-hill-100-grass-fed-organic-butter-salted",
+    "search": "maple hill 100% grass-fed organic butter",
+    "usedIn": []
+  },
+  {
+    "name": "Miracle Noodle Egg White Noodles",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Egg whites, water, under 1% sodium alginate.",
+    "anchor": "miracle-noodle-egg-white-noodles-7-oz",
+    "search": "miracle noodle egg white noodles",
+    "usedIn": []
+  },
+  {
+    "name": "Miracle Noodle Organic Shirataki Pasta",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Water, organic konjac flour, citric acid.",
+    "anchor": "miracle-noodle-organic-shirataki-pasta-7-oz-spaghetti-fettuccine-ziti",
+    "search": "miracle noodle organic shirataki pasta",
+    "usedIn": []
+  },
+  {
+    "name": "Mountain Valley Spring Water, glass bottles",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "mountain-valley-spring-water-glass-bottles",
+    "search": "mountain valley spring water, glass bottles",
+    "usedIn": []
+  },
+  {
+    "name": "Muir Glen Organic Pasta Sauce",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Organic tomato puree and tomatoes, EVOO, onion, garlic, sea salt, herbs, plus citric acid and calcium chloride in the pasta sauce line (Woodman labels Oct 26 2026).",
+    "anchor": "muir-glen-organic-pasta-sauce-all-flavors",
+    "search": "muir glen organic pasta sauce",
+    "usedIn": []
+  },
+  {
+    "name": "Mutti Marinara Sauce",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "mutti-marinara-sauce",
+    "search": "mutti marinara sauce",
+    "usedIn": []
+  },
+  {
+    "name": "Nate's Raw & Unfiltered Honey",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+    "search": "nate's raw & unfiltered honey",
+    "usedIn": [
+      "Honey Pancakes",
+      "Blueberry Honey Oat Bowl",
+      "Peanut Butter Banana Smoothie",
+      "Blueberry Honey Smoothie",
+      "Peanut Butter and Honey Sandwich",
+      "Cheddar, Fruit and Cashew Lunch Plate",
+      "Crispy Chicken Tenders with Honey Mustard",
+      "Pork Chops with Baked Apples",
+      "Honey BBQ Sauce"
+    ]
+  },
+  {
+    "name": "Newman’s Own Chunky Salsa, Mild",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Diced tomatoes in tomato juice, tomato puree, green chili peppers, green and red bell peppers, onions, distilled vinegar, salt, cilantro, garlic, black pepper, citric acid.",
+    "anchor": "newman-s-own-chunky-salsa-mild-16-oz",
+    "search": "newman’s own chunky salsa, mild",
+    "usedIn": []
+  },
+  {
+    "name": "NUCO Organic Coconut Wraps, Original",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "nuco-organic-coconut-wraps-original-5-ct",
+    "search": "nuco organic coconut wraps, original",
+    "usedIn": [
+      "Breakfast Egg and Cheddar Wraps",
+      "Tuna Salad Wraps",
+      "Beef and Cheddar Wrap Melts",
+      "Chicken and Guacamole Wraps",
+      "Egg Salad Wraps"
+    ]
+  },
+  {
+    "name": "Nutiva Organic Virgin Coconut Oil",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "nutiva-organic-virgin-coconut-oil",
+    "search": "nutiva organic virgin coconut oil",
+    "usedIn": []
+  },
+  {
+    "name": "Organic Prairie 100% Grassfed Beef Liver",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "organic-prairie-100-grassfed-beef-liver-8-oz",
+    "search": "prairie 100% grassfed beef liver",
+    "usedIn": []
+  },
+  {
+    "name": "Organic Prairie 100% Grassfed Ground Beef",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "organic-prairie-100-grassfed-ground-beef-75-25-fresh-85-15-frozen-90-10",
+    "search": "prairie 100% grassfed ground beef",
+    "usedIn": []
+  },
+  {
+    "name": "Organic Valley Grassmilk Organic Whole Milk",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "organic-valley-grassmilk-organic-whole-milk",
+    "search": "valley grassmilk organic whole milk",
+    "usedIn": [
+      "Honey Pancakes",
+      "Fluffy Scrambled Eggs with Cheddar",
+      "Blueberry Honey Oat Bowl",
+      "Peanut Butter Banana Smoothie",
+      "Blueberry Honey Smoothie",
+      "Homemade Mac and Cheese",
+      "Honey Sugar Cookies with Strawberry Frosting",
+      "Honey Vanilla Cake",
+      "Homemade Honey Vanilla Ice Cream",
+      "Ice Cream Cake",
+      "Rice Pudding with Honey and Cinnamon",
+      "Ranch-Style Dressing"
+    ]
+  },
+  {
+    "name": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
+    "search": "valley grassmilk raw cheddar and raw sharp cheddar",
+    "usedIn": [
+      "Fluffy Scrambled Eggs with Cheddar",
+      "Breakfast Egg and Cheddar Wraps",
+      "Baked Egg Cups with Beef",
+      "Beef and Cheddar Wrap Melts",
+      "Cheddar, Fruit and Cashew Lunch Plate",
+      "Smash Burgers with Cheddar",
+      "Homemade Mac and Cheese"
+    ]
+  },
+  {
+    "name": "Organicville Organic Marinara Pasta Sauce",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "organicville-organic-marinara-pasta-sauce",
+    "search": "organicville organic marinara pasta sauce",
+    "usedIn": []
+  },
+  {
+    "name": "Primal Kitchen A Tad Sweet Ketchup",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Organic tomato concentrate, organic balsamic vinegar, organic distilled vinegar, organic honey, salt, onion/garlic powder, spices (Woodman label Oct 25 2026).",
+    "anchor": "primal-kitchen-a-tad-sweet-ketchup-honey",
+    "search": "primal kitchen a tad sweet ketchup",
+    "usedIn": []
+  },
+  {
+    "name": "Primal Kitchen Marinara Pasta Sauce",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Organic tomato base, avocado oil, garlic, herbs, plus citric acid and calcium chloride from the diced tomato component (Woodman labels Oct 26 2026).",
+    "anchor": "primal-kitchen-marinara-pasta-sauce-roasted-garlic-tomato-basil",
+    "search": "primal kitchen marinara pasta sauce",
+    "usedIn": []
+  },
+  {
+    "name": "Primal Kitchen Organic Unsweetened Ketchup",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "primal-kitchen-organic-unsweetened-ketchup",
+    "search": "primal kitchen organic unsweetened ketchup",
+    "usedIn": [
+      "Beef and Cheddar Wrap Melts",
+      "Family Meatloaf with Ketchup Glaze",
+      "Smash Burgers with Cheddar"
+    ]
+  },
+  {
+    "name": "Rao's Homemade Marinara Sauce",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "rao-s-homemade-marinara-sauce",
+    "search": "rao's homemade marinara sauce",
+    "usedIn": [
+      "Conchiglie with Beef Ragu",
+      "Honey BBQ Sauce"
+    ]
+  },
+  {
+    "name": "S.Pellegrino Sparkling Natural Mineral Water, glass bottle",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "s-pellegrino-sparkling-natural-mineral-water-glass-bottle",
+    "search": "s.pellegrino sparkling natural mineral water, glass bottle",
+    "usedIn": []
+  },
+  {
+    "name": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "santa-cruz-organic-peanut-butter-dark-roasted-creamy",
+    "search": "santa cruz organic peanut butter, dark roasted creamy",
+    "usedIn": []
+  },
+  {
+    "name": "Saratoga Spring Water, still, glass bottle",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Natural spring water, nothing added.",
+    "anchor": "saratoga-spring-water-still-glass-bottle",
+    "search": "saratoga spring water, still, glass bottle",
+    "usedIn": []
+  },
+  {
+    "name": "Siete Burrito Size Grain Free Tortillas",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Water, cassava flour, tapioca flour, avocado oil, coconut flour, arrowroot flour, apple cider vinegar, COCONUT SUGAR, sea salt, yeast.",
+    "anchor": "siete-burrito-size-grain-free-tortillas-6-ct-15-oz",
+    "search": "siete burrito size grain free tortillas",
+    "usedIn": []
+  },
+  {
+    "name": "Siete Cassava Flour Tortillas",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Cassava flour, water, coconut flour, coconut oil, apple cider vinegar, sea salt, xanthan gum.",
+    "anchor": "siete-cassava-flour-tortillas-8-ct-7-oz",
+    "search": "siete cassava flour tortillas",
+    "usedIn": []
+  },
+  {
+    "name": "Siete Kettle Cooked Sea Salt Potato Chips",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "siete-kettle-cooked-sea-salt-potato-chips-5-5-oz",
+    "search": "siete kettle cooked sea salt potato chips",
+    "usedIn": []
+  },
+  {
+    "name": "Simply Organic Cinnamon, Ceylon",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "simply-organic-cinnamon-ceylon",
+    "search": "simply organic cinnamon, ceylon",
+    "usedIn": []
+  },
+  {
+    "name": "Smart Chicken Organic Boneless Skinless Chicken Breasts",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Certified Organic, Certified Humane, free range with outdoor access, air-chilled, no added water (Woodman detail page Oct 25 2026).",
+    "anchor": "smart-chicken-organic-boneless-skinless-chicken-breasts",
+    "search": "smart chicken organic boneless skinless chicken breasts",
+    "usedIn": []
+  },
+  {
+    "name": "Smucker's Natural Creamy Peanut Butter",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Peanuts, 1% or less salt (label read on Woodman's product page Oct 25 2026).",
+    "anchor": "smucker-s-natural-creamy-peanut-butter",
+    "search": "smucker's natural creamy peanut butter",
+    "usedIn": []
+  },
+  {
+    "name": "Smucker's Organic Creamy Peanut Butter",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "smucker-s-organic-creamy-peanut-butter",
+    "search": "smucker's organic creamy peanut butter",
+    "usedIn": [
+      "Peanut Butter Banana Smoothie",
+      "Peanut Butter and Honey Sandwich",
+      "Honey Peanut Butter Cookies"
+    ]
+  },
+  {
+    "name": "Spindrift Spindrift Raspberry Lime Sparkling Water",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Carbonated water, raspberry puree, raspberry juice, lime juice.",
+    "anchor": "spindrift-spindrift-raspberry-lime-sparkling-water",
+    "search": "spindrift spindrift raspberry lime sparkling water",
+    "usedIn": []
+  },
+  {
+    "name": "Sundays Beef Recipe",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "sundays-beef-recipe-air-dried-dog-food",
+    "search": "sundays beef recipe",
+    "usedIn": []
+  },
+  {
+    "name": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "thousand-hills-lifetime-grazed-ground-beef-85-15",
+    "search": "thousand hills ground beef",
+    "usedIn": [
+      "Baked Egg Cups with Beef",
+      "Beef and Cheddar Wrap Melts",
+      "Smash Burgers with Cheddar",
+      "Conchiglie with Beef Ragu"
+    ]
+  },
+  {
+    "name": "Tolerant Organic Red Lentil Penne",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "tolerant-organic-red-lentil-penne-simply-legumes-8-oz",
+    "search": "tolerant organic red lentil penne",
+    "usedIn": []
+  },
+  {
+    "name": "Toups and Co Organics Sun Balm",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "toups-and-co-organics-sun-balm",
+    "search": "toups and co organics sun balm",
+    "usedIn": []
+  },
+  {
+    "name": "Toups and Co Organics Tallow Balm, Vanilla and Almond",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "toups-and-co-organics-tallow-balm-vanilla-and-almond",
+    "search": "toups and co organics tallow balm, vanilla and almond",
+    "usedIn": []
+  },
+  {
+    "name": "US Wellness Meats Beef Summer Sausage",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "us-wellness-meats-beef-summer-sausage-8-oz",
+    "search": "us wellness meats beef summer sausage",
+    "usedIn": []
+  },
+  {
+    "name": "VanMan Bison Tallow and Honey Balm, Unscented",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "vanman-bison-tallow-and-honey-balm-unscented",
+    "search": "vanman bison tallow and honey balm, unscented",
+    "usedIn": []
+  },
+  {
+    "name": "VanMan Tallow and Honey Balm, Unscented",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "vanman-tallow-and-honey-balm-unscented-classic",
+    "search": "vanman tallow and honey balm, unscented",
+    "usedIn": []
+  },
+  {
+    "name": "Vital Farms Organic Pasture-Raised Eggs",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "vital-farms-organic-pasture-raised-eggs",
+    "search": "vital farms organic pasture-raised eggs",
+    "usedIn": [
+      "Honey Pancakes",
+      "Fluffy Scrambled Eggs with Cheddar",
+      "Breakfast Egg and Cheddar Wraps",
+      "Baked Egg Cups with Beef",
+      "Steak and Eggs Skillet",
+      "Egg Salad Wraps",
+      "Family Meatloaf with Ketchup Glaze",
+      "Crispy Chicken Tenders with Honey Mustard",
+      "Honey Peanut Butter Cookies",
+      "Honey Sugar Cookies with Strawberry Frosting",
+      "Carob Brownies",
+      "Honey Vanilla Cake",
+      "Homemade Honey Vanilla Ice Cream",
+      "Ice Cream Cake",
+      "Rice Pudding with Honey and Cinnamon",
+      "Homemade Mayo"
+    ]
+  },
+  {
+    "name": "Wedderspoon Raw Manuka Honey",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "wedderspoon-raw-manuka-honey",
+    "search": "wedderspoon raw manuka honey",
+    "usedIn": []
+  },
+  {
+    "name": "Wholly Guacamole Classic Guacamole, Mild",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "wholly-guacamole-classic-guacamole-mild-7-5-oz",
+    "search": "wholly guacamole classic guacamole, mild",
+    "usedIn": [
+      "Chicken and Guacamole Wraps"
+    ]
+  },
+  {
+    "name": "Wild Planet Wild Albacore Tuna and Sea Salt",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "wild-planet-wild-albacore-tuna-and-sea-salt",
+    "search": "wild planet wild albacore tuna and sea salt",
+    "usedIn": [
+      "Tuna Salad Wraps"
+    ]
+  },
+  {
+    "name": "Wild Planet Wild Sardines in Organic Extra Virgin Olive Oil",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "wild-planet-wild-sardines-in-organic-extra-virgin-olive-oil",
+    "search": "wild planet wild sardines in organic extra virgin olive oil",
+    "usedIn": []
+  },
+  {
+    "name": "Wild Planet Wild Sockeye Salmon",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "wild-planet-wild-sockeye-salmon",
+    "search": "wild planet wild sockeye salmon",
+    "usedIn": []
+  },
+  {
+    "name": "Wyman's Frozen Wild Blueberries",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "wyman-s-frozen-wild-blueberries",
+    "search": "wyman's frozen wild blueberries",
+    "usedIn": [
+      "Blueberry Honey Oat Bowl",
+      "Blueberry Honey Smoothie"
+    ]
+  }
 ]
