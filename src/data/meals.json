@@ -3477,85 +3477,72 @@
     ]
   },
   {
-    "id": "einkorn-soda-bread",
-    "name": "Einkorn Soda Bread",
+    "id": "einkorn-sourdough-bread",
+    "name": "Einkorn Sourdough Bread",
     "mealType": "Basics",
-    "description": "A traditional soda bread built on the only flour that passes now: einkorn, the ancient wheat. Soda bread is the old Irish farmhouse loaf, leavened with baking soda and soured milk instead of yeast, and einkorn makes it nutty, golden, and a little denser than modern wheat bread. It slices clean, toasts beautifully, and is the bread for the burgers, the egg salad, and plain butter and honey.",
-    "time": "50 minutes",
+    "description": "Bread the way the wheat video describes it: an ancient grain, einkorn, raised by a wild sourdough culture and nothing else. No commercial yeast anywhere in it. The long, slow culturing is the traditional preparation, the same family of methods as soaking and sprouting, and it is what makes wheat digestible: the culture breaks down the gluten structure and the phytic acid before the loaf is ever baked. The result is tangy, chewy, and nutty, with a crust that crackles. The starter is just flour and water and, once it is alive, it keeps forever in the fridge.",
+    "time": "About 24 hours, mostly hands-off (plus 5 to 7 days once to raise the starter)",
     "servings": 12,
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "ingredients": [
       {
-        "amount": "4 cups",
-        "item": "Jovial Organic Einkorn All-Purpose Flour, plus more for shaping",
+        "amount": "1/2 cup",
+        "item": "Active einkorn sourdough starter (just flour and water, step 1)",
         "dbItem": "Jovial Organic Einkorn All-Purpose Flour",
         "anchor": "jovial-organic-einkorn-all-purpose-flour-2-lb",
         "searchTerm": "jovial organic einkorn all-purpose flour"
       },
       {
-        "amount": "1 tsp",
-        "item": "Baking soda",
-        "dbItem": "baking soda (sodium bicarbonate)",
-        "anchor": "baking-soda-sodium-bicarbonate",
-        "searchTerm": "baking soda"
+        "amount": "3 1/2 cups",
+        "item": "Jovial Organic Einkorn All-Purpose Flour",
+        "dbItem": "Jovial Organic Einkorn All-Purpose Flour",
+        "anchor": "jovial-organic-einkorn-all-purpose-flour-2-lb",
+        "searchTerm": "jovial organic einkorn all-purpose flour"
       },
       {
-        "amount": "1 tsp",
+        "amount": "1 1/4 cups",
+        "item": "Spring water, room temperature",
+        "dbItem": "Spring water (glass bottle)",
+        "anchor": "spring-water-glass-bottle",
+        "searchTerm": "spring water"
+      },
+      {
+        "amount": "2 tsp",
         "item": "Plain sea salt",
         "dbItem": "salt (plain sea salt)",
         "anchor": "salt-plain-sea-salt",
         "searchTerm": "salt"
       },
       {
-        "amount": "1 3/4 cups",
-        "item": "Organic Valley Grassmilk whole milk",
-        "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
-        "anchor": "organic-valley-grassmilk-organic-whole-milk",
-        "searchTerm": "valley grassmilk organic whole milk"
-      },
-      {
-        "amount": "1 tbsp",
-        "item": "Fresh lemon juice",
-        "dbItem": "lemon (fresh)",
-        "anchor": "lemon-fresh",
-        "searchTerm": "lemon"
-      },
-      {
-        "amount": "2 tbsp",
-        "item": "Kriemhild Meadow Butter, melted, plus more for the pan",
+        "amount": "For the pan",
+        "item": "Kriemhild Meadow Butter",
         "dbItem": "Kriemhild Dairy Meadow Butter (salted)",
         "anchor": "kriemhild-dairy-meadow-butter-salted",
         "searchTerm": "kriemhild dairy meadow butter"
-      },
-      {
-        "amount": "For serving",
-        "item": "Raw honey",
-        "dbItem": "Nate's Raw & Unfiltered Honey, 16 oz",
-        "anchor": "nate-s-raw-unfiltered-honey-16-oz",
-        "searchTerm": "nate's raw & unfiltered honey"
       }
     ],
     "steps": [
-      "Heat the oven to 425°F and butter a baking sheet or a cast iron skillet.",
-      "Stir the lemon juice into the milk and let it sit 5 minutes. It will curdle slightly; that soured milk is what wakes up the baking soda, the traditional buttermilk stand-in.",
-      "Whisk the flour, baking soda, and salt together in a large bowl.",
-      "Pour in the soured milk and the melted butter and stir with a wooden spoon just until a shaggy, sticky dough forms. Einkorn dough is wetter and stickier than modern wheat dough and it hates being worked: stir it as little as possible.",
-      "Turn the dough onto a floured surface with floured hands and shape it into a round about 1 1/2 inches thick. Do not knead it smooth; a rough round is right.",
-      "Set the round on the pan and cut a deep cross into the top, almost to the bottom. The cross lets the thick loaf bake through in the middle.",
-      "Bake 30 to 35 minutes until deep golden and the bottom sounds hollow when tapped, about 200°F inside.",
-      "Cool at least 20 minutes before slicing; the crumb is still setting and cuts gummy if rushed. Best eaten the day it is baked or toasted the next; extra slices freeze well."
+      "Raise the starter once: stir 1/2 cup einkorn flour and 1/2 cup spring water in a clean jar, cover it loosely, and leave it at room temperature. Every day for 5 to 7 days, throw away half and stir in another 1/4 cup flour and 1/4 cup water. It is ready when it bubbles, smells pleasantly tangy like green apples, and doubles within about 6 hours of a feeding. After that it lives in the fridge and needs one feeding a week; take it out and feed it the night before a bake.",
+      "Mix the flour and water in a large bowl until no dry flour shows, then cover and rest 30 minutes. This soak is the autolyse, the same soaking step traditional bakers always used, and it starts breaking the flour down before the culture even joins.",
+      "Add the starter and the salt. Pinch and fold the dough over itself in the bowl until they disappear. Einkorn dough is sticky and slack compared to modern wheat dough; that is normal and it will never feel like a firm bread dough.",
+      "Bulk ferment 4 to 6 hours at room temperature. In the first 2 hours, give it 3 or 4 stretch-and-folds with wet hands: pull one side up and over, turn the bowl, repeat. Einkorn ferments faster than modern wheat, so judge by the dough, not the clock: it is ready at about a 50 percent rise with bubbles on the surface, not doubled.",
+      "Tip the dough into a buttered loaf pan and smooth the top with wet hands. A pan is the honest choice for einkorn: its gluten is weak and a free-standing loaf spreads instead of rising.",
+      "Proof 1 to 2 hours at room temperature until slightly puffy, or cover and refrigerate overnight. The overnight version is tangier and digests even easier; the long slow ferment is the whole point of the traditional method.",
+      "Bake at 375°F for 40 to 45 minutes until deep golden and 200 to 205°F inside.",
+      "Cool completely, at least 2 hours, before slicing. Sourdough crumb is still setting as it cools and cuts gummy if rushed. The loaf keeps 3 days wrapped at room temperature and freezes well sliced."
     ],
     "nutrition": {
-      "calories": 172,
-      "protein": 7,
-      "carbs": 28,
-      "fat": 4,
+      "calories": 125,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 1,
       "fiber": 3
     },
     "tags": [
       "Bread",
       "Baking",
       "Einkorn",
+      "Sourdough",
       "Traditional"
     ]
   }
