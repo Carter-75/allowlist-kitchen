@@ -8,6 +8,8 @@
 
 import allowlist from '../src/data/allowlist.json' with { type: 'json' };
 import bannedList from '../src/data/banned.json' with { type: 'json' };
+import notCoveredList from '../src/data/notcovered.json' with { type: 'json' };
+import rundowns from '../src/data/category_rundowns.json' with { type: 'json' };
 import meals from '../src/data/meals.json' with { type: 'json' };
 
 const MODEL = 'gpt-5-nano';
@@ -65,7 +67,7 @@ function pickEntries(question) {
     .map((e) => ({ e, s: scoreEntry(e, qt, q) }))
     .filter((x) => x.s > 0)
     .sort((a, b) => b.s - a.s)
-    .slice(0, 18)
+    .slice(0, 24)
     .map((x) => x.e);
 }
 
@@ -76,7 +78,18 @@ function pickBanned(question) {
     .map((e) => ({ e, s: scoreEntry(e, qt, q) }))
     .filter((x) => x.s > 0)
     .sort((a, b) => b.s - a.s)
-    .slice(0, 12)
+    .slice(0, 16)
+    .map((x) => x.e);
+}
+
+function pickNotCovered(question) {
+  const q = question.toLowerCase();
+  const qt = tokens(question);
+  return notCoveredList
+    .map((e) => ({ e, s: scoreEntry(e, qt, q) }))
+    .filter((x) => x.s > 0)
+    .sort((a, b) => b.s - a.s)
+    .slice(0, 10)
     .map((x) => x.e);
 }
 
@@ -107,13 +120,28 @@ function detectGroups(question) {
   return found;
 }
 
-const VERDICT_RANK = { BANNED: 0, CONDITIONAL: 1, APPROVED: 2 };
+const VERDICT_RANK = { BANNED: 0, CONDITIONAL: 1, NOT_COVERED: 2, APPROVED: 3 };
 
 function pickCategory(groups) {
-  const all = [...allowlist, ...bannedList].filter((e) => groups.includes(e.group));
+  const all = [...allowlist, ...bannedList, ...notCoveredList].filter((e) => groups.includes(e.group));
   return all
     .sort((a, b) => (VERDICT_RANK[a.verdict] - VERDICT_RANK[b.verdict]) || a.name.localeCompare(b.name))
     .slice(0, 70);
+}
+
+// The single strongest verbatim name match across every database list.
+// Nano-scale models flub status distinctions when the right row is one of
+// many, so the route anchors item questions with one unambiguous line.
+function pickStrongMatch(question) {
+  const q = question.toLowerCase();
+  let best = null;
+  for (const e of [...allowlist, ...bannedList, ...notCoveredList]) {
+    const name = (e.name || '').toLowerCase();
+    if (name.length >= 4 && q.includes(name)) {
+      if (!best || name.length > best.name.length) best = e;
+    }
+  }
+  return best;
 }
 
 function pickMeals(question) {
@@ -158,6 +186,12 @@ CORE RULEBOOK (from the Jake Tran videos; this is the whole basis of the list):
 function buildSystemPrompt(question) {
   const entries = pickEntries(question);
   const banned = pickBanned(question);
+  const notCovered = pickNotCovered(question);
+  const notCoveredText = notCovered.length
+    ? notCovered
+        .map((e) => `- [${e.kind}] ${e.name}: NOT_COVERED. ${e.note || ''}`.trim())
+        .join('\n')
+    : '';
   const pickedMeals = pickMeals(question);
   const groups = detectGroups(question);
   const category = groups.length ? pickCategory(groups) : [];
@@ -172,10 +206,12 @@ function buildSystemPrompt(question) {
     if (groups.includes('vegetables') || groups.includes('legumes')) {
       blocks.push('Category note: in this system corn in every form and soy in every form are filed under vegetables and legumes on purpose. They are the headline bans of this category and must be named when they appear in the BANNED block.');
     }
-    for (const v of ['BANNED', 'CONDITIONAL', 'APPROVED']) {
+    for (const v of ['BANNED', 'CONDITIONAL', 'NOT_COVERED', 'APPROVED']) {
       const rows = category.filter((e) => e.verdict === v);
       if (!rows.length) continue;
-      blocks.push(`${v} in this category:`);
+      blocks.push(v === 'NOT_COVERED'
+        ? 'NOT COVERED in this category (in the database, but the videos never covered them; a database status, not a fail):'
+        : `${v} in this category:`);
       for (const e of rows) blocks.push(`- [${e.kind}] ${e.name}: ${e.verdict}. ${e.note || ''}`.trim());
     }
     return blocks.join('\n');
@@ -202,8 +238,8 @@ function buildSystemPrompt(question) {
     : '(no site recipes matched this question)';
 
   const categoryCounts = category.length
-    ? ['BANNED', 'CONDITIONAL', 'APPROVED']
-        .map((v) => `${category.filter((e) => e.verdict === v).length} ${v.toLowerCase()}`)
+    ? ['BANNED', 'CONDITIONAL', 'NOT_COVERED', 'APPROVED']
+        .map((v) => `${category.filter((e) => e.verdict === v).length} ${v.toLowerCase().replace('_', ' ')}`)
         .join(', ')
     : '';
 
@@ -219,6 +255,15 @@ function buildSystemPrompt(question) {
     // on them (the veggies bug, Nov 1, 2026).
     ...(categoryText
       ? [
+          ...(groups.includes('vegetables') && rundowns.vegetables
+            ? [
+                'VEGETABLE BY VEGETABLE (the common vegetables, one at a time; each status comes from the database row named in "via"):',
+                rundowns.vegetables
+                  .map((e) => `- ${e.name}: ${e.verdict} (via ${e.via}). ${e.note || ''}`.trim())
+                  .join('\n'),
+                '',
+              ]
+            : []),
           `FULL DATABASE VERDICT LIST FOR THE CATEGORY IN THIS QUESTION (${groups.join(' and ')}; ${categoryCounts}):`,
           categoryText,
           '',
@@ -230,18 +275,36 @@ function buildSystemPrompt(question) {
           'DATABASE ENTRIES MARKED BANNED RELEVANT TO THIS QUESTION (same database; these items were checked and failed):',
           bannedText,
           '',
+          ...(notCoveredText
+            ? [
+                'DATABASE ENTRIES MARKED NOT COVERED RELEVANT TO THIS QUESTION (in the database, but the videos never covered them, so the database holds no verdict):',
+                notCoveredText,
+                '',
+              ]
+            : []),
         ]),
     'SITE RECIPES RELEVANT TO THIS QUESTION:',
     mealText,
     '',
+    ...(() => {
+      const strong = pickStrongMatch(question);
+      return strong
+        ? [
+            `STRONGEST DATABASE MATCH FOR THIS QUESTION: [${strong.kind}] ${strong.name}: ${strong.verdict}. ${strong.note || ''}`.trim(),
+            'If the question is about that item, its database status above is the answer. Report it exactly.',
+            '',
+          ]
+        : [];
+    })(),
     'HOW TO ANSWER:',
-    '1. If the item appears in either database section above, give its exact verdict (APPROVED, CONDITIONAL, or BANNED) and the reason from its note. Do not soften or change a database verdict.',
-    '2. If the item is in NEITHER database section above, start with "Not in the database." and then judge it from the core rules and its ingredients, and say plainly that this is a rule-based judgment, not a database verdict. Absence from the database is not itself a fail.',
+    '1. Base every answer on the database rows in this prompt. Never answer from general knowledge about a food. If an item has a row in any section above, report its database status exactly: APPROVED; CONDITIONAL with its condition; BANNED with its reason; or NOT_COVERED, which means the item is in the database but the videos never covered it, so there is no verdict. Say that plainly. NOT_COVERED is a database status, not a fail, and it is not the same as the item being absent. If the item is in the NOT COVERED section, begin with "In the database as NOT COVERED." and never say "Not in the database" about it.',
+    '2. Only when an item has NO row in any section above may you say it is not in the database. Begin with "Not in the database." Only then may you add a check against the core rules and its ingredients, clearly labeled as a rule-based check, not a database verdict. Absence from the database is not itself a fail.',
     '3. For meal ideas, build only from APPROVED or CONDITIONAL items and the site recipes above. Name the recipe page path (like /meal/...) when you suggest one.',
     '4. Keep answers short and plain: a verdict first, then one or two sentences of why. Use everyday words. Never use em dashes; use hyphens, commas, or colons instead.',
     '5. Never invent prices, nutrition numbers, brands, or products. If you do not know, say so.',
     '6. Do not give medical advice. If asked about health effects, stick to what the rulebook says and suggest talking to a doctor for personal health questions.',
     '7. If a FULL CATEGORY VERDICT LIST is included above, the question is about that whole category: answer from that list, starting with its BANNED block. Every entry in the BANNED block counts as a member of the category (the system that owns the list filed it there), unless its name plainly belongs to another food group (for example a sausage with garlic in its name is a meat, not a vegetable). Then name the CONDITIONAL ones with their conditions. Never say the category is not in the database when this list is present, never open with "Not in the database" on a category question, and never say nothing in the category is banned when a BANNED block is present.',
+    '8. If a VEGETABLE BY VEGETABLE rundown is included above, answer name by name in a plain list, the way a person would: every vegetable in the rundown gets one line with its name and its status (BANNED, CONDITIONAL with the condition in a few words, or APPROVED). Lead with the BANNED names, then CONDITIONAL, then APPROVED. Do not skip names and do not swap in products or brands for this list.',
   ].join('\n');
 }
 

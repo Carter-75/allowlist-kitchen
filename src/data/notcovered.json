@@ -1,0 +1,408 @@
+[
+  {
+    "name": "All Things Bugs",
+    "kind": "Brand",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Insect-protein company presented as part of Gates's agenda - contextually negative, but the watchlist records no explicit verdict."
+  },
+  {
+    "name": "Archer Daniels Midland (ADM)",
+    "kind": "Brand",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Mentioned for its HFCS quota lobbying history; the watchlist gives it no brand verdict."
+  },
+  {
+    "name": "Griopro",
+    "kind": "Brand",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Insect-protein company; contextually negative, no explicit verdict in the watchlist."
+  },
+  {
+    "name": "InsectiPro",
+    "kind": "Brand",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Insect-protein company; contextually negative, no explicit verdict in the watchlist."
+  },
+  {
+    "name": "Whole Foods",
+    "kind": "Brand",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Mentioned neutrally as a data source in protein-powder testing discussions; the watchlist gives it no verdict."
+  },
+  {
+    "name": "Anson Mills",
+    "kind": "Farm or mill",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "The site no longer makes a blanket certified-organic claim ('grown using sustainable farming practices'); cold-milled to order with retail bags, but no per-product USDA Organic seal, unenriched ingred"
+  },
+  {
+    "name": "Blue Sky Family Farms / Egg Innovations",
+    "kind": "Farm or mill",
+    "group": "meat",
+    "verdict": "NOT_COVERED",
+    "note": "A Pasture-Raised Organic egg SKU (108 sq ft, organic feed) is documented in 2015-2021 sources with a WI/OH/IL market, but no current brand product or ordering page was found; live listings are for the"
+  },
+  {
+    "name": "Brown Pearcy Cattle Co.",
+    "kind": "Farm or mill",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "The product headline says 'Certified Organic Pasture-Raised Whole Chicken' ($29.99/bird, ships frozen), but the page names no certifier, shows no USDA Organic claim elsewhere, and describes feed only "
+  },
+  {
+    "name": "Grassway Organics",
+    "kind": "Farm or mill",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "LEAD, NOT A PASS - the #1 follow-up."
+  },
+  {
+    "name": "Hansen Honey Farm",
+    "kind": "Farm or mill",
+    "group": "sweeteners",
+    "verdict": "NOT_COVERED",
+    "note": "Wisconsin family farm since 1998, ships via USPS/UPS/Spee-Dee - but no specific product explicitly labeled 'raw honey' with a price could be verified on the shop page."
+  },
+  {
+    "name": "Montana Flour and Grains",
+    "kind": "Farm or mill",
+    "group": "grains",
+    "verdict": "NOT_COVERED",
+    "note": "A different company from Wheat Montana; its store lists an 'Organic UNBLEACHED White Flour' - a lead worth a look, not verified beyond that listing."
+  },
+  {
+    "name": "Tyner Pond Farm",
+    "kind": "Farm or mill",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Lead only - search copy says 'Our pastures are certified organic!' for pasture-raised chicken shipping across the continental US."
+  },
+  {
+    "name": "almond extract",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "A real extract in the passing Toups and Co balm; no independent verdict."
+  },
+  {
+    "name": "Aloe vera juice",
+    "kind": "Ingredient",
+    "group": "drinks",
+    "verdict": "NOT_COVERED",
+    "note": "Never addressed in the 344 processed videos."
+  },
+  {
+    "name": "arrowroot flour",
+    "kind": "Ingredient",
+    "group": "grains",
+    "verdict": "NOT_COVERED",
+    "note": "No verdict in the video corpus."
+  },
+  {
+    "name": "beef bone meal",
+    "kind": "Ingredient",
+    "group": "meat",
+    "verdict": "NOT_COVERED",
+    "note": "Ingredient in approved Sundays dog food; no independent verdict (dog food context)."
+  },
+  {
+    "name": "beef collagen casing",
+    "kind": "Ingredient",
+    "group": "meat",
+    "verdict": "NOT_COVERED",
+    "note": "Present in failed Chomps sticks; not the failing ingredient; no verdict."
+  },
+  {
+    "name": "beeswax",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Appears in verified passing balms (VanMan) and in the failed Burt's Bees balm; no independent verdict."
+  },
+  {
+    "name": "calcium disodium EDTA",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Appears in failed Hellmann's mayonnaise, but it was not the product's failing ingredient and it is not named in the rulebook."
+  },
+  {
+    "name": "cherry powder",
+    "kind": "Ingredient",
+    "group": "fruit",
+    "verdict": "NOT_COVERED",
+    "note": "Present in failed Chomps sticks but not the failing ingredient; no verdict in the sources."
+  },
+  {
+    "name": "citric acid",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Present in failed Dr."
+  },
+  {
+    "name": "coconut CO2 extract",
+    "kind": "Ingredient",
+    "group": "fruit",
+    "verdict": "NOT_COVERED",
+    "note": "Ingredient in the passing Toups and Co Sun Balm; no independent verdict."
+  },
+  {
+    "name": "coriander",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Spice in checked products (Chomps); no verdict in the sources."
+  },
+  {
+    "name": "dill",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Present in passing Bubbies pickles; no verdict in the sources."
+  },
+  {
+    "name": "dried kelp",
+    "kind": "Ingredient",
+    "group": "vegetables",
+    "verdict": "NOT_COVERED",
+    "note": "Ingredient in approved Sundays dog food; no independent verdict."
+  },
+  {
+    "name": "encapsulated lactic acid",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Present in failed Chomps sticks but not the failing ingredient; no verdict in the sources."
+  },
+  {
+    "name": "erythritol",
+    "kind": "Ingredient",
+    "group": "sweeteners",
+    "verdict": "NOT_COVERED",
+    "note": "A sugar alcohol never mentioned in the sources."
+  },
+  {
+    "name": "eugenol",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Present in failed Burt's Bees balm; not named as a failing ingredient; no verdict in the corpus."
+  },
+  {
+    "name": "flax meal / ground flaxseed",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "No human-food verdict in the video corpus."
+  },
+  {
+    "name": "flaxseed meal",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Present in the approved Sundays recipe; the sources give flax no verdict."
+  },
+  {
+    "name": "ginger",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Ingredient in approved Sundays dog food; no independent verdict in the sources."
+  },
+  {
+    "name": "goat milk",
+    "kind": "Ingredient",
+    "group": "dairy",
+    "verdict": "NOT_COVERED",
+    "note": "As a soap ingredient it sits inside a passing product (Bend Soap)."
+  },
+  {
+    "name": "jojoba oil",
+    "kind": "Ingredient",
+    "group": "fats",
+    "verdict": "NOT_COVERED",
+    "note": "A seed-derived oil appearing in two failed skincare products, but never named as the failing ingredient and not verdicted in the corpus."
+  },
+  {
+    "name": "konjac flour (shirataki)",
+    "kind": "Ingredient",
+    "group": "grains",
+    "verdict": "NOT_COVERED",
+    "note": "No verdict anywhere in the 344 processed videos; appears in no banned list."
+  },
+  {
+    "name": "lanolin",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Present in failed Burt's Bees balm; not a failing ingredient; no verdict."
+  },
+  {
+    "name": "lemon juice concentrate",
+    "kind": "Ingredient",
+    "group": "fruit",
+    "verdict": "NOT_COVERED",
+    "note": "A minor component of failed Hellmann's mayonnaise; not its failing ingredient; no independent verdict."
+  },
+  {
+    "name": "limonene",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Fragrance-component terpene in failed Burt's Bees balm; not named as a failing ingredient."
+  },
+  {
+    "name": "mango butter",
+    "kind": "Ingredient",
+    "group": "fats",
+    "verdict": "NOT_COVERED",
+    "note": "Present in failed Burt's Bees balm (as mango butter esters); not a failing ingredient; no verdict."
+  },
+  {
+    "name": "monk fruit",
+    "kind": "Ingredient",
+    "group": "fruit",
+    "verdict": "NOT_COVERED",
+    "note": "The sources never mention monk fruit."
+  },
+  {
+    "name": "mustard seed",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Present in passing Bubbies pickles; no verdict in the sources."
+  },
+  {
+    "name": "palm oil",
+    "kind": "Ingredient",
+    "group": "fats",
+    "verdict": "NOT_COVERED",
+    "note": "The store-products check states plainly: palm oil is not on the videos' banned list and got no verdict in the corpus."
+  },
+  {
+    "name": "parsley",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Ingredient in approved Sundays dog food; no independent verdict in the sources."
+  },
+  {
+    "name": "peppermint oil (mentha)",
+    "kind": "Ingredient",
+    "group": "fats",
+    "verdict": "NOT_COVERED",
+    "note": "Present in failed Dr."
+  },
+  {
+    "name": "psyllium husk",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "No verdict in the video corpus."
+  },
+  {
+    "name": "quinoa",
+    "kind": "Ingredient",
+    "group": "grains",
+    "verdict": "NOT_COVERED",
+    "note": "Present as quinoa seed in the approved Sundays recipe; no verdict in the sources."
+  },
+  {
+    "name": "red pepper",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Spice in checked products (Chomps); no verdict in the sources."
+  },
+  {
+    "name": "rennet / cheese cultures",
+    "kind": "Ingredient",
+    "group": "dairy",
+    "verdict": "NOT_COVERED",
+    "note": "Present in passing Raw Farm raw cheddar (vegetable rennet, cultures); no independent verdict."
+  },
+  {
+    "name": "rosemary extract",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Present in Primal Kitchen mayo, which passed with caveats; no verdict in the corpus."
+  },
+  {
+    "name": "selenium yeast",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Mineral ingredient in approved Sundays dog food; no independent verdict (dog food context)."
+  },
+  {
+    "name": "sodium alginate",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Seaweed-derived thickener used under 1% in egg white noodles; no verdict in the video corpus."
+  },
+  {
+    "name": "sodium hydroxide (lye)",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Saponification agent in Dr."
+  },
+  {
+    "name": "sugar alcohols (general)",
+    "kind": "Ingredient",
+    "group": "sweeteners",
+    "verdict": "NOT_COVERED",
+    "note": "The corpus gives no verdict on sugar alcohols as a class."
+  },
+  {
+    "name": "sunflower meal",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Present in the approved Sundays dog food recipe and expressly distinct from sunflower OIL."
+  },
+  {
+    "name": "taurine / glycine (protein-powder spiking)",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Named only as the amino acids used to spike whey concentrate and game protein tests; no standalone verdict."
+  },
+  {
+    "name": "tomato concentrate",
+    "kind": "Ingredient",
+    "group": "vegetables",
+    "verdict": "NOT_COVERED",
+    "note": "Main ingredient of passing Primal Kitchen ketchup; no independent verdict."
+  },
+  {
+    "name": "turmeric",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Ingredient in approved Sundays dog food; no independent verdict in the sources."
+  },
+  {
+    "name": "vinegar (incl. balsamic, distilled, white wine)",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "A component of checked products on both the pass and fail sides; never verdicted in the corpus."
+  },
+  {
+    "name": "xanthan gum",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "NOT_COVERED",
+    "note": "Fermentation-derived thickener appearing in otherwise clean products (Siete cassava tortillas, Egglife wraps); no verdict anywhere in the video corpus."
+  }
+]
