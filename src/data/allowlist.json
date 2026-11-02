@@ -459,6 +459,15 @@
     "usedIn": []
   },
   {
+    "name": "Bananas, organic",
+    "kind": "Food",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "bananas-organic",
+    "search": "bananas, organic",
+    "usedIn": []
+  },
+  {
     "name": "Beef",
     "kind": "Food",
     "verdict": "APPROVED",
@@ -1607,6 +1616,15 @@
     "usedIn": [
       "Family Meatloaf with Ketchup Glaze"
     ]
+  },
+  {
+    "name": "Generic produce Organic Bananas, whole fruit, bunch",
+    "kind": "Product",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "generic-produce-organic-bananas-whole-fruit-bunch",
+    "search": "generic produce organic bananas, whole fruit, bunch",
+    "usedIn": []
   },
   {
     "name": "Goodness Grazecious 85/15 Grass-Fed Organic Ground Beef",
