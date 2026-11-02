@@ -798,6 +798,13 @@
     "note": "The videos never endorsed it: The Obesity Conspiracy says traditional cultures ate white rice, NOT brown, to remove phytic acid, which sits in the bran brown rice keeps."
   },
   {
+    "name": "Chicken, conventional",
+    "kind": "Food",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "Conventional US chicken FAILS: antibiotics, chlorine wash, fecal-soup processing, salmonella."
+  },
+  {
     "name": "Chocolate / cocoa products",
     "kind": "Food",
     "group": "other",
@@ -840,6 +847,13 @@
     "note": "HFCS, maltodextrin, dextrose, corn starch and every corn-derived ingredient are out."
   },
   {
+    "name": "Eggs, conventional",
+    "kind": "Food",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "Hens must forage grass and insects or the eggs are nutrient-deficient."
+  },
+  {
     "name": "Fluoridated water",
     "kind": "Food",
     "group": "drinks",
@@ -873,6 +887,13 @@
     "group": "fats",
     "verdict": "BANNED",
     "note": "The original tallow recipe was replaced with seed oils during WWI shortages."
+  },
+  {
+    "name": "Milk, conventional (not 100% grass-fed)",
+    "kind": "Food",
+    "group": "dairy",
+    "verdict": "BANNED",
+    "note": "Fallback when raw is unavailable."
   },
   {
     "name": "Oat milk",
@@ -1953,6 +1974,13 @@
     "note": "brown rice flour (Carter Oct 25, 2026: no brown rice, never)"
   },
   {
+    "name": "Just Bare Organic Boneless Skinless Chicken Breast Fillets",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "Cage-free barn-raised: no pasture access, fails the pasture-raised requirement"
+  },
+  {
     "name": "Kerrygold Pure Irish Salted Butter",
     "kind": "Product",
     "group": "fats",
@@ -1993,6 +2021,13 @@
     "group": "meat",
     "verdict": "BANNED",
     "note": "sodium nitrite; sugar; dextrose; MSG"
+  },
+  {
+    "name": "Miracle Noodle Egg White Noodles, 7 oz",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "Eggs not certified organic and pasture-raised (egg rule, Oct 27, 2026)"
   },
   {
     "name": "Nair Body Spray Hair Removal Spray with Moroccan Argan Oil, 7.5 oz",
@@ -2147,6 +2182,13 @@
     "group": "meat",
     "verdict": "BANNED",
     "note": "sodium nitrite; dextrose"
+  },
+  {
+    "name": "Siete Burrito Size Grain Free Tortillas, 6 ct, 15 oz",
+    "kind": "Product",
+    "group": "grains",
+    "verdict": "BANNED",
+    "note": "Coconut sugar (sugar in all forms is banned)"
   },
   {
     "name": "Slanker Grass Fed Meats Beef Uncured Summer Sausage",

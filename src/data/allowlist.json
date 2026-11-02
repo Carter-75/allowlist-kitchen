@@ -567,8 +567,8 @@
     "name": "Black tea",
     "kind": "Food",
     "group": "drinks",
-    "verdict": "CONDITIONAL",
-    "note": "Flagged for fluoride content (3.73 ppm).",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "black-tea",
     "search": "black tea",
     "usedIn": []
@@ -614,13 +614,13 @@
     "usedIn": []
   },
   {
-    "name": "Chicken",
+    "name": "Chicken, organic and pasture-raised",
     "kind": "Food",
-    "group": "meat",
-    "verdict": "CONDITIONAL",
-    "note": "Conventional US chicken FAILS: antibiotics, chlorine wash, fecal-soup processing, salmonella.",
-    "anchor": "chicken",
-    "search": "chicken",
+    "group": "poultry",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "chicken-organic-and-pasture-raised",
+    "search": "chicken, organic and pasture-raised",
     "usedIn": [
       "Chicken and Guacamole Wraps",
       "Chicken and Rice Bowls",
@@ -647,6 +647,16 @@
     "note": "",
     "anchor": "coconut-water-plain",
     "search": "coconut water",
+    "usedIn": []
+  },
+  {
+    "name": "Cruciferous vegetables, cooked",
+    "kind": "Food",
+    "group": "vegetables",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "cruciferous-vegetables-cooked",
+    "search": "cruciferous vegetables, cooked",
     "usedIn": []
   },
   {
@@ -690,21 +700,21 @@
     "usedIn": []
   },
   {
-    "name": "Eggs",
+    "name": "Eggs, organic and pasture-raised",
     "kind": "Food",
-    "group": "meat",
-    "verdict": "CONDITIONAL",
-    "note": "Hens must forage grass and insects or the eggs are nutrient-deficient.",
-    "anchor": "eggs",
-    "search": "eggs",
+    "group": "dairy-eggs",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "eggs-organic-and-pasture-raised",
+    "search": "eggs, organic and pasture-raised",
     "usedIn": []
   },
   {
     "name": "Homemade infant formula (WAPF recipe, modified)",
     "kind": "Food",
     "group": "other",
-    "verdict": "CONDITIONAL",
-    "note": "The fallback when breast milk is not possible.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "homemade-infant-formula-wapf-recipe-modified",
     "search": "homemade infant formula",
     "usedIn": []
@@ -723,8 +733,8 @@
     "name": "Lentils",
     "kind": "Food",
     "group": "legumes",
-    "verdict": "CONDITIONAL",
-    "note": "The one lentil-specific charge in the corpus is pre-harvest Roundup desiccation: lentils are named among the crops sprayed as close as 3 days before harvest (Why is American food so TOXIC?).",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "lentils",
     "search": "lentils",
     "usedIn": []
@@ -745,8 +755,8 @@
     "name": "Oats, organic",
     "kind": "Food",
     "group": "grains",
-    "verdict": "CONDITIONAL",
-    "note": "Organic only, if used.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "oats-organic",
     "search": "oats, organic",
     "usedIn": []
@@ -772,16 +782,6 @@
     "usedIn": []
   },
   {
-    "name": "Plain whole milk (pasteurized)",
-    "kind": "Food",
-    "group": "dairy",
-    "verdict": "CONDITIONAL",
-    "note": "Fallback when raw is unavailable.",
-    "anchor": "plain-whole-milk-pasteurized",
-    "search": "plain whole milk",
-    "usedIn": []
-  },
-  {
     "name": "Pork",
     "kind": "Food",
     "group": "meat",
@@ -797,8 +797,8 @@
     "name": "Raisins",
     "kind": "Food",
     "group": "fruit",
-    "verdict": "CONDITIONAL",
-    "note": "Flagged once for fluoride content (2.34 ppm) from fluoridated processing water.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "raisins",
     "search": "raisins",
     "usedIn": []
@@ -891,8 +891,8 @@
     "name": "Vegetables (general)",
     "kind": "Food",
     "group": "vegetables",
-    "verdict": "CONDITIONAL",
-    "note": "The corpus argues both ways: one video says meat and organs beat vegetables on absorbable nutrients; another counts root vegetables among the most nutrient-dense foods.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "vegetables-general",
     "search": "vegetables",
     "usedIn": []
@@ -1130,8 +1130,8 @@
     "name": "cinnamon (Ceylon)",
     "kind": "Ingredient",
     "group": "other",
-    "verdict": "CONDITIONAL",
-    "note": "CONDITIONAL on variety: Ceylon (true) cinnamon, Cinnamomum verum, only.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "cinnamon-ceylon",
     "search": "cinnamon",
     "usedIn": [
@@ -1220,8 +1220,8 @@
     "name": "Fruit juice, as flavoring (small amounts in water or food)",
     "kind": "Ingredient",
     "group": "fruit",
-    "verdict": "CONDITIONAL",
-    "note": "Carter clarification Oct 23, 2026: juice used only as a flavoring is good.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "fruit-juice-as-flavoring-small-amounts-in-water-or-food",
     "search": "fruit juice, as flavoring",
     "usedIn": []
@@ -1261,8 +1261,8 @@
     "name": "grape must",
     "kind": "Ingredient",
     "group": "fruit",
-    "verdict": "CONDITIONAL",
-    "note": "Appears only as a constituent of balsamic vinegar in one verified passing product (Primal Kitchen ketchup, 0g added sugar), where the source file flags it as not an added sweetener.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "grape-must",
     "search": "grape must",
     "usedIn": []
@@ -1291,8 +1291,8 @@
     "name": "lard (pork fat)",
     "kind": "Ingredient",
     "group": "fats",
-    "verdict": "CONDITIONAL",
-    "note": "A traditional animal fat sold by approved farms (US Wellness) and listed by WAPF for vitamin D; the videos do not name lard directly.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "lard-pork-fat",
     "search": "lard",
     "usedIn": []
@@ -1321,8 +1321,8 @@
     "name": "malted barley flour",
     "kind": "Ingredient",
     "group": "grains",
-    "verdict": "CONDITIONAL",
-    "note": "A fermentation aid, not synthetic enrichment; present in passing flours (King Arthur Organic, Central Milling organic).",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "malted-barley-flour",
     "search": "malted barley flour",
     "usedIn": []
@@ -1379,8 +1379,8 @@
     "name": "oats (organic)",
     "kind": "Ingredient",
     "group": "grains",
-    "verdict": "CONDITIONAL",
-    "note": "If grains are eaten, choose organic.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "oats-organic",
     "search": "oats",
     "usedIn": [
@@ -1466,8 +1466,8 @@
     "name": "salt (plain sea salt)",
     "kind": "Ingredient",
     "group": "other",
-    "verdict": "CONDITIONAL",
-    "note": "Appears in approved products throughout.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "salt-plain-sea-salt",
     "search": "salt",
     "usedIn": [
@@ -1512,8 +1512,8 @@
     "name": "shredded coconut (unsweetened)",
     "kind": "Ingredient",
     "group": "fruit",
-    "verdict": "CONDITIONAL",
-    "note": "CONDITIONAL: single-ingredient dried coconut, unsulfured, no sulfite preservatives, no added sugar.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "shredded-coconut-unsweetened",
     "search": "shredded coconut",
     "usedIn": []
@@ -1522,8 +1522,8 @@
     "name": "sodium chloride",
     "kind": "Ingredient",
     "group": "other",
-    "verdict": "CONDITIONAL",
-    "note": "Chemical name for salt itself.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "sodium-chloride",
     "search": "sodium chloride",
     "usedIn": []
@@ -1560,8 +1560,8 @@
     "name": "vinegar (distilled white and apple cider)",
     "kind": "Ingredient",
     "group": "fruit",
-    "verdict": "CONDITIONAL",
-    "note": "CONDITIONAL: as an ingredient cooked into food or used in dressings and marinades, never as a drink.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "vinegar-distilled-white-and-apple-cider",
     "search": "vinegar",
     "usedIn": [
@@ -1854,16 +1854,6 @@
     ]
   },
   {
-    "name": "Just Bare Organic Boneless Skinless Chicken Breast Fillets",
-    "kind": "Product",
-    "group": "meat",
-    "verdict": "CONDITIONAL",
-    "note": "USDA Certified Organic, cage-free barn-raised, no antibiotics (Woodman detail page Oct 25 2026).",
-    "anchor": "just-bare-organic-boneless-skinless-chicken-breast-fillets",
-    "search": "just bare organic boneless skinless chicken breast fillets",
-    "usedIn": []
-  },
-  {
     "name": "King Oscar Skinless and Boneless Sardines in Water",
     "kind": "Product",
     "group": "meat",
@@ -1904,8 +1894,8 @@
     "name": "Lakewood Organic Aloe Vera Juice",
     "kind": "Product",
     "group": "drinks",
-    "verdict": "CONDITIONAL",
-    "note": "Organic aloe vera juice, less than 1% organic lemon juice (label states the lemon juice is what allows bottling without preservatives).",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "lakewood-organic-aloe-vera-juice",
     "search": "lakewood organic aloe vera juice",
     "usedIn": []
@@ -1953,21 +1943,11 @@
     "usedIn": []
   },
   {
-    "name": "Miracle Noodle Egg White Noodles",
-    "kind": "Product",
-    "group": "meat",
-    "verdict": "CONDITIONAL",
-    "note": "Egg whites, water, under 1% sodium alginate.",
-    "anchor": "miracle-noodle-egg-white-noodles-7-oz",
-    "search": "miracle noodle egg white noodles",
-    "usedIn": []
-  },
-  {
     "name": "Miracle Noodle Organic Shirataki Pasta",
     "kind": "Product",
     "group": "grains",
-    "verdict": "CONDITIONAL",
-    "note": "Water, organic konjac flour, citric acid.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "miracle-noodle-organic-shirataki-pasta-7-oz-spaghetti-fettuccine-ziti",
     "search": "miracle noodle organic shirataki pasta",
     "usedIn": []
@@ -1986,8 +1966,8 @@
     "name": "Muir Glen Organic Pasta Sauce",
     "kind": "Product",
     "group": "grains",
-    "verdict": "CONDITIONAL",
-    "note": "Organic tomato puree and tomatoes, EVOO, onion, garlic, sea salt, herbs, plus citric acid and calcium chloride in the pasta sauce line (Woodman labels Oct 26 2026).",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "muir-glen-organic-pasta-sauce-all-flavors",
     "search": "muir glen organic pasta sauce",
     "usedIn": []
@@ -2026,8 +2006,8 @@
     "name": "Newman’s Own Chunky Salsa, Mild",
     "kind": "Product",
     "group": "other",
-    "verdict": "CONDITIONAL",
-    "note": "Diced tomatoes in tomato juice, tomato puree, green chili peppers, green and red bell peppers, onions, distilled vinegar, salt, cilantro, garlic, black pepper, citric acid.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "newman-s-own-chunky-salsa-mild-16-oz",
     "search": "newman’s own chunky salsa, mild",
     "usedIn": []
@@ -2143,8 +2123,8 @@
     "name": "Primal Kitchen Marinara Pasta Sauce",
     "kind": "Product",
     "group": "vegetables",
-    "verdict": "CONDITIONAL",
-    "note": "Organic tomato base, avocado oil, garlic, herbs, plus citric acid and calcium chloride from the diced tomato component (Woodman labels Oct 26 2026).",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "primal-kitchen-marinara-pasta-sauce-roasted-garlic-tomato-basil",
     "search": "primal kitchen marinara pasta sauce",
     "usedIn": []
@@ -2200,8 +2180,8 @@
     "name": "Saratoga Sparkling Spring Water, glass bottle",
     "kind": "Product",
     "group": "drinks",
-    "verdict": "CONDITIONAL",
-    "note": "Natural sparkling spring water in glass, nothing added.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "saratoga-sparkling-spring-water-glass-bottle-28-oz",
     "search": "saratoga sparkling spring water, glass bottle",
     "usedIn": []
@@ -2210,28 +2190,18 @@
     "name": "Saratoga Spring Water, still, glass bottle",
     "kind": "Product",
     "group": "drinks",
-    "verdict": "CONDITIONAL",
-    "note": "Natural spring water, nothing added.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "saratoga-spring-water-still-glass-bottle",
     "search": "saratoga spring water, still, glass bottle",
-    "usedIn": []
-  },
-  {
-    "name": "Siete Burrito Size Grain Free Tortillas",
-    "kind": "Product",
-    "group": "grains",
-    "verdict": "CONDITIONAL",
-    "note": "Water, cassava flour, tapioca flour, avocado oil, coconut flour, arrowroot flour, apple cider vinegar, COCONUT SUGAR, sea salt, yeast.",
-    "anchor": "siete-burrito-size-grain-free-tortillas-6-ct-15-oz",
-    "search": "siete burrito size grain free tortillas",
     "usedIn": []
   },
   {
     "name": "Siete Cassava Flour Tortillas",
     "kind": "Product",
     "group": "vegetables",
-    "verdict": "CONDITIONAL",
-    "note": "Cassava flour, water, coconut flour, coconut oil, apple cider vinegar, sea salt, xanthan gum.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "siete-cassava-flour-tortillas-8-ct-7-oz",
     "search": "siete cassava flour tortillas",
     "usedIn": []
@@ -2294,8 +2264,8 @@
     "name": "Spindrift Spindrift Raspberry Lime Sparkling Water",
     "kind": "Product",
     "group": "fruit",
-    "verdict": "CONDITIONAL",
-    "note": "Carbonated water, raspberry puree, raspberry juice, lime juice.",
+    "verdict": "APPROVED",
+    "note": "",
     "anchor": "spindrift-spindrift-raspberry-lime-sparkling-water",
     "search": "spindrift spindrift raspberry lime sparkling water",
     "usedIn": []

@@ -865,9 +865,9 @@
         "amount": "1 lb",
         "dbItem": "Chicken",
         "note": "only the certified organic, pasture-raised form passes",
-        "anchor": "chicken",
+        "anchor": "chicken-organic-and-pasture-raised",
         "wm": "Chicken",
-        "searchTerm": "chicken"
+        "searchTerm": "chicken, organic and pasture-raised"
       },
       {
         "item": "Wholly Guacamole Classic Mild",
@@ -1105,9 +1105,9 @@
         "amount": "1 lb",
         "dbItem": "Chicken",
         "note": "only the certified organic, pasture-raised form passes",
-        "anchor": "chicken",
+        "anchor": "chicken-organic-and-pasture-raised",
         "wm": "Chicken",
-        "searchTerm": "chicken"
+        "searchTerm": "chicken, organic and pasture-raised"
       },
       {
         "item": "California Olive Ranch 100% California extra virgin olive oil",
@@ -1363,9 +1363,9 @@
         "dbItem": "Chicken",
         "item": "Certified organic whole chicken",
         "note": "only certified organic and pasture-raised passes",
-        "anchor": "chicken",
+        "anchor": "chicken-organic-and-pasture-raised",
         "wm": "Chicken",
-        "searchTerm": "chicken"
+        "searchTerm": "chicken, organic and pasture-raised"
       },
       {
         "amount": "2 lb",
@@ -1450,9 +1450,9 @@
         "dbItem": "Chicken",
         "item": "Certified organic chicken breast, cut into strips about 1 inch wide",
         "note": "only certified organic and pasture-raised passes",
-        "anchor": "chicken",
+        "anchor": "chicken-organic-and-pasture-raised",
         "wm": "Chicken",
-        "searchTerm": "chicken"
+        "searchTerm": "chicken, organic and pasture-raised"
       },
       {
         "amount": "3/4 cup",
@@ -2206,9 +2206,9 @@
         "dbItem": "Chicken",
         "item": "Certified organic chicken thighs, bone-in and skin-on",
         "note": "only certified organic and pasture-raised passes",
-        "anchor": "chicken",
+        "anchor": "chicken-organic-and-pasture-raised",
         "wm": "Chicken",
-        "searchTerm": "chicken"
+        "searchTerm": "chicken, organic and pasture-raised"
       },
       {
         "amount": "1 cup dry",

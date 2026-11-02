@@ -404,5 +404,12 @@
     "group": "other",
     "verdict": "NOT_COVERED",
     "note": "Fermentation-derived thickener appearing in otherwise clean products (Siete cassava tortillas, Egglife wraps); no verdict anywhere in the video corpus."
+  },
+  {
+    "name": "xylitol",
+    "kind": "Ingredient",
+    "group": "sweeteners",
+    "verdict": "NOT_COVERED",
+    "note": "Appears in the corpus only as a nasal-spray remedy (Why Western Medicine is Broken); the videos give it no food verdict."
   }
 ]
