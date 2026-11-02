@@ -43,3 +43,14 @@ Deploys run through Vercel from this repository. `vercel.json` holds the SPA rew
 2. Add the meal to `src/data/meals.json` (id, name, mealType of Breakfast/Lunch/Dinner/Treat, description, time, servings, difficulty, ingredients with item/amount/dbItem, steps, nutrition per serving derived from USDA values or null, tags).
 3. If the meal uses a list item not yet shown on the pantry page, regenerate `src/data/pantry.json` from the database so the list page stays exact.
 4. Build, check the meal renders, and confirm search and filters find it.
+
+## Ask the List (AI assistant)
+
+The /ask page is a chat assistant powered by OpenAI GPT-5 nano (model gpt-5-nano), added Nov 1, 2026. It answers only from this site's own allowlist data and the rulebook behind it: whether a food, ingredient, or product passes and why, and meal ideas built only from allowed items and the site's recipes.
+
+How it works:
+- The browser calls the serverless route at api/ask.js. There is no client-side key and no direct browser-to-OpenAI call.
+- For each question the route retrieves the most relevant allowlist entries and recipes from src/data and sends them to the model with the core rulebook rules and strict answering instructions.
+- Items that are in the database get their exact database verdict. Items that are not in the database get a clearly labeled rule-based judgment from their ingredients; the assistant must never invent a database verdict, and absence from the database is not treated as a fail.
+
+Required setup: the route reads the key from the OPENAI_API_KEY environment variable in the allowlist-kitchen Vercel project (Production). Without it the endpoint returns a friendly "being set up" response and the page shows that state. The key is entered by Carter in the Vercel dashboard; it never appears in this repo or in chat.
