@@ -1986,6 +1986,15 @@
     "usedIn": []
   },
   {
+    "name": "Saratoga Sparkling Spring Water, glass bottle",
+    "kind": "Product",
+    "verdict": "CONDITIONAL",
+    "note": "Natural sparkling spring water in glass, nothing added.",
+    "anchor": "saratoga-sparkling-spring-water-glass-bottle-28-oz",
+    "search": "saratoga sparkling spring water, glass bottle",
+    "usedIn": []
+  },
+  {
     "name": "Saratoga Spring Water, still, glass bottle",
     "kind": "Product",
     "verdict": "CONDITIONAL",
