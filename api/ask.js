@@ -80,6 +80,42 @@ function pickBanned(question) {
     .map((x) => x.e);
 }
 
+// Category questions ("what veggies are bad", "what fruit can I eat") cannot
+// be answered by name matching: nothing in the data is called "veggies".
+// The generator tags every entry with a group, so a category question pulls
+// the group's full verdict list instead.
+const GROUP_INTENT = {
+  vegetables: ['veggie', 'veggies', 'vegetable', 'vegetables'],
+  legumes: ['legume', 'legumes', 'bean', 'beans', 'lentil', 'lentils'],
+  fruit: ['fruit', 'fruits'],
+  dairy: ['dairy'],
+  meat: ['meat', 'meats'],
+  grains: ['grain', 'grains'],
+  drinks: ['drink', 'drinks', 'beverage', 'beverages'],
+  fats: ['fat', 'fats', 'oil', 'oils'],
+  sweeteners: ['sweetener', 'sweeteners'],
+};
+
+function detectGroups(question) {
+  const raw = new Set((question.toLowerCase().match(/[a-z]+/g) || []));
+  const found = [];
+  for (const [group, aliases] of Object.entries(GROUP_INTENT)) {
+    if (aliases.some((a) => raw.has(a))) found.push(group);
+  }
+  // "Veggies" in everyday speech includes the legume bans (soy above all).
+  if (found.includes('vegetables') && !found.includes('legumes')) found.push('legumes');
+  return found;
+}
+
+const VERDICT_RANK = { BANNED: 0, CONDITIONAL: 1, APPROVED: 2 };
+
+function pickCategory(groups) {
+  const all = [...allowlist, ...bannedList].filter((e) => groups.includes(e.group));
+  return all
+    .sort((a, b) => (VERDICT_RANK[a.verdict] - VERDICT_RANK[b.verdict]) || a.name.localeCompare(b.name))
+    .slice(0, 70);
+}
+
 function pickMeals(question) {
   const q = question.toLowerCase();
   const qt = tokens(question);
@@ -123,6 +159,27 @@ function buildSystemPrompt(question) {
   const entries = pickEntries(question);
   const banned = pickBanned(question);
   const pickedMeals = pickMeals(question);
+  const groups = detectGroups(question);
+  const category = groups.length ? pickCategory(groups) : [];
+  // Split the category list into labeled verdict blocks. A flat mixed list
+  // let the model skim past the bans and answer only the conditionals (the
+  // veggies bug, Nov 1, 2026), so the blocks and their order do the
+  // emphasizing, and a framing note pins down category memberships the
+  // model second-guessed (corn and soy are filed here on purpose).
+  const categoryText = (() => {
+    if (!category.length) return '';
+    const blocks = [];
+    if (groups.includes('vegetables') || groups.includes('legumes')) {
+      blocks.push('Category note: in this system corn in every form and soy in every form are filed under vegetables and legumes on purpose. They are the headline bans of this category and must be named when they appear in the BANNED block.');
+    }
+    for (const v of ['BANNED', 'CONDITIONAL', 'APPROVED']) {
+      const rows = category.filter((e) => e.verdict === v);
+      if (!rows.length) continue;
+      blocks.push(`${v} in this category:`);
+      for (const e of rows) blocks.push(`- [${e.kind}] ${e.name}: ${e.verdict}. ${e.note || ''}`.trim());
+    }
+    return blocks.join('\n');
+  })();
   const entryText = entries.length
     ? entries
         .map((e) => `- [${e.kind}] ${e.name}: ${e.verdict}. ${e.note || ''}`.trim())
@@ -144,18 +201,36 @@ function buildSystemPrompt(question) {
         .join('\n')
     : '(no site recipes matched this question)';
 
+  const categoryCounts = category.length
+    ? ['BANNED', 'CONDITIONAL', 'APPROVED']
+        .map((v) => `${category.filter((e) => e.verdict === v).length} ${v.toLowerCase()}`)
+        .join(', ')
+    : '';
+
   return [
     'You are the Ask the List assistant on Allowlist Kitchen, a cooking site where every recipe and product follows one strict food rulebook drawn from the Jake Tran videos.',
     'Answer ONLY about food, ingredients, products, verdicts, and the site recipes. If asked about anything else, politely say you only answer food questions about the list.',
     '',
     CORE_RULES,
     '',
-    'DATABASE ENTRIES RELEVANT TO THIS QUESTION (the live allowlist database, retrieved for this question):',
-    entryText,
-    '',
-    'DATABASE ENTRIES MARKED BANNED RELEVANT TO THIS QUESTION (same database; these items were checked and failed):',
-    bannedText,
-    '',
+    // For a category question the category list below IS the retrieval.
+    // The name-match sections are omitted on purpose: their "no match"
+    // placeholders contradicted the category list and the model anchored
+    // on them (the veggies bug, Nov 1, 2026).
+    ...(categoryText
+      ? [
+          `FULL DATABASE VERDICT LIST FOR THE CATEGORY IN THIS QUESTION (${groups.join(' and ')}; ${categoryCounts}):`,
+          categoryText,
+          '',
+        ]
+      : [
+          'DATABASE ENTRIES RELEVANT TO THIS QUESTION (the live allowlist database, retrieved for this question):',
+          entryText,
+          '',
+          'DATABASE ENTRIES MARKED BANNED RELEVANT TO THIS QUESTION (same database; these items were checked and failed):',
+          bannedText,
+          '',
+        ]),
     'SITE RECIPES RELEVANT TO THIS QUESTION:',
     mealText,
     '',
@@ -166,6 +241,7 @@ function buildSystemPrompt(question) {
     '4. Keep answers short and plain: a verdict first, then one or two sentences of why. Use everyday words. Never use em dashes; use hyphens, commas, or colons instead.',
     '5. Never invent prices, nutrition numbers, brands, or products. If you do not know, say so.',
     '6. Do not give medical advice. If asked about health effects, stick to what the rulebook says and suggest talking to a doctor for personal health questions.',
+    '7. If a FULL CATEGORY VERDICT LIST is included above, the question is about that whole category: answer from that list, starting with its BANNED block. Every entry in the BANNED block counts as a member of the category (the system that owns the list filed it there), unless its name plainly belongs to another food group (for example a sausage with garlic in its name is a meat, not a vegetable). Then name the CONDITIONAL ones with their conditions. Never say the category is not in the database when this list is present, never open with "Not in the database" on a category question, and never say nothing in the category is banned when a BANNED block is present.',
   ].join('\n');
 }
 

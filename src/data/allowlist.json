@@ -2,6 +2,7 @@
   {
     "name": "Boulder Canyon",
     "kind": "Brand",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Plain sea salt chips (Thin & Crispy and Kettle) are three ingredients: potatoes, avocado oil, sea salt.",
     "anchor": "boulder-canyon",
@@ -11,6 +12,7 @@
   {
     "name": "Evil Goods",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "evil-goods",
@@ -20,6 +22,7 @@
   {
     "name": "Felicia",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "felicia",
@@ -29,6 +32,7 @@
   {
     "name": "Jovial",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "jovial",
@@ -38,6 +42,7 @@
   {
     "name": "Kriemhild Dairy",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "kriemhild-dairy",
@@ -47,6 +52,7 @@
   {
     "name": "Lauretana",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "lauretana",
@@ -56,6 +62,7 @@
   {
     "name": "Miracle Noodle",
     "kind": "Brand",
+    "group": "grains",
     "verdict": "CONDITIONAL",
     "note": "Organic shirataki is clean on the ban list but konjac has no video coverage.",
     "anchor": "miracle-noodle",
@@ -65,6 +72,7 @@
   {
     "name": "Mountain Valley",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "mountain-valley",
@@ -74,6 +82,7 @@
   {
     "name": "San Pellegrino",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "san-pellegrino",
@@ -83,6 +92,7 @@
   {
     "name": "Siete",
     "kind": "Brand",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Cassava flour tortillas pass on every banned item; the only open ingredient is xanthan gum (not covered by the videos).",
     "anchor": "siete",
@@ -92,6 +102,7 @@
   {
     "name": "Sundays",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "sundays",
@@ -101,6 +112,7 @@
   {
     "name": "Tolerant",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "tolerant",
@@ -110,6 +122,7 @@
   {
     "name": "White Oak Pastures",
     "kind": "Brand",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "white-oak-pastures",
@@ -119,6 +132,7 @@
   {
     "name": "Alderspring Ranch",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "alderspring-ranch",
@@ -128,6 +142,7 @@
   {
     "name": "Arrowhead Mills (whole-grain SKUs)",
     "kind": "Farm or mill",
+    "group": "grains",
     "verdict": "CONDITIONAL",
     "note": "ONLY the single-ingredient whole-grain flours pass: Organic Whole Wheat Flour ('organic stone-ground whole wheat flour,' QAI certified organic) and Organic Spelt Flour.",
     "anchor": "arrowhead-mills-whole-grain-skus",
@@ -137,6 +152,7 @@
   {
     "name": "Azure Standard",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "A distributor, not a mill.",
     "anchor": "azure-standard",
@@ -146,6 +162,7 @@
   {
     "name": "Barton Springs Mill",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "barton-springs-mill",
@@ -155,6 +172,7 @@
   {
     "name": "Beekeeper's Naturals",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "beekeeper-s-naturals",
@@ -164,6 +182,7 @@
   {
     "name": "Cairnspring Mills",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Stone-milled, 'No Additives - just grain.' But organic labeling is inconsistent: the flagship Glacier Peak page never says Organic while other SKUs are titled Organic.",
     "anchor": "cairnspring-mills",
@@ -173,6 +192,7 @@
   {
     "name": "Central Milling (Organic retail line)",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "central-milling-organic-retail-line",
@@ -182,6 +202,7 @@
   {
     "name": "Court Family Farm",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Listed in the RealMilk Wisconsin directory for raw milk at the farm gate under the incidental-sale exemption.",
     "anchor": "court-family-farm",
@@ -191,6 +212,7 @@
   {
     "name": "Dancing Bear Honey",
     "kind": "Farm or mill",
+    "group": "sweeteners",
     "verdict": "CONDITIONAL",
     "note": "Genuinely raw: 'never heated warmer than a beehive, gently strained but never filtered,' from its own Wisconsin woodland hives.",
     "anchor": "dancing-bear-honey",
@@ -200,6 +222,7 @@
   {
     "name": "Elmwood Stock Farm (chicken)",
     "kind": "Farm or mill",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "elmwood-stock-farm-chicken",
@@ -209,6 +232,7 @@
   {
     "name": "Flourist",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "flourist",
@@ -218,6 +242,7 @@
   {
     "name": "Force of Nature",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "force-of-nature",
@@ -227,6 +252,7 @@
   {
     "name": "Four Sisters Farm",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Listed in the RealMilk Wisconsin directory; A2/A2 Jersey herd, strictly organic feed, self-serve on-farm store, per the directory listing.",
     "anchor": "four-sisters-farm",
@@ -236,6 +262,7 @@
   {
     "name": "Giusto's",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Only the Organic 100% Whole Wheat Graham Flour passes ('INGREDIENTS - 100% Organic Wheat Flour,' certified organic, unbleached).",
     "anchor": "giusto-s",
@@ -245,6 +272,7 @@
   {
     "name": "Glacial Till Farm",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Listed in the RealMilk Wisconsin directory; 100% grassfed organic Jersey herd, per the directory listing.",
     "anchor": "glacial-till-farm",
@@ -254,6 +282,7 @@
   {
     "name": "Golden Bear Farms",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "golden-bear-farms",
@@ -263,6 +292,7 @@
   {
     "name": "Grazing Greens Family Farm",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Listed in the RealMilk Wisconsin directory for raw milk at the farm gate under the incidental-sale exemption.",
     "anchor": "grazing-greens-family-farm",
@@ -272,6 +302,7 @@
   {
     "name": "Greener Pastures Chicken",
     "kind": "Farm or mill",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "greener-pastures-chicken",
@@ -281,6 +312,7 @@
   {
     "name": "Gwenyn Hill Farm (eggs)",
     "kind": "Farm or mill",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "gwenyn-hill-farm-eggs",
@@ -290,6 +322,7 @@
   {
     "name": "Handsome Brook Farms",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "handsome-brook-farms",
@@ -299,6 +332,7 @@
   {
     "name": "Hillplace Farm",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Listed in the RealMilk Wisconsin directory for raw milk at the farm gate under the incidental-sale exemption.",
     "anchor": "hillplace-farm",
@@ -308,6 +342,7 @@
   {
     "name": "Janie's Mill",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "janie-s-mill",
@@ -317,6 +352,7 @@
   {
     "name": "Maine Grains",
     "kind": "Farm or mill",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "maine-grains",
@@ -326,6 +362,7 @@
   {
     "name": "Northstar Bison",
     "kind": "Farm or mill",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "northstar-bison",
@@ -335,6 +372,7 @@
   {
     "name": "OrgaNick Pastures",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "organick-pastures",
@@ -344,6 +382,7 @@
   {
     "name": "Pete & Gerry's (eggs)",
     "kind": "Farm or mill",
+    "group": "meat",
     "verdict": "CONDITIONAL",
     "note": "ONLY the Organic Pasture Raised SKU passes (USDA Organic plus Certified Humane Pasture Raised, 108 sq ft per hen, 100% certified organic feed).",
     "anchor": "pete-gerry-s-eggs",
@@ -353,6 +392,7 @@
   {
     "name": "Polyface Farm",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "polyface-farm",
@@ -362,6 +402,7 @@
   {
     "name": "Primal Pastures (pork)",
     "kind": "Farm or mill",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "primal-pastures-pork",
@@ -371,6 +412,7 @@
   {
     "name": "Reber Rock Farm",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "reber-rock-farm",
@@ -380,6 +422,7 @@
   {
     "name": "REP Provisions",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "rep-provisions",
@@ -389,6 +432,7 @@
   {
     "name": "Seven Sons Farms",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "seven-sons-farms",
@@ -398,6 +442,7 @@
   {
     "name": "Sunrise Flour Mill",
     "kind": "Farm or mill",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "sunrise-flour-mill",
@@ -407,6 +452,7 @@
   {
     "name": "Sunset Apiaries",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "sunset-apiaries",
@@ -416,6 +462,7 @@
   {
     "name": "Thousand Hills Lifetime Grazed",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "thousand-hills-lifetime-grazed",
@@ -425,6 +472,7 @@
   {
     "name": "US Wellness Meats (Grassland Beef)",
     "kind": "Farm or mill",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "us-wellness-meats-grassland-beef",
@@ -434,6 +482,7 @@
   {
     "name": "Vital Farms (eggs)",
     "kind": "Farm or mill",
+    "group": "meat",
     "verdict": "CONDITIONAL",
     "note": "ONLY the Organic Pasture-Raised SKU passes: USDA Certified Organic plus at least 108 sq ft of pasture per hen plus certified organic feed.",
     "anchor": "vital-farms-eggs",
@@ -443,6 +492,7 @@
   {
     "name": "White Oak Pastures",
     "kind": "Farm or mill",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "white-oak-pastures",
@@ -452,6 +502,7 @@
   {
     "name": "Wisconsin raw milk, incidental farm-gate pickup (RealMilk directory)",
     "kind": "Farm or mill",
+    "group": "dairy",
     "verdict": "CONDITIONAL",
     "note": "The ONLY lawful in-state route: an incidental sale directly at the farm (ATCP 65.52) - no advertising, no online store, no shipping, by definition.",
     "anchor": "wisconsin-raw-milk-incidental-farm-gate-pickup-realmilk-directory",
@@ -461,6 +512,7 @@
   {
     "name": "Bananas, organic",
     "kind": "Food",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "bananas-organic",
@@ -470,6 +522,7 @@
   {
     "name": "Beef",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "beef",
@@ -483,6 +536,7 @@
   {
     "name": "Beef tallow",
     "kind": "Food",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "beef-tallow",
@@ -492,6 +546,7 @@
   {
     "name": "Beef tallow (topical / skincare)",
     "kind": "Food",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "beef-tallow-topical-skincare",
@@ -501,6 +556,7 @@
   {
     "name": "Bison",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "bison",
@@ -510,6 +566,7 @@
   {
     "name": "Black tea",
     "kind": "Food",
+    "group": "drinks",
     "verdict": "CONDITIONAL",
     "note": "Flagged for fluoride content (3.73 ppm).",
     "anchor": "black-tea",
@@ -519,6 +576,7 @@
   {
     "name": "Breast milk",
     "kind": "Food",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "breast-milk",
@@ -528,6 +586,7 @@
   {
     "name": "Butter",
     "kind": "Food",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "butter",
@@ -537,6 +596,7 @@
   {
     "name": "Calendula (topical)",
     "kind": "Food",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "calendula-topical",
@@ -546,6 +606,7 @@
   {
     "name": "Cheese",
     "kind": "Food",
+    "group": "dairy",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "cheese",
@@ -555,6 +616,7 @@
   {
     "name": "Chicken",
     "kind": "Food",
+    "group": "meat",
     "verdict": "CONDITIONAL",
     "note": "Conventional US chicken FAILS: antibiotics, chlorine wash, fecal-soup processing, salmonella.",
     "anchor": "chicken",
@@ -570,6 +632,7 @@
   {
     "name": "Coconut oil",
     "kind": "Food",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "coconut-oil",
@@ -579,6 +642,7 @@
   {
     "name": "Coconut water (plain)",
     "kind": "Food",
+    "group": "drinks",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "coconut-water-plain",
@@ -588,6 +652,7 @@
   {
     "name": "Cruciferous vegetables, raw (broccoli, kale)",
     "kind": "Food",
+    "group": "vegetables",
     "verdict": "CONDITIONAL",
     "note": "Raw crucifers can block the thyroid (goitrogens); cooking kills goitrogens and fermenting makes greens safer.",
     "anchor": "cruciferous-vegetables-raw-broccoli-kale",
@@ -597,6 +662,7 @@
   {
     "name": "Dog food, fresh whole foods and raw meat",
     "kind": "Food",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "dog-food-fresh-whole-foods-and-raw-meat",
@@ -606,6 +672,7 @@
   {
     "name": "Duck (meat)",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "duck-meat",
@@ -615,6 +682,7 @@
   {
     "name": "Duck fat",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "duck-fat",
@@ -624,6 +692,7 @@
   {
     "name": "Eggs",
     "kind": "Food",
+    "group": "meat",
     "verdict": "CONDITIONAL",
     "note": "Hens must forage grass and insects or the eggs are nutrient-deficient.",
     "anchor": "eggs",
@@ -633,6 +702,7 @@
   {
     "name": "Homemade infant formula (WAPF recipe, modified)",
     "kind": "Food",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "The fallback when breast milk is not possible.",
     "anchor": "homemade-infant-formula-wapf-recipe-modified",
@@ -642,6 +712,7 @@
   {
     "name": "Lamb",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "lamb",
@@ -651,6 +722,7 @@
   {
     "name": "Lentils",
     "kind": "Food",
+    "group": "legumes",
     "verdict": "CONDITIONAL",
     "note": "The one lentil-specific charge in the corpus is pre-harvest Roundup desiccation: lentils are named among the crops sprayed as close as 3 days before harvest (Why is American food so TOXIC?).",
     "anchor": "lentils",
@@ -660,6 +732,7 @@
   {
     "name": "Mediterranean bread and pasta (quality, Italy/France)",
     "kind": "Food",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "Traditional Italian durum wheat food, grown and milled in Italy and never fortified. Carter ruled Oct 28, 2026 that the traditional Italian lane is good outright.",
     "anchor": "mediterranean-bread-and-pasta-quality-italy-france",
@@ -671,6 +744,7 @@
   {
     "name": "Oats, organic",
     "kind": "Food",
+    "group": "grains",
     "verdict": "CONDITIONAL",
     "note": "Organic only, if used.",
     "anchor": "oats-organic",
@@ -680,6 +754,7 @@
   {
     "name": "Olive oil",
     "kind": "Food",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "olive-oil",
@@ -689,6 +764,7 @@
   {
     "name": "Organ meats (incl. liver)",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "organ-meats-incl-liver",
@@ -698,6 +774,7 @@
   {
     "name": "Plain whole milk (pasteurized)",
     "kind": "Food",
+    "group": "dairy",
     "verdict": "CONDITIONAL",
     "note": "Fallback when raw is unavailable.",
     "anchor": "plain-whole-milk-pasteurized",
@@ -707,6 +784,7 @@
   {
     "name": "Pork",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "pork",
@@ -718,6 +796,7 @@
   {
     "name": "Raisins",
     "kind": "Food",
+    "group": "fruit",
     "verdict": "CONDITIONAL",
     "note": "Flagged once for fluoride content (2.34 ppm) from fluoridated processing water.",
     "anchor": "raisins",
@@ -727,6 +806,7 @@
   {
     "name": "Raw honey",
     "kind": "Food",
+    "group": "sweeteners",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "raw-honey",
@@ -736,6 +816,7 @@
   {
     "name": "Raw milk",
     "kind": "Food",
+    "group": "dairy",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "raw-milk",
@@ -745,6 +826,7 @@
   {
     "name": "Root vegetables",
     "kind": "Food",
+    "group": "vegetables",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "root-vegetables",
@@ -759,6 +841,7 @@
   {
     "name": "Salmon, wild",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "salmon-wild",
@@ -770,6 +853,7 @@
   {
     "name": "Seafood / fish (wild-caught)",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "seafood-fish-wild-caught",
@@ -781,6 +865,7 @@
   {
     "name": "Spring water (glass bottle)",
     "kind": "Food",
+    "group": "drinks",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "spring-water-glass-bottle",
@@ -795,6 +880,7 @@
   {
     "name": "Turkey",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "turkey",
@@ -804,6 +890,7 @@
   {
     "name": "Vegetables (general)",
     "kind": "Food",
+    "group": "vegetables",
     "verdict": "CONDITIONAL",
     "note": "The corpus argues both ways: one video says meat and organs beat vegetables on absorbable nutrients; another counts root vegetables among the most nutrient-dense foods.",
     "anchor": "vegetables-general",
@@ -813,6 +900,7 @@
   {
     "name": "Venison (deer)",
     "kind": "Food",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "venison-deer",
@@ -822,6 +910,7 @@
   {
     "name": "Wheat, organic (traditionally prepared)",
     "kind": "Food",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "Only the old wheats pass: einkorn, emmer, spelt, and traditional Italian durum, grown organic and prepared the traditional way. Modern wheat does not pass in any form (Carter, Oct 28, 2026).",
     "anchor": "wheat-organic-traditionally-prepared",
@@ -831,6 +920,7 @@
   {
     "name": "White rice",
     "kind": "Food",
+    "group": "grains",
     "verdict": "CONDITIONAL",
     "note": "Traditional cultures ate white rice, not brown, to remove phytic acid.",
     "anchor": "white-rice",
@@ -845,6 +935,7 @@
   {
     "name": "Whole fruit",
     "kind": "Food",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "whole-fruit",
@@ -860,6 +951,7 @@
   {
     "name": "acerola powder",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "acerola-powder",
@@ -869,6 +961,7 @@
   {
     "name": "almonds (raw, whole)",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "almonds-raw-whole",
@@ -878,6 +971,7 @@
   {
     "name": "avocado (fresh fruit)",
     "kind": "Ingredient",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "avocado-fresh-fruit",
@@ -887,6 +981,7 @@
   {
     "name": "avocado oil",
     "kind": "Ingredient",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "avocado-oil",
@@ -899,6 +994,7 @@
   {
     "name": "baking soda (sodium bicarbonate)",
     "kind": "Ingredient",
+    "group": "drinks",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "baking-soda-sodium-bicarbonate",
@@ -914,6 +1010,7 @@
   {
     "name": "beef tallow",
     "kind": "Ingredient",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "beef-tallow",
@@ -931,6 +1028,7 @@
   {
     "name": "Bifidobacterium infantis",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "bifidobacterium-infantis",
@@ -940,6 +1038,7 @@
   {
     "name": "black pepper",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "black-pepper",
@@ -964,6 +1063,7 @@
   {
     "name": "blueberries",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "blueberries",
@@ -973,6 +1073,7 @@
   {
     "name": "butter",
     "kind": "Ingredient",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "butter",
@@ -982,6 +1083,7 @@
   {
     "name": "calcium chloride",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "calcium-chloride",
@@ -991,6 +1093,7 @@
   {
     "name": "calendula (pot marigold)",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "calendula-pot-marigold",
@@ -1000,6 +1103,7 @@
   {
     "name": "carob powder (unsweetened)",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "carob-powder-unsweetened",
@@ -1011,6 +1115,7 @@
   {
     "name": "cashews",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "cashews",
@@ -1024,6 +1129,7 @@
   {
     "name": "cinnamon (Ceylon)",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "CONDITIONAL on variety: Ceylon (true) cinnamon, Cinnamomum verum, only.",
     "anchor": "cinnamon-ceylon",
@@ -1038,6 +1144,7 @@
   {
     "name": "coconut oil",
     "kind": "Ingredient",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "coconut-oil",
@@ -1047,6 +1154,7 @@
   {
     "name": "coconut water",
     "kind": "Ingredient",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "coconut-water",
@@ -1056,6 +1164,7 @@
   {
     "name": "cod liver oil",
     "kind": "Ingredient",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "cod-liver-oil",
@@ -1065,6 +1174,7 @@
   {
     "name": "cream (pasteurized cream)",
     "kind": "Ingredient",
+    "group": "dairy",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "cream-pasteurized-cream",
@@ -1077,6 +1187,7 @@
   {
     "name": "dates",
     "kind": "Ingredient",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "dates",
@@ -1088,6 +1199,7 @@
   {
     "name": "duck fat",
     "kind": "Ingredient",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "duck-fat",
@@ -1097,6 +1209,7 @@
   {
     "name": "einkorn flour",
     "kind": "Ingredient",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "einkorn-flour",
@@ -1106,6 +1219,7 @@
   {
     "name": "Fruit juice, as flavoring (small amounts in water or food)",
     "kind": "Ingredient",
+    "group": "fruit",
     "verdict": "CONDITIONAL",
     "note": "Carter clarification Oct 23, 2026: juice used only as a flavoring is good.",
     "anchor": "fruit-juice-as-flavoring-small-amounts-in-water-or-food",
@@ -1115,6 +1229,7 @@
   {
     "name": "garlic powder",
     "kind": "Ingredient",
+    "group": "vegetables",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "garlic-powder",
@@ -1135,6 +1250,7 @@
   {
     "name": "gelatin",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "gelatin",
@@ -1144,6 +1260,7 @@
   {
     "name": "grape must",
     "kind": "Ingredient",
+    "group": "fruit",
     "verdict": "CONDITIONAL",
     "note": "Appears only as a constituent of balsamic vinegar in one verified passing product (Primal Kitchen ketchup, 0g added sugar), where the source file flags it as not an added sweetener.",
     "anchor": "grape-must",
@@ -1153,6 +1270,7 @@
   {
     "name": "homemade liquid whey",
     "kind": "Ingredient",
+    "group": "dairy",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "homemade-liquid-whey",
@@ -1162,6 +1280,7 @@
   {
     "name": "lactose",
     "kind": "Ingredient",
+    "group": "dairy",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "lactose",
@@ -1171,6 +1290,7 @@
   {
     "name": "lard (pork fat)",
     "kind": "Ingredient",
+    "group": "fats",
     "verdict": "CONDITIONAL",
     "note": "A traditional animal fat sold by approved farms (US Wellness) and listed by WAPF for vitamin D; the videos do not name lard directly.",
     "anchor": "lard-pork-fat",
@@ -1180,6 +1300,7 @@
   {
     "name": "lemon (fresh)",
     "kind": "Ingredient",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "lemon-fresh",
@@ -1199,6 +1320,7 @@
   {
     "name": "malted barley flour",
     "kind": "Ingredient",
+    "group": "grains",
     "verdict": "CONDITIONAL",
     "note": "A fermentation aid, not synthetic enrichment; present in passing flours (King Arthur Organic, Central Milling organic).",
     "anchor": "malted-barley-flour",
@@ -1208,6 +1330,7 @@
   {
     "name": "manuka honey",
     "kind": "Ingredient",
+    "group": "sweeteners",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "manuka-honey",
@@ -1217,6 +1340,7 @@
   {
     "name": "mixed tocopherols (natural vitamin E)",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "mixed-tocopherols-natural-vitamin-e",
@@ -1226,6 +1350,7 @@
   {
     "name": "mustard (prepared, plain)",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "CONDITIONAL: plain prepared mustard (mustard seed, vinegar, salt, water) with no added sugar or flavorings, and it must always be declared as the major allergen it is.",
     "anchor": "mustard-prepared-plain",
@@ -1243,6 +1368,7 @@
   {
     "name": "nutritional yeast flakes",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "nutritional-yeast-flakes",
@@ -1252,6 +1378,7 @@
   {
     "name": "oats (organic)",
     "kind": "Ingredient",
+    "group": "grains",
     "verdict": "CONDITIONAL",
     "note": "If grains are eaten, choose organic.",
     "anchor": "oats-organic",
@@ -1263,6 +1390,7 @@
   {
     "name": "olive oil (extra virgin, cold-pressed)",
     "kind": "Ingredient",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "olive-oil-extra-virgin-cold-pressed",
@@ -1272,6 +1400,7 @@
   {
     "name": "onion (fresh)",
     "kind": "Ingredient",
+    "group": "vegetables",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "onion-fresh",
@@ -1287,6 +1416,7 @@
   {
     "name": "onion powder",
     "kind": "Ingredient",
+    "group": "vegetables",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "onion-powder",
@@ -1296,6 +1426,7 @@
   {
     "name": "peanuts",
     "kind": "Ingredient",
+    "group": "legumes",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "peanuts",
@@ -1305,6 +1436,7 @@
   {
     "name": "pumpkin seeds (pepitas)",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "pumpkin-seeds-pepitas",
@@ -1314,6 +1446,7 @@
   {
     "name": "raw honey",
     "kind": "Ingredient",
+    "group": "sweeteners",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "raw-honey",
@@ -1332,6 +1465,7 @@
   {
     "name": "salt (plain sea salt)",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Appears in approved products throughout.",
     "anchor": "salt-plain-sea-salt",
@@ -1377,6 +1511,7 @@
   {
     "name": "shredded coconut (unsweetened)",
     "kind": "Ingredient",
+    "group": "fruit",
     "verdict": "CONDITIONAL",
     "note": "CONDITIONAL: single-ingredient dried coconut, unsulfured, no sulfite preservatives, no added sugar.",
     "anchor": "shredded-coconut-unsweetened",
@@ -1386,6 +1521,7 @@
   {
     "name": "sodium chloride",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Chemical name for salt itself.",
     "anchor": "sodium-chloride",
@@ -1395,6 +1531,7 @@
   {
     "name": "spring water (natural)",
     "kind": "Ingredient",
+    "group": "drinks",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "spring-water-natural",
@@ -1404,6 +1541,7 @@
   {
     "name": "vanilla extract",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "vanilla-extract",
@@ -1421,6 +1559,7 @@
   {
     "name": "vinegar (distilled white and apple cider)",
     "kind": "Ingredient",
+    "group": "fruit",
     "verdict": "CONDITIONAL",
     "note": "CONDITIONAL: as an ingredient cooked into food or used in dressings and marinades, never as a drink.",
     "anchor": "vinegar-distilled-white-and-apple-cider",
@@ -1432,6 +1571,7 @@
   {
     "name": "vitamin D3 (milk fortification)",
     "kind": "Ingredient",
+    "group": "dairy",
     "verdict": "CONDITIONAL",
     "note": "Present in the approved fallback milk (Organic Valley).",
     "anchor": "vitamin-d3-milk-fortification",
@@ -1441,6 +1581,7 @@
   {
     "name": "zinc oxide (non-nano)",
     "kind": "Ingredient",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "zinc-oxide-non-nano",
@@ -1450,6 +1591,7 @@
   {
     "name": "Artisana Organics Raw Almond Butter",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "artisana-organics-raw-almond-butter",
@@ -1459,6 +1601,7 @@
   {
     "name": "Base Culture Original Keto Gluten Free Bread",
     "kind": "Product",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "base-culture-original-keto-gluten-free-bread-16-oz",
@@ -1471,6 +1614,7 @@
   {
     "name": "Bend Soap Company Unscented Goat Milk Soap",
     "kind": "Product",
+    "group": "dairy",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "bend-soap-company-unscented-goat-milk-soap",
@@ -1480,6 +1624,7 @@
   {
     "name": "Bionaturae Marinara Pasta Sauce",
     "kind": "Product",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "bionaturae-marinara-pasta-sauce",
@@ -1489,6 +1634,7 @@
   {
     "name": "Boulder Canyon Kettle Style Classic Sea Salt Potato Chips, Avocado Oil",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "boulder-canyon-kettle-style-classic-sea-salt-potato-chips-avocado-oil-5-25-oz",
@@ -1498,6 +1644,7 @@
   {
     "name": "Boulder Canyon Thin & Crispy Classic Sea Salt Potato Chips",
     "kind": "Product",
+    "group": "vegetables",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "boulder-canyon-thin-crispy-classic-sea-salt-potato-chips-6-oz",
@@ -1507,6 +1654,7 @@
   {
     "name": "Brothers All Natural Freeze Dried Strawberry Fruit Crisps",
     "kind": "Product",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "brothers-all-natural-freeze-dried-strawberry-fruit-crisps-1-oz",
@@ -1519,6 +1667,7 @@
   {
     "name": "Bubbies Kosher Dill Pickles",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "bubbies-kosher-dill-pickles",
@@ -1528,6 +1677,7 @@
   {
     "name": "California Olive Ranch 100% California Extra Virgin Olive Oil",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "california-olive-ranch-100-california-extra-virgin-olive-oil",
@@ -1542,6 +1692,7 @@
   {
     "name": "Carbone Marinara Sauce",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "carbone-marinara-sauce",
@@ -1551,6 +1702,7 @@
   {
     "name": "Dutch Meadows Dutch Reserve Raw Cheddar",
     "kind": "Product",
+    "group": "dairy",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "dutch-meadows-dutch-reserve-raw-cheddar",
@@ -1560,6 +1712,7 @@
   {
     "name": "Dutch Meadows Raw Butter",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "dutch-meadows-raw-butter",
@@ -1569,6 +1722,7 @@
   {
     "name": "Earthbound Farm Frozen Organic Sliced Strawberries",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "earthbound-farm-frozen-organic-sliced-strawberries-2-lb",
@@ -1578,6 +1732,7 @@
   {
     "name": "Evil Goods Whipped Tallow and Manuka Honey Balm",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "evil-goods-whipped-tallow-and-manuka-honey-balm",
@@ -1587,6 +1742,7 @@
   {
     "name": "Fatworks Grass-Fed Beef Tallow",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "fatworks-grass-fed-beef-tallow",
@@ -1598,6 +1754,7 @@
   {
     "name": "Felicia Organic Red Lentil Penne",
     "kind": "Product",
+    "group": "legumes",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "felicia-organic-red-lentil-penne-8-oz",
@@ -1609,6 +1766,7 @@
   {
     "name": "Force of Nature Ground Beef and Bison range",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "force-of-nature-ground-beef-and-bison-range-incl-ancestral-blend",
@@ -1620,6 +1778,7 @@
   {
     "name": "Generic produce Organic Bananas, whole fruit, bunch",
     "kind": "Product",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "generic-produce-organic-bananas-whole-fruit-bunch",
@@ -1629,6 +1788,7 @@
   {
     "name": "Goodness Grazecious 85/15 Grass-Fed Organic Ground Beef",
     "kind": "Product",
+    "group": "meat",
     "verdict": "CONDITIONAL",
     "note": "Label claims grass-fed and organic only; nothing on the listing states grass-finished or never grain, so the finishing half of the standard is unverified.",
     "anchor": "goodness-grazecious-85-15-grass-fed-organic-ground-beef-16-oz",
@@ -1638,6 +1798,7 @@
   {
     "name": "Green Mountain Gringo Salsa, Mild",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "green-mountain-gringo-salsa-mild-also-medium-and-hot-16-oz",
@@ -1647,6 +1808,7 @@
   {
     "name": "Grillo's Pickles Dill Spears",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "grillo-s-pickles-dill-spears-32-fl-oz",
@@ -1656,6 +1818,7 @@
   {
     "name": "Harmless Harvest Organic Coconut Water",
     "kind": "Product",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "harmless-harvest-organic-coconut-water-plain-original",
@@ -1665,6 +1828,7 @@
   {
     "name": "Jovial 100% Organic Einkorn Whole Wheat Pasta",
     "kind": "Product",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "jovial-100-organic-einkorn-whole-wheat-pasta-spaghetti-penne-fusilli-12-oz",
@@ -1674,6 +1838,7 @@
   {
     "name": "Jovial Organic Einkorn All-Purpose Flour",
     "kind": "Product",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "jovial-organic-einkorn-all-purpose-flour-2-lb",
@@ -1691,6 +1856,7 @@
   {
     "name": "Just Bare Organic Boneless Skinless Chicken Breast Fillets",
     "kind": "Product",
+    "group": "meat",
     "verdict": "CONDITIONAL",
     "note": "USDA Certified Organic, cage-free barn-raised, no antibiotics (Woodman detail page Oct 25 2026).",
     "anchor": "just-bare-organic-boneless-skinless-chicken-breast-fillets",
@@ -1700,6 +1866,7 @@
   {
     "name": "King Oscar Skinless and Boneless Sardines in Water",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "king-oscar-skinless-and-boneless-sardines-in-water",
@@ -1709,6 +1876,7 @@
   {
     "name": "Kriemhild Dairy Meadow Butter",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "kriemhild-dairy-meadow-butter-salted",
@@ -1735,6 +1903,7 @@
   {
     "name": "Lakewood Organic Aloe Vera Juice",
     "kind": "Product",
+    "group": "drinks",
     "verdict": "CONDITIONAL",
     "note": "Organic aloe vera juice, less than 1% organic lemon juice (label states the lemon juice is what allows bottling without preservatives).",
     "anchor": "lakewood-organic-aloe-vera-juice",
@@ -1744,6 +1913,7 @@
   {
     "name": "Larabar Cashew Cookie",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "larabar-cashew-cookie",
@@ -1755,6 +1925,7 @@
   {
     "name": "Larabar Peanut Butter Cookie",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "larabar-peanut-butter-cookie",
@@ -1764,6 +1935,7 @@
   {
     "name": "Lauretana Natural Mineral Water, glass bottles",
     "kind": "Product",
+    "group": "drinks",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "lauretana-natural-mineral-water-glass-bottles",
@@ -1773,6 +1945,7 @@
   {
     "name": "Maple Hill 100% Grass-Fed Organic Butter",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "maple-hill-100-grass-fed-organic-butter-salted",
@@ -1782,6 +1955,7 @@
   {
     "name": "Miracle Noodle Egg White Noodles",
     "kind": "Product",
+    "group": "meat",
     "verdict": "CONDITIONAL",
     "note": "Egg whites, water, under 1% sodium alginate.",
     "anchor": "miracle-noodle-egg-white-noodles-7-oz",
@@ -1791,6 +1965,7 @@
   {
     "name": "Miracle Noodle Organic Shirataki Pasta",
     "kind": "Product",
+    "group": "grains",
     "verdict": "CONDITIONAL",
     "note": "Water, organic konjac flour, citric acid.",
     "anchor": "miracle-noodle-organic-shirataki-pasta-7-oz-spaghetti-fettuccine-ziti",
@@ -1800,6 +1975,7 @@
   {
     "name": "Mountain Valley Spring Water, glass bottles",
     "kind": "Product",
+    "group": "drinks",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "mountain-valley-spring-water-glass-bottles",
@@ -1809,6 +1985,7 @@
   {
     "name": "Muir Glen Organic Pasta Sauce",
     "kind": "Product",
+    "group": "grains",
     "verdict": "CONDITIONAL",
     "note": "Organic tomato puree and tomatoes, EVOO, onion, garlic, sea salt, herbs, plus citric acid and calcium chloride in the pasta sauce line (Woodman labels Oct 26 2026).",
     "anchor": "muir-glen-organic-pasta-sauce-all-flavors",
@@ -1818,6 +1995,7 @@
   {
     "name": "Mutti Marinara Sauce",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "mutti-marinara-sauce",
@@ -1827,6 +2005,7 @@
   {
     "name": "Nate's Raw & Unfiltered Honey",
     "kind": "Product",
+    "group": "sweeteners",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "nate-s-raw-unfiltered-honey-16-oz",
@@ -1846,6 +2025,7 @@
   {
     "name": "Newman’s Own Chunky Salsa, Mild",
     "kind": "Product",
+    "group": "other",
     "verdict": "CONDITIONAL",
     "note": "Diced tomatoes in tomato juice, tomato puree, green chili peppers, green and red bell peppers, onions, distilled vinegar, salt, cilantro, garlic, black pepper, citric acid.",
     "anchor": "newman-s-own-chunky-salsa-mild-16-oz",
@@ -1855,6 +2035,7 @@
   {
     "name": "NUCO Organic Coconut Wraps, Original",
     "kind": "Product",
+    "group": "fruit",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "nuco-organic-coconut-wraps-original-5-ct",
@@ -1870,6 +2051,7 @@
   {
     "name": "Nutiva Organic Virgin Coconut Oil",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "nutiva-organic-virgin-coconut-oil",
@@ -1879,6 +2061,7 @@
   {
     "name": "Organic Prairie 100% Grassfed Beef Liver",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "organic-prairie-100-grassfed-beef-liver-8-oz",
@@ -1888,6 +2071,7 @@
   {
     "name": "Organic Prairie 100% Grassfed Ground Beef",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "organic-prairie-100-grassfed-ground-beef-75-25-fresh-85-15-frozen-90-10",
@@ -1897,6 +2081,7 @@
   {
     "name": "Organic Valley Grassmilk Organic Whole Milk",
     "kind": "Product",
+    "group": "dairy",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "organic-valley-grassmilk-organic-whole-milk",
@@ -1919,6 +2104,7 @@
   {
     "name": "Organic Valley Grassmilk Raw Cheddar and Raw Sharp Cheddar",
     "kind": "Product",
+    "group": "dairy",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "organic-valley-grassmilk-raw-cheddar-and-raw-sharp-cheddar",
@@ -1936,6 +2122,7 @@
   {
     "name": "Organicville Organic Marinara Pasta Sauce",
     "kind": "Product",
+    "group": "grains",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "organicville-organic-marinara-pasta-sauce",
@@ -1945,6 +2132,7 @@
   {
     "name": "Primal Kitchen A Tad Sweet Ketchup",
     "kind": "Product",
+    "group": "sweeteners",
     "verdict": "CONDITIONAL",
     "note": "Organic tomato concentrate, organic balsamic vinegar, organic distilled vinegar, organic honey, salt, onion/garlic powder, spices (Woodman label Oct 25 2026).",
     "anchor": "primal-kitchen-a-tad-sweet-ketchup-honey",
@@ -1954,6 +2142,7 @@
   {
     "name": "Primal Kitchen Marinara Pasta Sauce",
     "kind": "Product",
+    "group": "vegetables",
     "verdict": "CONDITIONAL",
     "note": "Organic tomato base, avocado oil, garlic, herbs, plus citric acid and calcium chloride from the diced tomato component (Woodman labels Oct 26 2026).",
     "anchor": "primal-kitchen-marinara-pasta-sauce-roasted-garlic-tomato-basil",
@@ -1963,6 +2152,7 @@
   {
     "name": "Primal Kitchen Organic Unsweetened Ketchup",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "primal-kitchen-organic-unsweetened-ketchup",
@@ -1976,6 +2166,7 @@
   {
     "name": "Rao's Homemade Marinara Sauce",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "rao-s-homemade-marinara-sauce",
@@ -1988,6 +2179,7 @@
   {
     "name": "S.Pellegrino Sparkling Natural Mineral Water, glass bottle",
     "kind": "Product",
+    "group": "drinks",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "s-pellegrino-sparkling-natural-mineral-water-glass-bottle",
@@ -1997,6 +2189,7 @@
   {
     "name": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "santa-cruz-organic-peanut-butter-dark-roasted-creamy",
@@ -2006,6 +2199,7 @@
   {
     "name": "Saratoga Sparkling Spring Water, glass bottle",
     "kind": "Product",
+    "group": "drinks",
     "verdict": "CONDITIONAL",
     "note": "Natural sparkling spring water in glass, nothing added.",
     "anchor": "saratoga-sparkling-spring-water-glass-bottle-28-oz",
@@ -2015,6 +2209,7 @@
   {
     "name": "Saratoga Spring Water, still, glass bottle",
     "kind": "Product",
+    "group": "drinks",
     "verdict": "CONDITIONAL",
     "note": "Natural spring water, nothing added.",
     "anchor": "saratoga-spring-water-still-glass-bottle",
@@ -2024,6 +2219,7 @@
   {
     "name": "Siete Burrito Size Grain Free Tortillas",
     "kind": "Product",
+    "group": "grains",
     "verdict": "CONDITIONAL",
     "note": "Water, cassava flour, tapioca flour, avocado oil, coconut flour, arrowroot flour, apple cider vinegar, COCONUT SUGAR, sea salt, yeast.",
     "anchor": "siete-burrito-size-grain-free-tortillas-6-ct-15-oz",
@@ -2033,6 +2229,7 @@
   {
     "name": "Siete Cassava Flour Tortillas",
     "kind": "Product",
+    "group": "vegetables",
     "verdict": "CONDITIONAL",
     "note": "Cassava flour, water, coconut flour, coconut oil, apple cider vinegar, sea salt, xanthan gum.",
     "anchor": "siete-cassava-flour-tortillas-8-ct-7-oz",
@@ -2042,6 +2239,7 @@
   {
     "name": "Siete Kettle Cooked Sea Salt Potato Chips",
     "kind": "Product",
+    "group": "vegetables",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "siete-kettle-cooked-sea-salt-potato-chips-5-5-oz",
@@ -2051,6 +2249,7 @@
   {
     "name": "Simply Organic Cinnamon, Ceylon",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "simply-organic-cinnamon-ceylon",
@@ -2060,6 +2259,7 @@
   {
     "name": "Smart Chicken Organic Boneless Skinless Chicken Breasts",
     "kind": "Product",
+    "group": "meat",
     "verdict": "CONDITIONAL",
     "note": "Certified Organic, Certified Humane, free range with outdoor access, air-chilled, no added water (Woodman detail page Oct 25 2026).",
     "anchor": "smart-chicken-organic-boneless-skinless-chicken-breasts",
@@ -2069,6 +2269,7 @@
   {
     "name": "Smucker's Natural Creamy Peanut Butter",
     "kind": "Product",
+    "group": "fats",
     "verdict": "CONDITIONAL",
     "note": "Peanuts, 1% or less salt (label read on Woodman's product page Oct 25 2026).",
     "anchor": "smucker-s-natural-creamy-peanut-butter",
@@ -2078,6 +2279,7 @@
   {
     "name": "Smucker's Organic Creamy Peanut Butter",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "smucker-s-organic-creamy-peanut-butter",
@@ -2091,6 +2293,7 @@
   {
     "name": "Spindrift Spindrift Raspberry Lime Sparkling Water",
     "kind": "Product",
+    "group": "fruit",
     "verdict": "CONDITIONAL",
     "note": "Carbonated water, raspberry puree, raspberry juice, lime juice.",
     "anchor": "spindrift-spindrift-raspberry-lime-sparkling-water",
@@ -2100,6 +2303,7 @@
   {
     "name": "Sundays Beef Recipe",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "sundays-beef-recipe-air-dried-dog-food",
@@ -2109,6 +2313,7 @@
   {
     "name": "Thousand Hills Lifetime Grazed Ground Beef 85/15",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "thousand-hills-lifetime-grazed-ground-beef-85-15",
@@ -2123,6 +2328,7 @@
   {
     "name": "Tolerant Organic Red Lentil Penne",
     "kind": "Product",
+    "group": "legumes",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "tolerant-organic-red-lentil-penne-simply-legumes-8-oz",
@@ -2132,6 +2338,7 @@
   {
     "name": "Toups and Co Organics Sun Balm",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "toups-and-co-organics-sun-balm",
@@ -2141,6 +2348,7 @@
   {
     "name": "Toups and Co Organics Tallow Balm, Vanilla and Almond",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "toups-and-co-organics-tallow-balm-vanilla-and-almond",
@@ -2150,6 +2358,7 @@
   {
     "name": "US Wellness Meats 75% Lean Ground Beef with Heart, Kidney, Liver",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "us-wellness-meats-75-lean-ground-beef-with-heart-kidney-liver-1-lb",
@@ -2159,6 +2368,7 @@
   {
     "name": "US Wellness Meats Beef Summer Sausage",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "us-wellness-meats-beef-summer-sausage-8-oz",
@@ -2168,6 +2378,7 @@
   {
     "name": "VanMan Bison Tallow and Honey Balm, Unscented",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "vanman-bison-tallow-and-honey-balm-unscented",
@@ -2177,6 +2388,7 @@
   {
     "name": "VanMan Tallow and Honey Balm, Unscented",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "vanman-tallow-and-honey-balm-unscented-classic",
@@ -2186,6 +2398,7 @@
   {
     "name": "Vital Farms Organic Pasture-Raised Eggs",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "vital-farms-organic-pasture-raised-eggs",
@@ -2212,6 +2425,7 @@
   {
     "name": "Wedderspoon Raw Manuka Honey",
     "kind": "Product",
+    "group": "sweeteners",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "wedderspoon-raw-manuka-honey",
@@ -2221,6 +2435,7 @@
   {
     "name": "Wholly Guacamole Classic Guacamole, Mild",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "wholly-guacamole-classic-guacamole-mild-7-5-oz",
@@ -2232,6 +2447,7 @@
   {
     "name": "Wild Planet Wild Albacore Tuna and Sea Salt",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "wild-planet-wild-albacore-tuna-and-sea-salt",
@@ -2243,6 +2459,7 @@
   {
     "name": "Wild Planet Wild Sardines in Organic Extra Virgin Olive Oil",
     "kind": "Product",
+    "group": "fats",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "wild-planet-wild-sardines-in-organic-extra-virgin-olive-oil",
@@ -2252,6 +2469,7 @@
   {
     "name": "Wild Planet Wild Sockeye Salmon",
     "kind": "Product",
+    "group": "meat",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "wild-planet-wild-sockeye-salmon",
@@ -2261,6 +2479,7 @@
   {
     "name": "Wyman's Frozen Wild Blueberries",
     "kind": "Product",
+    "group": "other",
     "verdict": "APPROVED",
     "note": "",
     "anchor": "wyman-s-frozen-wild-blueberries",
