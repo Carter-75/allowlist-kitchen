@@ -7,6 +7,7 @@
 // (Vercel project settings, Production). It is never sent to the browser.
 
 import allowlist from '../src/data/allowlist.json' with { type: 'json' };
+import bannedList from '../src/data/banned.json' with { type: 'json' };
 import meals from '../src/data/meals.json' with { type: 'json' };
 
 const MODEL = 'gpt-5-nano';
@@ -68,6 +69,17 @@ function pickEntries(question) {
     .map((x) => x.e);
 }
 
+function pickBanned(question) {
+  const q = question.toLowerCase();
+  const qt = tokens(question);
+  return bannedList
+    .map((e) => ({ e, s: scoreEntry(e, qt, q) }))
+    .filter((x) => x.s > 0)
+    .sort((a, b) => b.s - a.s)
+    .slice(0, 12)
+    .map((x) => x.e);
+}
+
 function pickMeals(question) {
   const q = question.toLowerCase();
   const qt = tokens(question);
@@ -109,12 +121,18 @@ CORE RULEBOOK (from the Jake Tran videos; this is the whole basis of the list):
 
 function buildSystemPrompt(question) {
   const entries = pickEntries(question);
+  const banned = pickBanned(question);
   const pickedMeals = pickMeals(question);
   const entryText = entries.length
     ? entries
         .map((e) => `- [${e.kind}] ${e.name}: ${e.verdict}. ${e.note || ''}`.trim())
         .join('\n')
-    : '(no database entries matched this question)';
+    : '(no passing database entries matched this question)';
+  const bannedText = banned.length
+    ? banned
+        .map((e) => `- [${e.kind}] ${e.name}: BANNED. ${e.note || ''}`.trim())
+        .join('\n')
+    : '(no banned database entries matched this question)';
   const mealText = pickedMeals.length
     ? pickedMeals
         .map((m) => {
@@ -135,18 +153,23 @@ function buildSystemPrompt(question) {
     'DATABASE ENTRIES RELEVANT TO THIS QUESTION (the live allowlist database, retrieved for this question):',
     entryText,
     '',
+    'DATABASE ENTRIES MARKED BANNED RELEVANT TO THIS QUESTION (same database; these items were checked and failed):',
+    bannedText,
+    '',
     'SITE RECIPES RELEVANT TO THIS QUESTION:',
     mealText,
     '',
     'HOW TO ANSWER:',
-    '1. If the item is in the database entries above, give its exact verdict (APPROVED, CONDITIONAL, or BANNED) and the reason from its note. Do not soften or change a database verdict.',
-    '2. If the item is NOT in the database entries above, start with "Not in the database." and then judge it from the core rules and its ingredients, and say plainly that this is a rule-based judgment, not a database verdict. Absence from the database is not itself a fail.',
+    '1. If the item appears in either database section above, give its exact verdict (APPROVED, CONDITIONAL, or BANNED) and the reason from its note. Do not soften or change a database verdict.',
+    '2. If the item is in NEITHER database section above, start with "Not in the database." and then judge it from the core rules and its ingredients, and say plainly that this is a rule-based judgment, not a database verdict. Absence from the database is not itself a fail.',
     '3. For meal ideas, build only from APPROVED or CONDITIONAL items and the site recipes above. Name the recipe page path (like /meal/...) when you suggest one.',
     '4. Keep answers short and plain: a verdict first, then one or two sentences of why. Use everyday words. Never use em dashes; use hyphens, commas, or colons instead.',
     '5. Never invent prices, nutrition numbers, brands, or products. If you do not know, say so.',
     '6. Do not give medical advice. If asked about health effects, stick to what the rulebook says and suggest talking to a doctor for personal health questions.',
   ].join('\n');
 }
+
+export { buildSystemPrompt };
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -198,7 +221,12 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: MODEL,
         messages,
-        max_completion_tokens: 1100,
+        // gpt-5-nano is a reasoning model: its hidden reasoning counts
+        // against max_completion_tokens, so keep the effort low (this is
+        // simple grounded lookup, not hard reasoning) and leave real
+        // headroom or answers come back empty.
+        reasoning_effort: 'low',
+        max_completion_tokens: 2500,
       }),
       signal: controller.signal,
     });

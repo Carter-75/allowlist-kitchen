@@ -1,0 +1,1952 @@
+[
+  {
+    "name": "3M",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Forever chemicals."
+  },
+  {
+    "name": "Abbott",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "2022 Similac Cronobacter recall (brain abscesses, 2 infant deaths); the plant was flagged by the FDA for years."
+  },
+  {
+    "name": "Amazing Grass",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Protein powder brand named in the corpus."
+  },
+  {
+    "name": "Axe",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Body spray contains the hydrofluorocarbon 152a forever chemical."
+  },
+  {
+    "name": "Bayer",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Bought Monsanto for $63B knowing its history."
+  },
+  {
+    "name": "Beech-Nut",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Baby food with heavy metals."
+  },
+  {
+    "name": "Ben & Jerry's",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Unilever brand in the plays-both-sides bullet."
+  },
+  {
+    "name": "Beyond Meat",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Named with Impossible as chemical-laden fake meat profiteering."
+  },
+  {
+    "name": "Blue Buffalo",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Natural branding but uses chicken by-product meal and corn, per the independent-lab lawsuit cited."
+  },
+  {
+    "name": "Body and Fit",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Protein powder brand named in the corpus."
+  },
+  {
+    "name": "Burt's Bees",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Lip balms contain seed oils (sunflower oil) - you sip seed oils all day."
+  },
+  {
+    "name": "Cadbury",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Switched to high fructose corn syrup; bought blood cocoa."
+  },
+  {
+    "name": "Capri Sun",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "One small Capri Sun has about 6 teaspoons of sugar, the same as a serving of M&M's."
+  },
+  {
+    "name": "Chapstick",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Named alongside Burt's Bees for seed oils in lip balm."
+  },
+  {
+    "name": "Cheerios",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "More glyphosate per serving than vitamins D and B12, as cited."
+  },
+  {
+    "name": "Chemours",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "DuPont spinoff in the forever-chemicals bullet; GenX also never breaks down."
+  },
+  {
+    "name": "Coca-Cola",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Insanely addictive sugary drinks; Simply Orange sued over PFAS; switched to high fructose corn syrup when sugar quotas raised prices."
+  },
+  {
+    "name": "Danone",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Lobbied to block stricter baby food rules; owns Happy Family."
+  },
+  {
+    "name": "Daraprim",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Turing's price-gouged pill."
+  },
+  {
+    "name": "Dermalogica",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Named with Pond's in the endocrine-disruption bullet."
+  },
+  {
+    "name": "Domino's",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Smart Slice pizza in 13,000+ schools contains soybean oil, maltodextrin and sodium propionate."
+  },
+  {
+    "name": "Dove",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Unilever dry shampoos with benzene, recalled."
+  },
+  {
+    "name": "DuPont",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Teflon/PFOA forever chemicals; dumped C8 into the Ohio River."
+  },
+  {
+    "name": "Eat Just",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Lab-grown and fake meat condemned."
+  },
+  {
+    "name": "Foster Farms",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Named with Tyson in the industrial chicken bullet."
+  },
+  {
+    "name": "Frito-Lay",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Flamin' Hot Cheetos engineered for addiction (MSG, Red 40, maltodextrin); smart school snacks with GMO corn and seed oils."
+  },
+  {
+    "name": "Frosted Flakes (Kellogg's)",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Tested positive for glyphosate; breakfast cereal is condemned as metabolically identical to sugar."
+  },
+  {
+    "name": "General Mills",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Cheerios contain more glyphosate per serving than vitamins D and B12; Wheat Chex tested positive for glyphosate."
+  },
+  {
+    "name": "Gerber",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Baby food with heavy metals; owned by Nestle."
+  },
+  {
+    "name": "Glambia",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Whey supplier behind almost all protein powder brands (spelled Glambia in the watchlist); the powders are named as heavy-metal and chemical cocktails."
+  },
+  {
+    "name": "Good Meat",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Lab-grown meat brand condemned."
+  },
+  {
+    "name": "Gravy Train",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Pentobarbital, a euthanasia drug, found in Gravy Train."
+  },
+  {
+    "name": "Happy Family",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Baby food with heavy metals; Danone-owned."
+  },
+  {
+    "name": "Hawaiian Punch",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Big Tobacco sugary-drink brand."
+  },
+  {
+    "name": "Heinz",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Plays both sides: sells junk food, then diet products."
+  },
+  {
+    "name": "Hot Cheetos (Flamin' Hot)",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Subject of its own video: MSG, Red 40 and maltodextrin addiction engineering."
+  },
+  {
+    "name": "Iams",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Mars kibble brand."
+  },
+  {
+    "name": "Impossible Foods",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Fake meat: hexane-extracted soy protein, Red #3, TBHQ, untested GMO heme, seed oils."
+  },
+  {
+    "name": "Isopure",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Protein powder brand named in the corpus."
+  },
+  {
+    "name": "Ivory Soap",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Cited in the skincare documentary via the Bernays soap campaign history; the objection is the industry critique, not a specific ingredient."
+  },
+  {
+    "name": "Johnson & Johnson",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Asbestos found in baby powder; the company buried reports."
+  },
+  {
+    "name": "Kellogg's",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Corn flakes are metabolically identical to sugar; Frosted Flakes and All-Bran test positive for glyphosate."
+  },
+  {
+    "name": "KFC",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Named in the industrial chicken bullet."
+  },
+  {
+    "name": "Kibbles 'n Bits",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "600 ppm PFAS in packaging per the video."
+  },
+  {
+    "name": "Kool-Aid",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Big Tobacco sugary-drink brand."
+  },
+  {
+    "name": "Kraft",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Big Tobacco's sugary-drink empire; the watchlist bullet groups Kraft with Capri Sun, Tang, Hawaiian Punch and Kool-Aid."
+  },
+  {
+    "name": "L'Oreal",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Chemical hair straighteners tied to uterine cancer; octocrylene degrades into an endocrine disruptor."
+  },
+  {
+    "name": "Lunchables",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "In school lunches; glyphosate wheat, nitrates, sodium phosphate."
+  },
+  {
+    "name": "M&M's",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Mars candy named in the corpus; Yellow 6 dye linked to hyperactivity and tumors."
+  },
+  {
+    "name": "Mars",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Controls nearly all grocery candy; Yellow 6 dye; owns Pedigree, Iams, Whiskas and the VCA/BluePearl vet chains; child slave labor in cocoa."
+  },
+  {
+    "name": "McDonald's",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Fries went from beef tallow to seed oils plus dextrose, sodium acid pyrophosphate, natural beef flavor (MSG) and dimethylpolysiloxane; bliss-point engineering."
+  },
+  {
+    "name": "Milky Way",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Mars candy brand named in the watchlist bullet."
+  },
+  {
+    "name": "Monsanto",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Agent Orange, Roundup/glyphosate, 18,400+ cancer lawsuits."
+  },
+  {
+    "name": "Nestle",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Formula marketing killed an estimated 212,000 infants per year; owns Gerber; bought blood cocoa; admitted 60% of its products aren't even healthy."
+  },
+  {
+    "name": "Nexxus",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Unilever dry shampoo with benzene, recalled."
+  },
+  {
+    "name": "Novo Nordisk",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Ozempic condemned: thyroid cancer, gastroparesis, muscle loss, lifelong dependence model."
+  },
+  {
+    "name": "Oatly",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Literally a scam: seed oils, dipotassium phosphate, GI-105 maltose, false environmental claims."
+  },
+  {
+    "name": "Optima Nutrition",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Protein powder brand named in the corpus."
+  },
+  {
+    "name": "OxyContin",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Purdue's opioid product."
+  },
+  {
+    "name": "Ozempic",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Novo Nordisk's drug; condemned in its own video."
+  },
+  {
+    "name": "Pedigree",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Mars kibble brand; Mars also owns the vet clinics that treat the dogs."
+  },
+  {
+    "name": "Pfizer",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Roxarsone arsenic drug used in chicken feed until 2011, as cited in this corpus."
+  },
+  {
+    "name": "Plum Organics",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Baby food with heavy metals."
+  },
+  {
+    "name": "Pond's",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Parabens, BHA, linalool and octinoxate - endocrine disruption."
+  },
+  {
+    "name": "Procter & Gamble",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Bernays propaganda campaigns; cited in the skincare-industry critique."
+  },
+  {
+    "name": "Purdue Pharma",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Marketed opioids as non-addicting; about 1M US overdose deaths."
+  },
+  {
+    "name": "Purina",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Its Kibbles 'n Bits had 600 ppm PFAS in packaging, as cited."
+  },
+  {
+    "name": "Similac",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Abbott formula brand at the center of the 2022 recall."
+  },
+  {
+    "name": "Simply Orange",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Coca-Cola brand sued over PFAS in all-natural juice at 100x the EPA limit."
+  },
+  {
+    "name": "Skittles",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Mars candy; Yellow 6 dye."
+  },
+  {
+    "name": "Slim Fast",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Named both as a junk/diet both-sides brand and as a Glanbia-whey protein powder brand."
+  },
+  {
+    "name": "Snickers",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Mars candy brand named in the watchlist bullet."
+  },
+  {
+    "name": "Starbucks",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Sells coffee as luxury while feeding customers caffeine, a very addictive drug."
+  },
+  {
+    "name": "Suave",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Unilever dry shampoo with benzene, recalled."
+  },
+  {
+    "name": "Sysco",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Frozen processed food supplier behind school lunch degradation."
+  },
+  {
+    "name": "Tang",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Big Tobacco sugary-drink brand."
+  },
+  {
+    "name": "TRESemme",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Unilever dry shampoo with benzene, recalled."
+  },
+  {
+    "name": "Turing",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Daraprim price gouging: $13.50 to $750 per pill overnight."
+  },
+  {
+    "name": "Tyson",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Industrial chicken: antibiotics, fecal-soup processing, chlorine baths, salmonella."
+  },
+  {
+    "name": "Unilever",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Margarine's tallow swapped for seed oils; personal-care chemicals (benzene, BHA, parabens) in its brands."
+  },
+  {
+    "name": "Upside Foods",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Lab-grown meat condemned: fetal bovine serum, immortalized cells, antibiotics."
+  },
+  {
+    "name": "Walmart",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Arbitrarily allowed 4x more arsenic in its own baby products with no justification."
+  },
+  {
+    "name": "Weight Watchers",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Named in the plays-both-sides bullet."
+  },
+  {
+    "name": "Wheat Chex",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Tested positive for glyphosate."
+  },
+  {
+    "name": "Whiskas",
+    "kind": "Brand",
+    "verdict": "BANNED",
+    "note": "Mars pet food brand."
+  },
+  {
+    "name": "Arrowhead Mills (white flour & mixes)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "The Organic Unbleached WHITE flour is ENRICHED (niacin, reduced iron, thiamin mononitrate, riboflavin, folic acid) and the mixes use 'ORGANIC ENRICHED WHEAT FLOUR.' Only the single-ingredient whole-gr"
+  },
+  {
+    "name": "Bell & Evans",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "The products page has an Organic filter but no pasture-raised claim; a third-party FAQ states its chickens 'are not technically pasture-raised.' Fails the pasture prong (the direct quote is third-part"
+  },
+  {
+    "name": "Central Milling (Red Rose line)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Per Central Milling's own FAQ, most Red Rose unbleached flours are enriched."
+  },
+  {
+    "name": "Cooks Venture",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "The company is GONE: it ceased operations in late 2023 and filed Chapter 7 bankruptcy on April 19, 2024."
+  },
+  {
+    "name": "Da-Le Ranch",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "FAQ: 'Are you certified organic?"
+  },
+  {
+    "name": "Eco Acre Farms",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Legally contested, not a clean pass: it charges a membership fee and offers raw butter and cream, which conflicts with DATCP's position on incidental sales and ownership."
+  },
+  {
+    "name": "Eel River Organic Beef",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Production PASSES (certified organic, grass-fed and grass-finished, never feedlot-finished), but the farm markets only on the West Coast (about 250 miles) - no Wisconsin route exists, so it is not ord"
+  },
+  {
+    "name": "Elmwood Stock Farm (eggs)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "The eggs themselves pass both labels (organic, pasture-raised, organic grain feed), but every channel is local: egg CSA, on-farm and farmers market pickup, local delivery around KY and Cincinnati."
+  },
+  {
+    "name": "Farmer Focus",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "USDA Organic and Certified Humane, but the birds are FREE-RANGE (barns plus outside access), not pasture-raised - fails the pasture prong."
+  },
+  {
+    "name": "Farmer Ground Flour",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Composition is ideal (certified organic grains, stone milling, 'unbleached, non bromated, and has nothing added'), but 'We do not sell directly online' - retail-map stores or 1,000 lb+ recurring order"
+  },
+  {
+    "name": "Force of Nature (elk & venison)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "The brand's own FAQ: elk and venison are grass-fed and pasture-raised but 'up to 5% of their diet may include a mix of maize, oats, barley, triticale, rye corn, and palm kernel extract.' Grain at any "
+  },
+  {
+    "name": "Giusto's (conventional SKUs)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "The conventional All-Purpose is 'unbleached enriched flour' and the Semolina is 'produced from enriched Durum Wheat.' Only the Organic 100% Whole Wheat Graham Flour passes - see the conditional Giusto"
+  },
+  {
+    "name": "Gwenyn Hill Farm (chicken)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Chicken is listed only as pasture-raised with no organic claim - fails the organic prong."
+  },
+  {
+    "name": "Hayden Flour Mills",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Perfect milling language (no bleach, bromate or enrichments; stone-milled heritage grain; ships nationwide), but its FAQ admits the grains are NOT certified organic and field borders get a mild herbic"
+  },
+  {
+    "name": "Herd shares / cow shares (raw milk workaround)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "DATCP answers directly: 'Does owning a cow share or herd share qualify as bona fide ownership?"
+  },
+  {
+    "name": "King Arthur Baking (conventional flours)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Unbleached All-Purpose and Bread Flour are ENRICHED ('Unbleached Enriched Hard Wheat Flour..."
+  },
+  {
+    "name": "King Arthur Baking (Organic line)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Organic Bread Flour ingredient statement: certified 100% organic unbleached hard red wheat flour plus certified organic malted barley flour; no niacin, iron or folic acid."
+  },
+  {
+    "name": "Mary's Free Range (Pitman Farms)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Every product found says Free-Range, including the organic whole fryer; no pasture-raised line found - fails the pasture prong."
+  },
+  {
+    "name": "Out-of-state raw milk shipping (any seller)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "ILLEGAL: federal law (21 CFR 1240.61) bans interstate shipment of raw milk for human consumption, and US Wellness's own FAQ confirms raw butter cannot be sold either."
+  },
+  {
+    "name": "Pasturebird",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Genuinely pasture-raised, but supplemental feed is non-GMO corn and soy, NOT organic - fails the organic prong."
+  },
+  {
+    "name": "Polyface Farm (chicken & eggs)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "'We are not USDA certified organic."
+  },
+  {
+    "name": "Primal Pastures (chicken)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "The feed IS certified organic, corn-free and soy-free, and the birds live on pasture with nationwide shipping - but the company deliberately does not pursue organic certification for the meat, and the"
+  },
+  {
+    "name": "US Wellness Meats (chicken)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Pasture-raised with no antibiotics, hormones or GMOs, but NOT certified organic - does not meet the chicken standard."
+  },
+  {
+    "name": "Wheat Montana",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "The Natural White Premium All-Purpose flour is ENRICHED (wheat flour, malted barley flour, niacin, iron, thiamine mononitrate, riboflavin, folic acid) and conventional; the whole wheat lines and berri"
+  },
+  {
+    "name": "White Oak Pastures (chicken & eggs)",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Chickens and laying hens are Certified Non-GMO, NOT organic; hens get a non-GMO grain mix."
+  },
+  {
+    "name": "Wrong Direction Farm",
+    "kind": "Farm or mill",
+    "verdict": "BANNED",
+    "note": "Production PASSES (certified organic grain feed, green-grass pastures), but delivery covers only the Northeast (NY, NJ, PA, New England, DE) - Wisconsin is outside the area."
+  },
+  {
+    "name": "Almond milk",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Mostly water, emulsifiers, gums and oil; about 2% almonds."
+  },
+  {
+    "name": "Breakfast cereal",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Metabolically identical to sugar."
+  },
+  {
+    "name": "Brown rice",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "The videos never endorsed it: The Obesity Conspiracy says traditional cultures ate white rice, NOT brown, to remove phytic acid, which sits in the bran brown rice keeps."
+  },
+  {
+    "name": "Chocolate / cocoa products",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Child-labor cocoa cartel; even fair-trade and natural bars can carry unlisted toxic manufacturing byproducts."
+  },
+  {
+    "name": "Coffee / caffeine",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Starbucks video: caffeine is a very addictive drug sold as luxury."
+  },
+  {
+    "name": "Commercial baby food",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Toxic heavy metals (lead, arsenic, mercury) found in 95% of US baby food tested."
+  },
+  {
+    "name": "Commercial dog kibble",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Rendered byproducts, BHA/BHT, PFAS packaging, melamine history."
+  },
+  {
+    "name": "Commercial infant formula",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Every formula contains seed oils; 32 of 33 brands tested had heavy metals (2023 Bloomberg investigation, as cited)."
+  },
+  {
+    "name": "Corn (all forms)",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "HFCS, maltodextrin, dextrose, corn starch and every corn-derived ingredient are out."
+  },
+  {
+    "name": "Fluoridated water",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Hydrofluorosilicic acid linked in the corpus to lower IQ, fluorosis and bone cancer."
+  },
+  {
+    "name": "Fruit juice",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Metabolically equivalent to soda; fructose without fiber goes straight to the liver and turns to fat."
+  },
+  {
+    "name": "Insects (as food)",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Never insects-as-food."
+  },
+  {
+    "name": "Lab-grown meat",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Fetal bovine serum, immortalized tumor cells, antibiotics, soy growth factors."
+  },
+  {
+    "name": "Margarine",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "The original tallow recipe was replaced with seed oils during WWI shortages."
+  },
+  {
+    "name": "Oat milk",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Seed oils, dipotassium phosphate, maltose with glycemic index 105; gram for gram as much oil as a serving of french fries."
+  },
+  {
+    "name": "Oats, conventional",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Glyphosate found in oat products."
+  },
+  {
+    "name": "Plant-based fake meat",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Soy protein made with hexane, Red #3, TBHQ, seed oils, untested GMO soy leghemoglobin."
+  },
+  {
+    "name": "Plastic-bottled water",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Marked-up tap water; phthalates, BPA/BPS, microplastics found in 93% of bottles tested."
+  },
+  {
+    "name": "Protein powder",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Heavy metals, soy lecithin, sweeteners, spiked whey."
+  },
+  {
+    "name": "Salmon, farmed",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Fed synthetic dye to color the meat."
+  },
+  {
+    "name": "Seed oils (canola, soybean, sunflower, safflower, cottonseed, corn, rapeseed)",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "The #1 villain of the corpus."
+  },
+  {
+    "name": "Soda",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Sugary and addictive; caramel color chemical linked to cancer in mice."
+  },
+  {
+    "name": "Soy milk",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Zero soy in any form."
+  },
+  {
+    "name": "Sugar (all forms)",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Refined sugar drives diabetes, obesity and heart disease in the corpus's account."
+  },
+  {
+    "name": "Tap water",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "PFAS, pharmaceutical residues, lead pipes, fluoride."
+  },
+  {
+    "name": "US fortified ultra-refined flour",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Expressly to be avoided."
+  },
+  {
+    "name": "Wheat, conventional",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Glyphosate sprayed 3 days before harvest as a desiccant; the most popular desiccant in the world."
+  },
+  {
+    "name": "Wine / alcohol",
+    "kind": "Food",
+    "verdict": "BANNED",
+    "note": "Wine flagged for fluoride (2.02 ppm) in the corpus; the contract bans all alcohol in any amount."
+  },
+  {
+    "name": "acesulfame potassium (acesulfame-K)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Linked to thyroid damage and obesity in animals; used in protein powders."
+  },
+  {
+    "name": "agave nectar / agave syrup",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A sugar syrup; sugar in all forms is banned."
+  },
+  {
+    "name": "alcohol (ethanol)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "The contract bans all alcohol in any amount; wine is also flagged in the corpus for fluoride content (2.02 ppm)."
+  },
+  {
+    "name": "almond flour (blanched)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Struck by Carter Oct 27, 2026: redundant."
+  },
+  {
+    "name": "aspartame",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Artificial sweetener; disrupts gut microbiota, causing glucose intolerance."
+  },
+  {
+    "name": "avobenzone",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Chemical sunscreen filter, condemned as a class."
+  },
+  {
+    "name": "beet sugar",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A form of sugar; sugar in all forms is banned."
+  },
+  {
+    "name": "benzene",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Found in dry shampoos (Dove, Nexxus, Suave, TRESemme recalls)."
+  },
+  {
+    "name": "benzoyl peroxide",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Flour bleaching agent named in the Evil Food Supply wheat video (Oct 27, 2026)."
+  },
+  {
+    "name": "BHA",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Causes stomach tumors in rodents; also condemned in skincare."
+  },
+  {
+    "name": "BHT",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Banned in Australia and Japan; liver damage; also a kibble preservative."
+  },
+  {
+    "name": "Blue 1",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Artificial dye."
+  },
+  {
+    "name": "brown rice / brown rice flour",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Per The Obesity Conspiracy, white rice is the endorsed form; brown rice keeps the phytic-acid bran."
+  },
+  {
+    "name": "brown sugar",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A form of sugar; sugar in all forms is banned."
+  },
+  {
+    "name": "caffeine",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A very addictive drug sold as luxury (Starbucks video); the contract bans coffee and caffeinated drinks."
+  },
+  {
+    "name": "cane sugar",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A form of sugar; sugar in all forms is banned."
+  },
+  {
+    "name": "canola oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Seed oil; contains the HNE toxin and manufacturing trans fats; seed oils are the corpus's #1 villain class."
+  },
+  {
+    "name": "caramel color (caramel coloring)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Linked to cancer in rats and mice; the caramel color chemical in soda is linked to cancer in mice."
+  },
+  {
+    "name": "cinnamon (cassia)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Gap check Oct 26, 2026: cassia runs roughly 0.4 to 1.3 percent coumarin, so about one teaspoon can exceed the EFSA daily limit of 0.1 mg per kg body weight, with case reports of raised liver enzymes a"
+  },
+  {
+    "name": "coconut sugar",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A form of sugar; only whole fruit and raw honey may sweeten."
+  },
+  {
+    "name": "conventional wheat flour",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Glyphosate-desiccated grain; conventional wheat fails."
+  },
+  {
+    "name": "corn flour",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Corn-derived; corn in all forms is out."
+  },
+  {
+    "name": "corn meal",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Corn in all forms is out - even though an approved mill (Janie's Mill) sells organic cornmeal."
+  },
+  {
+    "name": "corn oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Seed oil and corn-derived; corn in all forms is out."
+  },
+  {
+    "name": "corn starch",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Corn-derived; named in the avoid list."
+  },
+  {
+    "name": "corn syrup",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Corn-derived sweetener; corn in all forms is out; the contract bans corn syrup expressly."
+  },
+  {
+    "name": "cottonseed oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Seed oil, named in the rule."
+  },
+  {
+    "name": "cream of tartar (potassium bitartrate)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "No video coverage."
+  },
+  {
+    "name": "cultured celery powder (celery powder)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Celery-derived nitrite curing ingredient; the named failing ingredient in Chomps beef sticks despite their genuinely grass-fed beef."
+  },
+  {
+    "name": "dextrose",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Corn-derived sugar; added to McDonald's fries after the tallow switch."
+  },
+  {
+    "name": "dicalcium phosphate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Phosphate additive; the operative checks ban phosphates as a class; present in failed Oatly."
+  },
+  {
+    "name": "dimethylpolysiloxane",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Silicone put in McDonald's fry oil."
+  },
+  {
+    "name": "dipotassium phosphate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Linked to kidney disease and early death; called the next trans fats; present in oat milk."
+  },
+  {
+    "name": "edamame",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Soy in whole-bean form; the contract lists edamame among the banned soy forms."
+  },
+  {
+    "name": "enriched wheat flour (enriched flour)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "US fortified ultra-refined flour is expressly to be avoided; enriched flours fail the farm checks (King Arthur conventional, Arrowhead white, Wheat Montana)."
+  },
+  {
+    "name": "ferric phosphate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Fake-meat ingredient also used in slug pesticides."
+  },
+  {
+    "name": "flour enrichment (added niacin, iron, thiamine mononitrate, riboflavin, folic acid)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Synthetic enrichment is what makes enriched flour fail the mill checks; synthetic vitamins are also condemned in the formula context."
+  },
+  {
+    "name": "fluoride",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Fluoridation is framed in the corpus as toxic-waste disposal; linked to lower IQ, fluorosis and bone cancer."
+  },
+  {
+    "name": "formaldehyde-releasing preservatives",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Named in the skincare condemnation list; the video states 20% of US products contain them."
+  },
+  {
+    "name": "fragrance / parfum",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A trade-secret loophole hiding phthalates; the almond Dr."
+  },
+  {
+    "name": "fructose",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A sugar; fructose without fiber goes straight to the liver and turns to fat."
+  },
+  {
+    "name": "Fruit juice, as a drink (a glass of juice)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Per the videos juice is out entirely as a beverage: fiber stripped, sugar lands like soda (pineapple juice 26 g sugar and 0 g fiber per 8 oz)."
+  },
+  {
+    "name": "glucose",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A sugar; sugar in all forms is banned."
+  },
+  {
+    "name": "glyphosate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Herbicide sprayed on wheat, oats and soy 3 days before harvest; probably causes cancer; found in Cheerios, Frosted Flakes and Wheat Chex."
+  },
+  {
+    "name": "grapeseed oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A seed oil; the corpus bans seed oils as a class."
+  },
+  {
+    "name": "hemp seed oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A seed oil; the named failing ingredient in the Dr."
+  },
+  {
+    "name": "hexane",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Neurotoxic solvent used to extract soy protein for fake meat."
+  },
+  {
+    "name": "high fructose corn syrup (HFCS)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Cheaper, sweeter and absorbed faster than sugar; linked to insulin resistance, obesity and diabetes; also corn-derived."
+  },
+  {
+    "name": "hydrofluorocarbon 152a",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Forever-chemical propellant in Axe body spray, linked to fertility issues and cancer."
+  },
+  {
+    "name": "hydrogenated oils (incl. partially hydrogenated)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Trans-fat oils."
+  },
+  {
+    "name": "linalool",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Listed with parabens, BHA and octinoxate as endocrine disruptors in Pond's and Dermalogica products."
+  },
+  {
+    "name": "maltodextrin",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Twice as sweet as sugar; linked to asthma and Crohn's disease; increases autoimmune risk."
+  },
+  {
+    "name": "maltose",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "The sugar created in oat milk; glycemic index 105 versus 65 for sugar."
+  },
+  {
+    "name": "maple syrup",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A sugar syrup."
+  },
+  {
+    "name": "margarine",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "The original tallow recipe was replaced with seed oils during WWI shortages."
+  },
+  {
+    "name": "molasses",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A sugar syrup/byproduct; sugar in all forms is banned."
+  },
+  {
+    "name": "MSG (monosodium glutamate)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Blocks feelings of fullness; linked in the corpus to brain damage, obesity, tumors and liver damage."
+  },
+  {
+    "name": "natural flavors",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Called a fancy name for MSG requiring hundreds of chemicals; the named failing ingredient in Nutiva's flavored coconut oil."
+  },
+  {
+    "name": "natural smoke (aqueous natural smoke)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A natural-flavor type ingredient; the named failing ingredient in Wild Planet Lightly Smoked sardines - the plain version passes."
+  },
+  {
+    "name": "nitrates (incl. sodium nitrate)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Linked to higher breast and prostate cancer rates; in Lunchables."
+  },
+  {
+    "name": "oats (conventional)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Glyphosate found in oat products; conventional oats fail."
+  },
+  {
+    "name": "octinoxate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Chemical sunscreen filter named in Pond's and Dermalogica products (endocrine disruption)."
+  },
+  {
+    "name": "octocrylene",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Chemical sunscreen filter; degrades into an endocrine disruptor (L'Oreal)."
+  },
+  {
+    "name": "organic cane sugar",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Organic does not save it: this is the named failing ingredient in Wedderspoon Manuka Honey Drops."
+  },
+  {
+    "name": "organic wheat flour (unenriched)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Modern wheat flour."
+  },
+  {
+    "name": "oxybenzone",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Chemical sunscreen filter; the corpus condemns chemical sunscreens as a class (six common chemicals enter the bloodstream above FDA safe levels)."
+  },
+  {
+    "name": "parabens (incl. propylparaben)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Estrogen-mimicking; found in breast tumors; propylparaben is named in Pond's products."
+  },
+  {
+    "name": "pea protein (powder)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Plant-based protein powders are loaded with heavy metals and glyphosate, even organic pea protein."
+  },
+  {
+    "name": "phthalates",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Endocrine disruptors hidden under the word fragrance; linked to falling sperm counts and fertility issues."
+  },
+  {
+    "name": "polysorbate 80",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Named as a standard failing ingredient in pickle brands under the operative checks."
+  },
+  {
+    "name": "potassium benzoate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Benzoate chemical preservative, same class as banned sodium benzoate; standard failing ingredient in the store checks."
+  },
+  {
+    "name": "potassium bromate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Flour treatment chemical classed as a carcinogen; named in the Evil Food Supply wheat video (Oct 27, 2026)."
+  },
+  {
+    "name": "potassium sorbate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Chemical preservative banned by the operative store checks."
+  },
+  {
+    "name": "powdered sugar",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A form of sugar; sugar in all forms is banned."
+  },
+  {
+    "name": "powdered whey / whey protein concentrate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Protein powders are banned, and the formula recipe expressly forbids powdered whey and cheese whey."
+  },
+  {
+    "name": "PTFE / Teflon",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Forever chemical used in makeup; the contract also bars PFAS and Teflon cookware where avoidable."
+  },
+  {
+    "name": "rapeseed oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "The same oil as canola; expressly named in the cook-only-with-these-fats rule."
+  },
+  {
+    "name": "Red 3 (Red #3)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Carcinogen banned in cosmetics; used in plant-based fake meat."
+  },
+  {
+    "name": "Red 40",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Causes hyperactivity, ADHD and aggressive behavior in children; banned or restricted in the UK and Europe."
+  },
+  {
+    "name": "rice bran oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A seed/bran oil; the corpus bans seed oils as a class."
+  },
+  {
+    "name": "saccharin",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Artificial sweetener; disrupts gut microbiota."
+  },
+  {
+    "name": "safflower oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Seed oil, named in the rule."
+  },
+  {
+    "name": "shortening (vegetable shortening)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "A hydrogenated vegetable-oil product; falls under the seed-oil and trans-fat ban."
+  },
+  {
+    "name": "sodium acid pyrophosphate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Causes immune damage in rats; present in McDonald's fries."
+  },
+  {
+    "name": "sodium benzoate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Chemical preservative banned by the operative store checks; a standard failing ingredient in pickle brands."
+  },
+  {
+    "name": "sodium nitrite",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Nitrite curing salt; nitrates are linked in the corpus to higher breast and prostate cancer rates; present in Lunchables."
+  },
+  {
+    "name": "sodium phosphate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Linked to chronic kidney disease; present in Lunchables."
+  },
+  {
+    "name": "sodium propionate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Harms the dopamine system; present in Domino's school pizza."
+  },
+  {
+    "name": "soy (all forms, incl. soybeans)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Phytoestrogens mimic estrogen; GMO soy is coated in glyphosate; phytic acid blocks iron and zinc absorption."
+  },
+  {
+    "name": "soy flour",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Used in soy-based infant formula, which the formula videos condemn."
+  },
+  {
+    "name": "soy lecithin",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Soy in any form is banned; linked to digestive disorders and lower brain function in mice; common in protein powders."
+  },
+  {
+    "name": "soy leghemoglobin",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Untested GMO soy ingredient in plant-based fake meat."
+  },
+  {
+    "name": "soy milk",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Named in the zero-soy rule."
+  },
+  {
+    "name": "soy protein",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Zero soy rule."
+  },
+  {
+    "name": "soy protein isolate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Soy in any form; used in fake meat and formula."
+  },
+  {
+    "name": "soybean oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Seed oil and a soy product; originally a machinery lubricant; the corpus cites a mouse study where a high-soybean-oil diet caused more obesity and diabetes than high fructose."
+  },
+  {
+    "name": "stevia",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Verdict: as harmful or worse than synthetic sweeteners - reduced testosterone and testicular atrophy in rats; disrupts gut bacteria."
+  },
+  {
+    "name": "sucralose",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Artificial sweetener; linked to increased diabetes risk and glucose intolerance."
+  },
+  {
+    "name": "sucrose",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Table sugar by its chemical name; sugar in all forms is banned."
+  },
+  {
+    "name": "sugar",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Sugar in all forms is banned; only whole fruit and raw honey may sweeten."
+  },
+  {
+    "name": "sunflower oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Seed oil."
+  },
+  {
+    "name": "TBHQ",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Preservative; liver inflammation and paralysis; used in fake meat."
+  },
+  {
+    "name": "textured vegetable protein (TVP)",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Soy-based meat-substitute material; zero soy rule."
+  },
+  {
+    "name": "tofu",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Named in the zero-soy rule."
+  },
+  {
+    "name": "tricalcium phosphate",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Phosphate additive; the operative checks ban phosphates as a class; present in failed Oatly."
+  },
+  {
+    "name": "vegetable oil",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Named verbatim in the rejection rule; typically soybean or canola blends."
+  },
+  {
+    "name": "Yellow 5",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Artificial dye; named as a standard failing dye in the operative store checks (most pickle brands fail on it)."
+  },
+  {
+    "name": "Yellow 6",
+    "kind": "Ingredient",
+    "verdict": "BANNED",
+    "note": "Found in M&M's and Skittles; linked to hyperactivity and adrenal and kidney tumors in animal tests."
+  },
+  {
+    "name": "a2 Milk Company Grassfed Whole Milk",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "grass-fed claim not verified 100 percent"
+  },
+  {
+    "name": "Amy's Kitchen Macaroni & Cheese (frozen 9 oz)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "strict dairy rule: cheddar and lowfat milk not from verified 100% grass-fed cows"
+  },
+  {
+    "name": "Annie's Organic Grass-Fed Shells & White Cheddar Mac and Cheese",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium phosphate"
+  },
+  {
+    "name": "Armour Hickory Smoked Summer Sausage, 10 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; corn syrup; dextrose; natural flavoring"
+  },
+  {
+    "name": "Axe Body Spray",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "hydrofluorocarbon 152a"
+  },
+  {
+    "name": "Bakalars Summer Sausage, 12 oz (and Ole Smokies 24 oz)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; dextrose; MSG"
+  },
+  {
+    "name": "Banza Mac & Cheese (Deluxe and powder versions)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "canola oil; sodium/disodium phosphate"
+  },
+  {
+    "name": "Beecher's Mac & Cheese (frozen)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "enriched flour"
+  },
+  {
+    "name": "Bridgford Summer Sausage, 16 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; dextrose; corn syrup solids; BHA/BHT in flavored versions"
+  },
+  {
+    "name": "Burt's Bees Beeswax Lip Balm",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sunflower seed oil"
+  },
+  {
+    "name": "Chapstick Lip Balm",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "seed oils"
+  },
+  {
+    "name": "Cher-Make Original Summer Sausage, 12 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; dextrose"
+  },
+  {
+    "name": "Chomps Original Beef Sticks",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "cultured celery powder"
+  },
+  {
+    "name": "Cooks Venture Chicken (fresh)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "fails the organic prong (feed is non-GMO, not certified organic)"
+  },
+  {
+    "name": "Dr. Bronner's Pure-Castile Bar Soap, Peppermint",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "organic hemp seed oil"
+  },
+  {
+    "name": "Egglife Original Egg White Wraps, 6 ct",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "natural flavor"
+  },
+  {
+    "name": "EPIC Beef Sea Salt + Pepper Protein Bar",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "cultured celery powder"
+  },
+  {
+    "name": "Flow Flow Flavored Spring Water (all flavors)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "Natural flavors (fruit essences/extracts)"
+  },
+  {
+    "name": "Fody Original BBQ Sauce",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "raw cane sugar and molasses (sugar)"
+  },
+  {
+    "name": "Food for Life Ezekiel 4:9 Organic Sprouted Whole Grain Bread, 24 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "soybeans (soy, all forms banned)"
+  },
+  {
+    "name": "Frontera Gourmet Mexican Double Roasted Tomato Salsa, Medium, 16 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "canola oil"
+  },
+  {
+    "name": "Full Circle Peanut Butter Spread, Creamy (Organic)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "organic sugar; palm fruit oil"
+  },
+  {
+    "name": "G Hughes Sugar Free Ketchup",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sucralose; modified cornstarch"
+  },
+  {
+    "name": "Goodles Cheddy Mac",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "disodium phosphate"
+  },
+  {
+    "name": "Great Value Superfine Blanched Almond Flour, 1 lb",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "blanched almond flour"
+  },
+  {
+    "name": "Heinz Organic Tomato Ketchup",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "organic sugar; natural flavoring"
+  },
+  {
+    "name": "Hellmann's Real Mayonnaise",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "soybean oil"
+  },
+  {
+    "name": "Hormel Summer Sausage (Gatherings tray component / 11 oz retail)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; dextrose"
+  },
+  {
+    "name": "Ivory Soap (Procter & Gamble) Ivory Soap",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "(no specific ingredient - the video's objection is industry critique)"
+  },
+  {
+    "name": "Johnson & Johnson Baby Powder",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "asbestos"
+  },
+  {
+    "name": "Johnsonville Original Summer Sausage",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; dextrose; MSG; natural flavoring"
+  },
+  {
+    "name": "Jovial Organic Egg Tagliatelle (brown rice), 9 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "brown rice flour (Carter Oct 25, 2026: no brown rice, never)"
+  },
+  {
+    "name": "Kerrygold Pure Irish Salted Butter",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "strict dairy rule: cows not 100% grass-fed"
+  },
+  {
+    "name": "Klement’s Original Summer Sausage",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; corn syrup; dextrose"
+  },
+  {
+    "name": "Kraft Macaroni & Cheese (baseline)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "enriched flour"
+  },
+  {
+    "name": "L'Oreal L'Oreal products (as cited in the videos)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "chemical hair straighteners; octocrylene"
+  },
+  {
+    "name": "Lakewood Organic Pure Pineapple Juice",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "Pineapple juice (juice category)"
+  },
+  {
+    "name": "Lannoy’s Beef Summer Sausage, 12 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; sugar; dextrose; MSG"
+  },
+  {
+    "name": "Nair Body Spray Hair Removal Spray with Moroccan Argan Oil, 7.5 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "fragrance; BHT; sodium benzoate"
+  },
+  {
+    "name": "Nueske’s Applewood Smoked All-Beef Summer Sausage",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; dextrose"
+  },
+  {
+    "name": "Nutiva Coconut Oil with Buttery Flavor",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "natural flavors (listed as 'Organic Natural Flavours')"
+  },
+  {
+    "name": "Oatly Original Oatmilk",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "rapeseed (canola) oil"
+  },
+  {
+    "name": "Old Wisconsin Original Summer Sausage",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; dextrose"
+  },
+  {
+    "name": "Organic Prairie Jalapeno Summer Sausage, 12 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "cultured celery juice powder; organic honey"
+  },
+  {
+    "name": "Organic Prairie Original Beef Summer Sausage",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "cultured celery juice powder"
+  },
+  {
+    "name": "Organic Prairie Roasted Garlic Beef Summer Sausage",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "cultured celery juice powder; organic honey or dextrose (two label variants in circulation)"
+  },
+  {
+    "name": "Organic Valley Organic Whole Milk",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "strict dairy rule: regular line not 100% grass-fed (brand states this itself); Grassmilk line is the approved one"
+  },
+  {
+    "name": "Organicville Original BBQ Sauce",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "organic agave nectar and organic molasses (sugar)"
+  },
+  {
+    "name": "Pace Chunky Salsa, Mild, 16 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "natural flavoring"
+  },
+  {
+    "name": "Pasturebird Chicken (fresh)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "non-organic corn and soy feed (fails the organic prong)"
+  },
+  {
+    "name": "Pond's Pond's products (as cited in the videos)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "propylparaben; also octinoxate and linalool"
+  },
+  {
+    "name": "Prego Traditional No Sugar Added Pasta Sauce",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "canola oil"
+  },
+  {
+    "name": "Primal Kitchen Mayo made with Avocado Oil",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "eggs (Certified Humane cage-free, not organic pasture-raised)"
+  },
+  {
+    "name": "Primal Kitchen Organic & Unsweetened Classic BBQ Sauce",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "Natural Hickory Smoke Flavor"
+  },
+  {
+    "name": "Primal Kitchen Ranch Dressing",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "egg yolks (not stated organic or pasture-raised)"
+  },
+  {
+    "name": "Raw Farm Raw Cheddar",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "strict dairy rule: feeding not verified 100% grass-fed (brand confirms supplemental feeds; no no-grain claim)"
+  },
+  {
+    "name": "Ray's No Sugar Added Barbecue Sauce, Original",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "modified corn starch, caramel color, natural smoke flavor, natural flavor"
+  },
+  {
+    "name": "Rudi’s Organic Country Morning White Bread, 22 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "cane sugar; sunflower oil"
+  },
+  {
+    "name": "Rudi’s Organic Rocky Mountain Sourdough Bread, 22 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sunflower/safflower oil"
+  },
+  {
+    "name": "Sheboygan Sausage Company Summer Sausage Snack Stick / Shelf Stable Beef Summer Sausage",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; dextrose"
+  },
+  {
+    "name": "Slanker Grass Fed Meats Beef Uncured Summer Sausage",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "celery juice powder"
+  },
+  {
+    "name": "Sparkling ICE Sparkling ICE flavored sparkling water (Strawberry Kiwi; Coconut Pineapple)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "Sucralose (artificial sweetener); also natural flavors and potassium benzoate"
+  },
+  {
+    "name": "Stan’s Artisan Breads Sliced Sourdough Loaf, 24 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "corn meal; enriched conventional flour"
+  },
+  {
+    "name": "StoneRidge Meat & Country Market Summer Sausage, Natural Casing, Pit Smoked Garlic, 16 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; sugar"
+  },
+  {
+    "name": "StoneRidge Meat & Country Market Summer Sausage, Pit Smoked, Natural Casing, 16 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; sugar"
+  },
+  {
+    "name": "The Grain Escape Grain Free Gluten Free White Bread, Paleo, 18.6 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sunflower oil; cane sugar; tapioca dextrose"
+  },
+  {
+    "name": "Thousand Hills Lifetime Grazed Hickory Smoked Summer Sausage, 10 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "celery juice powder; cane sugar"
+  },
+  {
+    "name": "Tyson Boneless Skinless Chicken Breasts (Frozen Bag)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "up to 15% chicken broth solution; natural flavorings; conventional"
+  },
+  {
+    "name": "Unilever (Dove / Nexxus / Suave / TRESemme) Dry Shampoos",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "benzene"
+  },
+  {
+    "name": "Usinger’s All Natural Uncured Beef Summer Sausage, 12 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "celery juice powder; dextrose"
+  },
+  {
+    "name": "Usinger’s Sliced Natural Summer Sausage, 6 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "celery juice powder; dextrose"
+  },
+  {
+    "name": "Vermont Smoke & Cure Uncured Summer Sausage, 6 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "celery powder; sugar; natural flavor"
+  },
+  {
+    "name": "Vollwerth’s Summer Sausage",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; dextrose"
+  },
+  {
+    "name": "Waseda Farms Summer Sausage Garlic (uncured, certified organic grass-fed)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "celery powder; cane sugar"
+  },
+  {
+    "name": "Wedderspoon Manuka Honey Drops",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "organic cane sugar"
+  },
+  {
+    "name": "Wenzel’s Farm Summer Sausage (original), 12 oz",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; sugar; dextrose"
+  },
+  {
+    "name": "West Fork Farmstead Beef Summer Sausage (uncured)",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "cultured celery powder; dextrose; sugar"
+  },
+  {
+    "name": "Wild Planet Sardines, Lightly Smoked",
+    "kind": "Product",
+    "verdict": "BANNED",
+    "note": "aqueous natural smoke"
+  }
+]
