@@ -22,6 +22,7 @@ export function Header() {
           <nav className="ml-auto hidden items-center gap-1 md:flex">
             {TYPES.map((t) => <NavLink key={t.id} to={`/meals/${t.id}`} className={linkCls}>{t.plural}</NavLink>)}
             <NavLink to="/pantry" className={linkCls}>The List</NavLink>
+            <NavLink to="/ask" className={linkCls}>Ask the List</NavLink>
             <NavLink to="/about" className={linkCls}>About</NavLink>
           </nav>
           <button className="ml-auto rounded-lg p-2 hover:bg-pine-50 md:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
@@ -32,6 +33,7 @@ export function Header() {
           <nav className="flex flex-col gap-1 pb-4 md:hidden">
             {TYPES.map((t) => <NavLink key={t.id} to={`/meals/${t.id}`} className={linkCls} onClick={() => setOpen(false)}>{t.plural}</NavLink>)}
             <NavLink to="/pantry" className={linkCls} onClick={() => setOpen(false)}>The List</NavLink>
+            <NavLink to="/ask" className={linkCls} onClick={() => setOpen(false)}>Ask the List</NavLink>
             <NavLink to="/about" className={linkCls} onClick={() => setOpen(false)}>About</NavLink>
             <NavLink to="/contact" className={linkCls} onClick={() => setOpen(false)}>Contact</NavLink>
           </nav>
