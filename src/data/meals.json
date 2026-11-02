@@ -3545,5 +3545,95 @@
       "Sourdough",
       "Traditional"
     ]
+  },
+  {
+    "id": "carob-peanut-butter-cups",
+    "name": "Carob Peanut Butter Cups",
+    "description": "The Reese’s replication, built on the two swaps that pass: carob stands in for chocolate and raw honey stands in for sugar. A carob and coconut oil shell, a peanut butter and honey filling, frozen in a muffin tin. Every ingredient is on the list.",
+    "difficulty": "Easy",
+    "mealType": "Treat",
+    "servings": 12,
+    "time": {
+      "prep": 15,
+      "cook": 0,
+      "total": 55
+    },
+    "tags": [
+      "dessert",
+      "no-bake",
+      "kid-friendly",
+      "make-ahead"
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein": 5,
+      "fat": 18,
+      "carbs": 18,
+      "fiber": 4
+    },
+    "ingredients": [
+      {
+        "item": "Carob powder, unsweetened",
+        "amount": "1 cup",
+        "dbItem": "carob powder (unsweetened)",
+        "wm": "carob powder",
+        "note": "the chocolate swap; unsweetened only",
+        "anchor": "carob-powder-unsweetened",
+        "searchTerm": "carob powder"
+      },
+      {
+        "item": "Nutiva Organic Virgin Coconut Oil",
+        "amount": "1/2 cup, melted",
+        "dbItem": "Nutiva Organic Virgin Coconut Oil",
+        "wm": "Nutiva Organic Virgin Coconut Oil",
+        "anchor": "nutiva-organic-virgin-coconut-oil",
+        "searchTerm": "nutiva organic virgin coconut oil"
+      },
+      {
+        "item": "Nate's Raw & Unfiltered Honey",
+        "amount": "5 tbsp total (3 for the shell, 2 for the filling)",
+        "dbItem": "Nate's Raw & Unfiltered Honey",
+        "wm": "Nate's Raw & Unfiltered Honey",
+        "note": "raw honey is the sugar swap; no other sweetener passes",
+        "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+        "searchTerm": "nate's raw & unfiltered honey"
+      },
+      {
+        "item": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
+        "amount": "3/4 cup",
+        "dbItem": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
+        "wm": "Santa Cruz Organic Peanut Butter",
+        "note": "organic is the passing lane for peanut butter",
+        "anchor": "santa-cruz-organic-peanut-butter-dark-roasted-creamy",
+        "searchTerm": "santa cruz organic peanut butter, dark roasted creamy"
+      },
+      {
+        "item": "Vanilla extract, pure",
+        "amount": "1 tsp",
+        "dbItem": "vanilla extract",
+        "wm": "vanilla extract",
+        "note": "pure extract only; imitation is not covered",
+        "anchor": "vanilla-extract",
+        "searchTerm": "vanilla extract"
+      },
+      {
+        "item": "Plain sea salt",
+        "amount": "1/4 tsp plus a pinch",
+        "dbItem": "salt (plain sea salt)",
+        "wm": "salt",
+        "anchor": "salt-plain-sea-salt",
+        "searchTerm": "salt"
+      }
+    ],
+    "steps": [
+      "Whisk the carob powder, melted coconut oil, 3 tbsp of the honey, the vanilla, and a pinch of salt until smooth and glossy. That is the shell.",
+      "Line a muffin tin with paper liners. Spoon about 1 tbsp of shell mix into each liner and tilt to coat the bottom and a little up the sides. Freeze 10 minutes.",
+      "Stir the peanut butter with the remaining 2 tbsp honey and the 1/4 tsp salt. Spoon about 1 tbsp per cup and flatten it into a disc that stops short of the liner edge. Freeze 10 minutes.",
+      "Cover each cup with the remaining shell mix and smooth the tops. Freeze 20 to 30 minutes, until firm.",
+      "Store in the fridge and eat them cold. Coconut oil softens at room temperature, so the fridge is what keeps the snap.",
+      "Size note: as minis in a mini muffin tin (24 cups) each one lands near 120 kcal, the honest match for a real Reese’s cup."
+    ],
+    "anchor": "",
+    "searchTerm": ""
   }
 ]

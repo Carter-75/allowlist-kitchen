@@ -1109,7 +1109,8 @@
     "anchor": "carob-powder-unsweetened",
     "search": "carob powder",
     "usedIn": [
-      "Carob Brownies"
+      "Carob Brownies",
+      "Carob Peanut Butter Cups"
     ]
   },
   {
@@ -1505,7 +1506,8 @@
       "Homemade Mayo",
       "Ranch-Style Dressing",
       "Honey BBQ Sauce",
-      "Einkorn Sourdough Bread"
+      "Einkorn Sourdough Bread",
+      "Carob Peanut Butter Cups"
     ]
   },
   {
@@ -1553,7 +1555,8 @@
       "Honey Vanilla Cake",
       "Homemade Honey Vanilla Ice Cream",
       "Ice Cream Cake",
-      "Rice Pudding with Honey and Cinnamon"
+      "Rice Pudding with Honey and Cinnamon",
+      "Carob Peanut Butter Cups"
     ]
   },
   {
@@ -1999,7 +2002,8 @@
       "Cheddar, Fruit and Cashew Lunch Plate",
       "Crispy Chicken Tenders with Honey Mustard",
       "Pork Chops with Baked Apples",
-      "Honey BBQ Sauce"
+      "Honey BBQ Sauce",
+      "Carob Peanut Butter Cups"
     ]
   },
   {
@@ -2036,7 +2040,9 @@
     "note": "",
     "anchor": "nutiva-organic-virgin-coconut-oil",
     "search": "nutiva organic virgin coconut oil",
-    "usedIn": []
+    "usedIn": [
+      "Carob Peanut Butter Cups"
+    ]
   },
   {
     "name": "Organic Prairie 100% Grassfed Beef Liver",
@@ -2174,7 +2180,9 @@
     "note": "",
     "anchor": "santa-cruz-organic-peanut-butter-dark-roasted-creamy",
     "search": "santa cruz organic peanut butter, dark roasted creamy",
-    "usedIn": []
+    "usedIn": [
+      "Carob Peanut Butter Cups"
+    ]
   },
   {
     "name": "Saratoga Sparkling Spring Water, glass bottle",
