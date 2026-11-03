@@ -1834,6 +1834,13 @@
     "note": "sunflower seed oil"
   },
   {
+    "name": "Casa Rosa Farms Beef Summer Sausage",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "sodium nitrite; sugar; brown sugar"
+  },
+  {
     "name": "Chapstick Lip Balm",
     "kind": "Product",
     "group": "other",
@@ -2044,6 +2051,13 @@
     "note": "sodium nitrite; sugar; dextrose; MSG"
   },
   {
+    "name": "Maui Nui Venison Red Sea Salt & Pink Peppercorn Summer Sausage, 12 oz",
+    "kind": "Product",
+    "group": "vegetables",
+    "verdict": "BANNED",
+    "note": "cane sugar; celery powder; cherry powder"
+  },
+  {
     "name": "Miracle Noodle Egg White Noodles, 7 oz",
     "kind": "Product",
     "group": "meat",
@@ -2112,6 +2126,13 @@
     "group": "meat",
     "verdict": "BANNED",
     "note": "sodium nitrite; dextrose"
+  },
+  {
+    "name": "Olympia Provisions Summer Sausage, 12 oz",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "dextrose; Swiss chard powder; natural flavors"
   },
   {
     "name": "Organic Prairie Jalapeno Summer Sausage, 12 oz",
