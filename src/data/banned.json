@@ -1757,6 +1757,13 @@
     "note": "grass-fed claim not verified 100 percent"
   },
   {
+    "name": "Alderspring Ranch Summer Sausage",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "honey; celery juice powder"
+  },
+  {
     "name": "Amy's Kitchen Macaroni & Cheese (frozen 9 oz)",
     "kind": "Product",
     "group": "dairy",
@@ -1813,6 +1820,13 @@
     "note": "sodium nitrite; dextrose; corn syrup solids; BHA/BHT in flavored versions"
   },
   {
+    "name": "BUFF Bison Summer Sausage",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "maple syrup; celery extract"
+  },
+  {
     "name": "Burt's Bees Beeswax Lip Balm",
     "kind": "Product",
     "group": "other",
@@ -1853,6 +1867,13 @@
     "group": "other",
     "verdict": "BANNED",
     "note": "organic hemp seed oil"
+  },
+  {
+    "name": "Driftless Provisions Uncured Summer Sausage",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "dextrose; Swiss chard powder"
   },
   {
     "name": "Egglife Original Egg White Wraps, 6 ct",
@@ -2037,6 +2058,34 @@
     "note": "fragrance; BHT; sodium benzoate"
   },
   {
+    "name": "Nebraska Bison Summer Sausage",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "cultured celery juice powder; sugar"
+  },
+  {
+    "name": "Niman Ranch Grass-Fed Summer Sausage",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "dextrose; sugar; sodium nitrite"
+  },
+  {
+    "name": "NorthStar Bison Beef Summer Sausage, 12 oz",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "raw honey"
+  },
+  {
+    "name": "NorthStar Bison Elk Summer Sausage, 12 oz",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "honey"
+  },
+  {
     "name": "Nueske’s Applewood Smoked All-Beef Summer Sausage",
     "kind": "Product",
     "group": "meat",
@@ -2177,6 +2226,20 @@
     "note": "sunflower/safflower oil"
   },
   {
+    "name": "San Rafael Valley Summer Sausage",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "corn syrup solids; dextrose; sodium nitrite"
+  },
+  {
+    "name": "Seven Sons Farms Beef Summer Sausage (Sugar Free), 12 oz",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "celery powder"
+  },
+  {
     "name": "Sheboygan Sausage Company Summer Sausage Snack Stick / Shelf Stable Beef Summer Sausage",
     "kind": "Product",
     "group": "meat",
@@ -2212,6 +2275,13 @@
     "note": "corn meal; enriched conventional flour"
   },
   {
+    "name": "Starry Nights Farm Summer Sausage",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "maple sugar; celery juice powder"
+  },
+  {
     "name": "StoneRidge Meat & Country Market Summer Sausage, Natural Casing, Pit Smoked Garlic, 16 oz",
     "kind": "Product",
     "group": "vegetables",
@@ -2238,6 +2308,13 @@
     "group": "meat",
     "verdict": "BANNED",
     "note": "celery juice powder; cane sugar"
+  },
+  {
+    "name": "Trinity Farms Summer Sausage, 16 oz",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "maple syrup"
   },
   {
     "name": "Tyson Boneless Skinless Chicken Breasts (Frozen Bag)",
@@ -2315,5 +2392,12 @@
     "group": "meat",
     "verdict": "BANNED",
     "note": "aqueous natural smoke"
+  },
+  {
+    "name": "Wisconsin Meadows Summer Sausage",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "BANNED",
+    "note": "celery powder"
   }
 ]

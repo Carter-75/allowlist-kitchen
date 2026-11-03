@@ -2396,6 +2396,16 @@
     "usedIn": []
   },
   {
+    "name": "US Wellness Meats Beef Salami",
+    "kind": "Product",
+    "group": "meat",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "us-wellness-meats-beef-salami-8-oz",
+    "search": "us wellness meats beef salami",
+    "usedIn": []
+  },
+  {
     "name": "US Wellness Meats Beef Summer Sausage",
     "kind": "Product",
     "group": "meat",
