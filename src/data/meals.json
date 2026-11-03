@@ -3635,5 +3635,274 @@
     ],
     "anchor": "",
     "searchTerm": ""
+  },
+  {
+    "id": "peanut-butter-bowl",
+    "name": "Peanut Butter Bowl",
+    "description": "A thick frozen banana and peanut butter base under sliced fruit, coconut, and pumpkin seeds, finished with two sauces that both pass: a peanut butter sauce thinned with Grassmilk milk and a warm carob sauce. Every topping is on the list.",
+    "difficulty": "Easy",
+    "mealType": "Breakfast",
+    "servings": 2,
+    "time": {
+      "prep": 12,
+      "cook": 0,
+      "total": 12
+    },
+    "tags": [
+      "breakfast",
+      "no-bake",
+      "bowl",
+      "high-protein"
+    ],
+    "nutrition": {
+      "calories": 680,
+      "protein": 16,
+      "fat": 42,
+      "carbs": 68,
+      "fiber": 11
+    },
+    "ingredients": [
+      {
+        "item": "Organic bananas",
+        "amount": "3 (2 frozen for the base, 1 sliced on top)",
+        "dbItem": "Bananas, organic",
+        "wm": "organic bananas",
+        "anchor": "bananas-organic",
+        "searchTerm": "bananas, organic"
+      },
+      {
+        "item": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
+        "amount": "1/4 cup (2 tbsp for the base, 2 tbsp for the sauce)",
+        "dbItem": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
+        "wm": "Santa Cruz Organic Peanut Butter",
+        "note": "organic is the passing lane for peanut butter",
+        "anchor": "santa-cruz-organic-peanut-butter-dark-roasted-creamy",
+        "searchTerm": "santa cruz organic peanut butter, dark roasted creamy"
+      },
+      {
+        "item": "Organic Valley Grassmilk Organic Whole Milk",
+        "amount": "1/2 cup (1/4 for the base, 1/4 for the sauce)",
+        "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+        "wm": "Organic Valley Grassmilk Organic Whole Milk",
+        "anchor": "organic-valley-grassmilk-organic-whole-milk",
+        "searchTerm": "valley grassmilk organic whole milk"
+      },
+      {
+        "item": "Nate's Raw & Unfiltered Honey",
+        "amount": "3 tbsp (1 for the base, 2 for the sauces)",
+        "dbItem": "Nate's Raw & Unfiltered Honey",
+        "wm": "Nate's Raw & Unfiltered Honey",
+        "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+        "searchTerm": "nate's raw & unfiltered honey"
+      },
+      {
+        "item": "Carob powder, unsweetened",
+        "amount": "1/4 cup (carob sauce)",
+        "dbItem": "carob powder (unsweetened)",
+        "wm": "carob powder",
+        "anchor": "carob-powder-unsweetened",
+        "searchTerm": "carob powder"
+      },
+      {
+        "item": "Nutiva Organic Virgin Coconut Oil",
+        "amount": "2 tbsp, melted (carob sauce)",
+        "dbItem": "Nutiva Organic Virgin Coconut Oil",
+        "wm": "Nutiva Organic Virgin Coconut Oil",
+        "anchor": "nutiva-organic-virgin-coconut-oil",
+        "searchTerm": "nutiva organic virgin coconut oil"
+      },
+      {
+        "item": "Strawberries, sliced",
+        "amount": "1/2 cup",
+        "dbItem": "strawberries",
+        "wm": "strawberries",
+        "note": "organic is the lane, berries are a spray-heavy crop",
+        "anchor": "strawberries",
+        "searchTerm": "strawberries"
+      },
+      {
+        "item": "Shredded coconut, unsweetened",
+        "amount": "2 tbsp",
+        "dbItem": "shredded coconut (unsweetened)",
+        "wm": "shredded coconut unsweetened",
+        "note": "single ingredient and unsulfured, that is the passing form",
+        "anchor": "shredded-coconut-unsweetened",
+        "searchTerm": "shredded coconut"
+      },
+      {
+        "item": "Pumpkin seeds (pepitas)",
+        "amount": "1 tbsp",
+        "dbItem": "pumpkin seeds (pepitas)",
+        "wm": "pumpkin seeds",
+        "note": "raw or dry roasted; oil-roasted fails",
+        "anchor": "pumpkin-seeds-pepitas",
+        "searchTerm": "pumpkin seeds"
+      },
+      {
+        "item": "Plain sea salt",
+        "amount": "1 pinch (carob sauce)",
+        "dbItem": "salt (plain sea salt)",
+        "wm": "salt",
+        "anchor": "salt-plain-sea-salt",
+        "searchTerm": "salt"
+      }
+    ],
+    "steps": [
+      "Peanut butter sauce: whisk 2 tbsp of the peanut butter with 1 tbsp of the honey and 1/4 cup warm milk until it pours like a sauce. Set aside.",
+      "Carob sauce: whisk the carob powder, melted coconut oil, 1 tbsp honey, and the pinch of salt until glossy. Keep it warm so it stays pourable.",
+      "Base: blend the 2 frozen bananas with 2 tbsp peanut butter, 1 tbsp honey, and 1/4 cup milk until thick like soft serve. Add milk a spoon at a time only if the blender stalls; the base should hold a swirl.",
+      "Split the base between two bowls. Arrange the banana slices and strawberries on top.",
+      "Scatter the shredded coconut and pumpkin seeds, then drizzle both sauces over everything, heavy."
+    ]
+  },
+  {
+    "id": "acai-bowl",
+    "name": "Acai Bowl",
+    "description": "Unsweetened acai blended with frozen banana and coconut water, topped with fresh fruit, coconut, almonds, and pumpkin seeds, and drizzled with peanut butter sauce and carob sauce. The cafe version fails on the sweetened acai blend; this one sweetens with banana and raw honey only.",
+    "difficulty": "Easy",
+    "mealType": "Breakfast",
+    "servings": 1,
+    "time": {
+      "prep": 10,
+      "cook": 0,
+      "total": 10
+    },
+    "tags": [
+      "breakfast",
+      "no-bake",
+      "bowl",
+      "fruit"
+    ],
+    "nutrition": {
+      "calories": 790,
+      "protein": 14,
+      "fat": 44,
+      "carbs": 104,
+      "fiber": 16
+    },
+    "ingredients": [
+      {
+        "item": "Acai, unsweetened (frozen puree packs)",
+        "amount": "2 packs, about 7 oz total",
+        "dbItem": "Acai, unsweetened",
+        "wm": "acai puree unsweetened",
+        "note": "check the packet: acai puree and nothing else; sweetened blends fail on sugar",
+        "anchor": "acai-unsweetened",
+        "searchTerm": "acai, unsweetened"
+      },
+      {
+        "item": "Organic bananas",
+        "amount": "1 1/2 (1 frozen for the base, 1/2 sliced on top)",
+        "dbItem": "Bananas, organic",
+        "wm": "organic bananas",
+        "anchor": "bananas-organic",
+        "searchTerm": "bananas, organic"
+      },
+      {
+        "item": "Coconut water, plain",
+        "amount": "1/4 cup",
+        "dbItem": "coconut water",
+        "wm": "coconut water",
+        "note": "plain only, no added sugar",
+        "anchor": "coconut-water",
+        "searchTerm": "coconut water"
+      },
+      {
+        "item": "Nate's Raw & Unfiltered Honey",
+        "amount": "2 tbsp plus 2 tsp (base and the two sauces)",
+        "dbItem": "Nate's Raw & Unfiltered Honey",
+        "wm": "Nate's Raw & Unfiltered Honey",
+        "anchor": "nate-s-raw-unfiltered-honey-16-oz",
+        "searchTerm": "nate's raw & unfiltered honey"
+      },
+      {
+        "item": "Strawberries, sliced",
+        "amount": "1/2 cup",
+        "dbItem": "strawberries",
+        "wm": "strawberries",
+        "anchor": "strawberries",
+        "searchTerm": "strawberries"
+      },
+      {
+        "item": "Blueberries",
+        "amount": "1/4 cup",
+        "dbItem": "blueberries",
+        "wm": "blueberries",
+        "anchor": "blueberries",
+        "searchTerm": "blueberries"
+      },
+      {
+        "item": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
+        "amount": "2 tbsp (peanut butter sauce)",
+        "dbItem": "Santa Cruz Organic Peanut Butter, Dark Roasted Creamy",
+        "wm": "Santa Cruz Organic Peanut Butter",
+        "anchor": "santa-cruz-organic-peanut-butter-dark-roasted-creamy",
+        "searchTerm": "santa cruz organic peanut butter, dark roasted creamy"
+      },
+      {
+        "item": "Organic Valley Grassmilk Organic Whole Milk",
+        "amount": "2 tbsp, warm (peanut butter sauce)",
+        "dbItem": "Organic Valley Grassmilk Organic Whole Milk",
+        "wm": "Organic Valley Grassmilk Organic Whole Milk",
+        "anchor": "organic-valley-grassmilk-organic-whole-milk",
+        "searchTerm": "valley grassmilk organic whole milk"
+      },
+      {
+        "item": "Carob powder, unsweetened",
+        "amount": "2 tbsp (carob sauce)",
+        "dbItem": "carob powder (unsweetened)",
+        "wm": "carob powder",
+        "anchor": "carob-powder-unsweetened",
+        "searchTerm": "carob powder"
+      },
+      {
+        "item": "Nutiva Organic Virgin Coconut Oil",
+        "amount": "1 tbsp, melted (carob sauce)",
+        "dbItem": "Nutiva Organic Virgin Coconut Oil",
+        "wm": "Nutiva Organic Virgin Coconut Oil",
+        "anchor": "nutiva-organic-virgin-coconut-oil",
+        "searchTerm": "nutiva organic virgin coconut oil"
+      },
+      {
+        "item": "Shredded coconut, unsweetened",
+        "amount": "2 tbsp",
+        "dbItem": "shredded coconut (unsweetened)",
+        "wm": "shredded coconut unsweetened",
+        "anchor": "shredded-coconut-unsweetened",
+        "searchTerm": "shredded coconut"
+      },
+      {
+        "item": "Almonds, raw whole, chopped",
+        "amount": "1 tbsp",
+        "dbItem": "almonds (raw, whole)",
+        "wm": "raw almonds",
+        "note": "whole raw almonds are the passing form; blanched almond flour is banned",
+        "anchor": "almonds-raw-whole",
+        "searchTerm": "almonds"
+      },
+      {
+        "item": "Pumpkin seeds (pepitas)",
+        "amount": "1 tbsp",
+        "dbItem": "pumpkin seeds (pepitas)",
+        "wm": "pumpkin seeds",
+        "anchor": "pumpkin-seeds-pepitas",
+        "searchTerm": "pumpkin seeds"
+      },
+      {
+        "item": "Plain sea salt",
+        "amount": "1 pinch (carob sauce)",
+        "dbItem": "salt (plain sea salt)",
+        "wm": "salt",
+        "anchor": "salt-plain-sea-salt",
+        "searchTerm": "salt"
+      }
+    ],
+    "steps": [
+      "Peanut butter sauce: whisk the peanut butter with 1 tsp of the honey and the warm milk until pourable. Set aside.",
+      "Carob sauce: whisk the carob powder, melted coconut oil, 1 tsp honey, and the pinch of salt until glossy. Keep warm.",
+      "Base: run the acai packs under warm water for 5 seconds, break them into the blender, and add the frozen banana, 2 tbsp honey, and the coconut water. Blend until thick and smooth, tamping down as needed. It should be thicker than a smoothie.",
+      "Spoon into a bowl. Arrange the banana slices, strawberries, and blueberries in rows on top.",
+      "Scatter the shredded coconut, chopped almonds, and pumpkin seeds, then drizzle both sauces over the top."
+    ]
   }
 ]

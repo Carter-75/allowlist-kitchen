@@ -510,6 +510,18 @@
     "usedIn": []
   },
   {
+    "name": "Acai, unsweetened",
+    "kind": "Food",
+    "group": "fruit",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "acai-unsweetened",
+    "search": "acai, unsweetened",
+    "usedIn": [
+      "Acai Bowl"
+    ]
+  },
+  {
     "name": "Bananas, organic",
     "kind": "Food",
     "group": "fruit",
@@ -517,7 +529,10 @@
     "note": "",
     "anchor": "bananas-organic",
     "search": "bananas, organic",
-    "usedIn": []
+    "usedIn": [
+      "Peanut Butter Bowl",
+      "Acai Bowl"
+    ]
   },
   {
     "name": "Beef",
@@ -966,7 +981,9 @@
     "note": "",
     "anchor": "almonds-raw-whole",
     "search": "almonds",
-    "usedIn": []
+    "usedIn": [
+      "Acai Bowl"
+    ]
   },
   {
     "name": "avocado (fresh fruit)",
@@ -1068,7 +1085,9 @@
     "note": "",
     "anchor": "blueberries",
     "search": "blueberries",
-    "usedIn": []
+    "usedIn": [
+      "Acai Bowl"
+    ]
   },
   {
     "name": "butter",
@@ -1110,7 +1129,9 @@
     "search": "carob powder",
     "usedIn": [
       "Carob Brownies",
-      "Carob Peanut Butter Cups"
+      "Carob Peanut Butter Cups",
+      "Peanut Butter Bowl",
+      "Acai Bowl"
     ]
   },
   {
@@ -1160,7 +1181,9 @@
     "note": "",
     "anchor": "coconut-water",
     "search": "coconut water",
-    "usedIn": []
+    "usedIn": [
+      "Acai Bowl"
+    ]
   },
   {
     "name": "cod liver oil",
@@ -1442,7 +1465,10 @@
     "note": "",
     "anchor": "pumpkin-seeds-pepitas",
     "search": "pumpkin seeds",
-    "usedIn": []
+    "usedIn": [
+      "Peanut Butter Bowl",
+      "Acai Bowl"
+    ]
   },
   {
     "name": "raw honey",
@@ -1507,7 +1533,9 @@
       "Ranch-Style Dressing",
       "Honey BBQ Sauce",
       "Einkorn Sourdough Bread",
-      "Carob Peanut Butter Cups"
+      "Carob Peanut Butter Cups",
+      "Peanut Butter Bowl",
+      "Acai Bowl"
     ]
   },
   {
@@ -1518,7 +1546,10 @@
     "note": "",
     "anchor": "shredded-coconut-unsweetened",
     "search": "shredded coconut",
-    "usedIn": []
+    "usedIn": [
+      "Peanut Butter Bowl",
+      "Acai Bowl"
+    ]
   },
   {
     "name": "sodium chloride",
@@ -1539,6 +1570,19 @@
     "anchor": "spring-water-natural",
     "search": "spring water",
     "usedIn": []
+  },
+  {
+    "name": "strawberries",
+    "kind": "Ingredient",
+    "group": "other",
+    "verdict": "APPROVED",
+    "note": "",
+    "anchor": "strawberries",
+    "search": "strawberries",
+    "usedIn": [
+      "Peanut Butter Bowl",
+      "Acai Bowl"
+    ]
   },
   {
     "name": "vanilla extract",
@@ -2003,7 +2047,9 @@
       "Crispy Chicken Tenders with Honey Mustard",
       "Pork Chops with Baked Apples",
       "Honey BBQ Sauce",
-      "Carob Peanut Butter Cups"
+      "Carob Peanut Butter Cups",
+      "Peanut Butter Bowl",
+      "Acai Bowl"
     ]
   },
   {
@@ -2041,7 +2087,9 @@
     "anchor": "nutiva-organic-virgin-coconut-oil",
     "search": "nutiva organic virgin coconut oil",
     "usedIn": [
-      "Carob Peanut Butter Cups"
+      "Carob Peanut Butter Cups",
+      "Peanut Butter Bowl",
+      "Acai Bowl"
     ]
   },
   {
@@ -2084,7 +2132,9 @@
       "Homemade Honey Vanilla Ice Cream",
       "Ice Cream Cake",
       "Rice Pudding with Honey and Cinnamon",
-      "Ranch-Style Dressing"
+      "Ranch-Style Dressing",
+      "Peanut Butter Bowl",
+      "Acai Bowl"
     ]
   },
   {
@@ -2181,7 +2231,9 @@
     "anchor": "santa-cruz-organic-peanut-butter-dark-roasted-creamy",
     "search": "santa cruz organic peanut butter, dark roasted creamy",
     "usedIn": [
-      "Carob Peanut Butter Cups"
+      "Carob Peanut Butter Cups",
+      "Peanut Butter Bowl",
+      "Acai Bowl"
     ]
   },
   {
