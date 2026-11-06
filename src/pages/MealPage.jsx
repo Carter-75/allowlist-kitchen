@@ -61,7 +61,7 @@ export default function MealPage() {
                 <li key={i.item} className="py-2.5">
                   <div className="flex items-baseline justify-between gap-2">
                     <span className="font-semibold">{i.item}</span>
-                    <span className="font-display text-lg font-black text-pine-700">{i.oz !== null ? `${i.oz} oz` : }</span>
+                    <span className="font-display text-lg font-black text-pine-700">{i.oz !== null ? `${i.oz} oz` : 'pantry'}</span>
                   </div>
                   <div className="mt-0.5 flex items-baseline justify-between gap-2">
                     <span className="text-sm text-ink/60">Use: {i.practical}</span>
