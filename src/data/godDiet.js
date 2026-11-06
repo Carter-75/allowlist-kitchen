@@ -12,7 +12,7 @@ export const POOL = [
   { item: 'Cheese', oz: 10, note: 'Pasteurized 100% grass-fed pressed cheese. See the cheese note on the Ingredients page.' },
   { item: 'Beef tallow', oz: 4, note: 'US Wellness. The only cooking fat, and only at meals where the beef cooks.' },
   { item: 'Celtic sea salt', oz: null, note: 'On the beef while it cooks. No set weight.' },
-  { item: 'Water', oz: null, note: 'The drink. No set weight.' },
+  { item: 'Water', oz: null, note: 'Spring water in glass bottles only, still or sparkling. No set weight.' },
 ];
 
 export const INGREDIENTS = [
@@ -73,8 +73,8 @@ export const INGREDIENTS = [
   {
     name: 'Water',
     weeklyOz: null,
-    source: 'Water',
-    detail: 'The drink at every meal, and the cooking liquid for the soups.',
+    source: 'Glass-bottle spring water: Mountain Valley, Saratoga, S.Pellegrino, Lauretana',
+    detail: 'The drink at every meal, and the cooking liquid for the soups. Glass bottles only: plastic does not pass, and aluminum bottles are resin-lined, so the water sits against a liner instead of the bottle. The accepted waters: Mountain Valley still (the water Carter settled on Oct 21, 2026, and one of the three brands the videos name as passing, with S.Pellegrino and Lauretana), and Saratoga spring water in the 28 oz glass bottle, still or sparkling (the bottle from Carter's photo; it passes by the same spring-water-in-glass rule and he ruled both versions fine on Nov 1, 2026). Nothing flavored, nothing sweetened, nothing added.',
   },
 ];
 
@@ -189,7 +189,7 @@ export const BUY = {
   'Mustard': { label: 'Amazon (plain prepared mustard)', url: 'https://www.amazon.com/s?k=plain+organic+yellow+mustard' },
   'Mayo (homemade)': { label: 'Amazon (100% avocado oil, for homemade mayo)', url: 'https://www.amazon.com/s?k=100%25+pure+avocado+oil' },
   'Seasonings': { label: 'Amazon (plain single spices)', url: 'https://www.amazon.com/s?k=organic+paprika+cinnamon+garlic+powder' },
-  'Water': null,
+  'Water': { label: 'Amazon (Mountain Valley, glass bottles)', url: 'https://www.amazon.com/s?k=Mountain+Valley+spring+water+glass+bottles' },
 };
 
 // Estimated costs. Prices checked November 5, 2026. These are estimates for
@@ -447,6 +447,7 @@ export function bulkOrder(weeks, eggPackSize = 12) {
         `Primal Kitchen Organic Unsweetened Ketchup: ${ketchupBottles} squeeze bottles (18.5 oz, about 37 tbsp each): ${roll(ketchupBottles * 37, ketchupUsed, 'tbsp')}.`,
         `Homemade mayo supplies: ${mayoBatches} batches across the block, so ${mayoBatches} cups of 100% avocado oil (1 cup per batch, about 17 tbsp of mayo per batch): ${roll(mayoBatches * 17, mayoUsed, 'tbsp')}. The yolks come from the egg cartons above, and the whites get folded into that week's eggs so no egg is wasted.`,
         `Plain prepared mustard: ${mustardUsed} tsp used in the block, so one plain bottle (mustard seed, vinegar, water, salt, nothing else) covers many blocks. Celtic sea salt and the plain spices (paprika, cinnamon, garlic powder, onion powder, black pepper) ride along as they run low.`,
+        'Drinks: spring water in glass bottles only, by the case as needed (no set weekly amount): Mountain Valley still, Saratoga still or sparkling in the 28 oz glass bottle, S.Pellegrino, or Lauretana. Plastic bottles and aluminum bottles do not pass.',
       ],
     },
   ];
