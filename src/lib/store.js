@@ -27,6 +27,7 @@ export function mealIngredients(meal) {
   if (meal.blueberries) rows.push({ item: 'Wild blueberries', oz: meal.blueberries, practical: 'a small handful', buy: BUY['Wild blueberries'] });
   if (meal.broccoli) rows.push({ item: 'Broccoli (cooked)', oz: meal.broccoli, practical: 'a small pile, steamed', buy: BUY['Broccoli (cooked)'] });
   if (meal.flax) rows.push({ item: 'Ground flaxseed', oz: meal.flax, practical: '2 tablespoons, ground', buy: BUY['Ground flaxseed'] });
+  if (meal.broth) rows.push({ item: 'Beef bone broth', oz: meal.broth, practical: '2 cups, the soup base', buy: BUY['Beef bone broth'] });
   if (meal.ketchup) rows.push({ item: 'Ketchup', oz: null, practical: meal.ketchup === 1 ? '1 tablespoon' : `${meal.ketchup} tablespoons`, buy: BUY['Ketchup'] });
   if (meal.mayo) rows.push({ item: 'Mayo (homemade)', oz: null, practical: meal.mayo === 1 ? '1 tablespoon' : `${meal.mayo} tablespoons`, buy: BUY['Mayo (homemade)'] });
   if (meal.mustard) rows.push({ item: 'Mustard', oz: null, practical: meal.mustard === 1 ? '1 teaspoon' : `${meal.mustard} teaspoons`, buy: BUY['Mustard'] });

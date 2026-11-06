@@ -10,6 +10,7 @@ export const POOL = [
   { item: 'Wild blueberries', oz: 4, note: 'Wyman\'s frozen wild blueberries. 2 oz at 2 morning meals.' },
   { item: 'Broccoli (cooked)', oz: 6, note: 'Cooked only, always: raw crucifers are denied on this diet, they can block the thyroid. 3 oz at 2 evening meals.' },
   { item: 'Coconut water', oz: 24, note: 'Harmless Harvest plain. 8 oz to drink at 3 midday meals.' },
+  { item: 'Beef bone broth', oz: 32, note: 'Homemade from US Wellness beef soup bones. The base of both soups, 16 oz each. It brings the glycine and collagen that muscle meat is short on.' },
   { item: 'Ground flaxseed', oz: 2, note: 'Evidence add, not a video verdict: the Oct 25, 2026 literature check in the database found flax very good (richest plant ALA source, richest lignan source, about 27% fiber). 0.5 oz in 4 meals.' },
   { item: 'Banana', oz: 28, note: 'About 7 bananas. The morning fruit, 4 oz per morning meal.' },
   { item: 'Kiwi', oz: 52.5, note: 'About 21 kiwis. The midday fruit, 7.5 oz per midday meal. Raised Nov 5, 2026 for fiber.' },
@@ -70,6 +71,12 @@ export const INGREDIENTS = [
     detail: 'An evidence add under Carter\'s Nov 5, 2026 rule: a food with no video verdict can join when real-world evidence shows it is very good for you. Flax was literature-checked on Oct 25, 2026 in Carter\'s own database: among the richest plant sources of ALA omega-3, the richest common lignan source, about 27% fiber, with meta-analyses showing modest LDL, blood pressure, and blood sugar improvements. It must be ground: whole seeds pass through undigested. ALA complements the sardines and salmon, it does not replace marine omega-3. 0.5 oz (2 tablespoons) in the pancakes, egg muffins, omelet, and meatballs.',
   },
   {
+    name: 'Beef bone broth',
+    weeklyOz: 32,
+    source: 'Homemade from US Wellness beef soup bones',
+    detail: 'An evidence add under Carter\'s Nov 5, 2026 rule. Both soups used to cook in salted water; bone broth is strictly better in the same slot: it brings collagen, gelatin, and glycine, the amino acid a muscle-meat-heavy diet runs short on, plus minerals from the bones. The honest limit: broth itself has modest trial evidence, it earns its place as the nutrient-carrying base of the soups, not as a miracle. Bones simmer with water and salt, nothing else; the broth is jarred and frozen in soup-sized portions. A bottled broth would have to be bones, water, and salt only to take its place.',
+  },
+  {
     name: 'Cheese',
     weeklyOz: 10,
     source: 'Miller\'s Bio Farm pasteurized pressed cheese line',
@@ -109,7 +116,7 @@ export const INGREDIENTS = [
     name: 'Water',
     weeklyOz: null,
     source: 'Glass-bottle spring water: Mountain Valley, Saratoga, S.Pellegrino, Lauretana',
-    detail: 'The drink at every meal, and the cooking liquid for the soups. Glass bottles only: plastic does not pass, and aluminum bottles are resin-lined, so the water sits against a liner instead of the bottle. The accepted waters: Mountain Valley still (the water Carter settled on Oct 21, 2026, and one of the three brands the videos name as passing, with S.Pellegrino and Lauretana), and Saratoga spring water in the 28 oz glass bottle, still or sparkling (the bottle from Carter\'s photo; it passes by the same spring-water-in-glass rule and he ruled both versions fine on Nov 1, 2026). Nothing flavored, nothing sweetened, nothing added.',
+    detail: 'The drink at every meal. The soups cook in bone broth, not water.  Glass bottles only: plastic does not pass, and aluminum bottles are resin-lined, so the water sits against a liner instead of the bottle. The accepted waters: Mountain Valley still (the water Carter settled on Oct 21, 2026, and one of the three brands the videos name as passing, with S.Pellegrino and Lauretana), and Saratoga spring water in the 28 oz glass bottle, still or sparkling (the bottle from Carter\'s photo; it passes by the same spring-water-in-glass rule and he ruled both versions fine on Nov 1, 2026). Nothing flavored, nothing sweetened, nothing added.',
   },
 ];
 
@@ -153,9 +160,9 @@ export const MEALS = [
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes',
     mayo: 1, mustard: 1, seasoning: 'Paprika', steps: ['Boil the eggs, halve them, and mash the yolks with the sardines, avocado, homemade mayo and mustard and a pinch of salt. Fill the whites.', 'Fry the beef patty in tallow and melt the cheese over it.', 'Dust the deviled eggs with paprika and plate them next to the patty.'] },
   { id: 'egg-drop-beef-soup', day: 4, slot: 'Morning', name: 'Egg Drop Beef Soup', minutes: 20,
-    description: 'No tallow. Beef simmered in salted water, egg ribbons stirred through, sardines in the bowl, cheese grated over. Banana on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no',
-    seasoning: 'Turmeric', steps: ['Simmer the beef in salted water until it gives up its flavor, breaking it into small pieces.', 'Swirl the water and drizzle in the beaten eggs so they set as ribbons. Add the sardines.', 'Ladle into a bowl, grate the cheese over, and serve with the banana.'] },
+    description: 'No tallow. Beef simmered in beef bone broth, egg ribbons stirred through, sardines in the bowl, cheese grated over. Banana on the side.',
+    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no', broth: 16,
+    seasoning: 'Turmeric', steps: ['Simmer the beef in the bone broth until it gives up its flavor, breaking it into small pieces.', 'Swirl the water and drizzle in the beaten eggs so they set as ribbons. Add the sardines.', 'Ladle into a bowl, grate the cheese over, and serve with the banana.'] },
   { id: 'cheese-crisps-sardine-pate', day: 4, slot: 'Midday', name: 'Cheese Crisps with Salmon Pate', minutes: 20,
     description: 'A double cheese meal: crisps from half the cheese, wild salmon mashed as a pate to scoop with them, plus a tallow beef patty and fried eggs. Kiwi on the side.',
     beef: 4, egg: 3.5, sardines: 0, salmon: 1, cheese: 1, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
@@ -185,9 +192,9 @@ export const MEALS = [
     beef: 4, egg: 3.5, sardines: 0, salmon: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'double',
     steps: ['Mash the salmon into the beef with salt and form flat cakes.', 'Fry the cakes in a double share of tallow until deeply crisp on both sides.', 'Fry the egg, set it on the cakes, and melt the cheese over everything. Serve with the kiwi.'] },
   { id: 'meatball-soup', day: 6, slot: 'Evening', name: 'Meatball Soup', minutes: 30,
-    description: 'No tallow. Meatballs simmered in salted water with egg ribbons, cheese stirred in, sardines in the bowl. Avocado on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'no',
-    seasoning: 'Ginger', steps: ['Roll small meatballs from the salted beef and simmer them in salted water.', 'Swirl in the beaten eggs as ribbons, add the sardines, and stir the cheese in until it melts.', 'Serve in bowls with the avocado on the side.'] },
+    description: 'No tallow. Meatballs simmered in beef bone broth with egg ribbons, cheese stirred in, sardines in the bowl. Avocado on the side.',
+    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'no', broth: 16,
+    seasoning: 'Ginger', steps: ['Roll small meatballs from the salted beef and simmer them in the bone broth.', 'Swirl in the beaten eggs as ribbons, add the sardines, and stir the cheese in until it melts.', 'Serve in bowls with the avocado on the side.'] },
   { id: 'egg-muffins', day: 7, slot: 'Morning', name: 'Egg Muffins', minutes: 30,
     description: 'Beef pressed into muffin cups with eggs baked inside, the tin greased with tallow, cheese on top. Sardines and banana on the side.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'light', blueberries: 2, flax: 0.5,
@@ -234,6 +241,7 @@ export const BUY = {
   'Pickles': { label: "Amazon (Bubbies Kosher Dill)", url: 'https://www.amazon.com/s?k=Bubbies+kosher+dill+pickles' },
   'Ground flaxseed': { label: 'Amazon (organic ground flaxseed)', url: 'https://www.amazon.com/s?k=organic+ground+flaxseed' },
   'Psyllium husk': { label: 'Amazon (psyllium husk powder)', url: 'https://www.amazon.com/s?k=psyllium+husk+powder' },
+  'Beef bone broth': { label: 'US Wellness Meats (soup bones)', url: 'https://grasslandbeef.com/search?q=soup+bones' },
 };
 
 // Estimated costs. Prices checked November 5, 2026. These are estimates for
@@ -247,6 +255,7 @@ export const PRICE = {
   salmonPerOz: 1.0,             // Wild Planet canned wild sockeye, about $6 per 6 oz can, estimated
   blueberriesPerOz: 0.25,       // Wyman's frozen wild, 3 lb bag, estimated
   flaxPerOz: 0.35,              // organic ground flaxseed, estimated
+  brothPerOz: 0.30,             // homemade from soup bones, estimated
   broccoliPerOz: 0.15,          // fresh broccoli, estimated
   cheesePerOz: 2.0,             // Miller's Bio Farm pressed cheese, estimated
   tallowPerOz: 17.46 / 27.2,    // US Wellness small pail, $17.46 per 1.7 lb
@@ -271,6 +280,7 @@ export const PRICE_BASIS = [
   'Olive oil: California Olive Ranch 100% California, about $0.12 a teaspoon. 2 teaspoons a week.',
   'Pickles: Bubbies Kosher Dill, about $0.35 a spear. 4 spears a week.',
   'Ground flaxseed: organic, estimated at $0.35 an ounce. 2 oz a week. Psyllium husk: estimated at $0.40 a tablespoon, 4 tablespoons a week.',
+  'Beef bone broth: homemade from US Wellness soup bones, estimated at $0.30 an ounce for the bones. 32 oz a week.',
 ];
 
 const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
@@ -286,6 +296,7 @@ export const NUTRITION_PER_OZ = {
   salmon: { kcal: 50, protein: 6.5, fat: 2, carbs: 0, fiber: 0 },
   blueberries: { kcal: 16, protein: 0.2, fat: 0.1, carbs: 4.1, fiber: 0.7 },
   flax: { kcal: 150, protein: 5.2, fat: 12, carbs: 8.2, fiber: 7.7 },
+  broth: { kcal: 6, protein: 1.2, fat: 0, carbs: 0, fiber: 0 },
   broccoli: { kcal: 10, protein: 0.8, fat: 0.1, carbs: 1.9, fiber: 0.7 },
   cheese: { kcal: 85, protein: 6, fat: 6.5, carbs: 1, fiber: 0 },
   tallow: { kcal: 250, protein: 0, fat: 28, carbs: 0, fiber: 0 },
@@ -345,6 +356,7 @@ export function mealNutrition(m) {
     [NUTRITION_PER_OZ.salmon, m.salmon || 0],
     [NUTRITION_PER_OZ.blueberries, m.blueberries || 0],
     [NUTRITION_PER_OZ.flax, m.flax || 0],
+    [NUTRITION_PER_OZ.broth, m.broth || 0],
     [NUTRITION_PER_OZ.broccoli, m.broccoli || 0],
     [NUTRITION_PER_OZ.cheese, m.cheese],
     [NUTRITION_PER_OZ.fruit[m.fruit], m.fruitOz],
@@ -388,6 +400,7 @@ export function mealCost(m) {
     + (m.salmon || 0) * PRICE.salmonPerOz
     + (m.blueberries || 0) * PRICE.blueberriesPerOz
     + (m.flax || 0) * PRICE.flaxPerOz
+    + (m.broth || 0) * PRICE.brothPerOz
     + (m.broccoli || 0) * PRICE.broccoliPerOz
     + m.cheese * PRICE.cheesePerOz
     + m.fruitOz * PRICE.fruitPerOz[m.fruit]
@@ -404,6 +417,7 @@ export function ingredientWeekCost(key) {
     'Broccoli (cooked)': 6 * PRICE.broccoliPerOz,
     'Coconut water': MEALS.reduce((s, m) => s + (m.coconutWater || 0), 0) * CONDIMENT_PRICE.coconutWater,
     'Ground flaxseed': 2 * PRICE.flaxPerOz,
+    'Beef bone broth': 32 * PRICE.brothPerOz,
     'Psyllium husk': MEALS.reduce((s, m) => s + (m.psyllium || 0), 0) * CONDIMENT_PRICE.psyllium,
     'Cheese': 10 * PRICE.cheesePerOz,
     'Beef tallow': 4 * PRICE.tallowPerOz,
@@ -551,6 +565,7 @@ export function bulkOrder(weeks, eggPackSize = 12) {
       items: [
         `Organ Blend bundle: ${beefBundles} x 25 lb = ${beefUsedLb} lb, exactly ${weeks} weeks at 5 lb a week. ${money(beefBundles * BEEF_BUNDLE_PRICE)} at the $285.25 sale price, and free shipping at this size.`,
         `Beef tallow: ${tallowPails} small pails (1.7 lb each) across the block, added to the first ${tallowPails} bundle orders: ${roll(tallowPails * 27.2, tallowUsedOz, 'oz')}.`,
+        'Beef soup bones for the bone broth: about 4 lb rides with each bundle order. One bones batch makes roughly 5 quarts of broth, the soup base for the 5 weeks between bundle orders. Simmer with water and salt, jar it, freeze it in 16 oz portions.',
       ],
     },
     {
@@ -588,4 +603,90 @@ export function bulkOrder(weeks, eggPackSize = 12) {
     },
   ];
   return { totals, sources };
+}
+
+// The order calendar: every order event for a year, with the exact contents
+// of that single order. Cycles: fresh every 2 weeks, eggs every 2 weeks
+// (12-count cartons) or 3 weeks (18-count), US Wellness every 5 weeks,
+// Miller's every 8 weeks, pantry once per block. Events on the same day
+// from the same shipper merge into one order.
+export const SHIPPER_ORDER = ['US Wellness Meats', "Miller's Bio Farm", 'Fresh shipments', 'Pantry bulk shipment'];
+export const SHIPPER_URL = {
+  'US Wellness Meats': 'https://grasslandbeef.com/collections/sample-farm-bundles',
+  "Miller's Bio Farm": 'https://millersbiofarm.com/store/cheese-1',
+  'Fresh shipments': 'https://www.misfitsmarket.com/egg-delivery',
+  'Pantry bulk shipment': 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html',
+};
+
+export function orderSchedule(blockWeeks = 20, eggPackSize = 12, horizonWeeks = 52) {
+  const byKey = new Map();
+  const add = (week, shipper, cadence, items) => {
+    const key = `${week}|${shipper}`;
+    if (!byKey.has(key)) byKey.set(key, { id: key, weekOffset: week, shipper, cadence, url: SHIPPER_URL[shipper], items: [] });
+    byKey.get(key).items.push(...items);
+  };
+  // Mayo batches start about every 17/3 weeks; the lemon for a batch rides
+  // with the fresh shipment whose 2-week window contains the batch start.
+  const batchStarts = [];
+  for (let t = 0; t < horizonWeeks; t += 17 / 3) batchStarts.push(t);
+  const lemonsInWindow = (w) => batchStarts.filter((t) => t >= w && t < w + 2).length;
+
+  for (let w = 0; w < horizonWeeks; w += 2) {
+    const items = [
+      '14 bananas (about 56 oz)',
+      '42 kiwis (about 105 oz)',
+      '28 avocados (about 112 oz)',
+      'Broccoli: 12 oz (for 2 weeks of cooked sides)',
+      'Coconut water, plain (Harmless Harvest): 3 bottles, 16 oz each',
+    ];
+    const lemons = lemonsInWindow(w);
+    if (lemons) items.push(lemons === 1 ? '1 lemon (for the next batch of homemade mayo)' : `${lemons} lemons (for the homemade mayo batches)`);
+    add(w, 'Fresh shipments', 'Every 2 weeks', items);
+  }
+  const eggInterval = eggPackSize === 18 ? 3 : 2;
+  for (let w = 0; w < horizonWeeks; w += eggInterval) {
+    add(w, 'Fresh shipments', `Eggs every ${eggInterval} weeks`, [
+      `Eggs: 7 cartons of ${eggPackSize} (${eggPackSize === 18 ? 126 : 84} eggs, exactly ${eggInterval} weeks). Cartons must say certified organic AND pasture-raised`,
+    ]);
+  }
+  let tallowSupply = 0;
+  for (let w = 0; w < horizonWeeks; w += 5) {
+    const need = 20; // 4 oz a week for the 5 weeks until the next bundle order
+    const pails = Math.max(0, Math.ceil((need - tallowSupply) / 27.2));
+    tallowSupply += pails * 27.2 - need;
+    const items = ['Organ Blend bundle: 1 x 25 lb (exactly 5 weeks of beef)', 'Beef soup bones: about 4 lb (for the bone broth batches)'];
+    if (pails) items.push(`Beef tallow: ${pails} small pail${pails === 1 ? '' : 's'} (1.7 lb each)`);
+    add(w, 'US Wellness Meats', 'Every 5 weeks', items);
+  }
+  for (let w = 0; w < horizonWeeks; w += 8) {
+    add(w, "Miller's Bio Farm", 'Every 8 weeks', [
+      'Pasteurized pressed mozzarella: 1 x 10-pack (ten 8 oz blocks, 80 oz, exactly 8 weeks of cheese)',
+    ]);
+  }
+  for (let w = 0; w < horizonWeeks; w += blockWeeks) {
+    const sardineTins = Math.ceil((blockWeeks * 19) / 3);
+    const sardineCases = Math.ceil(sardineTins / 12);
+    const salmonCans = Math.ceil((blockWeeks * 2) / 6);
+    const blueberryBags = Math.ceil((blockWeeks * 4) / 48);
+    const flaxBags = Math.ceil((blockWeeks * 2) / 16);
+    const ketchupBottles = Math.ceil((blockWeeks * 5) / 37);
+    const mayoBatches = Math.ceil((blockWeeks * 3) / 17);
+    const pickleJars = Math.ceil((blockWeeks * 4) / 12);
+    const honeyJars = Math.ceil((blockWeeks * 2) / 50);
+    add(w, 'Pantry bulk shipment', `Once per ${blockWeeks}-week block`, [
+      `King Oscar sardines in water: ${sardineCases} cases of 12 (${sardineCases * 12} tins)`,
+      `Wild Planet wild sockeye salmon: ${salmonCans} cans (6 oz)`,
+      `Wyman's frozen wild blueberries: ${blueberryBags} bags (3 lb)`,
+      `Organic ground flaxseed: ${flaxBags} bags (1 lb)`,
+      'Psyllium husk powder: 1 canister',
+      `Primal Kitchen Organic Unsweetened Ketchup: ${ketchupBottles} squeeze bottles (18.5 oz)`,
+      `100% avocado oil: ${mayoBatches} cups (1 per batch of homemade mayo)`,
+      `Wedderspoon raw manuka honey: ${honeyJars} plain jar${honeyJars === 1 ? '' : 's'}`,
+      'California Olive Ranch extra virgin olive oil: 1 bottle (ONLY the 100% California bottle)',
+      `Bubbies Kosher Dill pickles: ${pickleJars} jars`,
+      'Plain prepared mustard, Celtic sea salt, plain spices (paprika, cinnamon, turmeric, ginger, garlic powder, onion powder, black pepper): 1 each, they cover many blocks',
+      'Glass-bottle spring water (Mountain Valley / Saratoga / S.Pellegrino / Lauretana): cases as needed',
+    ]);
+  }
+  return [...byKey.values()].sort((a, b) => a.weekOffset - b.weekOffset || SHIPPER_ORDER.indexOf(a.shipper) - SHIPPER_ORDER.indexOf(b.shipper));
 }

@@ -7,6 +7,7 @@ const Home = lazy(() => import('./pages/Home'));
 const MealsPage = lazy(() => import('./pages/MealsPage'));
 const MealPage = lazy(() => import('./pages/MealPage'));
 const IngredientsPage = lazy(() => import('./pages/IngredientsPage'));
+const OrdersPage = lazy(() => import('./pages/OrdersPage'));
 const About = lazy(() => import('./pages/About'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Missing = lazy(() => import('./pages/Missing'));
@@ -36,6 +37,7 @@ export default function App() {
               <Route path="/meals" element={<MealsPage />} />
               <Route path="/meal/:mealId" element={<MealPage />} />
               <Route path="/ingredients" element={<IngredientsPage />} />
+              <Route path="/orders" element={<OrdersPage />} />
               <Route path="/pantry" element={<Navigate to="/ingredients" replace />} />
               <Route path="/shopping-list" element={<Navigate to="/ingredients" replace />} />
               <Route path="/all-ingredients" element={<Navigate to="/ingredients" replace />} />

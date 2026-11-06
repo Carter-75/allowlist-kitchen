@@ -10,6 +10,7 @@ const NAV = [
   { to: '/', label: 'The Week' },
   { to: '/meals', label: '21 Meals' },
   { to: '/ingredients', label: 'Ingredients' },
+  { to: '/orders', label: 'Orders' },
   { to: '/about', label: 'About' },
 ];
 
@@ -50,7 +51,7 @@ export function Footer() {
         <div>
           <p className="font-display text-lg font-bold">{SITE}</p>
           <p className="mt-2 max-w-sm text-sm leading-relaxed text-pine-100/80">
-            One fixed weekly pool of ingredients, weighed in ounces, made into 21 different meals, then the week loops. About 2,000 calories a day. A personal project by Carter Moyer.
+            One fixed weekly pool of ingredients, weighed in ounces, made into 21 different meals, then the week loops. About 2,500 calories a day. A personal project by Carter Moyer.
           </p>
         </div>
         <nav className="flex flex-col gap-2 text-sm">
@@ -58,6 +59,7 @@ export function Footer() {
           <Link to="/" className="text-pine-100/80 hover:text-white hover:underline">The weekly pool</Link>
           <Link to="/meals" className="text-pine-100/80 hover:text-white hover:underline">All 21 meals</Link>
           <Link to="/ingredients" className="text-pine-100/80 hover:text-white hover:underline">Ingredients and sources</Link>
+          <Link to="/orders" className="text-pine-100/80 hover:text-white hover:underline">Order calendar</Link>
         </nav>
         <nav className="flex flex-col gap-2 text-sm">
           <span className="font-display font-bold">The project</span>
