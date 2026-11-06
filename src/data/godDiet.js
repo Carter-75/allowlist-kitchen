@@ -26,12 +26,12 @@ export const INGREDIENTS = [
     name: 'Eggs',
     weeklyOz: 73.5,
     source: 'OrgaNICK Pastures at Woodman\'s, $5.39 a dozen',
-    detail: 'Certified organic and pasture-raised, with no exceptions. Exactly 42 eggs a week, always whole eggs in every meal, never halves. They ship in the fresh box, 7 dozen per box every 2 weeks; whatever brand ships, the carton must carry both certifications.',
+    detail: 'Certified organic and pasture-raised, with no exceptions. Exactly 42 eggs a week, always whole eggs in every meal, never halves. They ship in whole cartons only, never fractional packs: seven 12-count cartons cover exactly 2 weeks, or seven 18-count cartons cover exactly 3 weeks. Whatever brand ships, the carton must carry both certifications.',
   },
   {
     name: 'Sardines',
     weeklyOz: 21,
-    source: 'King Oscar sardines in water, 7 tins a week, shipped monthly by the case',
+    source: 'King Oscar sardines in water, 7 tins a week, shipped in 12-tin cases',
     detail: '1 oz, a third of a tin, 4 fish, at every single meal: on the side, mashed into fillings, or crisped into cakes. This is the in-water tin that passes in the checked database (ingredients: sardines, water). Wild Planet\'s passing tin is packed in olive oil, which is not part of this diet, and the lightly smoked versions fail, so neither is used here.',
   },
   {
@@ -68,7 +68,7 @@ export const INGREDIENTS = [
     name: 'Celtic sea salt',
     weeklyOz: null,
     source: 'Celtic sea salt',
-    detail: 'Goes on the beef while it cooks, and on avocado or eggs when the meal calls for it. That is the whole seasoning plan.',
+    detail: 'Goes on the beef while it cooks, and on avocado or eggs when the meal calls for it. The separate spice shelf (paprika, cinnamon, garlic powder, onion powder, black pepper) is listed with the condiments below.',
   },
   {
     name: 'Water',
@@ -177,18 +177,18 @@ const wm = (term) => `https://shopwoodmans.com/store/woodmans-food-markets/s?k=$
 export const BUY = {
   'Beef organ blend': { label: 'US Wellness Meats', url: 'https://grasslandbeef.com/search?q=ground+beef+heart+kidney+liver' },
   'Beef tallow': { label: 'US Wellness Meats', url: 'https://grasslandbeef.com/collections/kitchen-favorites' },
-  'Egg': { label: "Woodman's (OrgaNICK Pastures)", url: wm('OrgaNICK Pastures eggs') },
-  'Eggs': { label: "Woodman's (OrgaNICK Pastures)", url: wm('OrgaNICK Pastures eggs') },
-  'Sardines': { label: "Woodman's (King Oscar, in water)", url: wm('King Oscar sardines in water') },
+  'Egg': { label: 'Shipped fresh box (certified organic, pasture-raised)', url: 'https://www.misfitsmarket.com/egg-delivery' },
+  'Eggs': { label: 'Shipped fresh box (certified organic, pasture-raised)', url: 'https://www.misfitsmarket.com/egg-delivery' },
+  'Sardines': { label: 'Restaurant & More (12-tin case)', url: 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html' },
   'Cheese': { label: "Miller's Bio Farm (pressed cheese)", url: 'https://millersbiofarm.com/store/cheese-1' },
-  'Banana': { label: "Woodman's", url: wm('bananas') },
-  'Kiwi': { label: "Woodman's", url: wm('kiwi') },
-  'Avocado': { label: "Woodman's", url: wm('avocado') },
-  'Celtic sea salt': { label: "Woodman's", url: wm('Celtic sea salt') },
-  'Ketchup': { label: "Woodman's (Primal Kitchen)", url: wm('Primal Kitchen unsweetened ketchup') },
-  'Mustard': { label: "Woodman's (plain prepared mustard)", url: wm('organic yellow mustard') },
-  'Mayo (homemade)': { label: "Woodman's (avocado oil, for homemade mayo)", url: wm('avocado oil') },
-  'Seasonings': { label: "Woodman's (spices)", url: wm('organic spices') },
+  'Banana': { label: 'Shipped fresh box', url: 'https://www.misfitsmarket.com/egg-delivery' },
+  'Kiwi': { label: 'Shipped fresh box', url: 'https://www.misfitsmarket.com/egg-delivery' },
+  'Avocado': { label: 'Shipped fresh box', url: 'https://www.misfitsmarket.com/egg-delivery' },
+  'Celtic sea salt': { label: 'Amazon (Celtic Sea Salt)', url: 'https://www.amazon.com/s?k=Celtic+Sea+Salt' },
+  'Ketchup': { label: 'Amazon (Primal Kitchen)', url: 'https://www.amazon.com/s?k=Primal+Kitchen+Organic+Unsweetened+Ketchup' },
+  'Mustard': { label: 'Amazon (plain prepared mustard)', url: 'https://www.amazon.com/s?k=plain+organic+yellow+mustard' },
+  'Mayo (homemade)': { label: 'Amazon (100% avocado oil, for homemade mayo)', url: 'https://www.amazon.com/s?k=100%25+pure+avocado+oil' },
+  'Seasonings': { label: 'Amazon (plain single spices)', url: 'https://www.amazon.com/s?k=organic+paprika+cinnamon+garlic+powder' },
   'Water': null,
 };
 
@@ -197,7 +197,7 @@ export const BUY = {
 // cheese prices only after a free signup, so cheese is estimated from the
 // Miller's cheese prices on record (about $2.00/oz).
 export const PRICE = {
-  beefPerOz: 13.42 / 16,        // US Wellness organ blend, $13.42 per 1 lb pack
+  beefPerOz: 285.25 / (25 * 16), // US Wellness Organ Blend 25 lb bundle, $285.25 on sale ($11.41/lb)
   eggPerOz: (5.39 / 12) / 1.75, // OrgaNICK Pastures, $5.39/dozen at Woodman's
   sardinesPerOz: 4.59 / 3,      // King Oscar in water, $4.59 per tin, about 3 oz drained
   cheesePerOz: 2.0,             // Miller's Bio Farm pressed cheese, estimated
@@ -205,9 +205,9 @@ export const PRICE = {
   fruitPerOz: { Banana: 0.35 / 4, Kiwi: 0.70 / 2.5, Avocado: 1.25 / 4 }, // typical Woodman's piece prices
 };
 export const PRICE_BASIS = [
-  'Beef organ blend: $13.42/lb at US Wellness (single 1 lb packs). The 25 lb bundle at $11.41/lb would cut the weekly beef cost by about $10.',
+  'Beef organ blend: costs use the US Wellness Organ Blend 25 lb bundle at $285.25 on sale ($11.41/lb). One bundle is exactly 5 weeks of beef. Single 1 lb packs are $13.42/lb and would add about $10.05 a week.',
   'Eggs: $5.39 a dozen for OrgaNICK Pastures at Woodman\'s.',
-  'Sardines: $4.59 a tin for King Oscar sardines in water, the in-water tin that passes in the checked database.',
+  'Sardines: ordered in 12-tin cases, but the estimate still uses $4.59 a tin (the single-tin price on record) until a delivered case price is locked, so the bulk saving is not overstated.',
   'Beef tallow: $17.46 for the 1.7 lb small pail at US Wellness.',
   'Cheese: estimated at $2.00/oz. Miller\'s Bio Farm shows exact prices only after a free signup, so this uses the Miller\'s cheese prices already on record.',
   'Banana, kiwi and avocado: typical Woodman\'s piece prices (about $0.35, $0.70 and $1.25 each).',
@@ -224,15 +224,15 @@ const TALLOW_UNIT_COST = (4 * PRICE.tallowPerOz) / TALLOW_TOTAL_UNITS;
 // Nutrition estimates per ounce, from USDA reference values for these foods.
 // Estimates, not lab numbers: the organ blend varies pack to pack.
 export const NUTRITION_PER_OZ = {
-  beef: { kcal: 75, protein: 5.5, fat: 5.7, carbs: 0 },
-  egg: { kcal: 40, protein: 3.4, fat: 2.9, carbs: 0.2 },
-  sardines: { kcal: 60, protein: 7, fat: 3.3, carbs: 0 },
-  cheese: { kcal: 85, protein: 6, fat: 6.5, carbs: 1 },
-  tallow: { kcal: 250, protein: 0, fat: 28, carbs: 0 },
+  beef: { kcal: 75, protein: 5.5, fat: 5.7, carbs: 0, fiber: 0 },
+  egg: { kcal: 40, protein: 3.4, fat: 2.9, carbs: 0.2, fiber: 0 },
+  sardines: { kcal: 60, protein: 7, fat: 3.3, carbs: 0, fiber: 0 },
+  cheese: { kcal: 85, protein: 6, fat: 6.5, carbs: 1, fiber: 0 },
+  tallow: { kcal: 250, protein: 0, fat: 28, carbs: 0, fiber: 0 },
   fruit: {
-    Banana: { kcal: 25, protein: 0.3, fat: 0.1, carbs: 6.4 },
-    Kiwi: { kcal: 17, protein: 0.3, fat: 0.1, carbs: 4.2 },
-    Avocado: { kcal: 45, protein: 0.6, fat: 4.2, carbs: 2.4 },
+    Banana: { kcal: 25, protein: 0.3, fat: 0.1, carbs: 6.4, fiber: 0.7 },
+    Kiwi: { kcal: 17, protein: 0.3, fat: 0.1, carbs: 4.2, fiber: 0.9 },
+    Avocado: { kcal: 45, protein: 0.6, fat: 4.2, carbs: 2.4, fiber: 1.9 },
   },
 };
 
@@ -244,9 +244,9 @@ export const NUTRITION_PER_OZ = {
 // for exactly that). Mustard is plain prepared mustard per the rulebook
 // ruling of Oct 27, 2026 (mustard seed, vinegar, water, salt, nothing else).
 export const CONDIMENT_NUTRITION = {
-  ketchup: { kcal: 15, protein: 0, fat: 0, carbs: 3 },   // per tablespoon
-  mayo: { kcal: 100, protein: 0, fat: 11, carbs: 0 },    // per tablespoon, avocado oil mayo
-  mustard: { kcal: 3, protein: 0, fat: 0, carbs: 0 },    // per teaspoon
+  ketchup: { kcal: 15, protein: 0, fat: 0, carbs: 3, fiber: 0 }, // per tablespoon
+  mayo: { kcal: 100, protein: 0, fat: 11, carbs: 0, fiber: 0 }, // per tablespoon, avocado oil mayo
+  mustard: { kcal: 3, protein: 0, fat: 0, carbs: 0, fiber: 0 }, // per teaspoon
 };
 export const CONDIMENT_PRICE = {
   ketchup: 8.79 / 37, // 18.5 oz squeeze bottle $8.79 at Woodman's, about 37 tbsp
@@ -254,10 +254,10 @@ export const CONDIMENT_PRICE = {
   mustard: 0.05,      // per teaspoon, from a plain prepared mustard bottle
 };
 export function condimentNutrition(m) {
-  const out = { kcal: 0, protein: 0, fat: 0, carbs: 0 };
+  const out = { kcal: 0, protein: 0, fat: 0, carbs: 0, fiber: 0 };
   for (const k of ['ketchup', 'mayo', 'mustard']) {
     const n = CONDIMENT_NUTRITION[k], amt = m[k] || 0;
-    out.kcal += n.kcal * amt; out.protein += n.protein * amt; out.fat += n.fat * amt; out.carbs += n.carbs * amt;
+    out.kcal += n.kcal * amt; out.protein += n.protein * amt; out.fat += n.fat * amt; out.carbs += n.carbs * amt; out.fiber += (n.fiber || 0) * amt;
   }
   return out;
 }
@@ -275,32 +275,35 @@ export function mealNutrition(m) {
     [NUTRITION_PER_OZ.fruit[m.fruit], m.fruitOz],
     [NUTRITION_PER_OZ.tallow, tallowOz],
   ];
-  const out = { kcal: 0, protein: 0, fat: 0, carbs: 0 };
+  const out = { kcal: 0, protein: 0, fat: 0, carbs: 0, fiber: 0 };
   for (const [n, oz] of parts) {
     out.kcal += n.kcal * oz;
     out.protein += n.protein * oz;
     out.fat += n.fat * oz;
     out.carbs += n.carbs * oz;
+    out.fiber += n.fiber * oz;
   }
   const c = condimentNutrition(m);
-  out.kcal += c.kcal; out.protein += c.protein; out.fat += c.fat; out.carbs += c.carbs;
+  out.kcal += c.kcal; out.protein += c.protein; out.fat += c.fat; out.carbs += c.carbs; out.fiber += c.fiber;
   out.kcal = Math.round(out.kcal);
   out.protein = Math.round(out.protein);
   out.fat = Math.round(out.fat);
   out.carbs = Math.round(out.carbs);
+  out.fiber = Math.round(out.fiber * 10) / 10;
   return out;
 }
 
 export const WEEK_NUTRITION = MEALS.reduce((acc, m) => {
   const n = mealNutrition(m);
-  acc.kcal += n.kcal; acc.protein += n.protein; acc.fat += n.fat; acc.carbs += n.carbs;
+  acc.kcal += n.kcal; acc.protein += n.protein; acc.fat += n.fat; acc.carbs += n.carbs; acc.fiber += n.fiber;
   return acc;
-}, { kcal: 0, protein: 0, fat: 0, carbs: 0 });
+}, { kcal: 0, protein: 0, fat: 0, carbs: 0, fiber: 0 });
 export const DAY_NUTRITION = {
   kcal: Math.round(WEEK_NUTRITION.kcal / 7),
   protein: Math.round(WEEK_NUTRITION.protein / 7),
   fat: Math.round(WEEK_NUTRITION.fat / 7),
   carbs: Math.round(WEEK_NUTRITION.carbs / 7),
+  fiber: Math.round((WEEK_NUTRITION.fiber / 7) * 10) / 10,
 };
 
 export function mealCost(m) {
@@ -345,7 +348,7 @@ export const CONDIMENTS = [
     name: 'Mayo (homemade)',
     amount: '1 tablespoon on 3 meals a week',
     source: 'Made at home: 1 egg yolk, 1 cup avocado oil, lemon, mustard, salt',
-    detail: 'No bottled mayo passes. Every bottled brand fails the egg rule, which has no exceptions (eggs in any product must be certified organic AND pasture-raised); Primal Kitchen mayo was removed from the approved list on Oct 27, 2026 because its eggs are cage-free only. So the mayo is homemade from one of the diet\'s own eggs, whisked with avocado oil (ruled fine Oct 25, 2026), lemon, mustard and salt. One batch is about 17 tablespoons, a month or more of mayo. It goes in the deviled eggs, the sardine pate, and the egg salad.',
+    detail: 'No bottled mayo passes. Every bottled brand fails the egg rule, which has no exceptions (eggs in any product must be certified organic AND pasture-raised); Primal Kitchen mayo was removed from the approved list on Oct 27, 2026 because its eggs are cage-free only. So the mayo is homemade from one of the diet\'s own eggs, whisked with avocado oil (ruled fine Oct 25, 2026), lemon, mustard and salt. One batch is about 17 tablespoons, roughly five to six weeks of mayo at 3 tablespoons a week. It goes in the deviled eggs, the sardine pate, and the egg salad.',
   },
   {
     name: 'Mustard',
@@ -361,32 +364,91 @@ export const CONDIMENTS = [
   },
 ];
 
-// Everything ships. Nothing on this diet needs a store trip: the frozen and
-// shelf-stable food ships monthly, and the fresh box (eggs and fruit) ships
-// twice a month because bananas and avocados cannot sit for a month.
-export const SHIPPING_PLAN = [
-  {
-    shipper: 'US Wellness Meats',
-    cadence: 'Monthly, frozen',
-    url: 'https://grasslandbeef.com/search?q=ground+beef+heart+kidney+liver',
-    items: ['Beef organ blend: 20 lb a month (four weeks at 5 lb). The 25 lb bundle covers about 5 weeks and is cheaper per pound.', 'Beef tallow: one 1.7 lb pail lasts about 7 months at 4 oz a week, so it rides along only when the pail runs low.'],
-  },
-  {
-    shipper: "Miller's Bio Farm",
-    cadence: 'Monthly, refrigerated',
-    url: 'https://millersbiofarm.com/store/cheese-1',
-    items: ['Pasteurized 100% grass-fed pressed cheese: 40 oz a month (four weeks at 10 oz).'],
-  },
-  {
-    shipper: 'Fresh box (shipped grocery, e.g. Misfits Market)',
-    cadence: 'Every 2 weeks, refrigerated',
-    url: 'https://www.misfitsmarket.com/egg-delivery',
-    items: ['Eggs: 7 dozen per box (14 dozen a month covers the 42 eggs a week). The eggs in the box must be certified organic AND pasture-raised; check the carton each order, because shipped assortments rotate. OrgaNICK Pastures is the reference egg.', 'Bananas: about 14 per box (7 a week).', 'Kiwis: about 28 per box (14 a week).', 'Avocados: about 14 per box (7 a week), shipped firm so they ripen across the two weeks.'],
-  },
-  {
-    shipper: 'Pantry shipment (Amazon or iHerb)',
-    cadence: 'Monthly, shelf-stable',
-    url: 'https://www.amazon.com/s?k=King+Oscar+sardines+in+water',
-    items: ['King Oscar sardines in water: 28 tins a month (7 a week).', 'Primal Kitchen Organic Unsweetened Ketchup: one 18.5 oz squeeze bottle lasts about 7 weeks.', 'Plain prepared mustard, avocado oil for the homemade mayo, Celtic sea salt, and the spices (paprika, cinnamon, garlic powder, onion powder, black pepper): small bottles, ordered as they run low.'],
-  },
-];
+// Bulk ordering is built in whole weeks and whole packs only. There are no
+// calendar-month quantities anywhere: a week is always 7 days, so every
+// source repeats on a whole-week rhythm, packages are never fractional, and
+// whatever a pack leaves over rolls into the next block instead of changing
+// the diet. Egg cartons drive their own rhythm: 7 cartons of 12 cover
+// exactly 2 weeks (84 eggs), and 7 cartons of 18 cover exactly 3 weeks
+// (126 eggs). Either way it is a whole number of cartons and a whole
+// number of weeks.
+export const ORDER_WEEK_OPTIONS = [10, 20, 30, 40];
+export const BEEF_BUNDLE_PRICE = 285.25;
+export const BEEF_SINGLE_PACK_PRICE = 13.42;
+export const BEEF_BUNDLE_SAVINGS_PER_WEEK = 5 * (BEEF_SINGLE_PACK_PRICE - BEEF_BUNDLE_PRICE / 25);
+
+const roll = (bought, used, unit) => bought === used
+  ? `exactly ${used} ${unit} used, nothing left over`
+  : `${bought} ${unit} bought for ${used} ${unit} used, ${Math.round((bought - used) * 10) / 10} ${unit} rolls into the next block`;
+
+export function bulkOrder(weeks, eggPackSize = 12) {
+  const beefBundles = weeks / 5;
+  const beefUsedLb = weeks * 5;
+  const tallowUsedOz = weeks * 4;
+  const tallowPails = Math.ceil(tallowUsedOz / 27.2);
+  const cheeseUsedOz = weeks * 10;
+  const cheesePacks = Math.ceil(cheeseUsedOz / 80); // one 10-pack = ten 8 oz blocks = 80 oz
+  const fruitShipments = weeks / 2;
+  const eggInterval = eggPackSize === 18 ? 3 : 2;
+  const eggShipments = Math.ceil(weeks / eggInterval);
+  const eggPacks = eggShipments * 7;
+  const eggsUsed = weeks * 42;
+  const eggsBought = eggPacks * eggPackSize;
+  const sardinesUsed = weeks * 7;
+  const sardineCases = Math.ceil(sardinesUsed / 12);
+  const ketchupUsed = weeks * 5;
+  const ketchupBottles = Math.ceil(ketchupUsed / 37);
+  const mayoUsed = weeks * 3;
+  const mayoBatches = Math.ceil(mayoUsed / 17);
+  const mustardUsed = weeks * 2;
+  const totals = [
+    `${weeks} weeks = ${weeks * 21} meals`,
+    `Beef organ blend: ${beefUsedLb} lb`,
+    `Eggs: ${eggsUsed}`,
+    `Sardines: ${sardinesUsed} tins`,
+    `Cheese: ${cheeseUsedOz} oz`,
+    `Beef tallow: ${tallowUsedOz} oz`,
+    `Fruit: ${weeks * 7} bananas, ${weeks * 14} kiwis, ${weeks * 7} avocados`,
+    `Condiments: ${ketchupUsed} tbsp ketchup, ${mayoUsed} tbsp homemade mayo, ${mustardUsed} tsp mustard`,
+  ];
+  const sources = [
+    {
+      shipper: 'US Wellness Meats',
+      cadence: `1 bundle order every 5 weeks · ${beefBundles} orders in this block`,
+      url: 'https://grasslandbeef.com/collections/sample-farm-bundles',
+      items: [
+        `Organ Blend bundle: ${beefBundles} x 25 lb = ${beefUsedLb} lb, exactly ${weeks} weeks at 5 lb a week. ${money(beefBundles * BEEF_BUNDLE_PRICE)} at the $285.25 sale price, and free shipping at this size.`,
+        `Beef tallow: ${tallowPails} small pails (1.7 lb each) across the block, added to the first ${tallowPails} bundle orders: ${roll(tallowPails * 27.2, tallowUsedOz, 'oz')}.`,
+      ],
+    },
+    {
+      shipper: "Miller's Bio Farm",
+      cadence: `1 bulk cheese order about every 8 weeks · ${cheesePacks} orders in this block`,
+      url: 'https://millersbiofarm.com/store/cheese-1',
+      items: [
+        `Pasteurized pressed mozzarella 10-packs (ten 8 oz blocks, 80 oz per pack): ${cheesePacks} packs, ${roll(cheesePacks * 80, cheeseUsedOz, 'oz')}. Keep sealed blocks refrigerated (they hold 1 to 2 months) and freeze any block that has to wait longer.`,
+      ],
+    },
+    {
+      shipper: 'Fresh shipments (shipped grocery, e.g. Misfits Market)',
+      cadence: `Fruit every 2 weeks · eggs every ${eggInterval} weeks`,
+      url: 'https://www.misfitsmarket.com/egg-delivery',
+      items: [
+        `Fruit: ${fruitShipments} shipments, each with 14 bananas, 28 kiwis and 14 avocados (2 weeks at a time, because bananas and avocados cannot sit longer). Block totals: ${weeks * 7} bananas, ${weeks * 14} kiwis, ${weeks * 7} avocados. Order by count and check the weight at the door: about 4 oz of banana, 2.5 oz per kiwi and 4 oz of avocado per piece is the planning average.`,
+        `Eggs: ${eggShipments} shipments of 7 cartons x ${eggPackSize} eggs = ${eggPacks} cartons (${eggsBought} eggs) for ${eggsUsed} used${eggsBought === eggsUsed ? ', an exact fit' : `, ${eggsBought - eggsUsed} eggs roll into the next block`}. Seven cartons is the magic number either way: 7 x 12 = 84 eggs = exactly 2 weeks, 7 x 18 = 126 eggs = exactly 3 weeks. The cartons must say certified organic AND pasture-raised; OrgaNICK Pastures is the reference egg.`,
+      ],
+    },
+    {
+      shipper: 'Pantry bulk shipment (cases and bottles)',
+      cadence: '1 bulk order per block · shelf-stable',
+      url: 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html',
+      items: [
+        `King Oscar sardines in water: ${sardineCases} cases of 12 = ${sardineCases * 12} tins for ${sardinesUsed} used${sardineCases * 12 === sardinesUsed ? ', an exact fit' : `, ${sardineCases * 12 - sardinesUsed} tins roll into the next block`}.`,
+        `Primal Kitchen Organic Unsweetened Ketchup: ${ketchupBottles} squeeze bottles (18.5 oz, about 37 tbsp each): ${roll(ketchupBottles * 37, ketchupUsed, 'tbsp')}.`,
+        `Homemade mayo supplies: ${mayoBatches} batches across the block, so ${mayoBatches} cups of 100% avocado oil (1 cup per batch, about 17 tbsp of mayo per batch): ${roll(mayoBatches * 17, mayoUsed, 'tbsp')}. The yolks come from the egg cartons above, and the whites get folded into that week's eggs so no egg is wasted.`,
+        `Plain prepared mustard: ${mustardUsed} tsp used in the block, so one plain bottle (mustard seed, vinegar, water, salt, nothing else) covers many blocks. Celtic sea salt and the plain spices (paprika, cinnamon, garlic powder, onion powder, black pepper) ride along as they run low.`,
+      ],
+    },
+  ];
+  return { totals, sources };
+}

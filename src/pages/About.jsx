@@ -21,7 +21,7 @@ export default function About() {
         </ul>
         <h2 className="font-display text-2xl font-bold text-ink">The sources</h2>
         <p>
-          Every ingredient has one passing source, checked against the same rulebook this kitchen has always used: a database of verdicts drawn from the Jake Tran video corpus. Carter follows those videos, he does not write the list. The beef organ blend and tallow come from US Wellness Meats, the eggs are OrgaNICK Pastures at Woodman's ($5.39 a dozen, certified organic and pasture-raised), and the cheese is Miller's Bio Farm's pasteurized pressed line, which is pasteurized and 100% grass-fed. Cheddar has no passing source, so there is no cheddar anywhere on this site.
+          Every ingredient has one passing source, checked against the same rulebook this kitchen has always used: a database of verdicts drawn from the Jake Tran video corpus. Carter follows those videos, he does not write the list. The beef organ blend and tallow come from US Wellness Meats, the eggs ship in whole cartons and must be certified organic and pasture-raised (OrgaNICK Pastures is the reference egg, $5.39 a dozen at Woodman's), and the cheese is Miller's Bio Farm's pasteurized pressed line, which is pasteurized and 100% grass-fed. Cheddar has no passing source, so there is no cheddar anywhere on this site.
         </p>
         <h2 className="font-display text-2xl font-bold text-ink">What this is not</h2>
         <p>

@@ -38,7 +38,7 @@ export function recipeText(meal) {
   L.push(`- Beef tallow: ${TALLOW_TSP[meal.tallow]}${meal.tallow === 'no' ? '' : ', from the week\'s 4 oz'}`);
   L.push('- Celtic sea salt: a pinch, on the beef as it cooks', '- Water: to drink', '', 'Steps:');
   meal.steps.forEach((s, i) => L.push(`${i + 1}. ${s}`));
-  L.push('', `Estimated cost of this meal: ${money(mealCost(meal))} (estimates, prices checked Nov 5, 2026).`, '', `From ${SITE}: one of 21 meals that together use exactly the weekly pool. Daily average across the week: about ${DAY_NUTRITION.kcal} cal, ${DAY_NUTRITION.protein}g protein, ${DAY_NUTRITION.fat}g fat, ${DAY_NUTRITION.carbs}g carbs (USDA-based estimates).`);
+  L.push('', `Estimated cost of this meal: ${money(mealCost(meal))} (estimates, prices checked Nov 5, 2026).`, '', `From ${SITE}: one of 21 meals that together use exactly the weekly pool. Daily average across the week: about ${DAY_NUTRITION.kcal} cal, ${DAY_NUTRITION.protein}g protein, ${DAY_NUTRITION.fat}g fat, ${DAY_NUTRITION.carbs}g carbs, ${DAY_NUTRITION.fiber}g fiber (USDA-based estimates).`);
   return L.join('\n');
 }
 

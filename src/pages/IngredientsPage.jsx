@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
-import { BUY, CONDIMENTS, PRICE_BASIS, SHIPPING_PLAN, WEEK_COST, ingredientWeekCost, money } from '../data/godDiet';
+import { BEEF_BUNDLE_SAVINGS_PER_WEEK, BUY, CONDIMENTS, ORDER_WEEK_OPTIONS, PRICE_BASIS, WEEK_COST, bulkOrder, ingredientWeekCost, money } from '../data/godDiet';
 import { getIngredients, getPool, useHead } from '../lib/store';
 
 export default function IngredientsPage() {
   useHead({ title: 'Ingredients - The God Diet', description: 'The only 10 ingredients on The God Diet, their weekly amounts in ounces, and the exact source that passes for each.' });
   const ingredients = getIngredients();
   const pool = getPool();
+  const [weeks, setWeeks] = useState(20);
+  const [eggPackSize, setEggPackSize] = useState(12);
+  const plan = bulkOrder(weeks, eggPackSize);
   const totalOz = pool.filter((p) => p.oz !== null).reduce((s, p) => s + p.oz, 0);
   return (
     <div className="mx-auto max-w-6xl px-4 pt-10">
@@ -53,10 +56,27 @@ export default function IngredientsPage() {
       </section>
 
       <section className="mt-12 rounded-2xl border border-ink/10 bg-pine-800 p-6 text-pine-50">
-        <h2 className="font-display text-2xl font-bold">The monthly shipping plan</h2>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-pine-50/80">Everything on this diet ships. No store trips. Four places cover the whole diet: the frozen and shelf-stable food ships monthly, and the fresh box ships every 2 weeks because bananas and avocados cannot sit for a month.</p>
+        <h2 className="font-display text-2xl font-bold">Bulk shipping, built in whole weeks and whole packs</h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-pine-50/80">Everything on this diet ships, and nothing is figured by the calendar month, because months change length and weeks never do. Pick a block of whole weeks: every source below repeats on its own whole-week rhythm, every package is a whole pack, and whatever a pack leaves over rolls into the next block instead of changing the diet.</p>
+        <div className="mt-5 flex flex-wrap items-center gap-2">
+          <span className="text-xs font-bold uppercase tracking-wide text-honey-400">Block length</span>
+          {ORDER_WEEK_OPTIONS.map((w) => (
+            <button key={w} onClick={() => setWeeks(w)} className={`rounded-full px-3.5 py-1.5 text-xs font-bold transition ${weeks === w ? 'bg-honey-400 text-pine-900' : 'bg-white/10 text-white hover:bg-white/20'}`}>{w} weeks</button>
+          ))}
+          <span className="ml-3 text-xs font-bold uppercase tracking-wide text-honey-400">Egg cartons</span>
+          {[12, 18].map((n) => (
+            <button key={n} onClick={() => setEggPackSize(n)} className={`rounded-full px-3.5 py-1.5 text-xs font-bold transition ${eggPackSize === n ? 'bg-honey-400 text-pine-900' : 'bg-white/10 text-white hover:bg-white/20'}`}>{n} count</button>
+          ))}
+        </div>
+        <div className="mt-5 rounded-2xl bg-pine-900/60 p-5 ring-1 ring-pine-50/15">
+          <h3 className="font-display text-lg font-bold">What {weeks} weeks actually uses</h3>
+          <ul className="mt-2 grid gap-1.5 text-sm text-pine-50/85 sm:grid-cols-2">
+            {plan.totals.map((t) => <li key={t}>{t}</li>)}
+          </ul>
+          <p className="mt-3 text-sm text-pine-50/80">Estimated cost of the food actually used in this block: <strong className="text-white">{money(WEEK_COST * weeks)}</strong> ({money(WEEK_COST)} a week). That already counts the beef at the 25 lb bundle rate; single packs would add about {money(BEEF_BUNDLE_SAVINGS_PER_WEEK * weeks)} over the block.</p>
+        </div>
         <div className="mt-5 grid gap-5 md:grid-cols-2">
-          {SHIPPING_PLAN.map((sp) => (
+          {plan.sources.map((sp) => (
             <article key={sp.shipper} className="rounded-2xl bg-pine-900/60 p-5 ring-1 ring-pine-50/15">
               <div className="flex items-baseline justify-between gap-3">
                 <h3 className="font-display text-xl font-bold">{sp.shipper}</h3>
