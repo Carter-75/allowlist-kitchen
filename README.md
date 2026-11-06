@@ -2,7 +2,7 @@
 
 One weekly pool. 21 meals. Nothing else.
 
-Live site: https://the-god-diet.vercel.app/
+Live site: https://thegoddiet.vercel.app/
 Repository: https://github.com/Carter-75/the-god-diet
 
 ## The idea
