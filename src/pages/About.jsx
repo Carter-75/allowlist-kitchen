@@ -14,7 +14,7 @@ export default function About() {
         <ul className="list-disc space-y-2 pl-6">
           <li>Three meals a day, about 2,000 calories a day, 7 days, then the week loops.</li>
           <li>Everything is measured one way: ounces, weighed. Eggs and fruit are weighed too, at their average weights, so nothing is counted in pieces, cups, or tablespoons.</li>
-          <li>The week is the lock. Individual meals can be big or light, but the 21 meals together must use exactly the weekly pool: 80 oz beef organ blend, 74 oz egg, 21 oz sardines, 10 oz cheese, 28 oz banana, 35 oz kiwi, 28 oz avocado, 4 oz beef tallow, plus Celtic sea salt and water.</li>
+          <li>The week is the lock. Individual meals can be big or light, but the 21 meals together must use exactly the weekly pool: 80 oz beef organ blend, 73.5 oz egg, 21 oz sardines, 10 oz cheese, 28 oz banana, 35 oz kiwi, 28 oz avocado, 4 oz beef tallow, plus Celtic sea salt and water.</li>
           <li>Fruit rotates by time of day: banana in the morning, kiwi at midday, avocado in the evening.</li>
           <li>Beef tallow is the only cooking fat, and only at meals where the beef cooks. The soups simmer in salted water, the meatloaf bakes in its own fat, and the one no-beef meal uses no fat at all.</li>
           <li>Salt goes on the beef while it cooks. That is the seasoning plan for the whole diet.</li>

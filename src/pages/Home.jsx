@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Repeat, Scale, ShoppingBasket } from 'lucide-react';
 import MealTile from '../components/MealTile';
-import { WEEK_COST, ingredientWeekCost, money } from '../data/godDiet';
+import { DAY_NUTRITION, WEEK_COST, ingredientWeekCost, money } from '../data/godDiet';
 import { getPool, mealsForDay, useHead } from '../lib/store';
 
 export default function Home() {
@@ -51,6 +51,10 @@ export default function Home() {
         <p className="mt-4 rounded-2xl bg-pine-800 px-5 py-4 text-white">
           <strong className="font-display text-xl">Estimated cost of the whole week: {money(WEEK_COST)}</strong>
           <span className="mt-1 block text-sm text-pine-50/80">About {money(WEEK_COST / 7)} a day, {money(WEEK_COST / 21)} a meal, at prices checked Nov 5, 2026. Estimates, not quotes. <Link to="/ingredients" className="font-bold text-honey-400 hover:underline">How each cost is figured</Link></span>
+        </p>
+        <p className="mt-4 rounded-2xl border border-ink/10 bg-cream px-5 py-4">
+          <strong className="font-display text-xl">Daily average: about {DAY_NUTRITION.kcal.toLocaleString()} calories</strong>
+          <span className="mt-1 block text-sm text-ink/65">Protein {DAY_NUTRITION.protein}g, fat {DAY_NUTRITION.fat}g, carbs {DAY_NUTRITION.carbs}g a day, averaged across all 21 meals. Estimated from USDA reference values for the exact amounts on each meal page.</span>
         </p>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-ink/10 bg-cream p-5">

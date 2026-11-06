@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Check, Clock3, Copy, ExternalLink } from 'lucide-react';
 import Missing from './Missing';
-import { TALLOW_LABEL } from '../data/godDiet';
+import { TALLOW_LABEL, mealNutrition } from '../data/godDiet';
 import { allMeals, mealById, mealCost, mealIngredients, money, recipeText, TALLOW_TSP, useHead } from '../lib/store';
 
 const SLOT_TINT = {
@@ -35,6 +35,7 @@ export default function MealPage() {
             <span className="inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1.5 text-xs font-bold text-ink/70 ring-1 ring-ink/10"><Clock3 size={13} /> About {meal.minutes} min</span>
             <span className="inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1.5 text-xs font-bold text-ink/70 ring-1 ring-ink/10">{TALLOW_LABEL[meal.tallow]}</span>
             <span className="inline-flex items-center gap-1.5 rounded-full bg-honey-400/70 px-3 py-1.5 text-xs font-bold text-pine-900 ring-1 ring-ink/10">Est. cost {money(mealCost(meal))}</span>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1.5 text-xs font-bold text-ink/70 ring-1 ring-ink/10">About {mealNutrition(meal).kcal} cal</span>
             <button onClick={copy} className="inline-flex items-center gap-1.5 rounded-full bg-pine-800 px-3 py-1.5 text-xs font-bold text-white transition hover:bg-pine-700">{copied ? <Check size={13} /> : <Copy size={13} />} {copied ? 'Copied' : 'Copy recipe'}</button>
           </div>
           <h2 className="mt-10 font-display text-2xl font-bold">How to make it</h2>
@@ -86,6 +87,9 @@ export default function MealPage() {
             </ul>
             <p className="mt-4 rounded-xl bg-paper px-4 py-3 text-sm leading-relaxed text-ink/65">
               <strong className="text-ink">Estimated cost: {money(mealCost(meal))}</strong> for this meal, from the prices checked Nov 5, 2026. See <Link to="/ingredients" className="font-bold text-pine-700 hover:underline">Ingredients</Link> for how every cost is figured.
+            </p>
+            <p className="mt-3 rounded-xl bg-paper px-4 py-3 text-sm leading-relaxed text-ink/65">
+              <strong className="text-ink">Estimated nutrition:</strong> about {mealNutrition(meal).kcal} cal, {mealNutrition(meal).protein}g protein, {mealNutrition(meal).fat}g fat, {mealNutrition(meal).carbs}g carbs, from USDA reference values for these amounts.
             </p>
             <Link to="/ingredients" className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-pine-700 hover:underline">Where each ingredient comes from <ArrowRight size={15} /></Link>
           </div>

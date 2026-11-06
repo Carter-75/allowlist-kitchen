@@ -16,7 +16,7 @@ Three meals a day, about 2,000 calories a day, 7 days, then loop. Everything is 
 Weekly pool (the lock):
 
 - Beef organ blend (US Wellness, 75% lean with heart, kidney, liver): 80 oz
-- Egg (certified organic, pasture-raised): 74 oz, about 42 eggs
+- Egg (certified organic, pasture-raised): 73.5 oz, exactly 42 eggs
 - Sardines: 21 oz, 7 tins
 - Banana: 28 oz (morning fruit)
 - Kiwi: 35 oz (midday fruit)
@@ -25,7 +25,7 @@ Weekly pool (the lock):
 - Beef tallow (US Wellness): 4 oz, only at meals where the beef cooks
 - Celtic sea salt and water
 
-Individual meals swing in size, but the 21 meals together drain the pool exactly. The per-meal amounts in `src/data/godDiet.js` are checked against these totals: beef 80, egg 74, sardines 21, cheese 10, banana 28, kiwi 35, avocado 28.
+Individual meals swing in size, but the 21 meals together drain the pool exactly. The per-meal amounts in `src/data/godDiet.js` are checked against these totals: beef 80, egg 73.5, sardines 21, cheese 10, banana 28, kiwi 35, avocado 28.
 
 Ingredient verdicts and sources follow the checked rulebook built from the Jake Tran video corpus. Carter follows the videos; he does not write the list.
 

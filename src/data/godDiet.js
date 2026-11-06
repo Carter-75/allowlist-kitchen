@@ -4,7 +4,7 @@
 
 export const POOL = [
   { item: 'Beef organ blend', oz: 80, note: 'US Wellness 75% lean ground beef with heart, kidney and liver. About 5 lb.' },
-  { item: 'Egg', oz: 74, note: 'About 42 eggs at 1.75 oz out of shell. Certified organic and pasture-raised.' },
+  { item: 'Egg', oz: 73.5, note: 'Exactly 42 eggs at 1.75 oz out of shell. Certified organic and pasture-raised.' },
   { item: 'Sardines', oz: 21, note: '7 tins, about 3 oz drained each. 1 oz per meal.' },
   { item: 'Banana', oz: 28, note: 'About 7 bananas. The morning fruit, 4 oz per morning meal.' },
   { item: 'Kiwi', oz: 35, note: 'About 14 kiwis. The midday fruit, 5 oz per midday meal.' },
@@ -24,15 +24,15 @@ export const INGREDIENTS = [
   },
   {
     name: 'Eggs',
-    weeklyOz: 74,
+    weeklyOz: 73.5,
     source: 'OrgaNICK Pastures at Woodman\'s, $5.39 a dozen',
-    detail: 'Certified organic and pasture-raised, with no exceptions. About 42 eggs a week. Buy 4 dozen and there are spares.',
+    detail: 'Certified organic and pasture-raised, with no exceptions. Exactly 42 eggs a week, always whole eggs in every meal, never halves. Buy 4 dozen and there are spares.',
   },
   {
     name: 'Sardines',
     weeklyOz: 21,
     source: 'King Oscar sardines in water, 7 tins a week',
-    detail: '1 oz, about a third of a tin (3 to 4 fish), at every single meal: on the side, mashed into fillings, or crisped into cakes. This is the in-water tin that passes in the checked database (ingredients: sardines, water). Wild Planet\'s passing tin is packed in olive oil, which is not part of this diet, and the lightly smoked versions fail, so neither is used here.',
+    detail: '1 oz, a third of a tin, 4 fish, at every single meal: on the side, mashed into fillings, or crisped into cakes. This is the in-water tin that passes in the checked database (ingredients: sardines, water). Wild Planet\'s passing tin is packed in olive oil, which is not part of this diet, and the lightly smoked versions fail, so neither is used here.',
   },
   {
     name: 'Cheese',
@@ -115,7 +115,7 @@ export const MEALS = [
     steps: ['Press the beef into a thin round in a hot tallow pan and crisp it like a crust, salted.', 'Top with the cheese and sardine pieces and let the cheese melt.', 'Fry or bake the egg and set it on top. Serve with the kiwi.'] },
   { id: 'deviled-eggs-patty', day: 3, slot: 'Evening', name: 'Deviled Eggs and a Cheese Patty', minutes: 30,
     description: 'Deviled eggs with the yolks mashed with sardines and avocado, next to a tallow beef patty with cheese.',
-    beef: 4, egg: 4.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes',
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes',
     steps: ['Boil the eggs, halve them, and mash the yolks with the sardines and avocado and a pinch of salt. Fill the whites.', 'Fry the beef patty in tallow and melt the cheese over it.', 'Plate the deviled eggs next to the patty.'] },
   { id: 'egg-drop-beef-soup', day: 4, slot: 'Morning', name: 'Egg Drop Beef Soup', minutes: 20,
     description: 'No tallow. Beef simmered in salted water, egg ribbons stirred through, sardines in the bowl, cheese grated over. Banana on the side.',
@@ -127,11 +127,11 @@ export const MEALS = [
     steps: ['Bake or fry small piles of the cheese until crisp and golden. Mash the sardines into a pate with salt.', 'Fry the beef patty in tallow and fry the eggs in the same pan.', 'Serve the crisps and pate with the patty and eggs, kiwi on the side.'] },
   { id: 'open-face-egg-salad-stack', day: 4, slot: 'Evening', name: 'Open-Face Egg Salad Stack', minutes: 25,
     description: 'Chopped eggs and sardines mashed with avocado, stacked on tallow-seared patties with cheese melted under. A beef-heavy plate to balance the light soup morning.',
-    beef: 5, egg: 4.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes',
+    beef: 5, egg: 5.25, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes',
     steps: ['Sear thick beef patties in tallow with salt and melt the cheese on them.', 'Chop the cooked eggs and mash with the sardines and avocado into an egg salad.', 'Stack the egg salad on the patties and serve.'] },
   { id: 'the-no-beef-meal', day: 5, slot: 'Morning', name: 'The No-Beef Meal', minutes: 15,
     description: 'The one meal with no beef and no tallow: eggs, sardines, and cheese crisps, with banana. Its beef moves to tonight\'s meatloaf.',
-    beef: 0, egg: 5.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no',
+    beef: 0, egg: 5.25, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no',
     steps: ['Crisp the cheese into crisps in a dry pan.', 'Cook the eggs any way you like, in a dry or lightly beef-fat-free pan, salted.', 'Serve the eggs, sardines and cheese crisps with the banana.'] },
   { id: 'cheese-stuffed-beef-rolls', day: 5, slot: 'Midday', name: 'Cheese-Stuffed Beef Rolls', minutes: 25,
     description: 'Beef rolled around cheese and seared in tallow, with poached eggs. Sardines and kiwi on the side.',
@@ -169,7 +169,7 @@ export const MEALS = [
 
 export const SLOTS = ['Morning', 'Midday', 'Evening'];
 export const TALLOW_LABEL = { yes: 'Tallow', double: 'Double tallow', light: 'Tallow (greased tin)', no: 'No tallow' };
-export const TALLOW_TSP = { yes: 'about 1 1/2 tsp', double: 'about 1 tbsp', light: 'about 3/4 tsp', no: 'none' };
+export const TALLOW_TSP = { yes: '1 teaspoon', double: '2 teaspoons', light: '1 teaspoon, to grease the tin', no: 'none' };
 
 // Where to buy each ingredient. Woodman's links use the storefront search
 // pattern the Woodman's (Onalaska) online store itself uses.
@@ -214,6 +214,57 @@ const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
 export const TALLOW_TOTAL_UNITS = MEALS.reduce((s, m) => s + TALLOW_UNITS[m.tallow], 0);
 const TALLOW_UNIT_COST = (4 * PRICE.tallowPerOz) / TALLOW_TOTAL_UNITS;
 
+// Nutrition estimates per ounce, from USDA reference values for these foods.
+// Estimates, not lab numbers: the organ blend varies pack to pack.
+export const NUTRITION_PER_OZ = {
+  beef: { kcal: 75, protein: 5.5, fat: 5.7, carbs: 0 },
+  egg: { kcal: 40, protein: 3.4, fat: 2.9, carbs: 0.2 },
+  sardines: { kcal: 60, protein: 7, fat: 3.3, carbs: 0 },
+  cheese: { kcal: 85, protein: 6, fat: 6.5, carbs: 1 },
+  tallow: { kcal: 250, protein: 0, fat: 28, carbs: 0 },
+  fruit: {
+    Banana: { kcal: 25, protein: 0.3, fat: 0.1, carbs: 6.4 },
+    Kiwi: { kcal: 17, protein: 0.3, fat: 0.1, carbs: 4.2 },
+    Avocado: { kcal: 45, protein: 0.6, fat: 4.2, carbs: 2.4 },
+  },
+};
+
+export function mealNutrition(m) {
+  const tallowOz = (TALLOW_UNITS[m.tallow] / TALLOW_TOTAL_UNITS) * 4;
+  const parts = [
+    [NUTRITION_PER_OZ.beef, m.beef],
+    [NUTRITION_PER_OZ.egg, m.egg],
+    [NUTRITION_PER_OZ.sardines, m.sardines],
+    [NUTRITION_PER_OZ.cheese, m.cheese],
+    [NUTRITION_PER_OZ.fruit[m.fruit], m.fruitOz],
+    [NUTRITION_PER_OZ.tallow, tallowOz],
+  ];
+  const out = { kcal: 0, protein: 0, fat: 0, carbs: 0 };
+  for (const [n, oz] of parts) {
+    out.kcal += n.kcal * oz;
+    out.protein += n.protein * oz;
+    out.fat += n.fat * oz;
+    out.carbs += n.carbs * oz;
+  }
+  out.kcal = Math.round(out.kcal);
+  out.protein = Math.round(out.protein);
+  out.fat = Math.round(out.fat);
+  out.carbs = Math.round(out.carbs);
+  return out;
+}
+
+export const WEEK_NUTRITION = MEALS.reduce((acc, m) => {
+  const n = mealNutrition(m);
+  acc.kcal += n.kcal; acc.protein += n.protein; acc.fat += n.fat; acc.carbs += n.carbs;
+  return acc;
+}, { kcal: 0, protein: 0, fat: 0, carbs: 0 });
+export const DAY_NUTRITION = {
+  kcal: Math.round(WEEK_NUTRITION.kcal / 7),
+  protein: Math.round(WEEK_NUTRITION.protein / 7),
+  fat: Math.round(WEEK_NUTRITION.fat / 7),
+  carbs: Math.round(WEEK_NUTRITION.carbs / 7),
+};
+
 export function mealCost(m) {
   return m.beef * PRICE.beefPerOz
     + m.egg * PRICE.eggPerOz
@@ -225,7 +276,7 @@ export function mealCost(m) {
 export function ingredientWeekCost(key) {
   const t = {
     'Beef organ blend': 80 * PRICE.beefPerOz,
-    'Eggs': 74 * PRICE.eggPerOz,
+    'Eggs': 73.5 * PRICE.eggPerOz,
     'Sardines': 21 * PRICE.sardinesPerOz,
     'Cheese': 10 * PRICE.cheesePerOz,
     'Beef tallow': 4 * PRICE.tallowPerOz,
