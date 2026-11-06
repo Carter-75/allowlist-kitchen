@@ -215,20 +215,19 @@ export const MEALS = [
 // keeps the same ingredients at every size; only the amounts change.
 // Carter's ranges: a plan is on target anywhere in 1,350-1,650 (the 1,500),
 // 1,850-2,150 (the 2,000), or 2,350-2,650 (the 2,500) calories a day.
-// Beef rule (Carter, Nov 5, 2026): beef is portioned in quarter pounds,
-// 0.25 lb (4 oz) a meal and 0.5 lb (8 oz) for the double meatloaf, never
-// odd ounces. The 2,500 and 2,000 plans both run the full 84 oz beef pool
-// that way. The 1,500 plan is the one exception: 20 beef meals at a 0.25 lb
-// minimum is 84 oz of beef, about 1,000 calories a day before anything else
-// is on the plate, and even with everything else cut to its practical
-// minimum the day floors around 1,930 calories, outside the 1,350-1,650
-// range. So at 1,500 the beef scales in ounces (34 oz a week) while every
-// other rule holds: same ingredients in every meal, whole eggs only,
-// sardines stay 1 oz (a third of a tin, 4 fish) at the same 19 meals,
-// condiment shelf identical, superfoods all still in the week.
+// Beef rule (Carter, Nov 5, 2026): beef is portioned raw in quarter-pound
+// multiples at EVERY size, 0.25 lb (4 oz) a meal and 0.5 lb (8 oz) for the
+// double meatloaf, never odd ounces. The 2,500 and 2,000 plans both run the
+// full 84 oz beef pool that way (the 2,000 scales eggs, fruit, and tallow
+// instead of beef). At the 1,500 size, 20 beef meals at a 0.25 lb minimum
+// would floor the day around 1,930 calories, outside the range, so Carter
+// directed the fix himself: keep the beef in quarter pounds (40 oz a week,
+// at 9 meals) and adjust the other 11 beef recipes at this size to run on
+// their eggs, sardines, salmon, and cheese, with their own names,
+// descriptions, and steps in the overrides below.
 // Label-checked daily averages: 2,500 plan: 2,578 cal, 141g protein, 186g
 // fat, 101g carbs, 30.9g fiber. 2,000 plan: 2,133 cal, 123g protein, 151g
-// fat, 80g carbs, 22.7g fiber. 1,500 plan: 1,522 cal, 89g protein, 100g fat,
+// fat, 80g carbs, 22.7g fiber. 1,500 plan: 1,563 cal, 91g protein, 104g fat,
 // 75g carbs, 20.8g fiber. Protein holds at about 23% of calories at the two
 // smaller sizes and 22% at the full size.
 export const PLAN_TIERS = [1500, 2000, 2500];
@@ -260,28 +259,66 @@ export const TIER_OVERRIDES = {
     'fried-rice-plate': { egg: 1.75, fruitOz: 5 },
     'the-diner-plate': { egg: 1.75, fruitOz: 5 },
   },
+  // The 1,500 plan (rebuilt Nov 5, 2026 at Carter's direction): beef stays
+  // in quarter-pound multiples here too, 0.25 lb at 8 meals and 0.5 lb at
+  // the meatloaf, 40 oz for the week. That only fits the 1,350-1,650 range
+  // if the other 11 beef recipes run without beef at this size, so those
+  // meals are adjusted below with their own names, descriptions, and steps
+  // (egg, sardine, salmon, and cheese plates). Everything else follows the
+  // same scaling: whole eggs only, fruit and tallow scaled, sardines still
+  // 1 oz at the same 19 meals, condiment shelf identical.
   1500: {
-    'smash-patties-fried-eggs': { beef: 1.5, fruitOz: 3.5 },
-    'beef-egg-scramble': { beef: 1.5, fruitOz: 5 },
-    'guac-burger-plate': { beef: 2, egg: 1.75, fruitOz: 4 },
-    'scotch-eggs': { beef: 1.5, fruitOz: 3.5 },
-    'egg-wrap-burrito': { beef: 1.5, egg: 1.75, fruitOz: 5 },
-    'meatballs-avocado': { beef: 1.5, fruitOz: 4 },
-    'banana-pancakes-breakfast-patties': { beef: 1.5, egg: 1.75, fruitOz: 3.5 },
-    'beef-pizza': { beef: 2, egg: 1.75, fruitOz: 5 },
-    'deviled-eggs-patty': { beef: 1.5, fruitOz: 4 },
-    'egg-drop-beef-soup': { beef: 1.5, egg: 1.75, fruitOz: 3.5 },
-    'cheese-crisps-sardine-pate': { beef: 2, egg: 1.75, fruitOz: 5 },
-    'open-face-egg-salad-stack': { beef: 2, egg: 3.5, fruitOz: 4 },
+    'smash-patties-fried-eggs': { beef: 4, egg: 1.75, fruitOz: 3.5,
+      description: 'Beef patties smashed thin and crisped in tallow, cheese melted over, an egg fried in the same pan. Sardines and banana on the side.' },
+    'beef-egg-scramble': { beef: 0, egg: 1.75, fruitOz: 5, tallow: 'no', name: 'Egg and Cheese Scramble',
+      description: 'Eggs scrambled soft with cheese folded in at the end. Sardines and kiwi on the side, coconut water to drink.',
+      steps: ['Cook the beaten eggs in a dry pan, stirring soft, with salt.', 'Fold the cheese in off the heat.', 'Serve with the sardines and the kiwi on the side.', 'Stir the psyllium into the coconut water and drink it with the meal.'] },
+    'guac-burger-plate': { beef: 0, egg: 1.75, fruitOz: 4, tallow: 'no', name: 'Guac and Eggs Plate',
+      description: 'Avocado mashed with salt and olive oil as the sauce, spooned over soft eggs, sardines on the side. No cheese at this meal.',
+      steps: ['Mash the avocado with salt and the olive oil into a rough guacamole.', 'Cook the eggs soft in a dry pan.', 'Plate the eggs, spoon the avocado over, sardines on the side, and the ketchup for the eggs.'] },
+    'scotch-eggs': { beef: 4, egg: 1.75, fruitOz: 3.5, name: 'Scotch Egg',
+      description: 'An egg wrapped in beef and fried in tallow, a double tallow meal, with cheese melted over. Sardines and banana on the side.',
+      steps: ['Boil the egg until just set, cool and peel it.', 'Flatten the beef into a sheet, salt, and wrap the egg fully. Fry in a double share of tallow, turning until crisp all over.', 'Melt the cheese over the top. Serve with the sardines and the banana.'] },
+    'egg-wrap-burrito': { beef: 0, egg: 1.75, fruitOz: 5, tallow: 'no',
+      description: 'A thin omelet is the wrap. Inside: cheese and sardine pieces. Kiwi on the side.',
+      steps: ['Cook the beaten eggs as one thin omelet sheet in a dry pan and set it flat.', 'Break the sardines into pieces.', 'Fill the omelet with cheese and sardines, roll it tight, and serve with the kiwi.'] },
+    'meatballs-avocado': { beef: 4, fruitOz: 4 },
+    'banana-pancakes-breakfast-patties': { beef: 0, egg: 1.75, fruitOz: 3.5, tallow: 'no', name: 'Banana Pancakes',
+      description: 'Pancakes made from just banana and egg with wild blueberries folded in and raw honey drizzled over. Sardines on the side.',
+      steps: ['Mash the banana with the egg and the cinnamon into a batter, whisk in the ground flax and the psyllium, and fold in the blueberries. Griddle small pancakes in a dry pan.', 'Drizzle the honey over the pancakes and serve with the sardines on the side.'] },
+    'beef-pizza': { beef: 4, egg: 1.75, fruitOz: 5 },
+    'deviled-eggs-patty': { beef: 0, tallow: 'no', fruitOz: 4, name: 'Deviled Eggs and Cheese Crisps',
+      description: 'Deviled eggs with the yolks mashed with sardines and avocado, cheese crisps on the side.',
+      steps: ['Boil the eggs, halve them, and mash the yolks with the sardines, avocado, homemade mayo and mustard and a pinch of salt. Fill the whites.', 'Crisp the cheese into crisps in a dry pan.', 'Dust the deviled eggs with paprika and plate them with the crisps.'] },
+    'egg-drop-beef-soup': { beef: 0, egg: 1.75, fruitOz: 3.5, name: 'Egg Drop Soup',
+      description: 'No tallow. Egg ribbons stirred through beef bone broth, sardines in the bowl, cheese grated over. Banana on the side.',
+      steps: ['Heat the bone broth and swirl it, then drizzle in the beaten egg so it sets as ribbons. Add the sardines.', 'Ladle into a bowl, grate the cheese over, and serve with the banana.'] },
+    'cheese-crisps-sardine-pate': { beef: 0, egg: 1.75, fruitOz: 5, tallow: 'no',
+      description: 'A double cheese meal: crisps from half the cheese, wild salmon mashed as a pate to scoop with them, plus fried eggs. Kiwi on the side.',
+      steps: ['Bake or fry small piles of the cheese until crisp and golden. Mash the salmon with the homemade mayo and a pinch of salt into a pate.', 'Fry the eggs in a dry pan.', 'Serve the crisps and pate with the eggs, kiwi on the side.'] },
+    'open-face-egg-salad-stack': { beef: 0, egg: 3.5, fruitOz: 4, tallow: 'no',
+      description: 'Chopped eggs and sardines mashed with avocado, stacked on cheese crisps. A big plate to balance the light soup morning.',
+      steps: ['Crisp the cheese into crisps in a dry pan.', 'Chop the cooked eggs and mash with the sardines, avocado, homemade mayo and mustard into an egg salad.', 'Stack the egg salad on the crisps and serve.'] },
     'the-no-beef-meal': { egg: 3.5, fruitOz: 3.5 },
-    'cheese-stuffed-beef-rolls': { beef: 1.5, egg: 1.75, fruitOz: 5 },
-    'mini-meatloaf': { beef: 3, egg: 1.75, fruitOz: 4 },
-    'loaded-omelet': { beef: 1.5, egg: 1.75, fruitOz: 3.5 },
-    'sardine-beef-cakes': { beef: 1.5, egg: 1.75, fruitOz: 5 },
-    'meatball-soup': { beef: 1.5, egg: 1.75, fruitOz: 4 },
-    'egg-muffins': { beef: 1.5, egg: 1.75, fruitOz: 3.5 },
-    'fried-rice-plate': { beef: 1.5, egg: 1.75, fruitOz: 5 },
-    'the-diner-plate': { beef: 2, egg: 1.75, fruitOz: 4 },
+    'cheese-stuffed-beef-rolls': { beef: 4, egg: 1.75, fruitOz: 5 },
+    'mini-meatloaf': { beef: 8, egg: 1.75, fruitOz: 4,
+      description: 'Double beef, including the beef the no-beef morning gave up. Baked in its own fat, no tallow, with avocado mash, an egg, sardines, and steamed broccoli. No cheese at this meal.',
+      steps: ['Form the beef into a small loaf with salt, spread the ketchup over the top as a glaze, and bake it in its own fat until cooked through. Rest it before slicing.', 'Mash the avocado with salt. Steam the broccoli until tender. Cook the egg to go with it.', 'Slice the meatloaf and serve with the avocado mash, egg, sardines and broccoli.'] },
+    'loaded-omelet': { beef: 0, egg: 1.75, fruitOz: 3.5, tallow: 'no',
+      description: 'An omelet with cheese folded in, sardines on top. Banana on the side.',
+      steps: ['Stir the ground flax and turmeric into the beaten egg, cook the omelet in a dry pan, and fold the cheese inside.', 'Slide it out, lay the sardines on top, and serve with the banana.'] },
+    'sardine-beef-cakes': { beef: 0, egg: 1.75, fruitOz: 5, tallow: 'no', name: 'Salmon Cakes',
+      description: 'Wild salmon mixed with egg into cakes and fried crisp in a dry pan, with cheese melted over. Kiwi on the side.',
+      steps: ['Mash the salmon with the beaten egg and salt and form flat cakes.', 'Fry the cakes in a dry pan until deeply crisp on both sides.', 'Melt the cheese over the cakes. Serve with the kiwi.'] },
+    'meatball-soup': { beef: 0, egg: 1.75, fruitOz: 4, name: 'Egg Ribbon Soup',
+      description: 'No tallow. Egg ribbons simmered in beef bone broth with ginger, cheese stirred in, sardines in the bowl. Avocado on the side.',
+      steps: ['Simmer the bone broth with the ginger.', 'Swirl in the beaten egg as ribbons, add the sardines, and stir the cheese in until it melts.', 'Serve in bowls with the avocado on the side.'] },
+    'egg-muffins': { beef: 4, egg: 1.75, fruitOz: 3.5,
+      steps: ['Grease a muffin tin with tallow. Press the beef into cups, salt them, stir the ground flax into the beaten egg, and pour the egg over the cups.', 'Bake until the egg is set. Put the cheese on top for the last minutes so it melts.', 'Serve with the sardines, the banana, and the blueberries.'] },
+    'fried-rice-plate': { beef: 4, egg: 1.75, fruitOz: 5 },
+    'the-diner-plate': { beef: 4, egg: 1.75, fruitOz: 4,
+      description: 'A beef slab seared in tallow like a steak, a sunny egg cooked in the same fat, cheese on the beef, sardines on the side, avocado sliced with salt and olive oil, pickle spears and steamed broccoli. Then the week loops back to Day 1.',
+      steps: ['Sear the beef slab in tallow with salt like a steak, resting it a few minutes.', 'Fry the egg sunny in the same fat. Melt the cheese over the beef.', 'Steam the broccoli. Plate with the sardines, the avocado sliced with salt and the olive oil drizzled over, the pickle spears, the broccoli, and the ketchup for the beef.'] },
   },
 };
 

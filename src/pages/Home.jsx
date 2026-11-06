@@ -47,7 +47,7 @@ export default function Home() {
               <div key={t} className={`rounded-2xl border p-5 ${active ? 'border-pine-700 bg-pine-800 text-white' : 'border-ink/10 bg-cream'}`}>
                 <p className="font-display text-2xl font-black">{t.toLocaleString()} <span className={`text-sm font-bold ${active ? 'text-pine-50/75' : 'text-ink/50'}`}>calories a day</span></p>
                 <p className={`mt-2 text-sm leading-relaxed ${active ? 'text-pine-50/85' : 'text-ink/65'}`}>About {dn.kcal.toLocaleString()} cal a day on the labels: {dn.protein}g protein, {dn.fat}g fat, {dn.carbs}g carbs, {dn.fiber}g fiber.</p>
-                <p className={`mt-1 text-sm ${active ? 'text-pine-50/85' : 'text-ink/65'}`}>{t === 2500 ? 'The full-size plan, and Carter\'s own.' : t === 2000 ? 'The middle size: beef stays in quarter-pound portions, eggs and fruit scale down.' : 'The small size: portions scale down across the board, protein and fiber protected.'}</p>
+                <p className={`mt-1 text-sm ${active ? 'text-pine-50/85' : 'text-ink/65'}`}>{t === 2500 ? 'The full-size plan, and Carter\'s own.' : t === 2000 ? 'The middle size: beef stays in quarter-pound portions, eggs and fruit scale down.' : 'The small size: beef stays in quarter-pound portions at 9 meals, the other recipes run on their eggs, sardines, and salmon, and protein and fiber are protected.'}</p>
               </div>
             );
           })}

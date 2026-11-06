@@ -12,7 +12,7 @@ export default function About() {
         </p>
         <h2 className="font-display text-2xl font-bold text-ink">The rules</h2>
         <ul className="list-disc space-y-2 pl-6">
-          <li>Three meals a day, 7 days, then the week loops. The week comes in three sizes, about 1,500, 2,000 or 2,500 calories a day: the same 21 meals, with the portions scaled. The 2,500 size is Carter's own plan.</li>
+          <li>Three meals a day, 7 days, then the week loops. The week comes in three sizes, about 1,500, 2,000 or 2,500 calories a day: the same 21 meals, with the portions scaled. Beef is always portioned raw in quarter-pound multiples (0.25 lb a meal, 0.5 lb for the meatloaf); at the 1,500 size that means 9 meals carry beef and the rest run on their eggs, sardines, and salmon, with adjusted recipes. The 2,500 size is Carter's own plan.</li>
           <li>Everything is measured one way: ounces, weighed. Eggs and fruit are weighed too, at their average weights, so nothing is counted in pieces, cups, or tablespoons.</li>
           <li>The week is the lock. Individual meals can be big or light, but the 21 meals together must use exactly the weekly pool. At the full 2,500 size that pool is 84 oz beef organ blend, 73.5 oz egg (42 eggs), 19 oz sardines, 10 oz cheese, 28 oz banana, 52.5 oz kiwi, 56 oz avocado, 4 oz beef tallow, plus the small superfood amounts (salmon, blueberries, broccoli, coconut water, flax, bone broth), Celtic sea salt and water. The smaller sizes scale the same pool down.</li>
           <li>Fruit rotates by time of day: banana in the morning, kiwi at midday, avocado in the evening.</li>
