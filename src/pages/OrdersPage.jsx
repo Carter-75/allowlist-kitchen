@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CalendarDays, Check, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { useHead } from '../lib/store';
+import { useTier } from '../lib/plan';
 import { ORDER_WEEK_OPTIONS, orderSchedule } from '../data/godDiet';
 
 const SETTINGS_KEY = 'goddiet-orders-v2';
@@ -30,7 +31,8 @@ const SHIPPER_DOT = {
 };
 
 export default function OrdersPage() {
-  useHead({ title: 'Order Calendar - The God Diet', description: 'Exactly what to order, from which company, on exactly which day: the 2-week fresh cycle, the 5-week beef bundle, the 8-week cheese pack, and the pantry block order.' });
+  const tier = useTier();
+  useHead({ title: 'Order Calendar - The God Diet', description: 'Exactly what to order, from which company, on exactly which day: the 2-week fresh cycle, the beef bundle, the cheese pack, and the pantry block order, sized to your plan.' });
   const todayISO = isoOf(new Date());
   const [settings, setSettings] = useState(() => loadJSON(SETTINGS_KEY, { start: todayISO, blockWeeks: 10, eggPackSize: 12 }));
   const [done, setDone] = useState(() => loadJSON(DONE_KEY, {}));
@@ -38,10 +40,10 @@ export default function OrdersPage() {
   const [selected, setSelected] = useState(null);
 
   const start = useMemo(() => parseISO(settings.start || todayISO), [settings.start, todayISO]);
-  const events = useMemo(() => orderSchedule(settings.blockWeeks, settings.eggPackSize).map((e) => {
+  const events = useMemo(() => orderSchedule(settings.blockWeeks, settings.eggPackSize, tier).map((e) => {
     const date = addDays(start, e.weekOffset * 7);
-    return { ...e, date, dateISO: isoOf(date), uid: `${e.id}|${settings.start}|${settings.blockWeeks}|${settings.eggPackSize}` };
-  }), [settings, start]);
+    return { ...e, date, dateISO: isoOf(date), uid: `${e.id}|${settings.start}|${settings.blockWeeks}|${settings.eggPackSize}|${tier}` };
+  }), [settings, start, tier]);
 
   const byDate = useMemo(() => {
     const map = new Map();
@@ -78,7 +80,7 @@ export default function OrdersPage() {
     <div className="mx-auto max-w-6xl px-5 py-10">
       <p className="text-xs font-bold uppercase tracking-[0.25em] text-flame-600">Never run out, never over-order</p>
       <h1 className="mt-2 font-display text-4xl font-bold sm:text-5xl">The order calendar</h1>
-      <p className="mt-4 max-w-2xl leading-relaxed text-ink/70">Every order this diet ever needs, on its exact day, with the exact contents of that one order. Fresh food lands every 2 weeks, the beef bundle every 5 weeks, the cheese pack every 8 weeks, and the pantry once per block. Set the day you start, and the whole year lays itself out.</p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-ink/70">Every order this diet ever needs, on its exact day, with the exact contents of that one order. Fresh food lands every 2 weeks, the beef bundle and the cheese pack land on their own whole-week rhythms (the bundle stretches further at the smaller plan sizes), and the pantry once per block. This calendar is sized to the <strong>{tier.toLocaleString()} calorie plan</strong> picked in the header. Set the day you start, and the whole year lays itself out.</p>
 
       <div className="mt-6 flex flex-wrap items-end gap-4 rounded-2xl border border-ink/10 bg-cream p-5">
         <label className="block">

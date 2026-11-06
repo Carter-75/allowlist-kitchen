@@ -12,12 +12,12 @@ export default function About() {
         </p>
         <h2 className="font-display text-2xl font-bold text-ink">The rules</h2>
         <ul className="list-disc space-y-2 pl-6">
-          <li>Three meals a day, about 2,000 calories a day, 7 days, then the week loops.</li>
+          <li>Three meals a day, 7 days, then the week loops. The week comes in three sizes, about 1,500, 2,000 or 2,500 calories a day: the same 21 meals, with the portions scaled. The 2,500 size is Carter's own plan.</li>
           <li>Everything is measured one way: ounces, weighed. Eggs and fruit are weighed too, at their average weights, so nothing is counted in pieces, cups, or tablespoons.</li>
-          <li>The week is the lock. Individual meals can be big or light, but the 21 meals together must use exactly the weekly pool: 80 oz beef organ blend, 73.5 oz egg, 21 oz sardines, 10 oz cheese, 28 oz banana, 35 oz kiwi, 28 oz avocado, 4 oz beef tallow, plus Celtic sea salt and water.</li>
+          <li>The week is the lock. Individual meals can be big or light, but the 21 meals together must use exactly the weekly pool. At the full 2,500 size that pool is 84 oz beef organ blend, 73.5 oz egg (42 eggs), 19 oz sardines, 10 oz cheese, 28 oz banana, 52.5 oz kiwi, 56 oz avocado, 4 oz beef tallow, plus the small superfood amounts (salmon, blueberries, broccoli, coconut water, flax, bone broth), Celtic sea salt and water. The smaller sizes scale the same pool down.</li>
           <li>Fruit rotates by time of day: banana in the morning, kiwi at midday, avocado in the evening.</li>
-          <li>Beef tallow is the only cooking fat, and only at meals where the beef cooks. The soups simmer in salted water, the meatloaf bakes in its own fat, and the one no-beef meal uses no fat at all.</li>
-          <li>Salt goes on the beef while it cooks. That is the seasoning plan for the whole diet.</li>
+          <li>Beef tallow is the only cooking fat, and only at meals where the beef cooks. The soups simmer in beef bone broth, the meatloaf bakes in its own fat, and the one no-beef meal uses no fat at all.</li>
+          <li>Salt goes on the beef while it cooks, and a small shelf of plain single spices, plus the checked condiments on the Ingredients page, seasons the rest.</li>
         </ul>
         <h2 className="font-display text-2xl font-bold text-ink">The sources</h2>
         <p>

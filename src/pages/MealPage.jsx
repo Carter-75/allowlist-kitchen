@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Check, Clock3, Copy, ExternalLink } from 'lucide-react';
 import Missing from './Missing';
-import { TALLOW_LABEL, mealNutrition } from '../data/godDiet';
-import { allMeals, mealById, mealCost, mealIngredients, money, recipeText, TALLOW_TSP, useHead } from '../lib/store';
+import { TALLOW_LABEL, TIER_TALLOW_OZ, mealNutrition, mealsForTier } from '../data/godDiet';
+import { mealById, mealCost, mealIngredients, money, recipeText, TALLOW_TSP, useHead } from '../lib/store';
+import { useTier } from '../lib/plan';
 
 const SLOT_TINT = {
   Morning: 'bg-amber-100 text-amber-900',
@@ -13,15 +14,17 @@ const SLOT_TINT = {
 
 export default function MealPage() {
   const { mealId } = useParams();
-  const meal = mealById(mealId);
+  const tier = useTier();
+  const tierMeals = mealsForTier(tier);
+  const meal = mealById(mealId, tier);
   const [copied, setCopied] = useState(false);
   useHead({ title: meal ? `${meal.name} - The God Diet` : 'The God Diet', description: meal ? meal.description : '' });
   if (!meal) return <Missing />;
-  const idx = allMeals.findIndex((m) => m.id === meal.id);
-  const prev = allMeals[(idx + allMeals.length - 1) % allMeals.length];
-  const next = allMeals[(idx + 1) % allMeals.length];
+  const idx = tierMeals.findIndex((m) => m.id === meal.id);
+  const prev = tierMeals[(idx + tierMeals.length - 1) % tierMeals.length];
+  const next = tierMeals[(idx + 1) % tierMeals.length];
   const copy = async () => {
-    try { await navigator.clipboard.writeText(recipeText(meal)); setCopied(true); setTimeout(() => setCopied(false), 2000); } catch { setCopied(false); }
+    try { await navigator.clipboard.writeText(recipeText(meal, tier)); setCopied(true); setTimeout(() => setCopied(false), 2000); } catch { setCopied(false); }
   };
   return (
     <div className="mx-auto max-w-6xl px-4 pt-10">
@@ -55,7 +58,7 @@ export default function MealPage() {
         <aside>
           <div className="rounded-2xl border border-ink/10 bg-cream p-6">
             <h2 className="font-display text-xl font-bold">What to use</h2>
-            <p className="mt-1 text-sm text-ink/55">Ounces first, then the rounded amount to actually grab. This is this meal's share of the weekly pool. Tap a source to buy that ingredient.</p>
+            <p className="mt-1 text-sm text-ink/55">Ounces first, then the rounded amount to actually grab. This is this meal's share of the weekly pool on the {tier.toLocaleString()} plan. Tap a source to buy that ingredient.</p>
             <ul className="mt-4 divide-y divide-ink/10">
               {mealIngredients(meal).map((i) => (
                 <li key={i.item} className="py-2.5">
@@ -72,7 +75,7 @@ export default function MealPage() {
               <li className="py-2.5">
                 <div className="flex items-baseline justify-between gap-2">
                   <span className="font-semibold">Beef tallow</span>
-                  <span className="text-sm font-bold text-ink/60">{meal.tallow === 'no' ? 'None at this meal' : `${TALLOW_TSP[meal.tallow]}, from the week's 4 oz`}</span>
+                  <span className="text-sm font-bold text-ink/60">{meal.tallow === 'no' ? 'None at this meal' : `${TALLOW_TSP[meal.tallow]}, from the week's ${TIER_TALLOW_OZ[tier]} oz`}</span>
                 </div>
                 {meal.tallow !== 'no' && <div className="mt-0.5 text-right"><a href="https://grasslandbeef.com/collections/kitchen-favorites" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs font-bold text-pine-700 hover:underline">Buy: US Wellness Meats <ExternalLink size={11} /></a></div>}
               </li>

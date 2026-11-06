@@ -22,7 +22,8 @@ export default function MealTile({ meal }) {
         <div className="mt-4 flex flex-wrap gap-1.5 text-[11px] font-bold text-ink/60">
           {meal.beef > 0 && <span className="rounded-full bg-paper px-2 py-1">Beef {meal.beef} oz</span>}
           {meal.egg > 0 && <span className="rounded-full bg-paper px-2 py-1">Egg {meal.egg} oz</span>}
-          <span className="rounded-full bg-paper px-2 py-1">Sardines {meal.sardines} oz</span>
+          {meal.sardines > 0 && <span className="rounded-full bg-paper px-2 py-1">Sardines {meal.sardines} oz</span>}
+          {meal.salmon > 0 && <span className="rounded-full bg-paper px-2 py-1">Salmon {meal.salmon} oz</span>}
           {meal.cheese > 0 && <span className="rounded-full bg-paper px-2 py-1">Cheese {meal.cheese} oz</span>}
           <span className="rounded-full bg-paper px-2 py-1">{meal.fruit} {meal.fruitOz} oz</span>
         </div>

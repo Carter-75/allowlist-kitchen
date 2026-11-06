@@ -3,7 +3,7 @@
 // swing, but the 21 meals together drain the pool exactly.
 
 export const POOL = [
-  { item: 'Beef organ blend', oz: 80, note: 'US Wellness 75% lean ground beef with heart, kidney and liver. About 5 lb.' },
+  { item: 'Beef organ blend', oz: 84, note: 'US Wellness 75% lean ground beef with heart, kidney and liver. About 5.25 lb.' },
   { item: 'Egg', oz: 73.5, note: 'Exactly 42 eggs at 1.75 oz out of shell. Certified organic and pasture-raised.' },
   { item: 'Sardines', oz: 19, note: 'About 6 1/3 tins, about 3 oz drained each. 1 oz at 19 of the 21 meals; wild salmon covers the other 2.' },
   { item: 'Wild sockeye salmon', oz: 2, note: 'Wild Planet canned wild sockeye. 1 oz at 2 meals, swapped in for the sardines. Farmed salmon is banned; wild is the pass.' },
@@ -24,7 +24,7 @@ export const POOL = [
 export const INGREDIENTS = [
   {
     name: 'Beef organ blend',
-    weeklyOz: 80,
+    weeklyOz: 84,
     source: 'US Wellness Meats',
     detail: '75% lean ground beef blended with heart, kidney and liver. This is the base of 20 of the 21 meals. Nothing else is substituted for it.',
   },
@@ -32,7 +32,7 @@ export const INGREDIENTS = [
     name: 'Eggs',
     weeklyOz: 73.5,
     source: 'OrgaNICK Pastures at Woodman\'s, $5.39 a dozen',
-    detail: 'Certified organic and pasture-raised, with no exceptions. Exactly 42 eggs a week, always whole eggs in every meal, never halves. They ship in whole cartons only, never fractional packs: seven 12-count cartons cover exactly 2 weeks, or seven 18-count cartons cover exactly 3 weeks. Whatever brand ships, the carton must carry both certifications.',
+    detail: 'Certified organic and pasture-raised, with no exceptions. Always whole eggs in every meal, never halves: 42 eggs a week at the 2,500 size, 34 at the 2,000 size, 26 at the 1,500 size. They ship in whole cartons only, never fractional packs; the order plan sizes each shipment to whole weeks and lets any extra eggs roll forward. Whatever brand ships, the carton must carry both certifications.',
   },
   {
     name: 'Sardines',
@@ -50,7 +50,7 @@ export const INGREDIENTS = [
     name: 'Wild blueberries',
     weeklyOz: 4,
     source: "Wyman's frozen wild blueberries",
-    detail: 'Single ingredient, approved in the checked database. 2 oz folded into the banana pancakes and 2 oz with the egg muffins. They also carry fiber, about 0.7g an ounce.',
+    detail: 'Single ingredient, approved in the checked database. 2 oz folded into the banana pancakes and 2 oz with the egg muffins. They also carry fiber, about 1.2g an ounce on the Wyman\'s label.',
   },
   {
     name: 'Broccoli (cooked)',
@@ -92,19 +92,19 @@ export const INGREDIENTS = [
     name: 'Banana',
     weeklyOz: 28,
     source: 'Shipped in the fresh box, weighed',
-    detail: 'The morning fruit. 4 oz at each of the 7 morning meals, on the side or cooked into the meal, like the banana pancakes.',
+    detail: 'The morning fruit, at each of the 7 morning meals, on the side or cooked into the meal, like the banana pancakes. 4 oz at the 2,500 and 2,000 sizes, 3.5 oz (one small banana, weighed) at the 1,500 size.',
   },
   {
     name: 'Kiwi',
     weeklyOz: 52.5,
     source: 'Shipped in the fresh box, weighed',
-    detail: 'The midday fruit. 7.5 oz (3 kiwis) at each of the 7 midday meals, always on the side. Raised from 5 oz on Nov 5, 2026 to lift the day\'s fiber.',
+    detail: 'The midday fruit, at each of the 7 midday meals, always on the side. 7.5 oz (3 kiwis) at the 2,500 size, 5 oz (2 kiwis) at the smaller sizes. Raised from 5 oz on Nov 5, 2026 to lift the day\'s fiber at the full size.',
   },
   {
     name: 'Avocado',
     weeklyOz: 56,
     source: 'Shipped in the fresh box, weighed',
-    detail: 'The evening fruit. 8 oz (2 avocados) at each of the 7 evening meals, sliced, mashed as a sauce, or folded into a filling. Doubled from 4 oz on Nov 5, 2026: avocado is the diet\'s biggest fiber source at 1.9g per ounce.',
+    detail: 'The evening fruit, at each of the 7 evening meals, sliced, mashed as a sauce, or folded into a filling. 8 oz (2 avocados) at the 2,500 size, 5 oz at the 2,000 size, 4 oz (1 avocado) at the 1,500 size. Doubled from 4 oz on Nov 5, 2026: avocado is the diet\'s biggest fiber source at 1.9g per ounce.',
   },
   {
     name: 'Celtic sea salt',
@@ -141,7 +141,7 @@ export const MEALS = [
     steps: ['Boil the eggs until just set, cool and peel them.', 'Flatten the beef into sheets, salt, and wrap each egg fully. Fry in a double share of tallow, turning until crisp all over.', 'Melt the cheese over the top. Serve with the sardines and the banana.'] },
   { id: 'egg-wrap-burrito', day: 2, slot: 'Midday', name: 'Egg Wrap Burrito', minutes: 20,
     description: 'A thin omelet is the wrap. Inside: tallow-seared beef, cheese, and sardine pieces. Kiwi on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
     steps: ['Cook the beaten eggs as one thin omelet sheet in tallow and set it flat.', 'Sear the beef strips in tallow with salt. Break the sardines into pieces.', 'Fill the omelet with beef, cheese and sardines, roll it tight, and serve with the kiwi.'] },
   { id: 'meatballs-avocado', day: 2, slot: 'Evening', name: 'Meatballs with Avocado', minutes: 25,
     description: 'Beef meatballs fried in tallow with cheese grated over, avocado slices and sardines on the plate. The one meal of the week with no egg.',
@@ -149,7 +149,7 @@ export const MEALS = [
     steps: ['Mix the ground flax into the beef, roll it into meatballs with salt, and fry them in tallow until browned through.', 'Grate the cheese over the hot meatballs so it melts into them.', 'Serve with the avocado slices, the sardines, and the ketchup for dipping.'] },
   { id: 'banana-pancakes-breakfast-patties', day: 3, slot: 'Morning', name: 'Banana Pancakes and Breakfast Patties', minutes: 25,
     description: 'Pancakes made from just banana and egg with wild blueberries folded in and raw honey drizzled over, griddled in tallow, next to beef breakfast patties with cheese melted on. Sardines on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes', blueberries: 2, honey: 2, flax: 0.5, psyllium: 1,
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes', blueberries: 2, honey: 2, flax: 0.5, psyllium: 1,
     seasoning: 'Cinnamon', steps: ['Mash the banana with the eggs and the cinnamon into a batter, whisk in the ground flax and the psyllium, and fold in the blueberries. Griddle small pancakes in tallow.', 'Form the beef into breakfast patties, salt, and fry in tallow. Melt the cheese on them.', 'Drizzle the honey over the pancakes. Serve the pancakes and patties together with the sardines on the side.'] },
   { id: 'beef-pizza', day: 3, slot: 'Midday', name: 'Beef Pizza', minutes: 25,
     description: 'Beef pressed flat and crisped in tallow is the crust. Cheese, sardine pieces, and an egg on top. Kiwi on the side, coconut water to drink.',
@@ -161,15 +161,15 @@ export const MEALS = [
     mayo: 1, mustard: 1, seasoning: 'Paprika', steps: ['Boil the eggs, halve them, and mash the yolks with the sardines, avocado, homemade mayo and mustard and a pinch of salt. Fill the whites.', 'Fry the beef patty in tallow and melt the cheese over it.', 'Dust the deviled eggs with paprika and plate them next to the patty.'] },
   { id: 'egg-drop-beef-soup', day: 4, slot: 'Morning', name: 'Egg Drop Beef Soup', minutes: 20,
     description: 'No tallow. Beef simmered in beef bone broth, egg ribbons stirred through, sardines in the bowl, cheese grated over. Banana on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no', broth: 16,
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no', broth: 16,
     seasoning: 'Turmeric', steps: ['Simmer the beef in the bone broth until it gives up its flavor, breaking it into small pieces.', 'Swirl the water and drizzle in the beaten eggs so they set as ribbons. Add the sardines.', 'Ladle into a bowl, grate the cheese over, and serve with the banana.'] },
   { id: 'cheese-crisps-sardine-pate', day: 4, slot: 'Midday', name: 'Cheese Crisps with Salmon Pate', minutes: 20,
     description: 'A double cheese meal: crisps from half the cheese, wild salmon mashed as a pate to scoop with them, plus a tallow beef patty and fried eggs. Kiwi on the side.',
     beef: 4, egg: 3.5, sardines: 0, salmon: 1, cheese: 1, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
     mayo: 1, steps: ['Bake or fry small piles of the cheese until crisp and golden. Mash the salmon with the homemade mayo and a pinch of salt into a pate.', 'Fry the beef patty in tallow and fry the eggs in the same pan.', 'Serve the crisps and pate with the patty and eggs, kiwi on the side.'] },
   { id: 'open-face-egg-salad-stack', day: 4, slot: 'Evening', name: 'Open-Face Egg Salad Stack', minutes: 25,
-    description: 'Chopped eggs and sardines mashed with avocado, stacked on tallow-seared patties with cheese melted under. A beef-heavy plate to balance the light soup morning.',
-    beef: 5, egg: 5.25, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes',
+    description: 'Chopped eggs and sardines mashed with avocado, stacked on tallow-seared patties with cheese melted under. A big plate to balance the light soup morning.',
+    beef: 4, egg: 5.25, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes',
     mayo: 1, mustard: 1, steps: ['Sear thick beef patties in tallow with salt and melt the cheese on them.', 'Chop the cooked eggs and mash with the sardines, avocado, homemade mayo and mustard into an egg salad.', 'Stack the egg salad on the patties and serve.'] },
   { id: 'the-no-beef-meal', day: 5, slot: 'Morning', name: 'The No-Beef Meal', minutes: 15,
     description: 'The one meal with no beef and no tallow: eggs, sardines, and cheese crisps, with banana. Its beef moves to tonight\'s meatloaf.',
@@ -185,7 +185,7 @@ export const MEALS = [
     ketchup: 1, steps: ['Form the beef into a small loaf with salt, spread the ketchup over the top as a glaze, and bake it in its own fat until cooked through. Rest it before slicing.', 'Mash the avocado with salt. Steam the broccoli until tender. Cook the eggs to go with it.', 'Slice the meatloaf and serve with the avocado mash, eggs, sardines and broccoli.'] },
   { id: 'loaded-omelet', day: 6, slot: 'Morning', name: 'Loaded Omelet', minutes: 15,
     description: 'An omelet cooked in tallow with beef crumbles and cheese folded in, sardines on top. Banana on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes', flax: 0.5,
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes', flax: 0.5,
     seasoning: 'Turmeric', steps: ['Brown the beef crumbles in tallow with salt.', 'Stir the ground flax and turmeric into the beaten eggs, add them, cook the omelet around the beef, and fold the cheese inside.', 'Slide it out, lay the sardines on top, and serve with the banana.'] },
   { id: 'sardine-beef-cakes', day: 6, slot: 'Midday', name: 'Salmon and Beef Cakes', minutes: 25,
     description: 'Wild salmon and beef mixed into cakes and fried crisp in tallow, a double tallow meal, with a fried egg on top and cheese melted over. Kiwi on the side.',
@@ -193,7 +193,7 @@ export const MEALS = [
     steps: ['Mash the salmon into the beef with salt and form flat cakes.', 'Fry the cakes in a double share of tallow until deeply crisp on both sides.', 'Fry the egg, set it on the cakes, and melt the cheese over everything. Serve with the kiwi.'] },
   { id: 'meatball-soup', day: 6, slot: 'Evening', name: 'Meatball Soup', minutes: 30,
     description: 'No tallow. Meatballs simmered in beef bone broth with egg ribbons, cheese stirred in, sardines in the bowl. Avocado on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'no', broth: 16,
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'no', broth: 16,
     seasoning: 'Ginger', steps: ['Roll small meatballs from the salted beef and simmer them in the bone broth.', 'Swirl in the beaten eggs as ribbons, add the sardines, and stir the cheese in until it melts.', 'Serve in bowls with the avocado on the side.'] },
   { id: 'egg-muffins', day: 7, slot: 'Morning', name: 'Egg Muffins', minutes: 30,
     description: 'Beef pressed into muffin cups with eggs baked inside, the tin greased with tallow, cheese on top. Sardines and banana on the side.',
@@ -201,13 +201,182 @@ export const MEALS = [
     steps: ['Grease a muffin tin with tallow. Press the beef into cups, salt them, stir the ground flax into the beaten eggs, and pour the eggs into the cups.', 'Bake until the eggs are set. Put the cheese on top for the last minutes so it melts.', 'Serve with the sardines, the banana, and the blueberries.'] },
   { id: 'fried-rice-plate', day: 7, slot: 'Midday', name: 'Fried "Rice" Plate', minutes: 20,
     description: 'Beef crumbled small and fried hard in tallow until it eats like rice, eggs scrambled in pieces through it, cheese folded in. Sardines and kiwi on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
     steps: ['Crumble the beef very small and fry it hard in tallow with salt until browned and rice-like.', 'Scramble the eggs in pieces through the beef.', 'Fold the cheese in off the heat. Serve with the sardines and kiwi.'] },
   { id: 'the-diner-plate', day: 7, slot: 'Evening', name: 'The Diner Plate', minutes: 25,
     description: 'A thick beef slab seared in tallow like a steak, sunny eggs cooked in the same fat, cheese on the beef, sardines on the side, avocado sliced with salt and olive oil, pickle spears and steamed broccoli. Then the week loops back to Day 1.',
-    beef: 5, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', ketchup: 1, oliveOil: 1, pickles: 2, broccoli: 3,
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', ketchup: 1, oliveOil: 1, pickles: 2, broccoli: 3,
     steps: ['Sear the thick beef slab in tallow with salt like a steak, resting it a few minutes.', 'Fry the eggs sunny in the same fat. Melt the cheese over the beef.', 'Steam the broccoli. Plate with the sardines, the avocado sliced with salt and the olive oil drizzled over, the pickle spears, the broccoli, and the ketchup for the beef.'] },
 ];
+
+// ---------------------------------------------------------------------------
+// Three sizes of the same week (added Nov 5, 2026 at Carter's request).
+// The 21 meals above are the 2,500-calorie plan, Carter's own. Every meal
+// keeps the same ingredients at every size; only the amounts change.
+// Carter's ranges: a plan is on target anywhere in 1,350-1,650 (the 1,500),
+// 1,850-2,150 (the 2,000), or 2,350-2,650 (the 2,500) calories a day.
+// Beef rule (Carter, Nov 5, 2026): beef is portioned in quarter pounds,
+// 0.25 lb (4 oz) a meal and 0.5 lb (8 oz) for the double meatloaf, never
+// odd ounces. The 2,500 and 2,000 plans both run the full 84 oz beef pool
+// that way. The 1,500 plan is the one exception: 20 beef meals at a 0.25 lb
+// minimum is 84 oz of beef, about 1,000 calories a day before anything else
+// is on the plate, and even with everything else cut to its practical
+// minimum the day floors around 1,930 calories, outside the 1,350-1,650
+// range. So at 1,500 the beef scales in ounces (34 oz a week) while every
+// other rule holds: same ingredients in every meal, whole eggs only,
+// sardines stay 1 oz (a third of a tin, 4 fish) at the same 19 meals,
+// condiment shelf identical, superfoods all still in the week.
+// Label-checked daily averages: 2,500 plan: 2,578 cal, 141g protein, 186g
+// fat, 101g carbs, 30.9g fiber. 2,000 plan: 2,133 cal, 123g protein, 151g
+// fat, 80g carbs, 22.7g fiber. 1,500 plan: 1,522 cal, 89g protein, 100g fat,
+// 75g carbs, 20.8g fiber. Protein holds at about 23% of calories at the two
+// smaller sizes and 22% at the full size.
+export const PLAN_TIERS = [1500, 2000, 2500];
+export const TIER_TALLOW_OZ = { 1500: 2, 2000: 2, 2500: 4 };
+export const TIER_OVERRIDES = {
+  // The 2,000 plan keeps the beef exactly as the 2,500 plan (quarter-pound
+  // portions, meatloaf double) and scales eggs, fruit, and tallow instead:
+  // 24 eggs instead of 42, avocado 5 oz, kiwi 5 oz, banana 3.5 oz.
+  2000: {
+    'smash-patties-fried-eggs': { egg: 1.75, fruitOz: 3.5 },
+    'beef-egg-scramble': { egg: 1.75, fruitOz: 5 },
+    'guac-burger-plate': { egg: 1.75, fruitOz: 5 },
+    'scotch-eggs': { fruitOz: 3.5 },
+    'egg-wrap-burrito': { egg: 1.75, fruitOz: 5 },
+    'meatballs-avocado': { fruitOz: 5 },
+    'banana-pancakes-breakfast-patties': { egg: 1.75, fruitOz: 3.5 },
+    'beef-pizza': { egg: 1.75, fruitOz: 5 },
+    'deviled-eggs-patty': { fruitOz: 5 },
+    'egg-drop-beef-soup': { egg: 1.75, fruitOz: 3.5 },
+    'cheese-crisps-sardine-pate': { egg: 1.75, fruitOz: 5 },
+    'open-face-egg-salad-stack': { egg: 3.5, fruitOz: 5 },
+    'the-no-beef-meal': { egg: 3.5, fruitOz: 3.5 },
+    'cheese-stuffed-beef-rolls': { egg: 1.75, fruitOz: 5 },
+    'mini-meatloaf': { egg: 1.75, fruitOz: 5 },
+    'loaded-omelet': { egg: 1.75, fruitOz: 3.5 },
+    'sardine-beef-cakes': { egg: 1.75, fruitOz: 5 },
+    'meatball-soup': { egg: 1.75, fruitOz: 5 },
+    'egg-muffins': { egg: 1.75, fruitOz: 3.5 },
+    'fried-rice-plate': { egg: 1.75, fruitOz: 5 },
+    'the-diner-plate': { egg: 1.75, fruitOz: 5 },
+  },
+  1500: {
+    'smash-patties-fried-eggs': { beef: 1.5, fruitOz: 3.5 },
+    'beef-egg-scramble': { beef: 1.5, fruitOz: 5 },
+    'guac-burger-plate': { beef: 2, egg: 1.75, fruitOz: 4 },
+    'scotch-eggs': { beef: 1.5, fruitOz: 3.5 },
+    'egg-wrap-burrito': { beef: 1.5, egg: 1.75, fruitOz: 5 },
+    'meatballs-avocado': { beef: 1.5, fruitOz: 4 },
+    'banana-pancakes-breakfast-patties': { beef: 1.5, egg: 1.75, fruitOz: 3.5 },
+    'beef-pizza': { beef: 2, egg: 1.75, fruitOz: 5 },
+    'deviled-eggs-patty': { beef: 1.5, fruitOz: 4 },
+    'egg-drop-beef-soup': { beef: 1.5, egg: 1.75, fruitOz: 3.5 },
+    'cheese-crisps-sardine-pate': { beef: 2, egg: 1.75, fruitOz: 5 },
+    'open-face-egg-salad-stack': { beef: 2, egg: 3.5, fruitOz: 4 },
+    'the-no-beef-meal': { egg: 3.5, fruitOz: 3.5 },
+    'cheese-stuffed-beef-rolls': { beef: 1.5, egg: 1.75, fruitOz: 5 },
+    'mini-meatloaf': { beef: 3, egg: 1.75, fruitOz: 4 },
+    'loaded-omelet': { beef: 1.5, egg: 1.75, fruitOz: 3.5 },
+    'sardine-beef-cakes': { beef: 1.5, egg: 1.75, fruitOz: 5 },
+    'meatball-soup': { beef: 1.5, egg: 1.75, fruitOz: 4 },
+    'egg-muffins': { beef: 1.5, egg: 1.75, fruitOz: 3.5 },
+    'fried-rice-plate': { beef: 1.5, egg: 1.75, fruitOz: 5 },
+    'the-diner-plate': { beef: 2, egg: 1.75, fruitOz: 4 },
+  },
+};
+
+const TALLOW_UNIT_MAP = { yes: 1, double: 2, light: 0.5, no: 0 };
+
+// The 21 meals at one plan size, with each meal's tallow share in ounces
+// resolved from that size's tallow pool.
+export function mealsForTier(tier = 2500) {
+  const overrides = TIER_OVERRIDES[tier] || {};
+  const merged = MEALS.map((m) => ({ ...m, ...(overrides[m.id] || {}) }));
+  const totalUnits = merged.reduce((s, m) => s + TALLOW_UNIT_MAP[m.tallow], 0);
+  const tallowOz = TIER_TALLOW_OZ[tier] ?? 4;
+  for (const m of merged) m.tallowOz = (TALLOW_UNIT_MAP[m.tallow] / totalUnits) * tallowOz;
+  return merged;
+}
+
+// Weekly totals for one plan size, summed from its meals. Single source for
+// the pool table, the ingredient cards, and both order planners.
+export function planRates(tier = 2500) {
+  const meals = mealsForTier(tier);
+  const sum = (f) => meals.reduce((s, m) => s + (f(m) || 0), 0);
+  return {
+    tier,
+    meals,
+    beefOz: sum((m) => m.beef),
+    eggOz: sum((m) => m.egg),
+    eggs: sum((m) => m.egg) / 1.75,
+    sardineOz: sum((m) => m.sardines),
+    salmonOz: sum((m) => m.salmon),
+    cheeseOz: sum((m) => m.cheese),
+    blueberriesOz: sum((m) => m.blueberries),
+    broccoliOz: sum((m) => m.broccoli),
+    flaxOz: sum((m) => m.flax),
+    brothOz: sum((m) => m.broth),
+    bananaOz: sum((m) => (m.fruit === 'Banana' ? m.fruitOz : 0)),
+    kiwiOz: sum((m) => (m.fruit === 'Kiwi' ? m.fruitOz : 0)),
+    avocadoOz: sum((m) => (m.fruit === 'Avocado' ? m.fruitOz : 0)),
+    bananaPerMeal: (meals.find((m) => m.fruit === 'Banana') || {}).fruitOz,
+    kiwiPerMeal: (meals.find((m) => m.fruit === 'Kiwi') || {}).fruitOz,
+    avocadoPerMeal: (meals.find((m) => m.fruit === 'Avocado') || {}).fruitOz,
+    tallowOz: TIER_TALLOW_OZ[tier] ?? 4,
+    coconutOz: sum((m) => m.coconutWater),
+    ketchup: sum((m) => m.ketchup),
+    mayo: sum((m) => m.mayo),
+    mustard: sum((m) => m.mustard),
+    honey: sum((m) => m.honey),
+    oliveOil: sum((m) => m.oliveOil),
+    pickles: sum((m) => m.pickles),
+    psyllium: sum((m) => m.psyllium),
+  };
+}
+
+const fmtOz = (n) => {
+  const r = Math.round(n * 10) / 10;
+  return Number.isInteger(r) ? String(r) : r.toFixed(1);
+};
+
+// The weekly pool table for one plan size, same shape as POOL.
+export function poolForTier(tier = 2500) {
+  const r = planRates(tier);
+  const base = Object.fromEntries(POOL.map((p) => [p.item, p]));
+  const row = (item, oz, note) => ({ item, oz, note: note ?? base[item].note });
+  return [
+    row('Beef organ blend', r.beefOz, `US Wellness 75% lean ground beef with heart, kidney and liver. About ${fmtOz(r.beefOz / 16)} lb.`),
+    row('Egg', r.eggOz, `Exactly ${r.eggs} eggs at 1.75 oz out of shell. Certified organic and pasture-raised.`),
+    row('Sardines', r.sardineOz),
+    row('Wild sockeye salmon', r.salmonOz),
+    row('Wild blueberries', r.blueberriesOz),
+    row('Broccoli (cooked)', r.broccoliOz),
+    row('Coconut water', r.coconutOz),
+    row('Beef bone broth', r.brothOz),
+    row('Ground flaxseed', r.flaxOz),
+    row('Banana', r.bananaOz, `About ${Math.round(r.bananaOz / 4)} bananas. The morning fruit, ${fmtOz(r.bananaPerMeal)} oz per morning meal.`),
+    row('Kiwi', r.kiwiOz, `About ${Math.round(r.kiwiOz / 2.5)} kiwis. The midday fruit, ${fmtOz(r.kiwiPerMeal)} oz per midday meal.`),
+    row('Avocado', r.avocadoOz, `About ${Math.round(r.avocadoOz / 4)} avocados. The evening fruit, ${fmtOz(r.avocadoPerMeal)} oz per evening meal. Avocado carries most of the diet's fiber.`),
+    row('Cheese', r.cheeseOz),
+    row('Beef tallow', r.tallowOz),
+    row('Celtic sea salt', null),
+    row('Water', null),
+  ];
+}
+
+// The ingredient cards for one plan size: same sources and details, with the
+// weekly amount for that size.
+export function ingredientsForTier(tier = 2500) {
+  const r = planRates(tier);
+  const ozByName = {
+    'Beef organ blend': r.beefOz, 'Eggs': r.eggOz, 'Sardines': r.sardineOz,
+    'Wild sockeye salmon': r.salmonOz, 'Wild blueberries': r.blueberriesOz,
+    'Broccoli (cooked)': r.broccoliOz, 'Coconut water': r.coconutOz,
+    'Ground flaxseed': r.flaxOz, 'Beef bone broth': r.brothOz, 'Cheese': r.cheeseOz,
+    'Beef tallow': r.tallowOz, 'Banana': r.bananaOz, 'Kiwi': r.kiwiOz, 'Avocado': r.avocadoOz,
+  };
+  return INGREDIENTS.map((ing) => ({ ...ing, weeklyOz: ing.weeklyOz === null ? null : (ozByName[ing.name] ?? ing.weeklyOz) }));
+}
 
 export const SLOTS = ['Morning', 'Midday', 'Evening'];
 export const TALLOW_LABEL = { yes: 'Tallow', double: 'Double tallow', light: 'Tallow (greased tin)', no: 'No tallow' };
@@ -262,7 +431,7 @@ export const PRICE = {
   fruitPerOz: { Banana: 0.35 / 4, Kiwi: 0.70 / 2.5, Avocado: 1.25 / 4 }, // typical Woodman's piece prices
 };
 export const PRICE_BASIS = [
-  'Beef organ blend: costs use the US Wellness Organ Blend 25 lb bundle at $285.25 on sale ($11.41/lb). One bundle is exactly 5 weeks of beef. Single 1 lb packs are $13.42/lb and would add about $10.05 a week.',
+  'Beef organ blend: costs use the US Wellness Organ Blend 25 lb bundle at $285.25 on sale ($11.41/lb). At the 2,500 and 2,000 sizes one bundle covers about 4.8 weeks of beef; at the 1,500 size, about 11.8 weeks. Single 1 lb packs are $13.42/lb and would add about $10.55 a week at the 2,500 size.',
   'Eggs: $5.39 a dozen for OrgaNICK Pastures at Woodman\'s.',
   'Sardines: ordered in 12-tin cases, but the estimate still uses $4.59 a tin (the single-tin price on record) until a delivered case price is locked, so the bulk saving is not overstated.',
   'Beef tallow: $17.46 for the 1.7 lb small pail at US Wellness.',
@@ -285,7 +454,6 @@ export const PRICE_BASIS = [
 
 const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
 export const TALLOW_TOTAL_UNITS = MEALS.reduce((s, m) => s + TALLOW_UNITS[m.tallow], 0);
-const TALLOW_UNIT_COST = (4 * PRICE.tallowPerOz) / TALLOW_TOTAL_UNITS;
 
 // Nutrition per ounce, rebuilt Nov 5, 2026 from the exact products' own
 // labels wherever a label exists, converted to per-ounce values:
@@ -373,7 +541,7 @@ export function condimentCost(m) {
 }
 
 export function mealNutrition(m) {
-  const tallowOz = (TALLOW_UNITS[m.tallow] / TALLOW_TOTAL_UNITS) * 4;
+  const tallowOz = m.tallowOz ?? (TALLOW_UNITS[m.tallow] / TALLOW_TOTAL_UNITS) * 4;
   const parts = [
     [NUTRITION_PER_OZ.beef, m.beef],
     [NUTRITION_PER_OZ.egg, m.egg],
@@ -419,6 +587,7 @@ export const DAY_NUTRITION = {
 };
 
 export function mealCost(m) {
+  const tallowOz = m.tallowOz ?? (TALLOW_UNITS[m.tallow] / TALLOW_TOTAL_UNITS) * 4;
   return m.beef * PRICE.beefPerOz
     + m.egg * PRICE.eggPerOz
     + m.sardines * PRICE.sardinesPerOz
@@ -429,38 +598,59 @@ export function mealCost(m) {
     + (m.broccoli || 0) * PRICE.broccoliPerOz
     + m.cheese * PRICE.cheesePerOz
     + m.fruitOz * PRICE.fruitPerOz[m.fruit]
-    + TALLOW_UNITS[m.tallow] * TALLOW_UNIT_COST
+    + tallowOz * PRICE.tallowPerOz
     + condimentCost(m);
 }
-export function ingredientWeekCost(key) {
+export function ingredientWeekCost(key, meals = mealsForTier(2500)) {
+  const sum = (f) => meals.reduce((s, m) => s + (f(m) || 0), 0);
   const t = {
-    'Beef organ blend': 80 * PRICE.beefPerOz,
-    'Eggs': 73.5 * PRICE.eggPerOz,
-    'Sardines': 19 * PRICE.sardinesPerOz,
-    'Wild sockeye salmon': 2 * PRICE.salmonPerOz,
-    'Wild blueberries': 4 * PRICE.blueberriesPerOz,
-    'Broccoli (cooked)': 6 * PRICE.broccoliPerOz,
-    'Coconut water': MEALS.reduce((s, m) => s + (m.coconutWater || 0), 0) * CONDIMENT_PRICE.coconutWater,
-    'Ground flaxseed': 2 * PRICE.flaxPerOz,
-    'Beef bone broth': 32 * PRICE.brothPerOz,
-    'Psyllium husk': MEALS.reduce((s, m) => s + (m.psyllium || 0), 0) * CONDIMENT_PRICE.psyllium,
-    'Cheese': 10 * PRICE.cheesePerOz,
-    'Beef tallow': 4 * PRICE.tallowPerOz,
-    'Banana': 28 * PRICE.fruitPerOz.Banana,
-    'Kiwi': 52.5 * PRICE.fruitPerOz.Kiwi,
-    'Avocado': 56 * PRICE.fruitPerOz.Avocado,
+    'Beef organ blend': sum((m) => m.beef) * PRICE.beefPerOz,
+    'Eggs': sum((m) => m.egg) * PRICE.eggPerOz,
+    'Sardines': sum((m) => m.sardines) * PRICE.sardinesPerOz,
+    'Wild sockeye salmon': sum((m) => m.salmon) * PRICE.salmonPerOz,
+    'Wild blueberries': sum((m) => m.blueberries) * PRICE.blueberriesPerOz,
+    'Broccoli (cooked)': sum((m) => m.broccoli) * PRICE.broccoliPerOz,
+    'Coconut water': sum((m) => m.coconutWater) * CONDIMENT_PRICE.coconutWater,
+    'Ground flaxseed': sum((m) => m.flax) * PRICE.flaxPerOz,
+    'Beef bone broth': sum((m) => m.broth) * PRICE.brothPerOz,
+    'Psyllium husk': sum((m) => m.psyllium) * CONDIMENT_PRICE.psyllium,
+    'Cheese': sum((m) => m.cheese) * PRICE.cheesePerOz,
+    'Beef tallow': sum((m) => m.tallowOz) * PRICE.tallowPerOz,
+    'Banana': sum((m) => (m.fruit === 'Banana' ? m.fruitOz : 0)) * PRICE.fruitPerOz.Banana,
+    'Kiwi': sum((m) => (m.fruit === 'Kiwi' ? m.fruitOz : 0)) * PRICE.fruitPerOz.Kiwi,
+    'Avocado': sum((m) => (m.fruit === 'Avocado' ? m.fruitOz : 0)) * PRICE.fruitPerOz.Avocado,
     'Celtic sea salt': 0,
     'Water': 0,
-    'Ketchup': MEALS.reduce((s, m) => s + (m.ketchup || 0), 0) * CONDIMENT_PRICE.ketchup,
-    'Homemade mayo': MEALS.reduce((s, m) => s + (m.mayo || 0), 0) * CONDIMENT_PRICE.mayo,
-    'Mustard': MEALS.reduce((s, m) => s + (m.mustard || 0), 0) * CONDIMENT_PRICE.mustard,
-    'Raw honey': MEALS.reduce((s, m) => s + (m.honey || 0), 0) * CONDIMENT_PRICE.honey,
-    'Extra virgin olive oil': MEALS.reduce((s, m) => s + (m.oliveOil || 0), 0) * CONDIMENT_PRICE.oliveOil,
-    'Fermented pickles': MEALS.reduce((s, m) => s + (m.pickles || 0), 0) * CONDIMENT_PRICE.pickles,
+    'Ketchup': sum((m) => m.ketchup) * CONDIMENT_PRICE.ketchup,
+    'Homemade mayo': sum((m) => m.mayo) * CONDIMENT_PRICE.mayo,
+    'Mustard': sum((m) => m.mustard) * CONDIMENT_PRICE.mustard,
+    'Raw honey': sum((m) => m.honey) * CONDIMENT_PRICE.honey,
+    'Extra virgin olive oil': sum((m) => m.oliveOil) * CONDIMENT_PRICE.oliveOil,
+    'Fermented pickles': sum((m) => m.pickles) * CONDIMENT_PRICE.pickles,
   };
   return t[key] ?? null;
 }
 export const WEEK_COST = MEALS.reduce((s, m) => s + mealCost(m), 0);
+export function weekCost(meals) {
+  return meals.reduce((s, m) => s + mealCost(m), 0);
+}
+export function weekNutrition(meals) {
+  return meals.reduce((acc, m) => {
+    const n = mealNutrition(m);
+    acc.kcal += n.kcal; acc.protein += n.protein; acc.fat += n.fat; acc.carbs += n.carbs; acc.fiber += n.fiber;
+    return acc;
+  }, { kcal: 0, protein: 0, fat: 0, carbs: 0, fiber: 0 });
+}
+export function dayNutrition(meals) {
+  const w = weekNutrition(meals);
+  return {
+    kcal: Math.round(w.kcal / 7),
+    protein: Math.round(w.protein / 7),
+    fat: Math.round(w.fat / 7),
+    carbs: Math.round(w.carbs / 7),
+    fiber: Math.round((w.fiber / 7) * 10) / 10,
+  };
+}
 export const money = (n) => `$${n.toFixed(2)}`;
 
 // The condiment shelf: outside the weekly pool, in set whole-spoon amounts.
@@ -527,75 +717,88 @@ export const ORDER_WEEK_OPTIONS = [10, 20, 30, 40];
 export const BEEF_BUNDLE_PRICE = 285.25;
 export const BEEF_SINGLE_PACK_PRICE = 13.42;
 export const BEEF_BUNDLE_SAVINGS_PER_WEEK = 5 * (BEEF_SINGLE_PACK_PRICE - BEEF_BUNDLE_PRICE / 25);
+export function beefSavingsPerWeek(tier = 2500) {
+  return (planRates(tier).beefOz / 16) * (BEEF_SINGLE_PACK_PRICE - BEEF_BUNDLE_PRICE / 25);
+}
 
 const roll = (bought, used, unit) => bought === used
   ? `exactly ${used} ${unit} used, nothing left over`
   : `${bought} ${unit} bought for ${used} ${unit} used, ${Math.round((bought - used) * 10) / 10} ${unit} rolls into the next block`;
 
-export function bulkOrder(weeks, eggPackSize = 12) {
-  const beefBundles = weeks / 5;
-  const beefUsedLb = weeks * 5;
-  const tallowUsedOz = weeks * 4;
+export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
+  const r = planRates(tier);
+  const weeksPerBundle = 400 / r.beefOz; // one bundle is 25 lb = 400 oz of beef
+  const beefBundles = Math.ceil((weeks * r.beefOz) / 400);
+  const beefUsedLb = (weeks * r.beefOz) / 16;
+  const tallowUsedOz = weeks * r.tallowOz;
   const tallowPails = Math.ceil(tallowUsedOz / 27.2);
-  const cheeseUsedOz = weeks * 10;
+  const cheeseUsedOz = weeks * r.cheeseOz;
   const cheesePacks = Math.ceil(cheeseUsedOz / 80); // one 10-pack = ten 8 oz blocks = 80 oz
+  const cheeseInterval = Math.round(80 / r.cheeseOz);
   const fruitShipments = weeks / 2;
+  const shipBananas = Math.ceil((2 * r.bananaOz) / 4);
+  const shipKiwis = Math.ceil((2 * r.kiwiOz) / 2.5);
+  const shipAvocados = Math.ceil((2 * r.avocadoOz) / 4);
+  const shipBroccoliOz = 2 * r.broccoliOz;
+  const shipCoconutBottles = (2 * r.coconutOz) / 16;
   const eggInterval = eggPackSize === 18 ? 3 : 2;
   const eggShipments = Math.ceil(weeks / eggInterval);
-  const eggPacks = eggShipments * 7;
-  const eggsUsed = weeks * 42;
+  const eggCartonsPer = Math.ceil((eggInterval * r.eggs) / eggPackSize);
+  const eggPacks = eggShipments * eggCartonsPer;
+  const eggsUsed = weeks * r.eggs;
   const eggsBought = eggPacks * eggPackSize;
-  const sardineOzUsed = weeks * 19;
+  const sardineOzUsed = weeks * r.sardineOz;
   const sardineTins = Math.ceil(sardineOzUsed / 3);
   const sardineCases = Math.ceil(sardineTins / 12);
-  const salmonOzUsed = weeks * 2;
+  const salmonOzUsed = weeks * r.salmonOz;
   const salmonCans = Math.ceil(salmonOzUsed / 6);
-  const blueberryOzUsed = weeks * 4;
+  const blueberryOzUsed = weeks * r.blueberriesOz;
   const blueberryBags = Math.ceil(blueberryOzUsed / 48);
-  const broccoliOzUsed = weeks * 6;
-  const coconutWaterBottles = (weeks / 2) * 3;
-  const honeyUsed = weeks * 2;
+  const broccoliOzUsed = weeks * r.broccoliOz;
+  const honeyUsed = weeks * r.honey;
   const honeyJars = Math.ceil(honeyUsed / 50);
-  const pickleSpearsUsed = weeks * 4;
+  const pickleSpearsUsed = weeks * r.pickles;
   const pickleJars = Math.ceil(pickleSpearsUsed / 12);
-  const flaxOzUsed = weeks * 2;
+  const flaxOzUsed = weeks * r.flaxOz;
   const flaxBags = Math.ceil(flaxOzUsed / 16);
-  const psylliumUsed = weeks * 4;
-  const ketchupUsed = weeks * 5;
+  const psylliumUsed = weeks * r.psyllium;
+  const ketchupUsed = weeks * r.ketchup;
   const ketchupBottles = Math.ceil(ketchupUsed / 37);
-  const mayoUsed = weeks * 3;
+  const mayoUsed = weeks * r.mayo;
   const mayoBatches = Math.ceil(mayoUsed / 17);
-  const mustardUsed = weeks * 2;
+  const mustardUsed = weeks * r.mustard;
+  const oliveOilUsed = weeks * r.oliveOil;
+  const bonesLb = Math.round(4 * (weeksPerBundle / 5) * 10) / 10;
   const totals = [
     `${weeks} weeks = ${weeks * 21} meals`,
-    `Beef organ blend: ${beefUsedLb} lb`,
+    `Beef organ blend: ${fmtOz(beefUsedLb)} lb`,
     `Eggs: ${eggsUsed}`,
-    `Sardines: ${sardineTins} tins (19 oz a week; salmon covers 2 meals)`,
-    `Wild sockeye salmon: ${salmonOzUsed} oz`,
-    `Wild blueberries: ${blueberryOzUsed} oz`,
-    `Broccoli: ${broccoliOzUsed} oz (cooked)`,
-    `Coconut water: ${weeks * 24} oz`,
-    `Ground flaxseed: ${flaxOzUsed} oz`,
+    `Sardines: ${sardineTins} tins (${fmtOz(r.sardineOz)} oz a week; salmon covers 2 meals)`,
+    `Wild sockeye salmon: ${fmtOz(salmonOzUsed)} oz`,
+    `Wild blueberries: ${fmtOz(blueberryOzUsed)} oz`,
+    `Broccoli: ${fmtOz(broccoliOzUsed)} oz (cooked)`,
+    `Coconut water: ${fmtOz(weeks * r.coconutOz)} oz`,
+    `Ground flaxseed: ${fmtOz(flaxOzUsed)} oz`,
     `Psyllium husk: ${psylliumUsed} tbsp`,
-    `Cheese: ${cheeseUsedOz} oz`,
-    `Beef tallow: ${tallowUsedOz} oz`,
-    `Fruit: ${weeks * 7} bananas, ${weeks * 21} kiwis, ${weeks * 14} avocados`,
-    `Condiments: ${ketchupUsed} tbsp ketchup, ${mayoUsed} tbsp homemade mayo, ${mustardUsed} tsp mustard, ${honeyUsed} tsp raw honey, ${weeks * 2} tsp olive oil, ${pickleSpearsUsed} pickle spears`,
+    `Cheese: ${fmtOz(cheeseUsedOz)} oz`,
+    `Beef tallow: ${fmtOz(tallowUsedOz)} oz`,
+    `Fruit: about ${Math.round((weeks * r.bananaOz) / 4)} bananas, ${Math.round((weeks * r.kiwiOz) / 2.5)} kiwis, ${Math.round((weeks * r.avocadoOz) / 4)} avocados`,
+    `Condiments: ${ketchupUsed} tbsp ketchup, ${mayoUsed} tbsp homemade mayo, ${mustardUsed} tsp mustard, ${honeyUsed} tsp raw honey, ${oliveOilUsed} tsp olive oil, ${pickleSpearsUsed} pickle spears`,
   ];
   const sources = [
     {
       shipper: 'US Wellness Meats',
-      cadence: `1 bundle order every 5 weeks · ${beefBundles} orders in this block`,
+      cadence: `1 bundle covers about ${fmtOz(weeksPerBundle)} weeks at this size · ${beefBundles} order${beefBundles === 1 ? "" : "s"} in this block`,
       url: 'https://grasslandbeef.com/collections/sample-farm-bundles',
       items: [
-        `Organ Blend bundle: ${beefBundles} x 25 lb = ${beefUsedLb} lb, exactly ${weeks} weeks at 5 lb a week. ${money(beefBundles * BEEF_BUNDLE_PRICE)} at the $285.25 sale price, and free shipping at this size.`,
-        `Beef tallow: ${tallowPails} small pails (1.7 lb each) across the block, added to the first ${tallowPails} bundle orders: ${roll(tallowPails * 27.2, tallowUsedOz, 'oz')}.`,
-        'Beef soup bones for the bone broth: about 4 lb rides with each bundle order. One bones batch makes roughly 5 quarts of broth, the soup base for the 5 weeks between bundle orders. Simmer with water and salt, jar it, freeze it in 16 oz portions.',
+        `Organ Blend bundle: ${beefBundles} x 25 lb = ${beefBundles * 25} lb for ${fmtOz(beefUsedLb)} lb used at ${fmtOz(r.beefOz / 16)} lb a week, the rest rolls forward in the freezer. ${money(beefBundles * BEEF_BUNDLE_PRICE)} at the $285.25 sale price, and free shipping at this size.`,
+        `Beef tallow: ${tallowPails} small pails (1.7 lb each) across the block, riding with the bundle orders: ${roll(tallowPails * 27.2, tallowUsedOz, 'oz')}.`,
+        `Beef soup bones for the bone broth: about ${bonesLb} lb rides with each bundle order. One bones batch makes roughly 5 quarts of broth; at this size a bundle order covers about ${fmtOz(weeksPerBundle)} weeks of soup, so simmer batches as needed, jar the broth, and freeze it in 16 oz portions.`,
       ],
     },
     {
       shipper: "Miller's Bio Farm",
-      cadence: `1 bulk cheese order about every 8 weeks · ${cheesePacks} orders in this block`,
+      cadence: `1 bulk cheese order about every ${cheeseInterval} weeks · ${cheesePacks} order${cheesePacks === 1 ? "" : "s"} in this block`,
       url: 'https://millersbiofarm.com/store/cheese-1',
       items: [
         `Pasteurized pressed mozzarella 10-packs (ten 8 oz blocks, 80 oz per pack): ${cheesePacks} packs, ${roll(cheesePacks * 80, cheeseUsedOz, 'oz')}. Keep sealed blocks refrigerated (they hold 1 to 2 months) and freeze any block that has to wait longer.`,
@@ -606,8 +809,8 @@ export function bulkOrder(weeks, eggPackSize = 12) {
       cadence: `Fruit every 2 weeks · eggs every ${eggInterval} weeks`,
       url: 'https://www.misfitsmarket.com/egg-delivery',
       items: [
-        `Fruit: ${fruitShipments} shipments, each with 14 bananas, 42 kiwis, 28 avocados, 12 oz of broccoli, and 3 bottles (16 oz each) of plain coconut water (2 weeks at a time, because bananas and avocados cannot sit longer). Block totals: ${weeks * 7} bananas, ${weeks * 21} kiwis, ${weeks * 14} avocados. Order by count and check the weight at the door: about 4 oz of banana, 2.5 oz per kiwi and 4 oz of avocado per piece is the planning average.`,
-        `Eggs: ${eggShipments} shipments of 7 cartons x ${eggPackSize} eggs = ${eggPacks} cartons (${eggsBought} eggs) for ${eggsUsed} used${eggsBought === eggsUsed ? ', an exact fit' : `, ${eggsBought - eggsUsed} eggs roll into the next block`}. Seven cartons is the magic number either way: 7 x 12 = 84 eggs = exactly 2 weeks, 7 x 18 = 126 eggs = exactly 3 weeks. The cartons must say certified organic AND pasture-raised; OrgaNICK Pastures is the reference egg.`,
+        `Fruit: ${fruitShipments} shipments, each with ${shipBananas} bananas, ${shipKiwis} kiwis, ${shipAvocados} avocados, ${fmtOz(shipBroccoliOz)} oz of broccoli, and ${shipCoconutBottles} bottles (16 oz each) of plain coconut water (2 weeks at a time, because bananas and avocados cannot sit longer). Order by count and check the weight at the door: about 4 oz of banana, 2.5 oz per kiwi and 4 oz of avocado per piece is the planning average, and any extra weight rolls into the next week.`,
+        `Eggs: ${eggShipments} shipments of ${eggCartonsPer} cartons x ${eggPackSize} eggs = ${eggPacks} cartons (${eggsBought} eggs) for ${eggsUsed} used${eggsBought === eggsUsed ? ', an exact fit' : `, ${eggsBought - eggsUsed} eggs roll into the next block`}. Cartons are sized to cover whole weeks at this plan size. The cartons must say certified organic AND pasture-raised; OrgaNICK Pastures is the reference egg.`,
       ],
     },
     {
@@ -643,7 +846,8 @@ export const SHIPPER_URL = {
   'Pantry bulk shipment': 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html',
 };
 
-export function orderSchedule(blockWeeks = 10, eggPackSize = 12, horizonWeeks = 52) {
+export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, horizonWeeks = 52) {
+  const r = planRates(tier);
   const byKey = new Map();
   const add = (week, shipper, cadence, items) => {
     const key = `${week}|${shipper}`;
@@ -652,52 +856,64 @@ export function orderSchedule(blockWeeks = 10, eggPackSize = 12, horizonWeeks = 
   };
   // Mayo batches start about every 17/3 weeks; the lemon for a batch rides
   // with the fresh shipment whose 2-week window contains the batch start.
+  const batchRate = r.mayo / 17; // batches per week (mayo use is the same at every size)
   const batchStarts = [];
-  for (let t = 0; t < horizonWeeks; t += 17 / 3) batchStarts.push(t);
+  for (let t = 0; t < horizonWeeks; t += 1 / batchRate) batchStarts.push(t);
   const lemonsInWindow = (w) => batchStarts.filter((t) => t >= w && t < w + 2).length;
 
+  const shipBananas = Math.ceil((2 * r.bananaOz) / 4);
+  const shipKiwis = Math.ceil((2 * r.kiwiOz) / 2.5);
+  const shipAvocados = Math.ceil((2 * r.avocadoOz) / 4);
   for (let w = 0; w < horizonWeeks; w += 2) {
     const items = [
-      '14 bananas (about 56 oz)',
-      '42 kiwis (about 105 oz)',
-      '28 avocados (about 112 oz)',
-      'Broccoli: 12 oz (for 2 weeks of cooked sides)',
-      'Coconut water, plain (Harmless Harvest): 3 bottles, 16 oz each',
+      `${shipBananas} bananas (about ${shipBananas * 4} oz)`,
+      `${shipKiwis} kiwis (about ${Math.round(shipKiwis * 2.5)} oz)`,
+      `${shipAvocados} avocados (about ${shipAvocados * 4} oz)`,
+      `Broccoli: ${fmtOz(2 * r.broccoliOz)} oz (for 2 weeks of cooked sides)`,
+      `Coconut water, plain (Harmless Harvest): ${(2 * r.coconutOz) / 16} bottles, 16 oz each`,
     ];
     const lemons = lemonsInWindow(w);
     if (lemons) items.push(lemons === 1 ? '1 lemon (for the next batch of homemade mayo)' : `${lemons} lemons (for the homemade mayo batches)`);
     add(w, 'Fresh shipments', 'Every 2 weeks', items);
   }
   const eggInterval = eggPackSize === 18 ? 3 : 2;
+  const eggCartons = Math.ceil((eggInterval * r.eggs) / eggPackSize);
+  const eggExact = eggCartons * eggPackSize === eggInterval * r.eggs;
   for (let w = 0; w < horizonWeeks; w += eggInterval) {
     add(w, 'Fresh shipments', `Eggs every ${eggInterval} weeks`, [
-      `Eggs: 7 cartons of ${eggPackSize} (${eggPackSize === 18 ? 126 : 84} eggs, exactly ${eggInterval} weeks). Cartons must say certified organic AND pasture-raised`,
+      `Eggs: ${eggCartons} cartons of ${eggPackSize} (${eggCartons * eggPackSize} eggs, ${eggExact ? `exactly ${eggInterval} weeks` : `covers ${eggInterval} weeks, ${eggCartons * eggPackSize - eggInterval * r.eggs} roll forward`}). Cartons must say certified organic AND pasture-raised`,
     ]);
   }
+  const beefInterval = Math.max(1, Math.round(400 / r.beefOz));
+  const bonesLb = Math.round(4 * (beefInterval / 5) * 10) / 10;
   let tallowSupply = 0;
-  for (let w = 0; w < horizonWeeks; w += 5) {
-    const need = 20; // 4 oz a week for the 5 weeks until the next bundle order
+  for (let w = 0; w < horizonWeeks; w += beefInterval) {
+    const need = beefInterval * r.tallowOz; // tallow for the weeks until the next bundle order
     const pails = Math.max(0, Math.ceil((need - tallowSupply) / 27.2));
     tallowSupply += pails * 27.2 - need;
-    const items = ['Organ Blend bundle: 1 x 25 lb (exactly 5 weeks of beef)', 'Beef soup bones: about 4 lb (for the bone broth batches)'];
+    const items = [
+      `Organ Blend bundle: 1 x 25 lb (${beefInterval * r.beefOz === 400 ? `exactly ${beefInterval} weeks of beef` : `about ${beefInterval} weeks of beef at this size`})`,
+      `Beef soup bones: about ${bonesLb} lb (for the bone broth batches)`,
+    ];
     if (pails) items.push(`Beef tallow: ${pails} small pail${pails === 1 ? '' : 's'} (1.7 lb each)`);
-    add(w, 'US Wellness Meats', 'Every 5 weeks', items);
+    add(w, 'US Wellness Meats', `Every ${beefInterval} weeks`, items);
   }
-  for (let w = 0; w < horizonWeeks; w += 8) {
-    add(w, "Miller's Bio Farm", 'Every 8 weeks', [
-      'Pasteurized pressed mozzarella: 1 x 10-pack (ten 8 oz blocks, 80 oz, exactly 8 weeks of cheese)',
+  const cheeseInterval = Math.round(80 / r.cheeseOz);
+  for (let w = 0; w < horizonWeeks; w += cheeseInterval) {
+    add(w, "Miller's Bio Farm", `Every ${cheeseInterval} weeks`, [
+      `Pasteurized pressed mozzarella: 1 x 10-pack (ten 8 oz blocks, 80 oz, exactly ${cheeseInterval} weeks of cheese)`,
     ]);
   }
   for (let w = 0; w < horizonWeeks; w += blockWeeks) {
-    const sardineTins = Math.ceil((blockWeeks * 19) / 3);
+    const sardineTins = Math.ceil((blockWeeks * r.sardineOz) / 3);
     const sardineCases = Math.ceil(sardineTins / 12);
-    const salmonCans = Math.ceil((blockWeeks * 2) / 6);
-    const blueberryBags = Math.ceil((blockWeeks * 4) / 48);
-    const flaxBags = Math.ceil((blockWeeks * 2) / 16);
-    const ketchupBottles = Math.ceil((blockWeeks * 5) / 37);
-    const mayoBatches = Math.ceil((blockWeeks * 3) / 17);
-    const pickleJars = Math.ceil((blockWeeks * 4) / 12);
-    const honeyJars = Math.ceil((blockWeeks * 2) / 50);
+    const salmonCans = Math.ceil((blockWeeks * r.salmonOz) / 6);
+    const blueberryBags = Math.ceil((blockWeeks * r.blueberriesOz) / 48);
+    const flaxBags = Math.ceil((blockWeeks * r.flaxOz) / 16);
+    const ketchupBottles = Math.ceil((blockWeeks * r.ketchup) / 37);
+    const mayoBatches = Math.ceil((blockWeeks * r.mayo) / 17);
+    const pickleJars = Math.ceil((blockWeeks * r.pickles) / 12);
+    const honeyJars = Math.ceil((blockWeeks * r.honey) / 50);
     add(w, 'Pantry bulk shipment', `Once per ${blockWeeks}-week block`, [
       `King Oscar sardines in water: ${sardineCases} cases of 12 (${sardineCases * 12} tins)`,
       `Wild Planet wild sockeye salmon: ${salmonCans} cans (6 oz)`,

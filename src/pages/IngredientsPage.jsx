@@ -1,21 +1,28 @@
 import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
-import { BEEF_BUNDLE_SAVINGS_PER_WEEK, BUY, CONDIMENTS, ORDER_WEEK_OPTIONS, PRICE_BASIS, WEEK_COST, bulkOrder, ingredientWeekCost, money } from '../data/godDiet';
-import { getIngredients, getPool, useHead } from '../lib/store';
+import { BUY, CONDIMENTS, ORDER_WEEK_OPTIONS, PRICE_BASIS, beefSavingsPerWeek, bulkOrder, ingredientsForTier, ingredientWeekCost, mealsForTier, poolForTier, weekCost, money } from '../data/godDiet';
+import { useHead } from '../lib/store';
+import { useTier } from '../lib/plan';
 
 export default function IngredientsPage() {
   useHead({ title: 'Ingredients - The God Diet', description: 'Every ingredient on The God Diet, its weekly amount in ounces, and the exact source that passes for it.' });
-  const ingredients = getIngredients();
-  const pool = getPool();
+  const tier = useTier();
+  const meals = mealsForTier(tier);
+  const ingredients = ingredientsForTier(tier);
+  const pool = poolForTier(tier);
+  const wkCost = weekCost(meals);
   const [weeks, setWeeks] = useState(10);
   const [eggPackSize, setEggPackSize] = useState(12);
-  const plan = bulkOrder(weeks, eggPackSize);
+  const plan = bulkOrder(weeks, eggPackSize, tier);
   const totalOz = pool.filter((p) => p.oz !== null).reduce((s, p) => s + p.oz, 0);
   return (
     <div className="mx-auto max-w-6xl px-4 pt-10">
       <h1 className="font-display text-4xl font-black md:text-5xl">Ingredients</h1>
       <p className="mt-3 max-w-2xl leading-relaxed text-ink/65">
         Ten ingredients. That is the whole diet, plus a small condiment shelf below. Each one has an exact weekly amount in ounces and a source that passes the same ingredient checks the meals have always used here: verdicts follow the checked rulebook built from the Jake Tran video corpus, not personal preference. If a source does not pass, it is not swapped in.
+      </p>
+      <p className="mt-3 max-w-2xl leading-relaxed text-ink/65">
+        Amounts on this page are for the <strong className="text-ink">{tier.toLocaleString()} calorie plan</strong>. Use the plan switcher in the header to see the 1,500 and 2,000 sizes: the sources never change, only the amounts.
       </p>
       <p className="mt-3 max-w-2xl leading-relaxed text-ink/65">
         The weighed ingredients total <strong>{totalOz} oz a week</strong>, plus Celtic sea salt and water as needed.
@@ -31,7 +38,7 @@ export default function IngredientsPage() {
             <p className="mt-2 text-sm leading-relaxed text-ink/65">{ing.detail}</p>
             <div className="mt-3 flex flex-wrap items-center gap-3">
               {BUY[ing.name] && <a href={BUY[ing.name].url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 rounded-full bg-pine-800 px-3.5 py-1.5 text-xs font-bold text-white transition hover:bg-pine-700">Buy: {BUY[ing.name].label} <ExternalLink size={12} /></a>}
-              <span className="text-sm font-bold text-ink/55">{ingredientWeekCost(ing.name) ? `Est. ${money(ingredientWeekCost(ing.name))} a week` : 'Est. $0 a week'}</span>
+              <span className="text-sm font-bold text-ink/55">{ingredientWeekCost(ing.name, meals) ? `Est. ${money(ingredientWeekCost(ing.name, meals))} a week` : 'Est. $0 a week'}</span>
             </div>
           </article>
         ))}
@@ -73,7 +80,7 @@ export default function IngredientsPage() {
           <ul className="mt-2 grid gap-1.5 text-sm text-pine-50/85 sm:grid-cols-2">
             {plan.totals.map((t) => <li key={t}>{t}</li>)}
           </ul>
-          <p className="mt-3 text-sm text-pine-50/80">Estimated cost of the food actually used in this block: <strong className="text-white">{money(WEEK_COST * weeks)}</strong> ({money(WEEK_COST)} a week). That already counts the beef at the 25 lb bundle rate; single packs would add about {money(BEEF_BUNDLE_SAVINGS_PER_WEEK * weeks)} over the block.</p>
+          <p className="mt-3 text-sm text-pine-50/80">Estimated cost of the food actually used in this block: <strong className="text-white">{money(wkCost * weeks)}</strong> ({money(wkCost)} a week). That already counts the beef at the 25 lb bundle rate; single packs would add about {money(beefSavingsPerWeek(tier) * weeks)} over the block.</p>
         </div>
         <div className="mt-5 grid gap-5 md:grid-cols-2">
           {plan.sources.map((sp) => (
@@ -94,7 +101,7 @@ export default function IngredientsPage() {
       <section className="mt-12 rounded-2xl border border-ink/10 bg-cream p-6">
         <h2 className="font-display text-2xl font-bold">How the costs are figured</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink/65">
-          Every meal on this site carries an estimated cost built from these prices, checked November 5, 2026. The whole week totals about <strong className="text-ink">{money(WEEK_COST)}</strong>. Prices move, so treat these as planning estimates, not quotes.
+          Every meal on this site carries an estimated cost built from these prices, checked November 5, 2026. The whole week totals about <strong className="text-ink">{money(wkCost)}</strong> at this plan size. Prices move, so treat these as planning estimates, not quotes.
         </p>
         <ul className="mt-4 list-disc space-y-2 pl-6 text-sm leading-relaxed text-ink/65">
           {PRICE_BASIS.map((b) => <li key={b}>{b}</li>)}
