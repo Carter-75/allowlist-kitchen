@@ -618,7 +618,7 @@ export const SHIPPER_URL = {
   'Pantry bulk shipment': 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html',
 };
 
-export function orderSchedule(blockWeeks = 20, eggPackSize = 12, horizonWeeks = 52) {
+export function orderSchedule(blockWeeks = 10, eggPackSize = 12, horizonWeeks = 52) {
   const byKey = new Map();
   const add = (week, shipper, cadence, items) => {
     const key = `${week}|${shipper}`;

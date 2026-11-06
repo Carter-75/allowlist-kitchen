@@ -7,7 +7,7 @@ export default function IngredientsPage() {
   useHead({ title: 'Ingredients - The God Diet', description: 'Every ingredient on The God Diet, its weekly amount in ounces, and the exact source that passes for it.' });
   const ingredients = getIngredients();
   const pool = getPool();
-  const [weeks, setWeeks] = useState(20);
+  const [weeks, setWeeks] = useState(10);
   const [eggPackSize, setEggPackSize] = useState(12);
   const plan = bulkOrder(weeks, eggPackSize);
   const totalOz = pool.filter((p) => p.oz !== null).reduce((s, p) => s + p.oz, 0);

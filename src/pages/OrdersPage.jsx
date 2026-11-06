@@ -32,7 +32,7 @@ const SHIPPER_DOT = {
 export default function OrdersPage() {
   useHead({ title: 'Order Calendar - The God Diet', description: 'Exactly what to order, from which company, on exactly which day: the 2-week fresh cycle, the 5-week beef bundle, the 8-week cheese pack, and the pantry block order.' });
   const todayISO = isoOf(new Date());
-  const [settings, setSettings] = useState(() => loadJSON(SETTINGS_KEY, { start: todayISO, blockWeeks: 20, eggPackSize: 12 }));
+  const [settings, setSettings] = useState(() => loadJSON(SETTINGS_KEY, { start: todayISO, blockWeeks: 10, eggPackSize: 12 }));
   const [done, setDone] = useState(() => loadJSON(DONE_KEY, {}));
   const [view, setView] = useState(() => { const d = parseISO(settings.start || todayISO); return { y: d.getFullYear(), m: d.getMonth() }; });
   const [selected, setSelected] = useState(null);
