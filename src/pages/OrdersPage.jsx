@@ -4,7 +4,7 @@ import { CalendarDays, Check, ChevronLeft, ChevronRight, ExternalLink } from 'lu
 import { useHead } from '../lib/store';
 import { ORDER_WEEK_OPTIONS, orderSchedule } from '../data/godDiet';
 
-const SETTINGS_KEY = 'goddiet-orders-v1';
+const SETTINGS_KEY = 'goddiet-orders-v2';
 const DONE_KEY = 'goddiet-ordered-v1';
 
 function loadJSON(key, fallback) {
