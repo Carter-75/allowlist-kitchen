@@ -31,8 +31,8 @@ export const INGREDIENTS = [
   {
     name: 'Sardines',
     weeklyOz: 21,
-    source: 'Wild Planet sardines in water, 7 tins a week',
-    detail: '1 oz, about a third of a tin (3 to 4 fish), at every single meal: on the side, mashed into fillings, or crisped into cakes. Packed in water, not oil, so nothing outside the pool sneaks in.',
+    source: 'King Oscar sardines in water, 7 tins a week',
+    detail: '1 oz, about a third of a tin (3 to 4 fish), at every single meal: on the side, mashed into fillings, or crisped into cakes. This is the in-water tin that passes in the checked database (ingredients: sardines, water). Wild Planet\'s passing tin is packed in olive oil, which is not part of this diet, and the lightly smoked versions fail, so neither is used here.',
   },
   {
     name: 'Cheese',
@@ -179,7 +179,7 @@ export const BUY = {
   'Beef tallow': { label: 'US Wellness Meats', url: 'https://grasslandbeef.com/collections/kitchen-favorites' },
   'Egg': { label: "Woodman's (OrgaNICK Pastures)", url: wm('OrgaNICK Pastures eggs') },
   'Eggs': { label: "Woodman's (OrgaNICK Pastures)", url: wm('OrgaNICK Pastures eggs') },
-  'Sardines': { label: "Woodman's (Wild Planet, in water)", url: wm('Wild Planet sardines in water') },
+  'Sardines': { label: "Woodman's (King Oscar, in water)", url: wm('King Oscar sardines in water') },
   'Cheese': { label: "Miller's Bio Farm (pressed cheese)", url: 'https://millersbiofarm.com/store/cheese-1' },
   'Banana': { label: "Woodman's", url: wm('bananas') },
   'Kiwi': { label: "Woodman's", url: wm('kiwi') },
@@ -195,7 +195,7 @@ export const BUY = {
 export const PRICE = {
   beefPerOz: 13.42 / 16,        // US Wellness organ blend, $13.42 per 1 lb pack
   eggPerOz: (5.39 / 12) / 1.75, // OrgaNICK Pastures, $5.39/dozen at Woodman's
-  sardinesPerOz: 3.33 / 3,      // Wild Planet in water, $3.33 per tin, about 3 oz drained
+  sardinesPerOz: 4.59 / 3,      // King Oscar in water, $4.59 per tin, about 3 oz drained
   cheesePerOz: 2.0,             // Miller's Bio Farm pressed cheese, estimated
   tallowPerOz: 17.46 / 27.2,    // US Wellness small pail, $17.46 per 1.7 lb
   fruitPerOz: { Banana: 0.35 / 4, Kiwi: 0.70 / 2.5, Avocado: 1.25 / 4 }, // typical Woodman's piece prices
@@ -203,7 +203,7 @@ export const PRICE = {
 export const PRICE_BASIS = [
   'Beef organ blend: $13.42/lb at US Wellness (single 1 lb packs). The 25 lb bundle at $11.41/lb would cut the weekly beef cost by about $10.',
   'Eggs: $5.39 a dozen for OrgaNICK Pastures at Woodman\'s.',
-  'Sardines: $3.33 a tin for Wild Planet in water.',
+  'Sardines: $4.59 a tin for King Oscar sardines in water, the in-water tin that passes in the checked database.',
   'Beef tallow: $17.46 for the 1.7 lb small pail at US Wellness.',
   'Cheese: estimated at $2.00/oz. Miller\'s Bio Farm shows exact prices only after a free signup, so this uses the Miller\'s cheese prices already on record.',
   'Banana, kiwi and avocado: typical Woodman\'s piece prices (about $0.35, $0.70 and $1.25 each).',
