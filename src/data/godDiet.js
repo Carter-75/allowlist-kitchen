@@ -287,23 +287,37 @@ const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
 export const TALLOW_TOTAL_UNITS = MEALS.reduce((s, m) => s + TALLOW_UNITS[m.tallow], 0);
 const TALLOW_UNIT_COST = (4 * PRICE.tallowPerOz) / TALLOW_TOTAL_UNITS;
 
-// Nutrition estimates per ounce, from USDA reference values for these foods.
-// Estimates, not lab numbers: the organ blend varies pack to pack.
+// Nutrition per ounce, rebuilt Nov 5, 2026 from the exact products' own
+// labels wherever a label exists, converted to per-ounce values:
+// - Beef organ blend: US Wellness published values, 287 kcal, 17.3g protein,
+//   23.54g fat, 1.49g carbs per 3.5 oz. (The source lists 1.5g fiber, which
+//   ground meat cannot have; fiber is 0.)
+// - Eggs: OrgaNICK Pastures carton label, 70 kcal, 6g protein, 5g fat,
+//   0g carbs per egg (50g; the pool counts an egg as 1.75 oz).
+// - Sardines: King Oscar label (1 can drained 84g: 120 kcal, 21g protein,
+//   3.5g fat), matching its USDA branded entry per 100g.
+// - Salmon: Wild Planet label, 100 kcal, 17g protein, 3.5g fat per 3 oz.
+// - Blueberries: Wyman's label, 80 kcal, 19g carbs, 6g fiber per cup (140g).
+// - Bone broth: Kettle & Fire Classic Beef label, 40 kcal, 10g protein per
+//   cup; the homemade batch is bones, water, and salt, simmered the same way.
+// - Cheese: Miller's Bio Farm publishes no nutrition panel (only sodium,
+//   about 304mg per oz), so this is USDA whole milk mozzarella.
+// - Tallow, produce, broccoli, and flax: USDA reference values per 100g.
 export const NUTRITION_PER_OZ = {
-  beef: { kcal: 75, protein: 5.5, fat: 5.7, carbs: 0, fiber: 0 },
-  egg: { kcal: 40, protein: 3.4, fat: 2.9, carbs: 0.2, fiber: 0 },
-  sardines: { kcal: 60, protein: 7, fat: 3.3, carbs: 0, fiber: 0 },
-  salmon: { kcal: 50, protein: 6.5, fat: 2, carbs: 0, fiber: 0 },
-  blueberries: { kcal: 16, protein: 0.2, fat: 0.1, carbs: 4.1, fiber: 0.7 },
-  flax: { kcal: 150, protein: 5.2, fat: 12, carbs: 8.2, fiber: 7.7 },
-  broth: { kcal: 6, protein: 1.2, fat: 0, carbs: 0, fiber: 0 },
-  broccoli: { kcal: 10, protein: 0.8, fat: 0.1, carbs: 1.9, fiber: 0.7 },
-  cheese: { kcal: 85, protein: 6, fat: 6.5, carbs: 1, fiber: 0 },
-  tallow: { kcal: 250, protein: 0, fat: 28, carbs: 0, fiber: 0 },
+  beef: { kcal: 82, protein: 4.94, fat: 6.73, carbs: 0.43, fiber: 0 },
+  egg: { kcal: 40, protein: 3.43, fat: 2.86, carbs: 0, fiber: 0 },
+  sardines: { kcal: 40.5, protein: 7.09, fat: 1.18, carbs: 0, fiber: 0 },
+  salmon: { kcal: 33.3, protein: 5.67, fat: 1.17, carbs: 0, fiber: 0 },
+  blueberries: { kcal: 16.2, protein: 0.2, fat: 0, carbs: 3.85, fiber: 1.21 },
+  flax: { kcal: 151.4, protein: 5.19, fat: 11.95, carbs: 8.19, fiber: 7.74 },
+  broth: { kcal: 5, protein: 1.25, fat: 0, carbs: 0, fiber: 0 },
+  broccoli: { kcal: 9.9, protein: 0.67, fat: 0.12, carbs: 2.04, fiber: 0.94 },
+  cheese: { kcal: 85, protein: 6.3, fat: 6.3, carbs: 0.62, fiber: 0 },
+  tallow: { kcal: 255, protein: 0, fat: 28.35, carbs: 0, fiber: 0 },
   fruit: {
-    Banana: { kcal: 25, protein: 0.3, fat: 0.1, carbs: 6.4, fiber: 0.7 },
-    Kiwi: { kcal: 17, protein: 0.3, fat: 0.1, carbs: 4.2, fiber: 0.9 },
-    Avocado: { kcal: 45, protein: 0.6, fat: 4.2, carbs: 2.4, fiber: 1.9 },
+    Banana: { kcal: 25.2, protein: 0.31, fat: 0.09, carbs: 6.47, fiber: 0.74 },
+    Kiwi: { kcal: 17.3, protein: 0.32, fat: 0.15, carbs: 4.16, fiber: 0.85 },
+    Avocado: { kcal: 45.4, protein: 0.57, fat: 4.16, carbs: 2.42, fiber: 1.9 },
   },
 };
 
@@ -314,15 +328,26 @@ export const NUTRITION_PER_OZ = {
 // organic AND pasture-raised (Primal Kitchen mayo was removed Oct 27, 2026
 // for exactly that). Mustard is plain prepared mustard per the rulebook
 // ruling of Oct 27, 2026 (mustard seed, vinegar, water, salt, nothing else).
+// Condiment nutrition per dosed unit, from the products' own labels:
+// ketchup is the Primal Kitchen label (10 kcal, 2g carbs per tablespoon);
+// honey is the Wedderspoon label (70 kcal, 17g carbs per tablespoon);
+// coconut water is the Harmless Harvest label (60 kcal, 15g carbs per
+// 8 oz); olive oil is the California Olive Ranch label (120 kcal, 14g fat
+// per tablespoon); pickles are the Bubbies label, which reads 0 across the
+// board; psyllium is the Yerba Prima label (15 kcal, 4.5g carbs, 4.5g fiber
+// per tablespoon); mustard is USDA prepared yellow. Mayo is homemade, so
+// its numbers are computed from its ingredients' labels: 1 cup avocado oil
+// (120 kcal and 14g fat per tablespoon) plus one egg yolk, about 17
+// tablespoons a batch.
 export const CONDIMENT_NUTRITION = {
-  ketchup: { kcal: 15, protein: 0, fat: 0, carbs: 3, fiber: 0 }, // per tablespoon
-  mayo: { kcal: 100, protein: 0, fat: 11, carbs: 0, fiber: 0 }, // per tablespoon, avocado oil mayo
-  mustard: { kcal: 3, protein: 0, fat: 0, carbs: 0, fiber: 0 }, // per teaspoon
-  honey: { kcal: 21, protein: 0, fat: 0, carbs: 5.7, fiber: 0 }, // per teaspoon, raw honey
-  oliveOil: { kcal: 40, protein: 0, fat: 4.5, carbs: 0, fiber: 0 }, // per teaspoon, extra virgin olive oil
-  coconutWater: { kcal: 6, protein: 0.1, fat: 0, carbs: 1.4, fiber: 0.1 }, // per ounce, plain coconut water
-  pickles: { kcal: 5, protein: 0, fat: 0, carbs: 1, fiber: 0.3 }, // per spear, fermented dill
-  psyllium: { kcal: 18, protein: 0, fat: 0, carbs: 5, fiber: 4.5 }, // per tablespoon, husk powder
+  ketchup: { kcal: 10, protein: 0, fat: 0, carbs: 2, fiber: 0 }, // per tablespoon
+  mayo: { kcal: 116, protein: 0.2, fat: 13.4, carbs: 0, fiber: 0 }, // per tablespoon, homemade
+  mustard: { kcal: 3, protein: 0.2, fat: 0.2, carbs: 0.3, fiber: 0.2 }, // per teaspoon
+  honey: { kcal: 23.3, protein: 0, fat: 0, carbs: 5.67, fiber: 0 }, // per teaspoon, Wedderspoon label
+  oliveOil: { kcal: 40, protein: 0, fat: 4.67, carbs: 0, fiber: 0 }, // per teaspoon, extra virgin olive oil
+  coconutWater: { kcal: 7.5, protein: 0, fat: 0, carbs: 1.88, fiber: 0 }, // per ounce, Harmless Harvest label
+  pickles: { kcal: 0, protein: 0, fat: 0, carbs: 0, fiber: 0 }, // per spear, Bubbies label reads 0
+  psyllium: { kcal: 15, protein: 0, fat: 0, carbs: 4.5, fiber: 4.5 }, // per tablespoon, Yerba Prima label
 };
 export const CONDIMENT_PRICE = {
   ketchup: 8.79 / 37, // 18.5 oz squeeze bottle $8.79 at Woodman's, about 37 tbsp

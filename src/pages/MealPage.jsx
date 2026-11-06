@@ -89,7 +89,7 @@ export default function MealPage() {
               <strong className="text-ink">Estimated cost: {money(mealCost(meal))}</strong> for this meal, from the prices checked Nov 5, 2026. See <Link to="/ingredients" className="font-bold text-pine-700 hover:underline">Ingredients</Link> for how every cost is figured.
             </p>
             <p className="mt-3 rounded-xl bg-paper px-4 py-3 text-sm leading-relaxed text-ink/65">
-              <strong className="text-ink">Estimated nutrition:</strong> about {mealNutrition(meal).kcal} cal, {mealNutrition(meal).protein}g protein, {mealNutrition(meal).fat}g fat, {mealNutrition(meal).carbs}g carbs, {mealNutrition(meal).fiber}g fiber, from USDA reference values for these amounts.
+              <strong className="text-ink">Nutrition:</strong> about {mealNutrition(meal).kcal} cal, {mealNutrition(meal).protein}g protein, {mealNutrition(meal).fat}g fat, {mealNutrition(meal).carbs}g carbs, {mealNutrition(meal).fiber}g fiber, counted from the labels of the exact products used, with USDA reference values for produce.
             </p>
             <Link to="/ingredients" className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-pine-700 hover:underline">Where each ingredient comes from <ArrowRight size={15} /></Link>
           </div>
