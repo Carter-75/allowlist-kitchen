@@ -25,7 +25,8 @@ const fmtShort = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'nu
 
 const SHIPPER_DOT = {
   'US Wellness Meats': 'bg-red-500',
-  "Miller's Bio Farm": 'bg-amber-500',
+  'Dutch Meadows': 'bg-amber-500',
+  'Seven Sons Farms': 'bg-orange-600',
   'Fresh shipments': 'bg-emerald-500',
   'Pantry bulk shipment': 'bg-sky-500',
 };

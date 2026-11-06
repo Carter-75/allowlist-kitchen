@@ -40,7 +40,7 @@ export function mealIngredients(meal) {
   if (meal.coconutWater) rows.push({ item: 'Coconut water', oz: meal.coconutWater, practical: 'a glass, to drink', buy: BUY['Coconut water'] });
   if (meal.pickles) rows.push({ item: 'Pickles', oz: null, practical: `${meal.pickles} spears`, buy: BUY['Pickles'] });
   if (meal.psyllium) rows.push({ item: 'Psyllium husk', oz: null, practical: meal.coconutWater ? '1 tablespoon, stirred into the coconut water' : '1 tablespoon, whisked into the batter', buy: BUY['Psyllium husk'] });
-  if (meal.seasoning) rows.push({ item: meal.seasoning, oz: null, practical: 'to taste', buy: BUY['Seasonings'] });
+  if (meal.seasoning) rows.push({ item: meal.seasoning, oz: null, practical: 'to taste', buy: BUY[meal.seasoning] || BUY['Seasonings'] });
   return rows;
 }
 

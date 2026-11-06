@@ -10,12 +10,12 @@ export const POOL = [
   { item: 'Wild blueberries', oz: 4, note: 'Wyman\'s frozen wild blueberries. 2 oz at 2 morning meals.' },
   { item: 'Broccoli (cooked)', oz: 6, note: 'Cooked only, always: raw crucifers are denied on this diet, they can block the thyroid. 3 oz at 2 evening meals.' },
   { item: 'Coconut water', oz: 24, note: 'Harmless Harvest plain. 8 oz to drink at 3 midday meals.' },
-  { item: 'Beef bone broth', oz: 32, note: 'Homemade from US Wellness beef soup bones. The base of both soups, 16 oz each. It brings the glycine and collagen that muscle meat is short on.' },
+  { item: 'Beef bone broth', oz: 32, note: 'Homemade from Seven Sons Farms beef soup bones. The base of both soups, 16 oz each. It brings the glycine and collagen that muscle meat is short on.' },
   { item: 'Ground flaxseed', oz: 2, note: 'Evidence add, not a video verdict: the Oct 25, 2026 literature check in the database found flax very good (richest plant ALA source, richest lignan source, about 27% fiber). 0.5 oz in 4 meals.' },
   { item: 'Banana', oz: 28, note: 'About 7 bananas. The morning fruit, 4 oz per morning meal.' },
   { item: 'Kiwi', oz: 52.5, note: 'About 21 kiwis. The midday fruit, 7.5 oz per midday meal. Raised Nov 5, 2026 for fiber.' },
   { item: 'Avocado', oz: 56, note: 'About 14 avocados. The evening fruit, 8 oz per evening meal. Doubled Nov 5, 2026 for fiber: avocado carries most of the diet\'s fiber.' },
-  { item: 'Cheese', oz: 10, note: 'Pasteurized 100% grass-fed pressed cheese. See the cheese note on the Ingredients page.' },
+  { item: 'Cheese', oz: 10, note: 'Raw aged cheddar, 100% grass-fed: Dutch Meadows Dutch Reserve, the approved cheese in the database. See the cheese note on the Ingredients page.' },
   { item: 'Beef tallow', oz: 4, note: 'US Wellness. The only cooking fat, and only at meals where the beef cooks.' },
   { item: 'Celtic sea salt', oz: null, note: 'On the beef while it cooks. No set weight.' },
   { item: 'Water', oz: null, note: 'Spring water in glass bottles only, still or sparkling. No set weight.' },
@@ -32,7 +32,7 @@ export const INGREDIENTS = [
     name: 'Eggs',
     weeklyOz: 73.5,
     source: 'OrgaNICK Pastures at Woodman\'s, $5.39 a dozen',
-    detail: 'Certified organic and pasture-raised, with no exceptions. Always whole eggs in every meal, never halves: 42 eggs a week at the 2,500 size, 34 at the 2,000 size, 26 at the 1,500 size. They ship in whole cartons only, never fractional packs; the order plan sizes each shipment to whole weeks and lets any extra eggs roll forward. Whatever brand ships, the carton must carry both certifications.',
+    detail: 'Certified organic and pasture-raised, with no exceptions. Always whole eggs in every meal, never halves: 42 eggs a week at the 2,500 size, 24 at the 2,000 size, 23 at the 1,500 size. They ship in whole cartons only, never fractional packs; the order plan sizes each shipment to whole weeks and lets any extra eggs roll forward. Whatever brand ships, the carton must carry both certifications.',
   },
   {
     name: 'Sardines',
@@ -67,20 +67,20 @@ export const INGREDIENTS = [
   {
     name: 'Ground flaxseed',
     weeklyOz: 2,
-    source: 'Organic ground flaxseed (meal), shipped',
+    source: 'Bob\'s Red Mill Organic Golden Flaxseed Meal',
     detail: 'An evidence add under Carter\'s Nov 5, 2026 rule: a food with no video verdict can join when real-world evidence shows it is very good for you. Flax was literature-checked on Oct 25, 2026 in Carter\'s own database: among the richest plant sources of ALA omega-3, the richest common lignan source, about 27% fiber, with meta-analyses showing modest LDL, blood pressure, and blood sugar improvements. It must be ground: whole seeds pass through undigested. ALA complements the sardines and salmon, it does not replace marine omega-3. 0.5 oz (2 tablespoons) in the pancakes, egg muffins, omelet, and meatballs.',
   },
   {
     name: 'Beef bone broth',
     weeklyOz: 32,
-    source: 'Homemade from US Wellness beef soup bones',
+    source: 'Homemade from Seven Sons Farms beef soup bones',
     detail: 'An evidence add under Carter\'s Nov 5, 2026 rule. Both soups used to cook in salted water; bone broth is strictly better in the same slot: it brings collagen, gelatin, and glycine, the amino acid a muscle-meat-heavy diet runs short on, plus minerals from the bones. The honest limit: broth itself has modest trial evidence, it earns its place as the nutrient-carrying base of the soups, not as a miracle. Bones simmer with water and salt, nothing else; the broth is jarred and frozen in soup-sized portions. A bottled broth would have to be bones, water, and salt only to take its place.',
   },
   {
     name: 'Cheese',
     weeklyOz: 10,
-    source: 'Miller\'s Bio Farm pasteurized pressed cheese line',
-    detail: 'Pasteurized and 100% grass-fed is the pass. Cheddar has no passing source, so cheddar is never used here, and raw or 95% grass-fed cheddar is not a substitute.',
+    source: 'Dutch Meadows Dutch Reserve Raw Cheddar',
+    detail: 'The approved cheese in the checked database, and the best one in it: raw whole milk from Dutch Meadows\' own Dutch Belted herd, verified 100% grass-fed with no grain ever, aged 12 to 14 months, made with Celtic sea salt, traditional animal rennet, and live cultures. This is the only cheese on the diet. An earlier build of this site used a pasteurized mozzarella that was never in the database at all; that was wrong and it is gone. The other approved raw cheddar, Organic Valley Grassmilk Raw Sharp, is the backup if Dutch Meadows is ever out of stock.',
   },
   {
     name: 'Beef tallow',
@@ -225,13 +225,17 @@ export const MEALS = [
 // at 9 meals) and adjust the other 11 beef recipes at this size to run on
 // their eggs, sardines, salmon, and cheese, with their own names,
 // descriptions, and steps in the overrides below.
-// Label-checked daily averages: 2,500 plan: 2,578 cal, 141g protein, 186g
-// fat, 101g carbs, 30.9g fiber. 2,000 plan: 2,133 cal, 123g protein, 151g
-// fat, 80g carbs, 22.7g fiber. 1,500 plan: 1,563 cal, 91g protein, 104g fat,
-// 75g carbs, 20.8g fiber. Protein holds at about 23% of calories at the two
-// smaller sizes and 22% at the full size.
+// Label-checked daily averages (rebuilt Nov 6, 2026 with the approved raw
+// cheddar in place of the never-approved mozzarella, Bob's Red Mill flax
+// label values, and exact product prices): 2,500 plan: 2,615 cal, 143g
+// protein, 188g fat, 102g carbs, 31.2g fiber. 2,000 plan: 2,134 cal, 125g
+// protein, 150g fat, 81g carbs, 23.0g fiber. 1,500 plan: 1,582 cal, 92g
+// protein, 105g fat, 76g carbs, 21.1g fiber. Protein holds at about 23% of
+// calories at the two smaller sizes and 22% at the full size. The cheddar
+// swap pushed the two smaller sizes up, so their tallow pools trimmed to
+// 1.5 oz (1,500) and 1 oz (2,000) to stay inside Carter's ranges.
 export const PLAN_TIERS = [1500, 2000, 2500];
-export const TIER_TALLOW_OZ = { 1500: 2, 2000: 2, 2500: 4 };
+export const TIER_TALLOW_OZ = { 1500: 1.5, 2000: 1, 2500: 4 };
 export const TIER_OVERRIDES = {
   // The 2,000 plan keeps the beef exactly as the 2,500 plan (quarter-pound
   // portions, meatloaf double) and scales eggs, fruit, and tallow instead:
@@ -423,47 +427,52 @@ export const TALLOW_TSP = { yes: '1 teaspoon', double: '2 teaspoons', light: '1 
 // pattern the Woodman's (Onalaska) online store itself uses.
 const wm = (term) => `https://shopwoodmans.com/store/woodmans-food-markets/s?k=${encodeURIComponent(term).replace(/%20/g, '+')}`;
 export const BUY = {
-  'Beef organ blend': { label: 'US Wellness Meats', url: 'https://grasslandbeef.com/search?q=ground+beef+heart+kidney+liver' },
-  'Beef tallow': { label: 'US Wellness Meats', url: 'https://grasslandbeef.com/collections/kitchen-favorites' },
-  'Egg': { label: 'Shipped fresh box (certified organic, pasture-raised)', url: 'https://www.misfitsmarket.com/egg-delivery' },
-  'Eggs': { label: 'Shipped fresh box (certified organic, pasture-raised)', url: 'https://www.misfitsmarket.com/egg-delivery' },
-  'Sardines': { label: 'Restaurant & More (12-tin case)', url: 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html' },
-  'Cheese': { label: "Miller's Bio Farm (pressed cheese)", url: 'https://millersbiofarm.com/store/cheese-1' },
-  'Banana': { label: 'Shipped fresh box', url: 'https://www.misfitsmarket.com/egg-delivery' },
-  'Kiwi': { label: 'Shipped fresh box', url: 'https://www.misfitsmarket.com/egg-delivery' },
-  'Avocado': { label: 'Shipped fresh box', url: 'https://www.misfitsmarket.com/egg-delivery' },
-  'Celtic sea salt': { label: 'Amazon (Celtic Sea Salt)', url: 'https://www.amazon.com/s?k=Celtic+Sea+Salt' },
-  'Ketchup': { label: 'Amazon (Primal Kitchen)', url: 'https://www.amazon.com/s?k=Primal+Kitchen+Organic+Unsweetened+Ketchup' },
-  'Mustard': { label: 'Amazon (plain prepared mustard)', url: 'https://www.amazon.com/s?k=plain+organic+yellow+mustard' },
-  'Mayo (homemade)': { label: 'Amazon (100% avocado oil, for homemade mayo)', url: 'https://www.amazon.com/s?k=100%25+pure+avocado+oil' },
-  'Seasonings': { label: 'Amazon (plain single spices)', url: 'https://www.amazon.com/s?k=organic+paprika+cinnamon+garlic+powder' },
-  'Water': { label: 'Amazon (Mountain Valley, glass bottles)', url: 'https://www.amazon.com/s?k=Mountain+Valley+spring+water+glass+bottles' },
-  'Wild sockeye salmon': { label: 'Amazon (Wild Planet sockeye)', url: 'https://www.amazon.com/s?k=Wild+Planet+wild+sockeye+salmon' },
-  'Wild blueberries': { label: "Amazon (Wyman's frozen wild blueberries)", url: 'https://www.amazon.com/s?k=Wymans+frozen+wild+blueberries' },
-  'Broccoli (cooked)': { label: 'Shipped fresh box', url: 'https://www.misfitsmarket.com/egg-delivery' },
-  'Coconut water': { label: 'Amazon (Harmless Harvest plain)', url: 'https://www.amazon.com/s?k=Harmless+Harvest+organic+coconut+water' },
-  'Raw honey': { label: 'Amazon (Wedderspoon raw manuka)', url: 'https://www.amazon.com/s?k=Wedderspoon+raw+manuka+honey' },
-  'Olive oil': { label: 'Amazon (California Olive Ranch 100% California)', url: 'https://www.amazon.com/s?k=California+Olive+Ranch+100%25+California+extra+virgin+olive+oil' },
-  'Pickles': { label: "Amazon (Bubbies Kosher Dill)", url: 'https://www.amazon.com/s?k=Bubbies+kosher+dill+pickles' },
-  'Ground flaxseed': { label: 'Amazon (organic ground flaxseed)', url: 'https://www.amazon.com/s?k=organic+ground+flaxseed' },
-  'Psyllium husk': { label: 'Amazon (psyllium husk powder)', url: 'https://www.amazon.com/s?k=psyllium+husk+powder' },
-  'Beef bone broth': { label: 'US Wellness Meats (soup bones)', url: 'https://grasslandbeef.com/search?q=soup+bones' },
+  'Beef organ blend': { label: 'US Wellness Meats (Organ Blend bundle, 25 lb)', url: 'https://grasslandbeef.com/products/organ-blend-burger-bundle-25-lbs' },
+  'Beef tallow': { label: 'US Wellness Meats (beef tallow, small pail)', url: 'https://grasslandbeef.com/products/beef-tallow-small-pail' },
+  'Egg': { label: 'Misfits Market (organic pasture-raised eggs)', url: 'https://www.misfitsmarket.com/imperfect-foods-organic-large-pasture-raised-eggs-1-dz/p' },
+  'Eggs': { label: 'Misfits Market (organic pasture-raised eggs)', url: 'https://www.misfitsmarket.com/imperfect-foods-organic-large-pasture-raised-eggs-1-dz/p' },
+  'Sardines': { label: 'Restaurant & More (King Oscar 12-tin case)', url: 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html' },
+  'Cheese': { label: 'Dutch Meadows (Dutch Reserve raw cheddar, 8 oz)', url: 'https://dutchmeadowsfarm.com/store/product/8-oz-raw-dutch-reserve-cheddar' },
+  'Banana': { label: 'Amazon Fresh (organic banana bunch)', url: 'https://www.amazon.com/dp/B07ZLF9G83' },
+  'Kiwi': { label: 'Misfits Market (organic kiwis)', url: 'https://www.misfitsmarket.com/organic-kiwis/p' },
+  'Avocado': { label: 'Misfits Market (organic large Hass avocados)', url: 'https://www.misfitsmarket.com/organic-large-hass-avocados/p' },
+  'Celtic sea salt': { label: 'iHerb (Celtic Sea Salt fine ground, 5 lb)', url: 'https://www.iherb.com/pr/celtic-sea-salt-fine-ground-vital-mineral-blend-5-lb-2-268-g/156801' },
+  'Ketchup': { label: 'Primal Kitchen (organic unsweetened ketchup)', url: 'https://www.primalkitchen.com/products/organic-unsweetened-ketchup' },
+  'Mustard': { label: 'Lowensenf Extra Hot (mustard seed, vinegar, water, salt only)', url: 'https://realprimedeals.com/products/lowensenf-extra-scharf-german-mustard-9-3-oz' },
+  'Mayo (homemade)': { label: 'Chosen Foods (100% pure avocado oil, for homemade mayo)', url: 'https://chosenfoods.com/products/100-pure-avocado-oil-500ml-glass-bottle' },
+  'Seasonings': { label: 'Simply Organic (paprika)', url: 'https://www.simplyorganic.com/simply-organic-paprika-ground-2-96-oz' },
+  'Paprika': { label: 'Simply Organic (paprika)', url: 'https://www.simplyorganic.com/simply-organic-paprika-ground-2-96-oz' },
+  'Cinnamon': { label: 'Simply Organic (cinnamon)', url: 'https://www.simplyorganic.com/products/simply-organic-cinnamon-ground-2-45-oz' },
+  'Turmeric': { label: 'Simply Organic (turmeric)', url: 'https://www.simplyorganic.com/products/simply-organic-turmeric-root-ground-2-38-oz' },
+  'Ginger': { label: 'Simply Organic (ginger)', url: 'https://www.simplyorganic.com/products/simply-organic-ginger-root-ground-1-64-oz' },
+  'Water': { label: 'WebstaurantStore (Mountain Valley spring water, 1 L glass, case of 12)', url: 'https://www.webstaurantstore.com/mountain-valley-spring-water-1-liter-glass-bottle-case/103MVSPG100G.html' },
+  'Wild sockeye salmon': { label: 'Wild Planet (wild sockeye salmon)', url: 'https://wildplanetfoods.com/products/wild-sockeye-salmon' },
+  'Wild blueberries': { label: "Wyman's (frozen wild blueberries)", url: 'https://www.wymans.com/products/wild-blueberries' },
+  'Broccoli (cooked)': { label: 'Misfits Market (organic bunched broccoli)', url: 'https://www.misfitsmarket.com/organic-bunched-broccoli/p' },
+  'Coconut water': { label: 'Harmless Harvest (organic coconut water)', url: 'https://harmlessharvest.com/products/organic-coconut-water' },
+  'Raw honey': { label: 'Wedderspoon (USDA organic raw manuka, MGO 50+)', url: 'https://wedderspoon.com/products/raw-organic-manuka-multifloral-honey-mgo-50-250g' },
+  'Olive oil': { label: 'World Market (California Olive Ranch 100% California)', url: 'https://www.worldmarket.com/p/california-olive-ranch-california-extra-virgin-olive-oil-591964.html' },
+  'Pickles': { label: 'Bubbies (kosher dill pickles, 33 oz)', url: 'https://buybubbies.com/products/bubbies-kosher-dill-pickles-33-oz' },
+  'Ground flaxseed': { label: "Vitacost (Bob's Red Mill organic golden flaxseed meal)", url: 'https://www.vitacost.com/products/bob-s-red-mill-organic-golden-flaxseed-meal-16-oz-453-g-77011' },
+  'Psyllium husk': { label: 'Swanson (Yerba Prima psyllium husks powder)', url: 'https://www.swansonvitamins.com/p/yerba-prima-psyllium-husks-powder-12-oz-pwdr' },
+  'Beef bone broth': { label: 'Seven Sons Farms (beef soup bones)', url: 'https://sevensons.net/store/product/beef-soup-bones' },
 };
 
-// Estimated costs. Prices checked November 5, 2026. These are estimates for
-// planning, not quotes: store prices move, and Miller's shows its exact
-// cheese prices only after a free signup, so cheese is estimated from the
-// Miller's cheese prices on record (about $2.00/oz).
+// Estimated costs. Prices checked November 6, 2026 against the exact
+// product pages linked on this site. These are estimates for planning, not
+// quotes: store prices move. Dutch Meadows shows its cheese price only
+// after a free signup, so cheese is priced from the other approved raw
+// cheddar's verified retail price (Organic Valley, $9.99 per 8 oz).
 export const PRICE = {
   beefPerOz: 285.25 / (25 * 16), // US Wellness Organ Blend 25 lb bundle, $285.25 on sale ($11.41/lb)
   eggPerOz: (5.39 / 12) / 1.75, // OrgaNICK Pastures, $5.39/dozen at Woodman's
   sardinesPerOz: 4.59 / 3,      // King Oscar in water, $4.59 per tin, about 3 oz drained
   salmonPerOz: 1.0,             // Wild Planet canned wild sockeye, about $6 per 6 oz can, estimated
-  blueberriesPerOz: 0.25,       // Wyman's frozen wild, 3 lb bag, estimated
-  flaxPerOz: 0.35,              // organic ground flaxseed, estimated
-  brothPerOz: 0.30,             // homemade from soup bones, estimated
+  blueberriesPerOz: 0.29,       // Wyman's frozen wild, $13.99 per 3 lb bag at the Wyman's store
+  flaxPerOz: 0.44,              // Bob's Red Mill organic golden flaxseed meal, $7.06 per 16 oz at Vitacost
+  brothPerOz: 0.16,             // homemade: one 3 lb pack of Seven Sons soup bones ($25.50) simmers into about 160 oz of broth
   broccoliPerOz: 0.15,          // fresh broccoli, estimated
-  cheesePerOz: 2.0,             // Miller's Bio Farm pressed cheese, estimated
+  cheesePerOz: 1.25,            // raw cheddar priced from Organic Valley Grassmilk raw sharp, $9.99 per 8 oz at retail (Dutch Meadows price is account-only)
   tallowPerOz: 17.46 / 27.2,    // US Wellness small pail, $17.46 per 1.7 lb
   fruitPerOz: { Banana: 0.35 / 4, Kiwi: 0.70 / 2.5, Avocado: 1.25 / 4 }, // typical Woodman's piece prices
 };
@@ -472,21 +481,21 @@ export const PRICE_BASIS = [
   'Eggs: $5.39 a dozen for OrgaNICK Pastures at Woodman\'s.',
   'Sardines: ordered in 12-tin cases, but the estimate still uses $4.59 a tin (the single-tin price on record) until a delivered case price is locked, so the bulk saving is not overstated.',
   'Beef tallow: $17.46 for the 1.7 lb small pail at US Wellness.',
-  'Cheese: estimated at $2.00/oz. Miller\'s Bio Farm shows exact prices only after a free signup, so this uses the Miller\'s cheese prices already on record.',
+  'Cheese: Dutch Meadows Dutch Reserve raw cheddar. Dutch Meadows shows its price only after a free signup, so costs use the other approved raw cheddar\'s verified retail price: Organic Valley Grassmilk Raw Sharp at $9.99 per 8 oz ($1.25/oz).',
   'Banana, kiwi and avocado: typical Woodman\'s piece prices (about $0.35, $0.70 and $1.25 each).',
   'Celtic sea salt and water: a few cents a week, counted as $0.',
-  'Ketchup: Primal Kitchen Organic Unsweetened, $8.79 for the 18.5 oz squeeze bottle at Woodman\'s, about $0.24 a tablespoon. 5 tablespoons a week.',
-  'Homemade mayo: about $4.25 a batch (a cup of avocado oil, one of the diet\'s own egg yolks, lemon, mustard, salt) making about 17 tablespoons, about $0.25 a tablespoon. 3 tablespoons a week.',
-  'Mustard: plain prepared mustard, about $0.05 a teaspoon. 2 teaspoons a week.',
+  'Ketchup: Primal Kitchen Organic Unsweetened, $6.99 for the 11.3 oz glass bottle at the Primal Kitchen store, about $0.32 a tablespoon. 5 tablespoons a week.',
+  'Homemade mayo: about $11 a batch (a cup of Chosen Foods 100% pure avocado oil at $21.59 per 500 ml bottle, one of the diet\'s own egg yolks, lemon, mustard, salt) making about 17 tablespoons, about $0.65 a tablespoon. 3 tablespoons a week.',
+  'Mustard: Lowensenf Extra Hot, $6.99 for a 9.3 oz jar, about $0.13 a teaspoon. Its ingredient list is exactly mustard seed, vinegar, water, salt. 2 teaspoons a week.',
   'Wild sockeye salmon: about $6 for a 6 oz can of Wild Planet, estimated. 2 oz a week.',
-  'Wild blueberries: Wyman\'s frozen wild, estimated at $0.25 an ounce. 4 oz a week.',
+  'Wild blueberries: Wyman\'s frozen wild, $13.99 for a 3 lb bag at the Wyman\'s store, about $0.29 an ounce. 4 oz a week.',
   'Broccoli: fresh, estimated at $0.15 an ounce. 6 oz a week, always cooked.',
   'Coconut water: Harmless Harvest plain, about $0.31 an ounce. 24 oz a week.',
-  'Raw honey: Wedderspoon raw manuka, about $0.85 a teaspoon. 2 teaspoons a week.',
-  'Olive oil: California Olive Ranch 100% California, about $0.12 a teaspoon. 2 teaspoons a week.',
-  'Pickles: Bubbies Kosher Dill, about $0.35 a spear. 4 spears a week.',
-  'Ground flaxseed: organic, estimated at $0.35 an ounce. 2 oz a week. Psyllium husk: estimated at $0.40 a tablespoon, 4 tablespoons a week.',
-  'Beef bone broth: homemade from US Wellness soup bones, estimated at $0.30 an ounce for the bones. 32 oz a week.',
+  'Raw honey: Wedderspoon USDA Organic raw manuka MGO 50+, $22.99 for a 250 g jar, about $0.64 a teaspoon. 2 teaspoons a week.',
+  'Olive oil: California Olive Ranch 100% California, $19.99 for 500 ml, about $0.20 a teaspoon. 2 teaspoons a week.',
+  'Pickles: Bubbies Kosher Dill, $9.99 for a 33 oz jar of whole dills, cut into spears at home, about $0.30 a spear. 4 spears a week.',
+  'Ground flaxseed: Bob\'s Red Mill Organic Golden Flaxseed Meal, $7.06 for 16 oz at Vitacost, about $0.44 an ounce. 2 oz a week. Psyllium husk: Yerba Prima powder, $22 for 12 oz at Swanson, about $0.32 a tablespoon, 4 tablespoons a week.',
+  'Beef bone broth: homemade from Seven Sons Farms beef soup bones, $25.50 for about 3 lb; one pack simmers into roughly 160 oz of broth, about $0.16 an ounce. 32 oz a week.',
 ];
 
 const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
@@ -505,19 +514,21 @@ export const TALLOW_TOTAL_UNITS = MEALS.reduce((s, m) => s + TALLOW_UNITS[m.tall
 // - Blueberries: Wyman's label, 80 kcal, 19g carbs, 6g fiber per cup (140g).
 // - Bone broth: Kettle & Fire Classic Beef label, 40 kcal, 10g protein per
 //   cup; the homemade batch is bones, water, and salt, simmered the same way.
-// - Cheese: Miller's Bio Farm publishes no nutrition panel (only sodium,
-//   about 304mg per oz), so this is USDA whole milk mozzarella.
-// - Tallow, produce, broccoli, and flax: USDA reference values per 100g.
+// - Cheese: Dutch Meadows publishes no nutrition panel, so this is USDA
+//   aged cheddar (115 kcal, 7g protein, 9.5g fat per oz).
+// - Flax: Bob's Red Mill label, 60 kcal, 3g protein, 3.5g fat, 5g carbs,
+//   4g fiber per 2 Tbsp (13g) serving, converted to per-ounce.
+// - Tallow, produce, and broccoli: USDA reference values per 100g.
 export const NUTRITION_PER_OZ = {
   beef: { kcal: 82, protein: 4.94, fat: 6.73, carbs: 0.43, fiber: 0 },
   egg: { kcal: 40, protein: 3.43, fat: 2.86, carbs: 0, fiber: 0 },
   sardines: { kcal: 40.5, protein: 7.09, fat: 1.18, carbs: 0, fiber: 0 },
   salmon: { kcal: 33.3, protein: 5.67, fat: 1.17, carbs: 0, fiber: 0 },
   blueberries: { kcal: 16.2, protein: 0.2, fat: 0, carbs: 3.85, fiber: 1.21 },
-  flax: { kcal: 151.4, protein: 5.19, fat: 11.95, carbs: 8.19, fiber: 7.74 },
+  flax: { kcal: 130.8, protein: 6.54, fat: 7.63, carbs: 10.9, fiber: 8.72 },
   broth: { kcal: 5, protein: 1.25, fat: 0, carbs: 0, fiber: 0 },
   broccoli: { kcal: 9.9, protein: 0.67, fat: 0.12, carbs: 2.04, fiber: 0.94 },
-  cheese: { kcal: 85, protein: 6.3, fat: 6.3, carbs: 0.62, fiber: 0 },
+  cheese: { kcal: 115, protein: 7.0, fat: 9.5, carbs: 0.4, fiber: 0 },
   tallow: { kcal: 255, protein: 0, fat: 28.35, carbs: 0, fiber: 0 },
   fruit: {
     Banana: { kcal: 25.2, protein: 0.31, fat: 0.09, carbs: 6.47, fiber: 0.74 },
@@ -555,14 +566,14 @@ export const CONDIMENT_NUTRITION = {
   psyllium: { kcal: 15, protein: 0, fat: 0, carbs: 4.5, fiber: 4.5 }, // per tablespoon, Yerba Prima label
 };
 export const CONDIMENT_PRICE = {
-  ketchup: 8.79 / 37, // 18.5 oz squeeze bottle $8.79 at Woodman's, about 37 tbsp
-  mayo: 0.25,         // homemade: about $4.25 a batch (1 cup avocado oil, 1 yolk, lemon), about 17 tbsp
-  mustard: 0.05,      // per teaspoon, from a plain prepared mustard bottle
-  honey: 0.85,        // per teaspoon, Wedderspoon raw manuka, estimated
-  oliveOil: 0.12,     // per teaspoon, California Olive Ranch 100% California
+  ketchup: 6.99 / 22, // 11.3 oz glass bottle $6.99 at the Primal Kitchen store, about 22 tbsp
+  mayo: 0.65,         // homemade: about $11 a batch (1 cup Chosen Foods avocado oil, 1 yolk, lemon), about 17 tbsp
+  mustard: 0.13,      // per teaspoon, Lowensenf Extra Hot, $6.99 per 9.3 oz jar
+  honey: 0.64,        // per teaspoon, Wedderspoon USDA organic raw manuka, $22.99 per 250 g jar
+  oliveOil: 0.20,     // per teaspoon, California Olive Ranch 100% California, $19.99 per 500 ml
   coconutWater: 0.31, // per ounce, Harmless Harvest plain
-  pickles: 0.35,      // per spear, Bubbies Kosher Dill
-  psyllium: 0.40,     // per tablespoon, husk powder, estimated
+  pickles: 0.30,      // per spear, Bubbies Kosher Dill, $9.99 per 33 oz jar, whole dills cut into spears
+  psyllium: 0.32,     // per tablespoon, Yerba Prima powder, $22 per 12 oz at Swanson
 };
 export const CONDIMENT_KEYS = ['ketchup', 'mayo', 'mustard', 'honey', 'oliveOil', 'coconutWater', 'pickles', 'psyllium'];
 export function condimentNutrition(m) {
@@ -695,7 +706,7 @@ export const CONDIMENTS = [
   {
     name: 'Ketchup',
     amount: '1 tablespoon on 5 meals a week',
-    source: 'Primal Kitchen Organic Unsweetened, at Woodman\'s (11.3 oz $6.49, squeeze 18.5 oz $8.79)',
+    source: 'Primal Kitchen Organic Unsweetened, 11.3 oz glass bottle at the Primal Kitchen store ($6.99)',
     detail: 'The ketchup that passes in the checked database and the one already in the cart history: organic tomato concentrate, balsamic vinegar, salt, onion and garlic powder, spices, 0g added sugar. It goes on the burger-style meals: smash patties, the guac burger, meatballs, the meatloaf glaze, and the diner plate.',
   },
   {
@@ -707,13 +718,13 @@ export const CONDIMENTS = [
   {
     name: 'Mustard',
     amount: '1 teaspoon in 2 meals a week',
-    source: 'Plain prepared mustard: mustard seed, vinegar, water, salt, and nothing else',
-    detail: 'Plain prepared mustard is on the list under the rulebook ruling Carter reviewed Oct 27, 2026: seed, vinegar, water and salt, with no sugar, honey, or flavorings added. It goes in the deviled eggs and the egg salad, a teaspoon each.',
+    source: 'Lowensenf Extra Hot German mustard: mustard seed, vinegar, water, salt, and nothing else',
+    detail: 'Plain prepared mustard is on the list under the rulebook ruling Carter reviewed Oct 27, 2026: seed, vinegar, water and salt, with no sugar, honey, or flavorings added. No American yellow mustard can meet that list, because the yellow color is turmeric, so the mustard here is Lowensenf Extra Hot, a German mustard whose label reads exactly mustard seed, vinegar, water, salt. It is hot, not mild yellow, and a teaspoon is all a meal uses. It goes in the deviled eggs and the egg salad, a teaspoon each.',
   },
   {
     name: 'Raw honey',
     amount: '2 teaspoons on 1 meal a week',
-    source: 'Wedderspoon Raw Manuka Honey, the plain jar',
+    source: 'Wedderspoon USDA Organic Raw Multifloral Manuka Honey, MGO 50+, the plain jar',
     detail: 'Raw honey is one of only two approved sweeteners in the rulebook (whole fruit is the other), and manuka is the one the videos praise. It is drizzled over the banana pancakes. The Manuka Honey Drops from the same brand fail on cane sugar, so it is the plain jar only.',
   },
   {
@@ -731,13 +742,13 @@ export const CONDIMENTS = [
   {
     name: 'Psyllium husk',
     amount: '1 tablespoon on 4 meals a week',
-    source: 'Psyllium husk powder, shipped',
+    source: 'Yerba Prima Psyllium Husks Powder',
     detail: 'An evidence add under Carter\'s Nov 5, 2026 rule. Psyllium was literature-checked on Oct 25, 2026 in Carter\'s own database: one of the best-studied fibers in existence, with a meta-analysis of 28 trials showing LDL down about 7% at around 10 g a day, an FDA-authorized heart-health claim, and systematic reviews behind it for regularity and gut bacteria. One tablespoon is whisked into the pancake batter and one is stirred into the coconut water at each of the 3 midday meals that carry it. It gels hard, so it is always taken with its drink, never dry.',
   },
   {
     name: 'Seasonings',
     amount: 'To taste, no set amount',
-    source: 'Plain single spices: paprika, cinnamon, turmeric, ginger, garlic powder, onion powder, black pepper',
+    source: 'Simply Organic single spices: paprika, cinnamon, turmeric, ginger, garlic powder, onion powder, black pepper',
     detail: 'Seasonings are to taste and are not counted in the calories or macros. Paprika dusts the deviled eggs, cinnamon goes in the banana pancake batter, and garlic powder, onion powder and black pepper are there for the beef when a meal wants them. Turmeric seasons the egg drop soup and the omelet, and ginger the meatball soup: both are evidence adds at food amounts, turmeric for its curcumin and ginger as the classic stomach settler.',
   },
 ];
@@ -770,8 +781,9 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
   const tallowUsedOz = weeks * r.tallowOz;
   const tallowPails = Math.ceil(tallowUsedOz / 27.2);
   const cheeseUsedOz = weeks * r.cheeseOz;
-  const cheesePacks = Math.ceil(cheeseUsedOz / 80); // one 10-pack = ten 8 oz blocks = 80 oz
-  const cheeseInterval = Math.round(80 / r.cheeseOz);
+  const cheeseOrders = Math.ceil(cheeseUsedOz / 64); // one order = eight 8 oz blocks = 64 oz
+  const cheeseInterval = Math.round(64 / r.cheeseOz);
+  const bonesOrders = Math.ceil(weeks / 5); // one 3 lb pack of soup bones covers about 5 weeks of broth
   const fruitShipments = weeks / 2;
   const shipBananas = Math.ceil((2 * r.bananaOz) / 4);
   const shipKiwis = Math.ceil((2 * r.kiwiOz) / 2.5);
@@ -795,17 +807,16 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
   const honeyUsed = weeks * r.honey;
   const honeyJars = Math.ceil(honeyUsed / 50);
   const pickleSpearsUsed = weeks * r.pickles;
-  const pickleJars = Math.ceil(pickleSpearsUsed / 12);
+  const pickleJars = Math.ceil(pickleSpearsUsed / 32);
   const flaxOzUsed = weeks * r.flaxOz;
   const flaxBags = Math.ceil(flaxOzUsed / 16);
   const psylliumUsed = weeks * r.psyllium;
   const ketchupUsed = weeks * r.ketchup;
-  const ketchupBottles = Math.ceil(ketchupUsed / 37);
+  const ketchupBottles = Math.ceil(ketchupUsed / 22);
   const mayoUsed = weeks * r.mayo;
   const mayoBatches = Math.ceil(mayoUsed / 17);
   const mustardUsed = weeks * r.mustard;
   const oliveOilUsed = weeks * r.oliveOil;
-  const bonesLb = Math.round(4 * (weeksPerBundle / 5) * 10) / 10;
   const totals = [
     `${weeks} weeks = ${weeks * 21} meals`,
     `Beef organ blend: ${fmtOz(beefUsedLb)} lb`,
@@ -830,15 +841,22 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
       items: [
         `Organ Blend bundle: ${beefBundles} x 25 lb = ${beefBundles * 25} lb for ${fmtOz(beefUsedLb)} lb used at ${fmtOz(r.beefOz / 16)} lb a week, the rest rolls forward in the freezer. ${money(beefBundles * BEEF_BUNDLE_PRICE)} at the $285.25 sale price, and free shipping at this size.`,
         `Beef tallow: ${tallowPails} small pails (1.7 lb each) across the block, riding with the bundle orders: ${roll(tallowPails * 27.2, tallowUsedOz, 'oz')}.`,
-        `Beef soup bones for the bone broth: about ${bonesLb} lb rides with each bundle order. One bones batch makes roughly 5 quarts of broth; at this size a bundle order covers about ${fmtOz(weeksPerBundle)} weeks of soup, so simmer batches as needed, jar the broth, and freeze it in 16 oz portions.`,
       ],
     },
     {
-      shipper: "Miller's Bio Farm",
-      cadence: `1 bulk cheese order about every ${cheeseInterval} weeks · ${cheesePacks} order${cheesePacks === 1 ? "" : "s"} in this block`,
-      url: 'https://millersbiofarm.com/store/cheese-1',
+      shipper: 'Seven Sons Farms',
+      cadence: `1 pack of soup bones (about 3 lb) about every 5 weeks · ${bonesOrders} order${bonesOrders === 1 ? "" : "s"} in this block`,
+      url: 'https://sevensons.net/store/product/beef-soup-bones',
       items: [
-        `Pasteurized pressed mozzarella 10-packs (ten 8 oz blocks, 80 oz per pack): ${cheesePacks} packs, ${roll(cheesePacks * 80, cheeseUsedOz, 'oz')}. Keep sealed blocks refrigerated (they hold 1 to 2 months) and freeze any block that has to wait longer.`,
+        `Beef soup bones: ${bonesOrders} packs (about 3 lb each, 100% grass-fed and finished) for the bone broth. One pack simmers into roughly 5 quarts (160 oz) of broth, about 5 weeks of soup at 32 oz a week at every plan size; jar the broth and freeze it in 16 oz portions.`,
+      ],
+    },
+    {
+      shipper: 'Dutch Meadows',
+      cadence: `1 cheese order (8 blocks) about every ${cheeseInterval} weeks · ${cheeseOrders} order${cheeseOrders === 1 ? "" : "s"} in this block`,
+      url: 'https://dutchmeadowsfarm.com/store/product/8-oz-raw-dutch-reserve-cheddar',
+      items: [
+        `Dutch Reserve raw cheddar, 8 oz blocks, ordered 8 at a time (64 oz per order): ${cheeseOrders} orders, ${roll(cheeseOrders * 64, cheeseUsedOz, 'oz')}. Raw aged cheddar keeps about a year sealed in the fridge, so blocks wait fine; freeze any block that has to wait longer. The price shows after a free signup on the farm store; the cost estimates on this site use the other approved raw cheddar's retail price (Organic Valley, $9.99 per 8 oz).`,
       ],
     },
     {
@@ -846,7 +864,7 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
       cadence: `Fruit every 2 weeks · eggs every ${eggInterval} weeks`,
       url: 'https://www.misfitsmarket.com/egg-delivery',
       items: [
-        `Fruit: ${fruitShipments} shipments, each with ${shipBananas} bananas, ${shipKiwis} kiwis, ${shipAvocados} avocados, ${fmtOz(shipBroccoliOz)} oz of broccoli, and ${shipCoconutBottles} bottles (16 oz each) of plain coconut water (2 weeks at a time, because bananas and avocados cannot sit longer). Order by count and check the weight at the door: about 4 oz of banana, 2.5 oz per kiwi and 4 oz of avocado per piece is the planning average, and any extra weight rolls into the next week.`,
+        `Bananas ride as their own small Amazon Fresh order (Misfits only tests banana delivery in a few areas); everything else fresh comes in these shipments. Fruit: ${fruitShipments} shipments, each with ${shipBananas} bananas, ${shipKiwis} kiwis, ${shipAvocados} avocados, ${fmtOz(shipBroccoliOz)} oz of broccoli, and ${shipCoconutBottles} bottles (16 oz each) of plain coconut water (2 weeks at a time, because bananas and avocados cannot sit longer). Order by count and check the weight at the door: about 4 oz of banana, 2.5 oz per kiwi and 4 oz of avocado per piece is the planning average, and any extra weight rolls into the next week.`,
         `Eggs: ${eggShipments} shipments of ${eggCartonsPer} cartons x ${eggPackSize} eggs = ${eggPacks} cartons (${eggsBought} eggs) for ${eggsUsed} used${eggsBought === eggsUsed ? ', an exact fit' : `, ${eggsBought - eggsUsed} eggs roll into the next block`}. Cartons are sized to cover whole weeks at this plan size. The cartons must say certified organic AND pasture-raised; OrgaNICK Pastures is the reference egg.`,
       ],
     },
@@ -858,10 +876,10 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
         `King Oscar sardines in water: ${sardineCases} cases of 12 = ${sardineCases * 12} tins for ${sardineTins} tins needed (${sardineOzUsed} oz across the block)${sardineCases * 12 === sardineTins ? ', an exact fit' : `, ${sardineCases * 12 - sardineTins} tins roll into the next block`}`,
         `Wild sockeye salmon: ${salmonCans} cans (6 oz each, Wild Planet) = ${salmonCans * 6} oz for ${salmonOzUsed} oz used${salmonCans * 6 === salmonOzUsed ? ', an exact fit' : `, ${salmonCans * 6 - salmonOzUsed} oz rolls forward in the fridge`}`,
         `Wild blueberries: ${blueberryBags} frozen 3 lb bags (48 oz, Wyman's) = ${blueberryBags * 48} oz for ${blueberryOzUsed} oz used, the rest stays frozen for the next block`,
-        `Ground flaxseed: ${flaxBags} bags (1 lb, organic ground) = ${flaxBags * 16} oz for ${flaxOzUsed} oz used, the rest stays sealed for the next block. Psyllium husk: 1 canister covers the block at ${psylliumUsed} tablespoons. Raw manuka honey: ${honeyJars} plain jar${honeyJars === 1 ? '' : 's'} (Wedderspoon) for ${honeyUsed} tsp across the block. Extra virgin olive oil: 1 bottle of California Olive Ranch 100% California covers the block at 2 tsp a week. Fermented pickles: ${pickleJars} jars of Bubbies Kosher Dill (about 12 spears a jar) for ${pickleSpearsUsed} spears used`,
-        `Primal Kitchen Organic Unsweetened Ketchup: ${ketchupBottles} squeeze bottles (18.5 oz, about 37 tbsp each): ${roll(ketchupBottles * 37, ketchupUsed, 'tbsp')}.`,
+        `Ground flaxseed: ${flaxBags} bags (1 lb, Bob's Red Mill organic golden) = ${flaxBags * 16} oz for ${flaxOzUsed} oz used, the rest stays sealed for the next block. Psyllium husk: 1 canister covers the block at ${psylliumUsed} tablespoons. Raw manuka honey: ${honeyJars} plain jar${honeyJars === 1 ? '' : 's'} (Wedderspoon USDA organic, MGO 50+) for ${honeyUsed} tsp across the block. Extra virgin olive oil: 1 bottle of California Olive Ranch 100% California covers the block at 2 tsp a week. Fermented pickles: ${pickleJars} jars of Bubbies Kosher Dill (whole dills, cut into spears at home, about 32 spears a jar) for ${pickleSpearsUsed} spears used`,
+        `Primal Kitchen Organic Unsweetened Ketchup: ${ketchupBottles} glass bottles (11.3 oz, about 22 tbsp each): ${roll(ketchupBottles * 22, ketchupUsed, 'tbsp')}.`,
         `Homemade mayo supplies: ${mayoBatches} batches across the block, so ${mayoBatches} cups of 100% avocado oil (1 cup per batch, about 17 tbsp of mayo per batch): ${roll(mayoBatches * 17, mayoUsed, 'tbsp')}. The yolks come from the egg cartons above, and the whites get folded into that week's eggs so no egg is wasted.`,
-        `Plain prepared mustard: ${mustardUsed} tsp used in the block, so one plain bottle (mustard seed, vinegar, water, salt, nothing else) covers many blocks. Celtic sea salt and the plain spices (paprika, cinnamon, garlic powder, onion powder, black pepper) ride along as they run low.`,
+        `Mustard: ${mustardUsed} tsp used in the block, so one jar of Lowensenf Extra Hot (mustard seed, vinegar, water, salt, nothing else) covers many blocks. Celtic sea salt and the plain Simply Organic spices (paprika, cinnamon, turmeric, ginger, garlic powder, onion powder, black pepper) ride along as they run low.`,
         `Lemons for the mayo: ${mayoBatches} across the block (1 per batch, for the juice), riding along with the fresh fruit shipments. Mustard and Celtic sea salt for the mayo come from the pantry bottles above, and each batch's yolk comes out of the egg cartons, so every mayo ingredient is accounted for in this plan and in the meal costs.`,
         'Drinks: spring water in glass bottles only, by the case as needed (no set weekly amount): Mountain Valley still, Saratoga still or sparkling in the 28 oz glass bottle, S.Pellegrino, or Lauretana. Plastic bottles and aluminum bottles do not pass.',
       ],
@@ -872,14 +890,16 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
 
 // The order calendar: every order event for a year, with the exact contents
 // of that single order. Cycles: fresh every 2 weeks, eggs every 2 weeks
-// (12-count cartons) or 3 weeks (18-count), US Wellness every 5 weeks,
-// Miller's every 8 weeks, pantry once per block. Events on the same day
+// (12-count cartons) or 3 weeks (18-count), US Wellness about every 5 weeks
+// at the full size, Dutch Meadows cheese every 6 weeks, Seven Sons soup
+// bones every 5 weeks, pantry once per block. Events on the same day
 // from the same shipper merge into one order.
-export const SHIPPER_ORDER = ['US Wellness Meats', "Miller's Bio Farm", 'Fresh shipments', 'Pantry bulk shipment'];
+export const SHIPPER_ORDER = ['US Wellness Meats', 'Dutch Meadows', 'Seven Sons Farms', 'Fresh shipments', 'Pantry bulk shipment'];
 export const SHIPPER_URL = {
-  'US Wellness Meats': 'https://grasslandbeef.com/collections/sample-farm-bundles',
-  "Miller's Bio Farm": 'https://millersbiofarm.com/store/cheese-1',
-  'Fresh shipments': 'https://www.misfitsmarket.com/egg-delivery',
+  'US Wellness Meats': 'https://grasslandbeef.com/products/organ-blend-burger-bundle-25-lbs',
+  'Dutch Meadows': 'https://dutchmeadowsfarm.com/store/product/8-oz-raw-dutch-reserve-cheddar',
+  'Seven Sons Farms': 'https://sevensons.net/store/product/beef-soup-bones',
+  'Fresh shipments': 'https://www.misfitsmarket.com/imperfect-foods-organic-large-pasture-raised-eggs-1-dz/p',
   'Pantry bulk shipment': 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html',
 };
 
@@ -922,7 +942,6 @@ export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, ho
     ]);
   }
   const beefInterval = Math.max(1, Math.round(400 / r.beefOz));
-  const bonesLb = Math.round(4 * (beefInterval / 5) * 10) / 10;
   let tallowSupply = 0;
   for (let w = 0; w < horizonWeeks; w += beefInterval) {
     const need = beefInterval * r.tallowOz; // tallow for the weeks until the next bundle order
@@ -930,15 +949,19 @@ export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, ho
     tallowSupply += pails * 27.2 - need;
     const items = [
       `Organ Blend bundle: 1 x 25 lb (${beefInterval * r.beefOz === 400 ? `exactly ${beefInterval} weeks of beef` : `about ${beefInterval} weeks of beef at this size`})`,
-      `Beef soup bones: about ${bonesLb} lb (for the bone broth batches)`,
     ];
     if (pails) items.push(`Beef tallow: ${pails} small pail${pails === 1 ? '' : 's'} (1.7 lb each)`);
     add(w, 'US Wellness Meats', `Every ${beefInterval} weeks`, items);
   }
-  const cheeseInterval = Math.round(80 / r.cheeseOz);
+  const cheeseInterval = Math.round(64 / r.cheeseOz);
   for (let w = 0; w < horizonWeeks; w += cheeseInterval) {
-    add(w, "Miller's Bio Farm", `Every ${cheeseInterval} weeks`, [
-      `Pasteurized pressed mozzarella: 1 x 10-pack (ten 8 oz blocks, 80 oz, exactly ${cheeseInterval} weeks of cheese)`,
+    add(w, 'Dutch Meadows', `Every ${cheeseInterval} weeks`, [
+      `Dutch Reserve raw cheddar: 8 x 8 oz blocks (64 oz, about ${cheeseInterval} weeks of cheese)`,
+    ]);
+  }
+  for (let w = 0; w < horizonWeeks; w += 5) {
+    add(w, 'Seven Sons Farms', 'Every 5 weeks', [
+      'Beef soup bones: 1 pack (about 3 lb, simmers into about 5 quarts of broth, roughly 5 weeks of soup)',
     ]);
   }
   for (let w = 0; w < horizonWeeks; w += blockWeeks) {
@@ -947,9 +970,9 @@ export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, ho
     const salmonCans = Math.ceil((blockWeeks * r.salmonOz) / 6);
     const blueberryBags = Math.ceil((blockWeeks * r.blueberriesOz) / 48);
     const flaxBags = Math.ceil((blockWeeks * r.flaxOz) / 16);
-    const ketchupBottles = Math.ceil((blockWeeks * r.ketchup) / 37);
+    const ketchupBottles = Math.ceil((blockWeeks * r.ketchup) / 22);
     const mayoBatches = Math.ceil((blockWeeks * r.mayo) / 17);
-    const pickleJars = Math.ceil((blockWeeks * r.pickles) / 12);
+    const pickleJars = Math.ceil((blockWeeks * r.pickles) / 32);
     const honeyJars = Math.ceil((blockWeeks * r.honey) / 50);
     add(w, 'Pantry bulk shipment', `Once per ${blockWeeks}-week block`, [
       `King Oscar sardines in water: ${sardineCases} cases of 12 (${sardineCases * 12} tins)`,
@@ -957,12 +980,12 @@ export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, ho
       `Wyman's frozen wild blueberries: ${blueberryBags} bags (3 lb)`,
       `Organic ground flaxseed: ${flaxBags} bags (1 lb)`,
       'Psyllium husk powder: 1 canister',
-      `Primal Kitchen Organic Unsweetened Ketchup: ${ketchupBottles} squeeze bottles (18.5 oz)`,
+      `Primal Kitchen Organic Unsweetened Ketchup: ${ketchupBottles} glass bottles (11.3 oz)`,
       `100% avocado oil: ${mayoBatches} cups (1 per batch of homemade mayo)`,
-      `Wedderspoon raw manuka honey: ${honeyJars} plain jar${honeyJars === 1 ? '' : 's'}`,
+      `Wedderspoon USDA organic raw manuka honey (MGO 50+): ${honeyJars} plain jar${honeyJars === 1 ? '' : 's'}`,
       'California Olive Ranch extra virgin olive oil: 1 bottle (ONLY the 100% California bottle)',
       `Bubbies Kosher Dill pickles: ${pickleJars} jars`,
-      'Plain prepared mustard, Celtic sea salt, plain spices (paprika, cinnamon, turmeric, ginger, garlic powder, onion powder, black pepper): 1 each, they cover many blocks',
+      'Lowensenf Extra Hot mustard, Celtic sea salt, Simply Organic spices (paprika, cinnamon, turmeric, ginger, garlic powder, onion powder, black pepper): 1 each, they cover many blocks',
       'Glass-bottle spring water (Mountain Valley / Saratoga / S.Pellegrino / Lauretana): cases as needed',
     ]);
   }
