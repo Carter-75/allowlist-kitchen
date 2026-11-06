@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Repeat, Scale, ShoppingBasket } from 'lucide-react';
 import MealTile from '../components/MealTile';
+import { WEEK_COST, ingredientWeekCost, money } from '../data/godDiet';
 import { getPool, mealsForDay, useHead } from '../lib/store';
 
 export default function Home() {
@@ -43,9 +44,14 @@ export default function Home() {
               <span className="min-w-44 font-display text-lg font-bold">{p.item}</span>
               <span className="font-display text-lg font-black text-pine-700">{p.oz === null ? 'as needed' : `${p.oz} oz`}</span>
               <span className="min-w-52 flex-1 text-sm text-ink/60">{p.note}</span>
+              <span className="text-sm font-bold text-ink/50">{ingredientWeekCost(p.item === 'Egg' ? 'Eggs' : p.item) ? `est. ${money(ingredientWeekCost(p.item === 'Egg' ? 'Eggs' : p.item))}/wk` : ''}</span>
             </div>
           ))}
         </div>
+        <p className="mt-4 rounded-2xl bg-pine-800 px-5 py-4 text-white">
+          <strong className="font-display text-xl">Estimated cost of the whole week: {money(WEEK_COST)}</strong>
+          <span className="mt-1 block text-sm text-pine-50/80">About {money(WEEK_COST / 7)} a day, {money(WEEK_COST / 21)} a meal, at prices checked Nov 5, 2026. Estimates, not quotes. <Link to="/ingredients" className="font-bold text-honey-400 hover:underline">How each cost is figured</Link></span>
+        </p>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-ink/10 bg-cream p-5">
             <Scale className="text-pine-700" size={20} />

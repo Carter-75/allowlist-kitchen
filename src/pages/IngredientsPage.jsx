@@ -1,4 +1,6 @@
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
+import { BUY, PRICE_BASIS, WEEK_COST, ingredientWeekCost, money } from '../data/godDiet';
 import { getIngredients, getPool, useHead } from '../lib/store';
 
 export default function IngredientsPage() {
@@ -24,9 +26,23 @@ export default function IngredientsPage() {
             </div>
             <p className="mt-2 text-sm font-bold text-pine-700">{ing.source}</p>
             <p className="mt-2 text-sm leading-relaxed text-ink/65">{ing.detail}</p>
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              {BUY[ing.name] && <a href={BUY[ing.name].url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 rounded-full bg-pine-800 px-3.5 py-1.5 text-xs font-bold text-white transition hover:bg-pine-700">Buy: {BUY[ing.name].label} <ExternalLink size={12} /></a>}
+              <span className="text-sm font-bold text-ink/55">{ingredientWeekCost(ing.name) ? `Est. ${money(ingredientWeekCost(ing.name))} a week` : 'Est. $0 a week'}</span>
+            </div>
           </article>
         ))}
       </div>
+
+      <section className="mt-12 rounded-2xl border border-ink/10 bg-cream p-6">
+        <h2 className="font-display text-2xl font-bold">How the costs are figured</h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink/65">
+          Every meal on this site carries an estimated cost built from these prices, checked November 5, 2026. The whole week totals about <strong className="text-ink">{money(WEEK_COST)}</strong>. Prices move, so treat these as planning estimates, not quotes.
+        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-sm leading-relaxed text-ink/65">
+          {PRICE_BASIS.map((b) => <li key={b}>{b}</li>)}
+        </ul>
+      </section>
     </div>
   );
 }

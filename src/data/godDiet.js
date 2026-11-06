@@ -31,8 +31,8 @@ export const INGREDIENTS = [
   {
     name: 'Sardines',
     weeklyOz: 21,
-    source: '7 tins a week',
-    detail: '1 oz, about a third of a tin, at every single meal: on the side, mashed into fillings, or crisped into cakes.',
+    source: 'Wild Planet sardines in water, 7 tins a week',
+    detail: '1 oz, about a third of a tin (3 to 4 fish), at every single meal: on the side, mashed into fillings, or crisped into cakes. Packed in water, not oil, so nothing outside the pool sneaks in.',
   },
   {
     name: 'Cheese',
@@ -169,3 +169,73 @@ export const MEALS = [
 
 export const SLOTS = ['Morning', 'Midday', 'Evening'];
 export const TALLOW_LABEL = { yes: 'Tallow', double: 'Double tallow', light: 'Tallow (greased tin)', no: 'No tallow' };
+export const TALLOW_TSP = { yes: 'about 1 1/2 tsp', double: 'about 1 tbsp', light: 'about 3/4 tsp', no: 'none' };
+
+// Where to buy each ingredient. Woodman's links use the storefront search
+// pattern the Woodman's (Onalaska) online store itself uses.
+const wm = (term) => `https://shopwoodmans.com/store/woodmans-food-markets/s?k=${encodeURIComponent(term).replace(/%20/g, '+')}`;
+export const BUY = {
+  'Beef organ blend': { label: 'US Wellness Meats', url: 'https://grasslandbeef.com/search?q=ground+beef+heart+kidney+liver' },
+  'Beef tallow': { label: 'US Wellness Meats', url: 'https://grasslandbeef.com/collections/kitchen-favorites' },
+  'Egg': { label: "Woodman's (OrgaNICK Pastures)", url: wm('OrgaNICK Pastures eggs') },
+  'Eggs': { label: "Woodman's (OrgaNICK Pastures)", url: wm('OrgaNICK Pastures eggs') },
+  'Sardines': { label: "Woodman's (Wild Planet, in water)", url: wm('Wild Planet sardines in water') },
+  'Cheese': { label: "Miller's Bio Farm (pressed cheese)", url: 'https://millersbiofarm.com/store/cheese-1' },
+  'Banana': { label: "Woodman's", url: wm('bananas') },
+  'Kiwi': { label: "Woodman's", url: wm('kiwi') },
+  'Avocado': { label: "Woodman's", url: wm('avocado') },
+  'Celtic sea salt': { label: "Woodman's", url: wm('Celtic sea salt') },
+  'Water': null,
+};
+
+// Estimated costs. Prices checked November 5, 2026. These are estimates for
+// planning, not quotes: store prices move, and Miller's shows its exact
+// cheese prices only after a free signup, so cheese is estimated from the
+// Miller's cheese prices on record (about $2.00/oz).
+export const PRICE = {
+  beefPerOz: 13.42 / 16,        // US Wellness organ blend, $13.42 per 1 lb pack
+  eggPerOz: (5.39 / 12) / 1.75, // OrgaNICK Pastures, $5.39/dozen at Woodman's
+  sardinesPerOz: 3.33 / 3,      // Wild Planet in water, $3.33 per tin, about 3 oz drained
+  cheesePerOz: 2.0,             // Miller's Bio Farm pressed cheese, estimated
+  tallowPerOz: 17.46 / 27.2,    // US Wellness small pail, $17.46 per 1.7 lb
+  fruitPerOz: { Banana: 0.35 / 4, Kiwi: 0.70 / 2.5, Avocado: 1.25 / 4 }, // typical Woodman's piece prices
+};
+export const PRICE_BASIS = [
+  'Beef organ blend: $13.42/lb at US Wellness (single 1 lb packs). The 25 lb bundle at $11.41/lb would cut the weekly beef cost by about $10.',
+  'Eggs: $5.39 a dozen for OrgaNICK Pastures at Woodman\'s.',
+  'Sardines: $3.33 a tin for Wild Planet in water.',
+  'Beef tallow: $17.46 for the 1.7 lb small pail at US Wellness.',
+  'Cheese: estimated at $2.00/oz. Miller\'s Bio Farm shows exact prices only after a free signup, so this uses the Miller\'s cheese prices already on record.',
+  'Banana, kiwi and avocado: typical Woodman\'s piece prices (about $0.35, $0.70 and $1.25 each).',
+  'Celtic sea salt and water: a few cents a week, counted as $0.',
+];
+
+const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
+export const TALLOW_TOTAL_UNITS = MEALS.reduce((s, m) => s + TALLOW_UNITS[m.tallow], 0);
+const TALLOW_UNIT_COST = (4 * PRICE.tallowPerOz) / TALLOW_TOTAL_UNITS;
+
+export function mealCost(m) {
+  return m.beef * PRICE.beefPerOz
+    + m.egg * PRICE.eggPerOz
+    + m.sardines * PRICE.sardinesPerOz
+    + m.cheese * PRICE.cheesePerOz
+    + m.fruitOz * PRICE.fruitPerOz[m.fruit]
+    + TALLOW_UNITS[m.tallow] * TALLOW_UNIT_COST;
+}
+export function ingredientWeekCost(key) {
+  const t = {
+    'Beef organ blend': 80 * PRICE.beefPerOz,
+    'Eggs': 74 * PRICE.eggPerOz,
+    'Sardines': 21 * PRICE.sardinesPerOz,
+    'Cheese': 10 * PRICE.cheesePerOz,
+    'Beef tallow': 4 * PRICE.tallowPerOz,
+    'Banana': 28 * PRICE.fruitPerOz.Banana,
+    'Kiwi': 35 * PRICE.fruitPerOz.Kiwi,
+    'Avocado': 28 * PRICE.fruitPerOz.Avocado,
+    'Celtic sea salt': 0,
+    'Water': 0,
+  };
+  return t[key] ?? null;
+}
+export const WEEK_COST = MEALS.reduce((s, m) => s + mealCost(m), 0);
+export const money = (n) => `$${n.toFixed(2)}`;

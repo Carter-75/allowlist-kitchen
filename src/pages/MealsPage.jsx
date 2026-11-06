@@ -1,5 +1,6 @@
 import React from 'react';
 import MealTile from '../components/MealTile';
+import { WEEK_COST, money } from '../data/godDiet';
 import { mealsForDay, useHead } from '../lib/store';
 
 export default function MealsPage() {
@@ -9,6 +10,9 @@ export default function MealsPage() {
       <h1 className="font-display text-4xl font-black md:text-5xl">The 21 meals</h1>
       <p className="mt-3 max-w-2xl leading-relaxed text-ink/65">
         Seven days, three meals a day, never the same plate twice in the week. Every meal is built only from the weekly pool, and together the 21 drain it exactly: 80 oz beef organ blend, 74 oz egg, 21 oz sardines, 10 oz cheese, 28 oz banana, 35 oz kiwi, 28 oz avocado, and 4 oz tallow. Finish Day 7 and the week loops back to Day 1.
+      </p>
+      <p className="mt-3 max-w-2xl leading-relaxed text-ink/65">
+        Every meal page shows what to use in ounces and in rounded amounts (how many eggs, how many fish, how many pieces of fruit), how to make it, where to buy each ingredient, and its estimated cost. The whole week runs about <strong>{money(WEEK_COST)}</strong>, roughly <strong>{money(WEEK_COST / 7)} a day</strong>, at the prices checked Nov 5, 2026.
       </p>
       {[1, 2, 3, 4, 5, 6, 7].map((day) => (
         <div key={day} className="mt-10">

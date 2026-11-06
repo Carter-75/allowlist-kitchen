@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Clock3 } from 'lucide-react';
-import { TALLOW_LABEL } from '../data/godDiet';
+import { TALLOW_LABEL, mealCost, money } from '../data/godDiet';
 
 const SLOT_TINT = {
   Morning: 'bg-amber-100 text-amber-900',
@@ -28,6 +28,7 @@ export default function MealTile({ meal }) {
         </div>
         <div className="mt-4 flex items-center gap-4 text-xs font-medium text-ink/55">
           <span className="inline-flex items-center gap-1"><Clock3 size={13} /> {meal.minutes} min</span>
+          <span>Est. {money(mealCost(meal))}</span>
           <span className="ml-auto font-bold text-pine-700">Cook it</span>
         </div>
       </div>
