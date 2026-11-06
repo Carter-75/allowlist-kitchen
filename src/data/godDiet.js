@@ -890,9 +890,9 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
 
 // The order calendar: every order event for a year, with the exact contents
 // of that single order. Cycles: fresh every 2 weeks, eggs every 2 weeks
-// (12-count cartons) or 3 weeks (18-count), US Wellness about every 5 weeks
-// at the full size, Dutch Meadows cheese every 6 weeks, Seven Sons soup
-// bones every 5 weeks, pantry once per block. Events on the same day
+// (12-count cartons) or 3 weeks (18-count), US Wellness and Dutch Meadows
+// timed by the stock on hand (so their weeks shift with the plan size),
+// Seven Sons soup bones every 5 weeks, pantry once per block. Events on the same day
 // from the same shipper merge into one order.
 export const SHIPPER_ORDER = ['US Wellness Meats', 'Dutch Meadows', 'Seven Sons Farms', 'Fresh shipments', 'Pantry bulk shipment'];
 export const SHIPPER_URL = {
@@ -941,23 +941,42 @@ export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, ho
       `Eggs: ${eggCartons} cartons of ${eggPackSize} (${eggCartons * eggPackSize} eggs, ${eggExact ? `exactly ${eggInterval} weeks` : `covers ${eggInterval} weeks, ${eggCartons * eggPackSize - eggInterval * r.eggs} roll forward`}). Cartons must say certified organic AND pasture-raised`,
     ]);
   }
-  const beefInterval = Math.max(1, Math.round(400 / r.beefOz));
-  let tallowSupply = 0;
-  for (let w = 0; w < horizonWeeks; w += beefInterval) {
-    const need = beefInterval * r.tallowOz; // tallow for the weeks until the next bundle order
-    const pails = Math.max(0, Math.ceil((need - tallowSupply) / 27.2));
-    tallowSupply += pails * 27.2 - need;
-    const items = [
-      `Organ Blend bundle: 1 x 25 lb (${beefInterval * r.beefOz === 400 ? `exactly ${beefInterval} weeks of beef` : `about ${beefInterval} weeks of beef at this size`})`,
-    ];
-    if (pails) items.push(`Beef tallow: ${pails} small pail${pails === 1 ? '' : 's'} (1.7 lb each)`);
-    add(w, 'US Wellness Meats', `Every ${beefInterval} weeks`, items);
+  // Beef and tallow are timed by the freezer, not a fixed interval: a new
+  // bundle is ordered in the first week the beef on hand would not cover
+  // that week's meals, so the exact order weeks shift with the plan size.
+  // A bundle lasts about 4.8 weeks at the 2,500 and 2,000 sizes (orders
+  // land every 4 to 5 weeks) and exactly 10 weeks at the 1,500 size.
+  // Tallow rides with the bundle orders, topped up to ten weeks of supply
+  // each time so it never runs out between them.
+  let beefStock = 0;
+  let tallowStock = 0;
+  for (let w = 0; w < horizonWeeks; w++) {
+    if (beefStock < r.beefOz) {
+      const items = ['Organ Blend bundle: 1 x 25 lb'];
+      const tallowTarget = 10 * r.tallowOz;
+      const pails = Math.max(0, Math.ceil((tallowTarget - tallowStock) / 27.2));
+      if (pails) {
+        items.push(`Beef tallow: ${pails} small pail${pails === 1 ? '' : 's'} (1.7 lb each)`);
+        tallowStock += pails * 27.2;
+      }
+      beefStock += 400;
+      add(w, 'US Wellness Meats', 'Timed to the freezer: ordered when the beef on hand would not cover the week', items);
+    }
+    beefStock -= r.beefOz;
+    tallowStock -= r.tallowOz;
   }
-  const cheeseInterval = Math.round(64 / r.cheeseOz);
-  for (let w = 0; w < horizonWeeks; w += cheeseInterval) {
-    add(w, 'Dutch Meadows', `Every ${cheeseInterval} weeks`, [
-      `Dutch Reserve raw cheddar: 8 x 8 oz blocks (64 oz, about ${cheeseInterval} weeks of cheese)`,
-    ]);
+  // Cheese is timed the same way: 8 blocks (64 oz) are ordered in the
+  // first week the cheese on hand would not cover the week. The cheese is
+  // 10 oz a week at every plan size, so this lands every 6 to 7 weeks.
+  let cheeseStock = 0;
+  for (let w = 0; w < horizonWeeks; w++) {
+    if (cheeseStock < r.cheeseOz) {
+      cheeseStock += 64;
+      add(w, 'Dutch Meadows', 'Timed to stock: ordered when the cheese on hand would not cover the week', [
+        'Dutch Reserve raw cheddar: 8 x 8 oz blocks (64 oz)',
+      ]);
+    }
+    cheeseStock -= r.cheeseOz;
   }
   for (let w = 0; w < horizonWeeks; w += 5) {
     add(w, 'Seven Sons Farms', 'Every 5 weeks', [
