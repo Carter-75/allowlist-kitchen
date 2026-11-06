@@ -1,76 +1,33 @@
 import { useEffect } from 'react';
-import meals from '../data/meals.json';
-import pantry from '../data/allowlist.json';
+import { MEALS, POOL, INGREDIENTS } from '../data/godDiet';
 
-export const SITE = 'Allowlist Kitchen';
+export const SITE = 'The God Diet';
+export const TAGLINE = 'One weekly pool. 21 meals. Nothing else.';
 export const EMAIL = 'cartermoyer75@gmail.com';
 
-export const TYPES = [
-  { id: 'breakfast', name: 'Breakfast', plural: 'Breakfasts', blurb: 'Pancakes, eggs every way, oat bowls and smoothies. Real food before school and work.', tint: 'bg-amber-100 text-amber-900', dot: 'bg-amber-500' },
-  { id: 'lunch', name: 'Lunch', plural: 'Lunches', blurb: 'Wraps, sandwiches and plates built from the same small pantry. Packable, quick, filling.', tint: 'bg-lime-100 text-lime-900', dot: 'bg-lime-600' },
-  { id: 'dinner', name: 'Dinner', plural: 'Dinners', blurb: 'Meatloaf, burgers, roast chicken, tenders, pasta and stew. The family table, allowlist edition.', tint: 'bg-orange-100 text-orange-900', dot: 'bg-orange-600' },
-  { id: 'treats', name: 'Treat', plural: 'Treats', blurb: 'Cookies, cake, carob brownies and homemade ice cream, sweetened with raw honey or fruit only.', tint: 'bg-rose-100 text-rose-900', dot: 'bg-rose-500' },
-  { id: 'basics', name: 'Basics', plural: 'Basics', blurb: 'Mayo, ranch and BBQ sauce made at home, because no bottled version passes the list. Five minutes each, all from the same pantry.', tint: 'bg-teal-100 text-teal-900', dot: 'bg-teal-600' },
-];
+export const allMeals = MEALS;
+export const mealById = (id) => MEALS.find((m) => m.id === id) || null;
+export const mealsForDay = (day) => MEALS.filter((m) => m.day === day);
+export const getPool = () => POOL;
+export const getIngredients = () => INGREDIENTS;
 
-const typeById = Object.fromEntries(TYPES.map((t) => [t.id, t]));
-const typeByName = Object.fromEntries(TYPES.map((t) => [t.name, t]));
-
-export const typeOf = (meal) => typeByName[meal.mealType] || null;
-export const getType = (id) => typeById[id] || null;
-export const allMeals = meals;
-export const mealsOfType = (id) => {
-  const t = getType(id);
-  return t ? meals.filter((m) => m.mealType === t.name) : [];
-};
-export const mealById = (id) => meals.find((m) => m.id === id) || null;
-export const mealByName = (name) => meals.find((m) => m.name === name) || null;
-export const getPantry = () => pantry;
-export const getAllowlist = () => pantry;
-
-// Woodman's (Onalaska, store 24) storefront search. The pattern is the one
-// the live store itself uses for a search results page.
-export const woodmansUrl = (term) => `https://shopwoodmans.com/store/woodmans-food-markets/s?k=${encodeURIComponent(term).replace(/%20/g, '+')}`;
-
-export function filterMeals({ query = '', typeId = null, maxMinutes = null, minProtein = null } = {}) {
-  let out = meals;
-  if (typeId) out = mealsOfType(typeId);
-  const q = query.trim().toLowerCase();
-  if (q) {
-    out = out.filter((m) => {
-      const hay = [m.name, m.mealType, m.description, ...(m.tags || []),
-        ...m.ingredients.map((i) => i.item), ...m.ingredients.map((i) => i.dbItem)].join(' ').toLowerCase();
-      return q.split(/\s+/).every((w) => hay.includes(w));
-    });
-  }
-  if (maxMinutes) out = out.filter((m) => m.time.total <= maxMinutes);
-  if (minProtein) out = out.filter((m) => m.nutrition && m.nutrition.protein >= minProtein);
-  return out;
-}
-
-export function stats() {
-  const withN = meals.filter((m) => m.nutrition);
-  const avg = (key) => Math.round((withN.reduce((s, m) => s + m.nutrition[key], 0) / withN.length) * 10) / 10;
-  return {
-    meals: meals.length,
-    pantryItems: pantry.length,
-    avgProtein: avg('protein'),
-    quick: meals.filter((m) => m.time.total <= 30).length,
-  };
+export function mealIngredients(meal) {
+  const rows = [];
+  if (meal.beef > 0) rows.push({ item: 'Beef organ blend', oz: meal.beef });
+  if (meal.egg > 0) rows.push({ item: 'Egg', oz: meal.egg });
+  rows.push({ item: 'Sardines', oz: meal.sardines });
+  if (meal.cheese > 0) rows.push({ item: 'Cheese', oz: meal.cheese });
+  rows.push({ item: meal.fruit, oz: meal.fruitOz });
+  return rows;
 }
 
 export function recipeText(meal) {
-  const L = [meal.name, meal.description, '',
-    `${meal.mealType} | Serves ${meal.servings} | Prep ${meal.time.prep} min | Cook ${meal.time.cook} min | ${meal.difficulty}`, '',
-    'Ingredients:'];
-  for (const i of meal.ingredients) L.push(`- ${i.amount} ${i.item}${i.note ? ` (${i.note})` : ''}`);
-  L.push('', 'Steps:');
+  const L = [`${meal.name} (Day ${meal.day}, ${meal.slot})`, meal.description, '', 'Ingredients (ounces, weighed):'];
+  for (const i of mealIngredients(meal)) L.push(`- ${i.item}: ${i.oz} oz`);
+  L.push(`- Beef tallow: ${meal.tallow === 'no' ? 'none' : meal.tallow === 'double' ? 'double share, from the week\'s 4 oz' : meal.tallow === 'light' ? 'a light greasing, from the week\'s 4 oz' : 'a share of the week\'s 4 oz'}`);
+  L.push('- Celtic sea salt, water', '', 'Steps:');
   meal.steps.forEach((s, i) => L.push(`${i + 1}. ${s}`));
-  if (meal.nutrition) {
-    const n = meal.nutrition;
-    L.push('', `Per serving (estimated from USDA reference values): ${n.calories} cal, ${n.protein}g protein, ${n.carbs}g carbs, ${n.fat}g fat, ${n.fiber}g fiber`);
-  }
-  L.push('', `From ${SITE}: every ingredient is on the allowlist.`);
+  L.push('', `From ${SITE}: one of 21 meals that together use exactly the weekly pool.`);
   return L.join('\n');
 }
 

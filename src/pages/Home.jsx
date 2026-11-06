@@ -1,72 +1,83 @@
-import React, { useMemo, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Search, ShieldCheck, Timer, Beef } from 'lucide-react';
+import { ArrowRight, Repeat, Scale, ShoppingBasket } from 'lucide-react';
 import MealTile from '../components/MealTile';
-import { TYPES, filterMeals, mealsOfType, stats, useHead } from '../lib/store';
+import { getPool, mealsForDay, useHead } from '../lib/store';
 
 export default function Home() {
-  useHead({ title: 'Allowlist Kitchen - Family Meals from a Checked Ingredient List', description: 'Family meals made only from ingredients on a checked allowlist. No sugar, no seed oils, no soy, no corn.' });
-  const s = stats();
-  const [query, setQuery] = useState('');
-  const [maxMinutes, setMaxMinutes] = useState(null);
-  const [highProtein, setHighProtein] = useState(false);
-  const results = useMemo(() => filterMeals({ query, maxMinutes, minProtein: highProtein ? 25 : null }), [query, maxMinutes, highProtein]);
-  const filtering = query.trim() !== '' || maxMinutes !== null || highProtein;
-
+  useHead({ title: 'The God Diet - One Weekly Pool, 21 Meals', description: 'A fixed diet: one weekly pool of ingredients in ounces, 21 different meals, about 2,000 calories a day, then the week loops.' });
+  const pool = getPool();
   return (
     <div>
       <section className="mx-auto max-w-6xl px-4 pt-10">
         <div className="rounded-[2rem] bg-pine-800 px-6 py-12 text-white md:px-12">
-          <p className="text-xs font-bold uppercase tracking-[0.28em] text-honey-400">One list. Every meal.</p>
-          <h1 className="mt-4 max-w-2xl font-display text-4xl font-black leading-[1.05] md:text-6xl">Family food, checked ingredient by ingredient.</h1>
+          <p className="text-xs font-bold uppercase tracking-[0.28em] text-honey-400">One pool. Every meal.</p>
+          <h1 className="mt-4 max-w-2xl font-display text-4xl font-black leading-[1.05] md:text-6xl">The same ingredients, 21 different meals, every week.</h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-pine-50/85">
-            Every recipe here is built only from a checked allowlist: grass-fed and grass-finished beef, organic chicken, pasture-raised eggs, wild fish, and sweetness from raw honey or fruit alone. If an ingredient is not on the list, it is not in the meal. Not as a garnish, not as a "just this once."
+            The God Diet is a fixed eating plan. One weekly pool of ingredients, everything weighed in ounces, made into 21 different meals across 7 days, about 2,000 calories a day. When the week ends, it loops back to Day 1. There is nothing on this site that is not part of that pool.
           </p>
-          <div className="mt-7 flex max-w-xl items-center gap-2 rounded-full bg-cream p-1.5">
-            <Search size={18} className="ml-2 shrink-0 text-ink/40" />
-            <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search the kitchen: pancakes, meatloaf, honey..." className="w-full bg-transparent text-sm text-ink outline-none placeholder:text-ink/40" aria-label="Search meals" />
-          </div>
-          <div className="mt-4 flex flex-wrap gap-2">
-            <button onClick={() => setMaxMinutes(maxMinutes === 30 ? null : 30)} className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-bold transition ${maxMinutes === 30 ? 'bg-honey-400 text-pine-900' : 'bg-white/10 text-white hover:bg-white/20'}`}><Timer size={13} /> 30 minutes or less</button>
-            <button onClick={() => setHighProtein(!highProtein)} className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-bold transition ${highProtein ? 'bg-honey-400 text-pine-900' : 'bg-white/10 text-white hover:bg-white/20'}`}><Beef size={13} /> 25g protein or more</button>
-            <Link to="/pantry" className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1.5 text-xs font-bold text-white transition hover:bg-white/20"><ShieldCheck size={13} /> See the list itself</Link>
+          <div className="mt-7 flex flex-wrap gap-2">
+            <Link to="/meals" className="inline-flex items-center gap-1.5 rounded-full bg-honey-400 px-4 py-2 text-sm font-bold text-pine-900 transition hover:bg-honey-500">See the 21 meals <ArrowRight size={15} /></Link>
+            <Link to="/ingredients" className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white transition hover:bg-white/20">Ingredients and sources</Link>
           </div>
           <div className="mt-9 flex flex-wrap gap-x-8 gap-y-3">
-            <p><span className="font-display text-3xl font-black">{s.meals}</span> <span className="text-sm text-pine-50/75">family meals</span></p>
-            <p><span className="font-display text-3xl font-black">{s.pantryItems}</span> <span className="text-sm text-pine-50/75">items on the full list</span></p>
-            <p><span className="font-display text-3xl font-black">{s.avgProtein}g</span> <span className="text-sm text-pine-50/75">average protein</span></p>
-            <p><span className="font-display text-3xl font-black">{s.quick}</span> <span className="text-sm text-pine-50/75">meals in 30 min or less</span></p>
+            <p><span className="font-display text-3xl font-black">21</span> <span className="text-sm text-pine-50/75">meals a week</span></p>
+            <p><span className="font-display text-3xl font-black">10</span> <span className="text-sm text-pine-50/75">ingredients, total</span></p>
+            <p><span className="font-display text-3xl font-black">~2,000</span> <span className="text-sm text-pine-50/75">calories a day</span></p>
+            <p><span className="font-display text-3xl font-black">7</span> <span className="text-sm text-pine-50/75">days, then loop</span></p>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pt-12">
-        {filtering ? (
-          <>
-            <h2 className="font-display text-2xl font-bold">{results.length} {results.length === 1 ? 'meal' : 'meals'} found</h2>
-            {results.length === 0 ? (
-              <p className="mt-3 max-w-xl text-ink/65">Nothing on the list matches that. The list is small on purpose, and a meal that needs an unlisted ingredient does not get cooked here.</p>
-            ) : (
-              <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{results.map((m) => <MealTile key={m.id} meal={m} />)}</div>
-            )}
-          </>
-        ) : (
-          TYPES.map((t) => {
-            const meals = mealsOfType(t.id);
-            return (
-              <div key={t.id} className="mb-14">
-                <div className="flex flex-wrap items-end justify-between gap-3">
-                  <div className="max-w-xl">
-                    <h2 className="font-display text-3xl font-black">{t.plural}</h2>
-                    <p className="mt-1 text-sm leading-relaxed text-ink/60">{t.blurb}</p>
-                  </div>
-                  <Link to={`/meals/${t.id}`} className="inline-flex items-center gap-1 text-sm font-bold text-pine-700 hover:underline">All {t.plural.toLowerCase()} <ArrowRight size={15} /></Link>
-                </div>
-                <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{meals.slice(0, 3).map((m) => <MealTile key={m.id} meal={m} />)}</div>
-              </div>
-            );
-          })
-        )}
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div className="max-w-xl">
+            <h2 className="font-display text-3xl font-black">The weekly pool</h2>
+            <p className="mt-1 text-sm leading-relaxed text-ink/60">This is everything you buy and eat in a week. All amounts are ounces, weighed. The 21 meals together use exactly this, no more and no less.</p>
+          </div>
+          <span className="inline-flex items-center gap-1.5 text-sm font-bold text-pine-700"><ShoppingBasket size={16} /> The whole shopping list</span>
+        </div>
+        <div className="mt-6 overflow-hidden rounded-2xl border border-ink/10 bg-cream">
+          {pool.map((p, i) => (
+            <div key={p.item} className={`flex flex-wrap items-baseline gap-x-4 gap-y-1 px-5 py-3.5 ${i % 2 ? 'bg-paper/60' : ''}`}>
+              <span className="min-w-44 font-display text-lg font-bold">{p.item}</span>
+              <span className="font-display text-lg font-black text-pine-700">{p.oz === null ? 'as needed' : `${p.oz} oz`}</span>
+              <span className="min-w-52 flex-1 text-sm text-ink/60">{p.note}</span>
+            </div>
+          ))}
+        </div>
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          <div className="rounded-2xl border border-ink/10 bg-cream p-5">
+            <Scale className="text-pine-700" size={20} />
+            <h3 className="mt-2 font-display text-lg font-bold">The week is the lock</h3>
+            <p className="mt-1 text-sm leading-relaxed text-ink/65">Meals can swing in size. A light soup morning is balanced by a beef-heavy evening, and the no-beef meal gives its beef to that night's meatloaf. What cannot change is the week total.</p>
+          </div>
+          <div className="rounded-2xl border border-ink/10 bg-cream p-5">
+            <Repeat className="text-pine-700" size={20} />
+            <h3 className="mt-2 font-display text-lg font-bold">Fruit rotates by slot</h3>
+            <p className="mt-1 text-sm leading-relaxed text-ink/65">Banana in the morning, kiwi at midday, avocado in the evening. Every day, every week, the same rotation.</p>
+          </div>
+          <div className="rounded-2xl border border-ink/10 bg-cream p-5">
+            <ShoppingBasket className="text-pine-700" size={20} />
+            <h3 className="mt-2 font-display text-lg font-bold">Tallow only with beef</h3>
+            <p className="mt-1 text-sm leading-relaxed text-ink/65">Beef tallow is the only cooking fat, 4 oz a week, and only at meals where the beef cooks. Soups, the meatloaf, and the no-beef meal use none.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pt-14">
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <h2 className="font-display text-3xl font-black">The week at a glance</h2>
+          <Link to="/meals" className="inline-flex items-center gap-1 text-sm font-bold text-pine-700 hover:underline">All 21 meals <ArrowRight size={15} /></Link>
+        </div>
+        {[1, 2, 3, 4, 5, 6, 7].map((day) => (
+          <div key={day} className="mt-8">
+            <h3 className="font-display text-xl font-bold text-ink/70">Day {day}</h3>
+            <div className="mt-3 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {mealsForDay(day).map((m) => <MealTile key={m.id} meal={m} />)}
+            </div>
+          </div>
+        ))}
       </section>
     </div>
   );

@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { ChefHat, Menu, X } from 'lucide-react';
-import { SITE, TYPES } from '../lib/store';
+import { Beef, Menu, X } from 'lucide-react';
+import { SITE, TAGLINE } from '../lib/store';
 
 const linkCls = ({ isActive }) =>
   `px-3 py-2 text-sm font-semibold rounded-lg transition ${isActive ? 'bg-pine-800 text-white' : 'text-ink/80 hover:bg-pine-50'}`;
+
+const NAV = [
+  { to: '/', label: 'The Week' },
+  { to: '/meals', label: '21 Meals' },
+  { to: '/ingredients', label: 'Ingredients' },
+  { to: '/about', label: 'About' },
+];
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -13,17 +20,14 @@ export function Header() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex items-center gap-3 py-3">
           <Link to="/" className="flex items-center gap-2.5">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-pine-800 text-white"><ChefHat size={20} /></span>
+            <span className="grid h-10 w-10 place-items-center rounded-xl bg-pine-800 text-white"><Beef size={20} /></span>
             <span className="leading-none">
               <span className="block font-display text-xl font-black tracking-tight">{SITE}</span>
-              <span className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/50">If it is not on the list, it is not in the meal</span>
+              <span className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/50">{TAGLINE}</span>
             </span>
           </Link>
           <nav className="ml-auto hidden items-center gap-1 md:flex">
-            {TYPES.map((t) => <NavLink key={t.id} to={`/meals/${t.id}`} className={linkCls}>{t.plural}</NavLink>)}
-            <NavLink to="/pantry" className={linkCls}>The List</NavLink>
-            <NavLink to="/ask" className={linkCls}>Ask the List</NavLink>
-            <NavLink to="/about" className={linkCls}>About</NavLink>
+            {NAV.map((n) => <NavLink key={n.to} to={n.to} className={linkCls}>{n.label}</NavLink>)}
           </nav>
           <button className="ml-auto rounded-lg p-2 hover:bg-pine-50 md:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
             {open ? <X size={20} /> : <Menu size={20} />}
@@ -31,11 +35,7 @@ export function Header() {
         </div>
         {open && (
           <nav className="flex flex-col gap-1 pb-4 md:hidden">
-            {TYPES.map((t) => <NavLink key={t.id} to={`/meals/${t.id}`} className={linkCls} onClick={() => setOpen(false)}>{t.plural}</NavLink>)}
-            <NavLink to="/pantry" className={linkCls} onClick={() => setOpen(false)}>The List</NavLink>
-            <NavLink to="/ask" className={linkCls} onClick={() => setOpen(false)}>Ask the List</NavLink>
-            <NavLink to="/about" className={linkCls} onClick={() => setOpen(false)}>About</NavLink>
-            <NavLink to="/contact" className={linkCls} onClick={() => setOpen(false)}>Contact</NavLink>
+            {NAV.map((n) => <NavLink key={n.to} to={n.to} className={linkCls} onClick={() => setOpen(false)}>{n.label}</NavLink>)}
           </nav>
         )}
       </div>
@@ -50,18 +50,18 @@ export function Footer() {
         <div>
           <p className="font-display text-lg font-bold">{SITE}</p>
           <p className="mt-2 max-w-sm text-sm leading-relaxed text-pine-100/80">
-            A family recipe site with one rule: every ingredient comes from a checked allowlist of real foods. No sugar, no seed oils, no soy, no corn, no dyes, no shortcuts. A personal project by Carter Moyer.
+            One fixed weekly pool of ingredients, weighed in ounces, made into 21 different meals, then the week loops. About 2,000 calories a day. A personal project by Carter Moyer.
           </p>
         </div>
         <nav className="flex flex-col gap-2 text-sm">
-          <span className="font-display font-bold">Meals</span>
-          {TYPES.map((t) => <Link key={t.id} to={`/meals/${t.id}`} className="text-pine-100/80 hover:text-white hover:underline">{t.plural}</Link>)}
+          <span className="font-display font-bold">The diet</span>
+          <Link to="/" className="text-pine-100/80 hover:text-white hover:underline">The weekly pool</Link>
+          <Link to="/meals" className="text-pine-100/80 hover:text-white hover:underline">All 21 meals</Link>
+          <Link to="/ingredients" className="text-pine-100/80 hover:text-white hover:underline">Ingredients and sources</Link>
         </nav>
         <nav className="flex flex-col gap-2 text-sm">
           <span className="font-display font-bold">The project</span>
-          <Link to="/pantry" className="text-pine-100/80 hover:text-white hover:underline">The allowlist</Link>
           <Link to="/about" className="text-pine-100/80 hover:text-white hover:underline">How it works</Link>
-          <Link to="/contact" className="text-pine-100/80 hover:text-white hover:underline">Contact</Link>
           <Link to="/privacy" className="text-pine-100/80 hover:text-white hover:underline">Privacy</Link>
         </nav>
       </div>

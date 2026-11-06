@@ -4,12 +4,10 @@ import { useEffect } from 'react';
 import { Footer, Header } from './components/Chrome';
 
 const Home = lazy(() => import('./pages/Home'));
-const TypePage = lazy(() => import('./pages/TypePage'));
+const MealsPage = lazy(() => import('./pages/MealsPage'));
 const MealPage = lazy(() => import('./pages/MealPage'));
-const PantryPage = lazy(() => import('./pages/PantryPage'));
-const AskPage = lazy(() => import('./pages/AskPage'));
+const IngredientsPage = lazy(() => import('./pages/IngredientsPage'));
 const About = lazy(() => import('./pages/About'));
-const Contact = lazy(() => import('./pages/Contact'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Missing = lazy(() => import('./pages/Missing'));
 
@@ -35,14 +33,14 @@ export default function App() {
           <Suspense fallback={<Loading />}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/meals/:typeId" element={<TypePage />} />
+              <Route path="/meals" element={<MealsPage />} />
               <Route path="/meal/:mealId" element={<MealPage />} />
-              <Route path="/pantry" element={<PantryPage />} />
-              <Route path="/ask" element={<AskPage />} />
-              <Route path="/shopping-list" element={<Navigate to="/pantry" replace />} />
-              <Route path="/all-ingredients" element={<Navigate to="/pantry" replace />} />
+              <Route path="/ingredients" element={<IngredientsPage />} />
+              <Route path="/pantry" element={<Navigate to="/ingredients" replace />} />
+              <Route path="/shopping-list" element={<Navigate to="/ingredients" replace />} />
+              <Route path="/all-ingredients" element={<Navigate to="/ingredients" replace />} />
+              <Route path="/ask" element={<Navigate to="/" replace />} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="*" element={<Missing />} />
             </Routes>
