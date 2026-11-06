@@ -74,7 +74,7 @@ export const INGREDIENTS = [
     name: 'Water',
     weeklyOz: null,
     source: 'Glass-bottle spring water: Mountain Valley, Saratoga, S.Pellegrino, Lauretana',
-    detail: 'The drink at every meal, and the cooking liquid for the soups. Glass bottles only: plastic does not pass, and aluminum bottles are resin-lined, so the water sits against a liner instead of the bottle. The accepted waters: Mountain Valley still (the water Carter settled on Oct 21, 2026, and one of the three brands the videos name as passing, with S.Pellegrino and Lauretana), and Saratoga spring water in the 28 oz glass bottle, still or sparkling (the bottle from Carter's photo; it passes by the same spring-water-in-glass rule and he ruled both versions fine on Nov 1, 2026). Nothing flavored, nothing sweetened, nothing added.',
+    detail: 'The drink at every meal, and the cooking liquid for the soups. Glass bottles only: plastic does not pass, and aluminum bottles are resin-lined, so the water sits against a liner instead of the bottle. The accepted waters: Mountain Valley still (the water Carter settled on Oct 21, 2026, and one of the three brands the videos name as passing, with S.Pellegrino and Lauretana), and Saratoga spring water in the 28 oz glass bottle, still or sparkling (the bottle from Carter\'s photo; it passes by the same spring-water-in-glass rule and he ruled both versions fine on Nov 1, 2026). Nothing flavored, nothing sweetened, nothing added.',
   },
 ];
 
