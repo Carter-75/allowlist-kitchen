@@ -4,7 +4,7 @@ import { BEEF_BUNDLE_SAVINGS_PER_WEEK, BUY, CONDIMENTS, ORDER_WEEK_OPTIONS, PRIC
 import { getIngredients, getPool, useHead } from '../lib/store';
 
 export default function IngredientsPage() {
-  useHead({ title: 'Ingredients - The God Diet', description: 'The only 10 ingredients on The God Diet, their weekly amounts in ounces, and the exact source that passes for each.' });
+  useHead({ title: 'Ingredients - The God Diet', description: 'Every ingredient on The God Diet, its weekly amount in ounces, and the exact source that passes for it.' });
   const ingredients = getIngredients();
   const pool = getPool();
   const [weeks, setWeeks] = useState(20);
@@ -39,7 +39,7 @@ export default function IngredientsPage() {
 
       <section className="mt-12">
         <h2 className="font-display text-3xl font-black">Condiments and seasonings</h2>
-        <p className="mt-2 max-w-2xl leading-relaxed text-ink/65">Outside the weekly pool, in set whole-spoon amounts on the meals that call for them. Each one passed the same checks as the ten ingredients.</p>
+        <p className="mt-2 max-w-2xl leading-relaxed text-ink/65">Outside the weekly pool, in set whole-spoon amounts on the meals that call for them. Each one passed the same checks as the pool ingredients.</p>
         <div className="mt-6 grid gap-5 md:grid-cols-2">
           {CONDIMENTS.map((c) => (
             <article key={c.name} className="rounded-2xl border border-ink/10 bg-cream p-6">

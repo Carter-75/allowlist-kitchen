@@ -8,7 +8,7 @@ export default function About() {
       <h1 className="font-display text-4xl font-black md:text-5xl">How The God Diet works</h1>
       <div className="mt-6 space-y-5 leading-relaxed text-ink/75">
         <p>
-          The God Diet is Carter Moyer's fixed personal eating plan, built on November 5, 2026. It replaced the old Allowlist Kitchen site, which covered hundreds of checked ingredients and dozens of family meals. This site is only the diet: the weekly pool, the 10 ingredients, and the 21 meals. Nothing else.
+          The God Diet is Carter Moyer's fixed personal eating plan, built on November 5, 2026. It replaced the old Allowlist Kitchen site, which covered hundreds of checked ingredients and dozens of family meals. This site is only the diet: the weekly pool, its ingredients, and the 21 meals. Nothing else.
         </p>
         <h2 className="font-display text-2xl font-bold text-ink">The rules</h2>
         <ul className="list-disc space-y-2 pl-6">

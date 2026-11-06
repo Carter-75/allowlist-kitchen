@@ -13,19 +13,26 @@ export const getIngredients = () => INGREDIENTS;
 
 const EGG_PRACTICAL = { 3.5: '2 eggs', 5.25: '3 eggs' };
 const CHEESE_PRACTICAL = { 0.5: 'a thumb-sized piece', 1: 'two thumb-sized pieces' };
-const FRUIT_PRACTICAL = { Banana: '1 banana', Kiwi: '2 kiwis', Avocado: '1 small avocado' };
+const FRUIT_PRACTICAL = { Banana: '1 banana', Kiwi: '3 kiwis', Avocado: '2 small avocados' };
 const BEEF_PRACTICAL = { 4: '1/4 lb', 8: '1/2 lb' };
 
 export function mealIngredients(meal) {
   const rows = [];
   if (meal.beef > 0) rows.push({ item: 'Beef organ blend', oz: meal.beef, practical: BEEF_PRACTICAL[meal.beef] || 'weighed', buy: BUY['Beef organ blend'] });
   if (meal.egg > 0) rows.push({ item: 'Egg', oz: meal.egg, practical: EGG_PRACTICAL[meal.egg] || 'weighed', buy: BUY['Egg'] });
-  rows.push({ item: 'Sardines', oz: meal.sardines, practical: '1/3 of a tin, 4 fish', buy: BUY['Sardines'] });
+  if (meal.sardines > 0) rows.push({ item: 'Sardines', oz: meal.sardines, practical: '1/3 of a tin, 4 fish', buy: BUY['Sardines'] });
+  if (meal.salmon) rows.push({ item: 'Wild sockeye salmon', oz: meal.salmon, practical: '1 oz of canned wild sockeye', buy: BUY['Wild sockeye salmon'] });
   if (meal.cheese > 0) rows.push({ item: 'Cheese', oz: meal.cheese, practical: CHEESE_PRACTICAL[meal.cheese] || 'weighed', buy: BUY['Cheese'] });
   rows.push({ item: meal.fruit, oz: meal.fruitOz, practical: FRUIT_PRACTICAL[meal.fruit], buy: BUY[meal.fruit] });
+  if (meal.blueberries) rows.push({ item: 'Wild blueberries', oz: meal.blueberries, practical: 'a small handful', buy: BUY['Wild blueberries'] });
+  if (meal.broccoli) rows.push({ item: 'Broccoli (cooked)', oz: meal.broccoli, practical: 'a small pile, steamed', buy: BUY['Broccoli (cooked)'] });
   if (meal.ketchup) rows.push({ item: 'Ketchup', oz: null, practical: meal.ketchup === 1 ? '1 tablespoon' : `${meal.ketchup} tablespoons`, buy: BUY['Ketchup'] });
   if (meal.mayo) rows.push({ item: 'Mayo (homemade)', oz: null, practical: meal.mayo === 1 ? '1 tablespoon' : `${meal.mayo} tablespoons`, buy: BUY['Mayo (homemade)'] });
   if (meal.mustard) rows.push({ item: 'Mustard', oz: null, practical: meal.mustard === 1 ? '1 teaspoon' : `${meal.mustard} teaspoons`, buy: BUY['Mustard'] });
+  if (meal.honey) rows.push({ item: 'Raw honey', oz: null, practical: meal.honey === 1 ? '1 teaspoon' : `${meal.honey} teaspoons, drizzled over`, buy: BUY['Raw honey'] });
+  if (meal.oliveOil) rows.push({ item: 'Olive oil', oz: null, practical: '1 teaspoon', buy: BUY['Olive oil'] });
+  if (meal.coconutWater) rows.push({ item: 'Coconut water', oz: meal.coconutWater, practical: 'a glass, to drink', buy: BUY['Coconut water'] });
+  if (meal.pickles) rows.push({ item: 'Pickles', oz: null, practical: `${meal.pickles} spears`, buy: BUY['Pickles'] });
   if (meal.seasoning) rows.push({ item: meal.seasoning, oz: null, practical: 'to taste', buy: BUY['Seasonings'] });
   return rows;
 }

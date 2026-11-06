@@ -7,7 +7,7 @@ Repository: https://github.com/Carter-75/the-god-diet
 
 ## The idea
 
-The God Diet is Carter Moyer's fixed personal eating plan, built November 5, 2026. It replaced Allowlist Kitchen on this repository. The site contains only the diet: the weekly pool, the 10 ingredients with their passing sources, and the 21 meals that use the pool up exactly. Nothing else from the old general site survives here.
+The God Diet is Carter Moyer's fixed personal eating plan, built November 5, 2026. It replaced Allowlist Kitchen on this repository. The site contains only the diet: the weekly pool, the ingredients with their passing sources, and the 21 meals that use the pool up exactly. Nothing else from the old general site survives here.
 
 ## The diet
 
