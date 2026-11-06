@@ -54,7 +54,7 @@ export default function Home() {
         </p>
         <p className="mt-4 rounded-2xl border border-ink/10 bg-cream px-5 py-4">
           <strong className="font-display text-xl">Daily average: about {DAY_NUTRITION.kcal.toLocaleString()} calories</strong>
-          <span className="mt-1 block text-sm text-ink/65">Protein {DAY_NUTRITION.protein}g, fat {DAY_NUTRITION.fat}g, carbs {DAY_NUTRITION.carbs}g a day, averaged across all 21 meals. Estimated from USDA reference values for the exact amounts on each meal page.</span>
+          <span className="mt-1 block text-sm text-ink/65">Protein {DAY_NUTRITION.protein}g, fat {DAY_NUTRITION.fat}g, carbs {DAY_NUTRITION.carbs}g a day, averaged across all 21 meals. Estimated from USDA reference values for the exact amounts on each meal page. Everything ships on a monthly plan: see <Link to="/ingredients" className="font-bold text-pine-700 hover:underline">Ingredients</Link>.</span>
         </p>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-ink/10 bg-cream p-5">

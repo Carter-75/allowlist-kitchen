@@ -23,6 +23,10 @@ export function mealIngredients(meal) {
   rows.push({ item: 'Sardines', oz: meal.sardines, practical: '1/3 of a tin, 4 fish', buy: BUY['Sardines'] });
   if (meal.cheese > 0) rows.push({ item: 'Cheese', oz: meal.cheese, practical: CHEESE_PRACTICAL[meal.cheese] || 'weighed', buy: BUY['Cheese'] });
   rows.push({ item: meal.fruit, oz: meal.fruitOz, practical: FRUIT_PRACTICAL[meal.fruit], buy: BUY[meal.fruit] });
+  if (meal.ketchup) rows.push({ item: 'Ketchup', oz: null, practical: meal.ketchup === 1 ? '1 tablespoon' : `${meal.ketchup} tablespoons`, buy: BUY['Ketchup'] });
+  if (meal.mayo) rows.push({ item: 'Mayo (homemade)', oz: null, practical: meal.mayo === 1 ? '1 tablespoon' : `${meal.mayo} tablespoons`, buy: BUY['Mayo (homemade)'] });
+  if (meal.mustard) rows.push({ item: 'Mustard', oz: null, practical: meal.mustard === 1 ? '1 teaspoon' : `${meal.mustard} teaspoons`, buy: BUY['Mustard'] });
+  if (meal.seasoning) rows.push({ item: meal.seasoning, oz: null, practical: 'to taste', buy: BUY['Seasonings'] });
   return rows;
 }
 
@@ -30,7 +34,7 @@ export { mealCost, money, TALLOW_TSP, BUY };
 
 export function recipeText(meal) {
   const L = [`${meal.name} (Day ${meal.day}, ${meal.slot})`, meal.description, '', 'Ingredients (ounces first, then the rounded amount to actually use):'];
-  for (const i of mealIngredients(meal)) L.push(`- ${i.item}: ${i.oz} oz (${i.practical})`);
+  for (const i of mealIngredients(meal)) L.push(i.oz !== null ? `- ${i.item}: ${i.oz} oz (${i.practical})` : `- ${i.item}: ${i.practical}`);
   L.push(`- Beef tallow: ${TALLOW_TSP[meal.tallow]}${meal.tallow === 'no' ? '' : ', from the week\'s 4 oz'}`);
   L.push('- Celtic sea salt: a pinch, on the beef as it cooks', '- Water: to drink', '', 'Steps:');
   meal.steps.forEach((s, i) => L.push(`${i + 1}. ${s}`));

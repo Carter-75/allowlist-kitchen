@@ -26,12 +26,12 @@ export const INGREDIENTS = [
     name: 'Eggs',
     weeklyOz: 73.5,
     source: 'OrgaNICK Pastures at Woodman\'s, $5.39 a dozen',
-    detail: 'Certified organic and pasture-raised, with no exceptions. Exactly 42 eggs a week, always whole eggs in every meal, never halves. Buy 4 dozen and there are spares.',
+    detail: 'Certified organic and pasture-raised, with no exceptions. Exactly 42 eggs a week, always whole eggs in every meal, never halves. They ship in the fresh box, 7 dozen per box every 2 weeks; whatever brand ships, the carton must carry both certifications.',
   },
   {
     name: 'Sardines',
     weeklyOz: 21,
-    source: 'King Oscar sardines in water, 7 tins a week',
+    source: 'King Oscar sardines in water, 7 tins a week, shipped monthly by the case',
     detail: '1 oz, a third of a tin, 4 fish, at every single meal: on the side, mashed into fillings, or crisped into cakes. This is the in-water tin that passes in the checked database (ingredients: sardines, water). Wild Planet\'s passing tin is packed in olive oil, which is not part of this diet, and the lightly smoked versions fail, so neither is used here.',
   },
   {
@@ -49,19 +49,19 @@ export const INGREDIENTS = [
   {
     name: 'Banana',
     weeklyOz: 28,
-    source: 'Any store, weighed',
+    source: 'Shipped in the fresh box, weighed',
     detail: 'The morning fruit. 4 oz at each of the 7 morning meals, on the side or cooked into the meal, like the banana pancakes.',
   },
   {
     name: 'Kiwi',
     weeklyOz: 35,
-    source: 'Any store, weighed',
+    source: 'Shipped in the fresh box, weighed',
     detail: 'The midday fruit. 5 oz at each of the 7 midday meals, always on the side.',
   },
   {
     name: 'Avocado',
     weeklyOz: 28,
-    source: 'Any store, weighed',
+    source: 'Shipped in the fresh box, weighed',
     detail: 'The evening fruit. 4 oz at each of the 7 evening meals, sliced, mashed as a sauce, or folded into a filling.',
   },
   {
@@ -83,16 +83,16 @@ export const INGREDIENTS = [
 export const MEALS = [
   { id: 'smash-patties-fried-eggs', day: 1, slot: 'Morning', name: 'Smash Patties and Fried Eggs', minutes: 20,
     description: 'Beef patties smashed thin and crisped in tallow, cheese melted over, eggs fried in the same pan. Sardines and banana on the side.',
-    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes',
-    steps: ['Heat tallow in a heavy pan. Smash the beef into two thin patties, salt them, and fry until the edges crisp.', 'Lay the cheese over the patties to melt. Fry the eggs in the same pan in the beef fat.', 'Plate the patties and eggs with the sardines and the banana on the side.'] },
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes', ketchup: 1,
+    steps: ['Heat tallow in a heavy pan. Smash the beef into two thin patties, salt them, and fry until the edges crisp.', 'Lay the cheese over the patties to melt. Fry the eggs in the same pan in the beef fat.', 'Plate the patties and eggs with the sardines and the banana on the side, and the ketchup for the patties.'] },
   { id: 'beef-egg-scramble', day: 1, slot: 'Midday', name: 'Beef and Egg Scramble', minutes: 15,
     description: 'Beef crumbled and scrambled with eggs in tallow, cheese folded in at the end. Sardines and kiwi on the side.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 5, tallow: 'yes',
     steps: ['Brown the beef crumbles in tallow with salt, breaking them small.', 'Pour in the beaten eggs and scramble soft. Fold the cheese in off the heat.', 'Serve with the sardines and the kiwi on the side.'] },
   { id: 'guac-burger-plate', day: 1, slot: 'Evening', name: 'Guac Burger Plate', minutes: 20,
     description: 'A tallow-fried patty with avocado mashed with salt as the sauce, soft eggs over the top, sardines on the side. No cheese at this meal.',
-    beef: 4, egg: 3.5, sardines: 1, cheese: 0, fruit: 'Avocado', fruitOz: 4, tallow: 'yes',
-    steps: ['Mash the avocado with salt into a rough guacamole.', 'Fry the beef as one patty in tallow, salted as it cooks.', 'Cook the eggs soft in the same pan. Plate the patty, spoon the avocado over, top with the eggs, sardines on the side.'] },
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0, fruit: 'Avocado', fruitOz: 4, tallow: 'yes', ketchup: 1,
+    steps: ['Mash the avocado with salt into a rough guacamole.', 'Fry the beef as one patty in tallow, salted as it cooks.', 'Cook the eggs soft in the same pan. Plate the patty, spoon the avocado over, top with the eggs, sardines on the side, and the ketchup for the patty.'] },
   { id: 'scotch-eggs', day: 2, slot: 'Morning', name: 'Scotch Eggs', minutes: 30,
     description: 'Eggs wrapped in beef and fried in tallow, a double tallow meal, with cheese melted over. Sardines and banana on the side.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'double',
@@ -103,12 +103,12 @@ export const MEALS = [
     steps: ['Cook the beaten eggs as one thin omelet sheet in tallow and set it flat.', 'Sear the beef strips in tallow with salt. Break the sardines into pieces.', 'Fill the omelet with beef, cheese and sardines, roll it tight, and serve with the kiwi.'] },
   { id: 'meatballs-avocado', day: 2, slot: 'Evening', name: 'Meatballs with Avocado', minutes: 25,
     description: 'Beef meatballs fried in tallow with cheese grated over, avocado slices and sardines on the plate. The one meal of the week with no egg.',
-    beef: 4, egg: 0, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes',
-    steps: ['Roll the beef into meatballs with salt and fry them in tallow until browned through.', 'Grate the cheese over the hot meatballs so it melts into them.', 'Serve with the avocado slices and the sardines.'] },
+    beef: 4, egg: 0, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes', ketchup: 1,
+    steps: ['Roll the beef into meatballs with salt and fry them in tallow until browned through.', 'Grate the cheese over the hot meatballs so it melts into them.', 'Serve with the avocado slices, the sardines, and the ketchup for dipping.'] },
   { id: 'banana-pancakes-breakfast-patties', day: 3, slot: 'Morning', name: 'Banana Pancakes and Breakfast Patties', minutes: 25,
     description: 'Pancakes made from just banana and egg, griddled in tallow, next to beef breakfast patties with cheese melted on. Sardines on the side.',
     beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes',
-    steps: ['Mash the banana with the eggs into a batter. Griddle small pancakes in tallow.', 'Form the beef into breakfast patties, salt, and fry in tallow. Melt the cheese on them.', 'Serve the pancakes and patties together with the sardines on the side.'] },
+    seasoning: 'Cinnamon', steps: ['Mash the banana with the eggs and the cinnamon into a batter. Griddle small pancakes in tallow.', 'Form the beef into breakfast patties, salt, and fry in tallow. Melt the cheese on them.', 'Serve the pancakes and patties together with the sardines on the side.'] },
   { id: 'beef-pizza', day: 3, slot: 'Midday', name: 'Beef Pizza', minutes: 25,
     description: 'Beef pressed flat and crisped in tallow is the crust. Cheese, sardine pieces, and an egg on top. Kiwi on the side.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 5, tallow: 'yes',
@@ -116,7 +116,7 @@ export const MEALS = [
   { id: 'deviled-eggs-patty', day: 3, slot: 'Evening', name: 'Deviled Eggs and a Cheese Patty', minutes: 30,
     description: 'Deviled eggs with the yolks mashed with sardines and avocado, next to a tallow beef patty with cheese.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes',
-    steps: ['Boil the eggs, halve them, and mash the yolks with the sardines and avocado and a pinch of salt. Fill the whites.', 'Fry the beef patty in tallow and melt the cheese over it.', 'Plate the deviled eggs next to the patty.'] },
+    mayo: 1, mustard: 1, seasoning: 'Paprika', steps: ['Boil the eggs, halve them, and mash the yolks with the sardines, avocado, homemade mayo and mustard and a pinch of salt. Fill the whites.', 'Fry the beef patty in tallow and melt the cheese over it.', 'Dust the deviled eggs with paprika and plate them next to the patty.'] },
   { id: 'egg-drop-beef-soup', day: 4, slot: 'Morning', name: 'Egg Drop Beef Soup', minutes: 20,
     description: 'No tallow. Beef simmered in salted water, egg ribbons stirred through, sardines in the bowl, cheese grated over. Banana on the side.',
     beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no',
@@ -124,11 +124,11 @@ export const MEALS = [
   { id: 'cheese-crisps-sardine-pate', day: 4, slot: 'Midday', name: 'Cheese Crisps with Sardine Pate', minutes: 20,
     description: 'A double cheese meal: crisps from half the cheese, sardines mashed as a pate to scoop with them, plus a tallow beef patty and fried eggs. Kiwi on the side.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 1, fruit: 'Kiwi', fruitOz: 5, tallow: 'yes',
-    steps: ['Bake or fry small piles of the cheese until crisp and golden. Mash the sardines into a pate with salt.', 'Fry the beef patty in tallow and fry the eggs in the same pan.', 'Serve the crisps and pate with the patty and eggs, kiwi on the side.'] },
+    mayo: 1, steps: ['Bake or fry small piles of the cheese until crisp and golden. Mash the sardines with the homemade mayo and a pinch of salt into a pate.', 'Fry the beef patty in tallow and fry the eggs in the same pan.', 'Serve the crisps and pate with the patty and eggs, kiwi on the side.'] },
   { id: 'open-face-egg-salad-stack', day: 4, slot: 'Evening', name: 'Open-Face Egg Salad Stack', minutes: 25,
     description: 'Chopped eggs and sardines mashed with avocado, stacked on tallow-seared patties with cheese melted under. A beef-heavy plate to balance the light soup morning.',
     beef: 5, egg: 5.25, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes',
-    steps: ['Sear thick beef patties in tallow with salt and melt the cheese on them.', 'Chop the cooked eggs and mash with the sardines and avocado into an egg salad.', 'Stack the egg salad on the patties and serve.'] },
+    mayo: 1, mustard: 1, steps: ['Sear thick beef patties in tallow with salt and melt the cheese on them.', 'Chop the cooked eggs and mash with the sardines, avocado, homemade mayo and mustard into an egg salad.', 'Stack the egg salad on the patties and serve.'] },
   { id: 'the-no-beef-meal', day: 5, slot: 'Morning', name: 'The No-Beef Meal', minutes: 15,
     description: 'The one meal with no beef and no tallow: eggs, sardines, and cheese crisps, with banana. Its beef moves to tonight\'s meatloaf.',
     beef: 0, egg: 5.25, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no',
@@ -140,7 +140,7 @@ export const MEALS = [
   { id: 'mini-meatloaf', day: 5, slot: 'Evening', name: 'Mini Meatloaf', minutes: 40,
     description: 'Double beef, including the beef the no-beef morning gave up. Baked in its own fat, no tallow, with avocado mash, eggs, and sardines. No cheese at this meal.',
     beef: 8, egg: 3.5, sardines: 1, cheese: 0, fruit: 'Avocado', fruitOz: 4, tallow: 'no',
-    steps: ['Form the beef into a small loaf with salt and bake it in its own fat until cooked through. Rest it before slicing.', 'Mash the avocado with salt. Cook the eggs to go with it.', 'Slice the meatloaf and serve with the avocado mash, eggs and sardines.'] },
+    ketchup: 1, steps: ['Form the beef into a small loaf with salt, spread the ketchup over the top as a glaze, and bake it in its own fat until cooked through. Rest it before slicing.', 'Mash the avocado with salt. Cook the eggs to go with it.', 'Slice the meatloaf and serve with the avocado mash, eggs and sardines.'] },
   { id: 'loaded-omelet', day: 6, slot: 'Morning', name: 'Loaded Omelet', minutes: 15,
     description: 'An omelet cooked in tallow with beef crumbles and cheese folded in, sardines on top. Banana on the side.',
     beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes',
@@ -163,8 +163,8 @@ export const MEALS = [
     steps: ['Crumble the beef very small and fry it hard in tallow with salt until browned and rice-like.', 'Scramble the eggs in pieces through the beef.', 'Fold the cheese in off the heat. Serve with the sardines and kiwi.'] },
   { id: 'the-diner-plate', day: 7, slot: 'Evening', name: 'The Diner Plate', minutes: 25,
     description: 'A thick beef slab seared in tallow like a steak, sunny eggs cooked in the same fat, cheese on the beef, sardines on the side, avocado sliced with salt. Then the week loops back to Day 1.',
-    beef: 5, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes',
-    steps: ['Sear the thick beef slab in tallow with salt like a steak, resting it a few minutes.', 'Fry the eggs sunny in the same fat. Melt the cheese over the beef.', 'Plate with the sardines and the avocado sliced with salt.'] },
+    beef: 5, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 4, tallow: 'yes', ketchup: 1,
+    steps: ['Sear the thick beef slab in tallow with salt like a steak, resting it a few minutes.', 'Fry the eggs sunny in the same fat. Melt the cheese over the beef.', 'Plate with the sardines, the avocado sliced with salt, and the ketchup for the beef.'] },
 ];
 
 export const SLOTS = ['Morning', 'Midday', 'Evening'];
@@ -185,6 +185,10 @@ export const BUY = {
   'Kiwi': { label: "Woodman's", url: wm('kiwi') },
   'Avocado': { label: "Woodman's", url: wm('avocado') },
   'Celtic sea salt': { label: "Woodman's", url: wm('Celtic sea salt') },
+  'Ketchup': { label: "Woodman's (Primal Kitchen)", url: wm('Primal Kitchen unsweetened ketchup') },
+  'Mustard': { label: "Woodman's (plain prepared mustard)", url: wm('organic yellow mustard') },
+  'Mayo (homemade)': { label: "Woodman's (avocado oil, for homemade mayo)", url: wm('avocado oil') },
+  'Seasonings': { label: "Woodman's (spices)", url: wm('organic spices') },
   'Water': null,
 };
 
@@ -208,6 +212,9 @@ export const PRICE_BASIS = [
   'Cheese: estimated at $2.00/oz. Miller\'s Bio Farm shows exact prices only after a free signup, so this uses the Miller\'s cheese prices already on record.',
   'Banana, kiwi and avocado: typical Woodman\'s piece prices (about $0.35, $0.70 and $1.25 each).',
   'Celtic sea salt and water: a few cents a week, counted as $0.',
+  'Ketchup: Primal Kitchen Organic Unsweetened, $8.79 for the 18.5 oz squeeze bottle at Woodman\'s, about $0.24 a tablespoon. 5 tablespoons a week.',
+  'Homemade mayo: about $4.25 a batch (a cup of avocado oil, one of the diet\'s own egg yolks, lemon, mustard, salt) making about 17 tablespoons, about $0.25 a tablespoon. 3 tablespoons a week.',
+  'Mustard: plain prepared mustard, about $0.05 a teaspoon. 2 teaspoons a week.',
 ];
 
 const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
@@ -229,6 +236,35 @@ export const NUTRITION_PER_OZ = {
   },
 };
 
+// Condiments sit outside the weekly pool: small set amounts on the meals
+// that call for them. Ketchup is Primal Kitchen Organic Unsweetened (the
+// bottle that passes in the checked database). Mayo is homemade only:
+// every bottled mayo fails, because no bottled brand's eggs are certified
+// organic AND pasture-raised (Primal Kitchen mayo was removed Oct 27, 2026
+// for exactly that). Mustard is plain prepared mustard per the rulebook
+// ruling of Oct 27, 2026 (mustard seed, vinegar, water, salt, nothing else).
+export const CONDIMENT_NUTRITION = {
+  ketchup: { kcal: 15, protein: 0, fat: 0, carbs: 3 },   // per tablespoon
+  mayo: { kcal: 100, protein: 0, fat: 11, carbs: 0 },    // per tablespoon, avocado oil mayo
+  mustard: { kcal: 3, protein: 0, fat: 0, carbs: 0 },    // per teaspoon
+};
+export const CONDIMENT_PRICE = {
+  ketchup: 8.79 / 37, // 18.5 oz squeeze bottle $8.79 at Woodman's, about 37 tbsp
+  mayo: 0.25,         // homemade: about $4.25 a batch (1 cup avocado oil, 1 yolk, lemon), about 17 tbsp
+  mustard: 0.05,      // per teaspoon, from a plain prepared mustard bottle
+};
+export function condimentNutrition(m) {
+  const out = { kcal: 0, protein: 0, fat: 0, carbs: 0 };
+  for (const k of ['ketchup', 'mayo', 'mustard']) {
+    const n = CONDIMENT_NUTRITION[k], amt = m[k] || 0;
+    out.kcal += n.kcal * amt; out.protein += n.protein * amt; out.fat += n.fat * amt; out.carbs += n.carbs * amt;
+  }
+  return out;
+}
+export function condimentCost(m) {
+  return (m.ketchup || 0) * CONDIMENT_PRICE.ketchup + (m.mayo || 0) * CONDIMENT_PRICE.mayo + (m.mustard || 0) * CONDIMENT_PRICE.mustard;
+}
+
 export function mealNutrition(m) {
   const tallowOz = (TALLOW_UNITS[m.tallow] / TALLOW_TOTAL_UNITS) * 4;
   const parts = [
@@ -246,6 +282,8 @@ export function mealNutrition(m) {
     out.fat += n.fat * oz;
     out.carbs += n.carbs * oz;
   }
+  const c = condimentNutrition(m);
+  out.kcal += c.kcal; out.protein += c.protein; out.fat += c.fat; out.carbs += c.carbs;
   out.kcal = Math.round(out.kcal);
   out.protein = Math.round(out.protein);
   out.fat = Math.round(out.fat);
@@ -271,7 +309,8 @@ export function mealCost(m) {
     + m.sardines * PRICE.sardinesPerOz
     + m.cheese * PRICE.cheesePerOz
     + m.fruitOz * PRICE.fruitPerOz[m.fruit]
-    + TALLOW_UNITS[m.tallow] * TALLOW_UNIT_COST;
+    + TALLOW_UNITS[m.tallow] * TALLOW_UNIT_COST
+    + condimentCost(m);
 }
 export function ingredientWeekCost(key) {
   const t = {
@@ -285,8 +324,69 @@ export function ingredientWeekCost(key) {
     'Avocado': 28 * PRICE.fruitPerOz.Avocado,
     'Celtic sea salt': 0,
     'Water': 0,
+    'Ketchup': MEALS.reduce((s, m) => s + (m.ketchup || 0), 0) * CONDIMENT_PRICE.ketchup,
+    'Homemade mayo': MEALS.reduce((s, m) => s + (m.mayo || 0), 0) * CONDIMENT_PRICE.mayo,
+    'Mustard': MEALS.reduce((s, m) => s + (m.mustard || 0), 0) * CONDIMENT_PRICE.mustard,
   };
   return t[key] ?? null;
 }
 export const WEEK_COST = MEALS.reduce((s, m) => s + mealCost(m), 0);
 export const money = (n) => `$${n.toFixed(2)}`;
+
+// The condiment shelf: outside the weekly pool, in set whole-spoon amounts.
+export const CONDIMENTS = [
+  {
+    name: 'Ketchup',
+    amount: '1 tablespoon on 5 meals a week',
+    source: 'Primal Kitchen Organic Unsweetened, at Woodman\'s (11.3 oz $6.49, squeeze 18.5 oz $8.79)',
+    detail: 'The ketchup that passes in the checked database and the one already in the cart history: organic tomato concentrate, balsamic vinegar, salt, onion and garlic powder, spices, 0g added sugar. It goes on the burger-style meals: smash patties, the guac burger, meatballs, the meatloaf glaze, and the diner plate.',
+  },
+  {
+    name: 'Mayo (homemade)',
+    amount: '1 tablespoon on 3 meals a week',
+    source: 'Made at home: 1 egg yolk, 1 cup avocado oil, lemon, mustard, salt',
+    detail: 'No bottled mayo passes. Every bottled brand fails the egg rule, which has no exceptions (eggs in any product must be certified organic AND pasture-raised); Primal Kitchen mayo was removed from the approved list on Oct 27, 2026 because its eggs are cage-free only. So the mayo is homemade from one of the diet\'s own eggs, whisked with avocado oil (ruled fine Oct 25, 2026), lemon, mustard and salt. One batch is about 17 tablespoons, a month or more of mayo. It goes in the deviled eggs, the sardine pate, and the egg salad.',
+  },
+  {
+    name: 'Mustard',
+    amount: '1 teaspoon in 2 meals a week',
+    source: 'Plain prepared mustard: mustard seed, vinegar, water, salt, and nothing else',
+    detail: 'Plain prepared mustard is on the list under the rulebook ruling Carter reviewed Oct 27, 2026: seed, vinegar, water and salt, with no sugar, honey, or flavorings added. It goes in the deviled eggs and the egg salad, a teaspoon each.',
+  },
+  {
+    name: 'Seasonings',
+    amount: 'To taste, no set amount',
+    source: 'Plain single spices: paprika, cinnamon, garlic powder, onion powder, black pepper',
+    detail: 'Seasonings are to taste and are not counted in the calories or macros. Paprika dusts the deviled eggs, cinnamon goes in the banana pancake batter, and garlic powder, onion powder and black pepper are there for the beef when a meal wants them.',
+  },
+];
+
+// Everything ships. Nothing on this diet needs a store trip: the frozen and
+// shelf-stable food ships monthly, and the fresh box (eggs and fruit) ships
+// twice a month because bananas and avocados cannot sit for a month.
+export const SHIPPING_PLAN = [
+  {
+    shipper: 'US Wellness Meats',
+    cadence: 'Monthly, frozen',
+    url: 'https://grasslandbeef.com/search?q=ground+beef+heart+kidney+liver',
+    items: ['Beef organ blend: 20 lb a month (four weeks at 5 lb). The 25 lb bundle covers about 5 weeks and is cheaper per pound.', 'Beef tallow: one 1.7 lb pail lasts about 7 months at 4 oz a week, so it rides along only when the pail runs low.'],
+  },
+  {
+    shipper: "Miller's Bio Farm",
+    cadence: 'Monthly, refrigerated',
+    url: 'https://millersbiofarm.com/store/cheese-1',
+    items: ['Pasteurized 100% grass-fed pressed cheese: 40 oz a month (four weeks at 10 oz).'],
+  },
+  {
+    shipper: 'Fresh box (shipped grocery, e.g. Misfits Market)',
+    cadence: 'Every 2 weeks, refrigerated',
+    url: 'https://www.misfitsmarket.com/egg-delivery',
+    items: ['Eggs: 7 dozen per box (14 dozen a month covers the 42 eggs a week). The eggs in the box must be certified organic AND pasture-raised; check the carton each order, because shipped assortments rotate. OrgaNICK Pastures is the reference egg.', 'Bananas: about 14 per box (7 a week).', 'Kiwis: about 28 per box (14 a week).', 'Avocados: about 14 per box (7 a week), shipped firm so they ripen across the two weeks.'],
+  },
+  {
+    shipper: 'Pantry shipment (Amazon or iHerb)',
+    cadence: 'Monthly, shelf-stable',
+    url: 'https://www.amazon.com/s?k=King+Oscar+sardines+in+water',
+    items: ['King Oscar sardines in water: 28 tins a month (7 a week).', 'Primal Kitchen Organic Unsweetened Ketchup: one 18.5 oz squeeze bottle lasts about 7 weeks.', 'Plain prepared mustard, avocado oil for the homemade mayo, Celtic sea salt, and the spices (paprika, cinnamon, garlic powder, onion powder, black pepper): small bottles, ordered as they run low.'],
+  },
+];
