@@ -8,8 +8,9 @@ export const POOL = [
   { item: 'Sardines', oz: 19, note: 'About 6 1/3 tins, about 3 oz drained each. 1 oz at 19 of the 21 meals; wild salmon covers the other 2.' },
   { item: 'Wild sockeye salmon', oz: 2, note: 'Wild Planet canned wild sockeye. 1 oz at 2 meals, swapped in for the sardines. Farmed salmon is banned; wild is the pass.' },
   { item: 'Wild blueberries', oz: 4, note: 'Wyman\'s frozen wild blueberries. 2 oz at 2 morning meals.' },
-  { item: 'Broccoli (cooked)', oz: 6, note: 'Cooked only: raw crucifers are conditional in the rulebook, cooked are approved. 3 oz at 2 evening meals.' },
+  { item: 'Broccoli (cooked)', oz: 6, note: 'Cooked only, always: raw crucifers are denied on this diet, they can block the thyroid. 3 oz at 2 evening meals.' },
   { item: 'Coconut water', oz: 24, note: 'Harmless Harvest plain. 8 oz to drink at 3 midday meals.' },
+  { item: 'Ground flaxseed', oz: 2, note: 'Evidence add, not a video verdict: the Oct 25, 2026 literature check in the database found flax very good (richest plant ALA source, richest lignan source, about 27% fiber). 0.5 oz in 4 meals.' },
   { item: 'Banana', oz: 28, note: 'About 7 bananas. The morning fruit, 4 oz per morning meal.' },
   { item: 'Kiwi', oz: 52.5, note: 'About 21 kiwis. The midday fruit, 7.5 oz per midday meal. Raised Nov 5, 2026 for fiber.' },
   { item: 'Avocado', oz: 56, note: 'About 14 avocados. The evening fruit, 8 oz per evening meal. Doubled Nov 5, 2026 for fiber: avocado carries most of the diet\'s fiber.' },
@@ -54,13 +55,19 @@ export const INGREDIENTS = [
     name: 'Broccoli (cooked)',
     weeklyOz: 6,
     source: 'Shipped in the fresh box',
-    detail: 'Cooked crucifers are approved in the rulebook; the raw form is only conditional, because raw crucifers can block the thyroid and cooking removes that. 3 oz steamed, at the meatloaf and the diner plate.',
+    detail: 'Only cooked crucifers are used on this diet. Raw kale and raw broccoli are denied here: raw crucifers can block the thyroid, and the best diet does not carry a food that fights a gland. Cooking removes the problem completely, so the broccoli is always steamed. 3 oz, at the meatloaf and the diner plate.',
   },
   {
     name: 'Coconut water',
     weeklyOz: 24,
     source: 'Harmless Harvest Organic Coconut Water, plain original',
     detail: 'Single ingredient and approved in the checked database. 8 oz to drink at 3 of the midday meals. Only the plain original passes; flavored versions were not checked and are not assumed to pass.',
+  },
+  {
+    name: 'Ground flaxseed',
+    weeklyOz: 2,
+    source: 'Organic ground flaxseed (meal), shipped',
+    detail: 'An evidence add under Carter\'s Nov 5, 2026 rule: a food with no video verdict can join when real-world evidence shows it is very good for you. Flax was literature-checked on Oct 25, 2026 in Carter\'s own database: among the richest plant sources of ALA omega-3, the richest common lignan source, about 27% fiber, with meta-analyses showing modest LDL, blood pressure, and blood sugar improvements. It must be ground: whole seeds pass through undigested. ALA complements the sardines and salmon, it does not replace marine omega-3. 0.5 oz (2 tablespoons) in the pancakes, egg muffins, omelet, and meatballs.',
   },
   {
     name: 'Cheese',
@@ -115,8 +122,8 @@ export const MEALS = [
     steps: ['Heat tallow in a heavy pan. Smash the beef into two thin patties, salt them, and fry until the edges crisp.', 'Lay the cheese over the patties to melt. Fry the eggs in the same pan in the beef fat.', 'Plate the patties and eggs with the sardines, the pickle spears, and the banana on the side, and the ketchup for the patties.'] },
   { id: 'beef-egg-scramble', day: 1, slot: 'Midday', name: 'Beef and Egg Scramble', minutes: 15,
     description: 'Beef crumbled and scrambled with eggs in tallow, cheese folded in at the end. Sardines and kiwi on the side, coconut water to drink.',
-    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes', coconutWater: 8,
-    steps: ['Brown the beef crumbles in tallow with salt, breaking them small.', 'Pour in the beaten eggs and scramble soft. Fold the cheese in off the heat.', 'Serve with the sardines and the kiwi on the side.'] },
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes', coconutWater: 8, psyllium: 1,
+    steps: ['Brown the beef crumbles in tallow with salt, breaking them small.', 'Pour in the beaten eggs and scramble soft. Fold the cheese in off the heat.', 'Serve with the sardines and the kiwi on the side.', 'Stir the psyllium into the coconut water and drink it with the meal.'] },
   { id: 'guac-burger-plate', day: 1, slot: 'Evening', name: 'Guac Burger Plate', minutes: 20,
     description: 'A tallow-fried patty with avocado mashed with salt as the sauce, soft eggs over the top, sardines on the side. No cheese at this meal.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', ketchup: 1, oliveOil: 1,
@@ -131,16 +138,16 @@ export const MEALS = [
     steps: ['Cook the beaten eggs as one thin omelet sheet in tallow and set it flat.', 'Sear the beef strips in tallow with salt. Break the sardines into pieces.', 'Fill the omelet with beef, cheese and sardines, roll it tight, and serve with the kiwi.'] },
   { id: 'meatballs-avocado', day: 2, slot: 'Evening', name: 'Meatballs with Avocado', minutes: 25,
     description: 'Beef meatballs fried in tallow with cheese grated over, avocado slices and sardines on the plate. The one meal of the week with no egg.',
-    beef: 4, egg: 0, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', ketchup: 1,
-    steps: ['Roll the beef into meatballs with salt and fry them in tallow until browned through.', 'Grate the cheese over the hot meatballs so it melts into them.', 'Serve with the avocado slices, the sardines, and the ketchup for dipping.'] },
+    beef: 4, egg: 0, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', ketchup: 1, flax: 0.5,
+    steps: ['Mix the ground flax into the beef, roll it into meatballs with salt, and fry them in tallow until browned through.', 'Grate the cheese over the hot meatballs so it melts into them.', 'Serve with the avocado slices, the sardines, and the ketchup for dipping.'] },
   { id: 'banana-pancakes-breakfast-patties', day: 3, slot: 'Morning', name: 'Banana Pancakes and Breakfast Patties', minutes: 25,
     description: 'Pancakes made from just banana and egg with wild blueberries folded in and raw honey drizzled over, griddled in tallow, next to beef breakfast patties with cheese melted on. Sardines on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes', blueberries: 2, honey: 2,
-    seasoning: 'Cinnamon', steps: ['Mash the banana with the eggs and the cinnamon into a batter and fold in the blueberries. Griddle small pancakes in tallow.', 'Form the beef into breakfast patties, salt, and fry in tallow. Melt the cheese on them.', 'Drizzle the honey over the pancakes. Serve the pancakes and patties together with the sardines on the side.'] },
+    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes', blueberries: 2, honey: 2, flax: 0.5, psyllium: 1,
+    seasoning: 'Cinnamon', steps: ['Mash the banana with the eggs and the cinnamon into a batter, whisk in the ground flax and the psyllium, and fold in the blueberries. Griddle small pancakes in tallow.', 'Form the beef into breakfast patties, salt, and fry in tallow. Melt the cheese on them.', 'Drizzle the honey over the pancakes. Serve the pancakes and patties together with the sardines on the side.'] },
   { id: 'beef-pizza', day: 3, slot: 'Midday', name: 'Beef Pizza', minutes: 25,
     description: 'Beef pressed flat and crisped in tallow is the crust. Cheese, sardine pieces, and an egg on top. Kiwi on the side, coconut water to drink.',
-    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes', coconutWater: 8,
-    steps: ['Press the beef into a thin round in a hot tallow pan and crisp it like a crust, salted.', 'Top with the cheese and sardine pieces and let the cheese melt.', 'Fry or bake the egg and set it on top. Serve with the kiwi.'] },
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes', coconutWater: 8, psyllium: 1,
+    steps: ['Press the beef into a thin round in a hot tallow pan and crisp it like a crust, salted.', 'Top with the cheese and sardine pieces and let the cheese melt.', 'Fry or bake the egg and set it on top. Serve with the kiwi.', 'Stir the psyllium into the coconut water and drink it with the meal.'] },
   { id: 'deviled-eggs-patty', day: 3, slot: 'Evening', name: 'Deviled Eggs and a Cheese Patty', minutes: 30,
     description: 'Deviled eggs with the yolks mashed with sardines and avocado, next to a tallow beef patty with cheese.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes',
@@ -148,7 +155,7 @@ export const MEALS = [
   { id: 'egg-drop-beef-soup', day: 4, slot: 'Morning', name: 'Egg Drop Beef Soup', minutes: 20,
     description: 'No tallow. Beef simmered in salted water, egg ribbons stirred through, sardines in the bowl, cheese grated over. Banana on the side.',
     beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no',
-    steps: ['Simmer the beef in salted water until it gives up its flavor, breaking it into small pieces.', 'Swirl the water and drizzle in the beaten eggs so they set as ribbons. Add the sardines.', 'Ladle into a bowl, grate the cheese over, and serve with the banana.'] },
+    seasoning: 'Turmeric', steps: ['Simmer the beef in salted water until it gives up its flavor, breaking it into small pieces.', 'Swirl the water and drizzle in the beaten eggs so they set as ribbons. Add the sardines.', 'Ladle into a bowl, grate the cheese over, and serve with the banana.'] },
   { id: 'cheese-crisps-sardine-pate', day: 4, slot: 'Midday', name: 'Cheese Crisps with Salmon Pate', minutes: 20,
     description: 'A double cheese meal: crisps from half the cheese, wild salmon mashed as a pate to scoop with them, plus a tallow beef patty and fried eggs. Kiwi on the side.',
     beef: 4, egg: 3.5, sardines: 0, salmon: 1, cheese: 1, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
@@ -163,16 +170,16 @@ export const MEALS = [
     steps: ['Crisp the cheese into crisps in a dry pan.', 'Cook the eggs any way you like, in a dry or lightly beef-fat-free pan, salted.', 'Serve the eggs, sardines and cheese crisps with the banana.'] },
   { id: 'cheese-stuffed-beef-rolls', day: 5, slot: 'Midday', name: 'Cheese-Stuffed Beef Rolls', minutes: 25,
     description: 'Beef rolled around cheese and seared in tallow, with poached eggs. Sardines and kiwi on the side, coconut water to drink.',
-    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes', coconutWater: 8,
-    steps: ['Flatten the beef, lay the cheese in the middle, roll tight and pin with a toothpick if needed. Salt the outside.', 'Sear the rolls in tallow, turning until browned and the cheese melts inside.', 'Poach the eggs. Serve the rolls and eggs with the sardines and kiwi.'] },
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes', coconutWater: 8, psyllium: 1,
+    steps: ['Flatten the beef, lay the cheese in the middle, roll tight and pin with a toothpick if needed. Salt the outside.', 'Sear the rolls in tallow, turning until browned and the cheese melts inside.', 'Poach the eggs. Serve the rolls and eggs with the sardines and kiwi.', 'Stir the psyllium into the coconut water and drink it with the meal.'] },
   { id: 'mini-meatloaf', day: 5, slot: 'Evening', name: 'Mini Meatloaf', minutes: 40,
     description: 'Double beef, including the beef the no-beef morning gave up. Baked in its own fat, no tallow, with avocado mash, eggs, sardines, and steamed broccoli. No cheese at this meal.',
     beef: 8, egg: 3.5, sardines: 1, cheese: 0, fruit: 'Avocado', fruitOz: 8, tallow: 'no', broccoli: 3,
     ketchup: 1, steps: ['Form the beef into a small loaf with salt, spread the ketchup over the top as a glaze, and bake it in its own fat until cooked through. Rest it before slicing.', 'Mash the avocado with salt. Steam the broccoli until tender. Cook the eggs to go with it.', 'Slice the meatloaf and serve with the avocado mash, eggs, sardines and broccoli.'] },
   { id: 'loaded-omelet', day: 6, slot: 'Morning', name: 'Loaded Omelet', minutes: 15,
     description: 'An omelet cooked in tallow with beef crumbles and cheese folded in, sardines on top. Banana on the side.',
-    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes',
-    steps: ['Brown the beef crumbles in tallow with salt.', 'Add the beaten eggs, cook the omelet around the beef, and fold the cheese inside.', 'Slide it out, lay the sardines on top, and serve with the banana.'] },
+    beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes', flax: 0.5,
+    seasoning: 'Turmeric', steps: ['Brown the beef crumbles in tallow with salt.', 'Stir the ground flax and turmeric into the beaten eggs, add them, cook the omelet around the beef, and fold the cheese inside.', 'Slide it out, lay the sardines on top, and serve with the banana.'] },
   { id: 'sardine-beef-cakes', day: 6, slot: 'Midday', name: 'Salmon and Beef Cakes', minutes: 25,
     description: 'Wild salmon and beef mixed into cakes and fried crisp in tallow, a double tallow meal, with a fried egg on top and cheese melted over. Kiwi on the side.',
     beef: 4, egg: 3.5, sardines: 0, salmon: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'double',
@@ -180,11 +187,11 @@ export const MEALS = [
   { id: 'meatball-soup', day: 6, slot: 'Evening', name: 'Meatball Soup', minutes: 30,
     description: 'No tallow. Meatballs simmered in salted water with egg ribbons, cheese stirred in, sardines in the bowl. Avocado on the side.',
     beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'no',
-    steps: ['Roll small meatballs from the salted beef and simmer them in salted water.', 'Swirl in the beaten eggs as ribbons, add the sardines, and stir the cheese in until it melts.', 'Serve in bowls with the avocado on the side.'] },
+    seasoning: 'Ginger', steps: ['Roll small meatballs from the salted beef and simmer them in salted water.', 'Swirl in the beaten eggs as ribbons, add the sardines, and stir the cheese in until it melts.', 'Serve in bowls with the avocado on the side.'] },
   { id: 'egg-muffins', day: 7, slot: 'Morning', name: 'Egg Muffins', minutes: 30,
     description: 'Beef pressed into muffin cups with eggs baked inside, the tin greased with tallow, cheese on top. Sardines and banana on the side.',
-    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'light', blueberries: 2,
-    steps: ['Grease a muffin tin with tallow. Press the beef into cups, salt them, and crack the eggs into the cups.', 'Bake until the eggs are set. Put the cheese on top for the last minutes so it melts.', 'Serve with the sardines, the banana, and the blueberries.'] },
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'light', blueberries: 2, flax: 0.5,
+    steps: ['Grease a muffin tin with tallow. Press the beef into cups, salt them, stir the ground flax into the beaten eggs, and pour the eggs into the cups.', 'Bake until the eggs are set. Put the cheese on top for the last minutes so it melts.', 'Serve with the sardines, the banana, and the blueberries.'] },
   { id: 'fried-rice-plate', day: 7, slot: 'Midday', name: 'Fried "Rice" Plate', minutes: 20,
     description: 'Beef crumbled small and fried hard in tallow until it eats like rice, eggs scrambled in pieces through it, cheese folded in. Sardines and kiwi on the side.',
     beef: 3, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
@@ -225,6 +232,8 @@ export const BUY = {
   'Raw honey': { label: 'Amazon (Wedderspoon raw manuka)', url: 'https://www.amazon.com/s?k=Wedderspoon+raw+manuka+honey' },
   'Olive oil': { label: 'Amazon (California Olive Ranch 100% California)', url: 'https://www.amazon.com/s?k=California+Olive+Ranch+100%25+California+extra+virgin+olive+oil' },
   'Pickles': { label: "Amazon (Bubbies Kosher Dill)", url: 'https://www.amazon.com/s?k=Bubbies+kosher+dill+pickles' },
+  'Ground flaxseed': { label: 'Amazon (organic ground flaxseed)', url: 'https://www.amazon.com/s?k=organic+ground+flaxseed' },
+  'Psyllium husk': { label: 'Amazon (psyllium husk powder)', url: 'https://www.amazon.com/s?k=psyllium+husk+powder' },
 };
 
 // Estimated costs. Prices checked November 5, 2026. These are estimates for
@@ -237,6 +246,7 @@ export const PRICE = {
   sardinesPerOz: 4.59 / 3,      // King Oscar in water, $4.59 per tin, about 3 oz drained
   salmonPerOz: 1.0,             // Wild Planet canned wild sockeye, about $6 per 6 oz can, estimated
   blueberriesPerOz: 0.25,       // Wyman's frozen wild, 3 lb bag, estimated
+  flaxPerOz: 0.35,              // organic ground flaxseed, estimated
   broccoliPerOz: 0.15,          // fresh broccoli, estimated
   cheesePerOz: 2.0,             // Miller's Bio Farm pressed cheese, estimated
   tallowPerOz: 17.46 / 27.2,    // US Wellness small pail, $17.46 per 1.7 lb
@@ -260,6 +270,7 @@ export const PRICE_BASIS = [
   'Raw honey: Wedderspoon raw manuka, about $0.85 a teaspoon. 2 teaspoons a week.',
   'Olive oil: California Olive Ranch 100% California, about $0.12 a teaspoon. 2 teaspoons a week.',
   'Pickles: Bubbies Kosher Dill, about $0.35 a spear. 4 spears a week.',
+  'Ground flaxseed: organic, estimated at $0.35 an ounce. 2 oz a week. Psyllium husk: estimated at $0.40 a tablespoon, 4 tablespoons a week.',
 ];
 
 const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
@@ -274,6 +285,7 @@ export const NUTRITION_PER_OZ = {
   sardines: { kcal: 60, protein: 7, fat: 3.3, carbs: 0, fiber: 0 },
   salmon: { kcal: 50, protein: 6.5, fat: 2, carbs: 0, fiber: 0 },
   blueberries: { kcal: 16, protein: 0.2, fat: 0.1, carbs: 4.1, fiber: 0.7 },
+  flax: { kcal: 150, protein: 5.2, fat: 12, carbs: 8.2, fiber: 7.7 },
   broccoli: { kcal: 10, protein: 0.8, fat: 0.1, carbs: 1.9, fiber: 0.7 },
   cheese: { kcal: 85, protein: 6, fat: 6.5, carbs: 1, fiber: 0 },
   tallow: { kcal: 250, protein: 0, fat: 28, carbs: 0, fiber: 0 },
@@ -299,6 +311,7 @@ export const CONDIMENT_NUTRITION = {
   oliveOil: { kcal: 40, protein: 0, fat: 4.5, carbs: 0, fiber: 0 }, // per teaspoon, extra virgin olive oil
   coconutWater: { kcal: 6, protein: 0.1, fat: 0, carbs: 1.4, fiber: 0.1 }, // per ounce, plain coconut water
   pickles: { kcal: 5, protein: 0, fat: 0, carbs: 1, fiber: 0.3 }, // per spear, fermented dill
+  psyllium: { kcal: 18, protein: 0, fat: 0, carbs: 5, fiber: 4.5 }, // per tablespoon, husk powder
 };
 export const CONDIMENT_PRICE = {
   ketchup: 8.79 / 37, // 18.5 oz squeeze bottle $8.79 at Woodman's, about 37 tbsp
@@ -308,8 +321,9 @@ export const CONDIMENT_PRICE = {
   oliveOil: 0.12,     // per teaspoon, California Olive Ranch 100% California
   coconutWater: 0.31, // per ounce, Harmless Harvest plain
   pickles: 0.35,      // per spear, Bubbies Kosher Dill
+  psyllium: 0.40,     // per tablespoon, husk powder, estimated
 };
-export const CONDIMENT_KEYS = ['ketchup', 'mayo', 'mustard', 'honey', 'oliveOil', 'coconutWater', 'pickles'];
+export const CONDIMENT_KEYS = ['ketchup', 'mayo', 'mustard', 'honey', 'oliveOil', 'coconutWater', 'pickles', 'psyllium'];
 export function condimentNutrition(m) {
   const out = { kcal: 0, protein: 0, fat: 0, carbs: 0, fiber: 0 };
   for (const k of CONDIMENT_KEYS) {
@@ -330,6 +344,7 @@ export function mealNutrition(m) {
     [NUTRITION_PER_OZ.sardines, m.sardines],
     [NUTRITION_PER_OZ.salmon, m.salmon || 0],
     [NUTRITION_PER_OZ.blueberries, m.blueberries || 0],
+    [NUTRITION_PER_OZ.flax, m.flax || 0],
     [NUTRITION_PER_OZ.broccoli, m.broccoli || 0],
     [NUTRITION_PER_OZ.cheese, m.cheese],
     [NUTRITION_PER_OZ.fruit[m.fruit], m.fruitOz],
@@ -372,6 +387,7 @@ export function mealCost(m) {
     + m.sardines * PRICE.sardinesPerOz
     + (m.salmon || 0) * PRICE.salmonPerOz
     + (m.blueberries || 0) * PRICE.blueberriesPerOz
+    + (m.flax || 0) * PRICE.flaxPerOz
     + (m.broccoli || 0) * PRICE.broccoliPerOz
     + m.cheese * PRICE.cheesePerOz
     + m.fruitOz * PRICE.fruitPerOz[m.fruit]
@@ -387,6 +403,8 @@ export function ingredientWeekCost(key) {
     'Wild blueberries': 4 * PRICE.blueberriesPerOz,
     'Broccoli (cooked)': 6 * PRICE.broccoliPerOz,
     'Coconut water': MEALS.reduce((s, m) => s + (m.coconutWater || 0), 0) * CONDIMENT_PRICE.coconutWater,
+    'Ground flaxseed': 2 * PRICE.flaxPerOz,
+    'Psyllium husk': MEALS.reduce((s, m) => s + (m.psyllium || 0), 0) * CONDIMENT_PRICE.psyllium,
     'Cheese': 10 * PRICE.cheesePerOz,
     'Beef tallow': 4 * PRICE.tallowPerOz,
     'Banana': 28 * PRICE.fruitPerOz.Banana,
@@ -445,10 +463,16 @@ export const CONDIMENTS = [
     detail: 'Naturally fermented, no vinegar, no preservatives, no dyes: cucumbers, water, salt, garlic, dill, spices, mustard seed, calcium chloride. They sit next to the two burger plates, the smash patties and the diner plate.',
   },
   {
+    name: 'Psyllium husk',
+    amount: '1 tablespoon on 4 meals a week',
+    source: 'Psyllium husk powder, shipped',
+    detail: 'An evidence add under Carter\'s Nov 5, 2026 rule. Psyllium was literature-checked on Oct 25, 2026 in Carter\'s own database: one of the best-studied fibers in existence, with a meta-analysis of 28 trials showing LDL down about 7% at around 10 g a day, an FDA-authorized heart-health claim, and systematic reviews behind it for regularity and gut bacteria. One tablespoon is whisked into the pancake batter and one is stirred into the coconut water at each of the 3 midday meals that carry it. It gels hard, so it is always taken with its drink, never dry.',
+  },
+  {
     name: 'Seasonings',
     amount: 'To taste, no set amount',
-    source: 'Plain single spices: paprika, cinnamon, garlic powder, onion powder, black pepper',
-    detail: 'Seasonings are to taste and are not counted in the calories or macros. Paprika dusts the deviled eggs, cinnamon goes in the banana pancake batter, and garlic powder, onion powder and black pepper are there for the beef when a meal wants them.',
+    source: 'Plain single spices: paprika, cinnamon, turmeric, ginger, garlic powder, onion powder, black pepper',
+    detail: 'Seasonings are to taste and are not counted in the calories or macros. Paprika dusts the deviled eggs, cinnamon goes in the banana pancake batter, and garlic powder, onion powder and black pepper are there for the beef when a meal wants them. Turmeric seasons the egg drop soup and the omelet, and ginger the meatball soup: both are evidence adds at food amounts, turmeric for its curcumin and ginger as the classic stomach settler.',
   },
 ];
 
@@ -495,6 +519,9 @@ export function bulkOrder(weeks, eggPackSize = 12) {
   const honeyJars = Math.ceil(honeyUsed / 50);
   const pickleSpearsUsed = weeks * 4;
   const pickleJars = Math.ceil(pickleSpearsUsed / 12);
+  const flaxOzUsed = weeks * 2;
+  const flaxBags = Math.ceil(flaxOzUsed / 16);
+  const psylliumUsed = weeks * 4;
   const ketchupUsed = weeks * 5;
   const ketchupBottles = Math.ceil(ketchupUsed / 37);
   const mayoUsed = weeks * 3;
@@ -509,6 +536,8 @@ export function bulkOrder(weeks, eggPackSize = 12) {
     `Wild blueberries: ${blueberryOzUsed} oz`,
     `Broccoli: ${broccoliOzUsed} oz (cooked)`,
     `Coconut water: ${weeks * 24} oz`,
+    `Ground flaxseed: ${flaxOzUsed} oz`,
+    `Psyllium husk: ${psylliumUsed} tbsp`,
     `Cheese: ${cheeseUsedOz} oz`,
     `Beef tallow: ${tallowUsedOz} oz`,
     `Fruit: ${weeks * 7} bananas, ${weeks * 21} kiwis, ${weeks * 14} avocados`,
@@ -549,7 +578,7 @@ export function bulkOrder(weeks, eggPackSize = 12) {
         `King Oscar sardines in water: ${sardineCases} cases of 12 = ${sardineCases * 12} tins for ${sardineTins} tins needed (${sardineOzUsed} oz across the block)${sardineCases * 12 === sardineTins ? ', an exact fit' : `, ${sardineCases * 12 - sardineTins} tins roll into the next block`}`,
         `Wild sockeye salmon: ${salmonCans} cans (6 oz each, Wild Planet) = ${salmonCans * 6} oz for ${salmonOzUsed} oz used${salmonCans * 6 === salmonOzUsed ? ', an exact fit' : `, ${salmonCans * 6 - salmonOzUsed} oz rolls forward in the fridge`}`,
         `Wild blueberries: ${blueberryBags} frozen 3 lb bags (48 oz, Wyman's) = ${blueberryBags * 48} oz for ${blueberryOzUsed} oz used, the rest stays frozen for the next block`,
-        `Raw manuka honey: ${honeyJars} plain jars (Wedderspoon) for ${honeyUsed} tsp across the block. Extra virgin olive oil: 1 bottle of California Olive Ranch 100% California covers the block at 2 tsp a week. Fermented pickles: ${pickleJars} jars of Bubbies Kosher Dill (about 12 spears a jar) for ${pickleSpearsUsed} spears used`,
+        `Ground flaxseed: ${flaxBags} bags (1 lb, organic ground) = ${flaxBags * 16} oz for ${flaxOzUsed} oz used, the rest stays sealed for the next block. Psyllium husk: 1 canister covers the block at ${psylliumUsed} tablespoons. Raw manuka honey: ${honeyJars} plain jars (Wedderspoon) for ${honeyUsed} tsp across the block. Extra virgin olive oil: 1 bottle of California Olive Ranch 100% California covers the block at 2 tsp a week. Fermented pickles: ${pickleJars} jars of Bubbies Kosher Dill (about 12 spears a jar) for ${pickleSpearsUsed} spears used`,
         `Primal Kitchen Organic Unsweetened Ketchup: ${ketchupBottles} squeeze bottles (18.5 oz, about 37 tbsp each): ${roll(ketchupBottles * 37, ketchupUsed, 'tbsp')}.`,
         `Homemade mayo supplies: ${mayoBatches} batches across the block, so ${mayoBatches} cups of 100% avocado oil (1 cup per batch, about 17 tbsp of mayo per batch): ${roll(mayoBatches * 17, mayoUsed, 'tbsp')}. The yolks come from the egg cartons above, and the whites get folded into that week's eggs so no egg is wasted.`,
         `Plain prepared mustard: ${mustardUsed} tsp used in the block, so one plain bottle (mustard seed, vinegar, water, salt, nothing else) covers many blocks. Celtic sea salt and the plain spices (paprika, cinnamon, garlic powder, onion powder, black pepper) ride along as they run low.`,
