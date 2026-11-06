@@ -348,7 +348,7 @@ export const CONDIMENTS = [
     name: 'Mayo (homemade)',
     amount: '1 tablespoon on 3 meals a week',
     source: 'Made at home: 1 egg yolk, 1 cup avocado oil, lemon, mustard, salt',
-    detail: 'No bottled mayo passes. Every bottled brand fails the egg rule, which has no exceptions (eggs in any product must be certified organic AND pasture-raised); Primal Kitchen mayo was removed from the approved list on Oct 27, 2026 because its eggs are cage-free only. So the mayo is homemade from one of the diet\'s own eggs, whisked with avocado oil (ruled fine Oct 25, 2026), lemon, mustard and salt. One batch is about 17 tablespoons, roughly five to six weeks of mayo at 3 tablespoons a week. It goes in the deviled eggs, the sardine pate, and the egg salad.',
+    detail: 'No bottled mayo passes. Every bottled brand fails the egg rule, which has no exceptions (eggs in any product must be certified organic AND pasture-raised); Primal Kitchen mayo was removed from the approved list on Oct 27, 2026 because its eggs are cage-free only. So the mayo is homemade from one of the diet\'s own eggs, whisked with avocado oil (ruled fine Oct 25, 2026), lemon, mustard and salt. One batch is about 17 tablespoons, roughly five to six weeks of mayo at 3 tablespoons a week. It goes in the deviled eggs, the sardine pate, and the egg salad. Every mayo ingredient is covered: the yolk comes from the egg cartons, and the avocado oil and lemons are counted per batch in the order plan below.',
   },
   {
     name: 'Mustard',
@@ -447,6 +447,7 @@ export function bulkOrder(weeks, eggPackSize = 12) {
         `Primal Kitchen Organic Unsweetened Ketchup: ${ketchupBottles} squeeze bottles (18.5 oz, about 37 tbsp each): ${roll(ketchupBottles * 37, ketchupUsed, 'tbsp')}.`,
         `Homemade mayo supplies: ${mayoBatches} batches across the block, so ${mayoBatches} cups of 100% avocado oil (1 cup per batch, about 17 tbsp of mayo per batch): ${roll(mayoBatches * 17, mayoUsed, 'tbsp')}. The yolks come from the egg cartons above, and the whites get folded into that week's eggs so no egg is wasted.`,
         `Plain prepared mustard: ${mustardUsed} tsp used in the block, so one plain bottle (mustard seed, vinegar, water, salt, nothing else) covers many blocks. Celtic sea salt and the plain spices (paprika, cinnamon, garlic powder, onion powder, black pepper) ride along as they run low.`,
+        `Lemons for the mayo: ${mayoBatches} across the block (1 per batch, for the juice), riding along with the fresh fruit shipments. Mustard and Celtic sea salt for the mayo come from the pantry bottles above, and each batch's yolk comes out of the egg cartons, so every mayo ingredient is accounted for in this plan and in the meal costs.`,
         'Drinks: spring water in glass bottles only, by the case as needed (no set weekly amount): Mountain Valley still, Saratoga still or sparkling in the 28 oz glass bottle, S.Pellegrino, or Lauretana. Plastic bottles and aluminum bottles do not pass.',
       ],
     },
