@@ -443,10 +443,117 @@ export function mealsForTier(tier = 2500, snack = 'off') {
   return merged;
 }
 
+
+// ---------------------------------------------------------------------------
+// Dynamic meals (added Nov 6, 2026 at Carter's request): the site's chat
+// assistant drafts changes to the week, but it never does math and never
+// invents ingredients. A proposal arrives as a meal spec (ingredient keys
+// and ounces); mealFromSpec below validates and clamps it into a real meal
+// object under the diet's own rules (quarter-pound beef, whole eggs, the
+// condiment shelf's set amounts), and rebalanceMeals then adjusts the rest
+// of the week with the same levers the plan trims use until the day lands
+// back inside Carter's calorie range for the size. Every number a proposal
+// shows still comes from mealNutrition and mealCost, never from the model.
+export const TIER_RANGES = { 1500: [1350, 1650], 2000: [1850, 2150], 2500: [2350, 2650] };
+const SPEC_CLAMPS = {
+  blueberries: [0, 2], broccoli: [0, 3], broth: [0, 16], coconutWater: [0, 8],
+  ketchup: [0, 2], mayo: [0, 2], mustard: [0, 2], honey: [0, 2], oliveOil: [0, 2], psyllium: [0, 1],
+};
+const nearestOf = (v, options) => options.reduce((a, b) => (Math.abs(b - v) < Math.abs(a - v) ? b : a), options[0]);
+
+export function mealFromSpec(spec, day, slot) {
+  const it = (spec && spec.items) || {};
+  const num = (v) => (typeof v === 'number' && Number.isFinite(v) && v > 0 ? v : 0);
+  const meal = {
+    id: `custom-d${day}-${String(slot).toLowerCase()}`,
+    day, slot, custom: true,
+    name: String(spec.name || 'Custom meal').slice(0, 60),
+    description: String(spec.description || '').slice(0, 400),
+    steps: Array.isArray(spec.steps) ? spec.steps.slice(0, 6).map((s) => String(s).slice(0, 300)) : [],
+    minutes: Math.min(60, Math.max(5, Math.round(num(spec.minutes) || 20))),
+    beef: nearestOf(num(it.beef), [0, 4, 8]),
+    egg: Math.min(5.25, Math.round(num(it.egg) / 1.75) * 1.75),
+    sardines: num(it.sardines) >= 0.5 ? 1 : 0,
+    salmon: nearestOf(num(it.salmon), [0, 1, 2]),
+    cheese: nearestOf(num(it.cheese), [0, 0.5, 1]),
+    fruit: ['Banana', 'Kiwi', 'Avocado'].includes(spec.fruit) ? spec.fruit : (['Banana', 'Kiwi', 'Avocado'].includes(it.fruit) ? it.fruit : (slot === 'Morning' ? 'Banana' : slot === 'Midday' ? 'Kiwi' : 'Avocado')),
+    fruitOz: Math.min(8, Math.round(num(it.fruitOz) * 4) / 4),
+    blueberries: nearestOf(num(it.blueberries), SPEC_CLAMPS.blueberries),
+    broccoli: nearestOf(num(it.broccoli), SPEC_CLAMPS.broccoli),
+    flax: nearestOf(num(it.flax), [0, 0.5, 1]),
+    broth: nearestOf(num(it.broth), SPEC_CLAMPS.broth),
+    chips: Math.min(2, Math.round(num(it.chips) * 2) / 2),
+    bread: Math.min(4, Math.round(num(it.bread) * 2) / 2),
+    wrap: nearestOf(num(it.wrap), [0, 0.88, 1.76, 2.64]),
+    tallow: ['yes', 'double', 'light', 'no'].includes(spec.tallow) ? spec.tallow : (['yes', 'double', 'light', 'no'].includes(it.tallow) ? it.tallow : 'no'),
+    coconutWater: nearestOf(num(it.coconutWater), SPEC_CLAMPS.coconutWater),
+    ketchup: Math.min(2, Math.round(num(it.ketchup))), mayo: Math.min(2, Math.round(num(it.mayo))),
+    mustard: Math.min(2, Math.round(num(it.mustard))), honey: Math.min(2, Math.round(num(it.honey))),
+    oliveOil: Math.min(2, Math.round(num(it.oliveOil))), pickles: Math.min(4, Math.round(num(it.pickles) / 2) * 2),
+    psyllium: Math.min(1, Math.round(num(it.psyllium))),
+  };
+  if (typeof spec.seasoning === 'string' && ['Paprika', 'Cinnamon', 'Turmeric', 'Ginger'].includes(spec.seasoning)) meal.seasoning = spec.seasoning;
+  return meal;
+}
+
+// Adjust a modified week back into the size's calorie range using the plan
+// levers, protecting the meals flagged custom until everything else is used.
+export function rebalanceMeals(inputMeals, tier = 2500, snack = 'off') {
+  const [lo, hi] = TIER_RANGES[tier] || TIER_RANGES[2500];
+  const target = dayNutrition(mealsForTier(tier, snack)).kcal;
+  const meals = inputMeals.map((m) => ({ ...m }));
+  const dayOf = () => dayNutrition(meals).kcal;
+  const dayBefore = dayOf();
+  let poolOz = planRates(tier, snack).tallowOz;
+  const applyPool = () => {
+    const units = meals.reduce((s, m) => s + TALLOW_UNIT_MAP[m.tallow], 0);
+    for (const m of meals) m.tallowOz = units ? (TALLOW_UNIT_MAP[m.tallow] / units) * poolOz : 0;
+  };
+  applyPool();
+  const notes = [];
+  let fruitTrim = 0;
+  const eggCutIds = [], cheeseCutIds = [];
+  const ordered = [...meals].sort((a, b) => (a.custom ? 1 : 0) - (b.custom ? 1 : 0) || a.day - b.day);
+  const over = () => dayOf() > Math.min(hi, target + 6);
+  const under = () => dayOf() < Math.max(lo, target - 6);
+  let guard = 0;
+  while ((over() || under()) && guard++ < 60) {
+    const d = dayOf();
+    if (d > target) {
+      if (poolOz > Math.max(0.5, planRates(tier, snack).tallowOz / 2)) { poolOz = Math.round((poolOz - 0.5) * 10) / 10; applyPool(); continue; }
+      const fm = ordered.find((m) => (m.fruit === 'Banana' || m.fruit === 'Kiwi') && m.fruitOz - fruitTrim > 2 && !m._trimmed);
+      if (fruitTrim < 2) {
+        let touched = false;
+        for (const m of meals) if ((m.fruit === 'Banana' || m.fruit === 'Kiwi') && m.fruitOz > 2) { m.fruitOz = Math.max(2, Math.round((m.fruitOz - 0.5) * 10) / 10); touched = true; }
+        if (touched) { fruitTrim += 0.5; continue; }
+      }
+      const em = ordered.find((m) => m.egg >= 3.5 && !eggCutIds.includes(m.id));
+      if (em) { em.egg = 1.75; eggCutIds.push(em.id); continue; }
+      const cm = ordered.find((m) => m.cheese >= 0.5 && !cheeseCutIds.includes(m.id));
+      if (cm) { cm.cheese -= 0.25; cheeseCutIds.push(cm.id); continue; }
+      break;
+    } else {
+      if (poolOz < (TIER_TALLOW_OZ[tier] ?? 4)) { poolOz = Math.round((poolOz + 0.5) * 10) / 10; applyPool(); continue; }
+      const cm = ordered.find((m) => m.cheese > 0 && m.cheese < 1 && cheeseCutIds.includes(m.id));
+      if (cm) { cm.cheese += 0.25; cheeseCutIds.splice(cheeseCutIds.indexOf(cm.id), 1); continue; }
+      const em = ordered.find((m) => m.egg === 1.75 && eggCutIds.includes(m.id));
+      if (em) { em.egg = 3.5; eggCutIds.splice(eggCutIds.indexOf(em.id), 1); continue; }
+      break;
+    }
+  }
+  const basePool = planRates(tier, snack).tallowOz;
+  if (poolOz !== basePool) notes.push(`Tallow pool ${Math.round(basePool * 10) / 10} oz to ${Math.round(poolOz * 10) / 10} oz`);
+  if (fruitTrim) notes.push(`Banana and kiwi trimmed ${fruitTrim} oz at each meal that had room`);
+  if (eggCutIds.length) notes.push(`One egg fewer at ${eggCutIds.length} meal${eggCutIds.length === 1 ? '' : 's'}`);
+  if (cheeseCutIds.length) notes.push(`Cheese trimmed a quarter ounce at ${cheeseCutIds.length} meal${cheeseCutIds.length === 1 ? '' : 's'}`);
+  const dayAfter = dayOf();
+  return { meals, adjustments: notes, dayBefore, dayAfter, inRange: dayAfter >= lo && dayAfter <= hi };
+}
+
 // Weekly totals for one plan size, summed from its meals. Single source for
 // the pool table, the ingredient cards, and both order planners.
-export function planRates(tier = 2500, snack = 'off') {
-  const meals = mealsForTier(tier, snack);
+export function planRates(tier = 2500, snack = 'off', mealsOverride) {
+  const meals = mealsOverride || mealsForTier(tier, snack);
   const sum = (f) => meals.reduce((s, m) => s + (f(m) || 0), 0);
   return {
     tier,
@@ -488,8 +595,8 @@ const fmtOz = (n) => {
 };
 
 // The weekly pool table for one plan size, same shape as POOL.
-export function poolForTier(tier = 2500, snack = 'off') {
-  const r = planRates(tier, snack);
+export function poolForTier(tier = 2500, snack = 'off', mealsOverride) {
+  const r = planRates(tier, snack, mealsOverride);
   const base = Object.fromEntries(POOL.map((p) => [p.item, p]));
   const row = (item, oz, note) => ({ item, oz, note: note ?? base[item].note });
   return [
@@ -517,8 +624,8 @@ export function poolForTier(tier = 2500, snack = 'off') {
 
 // The ingredient cards for one plan size: same sources and details, with the
 // weekly amount for that size.
-export function ingredientsForTier(tier = 2500, snack = 'off') {
-  const r = planRates(tier, snack);
+export function ingredientsForTier(tier = 2500, snack = 'off', mealsOverride) {
+  const r = planRates(tier, snack, mealsOverride);
   const ozByName = {
     'Beef organ blend': r.beefOz, 'Eggs': r.eggOz, 'Sardines': r.sardineOz,
     'Wild sockeye salmon': r.salmonOz, 'Wild blueberries': r.blueberriesOz,
@@ -915,8 +1022,8 @@ const roll = (bought, used, unit) => bought === used
   ? `exactly ${used} ${unit} used, nothing left over`
   : `${bought} ${unit} bought for ${used} ${unit} used, ${Math.round((bought - used) * 10) / 10} ${unit} rolls into the next block`;
 
-export function bulkOrder(weeks, eggPackSize = 12, tier = 2500, snack = 'off') {
-  const r = planRates(tier, snack);
+export function bulkOrder(weeks, eggPackSize = 12, tier = 2500, snack = 'off', mealsOverride) {
+  const r = planRates(tier, snack, mealsOverride);
   const weeksPerBundle = 400 / r.beefOz; // one bundle is 25 lb = 400 oz of beef
   const beefBundles = Math.ceil((weeks * r.beefOz) / 400);
   const beefUsedLb = (weeks * r.beefOz) / 16;
@@ -1058,8 +1165,8 @@ export const SHIPPER_URL = {
   'Pantry bulk shipment': 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html',
 };
 
-export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, snack = 'off', horizonWeeks = 52) {
-  const r = planRates(tier, snack);
+export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, snack = 'off', horizonWeeks = 52, mealsOverride) {
+  const r = planRates(tier, snack, mealsOverride);
   const byKey = new Map();
   const add = (week, shipper, cadence, items) => {
     const key = `${week}|${shipper}`;

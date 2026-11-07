@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Beef, Menu, X } from 'lucide-react';
 import { SITE, TAGLINE } from '../lib/store';
-import { PLAN_TIERS, SNACK_MODES, setSnack, setTier, useSnack, useTier } from '../lib/plan';
+import { PLAN_TIERS, SNACK_MODES, setSnack, setTier, useCustomWeek, useSnack, useTier } from '../lib/plan';
 
 export function SnackSwitcher({ dark = false }) {
   const snack = useSnack();
@@ -51,6 +51,7 @@ const NAV = [
   { to: '/meals', label: '21 Meals' },
   { to: '/ingredients', label: 'Ingredients' },
   { to: '/orders', label: 'Orders' },
+  { to: '/ask', label: 'Ask' },
   { to: '/about', label: 'About' },
 ];
 
@@ -88,6 +89,19 @@ export function Header() {
         )}
       </div>
     </header>
+  );
+}
+
+export function CustomWeekBanner() {
+  const tier = useTier();
+  const snack = useSnack();
+  const [custom, , clear] = useCustomWeek(tier, snack);
+  if (!custom) return null;
+  return (
+    <div className="mb-6 flex flex-wrap items-center gap-3 rounded-2xl border border-pine-200 bg-pine-50 px-4 py-3">
+      <p className="text-sm font-semibold text-pine-900">This week is customized. The pool, meals, ingredients and orders on the site right now follow your saved changes.</p>
+      <button onClick={clear} className="rounded-full bg-pine-800 px-3 py-1.5 text-xs font-bold text-white hover:bg-pine-700">Reset to the fixed week</button>
+    </div>
   );
 }
 

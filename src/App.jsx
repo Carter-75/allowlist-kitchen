@@ -9,6 +9,7 @@ const MealPage = lazy(() => import('./pages/MealPage'));
 const IngredientsPage = lazy(() => import('./pages/IngredientsPage'));
 const OrdersPage = lazy(() => import('./pages/OrdersPage'));
 const About = lazy(() => import('./pages/About'));
+const AskPage = lazy(() => import('./pages/AskPage'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Missing = lazy(() => import('./pages/Missing'));
 
@@ -41,7 +42,7 @@ export default function App() {
               <Route path="/pantry" element={<Navigate to="/ingredients" replace />} />
               <Route path="/shopping-list" element={<Navigate to="/ingredients" replace />} />
               <Route path="/all-ingredients" element={<Navigate to="/ingredients" replace />} />
-              <Route path="/ask" element={<Navigate to="/" replace />} />
+              <Route path="/ask" element={<AskPage />} />
               <Route path="/about" element={<About />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="*" element={<Missing />} />

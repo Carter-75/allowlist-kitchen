@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Check, Clock3, Copy, ExternalLink } from 'lucide
 import Missing from './Missing';
 import { TALLOW_LABEL, mealNutrition, mealsForTier, planRates } from '../data/godDiet';
 import { mealById, mealCost, mealIngredients, money, recipeText, TALLOW_TSP, useHead } from '../lib/store';
-import { useSnack, useTier } from '../lib/plan';
+import { usePlanMeals, useSnack, useTier } from '../lib/plan';
 
 const SLOT_TINT = {
   Morning: 'bg-amber-100 text-amber-900',
@@ -17,9 +17,9 @@ export default function MealPage() {
   const { mealId } = useParams();
   const tier = useTier();
   const snack = useSnack();
-  const tierMeals = mealsForTier(tier, snack);
-  const meal = mealById(mealId, tier, snack);
-  const tallowPoolOz = Math.round(planRates(tier, snack).tallowOz * 10) / 10;
+  const { meals: tierMeals } = usePlanMeals(tier, snack);
+  const meal = mealById(mealId, tier, snack, tierMeals);
+  const tallowPoolOz = Math.round(planRates(tier, snack, tierMeals).tallowOz * 10) / 10;
   const [copied, setCopied] = useState(false);
   useHead({ title: meal ? `${meal.name} - The God Diet` : 'The God Diet', description: meal ? meal.description : '' });
   if (!meal) return <Missing />;

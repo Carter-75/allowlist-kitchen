@@ -4,14 +4,14 @@ import { ArrowRight, Repeat, Scale, ShoppingBasket } from 'lucide-react';
 import MealTile from '../components/MealTile';
 import { PLAN_TIERS, TIER_TALLOW_OZ, dayNutrition, ingredientWeekCost, mealsForTier, poolForTier, weekCost, money } from '../data/godDiet';
 import { mealsForDay, useHead } from '../lib/store';
-import { useSnack, useTier } from '../lib/plan';
-import { PlanSwitcher } from '../components/Chrome';
+import { usePlanMeals, useSnack, useTier } from '../lib/plan';
+import { CustomWeekBanner, PlanSwitcher } from '../components/Chrome';
 
 export default function Home() {
   const tier = useTier();
   const snack = useSnack();
-  const meals = mealsForTier(tier, snack);
-  const pool = poolForTier(tier, snack);
+  const { meals } = usePlanMeals(tier, snack);
+  const pool = poolForTier(tier, snack, meals);
   const tallowOz = pool.find((p) => p.item === 'Beef tallow').oz;
   const dayNut = dayNutrition(meals);
   const wkCost = weekCost(meals);
@@ -39,6 +39,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pt-12">
+        <CustomWeekBanner />
         <h2 className="font-display text-3xl font-black">Pick your size</h2>
         <p className="mt-1 max-w-2xl text-sm leading-relaxed text-ink/60">The same 21 meals at three calorie levels. The recipes, the ingredients, and the condiment shelf do not change; the portions do. Smaller sizes keep every superfood in the week, keep the eggs whole, and hold protein at about 23% of calories.</p>
         <div className="mt-5 grid gap-4 md:grid-cols-3">
@@ -111,7 +112,7 @@ export default function Home() {
           <div key={day} className="mt-8">
             <h3 className="font-display text-xl font-bold text-ink/70">Day {day}</h3>
             <div className="mt-3 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {mealsForDay(day, tier, snack).map((m) => <MealTile key={m.id} meal={m} />)}
+              {mealsForDay(day, tier, snack, meals).map((m) => <MealTile key={m.id} meal={m} />)}
             </div>
           </div>
         ))}

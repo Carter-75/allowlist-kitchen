@@ -6,8 +6,8 @@ export const TAGLINE = 'One weekly pool. 21 meals. Nothing else.';
 export const EMAIL = 'cartermoyer75@gmail.com';
 
 export const allMeals = MEALS;
-export const mealById = (id, tier = 2500, snack = 'off') => mealsForTier(tier, snack).find((m) => m.id === id) || null;
-export const mealsForDay = (day, tier = 2500, snack = 'off') => mealsForTier(tier, snack).filter((m) => m.day === day);
+export const mealById = (id, tier = 2500, snack = 'off', meals) => (meals || mealsForTier(tier, snack)).find((m) => m.id === id) || null;
+export const mealsForDay = (day, tier = 2500, snack = 'off', meals) => (meals || mealsForTier(tier, snack)).filter((m) => m.day === day);
 export const getPool = () => POOL;
 export const getIngredients = () => INGREDIENTS;
 
