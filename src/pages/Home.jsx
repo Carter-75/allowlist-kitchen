@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div className="mt-9 flex flex-wrap gap-x-8 gap-y-3">
             <p><span className="font-display text-3xl font-black">21</span> <span className="text-sm text-pine-50/75">meals a week</span></p>
-            <p><span className="font-display text-3xl font-black">{snack !== 'off' ? 11 : 10}</span> <span className="text-sm text-pine-50/75">ingredients, total</span></p>
+            <p><span className="font-display text-3xl font-black">{snack !== 'off' ? 13 : 12}</span> <span className="text-sm text-pine-50/75">ingredients, total</span></p>
             <p><span className="font-display text-3xl font-black">~{dayNut.kcal.toLocaleString()}</span> <span className="text-sm text-pine-50/75">calories a day on this plan</span></p>
             <p><span className="font-display text-3xl font-black">7</span> <span className="text-sm text-pine-50/75">days, then loop</span></p>
           </div>

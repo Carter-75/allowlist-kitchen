@@ -16,7 +16,9 @@ export const POOL = [
   { item: 'Kiwi', oz: 52.5, note: 'About 21 kiwis. The midday fruit, 7.5 oz per midday meal. Raised Nov 5, 2026 for fiber.' },
   { item: 'Avocado', oz: 56, note: 'About 14 avocados. The evening fruit, 8 oz per evening meal. Doubled Nov 5, 2026 for fiber: avocado carries most of the diet\'s fiber.' },
   { item: 'Cheese', oz: 10, note: 'Raw aged cheddar, 100% grass-fed: Dutch Meadows Dutch Reserve, the approved cheese in the database. See the cheese note on the Ingredients page.' },
-  { item: 'Beef tallow', oz: 4, note: 'US Wellness. The only cooking fat, and only at meals where the beef cooks.' },
+  { item: 'Beef tallow', oz: 2.5, note: 'US Wellness. The only cooking fat, and only at meals where the beef cooks.' },
+  { item: 'Einkorn sourdough', oz: 4, note: 'Homemade from Jovial organic einkorn flour. The only bread that passes: an old wheat leavened by a sourdough starter (einkorn flour and spring water), never commercial yeast. Every store bread checked is banned. 2 oz at each of the two subs.' },
+  { item: 'Cassava wraps', oz: 1.76, note: 'Siete cassava flour tortillas, approved in the checked database. 2 tortillas (1.76 oz) at the egg salad wraps.' },
   { item: 'Celtic sea salt', oz: null, note: 'On the beef while it cooks. No set weight.' },
   { item: 'Water', oz: null, note: 'Spring water in glass bottles only, still or sparkling. No set weight.' },
 ];
@@ -89,8 +91,20 @@ export const INGREDIENTS = [
     detail: 'The snack chip, and an approved one in the checked database: potatoes, avocado oil, sea salt, nothing else. One snack is 1 oz, about 20 thin chips, a sixth of the bag, so one bag covers six snacks. On the diet only when the snack switcher is on; the guacamole it dips into is that evening\'s avocado, mashed early. The kettle-cooked Boulder Canyon and Siete sea salt chips carry the same clean three-ingredient label and stand as backups.',
   },
   {
-    name: 'Beef tallow',
+    name: 'Einkorn sourdough',
     weeklyOz: 4,
+    source: 'Homemade from Jovial Organic Einkorn All-Purpose Flour',
+    detail: 'The bread rule from the checked database: wheat passes only as an old wheat (einkorn, emmer, spelt), and a wheat bread needs a sourdough base, never commercial yeast. Every store bread checked fails (enriched flour, seed oils, cane sugar, soy), so the bread is baked at home: Jovial organic einkorn flour, spring water, a starter of just flour and water, and Celtic sea salt. Bake one small loaf a week; 2 oz (two slices or a small roll) carries the guac burger sub and the meatball sub.',
+  },
+  {
+    name: 'Cassava wraps',
+    weeklyOz: 1.76,
+    source: 'Siete Cassava Flour Tortillas, 8 ct',
+    detail: 'Approved in the checked database: cassava flour, water, coconut flour, coconut oil, apple cider vinegar, sea salt, xanthan gum. Two tortillas (1.76 oz together) wrap the egg salad meal. The burrito-size version of the same brand is banned for coconut sugar, so it is the regular tortillas only.',
+  },
+  {
+    name: 'Beef tallow',
+    weeklyOz: 2.5,
     source: 'US Wellness Meats',
     detail: 'The only cooking fat on the diet. Used only where the beef cooks. Soups, the baked meatloaf, and the one no-beef meal use none.',
   },
@@ -98,13 +112,13 @@ export const INGREDIENTS = [
     name: 'Banana',
     weeklyOz: 28,
     source: 'Shipped in the fresh box, weighed',
-    detail: 'The morning fruit, at each of the 7 morning meals, on the side or cooked into the meal, like the banana pancakes. 4 oz at the 2,500 and 2,000 sizes, 3.5 oz (one small banana, weighed) at the 1,500 size.',
+    detail: 'The morning fruit, at each of the 7 morning meals, on the side or cooked into the meal, like the banana pancakes. Weighed: 4 oz at the 2,500 size, 2.5 oz at the 2,000 size, 3 oz at the 1,500 size. The smaller servings at the two smaller sizes are part of how those plans hold their calorie ranges.',
   },
   {
     name: 'Kiwi',
     weeklyOz: 52.5,
     source: 'Shipped in the fresh box, weighed',
-    detail: 'The midday fruit, at each of the 7 midday meals, always on the side. 7.5 oz (3 kiwis) at the 2,500 size, 5 oz (2 kiwis) at the smaller sizes. Raised from 5 oz on Nov 5, 2026 to lift the day\'s fiber at the full size.',
+    detail: 'The midday fruit, at each of the 7 midday meals, always on the side. 7.5 oz (3 kiwis) at the 2,500 size, 4 oz at the 2,000 size, 4.5 oz at the 1,500 size. Raised from 5 oz on Nov 5, 2026 to lift the day\'s fiber at the full size, then trimmed a little at the smaller sizes when the sandwiches joined.',
   },
   {
     name: 'Avocado',
@@ -137,10 +151,10 @@ export const MEALS = [
     description: 'Beef crumbled and scrambled with eggs in tallow, cheese folded in at the end. Sardines and kiwi on the side, coconut water to drink.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes', coconutWater: 8, psyllium: 1,
     steps: ['Brown the beef crumbles in tallow with salt, breaking them small.', 'Pour in the beaten eggs and scramble soft. Fold the cheese in off the heat.', 'Serve with the sardines and the kiwi on the side.', 'Stir the psyllium into the coconut water and drink it with the meal.'] },
-  { id: 'guac-burger-plate', day: 1, slot: 'Evening', name: 'Guac Burger Plate', minutes: 20,
-    description: 'A tallow-fried patty with avocado mashed with salt as the sauce, soft eggs over the top, sardines on the side. No cheese at this meal.',
-    beef: 4, egg: 3.5, sardines: 1, cheese: 0, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', ketchup: 1, oliveOil: 1,
-    steps: ['Mash the avocado with salt and the olive oil into a rough guacamole.', 'Fry the beef as one patty in tallow, salted as it cooks.', 'Cook the eggs soft in the same pan. Plate the patty, spoon the avocado over, top with the eggs, sardines on the side, and the ketchup for the patty.'] },
+  { id: 'guac-burger-plate', day: 1, slot: 'Evening', name: 'Guac Burger Sub', minutes: 20,
+    description: 'A tallow-fried patty on homemade einkorn sourdough with avocado mashed with salt as the sauce, soft eggs over the top, sardines on the side. No cheese at this meal. The bread is the diet\'s own: einkorn flour, spring water, sourdough starter, salt.',
+    beef: 4, egg: 3.5, sardines: 1, cheese: 0, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', ketchup: 1, oliveOil: 1, bread: 2,
+    steps: ['Mash the avocado with salt and the olive oil into a rough guacamole.', 'Toast the einkorn sourdough (2 oz, two slices or a small roll). Fry the beef as one patty in tallow, salted as it cooks.', 'Cook the eggs soft in the same pan. Set the patty on the bread, spoon the avocado over, top with the eggs, sardines on the side, and the ketchup for the patty.'] },
   { id: 'scotch-eggs', day: 2, slot: 'Morning', name: 'Scotch Eggs', minutes: 30,
     description: 'Eggs wrapped in beef and fried in tallow, a double tallow meal, with cheese melted over. Sardines and banana on the side.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'double',
@@ -149,10 +163,10 @@ export const MEALS = [
     description: 'A thin omelet is the wrap. Inside: tallow-seared beef, cheese, and sardine pieces. Kiwi on the side.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
     steps: ['Cook the beaten eggs as one thin omelet sheet in tallow and set it flat.', 'Sear the beef strips in tallow with salt. Break the sardines into pieces.', 'Fill the omelet with beef, cheese and sardines, roll it tight, and serve with the kiwi.'] },
-  { id: 'meatballs-avocado', day: 2, slot: 'Evening', name: 'Meatballs with Avocado', minutes: 25,
-    description: 'Beef meatballs fried in tallow with cheese grated over, avocado slices and sardines on the plate. The one meal of the week with no egg.',
-    beef: 4, egg: 0, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', ketchup: 1, flax: 0.5,
-    steps: ['Mix the ground flax into the beef, roll it into meatballs with salt, and fry them in tallow until browned through.', 'Grate the cheese over the hot meatballs so it melts into them.', 'Serve with the avocado slices, the sardines, and the ketchup for dipping.'] },
+  { id: 'meatballs-avocado', day: 2, slot: 'Evening', name: 'Meatball Sub', minutes: 25,
+    description: 'Beef meatballs on homemade einkorn sourdough with the cheese melted over them and the ketchup as the sauce, avocado slices tucked in, sardines on the side. The one sub of the week with no egg.',
+    beef: 4, egg: 0, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', ketchup: 1, flax: 0.5, bread: 2,
+    steps: ['Mix the ground flax into the beef, roll it into meatballs with salt, and fry them in tallow until browned through.', 'Toast the einkorn sourdough (2 oz, a small roll or two slices). Set the meatballs on it and lay the cheese over them so it melts in.', 'Spoon the ketchup over as the sauce, tuck in the avocado slices, and serve with the sardines.'] },
   { id: 'banana-pancakes-breakfast-patties', day: 3, slot: 'Morning', name: 'Banana Pancakes and Breakfast Patties', minutes: 25,
     description: 'Pancakes made from just banana and egg with wild blueberries folded in and raw honey drizzled over, griddled in tallow, next to beef breakfast patties with cheese melted on. Sardines on the side.',
     beef: 4, egg: 3.5, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'yes', blueberries: 2, honey: 2, flax: 0.5, psyllium: 1,
@@ -173,10 +187,10 @@ export const MEALS = [
     description: 'A double cheese meal: crisps from half the cheese, wild salmon mashed as a pate to scoop with them, plus a tallow beef patty and fried eggs. Kiwi on the side.',
     beef: 4, egg: 3.5, sardines: 0, salmon: 1, cheese: 1, fruit: 'Kiwi', fruitOz: 7.5, tallow: 'yes',
     mayo: 1, steps: ['Bake or fry small piles of the cheese until crisp and golden. Mash the salmon with the homemade mayo and a pinch of salt into a pate.', 'Fry the beef patty in tallow and fry the eggs in the same pan.', 'Serve the crisps and pate with the patty and eggs, kiwi on the side.'] },
-  { id: 'open-face-egg-salad-stack', day: 4, slot: 'Evening', name: 'Open-Face Egg Salad Stack', minutes: 25,
-    description: 'Chopped eggs and sardines mashed with avocado, stacked on tallow-seared patties with cheese melted under. A big plate to balance the light soup morning.',
-    beef: 4, egg: 5.25, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes',
-    mayo: 1, mustard: 1, steps: ['Sear thick beef patties in tallow with salt and melt the cheese on them.', 'Chop the cooked eggs and mash with the sardines, avocado, homemade mayo and mustard into an egg salad.', 'Stack the egg salad on the patties and serve.'] },
+  { id: 'open-face-egg-salad-stack', day: 4, slot: 'Evening', name: 'Egg Salad Wraps', minutes: 25,
+    description: 'Two cassava wraps filled with tallow-seared beef slices, chopped egg and sardine salad, melted cheese, and avocado. A big plate to balance the light soup morning, in the approved wrap.',
+    beef: 4, egg: 5.25, sardines: 1, cheese: 0.5, fruit: 'Avocado', fruitOz: 8, tallow: 'yes', wrap: 1.76,
+    mayo: 1, mustard: 1, steps: ['Sear the beef in tallow with salt and slice it thick. Melt the cheese over the slices.', 'Chop the cooked eggs and mash with the sardines, avocado, homemade mayo and mustard into an egg salad.', 'Warm the two cassava wraps until soft, fill them with the beef, cheese, and egg salad, roll them tight, and serve.'] },
   { id: 'the-no-beef-meal', day: 5, slot: 'Morning', name: 'The No-Beef Meal', minutes: 15,
     description: 'The one meal with no beef and no tallow: eggs, sardines, and cheese crisps, with banana. Its beef moves to tonight\'s meatloaf.',
     beef: 0, egg: 5.25, sardines: 1, cheese: 0.5, fruit: 'Banana', fruitOz: 4, tallow: 'no',
@@ -233,15 +247,16 @@ export const MEALS = [
 // descriptions, and steps in the overrides below.
 // Label-checked daily averages (rebuilt Nov 6, 2026 with the approved raw
 // cheddar in place of the never-approved mozzarella, Bob's Red Mill flax
-// label values, and exact product prices): 2,500 plan: 2,615 cal, 143g
-// protein, 188g fat, 102g carbs, 31.2g fiber. 2,000 plan: 2,134 cal, 125g
-// protein, 150g fat, 81g carbs, 23.0g fiber. 1,500 plan: 1,582 cal, 92g
-// protein, 105g fat, 76g carbs, 21.1g fiber. Protein holds at about 23% of
-// calories at the two smaller sizes and 22% at the full size. The cheddar
-// swap pushed the two smaller sizes up, so their tallow pools trimmed to
-// 1.5 oz (1,500) and 1 oz (2,000) to stay inside Carter's ranges.
+// label values, and exact product prices; rebalanced the same day when the
+// sandwiches joined: two subs on homemade einkorn sourdough, one meal in
+// cassava wraps): 2,500 plan: 2,614 cal, 145g protein, 183g fat, 112g
+// carbs, 32.1g fiber. 2,000 plan: 2,127 cal, 126g protein, 149g fat, 81g
+// carbs, 22.3g fiber. 1,500 plan: 1,578 cal, 94g protein, 102g fat, 81g
+// carbs, 21.1g fiber. The carriers' calories are offset by smaller tallow
+// pools (2.5 oz at 2,500, 0.5 oz at the two smaller sizes) and, at the
+// smaller sizes, a small banana and kiwi trim (TIER_FRUIT_TRIM).
 export const PLAN_TIERS = [1500, 2000, 2500];
-export const TIER_TALLOW_OZ = { 1500: 1.5, 2000: 1, 2500: 4 };
+export const TIER_TALLOW_OZ = { 1500: 0.5, 2000: 0.5, 2500: 2.5 };
 
 // The snack (Carter's addition, Nov 6, 2026): guac and chips, on its own
 // switcher in the header, daily or every other day (Days 1, 3, 5, 7). One
@@ -254,9 +269,10 @@ export const TIER_TALLOW_OZ = { 1500: 1.5, 2000: 1, 2500: 4 };
 // the label data for each plan size and frequency: a smaller tallow pool,
 // less banana and kiwi, and at the daily setting on the two smaller sizes,
 // a quarter ounce less cheese at some meals and one egg fewer at three
-// two-egg meals. With the trims, the snack days land at 2,615 (2,500,
-// both frequencies), 2,142 daily and 2,136 every other day (2,000), and
-// 1,590 daily and 1,584 every other day (1,500).
+// two-egg meals. With the trims, the snack days land at 2,616 every other
+// day and 2,614 daily (2,500), 2,128 and 2,132 (2,000), and 1,580 at both
+// frequencies (1,500), against snack-off days of 2,614, 2,127, and 1,578.
+// The trims were re-solved Nov 6, 2026 when the sandwiches joined the week.
 export const SNACK_DAYS = { eod: [1, 3, 5, 7], daily: [1, 2, 3, 4, 5, 6, 7] };
 export const SNACK = {
   chipsOz: 1,
@@ -273,16 +289,16 @@ export const SNACK = {
 };
 export const SNACK_TRIMS = {
   2500: {
-    eod: { tallowOz: 2.5, fruitTrim: 1, eggCuts: [], cheeseCuts: [] },
-    daily: { tallowOz: 2, fruitTrim: 2, eggCuts: [], cheeseCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble', 'scotch-eggs'] },
+    eod: { tallowOz: 2.5, fruitTrim: 2, eggCuts: ['smash-patties-fried-eggs'], cheeseCuts: [] },
+    daily: { tallowOz: 1, fruitTrim: 2, eggCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble', 'guac-burger-plate'], cheeseCuts: [] },
   },
   2000: {
-    eod: { tallowOz: 0.5, fruitTrim: 2, eggCuts: [], cheeseCuts: ['smash-patties-fried-eggs'] },
-    daily: { tallowOz: 0.5, fruitTrim: 2, eggCuts: ['scotch-eggs', 'deviled-eggs-patty', 'open-face-egg-salad-stack'], cheeseCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble', 'scotch-eggs', 'egg-wrap-burrito', 'meatballs-avocado', 'banana-pancakes-breakfast-patties', 'beef-pizza', 'deviled-eggs-patty', 'egg-drop-beef-soup', 'cheese-crisps-sardine-pate'] },
+    eod: { tallowOz: 0.5, fruitTrim: 2, eggCuts: ['scotch-eggs', 'deviled-eggs-patty', 'open-face-egg-salad-stack', 'the-no-beef-meal'], cheeseCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble'] },
+    daily: { tallowOz: 0.5, fruitTrim: 2, eggCuts: ['scotch-eggs', 'deviled-eggs-patty', 'open-face-egg-salad-stack', 'the-no-beef-meal'], cheeseCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble', 'scotch-eggs', 'egg-wrap-burrito', 'meatballs-avocado', 'banana-pancakes-breakfast-patties', 'beef-pizza', 'deviled-eggs-patty', 'egg-drop-beef-soup', 'cheese-crisps-sardine-pate', 'open-face-egg-salad-stack', 'the-no-beef-meal', 'cheese-stuffed-beef-rolls', 'loaded-omelet', 'sardine-beef-cakes', 'meatball-soup', 'egg-muffins', 'fried-rice-plate', 'the-diner-plate'] },
   },
   1500: {
-    eod: { tallowOz: 1, fruitTrim: 2, eggCuts: [], cheeseCuts: ['smash-patties-fried-eggs'] },
-    daily: { tallowOz: 1, fruitTrim: 2, eggCuts: ['deviled-eggs-patty', 'open-face-egg-salad-stack', 'the-no-beef-meal'], cheeseCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble', 'scotch-eggs', 'egg-wrap-burrito', 'meatballs-avocado', 'banana-pancakes-breakfast-patties', 'beef-pizza', 'deviled-eggs-patty', 'egg-drop-beef-soup', 'cheese-crisps-sardine-pate'] },
+    eod: { tallowOz: 0.5, fruitTrim: 2, eggCuts: ['deviled-eggs-patty', 'open-face-egg-salad-stack', 'the-no-beef-meal'], cheeseCuts: ['smash-patties-fried-eggs'] },
+    daily: { tallowOz: 0.5, fruitTrim: 2, eggCuts: ['deviled-eggs-patty', 'open-face-egg-salad-stack', 'the-no-beef-meal'], cheeseCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble', 'scotch-eggs', 'egg-wrap-burrito', 'meatballs-avocado', 'banana-pancakes-breakfast-patties', 'beef-pizza', 'deviled-eggs-patty', 'egg-drop-beef-soup', 'cheese-crisps-sardine-pate', 'open-face-egg-salad-stack', 'the-no-beef-meal', 'cheese-stuffed-beef-rolls', 'loaded-omelet', 'sardine-beef-cakes', 'meatball-soup', 'egg-muffins', 'fried-rice-plate', 'the-diner-plate'] },
   },
 };
 
@@ -292,7 +308,7 @@ function snackMeal(day) {
     description: SNACK.description, steps: SNACK.steps, minutes: 5,
     beef: 0, egg: 0, sardines: 0, salmon: 0, cheese: 0,
     fruit: 'Avocado', fruitOz: SNACK.guacOz, chips: SNACK.chipsOz,
-    blueberries: 0, broccoli: 0, flax: 0, broth: 0, tallow: 'no',
+    blueberries: 0, broccoli: 0, flax: 0, broth: 0, bread: 0, wrap: 0, tallow: 'no',
     coconutWater: 0, ketchup: 0, mayo: 0, mustard: 0, honey: 0, oliveOil: 0, pickles: 0, psyllium: 0,
   };
 }
@@ -337,9 +353,9 @@ export const TIER_OVERRIDES = {
     'beef-egg-scramble': { beef: 0, egg: 1.75, fruitOz: 5, tallow: 'no', name: 'Egg and Cheese Scramble',
       description: 'Eggs scrambled soft with cheese folded in at the end. Sardines and kiwi on the side, coconut water to drink.',
       steps: ['Cook the beaten eggs in a dry pan, stirring soft, with salt.', 'Fold the cheese in off the heat.', 'Serve with the sardines and the kiwi on the side.', 'Stir the psyllium into the coconut water and drink it with the meal.'] },
-    'guac-burger-plate': { beef: 0, egg: 1.75, fruitOz: 4, tallow: 'no', name: 'Guac and Eggs Plate',
-      description: 'Avocado mashed with salt and olive oil as the sauce, spooned over soft eggs, sardines on the side. No cheese at this meal.',
-      steps: ['Mash the avocado with salt and the olive oil into a rough guacamole.', 'Cook the eggs soft in a dry pan.', 'Plate the eggs, spoon the avocado over, sardines on the side, and the ketchup for the eggs.'] },
+    'guac-burger-plate': { beef: 0, egg: 1.75, fruitOz: 4, tallow: 'no', name: 'Guac and Egg Sub',
+      description: 'Avocado mashed with salt and olive oil as the sauce, spread on homemade einkorn sourdough under a soft egg, sardines on the side. No cheese at this meal.',
+      steps: ['Toast the einkorn sourdough (2 oz, two slices or a small roll).', 'Mash the avocado with salt and the olive oil into a rough guacamole and spread it thick on the toast.', 'Cook the egg soft in a dry pan, set it over the guac, sardines on the side, and the ketchup for the egg.'] },
     'scotch-eggs': { beef: 4, egg: 1.75, fruitOz: 3.5, name: 'Scotch Egg',
       description: 'An egg wrapped in beef and fried in tallow, a double tallow meal, with cheese melted over. Sardines and banana on the side.',
       steps: ['Boil the egg until just set, cool and peel it.', 'Flatten the beef into a sheet, salt, and wrap the egg fully. Fry in a double share of tallow, turning until crisp all over.', 'Melt the cheese over the top. Serve with the sardines and the banana.'] },
@@ -361,8 +377,8 @@ export const TIER_OVERRIDES = {
       description: 'A double cheese meal: crisps from half the cheese, wild salmon mashed as a pate to scoop with them, plus fried eggs. Kiwi on the side.',
       steps: ['Bake or fry small piles of the cheese until crisp and golden. Mash the salmon with the homemade mayo and a pinch of salt into a pate.', 'Fry the eggs in a dry pan.', 'Serve the crisps and pate with the eggs, kiwi on the side.'] },
     'open-face-egg-salad-stack': { beef: 0, egg: 3.5, fruitOz: 4, tallow: 'no',
-      description: 'Chopped eggs and sardines mashed with avocado, stacked on cheese crisps. A big plate to balance the light soup morning.',
-      steps: ['Crisp the cheese into crisps in a dry pan.', 'Chop the cooked eggs and mash with the sardines, avocado, homemade mayo and mustard into an egg salad.', 'Stack the egg salad on the crisps and serve.'] },
+      description: 'Chopped eggs and sardines mashed with avocado in two cassava wraps, cheese crisps on the side. A big plate to balance the light soup morning.',
+      steps: ['Crisp the cheese into crisps in a dry pan.', 'Chop the cooked eggs and mash with the sardines, avocado, homemade mayo and mustard into an egg salad.', 'Warm the two cassava wraps until soft, fill them with the egg salad, roll them, and serve with the cheese crisps.'] },
     'the-no-beef-meal': { egg: 3.5, fruitOz: 3.5 },
     'cheese-stuffed-beef-rolls': { beef: 4, egg: 1.75, fruitOz: 5 },
     'mini-meatloaf': { beef: 8, egg: 1.75, fruitOz: 4,
@@ -388,11 +404,25 @@ export const TIER_OVERRIDES = {
 
 const TALLOW_UNIT_MAP = { yes: 1, double: 2, light: 0.5, no: 0 };
 
+// The sandwiches (added Nov 6, 2026 at Carter's request): two evening meals
+// ride on homemade einkorn sourdough and one on cassava wraps. The carriers
+// add about 376 calories a week, so the base plans trim banana and kiwi a
+// little (avocado is never trimmed, it carries the fiber) to hold the same
+// daily averages. Values solved against the label data; see the solver note
+// in the plan comment above.
+export const TIER_FRUIT_TRIM = { 1500: 0.5, 2000: 1, 2500: 0 };
+
 // The 21 meals at one plan size, with each meal's tallow share in ounces
 // resolved from that size's tallow pool.
 export function mealsForTier(tier = 2500, snack = 'off') {
   const overrides = TIER_OVERRIDES[tier] || {};
   const merged = MEALS.map((m) => ({ ...m, ...(overrides[m.id] || {}) }));
+  const baseFruitTrim = TIER_FRUIT_TRIM[tier] || 0;
+  if (baseFruitTrim) {
+    for (const m of merged) {
+      if (m.fruit === 'Banana' || m.fruit === 'Kiwi') m.fruitOz = Math.max(2, m.fruitOz - baseFruitTrim);
+    }
+  }
   let tallowOz = TIER_TALLOW_OZ[tier] ?? 4;
   if (snack !== 'off' && SNACK_TRIMS[tier] && SNACK_TRIMS[tier][snack]) {
     const trims = SNACK_TRIMS[tier][snack];
@@ -439,6 +469,8 @@ export function planRates(tier = 2500, snack = 'off') {
     avocadoPerMeal: (meals.find((m) => m.fruit === 'Avocado') || {}).fruitOz,
     tallowOz: sum((m) => m.tallowOz),
     chipsOz: sum((m) => m.chips),
+    breadOz: sum((m) => m.bread),
+    wrapOz: sum((m) => m.wrap),
     coconutOz: sum((m) => m.coconutWater),
     ketchup: sum((m) => m.ketchup),
     mayo: sum((m) => m.mayo),
@@ -475,6 +507,8 @@ export function poolForTier(tier = 2500, snack = 'off') {
     row('Avocado', r.avocadoOz, `About ${Math.round(r.avocadoOz / 4)} avocados. The evening fruit, ${fmtOz(r.avocadoPerMeal)} oz per evening meal. Avocado carries most of the diet's fiber.`),
     row('Cheese', r.cheeseOz),
     row('Beef tallow', r.tallowOz),
+    { item: 'Einkorn sourdough', oz: r.breadOz, note: 'Homemade from Jovial organic einkorn flour. The only bread that passes: an old wheat leavened by a sourdough starter, never commercial yeast. Every store bread checked is banned. 2 oz at each of the two subs.' },
+    { item: 'Cassava wraps', oz: r.wrapOz, note: 'Siete cassava flour tortillas, approved in the checked database. 2 tortillas at the egg salad wraps.' },
     ...(snack !== 'off' ? [{ item: 'Potato chips', oz: r.chipsOz, note: `Boulder Canyon Thin & Crispy Classic Sea Salt. The snack: 1 oz (about 20 chips) with 3 oz of guacamole, ${snack === 'daily' ? 'every day' : 'on Days 1, 3, 5 and 7'}. The guacamole avocado comes out of that day's evening meal, so the avocado row above does not change.` }] : []),
     row('Celtic sea salt', null),
     row('Water', null),
@@ -491,6 +525,7 @@ export function ingredientsForTier(tier = 2500, snack = 'off') {
     'Broccoli (cooked)': r.broccoliOz, 'Coconut water': r.coconutOz,
     'Ground flaxseed': r.flaxOz, 'Beef bone broth': r.brothOz, 'Cheese': r.cheeseOz,
     'Beef tallow': r.tallowOz, 'Banana': r.bananaOz, 'Kiwi': r.kiwiOz, 'Avocado': r.avocadoOz,
+    'Einkorn sourdough': r.breadOz, 'Cassava wraps': r.wrapOz,
   };
   return INGREDIENTS
     .filter((ing) => snack !== 'off' || ing.name !== 'Potato chips')
@@ -535,6 +570,8 @@ export const BUY = {
   'Psyllium husk': { label: 'Swanson (Yerba Prima psyllium husks powder)', url: 'https://www.swansonvitamins.com/p/yerba-prima-psyllium-husks-powder-12-oz-pwdr' },
   'Beef bone broth': { label: 'Seven Sons Farms (beef soup bones)', url: 'https://sevensons.net/store/product/beef-soup-bones' },
   'Potato chips': { label: "Woodman's (Boulder Canyon Thin & Crispy, 6 oz bag)", url: wm('Boulder Canyon Thin & Crispy') },
+  'Einkorn sourdough': { label: 'Vitacost (Jovial organic einkorn flour, 32 oz)', url: 'https://www.vitacost.com/products/jovial-organic-einkorn-all-purpose-flour-32-oz-907-g-156950' },
+  'Cassava wraps': { label: "Woodman's (Siete cassava flour tortillas, 8 ct)", url: wm('Siete Cassava Flour Tortillas') },
 };
 
 // Estimated costs. Prices checked November 6, 2026 against the exact
@@ -554,6 +591,8 @@ export const PRICE = {
   cheesePerOz: 1.25,            // raw cheddar priced from Organic Valley Grassmilk raw sharp, $9.99 per 8 oz at retail (Dutch Meadows price is account-only)
   tallowPerOz: 17.46 / 27.2,    // US Wellness small pail, $17.46 per 1.7 lb
   chipsPerOz: 2.99 / 6,         // Boulder Canyon Thin & Crispy, $2.99 per 6 oz bag at Woodman's
+  breadPerOz: (10.59 / 32) * 0.68, // Jovial organic einkorn flour, $10.59 per 32 oz at Vitacost; finished sourdough is about 68% flour by weight
+  wrapPerOz: 9.17 / 7,          // Siete cassava tortillas, about $9.17 per 7 oz pack (the Siete store 6-pack is $55)
   fruitPerOz: { Banana: 0.35 / 4, Kiwi: 0.70 / 2.5, Avocado: 1.25 / 4 }, // typical Woodman's piece prices
 };
 export const PRICE_BASIS = [
@@ -577,6 +616,8 @@ export const PRICE_BASIS = [
   'Ground flaxseed: Bob\'s Red Mill Organic Golden Flaxseed Meal, $7.06 for 16 oz at Vitacost, about $0.44 an ounce. 2 oz a week. Psyllium husk: Yerba Prima powder, $22 for 12 oz at Swanson, about $0.32 a tablespoon, 4 tablespoons a week.',
   'Beef bone broth: homemade from Seven Sons Farms beef soup bones, $25.50 for about 3 lb; one pack simmers into roughly 160 oz of broth, about $0.16 an ounce. 32 oz a week.',
   'Potato chips (only when the snack is on): Boulder Canyon Thin & Crispy Classic Sea Salt, $2.99 for the 6 oz bag at Woodman\'s, about $0.50 an ounce. 1 oz per snack.',
+  'Einkorn sourdough: homemade from Jovial organic einkorn flour, $10.59 for 32 oz at Vitacost. A finished loaf is about 68% flour by weight after the water and the bake, so the bread runs about $0.23 an ounce. 4 oz a week, 2 oz at each sub.',
+  'Cassava wraps: Siete cassava flour tortillas, about $9.17 for the 7 oz pack of 8 (the Siete store sells a 6-pack for $55). 2 tortillas (1.76 oz) a week.',
 ];
 
 const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
@@ -601,6 +642,12 @@ export const TALLOW_TOTAL_UNITS = MEALS.reduce((s, m) => s + TALLOW_UNITS[m.tall
 //   4g fiber per 2 Tbsp (13g) serving, converted to per-ounce.
 // - Chips: Boulder Canyon Thin & Crispy label, 170 kcal, 3g protein, 10g
 //   fat, 16g carbs, 1g fiber per ounce.
+// - Sourdough: Jovial einkorn flour label (100 kcal, 4g protein, 20g carbs,
+//   0.5g fat per 30 g) carried through the loaf math: a 100/65/2
+//   flour/water/salt dough with about 12% bake loss is about 68% flour by
+//   finished weight, so the bread runs about 64 kcal an ounce.
+// - Wraps: Siete cassava tortilla label, 120 kcal, 3g fat, 24g carbs, 4g
+//   fiber, 1g protein per 2 tortillas (50 g), converted to per-ounce.
 // - Tallow, produce, and broccoli: USDA reference values per 100g.
 export const NUTRITION_PER_OZ = {
   beef: { kcal: 82, protein: 4.94, fat: 6.73, carbs: 0.43, fiber: 0 },
@@ -613,6 +660,8 @@ export const NUTRITION_PER_OZ = {
   broccoli: { kcal: 9.9, protein: 0.67, fat: 0.12, carbs: 2.04, fiber: 0.94 },
   cheese: { kcal: 115, protein: 7.0, fat: 9.5, carbs: 0.4, fiber: 0 },
   chips: { kcal: 170, protein: 3, fat: 10, carbs: 16, fiber: 1 },
+  bread: { kcal: 64, protein: 2.6, fat: 0.3, carbs: 12.9, fiber: 0.6 },
+  wrap: { kcal: 68, protein: 0.6, fat: 1.7, carbs: 13.6, fiber: 2.3 },
   tallow: { kcal: 255, protein: 0, fat: 28.35, carbs: 0, fiber: 0 },
   fruit: {
     Banana: { kcal: 25.2, protein: 0.31, fat: 0.09, carbs: 6.47, fiber: 0.74 },
@@ -685,6 +734,8 @@ export function mealNutrition(m) {
     [NUTRITION_PER_OZ.broccoli, m.broccoli || 0],
     [NUTRITION_PER_OZ.cheese, m.cheese],
     [NUTRITION_PER_OZ.chips, m.chips || 0],
+    [NUTRITION_PER_OZ.bread, m.bread || 0],
+    [NUTRITION_PER_OZ.wrap, m.wrap || 0],
     [NUTRITION_PER_OZ.fruit[m.fruit], m.fruitOz],
     [NUTRITION_PER_OZ.tallow, tallowOz],
   ];
@@ -731,6 +782,8 @@ export function mealCost(m) {
     + (m.broccoli || 0) * PRICE.broccoliPerOz
     + m.cheese * PRICE.cheesePerOz
     + (m.chips || 0) * PRICE.chipsPerOz
+    + (m.bread || 0) * PRICE.breadPerOz
+    + (m.wrap || 0) * PRICE.wrapPerOz
     + m.fruitOz * PRICE.fruitPerOz[m.fruit]
     + tallowOz * PRICE.tallowPerOz
     + condimentCost(m);
@@ -754,6 +807,8 @@ export function ingredientWeekCost(key, meals = mealsForTier(2500)) {
     'Kiwi': sum((m) => (m.fruit === 'Kiwi' ? m.fruitOz : 0)) * PRICE.fruitPerOz.Kiwi,
     'Avocado': sum((m) => (m.fruit === 'Avocado' ? m.fruitOz : 0)) * PRICE.fruitPerOz.Avocado,
     'Potato chips': sum((m) => m.chips) * PRICE.chipsPerOz,
+    'Einkorn sourdough': sum((m) => m.bread) * PRICE.breadPerOz,
+    'Cassava wraps': sum((m) => m.wrap) * PRICE.wrapPerOz,
     'Celtic sea salt': 0,
     'Water': 0,
     'Ketchup': sum((m) => m.ketchup) * CONDIMENT_PRICE.ketchup,
@@ -917,6 +972,8 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500, snack = 'off') {
     `Psyllium husk: ${psylliumUsed} tbsp`,
     `Cheese: ${fmtOz(cheeseUsedOz)} oz`,
     `Beef tallow: ${fmtOz(tallowUsedOz)} oz`,
+    `Einkorn sourdough: ${fmtOz(weeks * r.breadOz)} oz of bread (from ${fmtOz(weeks * r.breadOz * 0.68)} oz of einkorn flour)`,
+    `Cassava wraps: ${fmtOz(weeks * r.wrapOz)} oz (2 tortillas a week)`,
     `Fruit: about ${Math.round((weeks * r.bananaOz) / 4)} bananas, ${Math.round((weeks * r.kiwiOz) / 2.5)} kiwis, ${Math.round((weeks * r.avocadoOz) / 4)} avocados`,
     `Condiments: ${ketchupUsed} tbsp ketchup, ${mayoUsed} tbsp homemade mayo, ${mustardUsed} tsp mustard, ${honeyUsed} tsp raw honey, ${oliveOilUsed} tsp olive oil, ${pickleSpearsUsed} pickle spears`,
   ];
@@ -972,6 +1029,12 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500, snack = 'off') {
       ],
     },
   ];
+  const flourBags = Math.ceil((weeks * r.breadOz * 0.68) / 32);
+  const wrapPacks = Math.ceil((weeks * r.wrapOz) / 7);
+  {
+    const pantry = sources.find((x) => x.shipper.startsWith('Pantry'));
+    pantry.items.push(`Einkorn flour for the sourdough: ${flourBags} bag${flourBags === 1 ? '' : 's'} of Jovial organic einkorn (32 oz each) = ${flourBags * 32} oz for ${fmtOz(weeks * r.breadOz * 0.68)} oz of flour across the block; the bread is baked at home, one small loaf a week. Siete cassava flour tortillas: ${wrapPacks} packs (7 oz, 8 ct) = ${wrapPacks * 7} oz for ${fmtOz(weeks * r.wrapOz)} oz of wraps; they freeze well between blocks.`);
+  }
   if (snack !== 'off') {
     const chipBags = Math.ceil((weeks * r.chipsOz) / SNACK.bagOz);
     const pantry = sources.find((x) => x.shipper.startsWith('Pantry'));
@@ -1085,6 +1148,8 @@ export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, sn
     const mayoBatches = Math.ceil((blockWeeks * r.mayo) / 17);
     const pickleJars = Math.ceil((blockWeeks * r.pickles) / 32);
     const honeyJars = Math.ceil((blockWeeks * r.honey) / 50);
+    const flourBags = Math.ceil((blockWeeks * r.breadOz * 0.68) / 32);
+    const wrapPacks = Math.ceil((blockWeeks * r.wrapOz) / 7);
     add(w, 'Pantry bulk shipment', `Once per ${blockWeeks}-week block`, [
       `King Oscar sardines in water: ${sardineCases} cases of 12 (${sardineCases * 12} tins)`,
       `Wild Planet wild sockeye salmon: ${salmonCans} cans (6 oz)`,
@@ -1098,6 +1163,8 @@ export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, sn
       `Bubbies Kosher Dill pickles: ${pickleJars} jars`,
       'Lowensenf Extra Hot mustard, Celtic sea salt, Simply Organic spices (paprika, cinnamon, turmeric, ginger, garlic powder, onion powder, black pepper): 1 each, they cover many blocks',
       'Glass-bottle spring water (Mountain Valley / Saratoga / S.Pellegrino / Lauretana): cases as needed',
+      `Jovial organic einkorn flour: ${flourBags} bag${flourBags === 1 ? '' : 's'} (32 oz) for the homemade sourdough`,
+      `Siete cassava flour tortillas: ${wrapPacks} packs (7 oz, 8 ct)`,
     ]);
     if (snack !== 'off') {
       const chipBags = Math.ceil((blockWeeks * r.chipsOz) / SNACK.bagOz);

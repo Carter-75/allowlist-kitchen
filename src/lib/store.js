@@ -14,9 +14,9 @@ export const getIngredients = () => INGREDIENTS;
 const EGG_PRACTICAL = { 1.75: '1 egg', 3.5: '2 eggs', 5.25: '3 eggs' };
 const CHEESE_PRACTICAL = { 0.5: 'a thumb-sized piece', 1: 'two thumb-sized pieces' };
 const FRUIT_PRACTICAL = {
-  Banana: { 4: '1 banana', 3.5: '1 small banana' },
-  Kiwi: { 7.5: '3 kiwis', 5: '2 kiwis' },
-  Avocado: { 8: '2 small avocados', 5: '1 avocado and a half', 4: '1 avocado' },
+  Banana: { 4: '1 banana', 3: '1 small banana', 2.5: 'about 2/3 of a banana, weighed', 2: 'about half a banana, weighed' },
+  Kiwi: { 7.5: '3 kiwis', 5.5: 'about 2 kiwis', 5: '2 kiwis', 4.5: 'about 2 kiwis', 4: 'about 1 1/2 kiwis', 2.5: '1 kiwi', 2: '1 small kiwi' },
+  Avocado: { 8: '2 small avocados', 5: '1 avocado and a half', 4: '1 avocado', 2: 'half an avocado', 1: 'a quarter of an avocado' },
 };
 const BEEF_PRACTICAL = { 4: '1/4 lb', 8: '1/2 lb' };
 
@@ -28,6 +28,8 @@ export function mealIngredients(meal) {
   if (meal.salmon) rows.push({ item: 'Wild sockeye salmon', oz: meal.salmon, practical: '1 oz of canned wild sockeye', buy: BUY['Wild sockeye salmon'] });
   if (meal.cheese > 0) rows.push({ item: 'Cheese', oz: meal.cheese, practical: CHEESE_PRACTICAL[meal.cheese] || 'weighed', buy: BUY['Cheese'] });
   if (meal.chips) rows.push({ item: 'Potato chips', oz: meal.chips, practical: 'about 20 thin chips, a sixth of the bag', buy: BUY['Potato chips'] });
+  if (meal.bread) rows.push({ item: 'Einkorn sourdough', oz: meal.bread, practical: '2 slices, or a small roll, homemade', buy: BUY['Einkorn sourdough'] });
+  if (meal.wrap) rows.push({ item: 'Cassava wraps', oz: meal.wrap, practical: '2 tortillas', buy: BUY['Cassava wraps'] });
   rows.push({ item: meal.fruit, oz: meal.fruitOz, practical: meal.chips ? 'mashed into guacamole with salt and lemon' : ((FRUIT_PRACTICAL[meal.fruit] || {})[meal.fruitOz] || 'weighed'), buy: BUY[meal.fruit] });
   if (meal.blueberries) rows.push({ item: 'Wild blueberries', oz: meal.blueberries, practical: 'a small handful', buy: BUY['Wild blueberries'] });
   if (meal.broccoli) rows.push({ item: 'Broccoli (cooked)', oz: meal.broccoli, practical: 'a small pile, steamed', buy: BUY['Broccoli (cooked)'] });
