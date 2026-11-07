@@ -30,3 +30,36 @@ export function useTier() {
 }
 
 export { PLAN_TIERS };
+
+// The snack setting (guac and chips): off, every other day, or daily.
+// Same pattern as the plan size: remembered in localStorage, shared across
+// every page through a window event.
+const SNACK_KEY = 'goddiet-snack';
+export const SNACK_EVENT = 'goddiet-snack-change';
+export const SNACK_MODES = [
+  { id: 'off', label: 'Off' },
+  { id: 'eod', label: 'Every other day' },
+  { id: 'daily', label: 'Daily' },
+];
+
+export function getSnack() {
+  try {
+    const v = window.localStorage.getItem(SNACK_KEY);
+    return SNACK_MODES.some((m) => m.id === v) ? v : 'eod';
+  } catch { return 'eod'; }
+}
+
+export function setSnack(v) {
+  try { window.localStorage.setItem(SNACK_KEY, v); } catch { /* private mode */ }
+  window.dispatchEvent(new CustomEvent(SNACK_EVENT, { detail: v }));
+}
+
+export function useSnack() {
+  const [snack, set] = useState(getSnack);
+  useEffect(() => {
+    const onChange = (e) => set(typeof e.detail === 'string' ? e.detail : getSnack());
+    window.addEventListener(SNACK_EVENT, onChange);
+    return () => window.removeEventListener(SNACK_EVENT, onChange);
+  }, []);
+  return snack;
+}

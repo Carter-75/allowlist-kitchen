@@ -7,6 +7,7 @@ const SLOT_TINT = {
   Morning: 'bg-amber-100 text-amber-900',
   Midday: 'bg-lime-100 text-lime-900',
   Evening: 'bg-orange-100 text-orange-900',
+  Snack: 'bg-sky-100 text-sky-900',
 };
 
 export default function MealTile({ meal }) {
@@ -25,6 +26,7 @@ export default function MealTile({ meal }) {
           {meal.sardines > 0 && <span className="rounded-full bg-paper px-2 py-1">Sardines {meal.sardines} oz</span>}
           {meal.salmon > 0 && <span className="rounded-full bg-paper px-2 py-1">Salmon {meal.salmon} oz</span>}
           {meal.cheese > 0 && <span className="rounded-full bg-paper px-2 py-1">Cheese {meal.cheese} oz</span>}
+          {meal.chips > 0 && <span className="rounded-full bg-paper px-2 py-1">Chips {meal.chips} oz</span>}
           <span className="rounded-full bg-paper px-2 py-1">{meal.fruit} {meal.fruitOz} oz</span>
         </div>
         <div className="mt-4 flex items-center gap-4 text-xs font-medium text-ink/55">

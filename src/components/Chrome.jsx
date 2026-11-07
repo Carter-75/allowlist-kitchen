@@ -2,7 +2,26 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Beef, Menu, X } from 'lucide-react';
 import { SITE, TAGLINE } from '../lib/store';
-import { PLAN_TIERS, setTier, useTier } from '../lib/plan';
+import { PLAN_TIERS, SNACK_MODES, setSnack, setTier, useSnack, useTier } from '../lib/plan';
+
+export function SnackSwitcher({ dark = false }) {
+  const snack = useSnack();
+  return (
+    <div className="flex items-center gap-1.5" role="group" aria-label="Snack">
+      <span className={`text-[11px] font-bold uppercase tracking-wide ${dark ? 'text-pine-50/70' : 'text-ink/50'}`}>Snack</span>
+      {SNACK_MODES.map((m) => (
+        <button
+          key={m.id}
+          onClick={() => setSnack(m.id)}
+          aria-pressed={snack === m.id}
+          className={`rounded-full px-3 py-1 text-xs font-bold transition ${snack === m.id ? 'bg-pine-800 text-white' : dark ? 'bg-white/10 text-white hover:bg-white/20' : 'bg-ink/5 text-ink/70 hover:bg-ink/10'}`}
+        >
+          {m.label}
+        </button>
+      ))}
+    </div>
+  );
+}
 
 export function PlanSwitcher({ dark = false }) {
   const tier = useTier();
@@ -55,9 +74,12 @@ export function Header() {
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
-        <div className="flex items-center justify-between gap-3 border-t border-ink/5 py-2">
-          <span className="text-[11px] font-semibold text-ink/50">Same 21 meals, three sizes. Pick yours:</span>
-          <PlanSwitcher />
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 border-t border-ink/5 py-2">
+          <span className="text-[11px] font-semibold text-ink/50">Same 21 meals, three sizes, one optional snack. Pick yours:</span>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <SnackSwitcher />
+            <PlanSwitcher />
+          </div>
         </div>
         {open && (
           <nav className="flex flex-col gap-1 pb-4 md:hidden">

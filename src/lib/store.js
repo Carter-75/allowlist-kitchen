@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
-import { MEALS, POOL, INGREDIENTS, BUY, DAY_NUTRITION, TALLOW_TSP, TIER_TALLOW_OZ, dayNutrition, mealCost, mealsForTier, money } from '../data/godDiet';
+import { MEALS, POOL, INGREDIENTS, BUY, DAY_NUTRITION, SNACK_TRIMS, TALLOW_TSP, TIER_TALLOW_OZ, dayNutrition, mealCost, mealsForTier, money } from '../data/godDiet';
 
 export const SITE = 'The God Diet';
 export const TAGLINE = 'One weekly pool. 21 meals. Nothing else.';
 export const EMAIL = 'cartermoyer75@gmail.com';
 
 export const allMeals = MEALS;
-export const mealById = (id, tier = 2500) => mealsForTier(tier).find((m) => m.id === id) || null;
-export const mealsForDay = (day, tier = 2500) => mealsForTier(tier).filter((m) => m.day === day);
+export const mealById = (id, tier = 2500, snack = 'off') => mealsForTier(tier, snack).find((m) => m.id === id) || null;
+export const mealsForDay = (day, tier = 2500, snack = 'off') => mealsForTier(tier, snack).filter((m) => m.day === day);
 export const getPool = () => POOL;
 export const getIngredients = () => INGREDIENTS;
 
@@ -27,7 +27,8 @@ export function mealIngredients(meal) {
   if (meal.sardines > 0) rows.push({ item: 'Sardines', oz: meal.sardines, practical: '1/3 of a tin, 4 fish', buy: BUY['Sardines'] });
   if (meal.salmon) rows.push({ item: 'Wild sockeye salmon', oz: meal.salmon, practical: '1 oz of canned wild sockeye', buy: BUY['Wild sockeye salmon'] });
   if (meal.cheese > 0) rows.push({ item: 'Cheese', oz: meal.cheese, practical: CHEESE_PRACTICAL[meal.cheese] || 'weighed', buy: BUY['Cheese'] });
-  rows.push({ item: meal.fruit, oz: meal.fruitOz, practical: (FRUIT_PRACTICAL[meal.fruit] || {})[meal.fruitOz] || 'weighed', buy: BUY[meal.fruit] });
+  if (meal.chips) rows.push({ item: 'Potato chips', oz: meal.chips, practical: 'about 20 thin chips, a sixth of the bag', buy: BUY['Potato chips'] });
+  rows.push({ item: meal.fruit, oz: meal.fruitOz, practical: meal.chips ? 'mashed into guacamole with salt and lemon' : ((FRUIT_PRACTICAL[meal.fruit] || {})[meal.fruitOz] || 'weighed'), buy: BUY[meal.fruit] });
   if (meal.blueberries) rows.push({ item: 'Wild blueberries', oz: meal.blueberries, practical: 'a small handful', buy: BUY['Wild blueberries'] });
   if (meal.broccoli) rows.push({ item: 'Broccoli (cooked)', oz: meal.broccoli, practical: 'a small pile, steamed', buy: BUY['Broccoli (cooked)'] });
   if (meal.flax) rows.push({ item: 'Ground flaxseed', oz: meal.flax, practical: '2 tablespoons, ground', buy: BUY['Ground flaxseed'] });
@@ -46,9 +47,9 @@ export function mealIngredients(meal) {
 
 export { mealCost, money, TALLOW_TSP, BUY };
 
-export function recipeText(meal, tier = 2500) {
-  const dn = tier === 2500 ? DAY_NUTRITION : dayNutrition(mealsForTier(tier));
-  const tallowTotal = TIER_TALLOW_OZ[tier] ?? 4;
+export function recipeText(meal, tier = 2500, snack = 'off') {
+  const dn = dayNutrition(mealsForTier(tier, snack));
+  const tallowTotal = snack !== 'off' && SNACK_TRIMS[tier] && SNACK_TRIMS[tier][snack] ? SNACK_TRIMS[tier][snack].tallowOz : (TIER_TALLOW_OZ[tier] ?? 4);
   const L = [`${meal.name} (Day ${meal.day}, ${meal.slot}) - the ${tier.toLocaleString()} calorie plan`, meal.description, '', 'Ingredients (ounces first, then the rounded amount to actually use):'];
   for (const i of mealIngredients(meal)) L.push(i.oz !== null ? `- ${i.item}: ${i.oz} oz (${i.practical})` : `- ${i.item}: ${i.practical}`);
   L.push(`- Beef tallow: ${TALLOW_TSP[meal.tallow]}${meal.tallow === 'no' ? '' : `, from the week's ${tallowTotal} oz`}`);

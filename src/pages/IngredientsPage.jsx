@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { BUY, CONDIMENTS, ORDER_WEEK_OPTIONS, PRICE_BASIS, beefSavingsPerWeek, bulkOrder, ingredientsForTier, ingredientWeekCost, mealsForTier, poolForTier, weekCost, money } from '../data/godDiet';
 import { useHead } from '../lib/store';
-import { useTier } from '../lib/plan';
+import { useSnack, useTier } from '../lib/plan';
 
 export default function IngredientsPage() {
   useHead({ title: 'Ingredients - The God Diet', description: 'Every ingredient on The God Diet, its weekly amount in ounces, and the exact source that passes for it.' });
   const tier = useTier();
-  const meals = mealsForTier(tier);
-  const ingredients = ingredientsForTier(tier);
-  const pool = poolForTier(tier);
+  const snack = useSnack();
+  const meals = mealsForTier(tier, snack);
+  const ingredients = ingredientsForTier(tier, snack);
+  const pool = poolForTier(tier, snack);
   const wkCost = weekCost(meals);
   const [weeks, setWeeks] = useState(10);
   const [eggPackSize, setEggPackSize] = useState(12);
-  const plan = bulkOrder(weeks, eggPackSize, tier);
+  const plan = bulkOrder(weeks, eggPackSize, tier, snack);
   const totalOz = pool.filter((p) => p.oz !== null).reduce((s, p) => s + p.oz, 0);
   return (
     <div className="mx-auto max-w-6xl px-4 pt-10">

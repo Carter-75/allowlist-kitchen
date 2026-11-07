@@ -4,13 +4,15 @@ import { ArrowRight, Repeat, Scale, ShoppingBasket } from 'lucide-react';
 import MealTile from '../components/MealTile';
 import { PLAN_TIERS, TIER_TALLOW_OZ, dayNutrition, ingredientWeekCost, mealsForTier, poolForTier, weekCost, money } from '../data/godDiet';
 import { mealsForDay, useHead } from '../lib/store';
-import { useTier } from '../lib/plan';
+import { useSnack, useTier } from '../lib/plan';
 import { PlanSwitcher } from '../components/Chrome';
 
 export default function Home() {
   const tier = useTier();
-  const meals = mealsForTier(tier);
-  const pool = poolForTier(tier);
+  const snack = useSnack();
+  const meals = mealsForTier(tier, snack);
+  const pool = poolForTier(tier, snack);
+  const tallowOz = pool.find((p) => p.item === 'Beef tallow').oz;
   const dayNut = dayNutrition(meals);
   const wkCost = weekCost(meals);
   useHead({ title: 'The God Diet - One Weekly Pool, 21 Meals', description: 'A fixed diet: one weekly pool of ingredients in ounces, 21 different meals, in three sizes (about 1,500, 2,000 or 2,500 calories a day), then the week loops.' });
@@ -29,7 +31,7 @@ export default function Home() {
           </div>
           <div className="mt-9 flex flex-wrap gap-x-8 gap-y-3">
             <p><span className="font-display text-3xl font-black">21</span> <span className="text-sm text-pine-50/75">meals a week</span></p>
-            <p><span className="font-display text-3xl font-black">10</span> <span className="text-sm text-pine-50/75">ingredients, total</span></p>
+            <p><span className="font-display text-3xl font-black">{snack !== 'off' ? 11 : 10}</span> <span className="text-sm text-pine-50/75">ingredients, total</span></p>
             <p><span className="font-display text-3xl font-black">~{dayNut.kcal.toLocaleString()}</span> <span className="text-sm text-pine-50/75">calories a day on this plan</span></p>
             <p><span className="font-display text-3xl font-black">7</span> <span className="text-sm text-pine-50/75">days, then loop</span></p>
           </div>
@@ -95,7 +97,7 @@ export default function Home() {
           <div className="rounded-2xl border border-ink/10 bg-cream p-5">
             <ShoppingBasket className="text-pine-700" size={20} />
             <h3 className="mt-2 font-display text-lg font-bold">Tallow only with beef</h3>
-            <p className="mt-1 text-sm leading-relaxed text-ink/65">Beef tallow is the only cooking fat, {TIER_TALLOW_OZ[tier]} oz a week at this size, and only at meals where the beef cooks. Soups, the meatloaf, and the no-beef meal use none.</p>
+            <p className="mt-1 text-sm leading-relaxed text-ink/65">Beef tallow is the only cooking fat, {tallowOz} oz a week at this size, and only at meals where the beef cooks. Soups, the meatloaf, and the no-beef meal use none.</p>
           </div>
         </div>
       </section>
@@ -109,7 +111,7 @@ export default function Home() {
           <div key={day} className="mt-8">
             <h3 className="font-display text-xl font-bold text-ink/70">Day {day}</h3>
             <div className="mt-3 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {mealsForDay(day, tier).map((m) => <MealTile key={m.id} meal={m} />)}
+              {mealsForDay(day, tier, snack).map((m) => <MealTile key={m.id} meal={m} />)}
             </div>
           </div>
         ))}

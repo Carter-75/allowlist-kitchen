@@ -83,6 +83,12 @@ export const INGREDIENTS = [
     detail: 'The approved cheese in the checked database, and the best one in it: raw whole milk from Dutch Meadows\' own Dutch Belted herd, verified 100% grass-fed with no grain ever, aged 12 to 14 months, made with Celtic sea salt, traditional animal rennet, and live cultures. This is the only cheese on the diet. An earlier build of this site used a pasteurized mozzarella that was never in the database at all; that was wrong and it is gone. The other approved raw cheddar, Organic Valley Grassmilk Raw Sharp, is the backup if Dutch Meadows is ever out of stock.',
   },
   {
+    name: 'Potato chips',
+    weeklyOz: null,
+    source: 'Boulder Canyon Thin & Crispy Classic Sea Salt, 6 oz bag, $2.99 at Woodman\'s',
+    detail: 'The snack chip, and an approved one in the checked database: potatoes, avocado oil, sea salt, nothing else. One snack is 1 oz, about 20 thin chips, a sixth of the bag, so one bag covers six snacks. On the diet only when the snack switcher is on; the guacamole it dips into is that evening\'s avocado, mashed early. The kettle-cooked Boulder Canyon and Siete sea salt chips carry the same clean three-ingredient label and stand as backups.',
+  },
+  {
     name: 'Beef tallow',
     weeklyOz: 4,
     source: 'US Wellness Meats',
@@ -236,6 +242,60 @@ export const MEALS = [
 // 1.5 oz (1,500) and 1 oz (2,000) to stay inside Carter's ranges.
 export const PLAN_TIERS = [1500, 2000, 2500];
 export const TIER_TALLOW_OZ = { 1500: 1.5, 2000: 1, 2500: 4 };
+
+// The snack (Carter's addition, Nov 6, 2026): guac and chips, on its own
+// switcher in the header, daily or every other day (Days 1, 3, 5, 7). One
+// serving is 1 oz of Boulder Canyon Thin & Crispy chips (the label serving,
+// about 20 chips, a sixth of the 6 oz bag) and 3 oz of guacamole. The
+// guac's avocado is not extra: it comes out of that day's evening meal,
+// which keeps the rest of its avocado, so the avocado pool and the fresh
+// orders never change. The chips add 170 calories a snack, and the day
+// stays inside Carter's ranges because of the trims below, solved against
+// the label data for each plan size and frequency: a smaller tallow pool,
+// less banana and kiwi, and at the daily setting on the two smaller sizes,
+// a quarter ounce less cheese at some meals and one egg fewer at three
+// two-egg meals. With the trims, the snack days land at 2,615 (2,500,
+// both frequencies), 2,142 daily and 2,136 every other day (2,000), and
+// 1,590 daily and 1,584 every other day (1,500).
+export const SNACK_DAYS = { eod: [1, 3, 5, 7], daily: [1, 2, 3, 4, 5, 6, 7] };
+export const SNACK = {
+  chipsOz: 1,
+  guacOz: 3,
+  bagOz: 6,
+  name: 'Guac and Chips',
+  description: 'The one snack: fresh guacamole and a label serving of the chips that pass. The guacamole is tonight\'s avocado served early, 3 oz of the evening avocado mashed with salt and lemon, so the avocado pool never changes. The chips are Boulder Canyon Thin & Crispy, the approved bag: potatoes, avocado oil, sea salt.',
+  steps: [
+    'Scoop 3 oz of avocado (about three quarters of one avocado) into a bowl. That avocado comes out of tonight\'s evening meal, which keeps the rest of its avocado.',
+    'Mash it rough with a fork, Celtic sea salt, and a squeeze of lemon. That is the whole guacamole: nothing in it that is not already in the diet.',
+    'Weigh out 1 oz of chips, about 20 thin chips, a sixth of the 6 oz bag. Put the bag away before you sit down.',
+    'Eat it between the midday and evening meals. On the every-other-day setting it lands on Days 1, 3, 5 and 7.',
+  ],
+};
+export const SNACK_TRIMS = {
+  2500: {
+    eod: { tallowOz: 2.5, fruitTrim: 1, eggCuts: [], cheeseCuts: [] },
+    daily: { tallowOz: 2, fruitTrim: 2, eggCuts: [], cheeseCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble', 'scotch-eggs'] },
+  },
+  2000: {
+    eod: { tallowOz: 0.5, fruitTrim: 2, eggCuts: [], cheeseCuts: ['smash-patties-fried-eggs'] },
+    daily: { tallowOz: 0.5, fruitTrim: 2, eggCuts: ['scotch-eggs', 'deviled-eggs-patty', 'open-face-egg-salad-stack'], cheeseCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble', 'scotch-eggs', 'egg-wrap-burrito', 'meatballs-avocado', 'banana-pancakes-breakfast-patties', 'beef-pizza', 'deviled-eggs-patty', 'egg-drop-beef-soup', 'cheese-crisps-sardine-pate'] },
+  },
+  1500: {
+    eod: { tallowOz: 1, fruitTrim: 2, eggCuts: [], cheeseCuts: ['smash-patties-fried-eggs'] },
+    daily: { tallowOz: 1, fruitTrim: 2, eggCuts: ['deviled-eggs-patty', 'open-face-egg-salad-stack', 'the-no-beef-meal'], cheeseCuts: ['smash-patties-fried-eggs', 'beef-egg-scramble', 'scotch-eggs', 'egg-wrap-burrito', 'meatballs-avocado', 'banana-pancakes-breakfast-patties', 'beef-pizza', 'deviled-eggs-patty', 'egg-drop-beef-soup', 'cheese-crisps-sardine-pate'] },
+  },
+};
+
+function snackMeal(day) {
+  return {
+    id: `guac-and-chips-d${day}`, day, slot: 'Snack', name: SNACK.name,
+    description: SNACK.description, steps: SNACK.steps, minutes: 5,
+    beef: 0, egg: 0, sardines: 0, salmon: 0, cheese: 0,
+    fruit: 'Avocado', fruitOz: SNACK.guacOz, chips: SNACK.chipsOz,
+    blueberries: 0, broccoli: 0, flax: 0, broth: 0, tallow: 'no',
+    coconutWater: 0, ketchup: 0, mayo: 0, mustard: 0, honey: 0, oliveOil: 0, pickles: 0, psyllium: 0,
+  };
+}
 export const TIER_OVERRIDES = {
   // The 2,000 plan keeps the beef exactly as the 2,500 plan (quarter-pound
   // portions, meatloaf double) and scales eggs, fruit, and tallow instead:
@@ -330,19 +390,33 @@ const TALLOW_UNIT_MAP = { yes: 1, double: 2, light: 0.5, no: 0 };
 
 // The 21 meals at one plan size, with each meal's tallow share in ounces
 // resolved from that size's tallow pool.
-export function mealsForTier(tier = 2500) {
+export function mealsForTier(tier = 2500, snack = 'off') {
   const overrides = TIER_OVERRIDES[tier] || {};
   const merged = MEALS.map((m) => ({ ...m, ...(overrides[m.id] || {}) }));
+  let tallowOz = TIER_TALLOW_OZ[tier] ?? 4;
+  if (snack !== 'off' && SNACK_TRIMS[tier] && SNACK_TRIMS[tier][snack]) {
+    const trims = SNACK_TRIMS[tier][snack];
+    tallowOz = trims.tallowOz;
+    const eggSet = new Set(trims.eggCuts);
+    const cheeseSet = new Set(trims.cheeseCuts);
+    const days = SNACK_DAYS[snack];
+    for (const m of merged) {
+      if (eggSet.has(m.id)) m.egg = 1.75;
+      if (cheeseSet.has(m.id)) m.cheese -= 0.25;
+      if ((m.fruit === 'Banana' || m.fruit === 'Kiwi') && trims.fruitTrim) m.fruitOz = Math.max(2, m.fruitOz - trims.fruitTrim);
+      if (m.slot === 'Evening' && days.includes(m.day)) m.fruitOz -= SNACK.guacOz;
+    }
+    for (const day of days) merged.push(snackMeal(day));
+  }
   const totalUnits = merged.reduce((s, m) => s + TALLOW_UNIT_MAP[m.tallow], 0);
-  const tallowOz = TIER_TALLOW_OZ[tier] ?? 4;
   for (const m of merged) m.tallowOz = (TALLOW_UNIT_MAP[m.tallow] / totalUnits) * tallowOz;
   return merged;
 }
 
 // Weekly totals for one plan size, summed from its meals. Single source for
 // the pool table, the ingredient cards, and both order planners.
-export function planRates(tier = 2500) {
-  const meals = mealsForTier(tier);
+export function planRates(tier = 2500, snack = 'off') {
+  const meals = mealsForTier(tier, snack);
   const sum = (f) => meals.reduce((s, m) => s + (f(m) || 0), 0);
   return {
     tier,
@@ -363,7 +437,8 @@ export function planRates(tier = 2500) {
     bananaPerMeal: (meals.find((m) => m.fruit === 'Banana') || {}).fruitOz,
     kiwiPerMeal: (meals.find((m) => m.fruit === 'Kiwi') || {}).fruitOz,
     avocadoPerMeal: (meals.find((m) => m.fruit === 'Avocado') || {}).fruitOz,
-    tallowOz: TIER_TALLOW_OZ[tier] ?? 4,
+    tallowOz: sum((m) => m.tallowOz),
+    chipsOz: sum((m) => m.chips),
     coconutOz: sum((m) => m.coconutWater),
     ketchup: sum((m) => m.ketchup),
     mayo: sum((m) => m.mayo),
@@ -381,8 +456,8 @@ const fmtOz = (n) => {
 };
 
 // The weekly pool table for one plan size, same shape as POOL.
-export function poolForTier(tier = 2500) {
-  const r = planRates(tier);
+export function poolForTier(tier = 2500, snack = 'off') {
+  const r = planRates(tier, snack);
   const base = Object.fromEntries(POOL.map((p) => [p.item, p]));
   const row = (item, oz, note) => ({ item, oz, note: note ?? base[item].note });
   return [
@@ -400,6 +475,7 @@ export function poolForTier(tier = 2500) {
     row('Avocado', r.avocadoOz, `About ${Math.round(r.avocadoOz / 4)} avocados. The evening fruit, ${fmtOz(r.avocadoPerMeal)} oz per evening meal. Avocado carries most of the diet's fiber.`),
     row('Cheese', r.cheeseOz),
     row('Beef tallow', r.tallowOz),
+    ...(snack !== 'off' ? [{ item: 'Potato chips', oz: r.chipsOz, note: `Boulder Canyon Thin & Crispy Classic Sea Salt. The snack: 1 oz (about 20 chips) with 3 oz of guacamole, ${snack === 'daily' ? 'every day' : 'on Days 1, 3, 5 and 7'}. The guacamole avocado comes out of that day's evening meal, so the avocado row above does not change.` }] : []),
     row('Celtic sea salt', null),
     row('Water', null),
   ];
@@ -407,8 +483,8 @@ export function poolForTier(tier = 2500) {
 
 // The ingredient cards for one plan size: same sources and details, with the
 // weekly amount for that size.
-export function ingredientsForTier(tier = 2500) {
-  const r = planRates(tier);
+export function ingredientsForTier(tier = 2500, snack = 'off') {
+  const r = planRates(tier, snack);
   const ozByName = {
     'Beef organ blend': r.beefOz, 'Eggs': r.eggOz, 'Sardines': r.sardineOz,
     'Wild sockeye salmon': r.salmonOz, 'Wild blueberries': r.blueberriesOz,
@@ -416,7 +492,9 @@ export function ingredientsForTier(tier = 2500) {
     'Ground flaxseed': r.flaxOz, 'Beef bone broth': r.brothOz, 'Cheese': r.cheeseOz,
     'Beef tallow': r.tallowOz, 'Banana': r.bananaOz, 'Kiwi': r.kiwiOz, 'Avocado': r.avocadoOz,
   };
-  return INGREDIENTS.map((ing) => ({ ...ing, weeklyOz: ing.weeklyOz === null ? null : (ozByName[ing.name] ?? ing.weeklyOz) }));
+  return INGREDIENTS
+    .filter((ing) => snack !== 'off' || ing.name !== 'Potato chips')
+    .map((ing) => ({ ...ing, weeklyOz: ing.name === 'Potato chips' ? r.chipsOz : (ing.weeklyOz === null ? null : (ozByName[ing.name] ?? ing.weeklyOz)) }));
 }
 
 export const SLOTS = ['Morning', 'Midday', 'Evening'];
@@ -456,6 +534,7 @@ export const BUY = {
   'Ground flaxseed': { label: "Vitacost (Bob's Red Mill organic golden flaxseed meal)", url: 'https://www.vitacost.com/products/bob-s-red-mill-organic-golden-flaxseed-meal-16-oz-453-g-77011' },
   'Psyllium husk': { label: 'Swanson (Yerba Prima psyllium husks powder)', url: 'https://www.swansonvitamins.com/p/yerba-prima-psyllium-husks-powder-12-oz-pwdr' },
   'Beef bone broth': { label: 'Seven Sons Farms (beef soup bones)', url: 'https://sevensons.net/store/product/beef-soup-bones' },
+  'Potato chips': { label: "Woodman's (Boulder Canyon Thin & Crispy, 6 oz bag)", url: wm('Boulder Canyon Thin & Crispy') },
 };
 
 // Estimated costs. Prices checked November 6, 2026 against the exact
@@ -474,10 +553,11 @@ export const PRICE = {
   broccoliPerOz: 0.15,          // fresh broccoli, estimated
   cheesePerOz: 1.25,            // raw cheddar priced from Organic Valley Grassmilk raw sharp, $9.99 per 8 oz at retail (Dutch Meadows price is account-only)
   tallowPerOz: 17.46 / 27.2,    // US Wellness small pail, $17.46 per 1.7 lb
+  chipsPerOz: 2.99 / 6,         // Boulder Canyon Thin & Crispy, $2.99 per 6 oz bag at Woodman's
   fruitPerOz: { Banana: 0.35 / 4, Kiwi: 0.70 / 2.5, Avocado: 1.25 / 4 }, // typical Woodman's piece prices
 };
 export const PRICE_BASIS = [
-  'Beef organ blend: costs use the US Wellness Organ Blend 25 lb bundle at $285.25 on sale ($11.41/lb). At the 2,500 and 2,000 sizes one bundle covers about 4.8 weeks of beef; at the 1,500 size, about 11.8 weeks. Single 1 lb packs are $13.42/lb and would add about $10.55 a week at the 2,500 size.',
+  'Beef organ blend: costs use the US Wellness Organ Blend 25 lb bundle at $285.25 on sale ($11.41/lb). At the 2,500 and 2,000 sizes one bundle covers about 4.8 weeks of beef; at the 1,500 size, about 10 weeks. Single 1 lb packs are $13.42/lb and would add about $10.55 a week at the 2,500 size.',
   'Eggs: $5.39 a dozen for OrgaNICK Pastures at Woodman\'s.',
   'Sardines: ordered in 12-tin cases, but the estimate still uses $4.59 a tin (the single-tin price on record) until a delivered case price is locked, so the bulk saving is not overstated.',
   'Beef tallow: $17.46 for the 1.7 lb small pail at US Wellness.',
@@ -496,6 +576,7 @@ export const PRICE_BASIS = [
   'Pickles: Bubbies Kosher Dill, $9.99 for a 33 oz jar of whole dills, cut into spears at home, about $0.30 a spear. 4 spears a week.',
   'Ground flaxseed: Bob\'s Red Mill Organic Golden Flaxseed Meal, $7.06 for 16 oz at Vitacost, about $0.44 an ounce. 2 oz a week. Psyllium husk: Yerba Prima powder, $22 for 12 oz at Swanson, about $0.32 a tablespoon, 4 tablespoons a week.',
   'Beef bone broth: homemade from Seven Sons Farms beef soup bones, $25.50 for about 3 lb; one pack simmers into roughly 160 oz of broth, about $0.16 an ounce. 32 oz a week.',
+  'Potato chips (only when the snack is on): Boulder Canyon Thin & Crispy Classic Sea Salt, $2.99 for the 6 oz bag at Woodman\'s, about $0.50 an ounce. 1 oz per snack.',
 ];
 
 const TALLOW_UNITS = { yes: 1, double: 2, light: 0.5, no: 0 };
@@ -518,6 +599,8 @@ export const TALLOW_TOTAL_UNITS = MEALS.reduce((s, m) => s + TALLOW_UNITS[m.tall
 //   aged cheddar (115 kcal, 7g protein, 9.5g fat per oz).
 // - Flax: Bob's Red Mill label, 60 kcal, 3g protein, 3.5g fat, 5g carbs,
 //   4g fiber per 2 Tbsp (13g) serving, converted to per-ounce.
+// - Chips: Boulder Canyon Thin & Crispy label, 170 kcal, 3g protein, 10g
+//   fat, 16g carbs, 1g fiber per ounce.
 // - Tallow, produce, and broccoli: USDA reference values per 100g.
 export const NUTRITION_PER_OZ = {
   beef: { kcal: 82, protein: 4.94, fat: 6.73, carbs: 0.43, fiber: 0 },
@@ -529,6 +612,7 @@ export const NUTRITION_PER_OZ = {
   broth: { kcal: 5, protein: 1.25, fat: 0, carbs: 0, fiber: 0 },
   broccoli: { kcal: 9.9, protein: 0.67, fat: 0.12, carbs: 2.04, fiber: 0.94 },
   cheese: { kcal: 115, protein: 7.0, fat: 9.5, carbs: 0.4, fiber: 0 },
+  chips: { kcal: 170, protein: 3, fat: 10, carbs: 16, fiber: 1 },
   tallow: { kcal: 255, protein: 0, fat: 28.35, carbs: 0, fiber: 0 },
   fruit: {
     Banana: { kcal: 25.2, protein: 0.31, fat: 0.09, carbs: 6.47, fiber: 0.74 },
@@ -600,6 +684,7 @@ export function mealNutrition(m) {
     [NUTRITION_PER_OZ.broth, m.broth || 0],
     [NUTRITION_PER_OZ.broccoli, m.broccoli || 0],
     [NUTRITION_PER_OZ.cheese, m.cheese],
+    [NUTRITION_PER_OZ.chips, m.chips || 0],
     [NUTRITION_PER_OZ.fruit[m.fruit], m.fruitOz],
     [NUTRITION_PER_OZ.tallow, tallowOz],
   ];
@@ -645,6 +730,7 @@ export function mealCost(m) {
     + (m.broth || 0) * PRICE.brothPerOz
     + (m.broccoli || 0) * PRICE.broccoliPerOz
     + m.cheese * PRICE.cheesePerOz
+    + (m.chips || 0) * PRICE.chipsPerOz
     + m.fruitOz * PRICE.fruitPerOz[m.fruit]
     + tallowOz * PRICE.tallowPerOz
     + condimentCost(m);
@@ -667,6 +753,7 @@ export function ingredientWeekCost(key, meals = mealsForTier(2500)) {
     'Banana': sum((m) => (m.fruit === 'Banana' ? m.fruitOz : 0)) * PRICE.fruitPerOz.Banana,
     'Kiwi': sum((m) => (m.fruit === 'Kiwi' ? m.fruitOz : 0)) * PRICE.fruitPerOz.Kiwi,
     'Avocado': sum((m) => (m.fruit === 'Avocado' ? m.fruitOz : 0)) * PRICE.fruitPerOz.Avocado,
+    'Potato chips': sum((m) => m.chips) * PRICE.chipsPerOz,
     'Celtic sea salt': 0,
     'Water': 0,
     'Ketchup': sum((m) => m.ketchup) * CONDIMENT_PRICE.ketchup,
@@ -773,8 +860,8 @@ const roll = (bought, used, unit) => bought === used
   ? `exactly ${used} ${unit} used, nothing left over`
   : `${bought} ${unit} bought for ${used} ${unit} used, ${Math.round((bought - used) * 10) / 10} ${unit} rolls into the next block`;
 
-export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
-  const r = planRates(tier);
+export function bulkOrder(weeks, eggPackSize = 12, tier = 2500, snack = 'off') {
+  const r = planRates(tier, snack);
   const weeksPerBundle = 400 / r.beefOz; // one bundle is 25 lb = 400 oz of beef
   const beefBundles = Math.ceil((weeks * r.beefOz) / 400);
   const beefUsedLb = (weeks * r.beefOz) / 16;
@@ -885,6 +972,11 @@ export function bulkOrder(weeks, eggPackSize = 12, tier = 2500) {
       ],
     },
   ];
+  if (snack !== 'off') {
+    const chipBags = Math.ceil((weeks * r.chipsOz) / SNACK.bagOz);
+    const pantry = sources.find((x) => x.shipper.startsWith('Pantry'));
+    pantry.items.push(`Potato chips for the snack: ${chipBags} bags of Boulder Canyon Thin & Crispy (6 oz each) = ${chipBags * SNACK.bagOz} oz for ${weeks * r.chipsOz} oz of snacks across the block; the rest of the last bag rolls into the next block. The guacamole needs no order of its own: its avocado is already in the fresh shipments.`);
+  }
   return { totals, sources };
 }
 
@@ -903,8 +995,8 @@ export const SHIPPER_URL = {
   'Pantry bulk shipment': 'https://restaurantandmore.com/king-oscar-skinless-boneless-sardines-in-water-4-23-ounce-12-per-case.html',
 };
 
-export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, horizonWeeks = 52) {
-  const r = planRates(tier);
+export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, snack = 'off', horizonWeeks = 52) {
+  const r = planRates(tier, snack);
   const byKey = new Map();
   const add = (week, shipper, cadence, items) => {
     const key = `${week}|${shipper}`;
@@ -1007,6 +1099,10 @@ export function orderSchedule(blockWeeks = 10, eggPackSize = 12, tier = 2500, ho
       'Lowensenf Extra Hot mustard, Celtic sea salt, Simply Organic spices (paprika, cinnamon, turmeric, ginger, garlic powder, onion powder, black pepper): 1 each, they cover many blocks',
       'Glass-bottle spring water (Mountain Valley / Saratoga / S.Pellegrino / Lauretana): cases as needed',
     ]);
+    if (snack !== 'off') {
+      const chipBags = Math.ceil((blockWeeks * r.chipsOz) / SNACK.bagOz);
+      byKey.get(`${w}|Pantry bulk shipment`).items.push(`Boulder Canyon Thin & Crispy chips: ${chipBags} bags (6 oz) for the snack`);
+    }
   }
   return [...byKey.values()].sort((a, b) => a.weekOffset - b.weekOffset || SHIPPER_ORDER.indexOf(a.shipper) - SHIPPER_ORDER.indexOf(b.shipper));
 }
